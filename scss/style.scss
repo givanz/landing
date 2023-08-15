@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+//$card-border-color:rgba(var(--bs-body-color-rgb), 0.1);
+//$card-box-shadow: null;
+$headings-line-height: 1.4;
+$line-height-base: 1.7;
+$border-radius: 0.25rem;
+$lead-font-weight:normal;
+//$dropdown-font-size: 14px;
+
+$font-family-sans-serif:      'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+//$font-family-monospace:       'Lora', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$custom-select-indicator: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='currentColor' d='M509.121,125.966c-3.838-3.838-10.055-3.838-13.893,0L256.005,365.194L16.771,125.966c-3.838-3.838-10.055-3.838-13.893,0	c-3.838,3.838-3.838,10.055,0,13.893l246.18,246.175c1.842,1.842,4.337,2.878,6.947,2.878c2.61,0,5.104-1.036,6.946-2.878 l246.17-246.175C512.959,136.021,512.959,129.804,509.121,125.966z'/%3E%3C/svg%3E");
+
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 1rem;
+$btn-font-weight:500;
+$btn-font-size: 15px;
+
+@import "bootstrap/bootstrap";
+@import "sections/sections";
+@import "base";
+@import "logo";
+@import "fonts";
+@import "navbar";
+@import "blog";
+@import "products";
+@import "product-page";
+@import "post-style";
+@import "cart";
+
+
+:root, [data-bs-theme="light"] {
+	--light-bg-rgb:244,245,248;
+}
+
+[data-bs-theme="dark"] {
+	--light-bg-rgb:44,45,48;
+}

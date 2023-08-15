@@ -1,0 +1,50 @@
+@@include('../_includes/html-head.html', {"title": "Blog Author Page - Vvveb Default Blog Template", "path":"../"})
+
+<body class="archive">
+
+@@include('../_includes/header.html')
+
+<section class="inner-page-hero">
+	 <div>
+		<div class="title-container">
+			<div class="container">
+				<h1>Author: <span data-v-author>Admin</span></h1>
+			</div>
+		</div>
+	   
+		<!-- img data-v-post-image src="img/bg-img/bg-7.jpg" alt="" -->
+	</div>
+</section>
+
+  <main id="site-content" role="main">
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-7 col-lg-8 col-xl-9" data-v-component-posts="tag" data-v-limit="10" data-v-user="url">
+
+		@@include('../_includes/blog-post.html', {"class": " post-archive-item post"})
+		
+		@@include('../_includes/pagination.html', {"component": "posts", "component-index":0})
+
+	  </div>
+
+	  @@include('../_includes/sidebar.html', {"cols": "col-md-5 col-lg-4 col-xl-3"})
+
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  </main>	
+
+@@include('../_includes/footer.html')
+
+@@include('../_includes/footer-scripts.html')
+
+</body>
+
+</html>

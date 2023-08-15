@@ -1,0 +1,90 @@
+@@include('./_includes/html-head.html', {
+	"title": "Vvveb Themes - Page", 
+	"path":"",
+	'google_fonts':'',
+	'style':"",
+})
+
+<body class="page">
+	
+	@@include('./_includes/header.html')
+	
+	<section class="inner-page-hero" data-v-component-post>
+		 <div>
+			<div class="title-container">
+				<div class="container">
+					<h1 data-v-post-name>My custom page</h1>
+			
+					@@include('./_includes/breadcrumb.html')
+				</div>
+			</div>
+		   
+			
+			<!-- img data-v-post-image src="img/bg-img/bg-7.jpg" alt="" -->
+		</div>
+	</section>
+	
+    <main id="site-content" data-v-component-post>
+
+        <!-- Single Blog Post Thumb -->
+		<!-- 
+        <div class="inner-page-hero" data-v-if="post.img">
+			<div class="title-container">
+				<h1 data-v-post-name>Post title</h1>
+			</div>
+            <img data-v-post-img loading="lazy" src="img/bg-img/bg-7.jpg" alt="">
+        </div>
+		-->
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div>
+						<!--
+						<h1 class="text-center" data-v-if-not="post.img" data-v-post-name>Page title</h1>
+						-->
+						
+
+<div data-component-tabs>
+		<div class="shadow">
+			<nav>
+			  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+				<button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+				<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+				<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+			  </div>
+			</nav>
+			<div class="tab-content" id="nav-tabContent">
+			  <div class="tab-pane show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perferendis rem accusantium ducimus animi nesciunt expedita omnis aut quas molestias!</p>
+			  </div>
+			  <div class="tab-pane" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+				<p>Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin</p>
+			  </div>
+			  <div class="tab-pane" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+				<p>Quisque sagittis non ex eget vestibulum</p>
+			  </div>
+			  
+			</div>
+		</div>
+	</div>
+						
+						
+                        <div class="regular-page-text" data-v-post-content>
+                            <h2>Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</h2>
+                            <p>Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin. Praesent at tempus lectus, eleifend blandit felis. Fusce augue arcu, consequat a nisl aliquet, consectetur elementum turpis. Donec iaculis lobortis nisl, et viverra risus imperdiet eu. Etiam mollis posuere elit non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis arcu a magna sodales venenatis. Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+	@@include('./_includes/footer.html')
+	 
+	@@include('./_includes/footer-scripts.html')    
+  	
+  	
+</body>
+</html>

@@ -1,0 +1,43 @@
+@@include('../_includes/html-head.html', {"title": "Landing - Blog page",  "path":"../"})
+
+<body class="blog">
+
+@@include('../_includes/header.html')
+
+  <main id="site-content" role="main">
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-7 col-lg-8 col-xl-9" data-v-component-posts="popular" data-v-limit="10" data-v-image_size="large">
+
+		@@include('../_includes/blog-post.html', {"class": " post-archive-item post"})
+		
+		<div data-v-if="posts.count < 1">
+			<h3 class="text-center py-4 bg-body-tertiary">No posts to display!</h3>
+		</div>
+		
+		@@include('../_includes/pagination.html', {"component": "posts", "component-index":0})
+
+	  </div>
+
+	  @@include('../_includes/sidebar.html', {"cols": "col-md-5 col-lg-4 col-xl-3"})
+
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+  </main>	
+
+@@include('../_includes/footer.html')
+
+@@include('../_includes/footer-scripts.html')
+
+</body>
+
+</html>

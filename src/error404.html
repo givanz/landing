@@ -1,0 +1,44 @@
+@@include('./_includes/html-head.html', {"title": "Page not found!", "path":""})
+
+<body class="error-404">
+	
+	@@include('./_includes/header.html')
+	
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-4 m-4">
+					
+					<h2 class="heading1 text-center">Page not found!</h2>
+					<h4 class="text-muted text-center">(error 404)</h4>
+					<br/>
+
+						<div data-debug class="my-3">
+
+							<div class="card">
+								<div class="card-body">
+									<p data-v-exception-message style="white-space: pre-wrap;">Message</strong>
+								</div>		
+							</div>		
+
+							<div class="card my-2">
+								<div class="card-body">
+									<p data-v-exception-file>File</strong> on line <strong data-v-exception-line_no>1</strong></p>
+								</div>
+							</div>
+								
+						</div>
+			   
+					
+					
+                 </div>
+            </div>
+        </div>
+    
+
+    @@include('./_includes/footer.html')   
+	 
+	@@include('./_includes/footer-scripts.html')    
+  	
+  	
+</body>
+</html>

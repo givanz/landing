@@ -1,0 +1,102 @@
+@@include('../_includes/html-head.html', {"title": "Vvveb - Login", "path":"../"})
+
+<body class="login">
+	
+	@@include('../_includes/header.html')
+
+	<main id="site-content" role="main">
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+										  
+					<div class="row">
+					
+						<div class="col-lg-8 mx-auto">
+					
+							<div class="card my-4">
+
+								<div class="card-header bg-body p-5 pb-2">
+									<h1 class="mb-1 h2 fw-bold">Sign in</h1>
+									<p class="text-muted">Welcome back! Enter your email to get started.</p>
+
+									@@include('../_includes/notifications.html', {type:"login"})
+
+								</div>								
+
+
+							  <div class="card-body p-5">
+								
+								<form action="" method="post" enctype="multipart/form-data" data-v-url="user/index/login">
+									<input type="hidden" name="csrf" data-v-csrf>
+									<div class="mb-3">
+										<label class="form-label" for="input-email">E-Mail Address</label>
+										<input type="email" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control" required>
+									</div>
+									<div class="mb-3">
+										<label class="form-label" for="input-password">Password</label>
+										<div class="input-group">
+										  <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password"  id="password" name="password"  value="" aria-label="Password" required>
+										  <div class="input-group-append">
+											<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this)"><i class="la la-eye-slash"></i></button>
+										  </div>
+										</div>
+										
+									</div>
+
+									<div class="mb-3 clearfix">
+										
+										<div class="form-check float-start">
+										  <input class="form-check-input" type="checkbox" value="" id="rememberme">
+										  <label class="form-check-label" for="rememberme">
+											Remember me
+										  </label>
+										</div>
+										
+										 <a href="#recover"  data-v-url="user/reset/index" class="text-muted float-end">Forgot your password?</a>
+									</div>
+
+									<div class="mb-3 clearfix">
+											
+										<button type="submit" value="Login" class="btn btn-primary px-5 float-end" ><span>Login</span><i class="la la-arrow-right float-end ms-2"></i></button>
+									
+									</div>
+									
+									<input type="hidden" name="redirect" value="">
+								</form>
+								
+								<div class="mt-2">Don’t have an account? <a href="user/signup" data-v-url="user/signup/index" >Create user account</a></div>
+							</div>
+							</div>
+						</div>
+
+						</div>
+
+            </div>
+        </div>
+    </div>
+    </main>
+    
+	</main>
+
+	@@include('../_includes/footer.html')
+
+	@@include('../_includes/footer-scripts.html')
+  	
+
+<script>
+function togglePasswordInput(element) {
+	var password = document.getElementById("password");
+	if (password.type == "password") {
+		password.type = "text"; 
+		$("i", element).addClass("la-eye").removeClass("la-eye-slash");
+	} else {
+		password.type = "password";
+		$("i", element).removeClass("la-eye").addClass("la-eye-slash");
+	}
+}
+</script>
+  	
+</body>
+</html>

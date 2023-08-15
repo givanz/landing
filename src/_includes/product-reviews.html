@@ -1,0 +1,207 @@
+<div id="reviews" class="product-reviews mt-4" data-v-component-reviews>
+
+		<ol class="review-list list-unstyled mb-3">
+			<li class="review mb-4" data-v-review>
+
+					<div class="review-wrap d-flex ">
+
+						<figure class="review-author-avatar me-2">
+							<img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
+						</figure>
+
+						<div class="review-author">
+
+							<div class="review-author">
+								<a rel="external nofollow ugc" href="#" data-v-if="review.url"><span data-v-review-author>Maria Williams</span></a>
+								<span data-v-review-author data-v-if-not="review.url">Maria Williams</span>
+							</div>
+
+							<div class="review-meta text-small text-muted">
+								<span data-v-review-date_added data-filter-friendly_date>Jan 29, 2018</span>
+							</div>
+
+						</div>
+
+					</div>
+
+	
+					<div data-v-review-content>
+						<p>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
+					</div>
+
+					<div class="alert alert-light my-2 small" data-v-if="review.status = 0">
+						<div>Your review is awaiting moderation.</div>
+						<div>This is a preview, your review will be visible after it has been approved.</div>
+					</div>
+
+					<div class="reply">
+						<a href="#review-form" class="reply-btn" data-review_id="$review.review_id" data-review_author="$review.author" data-v-vvveb-action="replyTo">Reply <i class="la la-reply"></i></a>
+					</div>
+
+			</li>
+			<li class="review mb-4 level-2" data-v-review>
+
+					<div class="review-wrap d-flex ">
+
+						<figure class="review-author-avatar me-2">
+							<img src="http://placehold.it/60x60" alt="user" width="60" height="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
+						</figure>
+
+						<div class="review-author">
+
+							<div class="review-author">
+								<span data-v-review-author data-v-if-not="review.url">John doe</span>
+							</div>
+
+							<div class="review-meta text-small text-muted">
+								<span data-v-review-date_added data-filter-friendly_date>Jan 29, 2018</span>
+							</div>
+
+						</div>
+
+					</div>
+
+	
+					<div data-v-review-content>
+						<p>This is a reply review.</p>
+					</div>
+
+					<div class="alert alert-light my-2 small" data-v-if="review.status = 0">
+						<div>Your review is awaiting moderation.</div>
+						<div>This is a preview, your review will be visible after it has been approved.</div>
+					</div>
+
+					<div class="reply">
+						<a href="#review-form" class="reply-btn" data-review_id="$review.review_id" data-review_author="$review.author" data-v-vvveb-action="replyTo">Reply <i class="la la-reply"></i></a>
+					</div>
+
+			</li>
+			<li class="review mb-4" data-v-review>
+
+					<div class="review-wrap d-flex ">
+
+						<figure class="review-author-avatar me-2">
+							<img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
+						</figure>
+
+						<div class="review-author">
+
+							<div class="review-author">
+								<a rel="external nofollow ugc" href="#" data-v-if="review.url"><span data-v-review-author>Maria Williams</span></a>
+								<span data-v-review-author data-v-if-not="review.url">Maria Williams</span>
+							</div>
+
+							<div class="review-meta text-small text-muted">
+								<span data-v-review-date_added data-filter-friendly_date>Jan 29, 2018</span>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div data-v-review-content>
+						<p>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
+					</div>
+
+					<div class="alert alert-light my-2 small" data-v-if="review.status = 0">
+						<div>Your review is awaiting moderation.</div>
+						<div>This is a preview, your review will be visible after it has been approved.</div>
+					</div>
+
+					<div class="reply">
+						<a href="#review-form" class="reply-btn" data-review_id="$review.review_id" data-review_author="$review.author" data-v-vvveb-action="replyTo">Reply <i class="la la-reply"></i></a>
+					</div>
+
+			</li>
+		</ol>
+	</div>
+
+	
+   <div class="reviews-form">
+
+	@@include('notifications.html')
+
+	<div>
+		<h5>Leave a reply</h5>
+		<span class="replyto" style="display:none"><h3>Reply to <b data-review-author>author</b></h3>
+			<a href="#review-form" class="reply-btn d-inline-block" data-review_id="0" data-v-vvveb-action="replyTo">
+			Cancel reply 
+			<i class="la la-window-close"></i></a>
+		</span>
+		
+		
+		<div class="loggedin mb-3" data-v-if="this.global.user_id">
+			<!--
+			<a href="#review-form" class="reply-btn d-inline-block" data-review_id="0" data-v-vvveb-action="replyTo">
+			Log out
+			<i class="la la-window-close"></i></a>
+			-->
+			
+			<form action method="product" enctype="multipart/form-data" data-v-url="user/login" data-selector=".product-reviews">
+
+				<span>Logged in as <b data-v-global-user-display_name>author</b></span>
+
+				<input type="hidden" name="logout">
+			
+				<button type="submit" value="logout" class="btn link-primary">
+					
+					<span class="loading d-none">
+						<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+						</span>
+						<span>Loading ...</span>...
+					</span>
+
+					<span class="button-text">
+						Logout <i class="la la-sign-out-alt"></i></a>
+					</span>
+				
+				</button>	
+			</form>
+			
+		</div>
+
+		<form id="review-form" method="product" action="" data-v-vvveb-action="addreview" data-v-vvveb-on="submit">
+			
+			<input type="hidden" name="product_id" data-v-product-product_id>
+			<input type="hidden" name="slug" data-v-product-slug>
+			<input type="hidden" name="parent_id" value="0">
+			<input type="hidden" name="csrf" data-v-csrf>
+			
+			   <!-- antibot do not fill -->	
+			  <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
+			
+			
+			  <div data-v-if-not="this.global.user_id">	
+				  <div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Name</label>
+					<input type="text" placeholder="Name" name="author" class="form-control" required>
+				  </div>
+				  <div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">Email address</label>
+					<input type="email" placeholder="Email" name="email" class="form-control" required>
+				  </div>
+			  </div>
+
+			  <div class="mb-3">
+				<textarea name="content" rows="5" cols="4" placeholder="review" class="form-control" required></textarea>
+			  </div>
+
+			<!-- if these hidden inputs are filled then ignore robots -->
+			 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+			 
+			 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">				  
+			  
+			  <button type="submit" value="review" class="btn btn-primary">
+			  <span class="loading d-none">
+					<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
+                        <span>producting</span>...
+                    </span>
+
+                    <span class="button-text">
+                        Post comment
+                    </span>
+			  </button>
+			
+		</form>
+	</div>
+</div>

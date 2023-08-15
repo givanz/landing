@@ -1,0 +1,67 @@
+@@include('../_includes/html-head.html', {"title": "Vvveb - User edit", "path":"../"})
+
+<body>
+	
+	@@include('../_includes/header.html')
+
+	<main id="site-content" role="main">
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="regular-page-content-wrapper section-padding-80">
+                        <div class="regular-page-text">
+										  
+										  
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="card" >
+									  <div class="card-body">
+										<h5 class="card-title">New User</h5>
+										<p><strong>Register Account</strong>
+										</p>
+										<p >By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+										<a href="" class="btn btn-primary" data-v-url="user/signup/index" >Continue</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<div class="card" >
+									  <div class="card-body">
+										<h5 class="card-title">Returning User</h5>
+										<p><strong>I am a returning user</strong></p>
+										<form action="" method="post" enctype="multipart/form-data" data-v-url="user/index/login">
+											<div class="mb-3">
+												<label class="form-label" for="input-email">E-Mail Address</label>
+												<input type="email" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control" required>
+											</div>
+											<div class="mb-3">
+												<label class="form-label" for="input-password">Password</label>
+												<input type="password" minlength="4" autocorrect="off"name="password" value="" placeholder="Password" id="input-password" class="form-control" required>
+												<a href="#recover"  data-v-url="user/reset/index" >Recover Password</a>
+											</div>
+											<input type="submit" value="Login" class="btn btn-primary">
+											<input type="hidden" name="redirect" value="">
+										</form>
+									</div>
+									</div>
+								</div>
+							</div>              
+              
+              
+
+                    </div>
+                </div>
+            </div>
+        </div>
+	</main>
+
+	@@include('../_includes/footer.html')
+
+	@@include('../_includes/footer-scripts.html')
+  	
+  	
+</body>
+</html>

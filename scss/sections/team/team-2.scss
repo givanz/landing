@@ -1,0 +1,68 @@
+.team-2 {
+	.container {
+		text-align: center;
+		border-radius: 20px;
+	}
+
+	.icon {
+		position: relative;
+		bottom: 11px
+	}
+
+	.profile {
+		margin:2rem 0;
+		img {
+			padding:1rem 3rem;
+			max-width:100%;
+			border-radius: 50%
+		}
+	}
+
+	.card {
+		border-radius: 15px;
+		margin-left: 30px;
+		margin-right: 30px;
+		box-shadow: 0 10px 20px rgba(var(--bs-body-color-rgb), .2)
+	}
+
+	.card-body {
+		position: relative;
+		bottom: 35px
+	}
+
+	.btn {
+		margin-top: 36px;
+		margin-bottom: 45px;
+		background-color: #AB47BC;
+		border: none;
+		color: #fff
+	}
+
+	.btn:hover {
+		-webkit-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		transform: scale(1.05);
+		color: #fff
+	}
+
+	.header {
+		padding-top: 40px
+	}
+
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 24px;
+}
+
+.social-link:hover, .social-link:focus {
+    background: var(--bs-border-color);
+    text-decoration: none;
+    color: #555;
+}

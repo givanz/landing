@@ -1,0 +1,61 @@
+.team3 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.team3 h1,
+.team3 h2,
+.team3 h3,
+.team3 h4,
+.team3 h5,
+.team3 h6 {
+  color: #3e4555;
+}
+
+.team3 .font-weight-medium {
+  font-weight: 500;
+}
+
+.team3 .bg-body-secondary {
+  background-color: #f4f8fa !important;
+}
+
+.team3 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+.team3 ul {
+  margin-top: 30px;
+}
+
+.team3 h5 {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.team3 ul li a {
+  color: #8d97ad;
+  padding-right: 15px;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.team3 ul li a:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+	color: #316ce8;
+}
+
+.team3 .title {
+  margin: 30px 0 0 0;
+}
+
+.team3 .subtitle {
+  margin: 0 0 20px 0;
+  font-size: 13px;
+}
+

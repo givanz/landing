@@ -1,0 +1,93 @@
+@@include('./_includes/html-head.html', {
+	"title": "Vvveb Landing - Homepage", 
+	"path": "", 
+	"path": "", 
+	'google_fonts':'',
+	'style':":root {\
+			/*--bs-font-headings:'Inter';*/\
+		}\
+	.hero-3 {\
+		//height:80vh;\
+		//background-position:bottom center;\
+	}\
+	.hero-3 h1.heading {\
+		font-size:56px;\
+		line-height:84px;\
+	}\
+	.showcase-3 {\
+		margin-top:-200px;\
+		z-index:3;\
+	}\
+	.showcase-3 .feature {\
+	}\
+	.showcase .showcase-img {\
+		min-height: 30rem;\
+		background-size: cover;\
+	}"
+})
+
+<body class="home">    
+@@include('./sections/navigation/navigation-3.html')
+
+@@include('./sections/hero/hero-3.html')
+
+@@include('./sections/showcase/showcase-3.html')
+
+@@include('./sections/features/features-1.html')
+
+@@include('./sections/products/products-1.html')
+
+@@include('./sections/testimonials/testimonials-1.html')
+
+@@include('./sections/pricing-table/pricing-table-3.html')
+
+@@include('./sections/posts/posts-1.html')
+
+@@include('./sections/contact-form/contact-form-6.html')
+
+@@include('./_includes/footer.html')
+
+@@include('./_includes/footer-scripts.html')
+<!--
+<script>
+	
+// When the user scrolls the page, execute navbarSticky
+window.onscroll = function() {navbarSticky()};
+
+// Get the navbar
+var navbar = document.getElementsByClassName("navbar")[0];
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop ? navbar.offsetTop : navbar.offsetHeight;
+
+function toggleNavbarTheme () {
+    if (navbar.classList.contains("navbar-dark")) {
+		navbar.classList.add("navbar-light");
+		navbar.classList.remove("navbar-dark");
+	} else if (navbar.classList.contains("navbar-light")) {
+		navbar.classList.add("navbar-dark");
+		navbar.classList.remove("navbar-light");
+	}
+}
+
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function navbarSticky() {
+  let isSticky = (window.pageYOffset >= sticky);		
+		
+  if (isSticky) {
+	  if (!navbar.classList.contains("sticky")) {
+		navbar.classList.add("sticky");
+		toggleNavbarTheme();
+	  } 
+  } else {
+	  if (navbar.classList.contains("sticky")) {
+		navbar.classList.remove("sticky");
+		toggleNavbarTheme();
+	  }
+  }
+}
+</script>
+-->
+</body>
+</html>

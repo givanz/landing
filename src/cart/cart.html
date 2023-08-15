@@ -1,0 +1,273 @@
+@@include('../_includes/html-head.html', {"title": "Cart", "path": "../"})
+
+
+<body>
+	
+	@@include('../_includes/header.html')
+
+
+
+<main id="site-content" role="main">
+
+	<!-- Page Content -->
+	<div class="container">
+	
+	
+      <div id="cart-container">
+      <form action="" method="post" enctype="multipart/form-data"  data-v-if="this.cart.total_items" data-v-cart-page>
+		<!--	
+		<h3 class="mb-4">Cart (<span data-v-cart-total_items>2</span> items)</h3>
+		-->
+
+		<div class="row">
+		<div class="col-md-8">
+			<div class="card mb-4">
+				<div class="table-responsive card-body cart-table p-0">
+					<table class="table align-middle" data-v-cart>
+						<thead class="table-lig2ht">
+							<tr>
+								<th class="text-center">Image</th>
+								<th class="text-start">Product Name</th>
+								<!-- <th class="text-start">Model</th> -->
+								<th class="text-start">Quantity</th>
+								<!-- <th class="text-end">Unit Price</th> -->
+								<th class="text-end">Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr data-v-cart-product>
+								<td class="text-center cart-img">
+									<a href="#40" data-v-cart-product-url>
+										<img src="img/demo/product.jpg" loading="lazy" alt="iPhone" class="img-rounded" data-v-cart-product-image width=80 loading="lazy">
+									</a>
+								</td>
+								<td class="text-start">
+									<a href="#40" data-v-cart-product-url>
+										<span data-v-cart-product-name>iPhone 5</span>
+									</a>
+									<div class="price">
+										<span data-v-cart-product-price_tax_formatted>$246.40</span>
+									</div>
+								</td>
+								
+								<!-- <td class="text-start">product 11</td> -->
+								<td class="text-center">
+									<div class="quantity">
+										<div class="input-group">
+											<a type="button" class="btn btn-minus btn-sm">
+												<i class="la la-minus"></i>
+											</a>
+											<input name="quantity" value="1" size="1" min="1" class="form-control form-control-sm" type="number" data-v-cart-product-quantity>  
+											<a type="button" class="btn btn-plus btn-sm">
+												<i class="la la-plus"></i>
+											</a>
+										</div>
+									</div>
+									<a type="button" class="btn btn-sm btn-remove" data-v-cart-product-remove-url>
+										<i class="la la-trash"></i>
+										<!-- <span>Remove</span> -->
+									</a>
+									</a>
+								</td>
+								<!-- <td class="text-end price" data-v-cart-product-price>$123.20</td> -->
+								<td class="text-end total px-4">
+									<span  data-v-cart-product-total_tax_formatted>$246.40</span>
+								</td>
+							</tr>
+							<tr data-v-cart-product>
+								<td class="text-center cart-img">
+									<a href="#40" data-v-cart-product-url>
+										<img src="img/demo/product.jpg" loading="lazy" alt="iPhone" class="img-rounded" data-v-cart-product-image width=80 loading="lazy">
+									</a>
+								</td>
+								<td class="text-start">
+									<a href="#40" data-v-cart-product-url>
+										<span data-v-cart-product-name>iPhone 5</span>
+									</a>
+									<div class="price">
+										<span data-v-cart-product-price_tax_formatted>$246.40</span>
+									</div>
+								</td>
+								
+								<!-- <td class="text-start">product 11</td> -->
+								<td class="text-center">
+									<div class="quantity">
+										<div class="input-group">
+											<a type="button" class="btn btn-minus btn-sm">
+												<i class="la la-minus"></i>
+											</a>
+											<input name="quantity" value="1" size="1" min="1" class="form-control form-control-sm" type="number" data-v-cart-product-quantity>  
+											<a type="button" class="btn btn-plus btn-sm">
+												<i class="la la-plus"></i>
+											</a>
+										</div>
+									</div>
+									<a type="button" class="btn btn-sm btn-remove" data-v-cart-product-remove-url>
+										<i class="la la-trash"></i>
+										<!-- <span>Remove</span> -->
+									</a>
+									</a>
+								</td>
+								<!-- <td class="text-end price" data-v-cart-product-price>$123.20</td> -->
+								<td class="text-end total px-4">
+									<span  data-v-cart-product-total_tax_formatted>$246.40</span>
+								</td>
+							</tr>
+							<tr data-v-if-not="this.cart.total_items">
+								<td colspan="100">
+									<div class="text-center">
+										<h6>No products!</h6>
+										<span class="text-muted">Empty cart</span>
+									</div>
+								</td>
+							</tr>
+						 </tbody>
+
+				  </table>
+				  <!--
+					<table class="table mb-0 cart-table cart-total" cellspacing="0">
+						  <tfoot>
+							  <tr data-v-cart-total>
+								 <td colspan="5" class="text-end"><small data-v-cart-total-title>Sub-Total:</small></td>
+								 <td class="text-end" data-v-cart-total-value>$101.00</td>
+							  </tr>
+							  <tr data-v-cart-total>
+								 <td colspan="5" class="text-end"><small>Eco Tax (2.00):</small></td>
+								 <td class="text-end">$2.00</td>
+							  </tr>
+							  <tr data-v-cart-total>
+								 <td colspan="5" class="text-end"><small>VAT (19%):</small></td>
+								 <td class="text-end">$20.20</td>
+							  </tr>
+							  <tr data-v-cart-total>
+								 <td colspan="5" class="text-end"><small>Total:</small></td>
+								 <td class="text-end">$123.20</td>
+							  </tr>
+						   </tfoot>
+					  </table>
+					-->
+				</div>
+			</div>
+   		</div>
+
+		<div class="col-md-4 cart-right-column">
+			<div class="card">
+			 
+				<div class="card-body">
+					<div class="table-responsive mb-2" data-v-cart-totals>
+							<table class="table mb-0 cart-table cart-total" cellspacing="0">
+							  <tfoot>
+								  <tr data-v-cart-total>
+									 <td colspan="5" class="text-end"><small data-v-cart-total-title>Sub-Total</small>:</td>
+									 <td class="text-end">
+										 <span class="text-end" data-v-cart-total-text data-v-if="total.text"> - </span>
+										 <span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
+									 </td>
+								  </tr>
+								  <tr data-v-cart-total>
+									 <td colspan="5" class="text-end"><small>Eco Tax (2.00):</small></td>
+									 <td class="text-end">$2.00</td>
+								  </tr>
+								  <tr data-v-cart-total>
+									 <td colspan="5" class="text-end"><small>VAT (19%):</small></td>
+									 <td class="text-end">$20.20</td>
+								  </tr>
+								  <tr data-v-cart-total>
+									 <td colspan="5" class="text-end"><small>Total:</small></td>
+									 <td class="text-end">$123.20</td>
+								  </tr> 
+								  <tr>
+									 <td colspan="5" class="text-end fw-semibold">Total:</td>
+									 <td class="text-end fw-semibold" data-v-cart-cart-total_formatted>$0</td>
+								  </tr>
+							   </tfoot>
+
+							</table>
+						</div>
+					
+					
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" id="c_code" placeholder="Coupon Code" aria-label="Coupon Code" aria-describedby="button-addon2">
+						<button class="btn btn-primary btn-sm px-4" type="button" id="button-addon2">Apply</button>
+					</div>
+					
+					<a href="" class="btn btn-primary w-100" data-v-url="checkout/checkout/index">Checkout <i class="la la-arrow-right"></i></a>
+				</div>
+			</div>
+			
+		</div>
+		</div>
+	  </form>
+	  </div>
+
+		<div data-v-if-not="this.cart.total_items">
+				<div class="text-center py-5">
+					
+					<div class="alert" role="alert">
+						<div>
+							<h1>Empty cart</h1>
+						</div>
+
+						
+						<div class="text-muted">
+							<i class="la la-lg la-shopping-cart"></i> 
+							No products to display in the cart!
+						</div>
+					</div>
+					<a href="/" class="btn btn-success">Continue shopping <i class="la la-arrow-right"></i></a>
+				</div>
+		</div>
+					
+	</div>
+</main>
+    
+
+@@include('../_includes/footer.html')   
+ 
+@@include('../_includes/footer-scripts.html')    
+<script>
+$('body').on('change', '[name="quantity"]', function (e) {
+	let product = $(this).parents("[data-v-cart-product]");
+	let id = product[0].dataset.product_id;
+	let quantity = this.value;
+	let updateElements = ['#cart-container [data-product_id="' + id + '"] .price', '#cart-container [data-product_id="' + id + '"] .total', ".cart-right-column", ".mini-cart"];
+	
+	delay(() => VvvebTheme.Cart.update(id, quantity, this, updateElements), 1000);
+});
+
+$('.cart-table .quantity').on('click', '.btn-plus', function (e) {
+	$("input[type=number]", this.parentNode).val(function( index, value ) {
+	  return ++value;
+	}).change();
+});
+
+$('.cart-table .quantity').on('click', '.btn-minus', function (e) {
+	$("input[type=number]", this.parentNode).val(function( index, value ) {
+	  return Math.max(--value, 1);
+	}).change();
+});
+
+$('body').on('click', '.btn-remove', function (e) {
+	let product = $(this).parents("[data-v-cart-product]");
+	let id = product[0].dataset.product_id;
+	let quantity = this.value;
+	let updateElements = [".cart-right-column", ".mini-cart"];
+
+	product.addClass("bg-light");
+	delay(() => VvvebTheme.Cart.remove(id, this, updateElements, () => product.remove()), 500);
+	//if cart empty refresh page, if not empty prevent refresh and update with ajax
+	if ($("#cart-container [data-v-cart-product]").length > 1) {
+		//e.preventDefault();
+	} else {
+		//return;
+	}
+	e.preventDefault();
+});
+</script>
+<style>
+.cart-img {
+	height:120px;
+}
+</style>
+</body>
+</html>

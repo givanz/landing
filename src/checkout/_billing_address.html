@@ -1,0 +1,90 @@
+<div class="row" data-v-component-address>
+	 <div class="mb-2 col-6" data-v-class-if-col-12="count <= 1" data-v-address>
+		<div class="card">
+			<div class="card-body">
+				<div class="form-check form-control-lg">
+					  <input class="form-check-input" type="radio" value="" name="billing_address_id" data-v-address-label-id data-v-address-address_id>
+					  <label class="form-check-label text-small" role="button" for="billing_address_id" data-v-address-label-for>
+						
+							<span data-v-address-first_name>First name</span>
+							<span data-v-address-last_name>Last  name</span>
+							<div data-v-address-company>Company</div>
+							<span data-v-address-address_1>Address 1</span>
+							<span data-v-address-address_2>Address 2</span>
+							<span data-v-address-city>Bucharest</span>
+							<span data-v-address-postcode>9800</span>
+						
+					  </label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="form-check mx-3 mb-4 form-control-lg" data-v-if="count > 0">
+	  <input class="form-check-input" type="radio" value="0" name="billing_address_id" id="billing_address_new">
+	  <label class="form-check-label text-small"  role="button" for="billing_address_new">
+		I want to use a new address
+	  </label>
+	</div>
+
+	<div class="billing_address">
+		<h5>Billing Address</h5>
+
+		<div class="row">
+			<!--
+			<div class="mb-3 col-6" id="first_name_group">
+				<label class="col-form-label" for="billing_first_name">First Name <span class="text-danger text-small">*</span></label>
+				<input type="text" class="form-control" id="billing_first_name" name="billing_address[first_name]" value="" minlength="3" required>
+			</div>
+			<div class="mb-3 col-6" id="last_name_group">
+				<label class="col-form-label" for="billing_last_name">Last Name <span class="text-danger text-small">*</span></label>
+				<input type="text" class="form-control" id="billing_last_name" name="billing_address[last_name]" value="" minlength="3" required>
+			</div>
+			-->
+			<div class="mb-3 col-12 mb-3" id="company_group">
+				<label class="col-form-label" for="billing_company">Company Name</label>
+				<input type="text" class="form-control" id="billing_company" name="billing_address[company]" value="">
+			</div>
+						
+			<div class="col-12 mb-3">
+				<label class="col-form-label" for="country">Country <span class="text-danger text-small">*</span></label>
+				<select class="form-select" id="billing_country_id" name="billing_address[country_id]" data-v-countries required readonly>
+				  <option value="" data-v-option>
+					Country 1
+				  </option>
+				  <option value="" data-v-option>
+					Country 2
+				  </option>
+				</select>
+			</div>	
+			<div class="col-12 mb-3">
+				<label class="col-form-label" for="country">Region <span class="text-danger text-small">*</span></label>
+				<select class="form-select" id="billing_zone_id" name="billing_address[zone_id]" data-v-zones required readonly>
+				  <option value="1" data-v-option>Zone 1</option>
+				  <option value="2" data-v-option>Zone 2</option>
+				  <option value="3" data-v-option>Zone 3</option>
+				</select>
+			</div>
+			<div class="col-12 mb-3">
+				<label class="col-form-label" for="street_address">Address <span class="text-danger text-small">*</span></label>
+				<input type="text" class="form-control mb-3" id="billing_address_1" name="billing_address[address_1]" value="" placeholder="Street address" minlength="5" required>
+				<input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="">
+			</div>
+			<div class="col-12 mb-3">
+				<label class="col-form-label" for="postcode">Postcode <span class="text-danger text-small">*</span></label>
+				<input type="text" class="form-control" id="billing_postcode" name="billing_address[postcode]" minlength="3" value="">
+			</div>
+			<div class="col-12 mb-3">
+				<label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span></label>
+				<input type="text" class="form-control" id="billing_city" name="billing_address[city]" minlength="3" value="" required>
+			</div>
+			<div class="col-12 mb-3">
+				<label class="col-form-label" for="phone_number">Phone No <span class="text-danger text-small">*</span></label>
+				<input type="text" class="form-control" id="phone_number" name="phone_number" min="0" placeholder="Phone number" minlength="3" value="">
+			</div>
+
+		</div>
+	</div>
+
+</div>

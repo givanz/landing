@@ -1,0 +1,141 @@
+@@include('./_includes/html-head.html', {"title": "Vvveb - Contact form", "path":""})
+
+<body>
+	
+	@@include('./_includes/header.html')
+	
+	<section class="inner-page-hero" data-v-component-post>
+		 <div>
+			<div class="title-container">
+				<div class="container">
+					<h1 data-v-post-name>Contact us</h1>
+					
+					@@include('./_includes/breadcrumb.html')
+				</div>
+			</div>
+		   
+			
+			<!-- img data-v-post-image src="img/bg-img/bg-7.jpg" alt="" -->
+		</div>
+	</section>
+
+	<section class="map" style="height:300px" data-component-maps>
+		<iframe loading="lazy" frameborder="0" src="https://maps.google.com/maps?q=Bucharest&z=15&t=q&key=&output=embed" width="100%" height="100%" style="width:100%;height:100%;left:0px"></iframe>
+	</section>
+	
+    <main id="site-content" data-v-component-post>
+
+		<section class="pt-0">
+		  <div class="container">
+			<div class="row mt-5">
+			  <div class="col-12 col-md-6 col-lg-5">
+			  
+
+				<!--	
+				<h2 data-v-post-name>Contact us</h2>
+				-->
+				
+				<div class="regular-page-text" data-v-post-content>
+					<p class="lead">
+						For support questions please use the <a href="https://github.com/givanz/Vvveb/discussions">community forum</a>.
+					</p>
+
+				  <p class="lead">
+					Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.
+				  </p>
+
+				  <p class="lead">
+					The html for sections blocks and components and this template are built using Bootstrap 5.
+				  </p>
+
+
+					<p class="mt-5">
+					  <span><i class="la la-lg la-envelope"></i> Email:</span>
+					  <span>
+						<a href="mailto:contact@mysite.com">
+							<span>contact@mysite.com</span>
+						</a>
+					  </span>
+					</p>
+					<p class="">
+					  <span><i class="la la-lg la-phone"></i> Phone:</span> 
+					  <a href="tel:5511112377">
+						<span>+55 (111) 123 777</span>
+					  </a>
+					</p>
+					
+				</div>
+				
+				<!--
+				<p class="lead">
+				  <strong>Email:</strong><script>document.write(atob("PGEgaHJlZj0ibWFpbHRvOiYjMTA0OyYjMTA1OyYjMDY0OyYjMTE4OyYjMTE4OyYjMTE4OyYjMTAxOyYjMDk4OyYjMDQ2OyYjMDk5OyYjMTExOyYjMTA5OyI+JiMxMDQ7JiMxMDU7JiMwNjQ7JiMxMTg7JiMxMTg7JiMxMTg7JiMxMDE7JiMwOTg7JiMwNDY7JiMwOTk7JiMxMTE7JiMxMDk7PC9hPg=="));</script>
+				</p>
+				-->
+			  </div>
+
+			  <div class="col-12 col-md-6 ms-auto" data-v-component-plugin-contact-form-form data-v-storage="database"  data-v-name="contact-us-page">
+				
+				@@include('./_includes/notifications.html')
+				
+				<form method="post" action="">
+				   <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
+					
+				  <div class="row">
+					<div class="col">
+					  <input type="text" class="form-control" placeholder="First name" name="firstname" required>
+					</div>
+					<div class="col">
+					  <input type="text" class="form-control" placeholder="Last name" name="lastname" required>
+					</div>
+				  </div>
+
+				  <div class="row mt-4">
+					<div class="col">
+					  <input type="email" class="form-control" placeholder="Enter email" name="email" required>
+					</div>
+				  </div>
+
+				  <div class="row mt-4">
+					<div class="col">
+					  <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+					</div>
+				  </div>
+				  <div class="row mt-4">
+					<div class="col">
+					  <textarea class="form-control" name="message" rows="3" placeholder="How can we help?" required></textarea>
+					</div>
+				  </div>
+
+
+				 <!-- if these hidden inputs are filled then ignore, robots -->
+
+				 <input type="text" class="form-control d-none" placeholder="Subject" name="contact-form" >	
+				 
+				 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+				 
+				 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">	
+				 
+				
+				  <div class="row mt-4">
+					<div class="col">
+					  <button type="submit" class="btn btn-primary">
+						<span>Submit</span>
+						<i class="la la-long-arrow-alt-right ms-1"></i>
+						</button>
+					</div>
+				  </div>
+				</form>
+			  </div>
+			</div>
+		  </div>
+		</section>
+
+	</main>
+
+	@@include('./_includes/footer.html')
+
+	@@include('./_includes/footer-scripts.html')
+  	
+  	
+</body>
+</html>

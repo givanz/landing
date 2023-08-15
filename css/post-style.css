@@ -1,0 +1,96 @@
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4;
+  font-weight: 600;
+  word-break: break-word; }
+
+.post-title, .post-title a {
+  text-decoration: none;
+  color: var(--bs-body-color); }
+  .post-title h1, .post-title h2, .post-title a h1, .post-title a h2 {
+    font-weight: 700; }
+  .post-title h3, .post-title a h3 {
+    font-size: 1rem; }
+  .post-title:hover, .post-title a:hover {
+    text-decoration: underline; }
+
+.post-content {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: var(--bs-font-sans-serif); }
+  .post-content > * {
+    margin-bottom: 1rem; }
+  .post-content > p, .post-content > h1, .post-content > h2, .post-content > h3, .post-content > h4, .post-content > h5, .post-content > h6, .post-content > blockquote, .post-content > span, .post-content > ul, .post-content pre, .post-content > ol {
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .post-content h1, .post-content h2 {
+    font-weight: 600; }
+  .post-content blockquote {
+    font-style: italic;
+    padding-bottom: 3px;
+    padding-right: 20px;
+    padding-left: 20px;
+    letter-spacing: .01rem;
+    border-left: 4px solid var(--bs-border-color);
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    .post-content blockquote > p:before, .post-content blockquote > p:after {
+      font-family: 'Line Awesome Free';
+      font-weight: 900;
+      font-style: normal; }
+    .post-content blockquote > p:before {
+      content: "\f10d "; }
+    .post-content blockquote > p:after {
+      content: " \f10e"; }
+    .post-content blockquote i {
+      font-size: 2rem;
+      color: var(--bs-gray); }
+  .post-content q:before, .post-content q:after {
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    font-style: normal; }
+  .post-content q:before {
+    content: "\f10d "; }
+  .post-content q:after {
+    content: " \f10e"; }
+  .post-content img, .post-content svg, .post-content video {
+    vertical-align: middle;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto; }
+  .post-content .align-left {
+    margin-right: 1rem; }
+  .post-content .align-right {
+    margin-left: 1rem; }
+  .post-content pre {
+    padding: 0 1rem 1rem;
+    background: var(--bs-secondary-bg); }
+    .post-content pre code {
+      background: transparent; }
+
+.align-left {
+  float: left;
+  margin-bottom: 25px;
+  max-width: 50%;
+  margin: .5em 1em .5em 0; }
+
+.align-right {
+  float: right;
+  margin-bottom: 25px;
+  max-width: 50%;
+  margin: .5em 0 .5em 1em; }
+
+.align-center {
+  margin-left: auto;
+  margin-right: auto; }
+
+img.align-center {
+  display: block; }
+
+figure.align-center {
+  display: table; }
+
+.tags, .comments-form, .post-comments {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto; }

@@ -1,0 +1,53 @@
+@@include('../_includes/html-head.html', {"title": "Landing - Cart", "path":"../"})
+
+
+<body class="page">
+	
+	@@include('../_includes/header.html')
+
+	<!--
+	<section class="inner-page-hero" data-v-component-post>
+		 <div>
+			<div class="title-container">
+				<div class="container">
+					<h1 data-v-post-name>Post title</h1>
+			
+					
+				</div>
+			</div>
+		   
+			
+		</div>
+	</section>
+	-->
+	
+    <main id="site-content">
+
+        <div class="container">
+			@@include('../_includes/notifications.html')
+		
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div>
+						
+                        <div class="text-center p-4">
+							
+							<h1 class="display-2"><span class="la la-check bg-success text-white" style="border-radius:100px;  width: 80px;height: 80px;display: inline-block;font-size: 80%;"></span> Thank you!</h1>
+							<h3 class="leaad">Your order <span class="text-success">#<span data-v-order_id>108</span></span> has been placed!</h3>
+							<p class="text-muted">We will keep you updated on your order status.</p>
+							
+							<p class="mt-4"><a href="/" class="btn btn-success">Continue shopping <i class="la la-arrow-right"></i></a></p>
+						   
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+	@@include('../_includes/footer.html')
+	 
+	@@include('../_includes/footer-scripts.html')    
+  	
+</body>
+</html>

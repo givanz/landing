@@ -1,0 +1,49 @@
+<h6>Payment</h6>
+<div id="accordion" name="accordion" role="tablist" class="accordion mb-3"  data-v-component-checkout-payment>
+	
+	<div class="accordion-item" data-v-payment>
+		<div class="accordion-header" role="tab">
+			  <label class="form-check-label accordion-button collapsed" aria-expanded="false" role="button">
+				<input class="form-check-input me-2" type="radio" name="payment_method" value="default" data-v-payment-name required>
+				<span data-v-payment-title>Default payment</span>
+			  </label>                                        
+		</div>
+
+		<div class="collapse" role="tabpanel">
+			<div class="accordion-body">
+				<p><span data-v-payment-description>Payment description</span></p>
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item" data-v-payment>
+		<div class="accordion-header" role="tab">
+			  <label class="form-check-label accordion-button collapsed" aria-expanded="false" role="button">
+				<input class="form-check-input me-2" type="radio" name="payment_method" value="default" data-v-payment-name required>
+				<span data-v-payment-title>Credit card payment</span>
+			  </label>                                        
+		</div>
+
+		<div class="collapse" role="tabpanel">
+			<div class="accordion-body">
+				<p><span data-v-payment-description>Credit cart description</span></p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="alert alert-warning d-flex alert-dismissable" role="alert" data-v-if="count < 1">
+		<div class="icon align-middle me-2">
+			<i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+		</div>
+		<div class="flex-grow-1 align-self-center text-small" >
+			No payment methods enabled!
+		</div>
+		
+		<button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">
+				<!-- <i class="la la-times"></i> -->
+			</span>
+		</button>
+		
+	</div>	
+</div>

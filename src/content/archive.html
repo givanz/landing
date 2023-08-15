@@ -1,0 +1,51 @@
+@@include('../_includes/html-head.html', {"title": "Landing - archive", "path":"../"})
+
+<body class="archive">
+
+@@include('../_includes/header.html')
+
+<section class="inner-page-hero">
+	 <div>
+		<div class="title-container">
+			<div class="container">
+				<h1 data-v-if="this.month"><span>Month</span>: <span data-v-month_name>6</span> <span data-v-year>2023</span></h1>
+				<h1 data-v-if-not="this.month"><span>Year</span>: <span data-v-year>2023</span></h1>
+			</div>
+		</div>	   
+		
+		<!-- img data-v-post-image src="img/bg-img/bg-7.jpg" alt="" -->
+	</div>
+</section>
+
+<main id="site-content" role="main">
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-7 col-lg-8 col-xl-9" data-v-component-posts="tag" data-v-limit="10" data-v-year="url" data-v-month="url" data-v-image_size="large">
+
+		@@include('../_includes/blog-post.html', {"class": " post-archive-item post"})
+		
+		@@include('../_includes/pagination.html', {"component": "posts", "component-index":0})
+
+	  </div>
+
+	  @@include('../_includes/sidebar.html', {"cols": "col-md-5 col-lg-4 col-xl-3"})
+
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+</main>	
+
+@@include('../_includes/footer.html')
+
+@@include('../_includes/footer-scripts.html')
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+@@include('./_includes/html-head.html', {"title": "Landing - Internal server error", "path":""})
+
+<body class="error-500">
+	
+	@@include('./_includes/header.html')
+	
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-4 m-4">
+					<h1>Internal server error!</h1>
+						<br/>
+					
+						
+					<p>
+						The site is experiencing some dificulties, please try again, if the problem still persists please contact support.
+					</p>	
+					
+					
+					<div data-debug>
+						<h6>Error</h6>		
+						<div class="card">
+							<div class="card-body">
+								<p data-v-exception-message style="white-space: pre-wrap;">Message</p>
+							</div>		
+						</div>		
+
+						<h6>File</h6>		
+						<div class="card">
+							<div class="card-body">
+								<p data-v-exception-file>File</strong> on line <strong data-v-exception-line_no>1</p>
+							</div>
+						</div>
+							
+
+						<h6>Code</h6>		
+						<p data-v-exception-line></strong>
+						<div class="card">
+							<div class="card-body" data-v-exception-lines>
+								<p data-v-exception-line style="white-space: pre-wrap;">line</p>
+							</div>
+						</div>
+
+						<!-- div class="card">
+							<div class="card-body">
+								<p data-v-exception-code style="white-space: pre-wrap;"></p>
+							</div>						
+						</div -->						
+
+						<h6>Trace</h6>		
+						<div class="card">
+							<div class="card-body">
+								<p class="card-body" data-v-exception-trace style="white-space: pre-wrap;">Trace</p>
+							</div>
+						</div>
+					</div>
+            
+            
+                 </div>
+            </div>
+        </div>
+        
+        
+
+
+    @@include('./_includes/footer.html')   
+	 
+	@@include('./_includes/footer-scripts.html')    
+  	
+  	
+</body>
+</html>

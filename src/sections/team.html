@@ -1,0 +1,19 @@
+@@include('../_includes/html-head.html', {
+	"title": "Vvveb Landing - Section", 
+	"path": "../" 
+})
+
+
+<body>
+	  
+	  
+@@for (var i = 1; i <= 6; i++) {
+  @@include('./team/team-` + i + `.html')
+  <hr/>
+}
+
+
+@@include('../_includes/footer-scripts.html')
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+ <div class="container" data-v-if-not="this.global.user_id">
+
+		<div class="form-check mb-1 form-control-lg">
+		  <input class="form-check-input" type="checkbox" value="" id="login-form-check" onclick="$('#checkout-login-container').toggle()">
+		  <label class="form-check-label text-small" for="login-form-check">
+			I already have an account
+		  </label>
+		</div>
+
+		<div id="checkout-login-container" class="collapse">
+			<div data-v-component-user id="checkout-login-form" class="card p-4 mb-2">
+
+				<form action method="post" enctype="multipart/form-data">
+					
+					<input type="hidden" name="csrf" data-v-csrf>
+					
+					<div class="login-form col-12 mx-auto" data-v-if-not="component.user_id">
+						
+						<div class="row mb-3">
+							<label class="col-4 col-form-label" for="input-email">E-Mail Address</label>
+							<div class="col-8">
+								<input type="email" name="email" value placeholder="E-Mail Address" id="input-email" class="form-control" required>
+							</div>
+						</div>
+						
+						<div class="row mb-3">
+							<label class="col-4 col-form-label" for="login-password">Password</label>
+							<div class="col-8">
+								
+								<div class="input-group">
+								  <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password"  id="login-password" name="password"  value="" aria-label="Password" required>
+								  <div class="input-group-append">
+									<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this,'login-password')"><i class="la la-eye-slash"></i></button>
+								  </div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="text-end">
+						
+							<button type="submit" name="login" value="Login" class="btn btn-primary">
+								
+								<span class="loading d-none">
+									<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+									</span>
+									<span>Authenticating</span>...
+								</span>
+
+								<span class="button-text">
+									<span>Login</span> <i class="la la-arrow-right float-end ms-2"></i>
+								</span>
+							
+							</button>			
+									
+						</div>							
+					</div>							
+					
+				</form>
+			</div>
+		</div>
+</div>
+				

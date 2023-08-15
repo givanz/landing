@@ -1,0 +1,41 @@
+@@include('./_includes/html-head.html', {
+	"title": "Vvveb Landing - Blog", 
+	"path": "", 
+    "path": ""
+})
+
+
+@@include('./_includes/header.html')
+
+  <main id="site-content" role="main">
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Blog Entries Column col-md-7 col-lg-8 col-xl-9 -->
+        <div data-v-component-posts="popular" data-v-limit="3">
+
+         	@@include('./_includes/blog-post.html', {"class": " post-archive-item post"})
+
+		@@include('./_includes/pagination.html', {"component": "posts", "component-index":0})
+
+        </div>
+
+        <!-- @@include('../_includes/sidebar.html', {"cols": "col-md-4 col-lg-3 mt-4"})-->
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+  </main>
+
+@@include('./sections/footer/footer-1.html')
+
+@@include('./_includes/footer-scripts.html')
+
+</body>
+
+</html>

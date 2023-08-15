@@ -1,0 +1,41 @@
+@@include('../_includes/html-head.html', {"title": "Vvveb - User dashboard", "path":"../"})
+
+<body>
+	
+	@@include('../_includes/header.html')
+
+	<main id="site-content" role="main">
+
+
+        <div class="container my-5">
+            <div class="row">
+				<div class="col-md-3">
+				
+					 @@include('../_includes/user-sidebar.html')
+					 
+				</div>
+
+				<div class="col-md-9 justify-content-center border-start" data-v-component-user>
+					@@include('../_includes/notifications.html')
+				
+					<h2>
+						<span>Welcome</span>
+						<span class="fw-bold">
+							<span data-v-user-first_name data-filter-capitalize>John</span> 
+							<span data-v-user-last_name data-filter-capitalize>Doe<span>
+						<span>
+					</h2>
+					
+					<span>This is your user dashboard, you can view or manage your content or profile from the sidebar menu.</span>
+				</div>
+            </div>
+        </div>
+	</main>
+
+	@@include('../_includes/footer.html')
+
+	@@include('../_includes/footer-scripts.html')
+  	
+  	
+</body>
+</html>

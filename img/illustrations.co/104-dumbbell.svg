@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 1000 1000"
+   style="enable-background:new 0 0 1000 1000;"
+   xml:space="preserve"
+   sodipodi:docname="104-dumbbell.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"><metadata
+   id="metadata403"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs401" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="2560"
+   inkscape:window-height="1379"
+   id="namedview399"
+   showgrid="false"
+   inkscape:zoom="1.3350176"
+   inkscape:cx="324.20584"
+   inkscape:cy="255.51703"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#4E5A7D;}
+	.st2{fill:#FFF4B0;}
+	.st3{fill:none;stroke:#4E5A7D;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{opacity:0.2;}
+	.st5{fill:none;stroke:#592D2D;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:#D16F6F;}
+	.st7{fill:#E08484;}
+	.st8{fill:#D87171;}
+	.st9{fill:#E99697;}
+	.st10{fill:#C46565;}
+	.st11{fill:none;stroke:#4E5A7D;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st12{fill:none;stroke:#4E5A7D;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+
+
+<path
+   id="XMLID_52_"
+   class="st2"
+   d="M364.7,760.3c-122.9-0.1-207.3-182.2-210.3-191.2c-9.7-28.9-40.1-118.8,5.4-207.3  C216,252.7,356.8,206,448.4,237.3c62.3,21.2,53.6,62,133.5,100.5c97.6,46.9,153.4,6.8,202.2,50.9c51.1,46.1,50.8,145.2,24.2,210.9  c-36.3,89.6-76.2,143.2-165.1,160.8C568.6,760.5,466.5,760.4,364.7,760.3z" />
+<line
+   id="XMLID_51_"
+   class="st3"
+   x1="237.9"
+   y1="760.5"
+   x2="717.8"
+   y2="760.5" />
+<line
+   id="XMLID_50_"
+   class="st3"
+   x1="744.9"
+   y1="760.5"
+   x2="794.3"
+   y2="760.5" />
+<line
+   id="XMLID_49_"
+   class="st3"
+   x1="183.4"
+   y1="760.5"
+   x2="218"
+   y2="760.5" />
+<line
+   id="XMLID_48_"
+   class="st3"
+   x1="811.7"
+   y1="760.5"
+   x2="820.2"
+   y2="760.5" />
+<g
+   id="XMLID_40_"
+   class="st4">
+	<polyline
+   id="XMLID_47_"
+   class="st5"
+   points="455.1,501.9 455.1,532.8 393.3,532.8  " />
+	<polyline
+   id="XMLID_46_"
+   class="st5"
+   points="517,532.8 455.1,532.8 455.1,501.9  " />
+	<rect
+   id="XMLID_45_"
+   x="424.2"
+   y="532.8"
+   class="st5"
+   width="61.9"
+   height="30.9" />
+	<polyline
+   id="XMLID_44_"
+   class="st5"
+   points="472.7,594.6 455.1,594.6 455.1,563.7 517,563.7  " />
+	<polyline
+   id="XMLID_43_"
+   class="st5"
+   points="393.3,563.7 455.1,563.7 455.1,594.6 405,594.6  " />
+	<polyline
+   id="XMLID_42_"
+   class="st5"
+   points="372.2,532.8 424.2,532.8 424.2,563.7 393.3,563.7  " />
+	<polyline
+   id="XMLID_41_"
+   class="st5"
+   points="530.7,563.7 486,563.7 486,532.8 507.5,532.8  " />
+</g>
+<ellipse
+   id="XMLID_39_"
+   class="st3"
+   cx="329.9"
+   cy="675.9"
+   rx="24"
+   ry="44.3" />
+<path
+   id="XMLID_38_"
+   class="st0"
+   d="M299.1,686.1h-13.7c-6.1,0-11-4.9-11-11v-3.5c0-6.1,4.9-11,11-11h13.7V686.1z" />
+<path
+   id="XMLID_37_"
+   class="st3"
+   d="M299.1,686.1h-13.7c-6.1,0-11-4.9-11-11v-3.5c0-6.1,4.9-11,11-11h13.7V686.1z" />
+<path
+   id="XMLID_36_"
+   class="st6"
+   d="M322.7,634.4h-19.1c-9.3,0-16.8,17.4-16.8,39c0,21.5,7.5,39,16.8,39c0.3,0,0.7,0,1-0.1h18.1  V634.4z" />
+<path
+   id="XMLID_35_"
+   class="st3"
+   d="M322.7,634.4h-19.1c-9.3,0-16.8,17.4-16.8,39c0,21.5,7.5,39,16.8,39c0.3,0,0.7,0,1-0.1h18.1  V634.4z" />
+<path
+   id="XMLID_34_"
+   class="st7"
+   d="M404.2,586.3h-53.6c-26,0-47.1,39-47.1,87.1c0,48.1,21.1,87.1,47.1,87.1c0.9,0,1.9-0.1,2.8-0.2  h50.8V586.3z" />
+<path
+   id="XMLID_33_"
+   class="st7"
+   d="M404.2,586.3h-53.6c-26,0-47.1,39-47.1,87.1c0,48.1,21.1,87.1,47.1,87.1c0.9,0,1.9-0.1,2.8-0.2  h50.8V586.3z" />
+<path
+   id="XMLID_32_"
+   class="st7"
+   d="M404.2,586.3h-53.6c-26,0-47.1,39-47.1,87.1c0,48.1,21.1,87.1,47.1,87.1c0.9,0,1.9-0.1,2.8-0.2  h50.8V586.3z" />
+<path
+   id="XMLID_31_"
+   class="st8"
+   d="M320.9,740.9c8.1,12.2,18.5,19.5,29.7,19.5c0.9,0,1.9-0.1,2.8-0.2h50.8v-19.3H320.9z" />
+<path
+   id="XMLID_30_"
+   class="st9"
+   d="M320.4,606.5h83.8v-20.3h-53.6C339.1,586.3,328.5,593.9,320.4,606.5z" />
+<path
+   id="XMLID_29_"
+   class="st3"
+   d="M404.2,586.3h-53.6c-26,0-47.1,39-47.1,87.1c0,48.1,21.1,87.1,47.1,87.1c0.9,0,1.9-0.1,2.8-0.2  h50.8V586.3z" />
+<ellipse
+   id="XMLID_28_"
+   class="st8"
+   cx="405.6"
+   cy="673.4"
+   rx="47.1"
+   ry="87.1" />
+<ellipse
+   id="XMLID_27_"
+   class="st3"
+   cx="405.6"
+   cy="673.4"
+   rx="47.1"
+   ry="87.1" />
+<ellipse
+   id="XMLID_26_"
+   class="st1"
+   cx="405.6"
+   cy="673.4"
+   rx="9.2"
+   ry="20.4" />
+<ellipse
+   id="XMLID_25_"
+   class="st10"
+   cx="405.6"
+   cy="673.4"
+   rx="33.1"
+   ry="70.4" />
+<ellipse
+   id="XMLID_24_"
+   class="st6"
+   cx="405.6"
+   cy="673.4"
+   rx="17.2"
+   ry="33.1" />
+<ellipse
+   id="XMLID_23_"
+   class="st11"
+   cx="405.6"
+   cy="673.4"
+   rx="17.2"
+   ry="33.1" />
+<ellipse
+   id="XMLID_22_"
+   class="st3"
+   cx="405.6"
+   cy="673.4"
+   rx="9.2"
+   ry="20.4" />
+<ellipse
+   id="XMLID_21_"
+   class="st1"
+   cx="405.6"
+   cy="673.4"
+   rx="9.2"
+   ry="20.4" />
+<ellipse
+   id="XMLID_20_"
+   class="st11"
+   cx="405.6"
+   cy="673.4"
+   rx="33.1"
+   ry="70.4" />
+<path
+   id="XMLID_19_"
+   class="st0"
+   d="M404.1,660.7c-1.3,3.4-2.2,7.8-2.2,12.6c0,4.9,0.9,9.2,2.2,12.6c0.6,0.1,1.2,0.2,1.8,0.2h174  v-25.6h-174C405.2,660.6,404.7,660.6,404.1,660.7z" />
+<path
+   id="XMLID_18_"
+   class="st3"
+   d="M404.1,660.7c-1.3,3.4-2.2,7.8-2.2,12.6c0,4.9,0.9,9.2,2.2,12.6c0.6,0.1,1.2,0.2,1.8,0.2h174  v-25.6h-174C405.2,660.6,404.7,660.6,404.1,660.7z" />
+<path
+   id="XMLID_17_"
+   class="st7"
+   d="M651,586.3h-53.6c-26,0-47.1,39-47.1,87.1c0,48.1,21.1,87.1,47.1,87.1c0.9,0,1.9-0.1,2.8-0.2  H651V586.3z" />
+<path
+   id="XMLID_16_"
+   class="st8"
+   d="M569.2,740.9c8.1,12.2,18.5,19.5,29.7,19.5c0.9,0,1.9-0.1,2.8-0.2h50.8v-19.3H569.2z" />
+<path
+   id="XMLID_15_"
+   class="st9"
+   d="M568.6,606.5h83.8v-20.3h-53.6C587.4,586.3,576.8,593.9,568.6,606.5z" />
+<path
+   id="XMLID_14_"
+   class="st3"
+   d="M651,586.3h-53.6c-26,0-47.1,39-47.1,87.1c0,48.1,21.1,87.1,47.1,87.1c0.9,0,1.9-0.1,2.8-0.2  H651V586.3z" />
+<ellipse
+   id="XMLID_13_"
+   class="st7"
+   cx="652.5"
+   cy="673.4"
+   rx="47.1"
+   ry="87.1" />
+<ellipse
+   id="XMLID_12_"
+   class="st8"
+   cx="652.5"
+   cy="673.4"
+   rx="47.1"
+   ry="87.1" />
+<ellipse
+   id="XMLID_11_"
+   class="st3"
+   cx="652.5"
+   cy="673.4"
+   rx="47.1"
+   ry="87.1" />
+<ellipse
+   id="XMLID_10_"
+   class="st1"
+   cx="652.5"
+   cy="673.4"
+   rx="9.2"
+   ry="20.4" />
+<ellipse
+   id="XMLID_9_"
+   class="st10"
+   cx="652.5"
+   cy="673.4"
+   rx="33.1"
+   ry="73.1" />
+<ellipse
+   id="XMLID_8_"
+   class="st11"
+   cx="652.5"
+   cy="673.4"
+   rx="33.1"
+   ry="73.1" />
+<path
+   id="XMLID_7_"
+   class="st7"
+   d="M684.6,639.6h-22c-10.7,0-19.4,15.8-19.4,35.3c0,19.5,8.7,35.3,19.4,35.3c0.4,0,0.8,0,1.2-0.1  h20.9V639.6z" />
+<path
+   id="XMLID_6_"
+   class="st3"
+   d="M682.2,639.6H662c-9.8,0-17.8,15.8-17.8,35.3c0,19.5,8,35.3,17.8,35.3c0.4,0,0.7,0,1.1-0.1h19.2  V639.6z" />
+<ellipse
+   id="XMLID_5_"
+   class="st7"
+   cx="682.7"
+   cy="674.9"
+   rx="16.9"
+   ry="35.3" />
+<ellipse
+   id="XMLID_4_"
+   class="st3"
+   cx="681.8"
+   cy="674.9"
+   rx="17.8"
+   ry="35.3" />
+<path
+   id="XMLID_3_"
+   class="st0"
+   d="M691.7,687.7L691.7,687.7c6.1,0,11-4.9,11-11v-3.5c0-6.1-4.9-11-11-11l0,0  c-5.6,0-10.1,4.5-10.1,10.1v5.4C681.6,683.2,686.1,687.7,691.7,687.7z" />
+<path
+   id="XMLID_2_"
+   class="st3"
+   d="M691.7,687.7L691.7,687.7c6.1,0,11-4.9,11-11v-3.5c0-6.1-4.9-11-11-11l0,0  c-5.6,0-10.1,4.5-10.1,10.1v5.4C681.6,683.2,686.1,687.7,691.7,687.7z" />
+<path
+   id="XMLID_1_"
+   class="st12"
+   d="M405.1,615.9h-3.8v5.9h2.8h-0.2c2.2,0,3.9,2.2,3.9,4.9s-1.8,4.9-3.9,4.9c-1.6,0-2.9-1.1-3.5-2.8  " />
+</svg>

@@ -1,0 +1,85 @@
+@@include('../_includes/html-head.html', 
+	{"title": "Blog Post Page - Vvveb Default Blog Template", "path":"../", "meta": "meta/post.html"}
+)
+
+<body class="post">
+
+
+<section class="hero" data-v-component-post="post" data-bs-theme="dark">
+
+	 <div class="site-header vh-100 post">
+
+		@@include('../_includes/header.html')
+
+		<div class="title-container">
+			<div class="container">
+				<h1 class="display-5 text-center" data-aos="fade-up" data-aos-duration="500" data-v-post-name>Begin each day by telling yourself</h1>	
+				
+				<h5 class="text-center my-4 mb-5 w-50 mx-auto" data-aos="fade-up" data-aos-duration="500" data-v-post-excerpt>Today I shall be meeting with interference, ingratitude, insolence, disloyalty, ill-will, and selfishness all of them due to the offenders` ignorance of what is good or evil.</h5>	
+				<ul class="post-meta" data-aos="fade-up" data-aos-duration="200">
+
+					<li class="post-author meta-wrapper">
+							<span class="meta-icon">
+								<span class="screen-reader-text">Post author</span>
+									<i class="la la-user"></i>
+								</span>
+							<span class="meta-text">
+								By <a href="#" data-v-post-author-url><span data-v-post-display_name>admin</span></a>						
+							</span>
+						</li>
+						
+						<li class="post-date meta-wrapper">
+							<span class="meta-icon">
+								<span class="screen-reader-text">Post date</span>
+
+									<i class="la la-calendar"></i>
+								</span>
+							<span class="meta-text">
+								<a href="#" data-v-post-url><span data-v-post-date_added data-filter-friendly_date>December 31, 2020</span></a>
+							</span>
+						</li>
+							<li class="post-comment-link meta-wrapper">
+							<span class="meta-icon">
+								<i class="la la-comment"></i>
+							</span>
+							<span class="meta-text">
+								<a href="#comments" data-v-post-comments-url><span data-v-post-comment_text>0 Comments</span></a>
+							</span>
+						</li>
+						
+				</ul>
+
+				
+			</div>
+		</div>
+	   
+		
+		<div  class="background">
+			<img data-v-post-image src="http://placehold.it/1200x800" alt="" loading="lazy" data-aos="fade-up" data-aos-duration="500">
+		</div>
+	</div>
+</section>
+
+
+<main id="site-content" role="main"  data-v-component-post="post">
+	
+
+	  <!-- Blog Entries Column col-md-8 col-lg-9 -->
+	  <div>
+
+		@@include('../_includes/blog-post-single.html', {"class": " post-archive-item post"})
+
+	  </div>
+
+		<!--@@include('../_includes/sidebar.html', {"cols": "col-md-4 col-lg-3 mt-4"})-->
+</main>	
+
+  
+@@include('../_includes/footer.html')
+
+@@include('../_includes/footer-scripts.html')
+
+</body>
+
+</html>
+

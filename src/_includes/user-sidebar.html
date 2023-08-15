@@ -1,0 +1,50 @@
+<ul class="nav flex-column nav-pills me-4 user-nav">
+  <li class="nav-item">
+	<a class="nav-link" href="user" data-v-url="user/index" ><i class="la la-tachometer-alt me-2"></i>Dashboard</a>
+  </li>  
+  <li class="nav-item">
+	<a class="nav-link" href="user/orders" data-v-url="user/orders/index"><i class="la la-shopping-bag me-2"></i>Your Orders</a>
+  </li>
+  <li class="nav-item">
+	<a class="nav-link" href="user/profile" data-v-url="user/profile/index"><i class="la la-cogs me-2"></i>Settings</a>
+  </li>
+  <li class="nav-item">
+	<a class="nav-link" href="user/address" data-v-url="user/address/index"><i class="la la-map-pin me-2"></i>Address</a>
+  </li>
+  <li class="nav-item">
+	<a class="nav-link" href="user/downloads" data-v-url="user/downloads/index"><i class="la la-download me-2"></i>Downloads</a>
+  </li>
+  <li class="nav-item">
+	<a class="nav-link" href="user/comments" data-v-url="user/comments/index"><i class="la la-comment me-2"></i>Comments</a>
+  </li>
+  <!--	
+  <li class="nav-item">
+	<a class="nav-link" href="user/notifications" data-v-url="user/notifications/index"><i class="la la-bell me-2"></i>Notification</a>
+  </li>
+  -->
+  <li class="nav-item">
+	<hr>
+  </li>
+  <li class="nav-item">
+  
+  	<form action method="post" enctype="multipart/form-data" data-v-url="user/login/index" data-selector="body">
+
+		<input type="hidden" name="logout">
+	
+		<button type="submit" value="logout" class="btn nav-link">
+			
+			<span class="loading d-none">
+				<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+				</span>
+				<span>Loading ...</span>...
+			</span>
+
+			<span class="button-text">
+				<i class="la la-sign-out-alt me-2"></i>Log out</a>
+			</span>
+		
+		</button>	
+	</form>
+  
+  </li>
+</ul>

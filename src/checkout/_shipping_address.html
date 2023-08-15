@@ -1,0 +1,70 @@
+<div class="form-check mb-1 form-control-lg">
+  <input class="form-check-input" type="checkbox" value="true" id="shipping-form-check" name="different_shipping_address" onclick="toggleShippingAddress(this)">
+  <label class="form-check-label text-small" for="shipping-form-check">
+	 Ship To A Different Address
+  </label>
+</div>
+
+<div id="checkout-shipping-container" class="shipping_address mb-2">
+	<h5>Shipping Address</h5>
+
+	<div class="row">
+	  <div class="mb-3 col-6" id="first_name_group">
+			<label class="col-form-label" for="first_name">First Name <span class="text-danger text-small">*</span></label>
+			<input type="text" class="form-control" id="first_name" name="shipping_address[first_name]" value="" minlength="3" required>
+		</div>
+		<div class="mb-3 col-6" id="last_name_group">
+			<label class="col-form-label" for="last_name">Last Name <span class="text-danger text-small">*</span></label>
+			<input type="text" class="form-control" id="last_name" name="shipping_address[last_name]" value="" minlength="3" required>
+		</div>
+		<div class="mb-3 col-12 mb-3" id="email_group">
+			<label class="col-form-label" for="email">Email Address <span class="text-danger text-small">*</span></label>
+			<input type="email" class="form-control" id="email" name="shipping_address[email]" value="" required>
+		</div>                            
+		<div class="mb-3 col-12 mb-3" id="company_group">
+			<label class="col-form-label" for="company">Company Name</label>
+			<input type="text" class="form-control" id="company" name="shipping_address[company]" value="">
+		</div>
+		<div class="col-12 mb-3">
+			<label class="col-form-label" for="country">Country <span class="text-danger text-small">*</span></label>
+			<select class="form-select" id="shipping_country_id" name="shipping_address[country_id]" data-v-countries readonly>
+			  <option value="1" data-v-country data-v-country-country_id>
+				<span data-v-country-name>Country 1</span>
+			  </option>
+			  <option value="2" data-v-country data-v-country-country_id>
+				<span data-v-country-name>Country 2</span>
+			  </option>
+			</select>
+		</div>	
+		<div class="col-12 mb-3">
+			<label class="col-form-label" for="country">Region <span class="text-danger text-small">*</span></label>
+			<select class="form-select" id="shipping_zone_id" name="shipping_address[zone_id]" data-v-zones readonly>
+			  <option value="1" data-v-option>Zone 1</option>
+			  <option value="2" data-v-option>Zone 2</option>
+			  <option value="3" data-v-option>Zone 3</option>
+			</select>
+		</div>
+		<div class="col-12 mb-3">
+			<label class="col-form-label" for="street_address">Address <span class="text-danger text-small">*</span></label>
+			<input type="text" class="form-control mb-3" id="shipping_shipping_address_1" name="shipping_address[address_1]" value="" placeholder="Street address" minlength="5" required>
+			<input type="text" class="form-control" id="shipping_shipping_address_2" name="shipping_address[address_2]" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="">
+		</div>
+		<div class="col-12 mb-3">
+			<label class="col-form-label" for="postcode">Postcode <span class="text-danger text-small">*</span></label>
+			<input type="text" class="form-control" id="shipping_postcode" name="shipping_address[postcode]" minlength="3" value="">
+		</div>
+		<div class="col-12 mb-3">
+			<label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span></label>
+			<input type="text" class="form-control" id="shipping_city" name="shipping_address[city]" minlength="3" value="">
+		</div>
+		<div class="col-12 mb-3">
+			<label class="col-form-label" for="state">Province <span class="text-danger text-small">*</span></label>
+			<input type="text" class="form-control" id="shipping_zone_id" name="shipping_address[zone_id]" minlength="3" value="">
+		</div>
+		<div class="col-12 mb-3">
+			<label class="col-form-label" for="phone_number">Phone No <span class="text-danger text-small">*</span></label>
+			<input type="text" class="form-control" id="phone_number" name="shipping_address[phone_number]" min="0" placeholder="Phone number" minlength="3" value="">
+		</div>
+
+	</div>
+</div>

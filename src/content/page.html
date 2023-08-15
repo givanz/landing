@@ -1,0 +1,68 @@
+@@include('../_includes/html-head.html', {
+	"title": "Vvveb Themes - Page", 
+	"path": "", 
+	"path":"../",
+	'google_fonts':'',
+	'style':"",
+})
+
+<body class="page">
+	
+	@@include('../_includes/header.html')
+	
+	<section class="inner-page-hero" data-v-component-post>
+		 <div>
+			<div class="title-container">
+				<div class="container">
+					<h1 data-v-post-name>Vvveb CMS</h1>
+					
+					@@include('../_includes/breadcrumb.html')
+				</div>
+			</div>
+		   
+			
+			<!-- img data-v-post-image src="img/bg-img/bg-7.jpg" alt="" -->
+		</div>
+	</section>
+	
+    <main id="site-content" data-v-component-post>
+
+        <!-- Single Blog Post Thumb -->
+		<!-- 
+        <div class="inner-page-hero" data-v-if="post.img">
+			<div class="title-container">
+				<h1 data-v-post-name>Post title</h1>
+			</div>
+            <img data-v-post-img src="img/bg-img/bg-7.jpg" alt="">
+        </div>
+		-->
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div>
+						<!--
+						<h1 class="text-center" data-v-if-not="post.img" data-v-post-name>Page title</h1>
+						-->
+						
+						<img class="img-fluid w-100 my-5" src="http://placehold.it/1500x500" alt="Card image cap" data-aos="zoom-in-up" data-aos-duration="500" loading="lazy" data-v-post-image data-v-if="post.image">						
+						
+                        <div data-v-post-content>
+                            <h2>The next generation website builder</h2>
+                            <p>Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
+							<p>The html for sections blocks and components and this template are built using Bootstrap 5.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+	@@include('../_includes/footer.html')
+	 
+	@@include('../_includes/footer-scripts.html')    
+  	
+  	
+</body>
+</html>

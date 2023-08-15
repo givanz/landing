@@ -1,0 +1,29 @@
+@@include('../_includes/html-head.html', {"title": "Landing - Cart", "path":"../"})
+
+<body>
+	
+  @@include('../_includes/header.html')
+
+  <section class="confirmation py-5">
+
+	<div data-if="order.id_order">	
+		<div class="container text-center">
+			
+			@@include('../_includes/notifications.html')
+
+
+			<h1>Your order <span class="text-success">#4458</span> has been placed!</h1>
+			<p>You will soon receive an email to inform you of the status of your order once it's processed.</p>
+			<a href="/" class="btn btn-success">Continue shopping <i class="la la-arrow-right"></i></a>
+		</div>
+	</div>
+  </section>
+		
+
+    @@include('../_includes/footer.html')   
+	 
+	@@include('../_includes/footer-scripts.html')    
+  	
+  	
+</body>
+</html>

@@ -1,0 +1,92 @@
+<section title="contact-form-6" class="contact-form-6">
+  <div class="container-fluid g-0">
+
+	<div style="height:300px" data-component-maps>
+		<iframe loading="lazy" frameborder="0" src="https://maps.google.com/maps?q=Bucharest&z=15&t=q&key=&output=embed" width="100%" height="100%" style="width:100%;height:100%;left:0px">
+		</iframe>
+	</div>
+
+  </div>
+  <div class="container">
+	<div class="row my-5">
+	  <div class="col-12 col-md-6 col-lg-5">
+		<h2>Contact Us</h2>
+		<p class="lead">
+		  Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.
+		</p>
+
+		<p class="lead">
+		  The html for sections blocks and components and this template are built using Bootstrap 5.
+		</p>
+		
+		<div data-v-component-site>
+			<p class="mt-5">
+			  <span><i class="la la-lg la-envelope"></i> Email:</span>
+			  <span data-v-if="site.contact-email">
+				<a href="mailto:contact@mysite.com" data-v-site-contact-email>
+					<span data-v-site-contact-email>contact@mysite.com</span>
+				</a>
+			  </span>
+			</p>
+			<p class="">
+			  <span><i class="la la-lg la-phone"></i> Phone:</span> 
+			  <a href="tel:5511112377" data-v-site-phone-number>
+				<span data-v-site-phone-number>+55 (111) 123 777</span>
+			  </a>
+			</p>
+		</div>
+	  </div>
+
+	  <div class="col-12 col-md-6 ms-auto" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-home">
+	  
+		@@include('../../_includes/notifications.html')
+	  
+		<form action="" method="post">
+  		  <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
+		
+		  <div class="row">
+			<div class="col">
+			  <input type="text" class="form-control" placeholder="First name" name="firstname" required>
+			</div>
+			<div class="col">
+			  <input type="text" class="form-control" placeholder="Last name" name="lastname" required>
+			</div>
+		  </div>
+
+		  <div class="row mt-4">
+			<div class="col">
+			  <input type="email" class="form-control" placeholder="Enter email" name="email" required>
+			</div>
+		  </div>
+
+		  <div class="row mt-4">
+			<div class="col">
+			  <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+			</div>
+		  </div>
+		  <div class="row mt-4">
+			<div class="col">
+			  <textarea class="form-control" name="message" rows="3" placeholder="How can we help?" required></textarea>
+			</div>
+		  </div>
+	  
+
+		 <!-- if these hidden inputs are filled then ignore, robots -->
+
+		 <input type="text" class="form-control d-none" placeholder="Contact form" name="contact-form" >	
+		 
+		 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+		 
+		 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">	
+		 
+	  
+		  <div class="row mt-4">
+			<div class="col">
+			  <button type="submit" class="btn btn-primary">Submit <i class="la la-long-arrow-alt-right ms-1"></i></button>
+			</div>
+		  </div>
+		</form>
+	  </div>
+	</div>
+  </div>
+</section>

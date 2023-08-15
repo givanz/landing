@@ -1,0 +1,78 @@
+// Varibles
+$main-font: "Roboto", sans-serif;
+$primary-color: #57e2b2;
+$light-gray: #f8f8f8;
+$main-font-color: #808080;
+$main-font-weight: 300;
+
+.pricing-table-8 {
+
+	.card {
+	  border: 0;
+	  border-radius: 0px;
+	  -webkit-box-shadow: 0 3px 0px 0 rgba(var(--bs-body-color-rgb), 0.08);
+	  box-shadow: 0 3px 0px 0 rgba(var(--bs-body-color-rgb), 0.08);
+	  transition: all 0.3s ease-in-out;
+	  padding: 2.25rem 0;
+	  position: relative;
+	  will-change: transform;
+
+	  &:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0%;
+		height: 5px;
+		background-color: $primary-color;
+		transition: 0.5s;
+	  }
+
+	  & .card-header {
+		background-color: white;
+		padding-left: 2rem;
+		border-bottom: 0px;
+	  }
+	  & .card-title {
+		margin-bottom: 1rem;
+	  }
+	  & .card-block {
+		padding-top: 0;
+	  }
+	  & .list-group-item {
+		border: 0px;
+		padding: 0.25rem;
+		color: $main-font-color;
+		font-weight: $main-font-weight;
+	  }
+	}
+
+	// Price
+	.display-2 {
+	  font-size: 7rem;
+	  letter-spacing: -0.5rem;
+	  & .currency {
+		font-size: 2.75rem;
+		position: relative;
+		font-weight: $main-font-weight + 100;
+		top: -45px;
+		letter-spacing: 0px;
+	  }
+	  & .period {
+		font-size: 1rem;
+		color: lighten($main-font-color, 20%);
+		letter-spacing: 0px;
+	  }
+	}
+
+
+	.btn-gradient {
+	  background-color: #f2f2f2;
+	  transition: background 0.3s ease-in-out;
+
+	  &:hover {
+		color: white;
+		background-color: $primary-color;
+	  }
+	}
+}

@@ -1,0 +1,145 @@
+#cart-container {
+	.cart-right-column {
+		> .card  {
+			position:sticky;
+			top:100px;
+		}
+	}
+}
+
+.cart-table {
+	
+	th {
+		/*color:$gray-600;*/
+		font-size:85%;
+		font-weight:500;
+		padding:0.5rem 1.5rem;
+	}
+	
+	td strong {
+		/*color:$gray-600;*/
+		font-size:85%;
+	}
+	
+	tr:last-child td {
+		border-width:0;
+	}
+	
+	.price {
+		font-size:85%;
+		color:var(--bs-secondary);
+	}
+	
+	.btn-remove {
+		color:var(--bs-secondary-color);
+		i {
+			color:var(--bs-primary-border-subtle);
+		}
+		&:hover {
+			color:var(--bs-danger);
+			i {
+				visibility:visible;
+				color:var(--bs-danger);
+			}
+			
+		}
+	}
+	
+	/*	
+	input.form-control[type=number] {
+		width: 30px;
+		font-size:14px;
+		-webkit-appearance: none; 
+		appearance: none; 
+		box-shadow:none;
+	 
+		 &:focus {
+			outline: none;
+		}
+		
+		 &::-webkit-inner-spin-button,
+		 &::-webkit-outer-spin-button {
+			 -webkit-appearance: none; 
+			 appearance: none; 
+		}
+	}
+	*/
+	.mini-cart & {
+		font-size:14px;
+	}
+
+}
+
+
+.quantity {
+	//width:140px;
+	font-size:85%;
+	display:inline-block;
+	
+	.input-group {
+		border:1px solid var(--bs-border-color);
+		border:1px solid var(--bs-light-border-subtle);
+		border-radius:4px;
+		
+		
+		input.form-control[type=number] {
+			width: 2rem;
+			border: none;
+			padding-left: 0;
+			padding-right: 0;
+			text-align:center;
+			-webkit-appearance: none; 
+			appearance: none; 
+			-moz-appearance: textfield;
+			box-shadow:none;
+		 
+			 &:focus {
+				outline: none;
+			}
+			
+			 &::-webkit-inner-spin-button,
+			 &::-webkit-outer-spin-button {
+				 -webkit-appearance: none; 
+				 appearance: none; 
+			}
+		}
+		
+		.btn {
+			border:none;
+			background:var(--bs-body-bg-color);
+			font-weight:bold;
+			
+			&:hover {
+				background:var(--bs-light-bg-subtle);
+				color:var(--bs-link-color);
+			}
+
+			i {
+				vertical-align:middle;
+				line-height:var(--bs-btn-line-height);
+			}
+
+			&.btn-sm {
+				i {
+					line-height:2;
+				}
+			}
+
+		}
+	}
+
+}
+
+
+.cart-total {
+	td {
+		font-weight:500;
+	}
+}
+
+.cart-box,
+.checkout-page [data-v-component-cart] {
+	.table-responsive {
+		max-height:320px;
+	}
+}

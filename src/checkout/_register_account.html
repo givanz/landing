@@ -1,0 +1,28 @@
+<div class="mb-3">
+	<div class="" data-v-if-not="this.global.user_id">
+	  <div class="form-check form-check-inline">
+		  <label class="form-check-label" for="register-account-check">
+			 <input class="form-check-input" type="radio" value="true" id="register-account-check" name="register" checked onclick="toggleRegister(this)">
+			 <span>Register account</span>
+		  </label>
+	  </div>
+	  
+	  <div class="form-check form-check-inline">
+		  <label class="form-check-label" for="guest-check">
+			 <input class="form-check-input" type="radio" value="false" id="guest-check" name="register" onclick="toggleRegister(this)">
+			 <span>Guest checkout</span>
+		  </label>
+		</div>
+	</div>
+
+	<div class="row mb-3 register-account" id="register-account" data-v-if-not="this.global.user_id">
+		<label class="col-form-label" for="register-password">Password</label>
+			
+		<div class="input-group">
+		  <input type="password" minlength="6" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password"  id="register-password" name="password"  value="" aria-label="Password" required>
+		  <div class="input-group-append">
+			<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this,'register-password')"><i class="la la-eye-slash"></i></button>
+		  </div>
+		</div>
+	</div>
+</div>

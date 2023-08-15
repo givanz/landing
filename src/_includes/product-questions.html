@@ -1,0 +1,207 @@
+<div id="questions" class="product-questions mt-4" data-v-component-questions>
+
+		<ol class="question-list list-unstyled mb-3">
+			<li class="question mb-4" data-v-question>
+
+					<div class="question-wrap d-flex ">
+
+						<figure class="question-author-avatar me-2">
+							<img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
+						</figure>
+
+						<div class="question-author">
+
+							<div class="question-author">
+								<a rel="external nofollow ugc" href="#" data-v-if="question.url"><span data-v-question-author>Maria Williams</span></a>
+								<span data-v-question-author data-v-if-not="question.url">Maria Williams</span>
+							</div>
+
+							<div class="question-meta text-small text-muted">
+								<span data-v-question-date_added data-filter-friendly_date>Jan 29, 2018</span>
+							</div>
+
+						</div>
+
+					</div>
+
+	
+					<div data-v-question-content>
+						<p>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
+					</div>
+
+					<div class="alert alert-light my-2 small" data-v-if="question.status = 0">
+						<div>Your question is awaiting moderation.</div>
+						<div>This is a pquestion, your question will be visible after it has been approved.</div>
+					</div>
+
+					<div class="reply">
+						<a href="#question-form" class="reply-btn" data-question_id="$question.question_id" data-question_author="$question.author" data-v-vvveb-action="replyTo">Reply <i class="la la-reply"></i></a>
+					</div>
+
+			</li>
+			<li class="question mb-4 level-2" data-v-question>
+
+					<div class="question-wrap d-flex ">
+
+						<figure class="question-author-avatar me-2">
+							<img src="http://placehold.it/60x60" alt="user" width="60" height="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
+						</figure>
+
+						<div class="question-author">
+
+							<div class="question-author">
+								<span data-v-question-author data-v-if-not="question.url">John doe</span>
+							</div>
+
+							<div class="question-meta text-small text-muted">
+								<span data-v-question-date_added data-filter-friendly_date>Jan 29, 2018</span>
+							</div>
+
+						</div>
+
+					</div>
+
+	
+					<div data-v-question-content>
+						<p>This is a reply question.</p>
+					</div>
+
+					<div class="alert alert-light my-2 small" data-v-if="question.status = 0">
+						<div>Your question is awaiting moderation.</div>
+						<div>This is a pquestion, your question will be visible after it has been approved.</div>
+					</div>
+
+					<div class="reply">
+						<a href="#question-form" class="reply-btn" data-question_id="$question.question_id" data-question_author="$question.author" data-v-vvveb-action="replyTo">Reply <i class="la la-reply"></i></a>
+					</div>
+
+			</li>
+			<li class="question mb-4" data-v-question>
+
+					<div class="question-wrap d-flex ">
+
+						<figure class="question-author-avatar me-2">
+							<img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
+						</figure>
+
+						<div class="question-author">
+
+							<div class="question-author">
+								<a rel="external nofollow ugc" href="#" data-v-if="question.url"><span data-v-question-author>Maria Williams</span></a>
+								<span data-v-question-author data-v-if-not="question.url">Maria Williams</span>
+							</div>
+
+							<div class="question-meta text-small text-muted">
+								<span data-v-question-date_added data-filter-friendly_date>Jan 29, 2018</span>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div data-v-question-content>
+						<p>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
+					</div>
+
+					<div class="alert alert-light my-2 small" data-v-if="question.status = 0">
+						<div>Your question is awaiting moderation.</div>
+						<div>This is a pquestion, your question will be visible after it has been approved.</div>
+					</div>
+
+					<div class="reply">
+						<a href="#question-form" class="reply-btn" data-question_id="$question.question_id" data-question_author="$question.author" data-v-vvveb-action="replyTo">Reply <i class="la la-reply"></i></a>
+					</div>
+
+			</li>
+		</ol>
+	</div>
+
+	
+   <div class="questions-form">
+
+	@@include('notifications.html')
+
+	<div>
+		<h5>Leave a reply</h5>
+		<span class="replyto" style="display:none"><h3>Reply to <b data-question-author>author</b></h3>
+			<a href="#question-form" class="reply-btn d-inline-block" data-question_id="0" data-v-vvveb-action="replyTo">
+			Cancel reply 
+			<i class="la la-window-close"></i></a>
+		</span>
+		
+		
+		<div class="loggedin mb-3" data-v-if="this.global.user_id">
+			<!--
+			<a href="#question-form" class="reply-btn d-inline-block" data-question_id="0" data-v-vvveb-action="replyTo">
+			Log out
+			<i class="la la-window-close"></i></a>
+			-->
+			
+			<form action method="product" enctype="multipart/form-data" data-v-url="user/login" data-selector=".product-questions">
+
+				<span>Logged in as <b data-v-global-user-display_name>author</b></span>
+
+				<input type="hidden" name="logout">
+			
+				<button type="submit" value="logout" class="btn link-primary">
+					
+					<span class="loading d-none">
+						<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+						</span>
+						<span>Loading ...</span>...
+					</span>
+
+					<span class="button-text">
+						Logout <i class="la la-sign-out-alt"></i></a>
+					</span>
+				
+				</button>	
+			</form>
+			
+		</div>
+
+		<form id="question-form" method="product" action="" data-v-vvveb-action="addquestion" data-v-vvveb-on="submit">
+			
+			<input type="hidden" name="product_id" data-v-product-product_id>
+			<input type="hidden" name="slug" data-v-product-slug>
+			<input type="hidden" name="parent_id" value="0">
+			<input type="hidden" name="csrf" data-v-csrf>
+			
+			   <!-- antibot do not fill -->	
+			  <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
+			
+			
+			  <div data-v-if-not="this.global.user_id">	
+				  <div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Name</label>
+					<input type="text" placeholder="Name" name="author" class="form-control" required>
+				  </div>
+				  <div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">Email address</label>
+					<input type="email" placeholder="Email" name="email" class="form-control" required>
+				  </div>
+			  </div>
+
+			  <div class="mb-3">
+				<textarea name="content" rows="5" cols="4" placeholder="question" class="form-control" required></textarea>
+			  </div>
+
+			<!-- if these hidden inputs are filled then ignore robots -->
+			 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+			 
+			 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">				  
+			  
+			  <button type="submit" value="question" class="btn btn-primary">
+			  <span class="loading d-none">
+					<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
+                        <span>producting</span>...
+                    </span>
+
+                    <span class="button-text">
+                        Post question
+                    </span>
+			  </button>
+			
+		</form>
+	</div>
+</div>

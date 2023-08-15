@@ -1,0 +1,77 @@
+@@include('../_includes/html-head.html', {"title": "Landing - Product listing", "path":"../"})
+
+<body>
+	
+	@@include('../_includes/header.html')
+	
+	
+	<main id="site-content" role="main">
+      <div class="container mt-5">
+
+      </div>
+      <div class="container">
+        <div class="row justify-content-between">
+		
+		
+         <div class="col-xl-3 d-none d-xl-block">
+			@@include('_sidebar.html')
+		 </div>
+		  
+          <div class="col-xl-9">
+
+			<div class="row g-3 g-md-5 align-items-end">
+			  <div class="col-md-6">
+				<h1 class="mb-2" data-v-manufacturer-name>Manufacturer name</h1>
+				
+				@@include('../_includes/breadcrumb.html')
+				
+			  </div>
+			  <div class="col-md-6 text-md-end">
+				<ul class="list-inline">
+				  <li class="list-inline-item">
+					<div class="dropdown">
+					  <a class="btn btn-light" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+						Price high to low <i class="la la-arrow-down"></i>
+					  </a>
+
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<li><a class="dropdown-item" href="#"><i class="la la-arrow-up"></i>&ensp; <span>Price high to low</span></a></li>
+						<li><a class="dropdown-item" href="#"><i class="la la-arrow-down"></i>&ensp; <span>Price low to high</span></a></li>
+						<li><a class="dropdown-item" href="#"><i class="la la-chart-line"></i>&ensp; <span>Popularity</span></a></li>
+						<li><a class="dropdown-item" href="#"><i class="la la-tags"></i>&ensp; <span>Sales</span></a></li>
+					  </ul>
+					</div>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+			
+            <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-page="url" data-v-manufacturer_id="url" data-v-image_size="medium">
+              <div class="col-md-6 col-xl-4" data-v-product>
+                <div class="product">
+				
+					@@include('../_includes/product-list-item.html')
+				
+				</div>
+                </div>             		
+			 </div>
+            
+				<div class="mt-4 py-2">
+				
+					@@include('../_includes/pagination.html', {"component": "products", "component-index":0})
+			
+				</div>
+			</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+   
+	@@include('../_includes/footer.html')   
+	 
+	@@include('../_includes/footer-scripts.html')    
+  	
+  	
+</body>
+</html>

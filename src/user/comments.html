@@ -1,0 +1,35 @@
+@@include('../_includes/html-head.html', {"title": "Vvveb - Comments", "path":"../"})
+
+<body>
+	
+	@@include('../_includes/header.html')
+
+	<main id="site-content" role="main">
+
+
+        <div class="container my-5">
+            <div class="row">
+				<div class="col-md-3">
+				
+					 @@include('../_includes/user-sidebar.html')
+					 
+				</div>
+
+				<div class="col-md-9 justify-content-center border-start" data-v-component-user>
+					@@include('../_includes/notifications.html')
+				
+					<h2>Comments</h2>
+					
+					<span>You don't have any comments.</span>
+				</div>
+            </div>
+        </div>
+	</main>
+
+	@@include('../_includes/footer.html')
+
+	@@include('../_includes/footer-scripts.html')
+  	
+  	
+</body>
+</html>

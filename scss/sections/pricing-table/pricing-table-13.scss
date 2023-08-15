@@ -1,0 +1,116 @@
+.pricing5 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.pricing5 h1,
+.pricing5 h2,
+.pricing5 h3,
+.pricing5 h4,
+.pricing5 h5,
+.pricing5 h6 {
+  color: #3e4555;
+}
+
+.pricing5 h5 {
+	line-height: 22px;
+	font-size: 18px;
+}
+
+.pricing5 .font-weight-medium {
+  font-weight: 500;
+}
+
+.pricing5 .bg-body-secondary {
+  background-color: #f4f8fa !important;
+}
+
+.pricing5 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+}
+
+.pricing5 .card.card-shadow {
+  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.pricing5 .general-listing {
+  margin: 90px 0 60px 0;
+}
+
+.pricing5 .card {
+  background-size: 100% !important;
+}
+
+.pricing5 .yearly {
+  display: none;
+}
+
+.pricing5 .pricing-box {
+  margin-top: 120px;
+}
+
+.pricing5 .pricing-box .middle-box {
+  margin-top: -75px;
+}
+
+.pricing5 .pricing-box .middle-box .general-listing {
+  margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .pricing5 .pricing-box {
+    margin-top: 40px;
+  }
+  .pricing5 .pricing-box .middle-box {
+    margin-top: 0px;
+  }
+}
+
+.pricing5 .btn-success-gradiant {
+		background: #2cdd9b;
+    background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
+    background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+    background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+    background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+}
+
+.pricing5 .btn-success-gradiant:hover {
+		background: #1dc8cc;
+    background: -webkit-linear-gradient(legacy-direction(to right), #1dc8cc 0%, #2cdd9b 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#1dc8cc), to(#2cdd9b));
+    background: -webkit-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
+    background: -o-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
+    background: linear-gradient(to right, #1dc8cc 0%, #2cdd9b 100%);
+}
+
+.pricing5 .btn-md {
+    padding: 15px 45px;
+    font-size: 16px;
+}
+
+.pricing5 .rounded-left {
+		border-top-left-radius: 60px!important;
+    border-bottom-left-radius: 60px!important;
+}
+
+.pricing5 .rounded-right {
+		border-top-right-radius: 60px!important;
+    border-bottom-right-radius: 60px!important;
+}
+
+.pricing5 .btn-outline-success {
+    color: #2cdd9b;
+    background-color: transparent;
+    border-color: #2cdd9b;
+}
+
+.pricing5 .btn-outline-success:hover {
+    background: #2cdd9b;
+    border-color: #2cdd9b;
+    color: #ffffff;
+}
+

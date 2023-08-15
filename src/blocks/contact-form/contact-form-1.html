@@ -1,0 +1,50 @@
+<div data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-form-1">
+
+@@include('../../_includes/notifications.html')
+
+	<form action="" method="post">
+	  <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
+
+	  <div class="row">
+		<div class="col">
+		  <input type="text" class="form-control" placeholder="First name" name="firstname" required>
+		</div>
+		<div class="col">
+		  <input type="text" class="form-control" placeholder="Last name" name="lastname" required>
+		</div>
+	  </div>
+
+	  <div class="row mt-4">
+		<div class="col">
+		  <input type="email" class="form-control" placeholder="Enter email" name="email" required>
+		</div>
+	  </div>
+
+	  <div class="row mt-4">
+		<div class="col">
+		  <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+		</div>
+	  </div>
+	  <div class="row mt-4">
+		<div class="col">
+		  <textarea class="form-control" name="message" rows="3" placeholder="How can we help?" required></textarea>
+		</div>
+	  </div>
+
+
+	 <!-- if these hidden inputs are filled then ignore, robots -->
+
+	 <input type="text" class="form-control d-none" placeholder="Contact form" name="contact-form" >	
+	 
+	 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+	 
+	 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">	
+	 
+
+	  <div class="row mt-4">
+		<div class="col">
+		  <button type="submit" class="btn btn-primary">Submit <i class="la la-long-arrow-alt-right ms-1"></i></button>
+		</div>
+	  </div>
+	</form>
+</div>

@@ -1,0 +1,130 @@
+@@include('../../_includes/html-head.html', {"title": "Vvveb - Address edit", "path":"../"})
+
+<body>
+	
+	@@include('../../_includes/header.html')
+
+
+	<main id="site-content" role="main">
+
+
+        <div class="container my-5">
+            <div class="row">
+				<div class="col-md-3">
+				
+					 @@include('../../_includes/user-sidebar.html')
+					 
+				</div>
+
+				<div class="col-md-9 justify-content-center border-start px-4" data-v-component-user>
+					@@include('../../_includes/notifications.html')
+				
+					<h2>Address</h2>
+										
+					<form id="profile-form" action="" method="post" class="needs-validation" data-v-address>
+						<input type="hidden" name="action" id="action" value="save">
+						   
+					
+						<div class="mb-3 row">
+							<label for="input-first_name" class="col-sm-2 col-form-label">First name</label>
+							<div class="col-sm-10">
+							  <input type="text" class="form-control" id="input-first_name" placeholder="First name" name="address[first_name]" data-v-address-first_name required>
+							</div>
+						 </div>		 
+
+						 <div class="mb-3 row">
+							<label for="input-last_name" class="col-sm-2 col-form-label">Last name</label>
+							<div class="col-sm-10">
+							  <input type="text" class="form-control" id="input-last_name" placeholder="Last name" name="address[last_name]" data-v-address-last_name required>
+							</div>
+						</div>
+							
+						 <div class="mb-3 row">
+							<label for="input-company" class="col-sm-2 col-form-label">Company</label>
+							<div class="col-sm-10">
+							  <input type="text" class="form-control" id="input-company" placeholder="Company" name="address[company]" data-v-address-company>
+							</div>
+						  </div>		 
+
+						  <div class="mb-3 row">
+							<label for="input-address_1" class="col-sm-2 col-form-label" >Address 1</label>
+							<div class="col-sm-10">
+							  <input type="text" class="form-control" id="input-address_1" placeholder="Address 1" name="address[address_1]" data-v-address-address_1>
+							</div>
+						  </div>
+						  
+						  <div class="mb-3 row">
+							<label for="input-address_2" class="col-sm-2 col-form-label" >Address 2</label>
+							<div class="col-sm-10">
+							  <input type="text" class="form-control" id="input-address_2" placeholder="Address 2" name="address[address_2]" data-v-address-address_2>
+							</div>
+						  </div>
+						
+						<div class="mb-3 row">
+							<label for="input-city" class="col-sm-2 col-form-label">City</label>
+							<div class="col-sm-10">
+							  <input type="text" class="form-control" id="input-city" placeholder="City" name="address[city]" data-v-address-city>
+							</div>
+						  </div>
+						  
+						<div class="mb-3 row">
+							<label for="input-postcode" class="col-sm-2 col-form-label">Post code</label>
+							<div class="col-sm-10">
+							  <input type="text" class="form-control" id="input-postcode" placeholder="Post code" name="address[postcode]" data-v-address-postcode>
+							</div>
+						  </div>
+
+						<div class="mb-3 row">
+							<label class="col-sm-2 col-form-label" for="country">Country <span class="text-danger text-small">*</span></label>
+							<div class="col-sm-10">
+								<select class="form-select" id="country_id" name="address[country_id]" data-v-countries required readonly>
+								  <option value="1" data-v-option>
+									Country 1
+								  </option>
+								  <option value="2" data-v-option>
+									Country 2
+								  </option>
+								</select>
+							</div>	
+						</div>	
+						
+						<div class="mb-3 row">
+							<label class="col-sm-2 col-form-label" for="country">Region <span class="text-danger text-small">*</span></label>
+							<div class="col-sm-10">
+								<select class="form-select" id="zone_id" name="address[zone_id]" data-v-zones required readonly>
+								  <option value="1" data-v-option>Zone 1</option>
+								  <option value="2" data-v-option>Zone 2</option>
+								  <option value="3" data-v-option>Zone 3</option>
+								</select>
+							</div>
+						</div>
+						  
+						<div class="mb-3  float-end">
+					
+							<a href="user/address" data-v-url="user/address/index" class="btn btn-outline-secondary">
+								<i class="la la-arrow-left"></i> <span>Address list</span>
+							</a>
+
+							<button type="submit" href=""
+								 class="btn btn-primary btn-icon ms-1"
+								 onclick="document.getElementById('action').value ='save';if (validator(validator_json)) document.getElementById('settings-form').submit();">
+									<i class="la la-save me-2"></i>
+									<span>Save address</span>
+							  </button>
+						</div>		
+					
+					</form>
+			
+				</div>
+            </div>
+        </div>
+	</main>
+
+
+	@@include('../../_includes/footer.html')
+
+	@@include('../../_includes/footer-scripts.html')
+  	
+  	
+</body>
+</html>

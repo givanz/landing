@@ -1,0 +1,133 @@
+@@include('../_includes/html-head.html', {"title": "Landing - Search page",  "path":"../"})
+
+<body class="search-page">
+
+@@include('../_includes/header.html')
+
+  <main id="site-content" role="main">
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-7 col-lg-8 col-xl-9" >
+
+		<div class="breadcumb_area bg-img" style="background-image: url(img/bg-img/breadcumb.jpg);">
+			<div class="container">
+				
+				
+				<div class="row">
+					<div class="col-12">
+						
+						<div class="page-title text-center">
+							<h2 class="fs-normal" data-v-if="this.search != ''">Results for: <strong data-v-search>term</strong></h2>
+							<h2 class="fs-normal" data-v-if="this.search == ''">No search query provided!</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	<div>
+		<div data-v-component-products data-v-limit="6" data-v-search="url" data-v-page="url" data-v-type="" data-v-taxonomy_item_id="url" data-v-image_size="medium">
+		<div data-v-component-posts  data-v-limit="6" data-v-search="url" data-v-type="">
+
+			<nav>
+			  <div class="nav nav-tabs" id="nav-search" role="tablist">
+				
+				<div data-v-if="this.type == '' || this.type == 'product'">
+					<button class="nav-link" id="nav-products-tab" 
+						data-bs-toggle="tab" data-bs-target="#nav-products" 
+						type="button" role="tab" aria-controls="nav-products" 
+						aria-selected="true" 
+						data-v-if="products.count > 0" 
+						>
+							<span>Products</span>
+							<span class="badge bg-body-tertiary border text-body" data-v-products-count>0</span>
+					</button>
+				</div>
+				
+				<div data-v-if="this.type == '' || this.type == 'post'">
+					<button class="nav-link" id="nav-posts-tab" 
+						data-bs-toggle="tab" data-bs-target="#nav-posts" 
+						type="button" role="tab" aria-controls="nav-posts" 
+						aria-selected="false" data-v-if="posts.count > 0">
+							<span>Posts</span>
+							<span class="badge bg-body-tertiary border text-body" data-v-posts-count>0</span>
+					</button>
+				</div>
+			  </div>
+			</nav>
+			<div class="tab-content" id="nav-searchContent">
+
+				<div class="tab-pane" id="nav-products" role="tabpanel" aria-labelledby="nav-products-tab" tabindex="0">
+					
+					<div class="row g-3">
+					  <div class="col-md-6 col-xl-4" data-v-product>
+						<div class="product">
+						
+							@@include('../_includes/product-list-item.html')
+							
+						
+						</div>
+						</div>             		
+						
+					 </div>
+					 
+					  @@include('../_includes/pagination.html', {"component": "products", "component-index":0, "parameters": {"type":"product"}})
+				</div>
+
+				
+				<div class="tab-pane" id="nav-posts" role="tabpanel" aria-labelledby="nav-posts-tab" tabindex="0">
+					<div class="row g-3">
+						<div class="col-12 col-lg-4 mb-2" data-v-post>
+							@@include('../_includes/blog-list-item.html', {"class":"h-100"})
+						</div>
+						
+
+					</div>
+						
+					@@include('../_includes/pagination.html', {"component": "posts", "component-index":0, "parameters": {"type":"post"}})
+				 </div>
+			 </div>
+			 
+			 
+				<div data-v-if="products.count < 1 && posts.count < 1">
+					<h3 class="text-center py-4 bg-body-tertiary">No matching results!</h3>
+				</div>
+						
+			 
+			 
+			 </div>
+			 </div>
+
+		  </div>
+
+	  </div>
+
+	  @@include('../_includes/sidebar.html', {"cols": "col-md-5 col-lg-4 col-xl-3"})
+
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+  </main>	
+
+@@include('../_includes/footer.html')
+
+@@include('../_includes/footer-scripts.html')
+
+<script>
+$(function () {
+	$('#nav-search button:first').tab('show');
+});
+</script>
+</body>
+
+</html>

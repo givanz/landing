@@ -1,0 +1,224 @@
+.hero-1 {
+	padding: 0px 2rem 0;
+	text-align: center;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-image: url(../img/background.svg);
+	background-size: 100%;
+	background: rgba(var(--bs-body-bg-rgb),0.9);
+	position: relative;
+
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60rem;
+    position: relative;
+    padding: 5rem 2rem 10rem;
+    background-image: linear-gradient(179deg,var(--bs-body-bg) 49%,var(--bs-body-bg) 77%, rgba(var(--bs-body-bg-rgb), 0.8) 100%);
+
+	&::after {
+		background: url(../img/background.svg);
+		width: 100%;
+		height: 100%;
+		content: " ";
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 1;
+		pointer-events:none;
+		opacity:0.1;
+		background-size: 100%;
+		background-position: bottom center;
+		background-size: cover;
+		background-position: bottom 0px center;
+		background-repeat: no-repeat;
+		background-blend-mode: luminosity;
+	}
+
+	h1 {
+		line-height: 1.2;
+		font-size: 4.2rem;
+    
+		color: var(--bs-body-color);
+		font-weight:600;
+		z-index: 2;
+		text-shadow: 1px 1px 2px var(--bs-body-bg);
+		//letter-spacing: 0.014em;
+		//line-height: 64px;
+	}
+		
+	@media (max-width: 1601px) {
+	h1 {
+			font-size: 5rem;
+		}	
+	}	
+
+	@media (max-width: 1281px) {
+	h1 {
+			font-size: 5rem;
+		}	
+	}	
+
+	@media (max-width: 961px) {
+	h1 {
+			font-size: 4.5rem;
+			line-height: 4.5rem;
+		}	
+	}	
+
+	@media (max-width: 661px) {
+	h1 {
+			font-size: 3.2rem;
+			line-height: 3.2rem;
+		}	
+	}	
+
+	@media (max-width: 481px) {
+	h1 {
+			font-size: 3rem;
+			line-height: 3rem;
+		}	
+	}	
+	
+	h2 {
+		line-height: 1.5;
+		font-size: 1.5rem;
+		font-weight: normal;
+		margin: 1.4rem auto 0rem;
+		z-index: 2;
+		position: relative;
+		text-shadow: 1px 1px 2px var(--bs-body-bg);
+		//letter-spacing: 0.03em;
+		max-width: 800px;
+		color: var(--bs-body-color);
+	}
+	
+	.heading {
+		text-align: center;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: var(--width-xl);
+		width: 100%;
+		z-index: 3;
+    
+		padding: 5rem 0 0rem;
+	}
+	
+	.btns {
+		margin-top:4rem;
+	}
+	
+	.btn {
+		b {
+			margin-left: 5px;
+			display: inline-block;
+			font-family:system-ui;
+		}
+		display: inline-block;
+		//width: 200px;
+		//height: 49px;
+		border-radius: 2px;
+		//background-color: #419bf9;
+		//background-color: rgb(65, 155, 249);
+		padding: 16px 60px;
+		line-height: 20px;
+		font-size: 16px;
+		text-align: center;
+		//color: var(--bs-body-color);
+		margin-right: 7px;
+		margin-left: 7px;
+		margin-bottom: 20px;
+		border-radius: 3px;
+		font-weight: 600;
+		box-shadow:0 1px 3px 0 rgba(var(--bs-body-color-rgb), 0.07);
+		//letter-spacing: 0.01em;
+		
+		&:hover {
+			background: var(--bs-blue-hover);
+			background: #2781df;
+		}
+		span {
+			font-size: 24px;
+			line-height: 24px;
+			vertical-align: text-top;
+			margin-left: 0.2rem;
+			display: none;
+		}
+	}
+	
+	.btn.btn-outline-primary {
+		b {
+			transform: rotate(90deg);
+		}
+		background-color: transparent;
+		background-color: rgba(65, 155, 249, 0.07);
+		background-color: #f1f8ff;
+		box-shadow: -1px 1px 2px 0px rgba(var(--bs-body-bg-rgb), 0.2) inset;
+		box-shadow:0 1px 3px 0 rgba(var(--bs-body-color-rgb), 0.07);
+		border: 1px solid var(--bs-border-color);
+		background:var(--bs-body-bg);
+		//color: var(--bs-blue);
+		&:hover {
+			background-color: rgba(65, 155, 249, 0.14);
+		}
+		
+		&:after {
+			display:none;
+		}
+	}
+	
+	.btn.btn-primary {
+		box-shadow:  -1px 1px 2px 1px rgba(var(--bs-body-color-rgb), 0.07), -1px 1px 2px 0px rgba(var(--bs-body-bg-rgb), 0.2) inset;
+		border:none;
+		span {
+			font-size: 28px;
+			margin-right: 0.2rem;
+		}
+		&:hover {
+			//color: var(--bs-body-color);
+		}
+	}
+	
+	.dropdown {
+		display: inline-block;
+		.dropdown-menu {
+			min-width: 240px;
+			z-index:3;
+		}
+	}
+	
+	> img {
+		margin-top: 2rem;
+		max-width: 100%;
+		//opacity: 0;
+		transition: opacity 3s;
+		border-radius: 10px 10px 0px 0px;
+		border: 1px solid var(--bs-border-color);
+
+		background: #f0f4f9;
+		box-shadow: 0 0 1px 0 rgba(var(--bs-body-color-rgb), 0.2), 0 3px 4px 0 rgba(87, 87, 87, 0.1), 0 10px 15px 0 rgba(5, 4, 10, 0.06%);
+		border-radius: 4px;
+		width: 100%;
+		overflow: hidden;
+		padding-top: 2rem;
+		position: relative;
+	}
+	
+	.show {
+		img {
+			opacity: 1;
+		}
+	}
+	
+	@media screen and (max-width: 767px) {
+	.btn {
+			min-width: 300px;
+			width: 100%;
+		}
+	}
+
+}

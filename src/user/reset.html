@@ -1,0 +1,60 @@
+@@include('../_includes/html-head.html', {"title": "Vvveb - Password recover", "path":"../"})
+
+<body>
+	
+	@@include('../_includes/header.html')
+
+	<main id="site-content" role="main">
+
+        <div class="container mb-2">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="regular-page-content-wrapper section-padding-80">
+                        <div class="regular-page-text">
+							
+							<div class="card card-default">
+								<div class="card-body">
+									<div class="text-center">
+									  
+									  <h2 class="text-center"><i class="la la-lock fa-4x"></i> Reset account password</h2>
+									  <p>Enter your account email and we will send you a reset link to change your password.</p>
+										<div class="card-body">
+										
+										  @@include('../_includes/notifications.html')
+										  
+										  <form method="post" role="form" id="reset" class="fade-in-effect" enctype="multipart/form-data" action="" data-v-url="user/reset">
+											  <div class="mb-3">
+												
+												
+												  <input type="email" name="email" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon1" required>
+												
+											  </div>
+											  
+											  
+											  
+											  <div class="mb-3">
+												<button class="btn btn-primary"type="submit">
+													<span>Send reset link</span><i class="la la-arrow-right float-end ms-2"></i>
+												</button>
+											  </div>
+										  </form>
+										  
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+	</main>
+
+	@@include('../_includes/footer.html')
+
+	@@include('../_includes/footer-scripts.html')
+  	
+  	
+</body>
+</html>

@@ -1,0 +1,79 @@
+@@include('../_includes/html-head.html', {"title": "Vvveb - Downloads", "path":"../"})
+
+<body>
+	
+	@@include('../_includes/header.html')
+
+	<main id="site-content" role="main">
+
+
+        <div class="container my-5">
+            <div class="row">
+				<div class="col-md-3">
+				
+					 @@include('../_includes/user-sidebar.html')
+					 
+				</div>
+
+				<div class="col-md-9 justify-content-center border-start px-4">
+					@@include('../_includes/notifications.html')
+				
+					<h2>Addresses</h2>
+
+					<div class="table-responsive"  data-v-component-address>
+						<table class="table table-hover border-top">
+							 <tbody>
+							 <tr data-v-address>
+								  <td class="text-start">
+								  
+									<span data-v-address-first_name></span>
+									<span data-v-address-last_name></span>
+									<br>
+									<span data-v-address-company></span>
+									<br>
+									<span data-v-address-address_1></span>
+									<span data-v-address-address_2></span>
+									<span data-v-address-city></span>
+									<span data-v-address-postcode></span>
+
+								  </td>
+								  <td class="text-end align-middle">
+									  <a href="" title="Edit" class="btn btn-outline-primary btn-sm border-0" data-v-address-url>
+										<i class="la la-pen"></i>
+									  </a> 
+									  <a href="" title="Delete" class="btn btn-outline-danger btn-sm border-0" data-v-address-delete-url>
+										<i class="la la-trash"></i>
+									  </a>
+								 </td>
+							</tr>
+							<tr data-v-if-not="count >= 1">
+								<td colspan="100">
+									<div class="text-center p-4">
+										<div>
+											<i class="la la-comment-alt fs-1 mb-2"></i>
+											<h6>No addresses to display!</h6>
+										</div>
+									</div>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					  </div>
+			
+					<br>
+					
+					<a href="user/address/edit" data-v-url="user/address/edit" class="btn btn-primary">
+						<i class="la la-plus"></i> <span>Add new</span>
+					</a> 
+				</div>
+            </div>
+        </div>
+	</main>
+
+	@@include('../_includes/footer.html')
+
+	@@include('../_includes/footer-scripts.html')
+  	
+  	
+</body>
+</html>

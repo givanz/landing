@@ -1,0 +1,50 @@
+<h6>Shipping</h6>
+<div id="accordion" name="accordion" role="tablist" class="accordion mb-3"  data-v-component-checkout-shipping>
+	
+	<div class="accordion-item" data-v-shipping>
+		<div class="accordion-header" role="tab">
+			  <label class="form-check-label accordion-button collapsed" aria-expanded="false" role="button">
+				<input class="form-check-input me-2" type="radio" name="shipping_method" value="default" data-v-shipping-name required>
+				<span data-v-shipping-title>Default shipping</span>
+			  </label>                                        
+		</div>
+
+		<div class="collapse" role="tabpanel">
+			<div class="accordion-body">
+				<p><span data-v-shipping-description>Shipping description</span></p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="accordion-item" data-v-shipping>
+		<div class="accordion-header" role="tab">
+			  <label class="form-check-label accordion-button collapsed" aria-expanded="false" role="button">
+				<input class="form-check-input me-2" type="radio" name="shipping_method" value="default" data-v-shipping-name required>
+				<span data-v-shipping-title>Fast shipping</span>
+			  </label>                                        
+		</div>
+
+		<div class="collapse" role="tabpanel">
+			<div class="accordion-body">
+				<p><span data-v-shipping-description>Lorem ipsum</span></p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="alert alert-warning d-flex alert-dismissable" role="alert" data-v-if="count < 1">
+		<div class="icon align-middle me-2">
+			<i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+		</div>
+		<div class="flex-grow-1 align-self-center text-small" >
+			No shipping methods enabled!
+		</div>
+		
+		<button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">
+				<!-- <i class="la la-times"></i> -->
+			</span>
+		</button>
+		
+	</div>
+	
+</div>
