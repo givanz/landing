@@ -292,11 +292,7 @@
           <ul class="navbar-nav ms-auto" data-v-menu-items>
             <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
 
-              <a class="nav-link" href="https://themes.vvveb.com" data-v-if="category.children <= 0" data-v-menu-item-url>
-                <span data-v-menu-item-name>Services</span>
-              </a>
-
-              <a class="nav-link dropdown-toggle" href="#" data-v-if="category.children > 0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url>
+              <a class="nav-link" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url>
                 <span data-v-menu-item-name>Resources</span>
               </a>
 
@@ -665,11 +661,12 @@
   </nav>
 
 
+
   <section class="inner-page-hero" data-v-component-post>
     <div>
       <div class="title-container">
         <div class="container">
-          <h1 data-v-post-name>Vvveb CMS</h1>
+          <h1 data-v-post-name>My custom page</h1>
 
           <nav aria-label="breadcrumb" class="text-muted text-small" data-v-component-breadcrumb>
             <ol class="breadcrumb">
@@ -706,24 +703,21 @@
 			<div class="title-container">
 				<h1 data-v-post-name>Post title</h1>
 			</div>
-            <img data-v-post-img src="img/bg-img/bg-7.jpg" alt="">
+            <img data-v-post-img loading="lazy" src="img/bg-img/bg-7.jpg" alt="">
         </div>
 		-->
 
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-12">
           <div>
             <!--
 						<h1 class="text-center" data-v-if-not="post.img" data-v-post-name>Page title</h1>
 						-->
 
-            <img class="img-fluid w-100 my-5" src="http://placehold.it/1500x500" alt="Card image cap" data-aos="zoom-in-up" data-aos-duration="500" loading="lazy" data-v-post-image data-v-if="post.image">
-
-            <div data-v-post-content>
-              <h2>The next generation website builder</h2>
-              <p>Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
-              <p>The html for sections blocks and components and this template are built using Bootstrap 5.</p>
+            <div class="regular-page-text" data-v-post-content>
+              <h2>Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</h2>
+              <p>Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin. Praesent at tempus lectus, eleifend blandit felis. Fusce augue arcu, consequat a nisl aliquet, consectetur elementum turpis. Donec iaculis lobortis nisl, et viverra risus imperdiet eu. Etiam mollis posuere elit non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis arcu a magna sodales venenatis. Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.</p>
             </div>
           </div>
         </div>
@@ -911,7 +905,6 @@
       </div>
     </div>
   </section>
-
 
 
   <footer class="footer-1" title="footer-1">

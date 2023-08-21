@@ -331,17 +331,17 @@ label {
 
 .navbar.sticky {
 	transition:0.5s background;
+	background-color:rgba(var(--bs-body-bg-rgb), 0.9);
 	//box-shadow:0 0 5px 2px rgba(var(--bs-body-color-rgb), 0.05);
 
 	&.navbar-light { 
-		background:var(--bs-body-bg);
-		//background:rgba(var(--bs-body-bg-rgb),0.9);
+		background-color:var(--bs-body-bg);
+		background-color:rgba(var(--bs-body-bg-rgb), 0.9);
 	}
 
 	&.navbar-dark { 
-		background:var(--bs-body-bg);
-		//background:#000;
-		//background:rgba(var(--bs-body-color-rgb),0.9);
+		background-color:var(--bs-body-bg);
+		background-color:rgba(var(--bs-body-bg-rgb), 0.9);
 	}
 }
 

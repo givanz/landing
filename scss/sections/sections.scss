@@ -170,3 +170,8 @@ div.sticky {
 		display:none;
 	}
 }
+
+
+.fixed-top ~ .fixed-top {
+    position: unset;
+}

@@ -288,11 +288,7 @@
           <ul class="navbar-nav ms-auto" data-v-menu-items>
             <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
 
-              <a class="nav-link" href="https://themes.vvveb.com" data-v-if="category.children <= 0" data-v-menu-item-url>
-                <span data-v-menu-item-name>Services</span>
-              </a>
-
-              <a class="nav-link dropdown-toggle" href="#" data-v-if="category.children > 0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url>
+              <a class="nav-link" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url>
                 <span data-v-menu-item-name>Resources</span>
               </a>
 
@@ -811,26 +807,64 @@
 
 
             <div class="card-footer text-muted">
-              <!--
-	<div  data-v-component-content-categories="blog-post" data-v-type="tags" data-v-post_id="url">
-		<div>
-			<ul data-v-cats class="tags">
-			  <li data-v-cat>
-				<a href="content/tag.html"  data-v-cat-url><span data-v-cat-name>tag 1</span></a>
-			  </li>
-			  <li data-v-cat>
-				<a href="content/tag.html"  data-v-cat-url><span data-v-cat-name>tag 2</span></a>
-			  </li>
-			  <li data-v-cat>
-				<a href="content/tag.html"  data-v-cat-url><span data-v-cat-name>tag 3</span></a>
-			  </li>
-			  <li data-v-cat>
-				<a href="content/tag.html"  data-v-cat-url><span data-v-cat-name>tag 4</span></a>
-			  </li>
-			</ul>
-	  </div>
-	</div>
-	-->
+
+              <div class="d-flex tags">
+                <div data-v-categories>
+                  <div data-v-if="categories > 0" class="me-4">
+                    <i class="la la-archive"></i>
+                    <ul class="tags d-inline-block">
+                      <li data-v-categories-cat>
+                        <a href="#" data-v-categories-cat-url>
+                          <span data-v-categories-cat-name>cat 1</span>
+                        </a>
+                      </li>
+                      <li data-v-categories-cat>
+                        <a href="#" data-v-tag-url>
+                          <span data-v-cat-name>cat 2</span>
+                        </a>
+                      </li>
+                      <li data-v-categories-cat>
+                        <a href="#" data-v-cat-url>
+                          <span data-v-cat-name>cat 3</span>
+                        </a>
+                      </li>
+                      <li data-v-categories-cat>
+                        <a href="#" data-v-cat-url>
+                          <span data-v-cat-name>cat 4</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div data-v-tags>
+                  <div data-v-if="tags > 0">
+                    <i class="la la-tag"></i>
+                    <ul class="tags d-inline-block">
+                      <li data-v-tags-tag>
+                        <a href="#" data-v-tags-tag-url>
+                          <span data-v-tags-tag-name>tag 1</span>
+                        </a>
+                      </li>
+                      <li data-v-tags-tag>
+                        <a href="#" data-v-tag-url>
+                          <span data-v-cat-name>tag 2</span>
+                        </a>
+                      </li>
+                      <li data-v-tags-tag>
+                        <a href="#" data-v-tag-url>
+                          <span data-v-cat-name>tag 3</span>
+                        </a>
+                      </li>
+                      <li data-v-tags-tag>
+                        <a href="#" data-v-tag-url>
+                          <span data-v-cat-name>tag 4</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
               <!--
 		<a class="float-end" href="content/post.html" data-v-post-url><span>Read More </span></a>

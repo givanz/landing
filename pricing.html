@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 
-  <base href="../">
+  <base href="./">
 
-  <title>Landing - Product listing</title>
+  <title>Vvveb Themes - Page</title>
 
 
 
@@ -116,6 +116,10 @@
 
 
 
+  <style>
+
+  </style>
+
 
 
 
@@ -135,7 +139,7 @@
 </head>
 
 
-<body>
+<body class="page">
 
   <nav class="navigation-1 clearfix">
 
@@ -658,307 +662,172 @@
 
 
 
-  <main id="site-content" role="main">
-    <div class="container mt-5">
+  <section class="inner-page-hero" data-v-component-post>
+    <div>
+      <div class="title-container">
+        <div class="container">
+          <h1 data-v-post-name>My custom page</h1>
 
-    </div>
-    <div class="container">
-      <div class="row justify-content-between">
-
-
-        <div class="col-xl-3 d-none d-xl-block">
-          <!-- Categories Widget -->
-          <div class="widget" data-v-component-product-categories="sidebar" data-v-type="categories" data-v-limit="0" data-v-parent_id="0" data-v-post_type="product">
-            <div>
-              <span class="d-flex text-muted mb-2">Categories</span>
-              <div class="card-body">
-                <ul class="list-unstyled" data-v-cats>
-                  <li data-v-cat>
-                    <a href="#" data-v-cat-url>
-                      <span data-v-cat-name>Web Design</span>
-                    </a>
-                  </li>
-                  <li data-v-cat>
-                    <a href="#" data-v-cat-url>
-                      <span data-v-cat-name>HTML</span>
-                    </a>
-                  </li>
-                  <li data-v-cat>
-                    <a href="#" data-v-cat-url>
-                      <span data-v-cat-name>Freebies</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Manufacturers Widget -->
-          <div class="widget">
-            <span class="d-flex text-muted mb-2">Brands</span>
-            <ul class="list-unstyled" data-v-component-product-manufacturers="sidebar" data-v-type="categories">
-              <li data-v-manufacturer>
-                <div class="form-check form-check-minimal">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    <span data-v-manufacturer-name>Mango</span>
-                  </label>
-                </div>
+          <nav aria-label="breadcrumb" class="text-muted text-small" data-v-component-breadcrumb>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item" data-v-breadcrumb-item>
+                <a href="#" data-v-breadcrumb-item-url data-v-if="breadcrumb.url">
+                  <span data-v-breadcrumb-item-text>Home</span>
+                </a>
+                <span data-v-breadcrumb-item-text data-v-if-not="breadcrumb.url">Home</span>
               </li>
-              <li data-v-manufacturer>
-                <div class="form-check form-check-minimal">
-                  <input class="form-check-input" type="checkbox" value="" id="brand-2">
-                  <label class="form-check-label" for="brand-2">
-                    <span data-v-manufacturer-name>Assos</span>
-                  </label>
-                </div>
+              <li class="breadcrumb-item" data-v-breadcrumb-item>
+                <a href="#" data-v-breadcrumb-item-url data-v-if="breadcrumb.url">
+                  <span data-v-breadcrumb-item-text>Library</span>
+                </a>
+                <span data-v-breadcrumb-item-text data-v-if-not="breadcrumb.url">Library</span>
               </li>
-              <li data-v-manufacturer>
-                <div class="form-check form-check-minimal">
-                  <label class="form-check-label" for="brand-3">
-                    <input class="form-check-input" type="checkbox" value="" id="brand-3">
-                    <span data-v-manufacturer-name>Brand name</span>
-                  </label>
-                </div>
+              <li class="breadcrumb-item active" aria-current="page" data-v-breadcrumb-item>
+                <span>Data</span>
               </li>
-            </ul>
-          </div>
-
-
-          <div class="widget mt-5">
-            <span class="d-flex text-muted mb-2">Color</span>
-            <ul class="list-unstyled">
-              <li>
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-1">
-                  <label class="form-check-label" for="color-1">
-                    <span class="bg-red"></span> Red
-                  </label>
-                </div>
-              </li>
-              <li class="mt-1">
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-2">
-                  <label class="form-check-label" for="color-2">
-                    <span class="bg-blue"></span> Blue
-                  </label>
-                </div>
-              </li>
-              <li class="mt-1">
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-3">
-                  <label class="form-check-label" for="color-3">
-                    <span class="bg-green"></span> Green
-                  </label>
-                </div>
-              </li>
-              <li class="mt-1">
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-4">
-                  <label class="form-check-label" for="color-4">
-                    <span class="bg-yellow"></span> Yellow
-                  </label>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="widget mt-5">
-            <span class="d-flex  text-muted mb-2">Price</span>
-          </div>
-
+            </ol>
+          </nav>
         </div>
+      </div>
 
-        <div class="col-xl-9">
 
-          <div class="row g-3 g-md-5 align-items-end">
-            <div class="col-md-6">
-              <h1 class="mb-2" data-v-vendor-name>Manufacturer name</h1>
+      <!-- img data-v-post-image src="img/bg-img/bg-7.jpg" alt="" -->
+    </div>
+  </section>
 
-              <nav aria-label="breadcrumb" class="text-muted text-small" data-v-component-breadcrumb>
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item" data-v-breadcrumb-item>
-                    <a href="#" data-v-breadcrumb-item-url data-v-if="breadcrumb.url">
-                      <span data-v-breadcrumb-item-text>Home</span>
-                    </a>
-                    <span data-v-breadcrumb-item-text data-v-if-not="breadcrumb.url">Home</span>
-                  </li>
-                  <li class="breadcrumb-item" data-v-breadcrumb-item>
-                    <a href="#" data-v-breadcrumb-item-url data-v-if="breadcrumb.url">
-                      <span data-v-breadcrumb-item-text>Library</span>
-                    </a>
-                    <span data-v-breadcrumb-item-text data-v-if-not="breadcrumb.url">Library</span>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page" data-v-breadcrumb-item>
-                    <span>Data</span>
-                  </li>
-                </ol>
-              </nav>
+  <main id="site-content" data-v-component-post>
 
+    <!-- Single Blog Post Thumb -->
+    <!-- 
+        <div class="inner-page-hero" data-v-if="post.img">
+			<div class="title-container">
+				<h1 data-v-post-name>Post title</h1>
+			</div>
+            <img data-v-post-img loading="lazy" src="img/bg-img/bg-7.jpg" alt="">
+        </div>
+		-->
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div>
+            <!--
+						<h1 class="text-center" data-v-if-not="post.img" data-v-post-name>Page title</h1>
+						-->
+
+            <div class="regular-page-text" data-v-post-content>
+              <h2>Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</h2>
+              <p>Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin. Praesent at tempus lectus, eleifend blandit felis. Fusce augue arcu, consequat a nisl aliquet, consectetur elementum turpis. Donec iaculis lobortis nisl, et viverra risus imperdiet eu. Etiam mollis posuere elit non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis arcu a magna sodales venenatis. Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.</p>
             </div>
-            <div class="col-md-6 text-md-end">
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <div class="dropdown">
-                    <a class="btn btn-light" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                      Price high to low <i class="la la-arrow-down"></i>
-                    </a>
-
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="la la-arrow-up"></i>&ensp; <span>Price high to low</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="la la-arrow-down"></i>&ensp; <span>Price low to high</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="la la-chart-line"></i>&ensp; <span>Popularity</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="la la-tags"></i>&ensp; <span>Sales</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-page="url" data-v-vendor_id="url" data-v-image_size="medium">
-            <div class="col-md-6 col-xl-4" data-v-product>
-              <div class="product">
-
-                <article class="single-product-wrapper">
-                  <!-- Product Image -->
-                  <a href="product/product.html" data-v-product-url> </a>
-                  <div class="product-image">
-                    <a href="product/product.html" data-v-product-url>
-
-                      <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
-
-                      <!-- Hover Thumb -->
-                      <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
-                    </a>
-
-                    <!-- Favourite -->
-                    <div class="product-favourite">
-                      <a href="product/product.html" data-v-product-url data-v-product-title class="la la-heart"></a>
-                    </div>
-                  </div>
-
-                  <!-- Product Description -->
-                  <div class="product-content">
-
-                    <a href="product/product.html" data-v-product-url>
-                      <h6 data-v-product-name>Product 8</h6>
-                    </a>
-
-                    <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
-
-                    <!-- Hover Content -->
-                    <div class="hover-content">
-                      <!-- Add to Cart -->
-                      <div class="add-to-cart-btn">
-                        <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                        <a href="" class="btn btn-primary w-100" data-v-product-url="cart/cart/index" data-v-vvveb-action="addToCart" data-product_id="1">
-                          <span class="loading d-none">
-                            <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                            <span>Add to cart</span>...
-                          </span>
-
-                          <span class="button-text">
-                            Add to cart
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-
-
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4 py-2">
-
-            <div data-pagination data-v-parent-component="products" data-v-parent-index="0" data-v-parameters='{}'>
-
-              <nav data-v-if="pagecount > 1">
-                <ul class="pagination pagination-sm justify-content-end" style="--bs-pagination-border-color:transparent;border-top: 1px solid var(--bs-border-color);padding-top: 1rem;">
-
-                  <!--
-			<li class="page-item pager-first" data-first>
-				<a class="page-link" title="First page" href="#" data-page-url data-v-if="current_page > 1">
-					<span aria-hidden="true" class="la la-angle-double-left"></span>
-					<span class="sr-only">First</span>
-				</a>
-			</li>
-			-->
-
-                  <li class="page-item pager-prev" data-prev>
-
-                    <a class="page-link" href="#" aria-label="Previous" title="Previous page" data-page-url data-v-if="current_page > 1">
-                      <span aria-hidden="true" class="la la-angle-left la-lg"></span>
-                      <!-- <span>Newer Posts</span> -->
-                    </a>
-
-                  </li>
-
-
-
-                  <li class="page-item" data-page>
-                    <a class="page-link" href="#" data-page-no data-page-url>1</a>
-                  </li>
-                  <li class="page-item" data-page>
-                    <a class="page-link" href="#" data-page-no data-page-url>2</a>
-                  </li>
-                  <li class="page-item" data-page>
-                    <a class="page-link" href="#" data-page-no data-page-url>3</a>
-                  </li>
-                  <li class="page-item" data-page>
-                    <a class="page-link" href="#" data-page-no data-page-url>4</a>
-                  </li>
-                  <li class="page-item" data-page>
-                    <a class="page-link" href="#" data-page-no data-page-url>5</a>
-                  </li>
-
-                  <li class="page-item pager-next" data-next>
-                    <a class="page-link" href="#" aria-label="Next" title="Next page" data-page-url data-v-if="current_page < pagecount">
-                      <!-- <span>Older Posts</span> -->
-                      <span aria-hidden="true" class="la la-angle-right la-lg"></span>
-                    </a>
-                  </li>
-
-                  <!--
-			<li class="page-item pager-last" data-last>
-				<a class="page-link" title="Last page" href="#" data-page-url data-v-if="current_page < pagecount">
-				<span aria-hidden="true" class="la la-angle-double-right"></span>
-					<span class="sr-only">Last</span>
-				</a>
-			</li>
-			-->
-
-                </ul>
-              </nav>
-            </div>
-
-
-
           </div>
         </div>
       </div>
     </div>
-    </div>
   </main>
+
+
+  <section class="pricing-table-3" title="pricing-table-3">
+    <div class="container">
+      <div class="row justify-content-center pb-2">
+        <div class="col-md-7 heading-section text-center">
+          <h1 class="text-center">Choose your plan</h1>
+          <p class="lead text-center mb-4">14-day free trial no credit card required.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="price-col">
+            <div class="img">
+              <img src="img/illustrations.co/104-dumbbell.svg" loading="lazy" class="img-fluid" />
+            </div>
+            <div class="text-center p-4">
+              <span class="excerpt d-block">Personal</span>
+              <span class="price">
+                <sup>$</sup>
+                <span class="number">49</span>
+                <sub>/mos</sub>
+              </span>
+              <ul class="pricing-text mb-5">
+                <li>
+                  <span class="la la-check me-2"></span>5 Dog Walk
+                </li>
+                <li>
+                  <span class="la la-check me-2"></span>3 Vet Visit
+                </li>
+                <li>
+                  <span class="la la-check me-2"></span>3 Pet Spa
+                </li>
+                <li>
+                  <span class="la la-check me-2"></span>Free Support
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="price-col">
+            <div class="img">
+              <img src="img/illustrations.co/107-healthy.svg" loading="lazy" class="img-fluid" />
+            </div>
+            <div class="text-center p-4">
+              <span class="excerpt d-block">Business</span>
+              <span class="price">
+                <sup>$</sup>
+                <span class="number">79</span>
+                <sub>/mos</sub>
+              </span>
+              <ul class="pricing-text mb-5">
+                <li>
+                  <span class="la la-check me-2"></span>5 Dog Walk
+                </li>
+                <li>
+                  <span class="la la-check me-2"></span>3 Vet Visit
+                </li>
+                <li>
+                  <span class="la la-check me-2"></span>3 Pet Spa
+                </li>
+                <li>
+                  <span class="la la-check me-2"></span>Free Support
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="price-col">
+            <div class="img">
+              <img src="img/illustrations.co/126-namaste-no-hand-shake.svg" loading="lazy" class="img-fluid" />
+            </div>
+            <div class="text-center p-4">
+              <span class="excerpt d-block">Ultimate</span>
+              <span class="price">
+                <sup>$</sup>
+                <span class="number">109</span>
+                <sub>/mos</sub>
+              </span>
+              <ul class="pricing-text mb-5">
+                <li>
+                  <span class="la la-check me-2"></span>5 Dog Walk
+                </li>
+                <li>
+                  <span class="la la-check me-2"></span>3 Vet Visit
+                </li>
+                <li>
+                  <span class="la la-check me-2"></span>3 Pet Spa
+                </li>
+                <li>
+                  <span class="la la-check me-2"></span>Free Support
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <footer class="footer-1" title="footer-1">

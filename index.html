@@ -169,11 +169,7 @@
           <ul class="navbar-nav ms-auto" data-v-menu-items>
             <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
 
-              <a class="nav-link" href="https://themes.vvveb.com" data-v-if="category.children <= 0" data-v-menu-item-url>
-                <span data-v-menu-item-name>Services</span>
-              </a>
-
-              <a class="nav-link dropdown-toggle" href="#" data-v-if="category.children > 0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url>
+              <a class="nav-link" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url>
                 <span data-v-menu-item-name>Resources</span>
               </a>
 
@@ -1199,7 +1195,7 @@
 
 
         <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="rounded border testimonial">
+          <div class="rounded testimonial">
 
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
               <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
@@ -1217,7 +1213,7 @@
 
 
         <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="rounded border testimonial">
+          <div class="rounded testimonial">
 
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
               <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
@@ -1234,7 +1230,7 @@
 
 
         <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="rounded border testimonial">
+          <div class="rounded testimonial">
 
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
               <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
@@ -1252,7 +1248,7 @@
 
 
         <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="rounded border testimonial">
+          <div class="rounded testimonial">
 
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
               <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
@@ -1398,7 +1394,7 @@
 
           <article class="card h-100">
             <div class="card-img-top">
-              <img src="img/demo/product.jpg" alt="" loading="lazy" data-v-size="thumb" data-v-post-image>
+              <img src="img/demo/product.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
             </div>
             <!-- Post Title -->
             <div class="card-body">
@@ -1427,7 +1423,7 @@
 
           <article class="card h-100">
             <div class="card-img-top">
-              <img src="img/demo/product.jpg" alt="" loading="lazy" data-v-size="thumb" data-v-post-image>
+              <img src="img/demo/product.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
             </div>
             <!-- Post Title -->
             <div class="card-body">
@@ -1456,7 +1452,7 @@
 
           <article class="card h-100">
             <div class="card-img-top">
-              <img src="img/demo/product.jpg" alt="" loading="lazy" data-v-size="thumb" data-v-post-image>
+              <img src="img/demo/product.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
             </div>
             <!-- Post Title -->
             <div class="card-body">

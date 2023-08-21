@@ -9395,6 +9395,9 @@ div.sticky .logo-dark {
 .navbar-light .logo-default-dark {
   display: none; }
 
+.fixed-top ~ .fixed-top {
+  position: unset; }
+
 :root {
   /*
 	--bs-font-headings: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
@@ -9622,11 +9625,14 @@ h2, .h2 {
   display: inline-block; }
 
 .navbar.sticky {
-  transition: 0.5s background; }
+  transition: 0.5s background;
+  background-color: rgba(var(--bs-body-bg-rgb), 0.9); }
   .navbar.sticky.navbar-light {
-    background: var(--bs-body-bg); }
+    background-color: var(--bs-body-bg);
+    background-color: rgba(var(--bs-body-bg-rgb), 0.9); }
   .navbar.sticky.navbar-dark {
-    background: var(--bs-body-bg); }
+    background-color: var(--bs-body-bg);
+    background-color: rgba(var(--bs-body-bg-rgb), 0.9); }
 
 .alert-top {
   position: absolute;
