@@ -119,9 +119,14 @@
 
 
 
+  <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/posts" />
+  <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
+
   <link rel="icon" type="image/x-icon" href="../../media/favicon.ico" data-v-global-site-favicon>
 
   <link rel="manifest" href="/manifest.webmanifest">
+
+  <link rel="alternate" hreflang="" href="" />
 
   <link rel="stylesheet" href="js/aos.css">
   <noscript>
@@ -193,25 +198,25 @@
                   <div class="dropdown-menu dropdown-menu-end">
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="EUR" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>€</span>
-                        <span data-v-currency-symbol_right>€</span>
+                      <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>€</span>
+                        <span data-v-currency-sign_end>€</span>
                         <span class="ms-1" data-v-currency-name>Euro</span>
                       </button>
                     </div>
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="GBP" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>£</span>
-                        <span data-v-currency-symbol_right>£</span>
+                      <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>£</span>
+                        <span data-v-currency-sign_end>£</span>
                         <span class="ms-1" data-v-currency-name>Pound Sterling</span>
                       </button>
                     </div>
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="USD" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>$</span>
-                        <span data-v-currency-symbol_right>$</span>
+                      <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>$</span>
+                        <span data-v-currency-sign_end>$</span>
                         <span class="ms-1" data-v-currency-name>US Dollar</span>
                       </button>
                     </div>
@@ -236,7 +241,7 @@
                   <div class="dropdown-menu dropdown-menu-end">
 
                     <div data-v-language>
-                      <button class="dropdown-item" type="submit" formaction value="eng" name="language" data-v-language-code>
+                      <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
                         <!-- <i class="la la-flag la-lg me-2"></i> -->
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
 
@@ -247,7 +252,7 @@
                     </div>
 
                     <div data-v-language>
-                      <button class="dropdown-item" type="submit" formaction value="ro" name="language" data-v-language-code>
+                      <button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
                         <!-- <i class="la la-flag la-lg me-2"></i> -->
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
                         <!-- <a href="" data-v-language-url>  -->
@@ -264,9 +269,6 @@
         </div>
       </div>
     </div>
-
-
-
 
     <div class="navbar navbar-expand-md">
 
@@ -512,12 +514,12 @@
                           <tr data-v-cart-product>
                             <td class="text-center">
                               <a href="#40" data-v-cart-product-url>
-                                <img src="img/demo/product.jpg" alt="iPhone" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                                <img src="img/demo/product.jpg" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                               </a>
                             </td>
                             <td class="text-start">
                               <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                iPhone 5
+                                Product name
                               </a>
 
                               <span data-v-cart-product-quantity>1</span>
@@ -533,12 +535,12 @@
                           <tr data-v-cart-product>
                             <td class="text-center">
                               <a href="#40" data-v-cart-product-url>
-                                <img src="img/demo/product.jpg" alt="iPhone" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                                <img src="img/demo/product.jpg" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                               </a>
                             </td>
                             <td class="text-start">
                               <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                iPhone 5
+                                Product name
                               </a>
 
                               <span data-v-cart-product-quantity>1</span>
@@ -679,7 +681,7 @@
       </ol>
     </nav>
 
-    <div class="row g-0">
+    <div class="row g-0 mb-4">
       <div class="col-md-6 col-sm-12">
 
         <div id="product-gallery" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-v-product-images>
@@ -757,15 +759,14 @@
             <i class="la la-star"></i>
             <i class="la la-star-half"></i>
           </small>
-          <a href="#reviews-tab-pane" class="ms-2" data-bs-toggle="tab" type="button" data-bs-target="#reviews-tab-pane">(30 reviews)</a>
+          <a href="#reviews" class="ms-2" type="button" data-bs-target="#reviews">(30 reviews)</a>
         </div>
 
         <p class="product-price">
           <span class="price" data-v-product-price_tax_formatted>$49.00</span>
-          <!--
-					<span class="text-decoration-line-through text-secondary text-opacity-75">$350</span>
-					<small class="fs-6 ms-2 text-danger">26% Off</small>
-					-->
+
+          <span class="text-decoration-line-through text-secondary text-opacity-75">$350</span>
+          <small class="fs-6 ms-2 text-danger">26% Off</small>
         </p>
 
         <!--
@@ -778,6 +779,65 @@
 				-->
 
         <!-- Form -->
+
+        <div data-v-component-products="variant" data-v-variant="url.product_id" data-v-limit="6" data-v-image_size="thumb" data-v-page="url">
+          <div data-v-if="count > 0">
+            <hr class="border opacity-50">
+            <h6 class="mt-2">Variants</h6>
+
+            <div class="row g-3">
+              <div class="col-sm-4 col-lg-3 col-xl-2" data-v-product>
+                <div class="product">
+
+                  <article class="card">
+                    <a href="#" title="" data-v-product-url>
+                      <img src="img/demo/product.jpg" alt="" class="w-100" loading="lazy" data-v-product-image>
+                      <!--
+						<span class="small px-2" data-v-product-name>
+								Product name
+						</span>
+						-->
+                    </a>
+                  </article>
+
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-3 col-xl-2" data-v-product>
+                <div class="product">
+
+                  <article class="card">
+                    <a href="#" title="" data-v-product-url>
+                      <img src="img/demo/product.jpg" alt="" class="w-100" loading="lazy" data-v-product-image>
+                      <!--
+						<span class="small px-2" data-v-product-name>
+								Product name
+						</span>
+						-->
+                    </a>
+                  </article>
+
+                </div>
+              </div>
+              <div class="col-sm-4 col-lg-3 col-xl-2" data-v-product>
+                <div class="product">
+
+                  <article class="card">
+                    <a href="#" title="" data-v-product-url>
+                      <img src="img/demo/product.jpg" alt="" class="w-100" loading="lazy" data-v-product-image>
+                      <!--
+						<span class="small px-2" data-v-product-name>
+								Product name
+						</span>
+						-->
+                    </a>
+                  </article>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <form class="cart-form clearfix" method="post" action="/cart">
 
           <div class="cart-fav-box ">
@@ -789,57 +849,182 @@
 
 
             <div>
-              <!--							
-								<hr class="border opacity-50">
-								<h6>Available Options</h6>
-								<div class="form-group image">
-									<label class="form-label">Color</label>
-									<div id="input-option239">
-										<div class="radio">
-											<label>
-												<input type="radio" name="option[239]" value="59">
-															 <img src="http://moda4.nicolethemes.com/image/cache/catalog/colors/blue-cr-50x50.gif" alt="Blue">
-													  &nbsp;<span>Blue</span>
-																  </label>
-										</div>
-										<div class="radio">
-											<label>
-												<input type="radio" name="option[239]" value="65">
-															 <img src="http://moda4.nicolethemes.com/image/cache/catalog/colors/green-cr-50x50.gif" alt="Green">
-													  &nbsp;<span>Green</span>
-																  </label>
-										</div>
-										<div class="radio">
-											<label>
-												<input type="radio" name="option[239]" value="64">
-															 <img src="http://moda4.nicolethemes.com/image/cache/catalog/colors/navy-cr-50x50.gif" alt="Navy">
-													  &nbsp;<span>Navy</span>
-																  </label>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="form-label">Size</label>
-									<div id="input-option240">
-										<div class="radio">
-											<label>
-												<input type="radio" name="option[240]" value="62">XS</label>
-										</div>
-										<div class="radio">
-											<label>
-												<input type="radio" name="option[240]" value="60">M</label>
-										</div>
-										<div class="radio">
-											<label>
-												<input type="radio" name="option[240]" value="63">L</label>
-										</div>
-										<div class="radio">
-											<label>
-												<input type="radio" name="option[240]" value="61">XL</label>
-										</div>
-									</div>
-								</div>
--->
+              <div id="options" class="product-options mt-4" data-v-component-product-options>
+                <div data-v-if="count > 0">
+                  <hr class="border opacity-50">
+
+                  <h6>Available Options</h6>
+
+                  <div class="form-group image" data-v-option>
+                    <label class="form-label" data-v-option-name>Color</label>
+
+                    <div data-v-if="option.type = 'radio'">
+                      <div class="radio" data-v-value>
+                        <label>
+                          <input type="radio" name="option[1]" value="1" data-v-value-input>
+                          <div>
+                            <img src="img/demo/blue.gif" alt="Blue" data-v-if="value.image" data-v-value-image>
+                            <span data-v-value-name>Blue</span>
+                            <span data-v-if="value.price > 0">
+                              (<span data-v-value-price_formatted>+$50</span>)
+                            </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="radio" data-v-value>
+                        <label>
+                          <input type="radio" name="option[1]" value="2" data-v-value-input>
+                          <div>
+                            <img src="img/demo/green.gif" alt="Green" data-v-if="value.image" data-v-value-image>
+                            <span data-v-value-name>Green</span>
+                            <span data-v-if="value.price > 0">
+                              (<span data-v-value-price_formatted>+$50</span>)
+                            </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="radio" data-v-value>
+                        <label>
+                          <input type="radio" name="option[1]" value="3" data-v-value-input>
+                          <div>
+                            <img src="img/demo/navy.gif" alt="Navy" data-v-if="value.image" data-v-value-image>
+                            <span data-v-value-name>Navy</span>
+                            <span data-v-if="value.price > 0">
+                              (<span data-v-value-price_formatted>+$50</span>)
+                            </span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div data-v-if="option.type = 'checkbox'">
+                      <div class="checkbox mb-2" data-v-value>
+                        <label class="form-check-label form-control">
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="option[2]" value="1" data-v-value-input>
+                            <img src="img/demo/blue.gif" height="32" alt="Blue" data-v-if="value.image" data-v-value-image>
+                            <span data-v-value-name>Blue</span>
+                            <span data-v-if="value.price > 0">
+                              (<span data-v-value-price_formatted>+$50</span>)
+                            </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="checkbox mb-2" data-v-value>
+                        <label class="form-check-label form-control">
+                          <div>
+                            <input type="checkbox" class="form-check-input" name="option[2]" value="2" data-v-value-input>
+                            <img src="img/demo/green.gif" height="32" alt="Green" data-v-if="value.image" data-v-value-image>
+                            <span data-v-value-name>Green</span>
+                            <span data-v-if="value.price > 0">
+                              (<span data-v-value-price_formatted>+$50</span>)
+                            </span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="checkbox mb-2" data-v-value>
+                        <label class="form-check-label form-control">
+                          <div>
+                            <input type="checkbox" class="form-check-input" name="option[2]" value="3" data-v-value-input>
+                            <img src="img/demo/navy.gif" height="32" alt="Navy" data-v-if="value.image" data-v-value-image>
+                            <span data-v-value-name>Navy</span>
+                            <span data-v-if="value.price > 0">
+                              (<span data-v-value-price_formatted>+$50</span>)
+                            </span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div data-v-if="option.type = 'select'">
+                      <select class="form-select" data-v-option-input>
+                        <option value="" data-v-value>Option 1</option>
+                        <option value="" data-v-value>Option 2</option>
+                        <option value="" data-v-value>Option 3</option>
+                      </select>
+                    </div>
+
+
+                    <div data-v-if="option.type = 'text'">
+                      <input type="text" class="form-control" name="option[1]" value="" data-v-option-input>
+                    </div>
+
+                    <div data-v-if="option.type = 'number'">
+                      <input type="number" class="form-control" name="option[1]" value="" data-v-option-input>
+                    </div>
+
+                    <div data-v-if="option.type = 'email'">
+                      <input type="email" class="form-control" name="option[1]" value="" data-v-option-input>
+                    </div>
+
+                    <div data-v-if="option.type = 'textarea'">
+                      <textarea class="form-control" name="option[1]" data-v-option-input></textarea>
+                    </div>
+
+                    <div data-v-if="option.type = 'file'">
+                      <input type="file" class="form-control" name="option[1]" value="" data-v-option-input>
+                    </div>
+
+                    <div data-v-if="option.type = 'date'">
+                      <input type="date" class="form-control" name="option[1]" value="" data-v-option-input>
+                    </div>
+
+                    <div data-v-if="option.type = 'time'">
+                      <input type="time" class="form-control" name="option[1]" value="" data-v-option-input>
+                    </div>
+
+                    <div data-v-if="option.type = 'datetime'">
+                      <input type="datetime-local" class="form-control" name="option[1]" value="" data-v-option-input>
+                    </div>
+                  </div>
+
+                  <div class="form-group" data-v-option>
+                    <label class="form-label">Size</label>
+
+                    <div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="option[240]" value="62">
+                          <div>XS</div>
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="option[240]" value="60">
+                          <div>M</div>
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="option[240]" value="63">
+                          <div>L</div>
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="option[240]" value="61">
+                          <div>XL</div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="subscriptions" class="product-subscriptions mt-4" data-v-component-product-subscriptions>
+                <div data-v-if="count > 0">
+                  <label class="form-label" data-v-if="count > 0">Subscription</label>
+                  <div>
+                    <div class="form-check form-check-inline radio" data-v-subscription>
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="subscription_plan_id" required data-v-subscription-subscription_plan_id>
+                        <span data-v-subscription-name>Subscription name</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <hr class="border opacity-50">
 
               <div class="form-group mt-5">
@@ -850,11 +1035,11 @@
 									-->
                 <div class="quantity">
                   <div class="input-group spinner">
-                    <button class="btn btn-minus">
+                    <button class="btn btn-minus" type="button">
                       <i class="la la-minus"></i>
                     </button>
                     <input type="number" name="quantity" value="1" size="1" id="input-quantity" class="form-control">
-                    <button class="btn btn-plus">
+                    <button class="btn btn-plus" type="button">
                       <i class="la la-plus"></i>
                     </button>
                   </div>
@@ -890,123 +1075,258 @@
 
                 </button>
 
-                <!--
-									<div class="product_wish_compare mt-3">
-										<button  type="submit" formaction="/wishlist/1" class="btn btn-sm btn-outline-secondary border-0" title="Add to Wish List">
-											<i class="la la-heart"></i> Add to Wish List
-										</button>
-										<button  type="submit" formaction="/compare/1" class="btn btn-sm btn-outline-secondary border-0" title="Compare this Product">
-											<i class="la la-random"></i> Compare this Product
-										</button>
-									</div>
-									-->
+                <div class="product_wish_compare mt-4">
+                  <button type="submit" formaction="/wishlist/1" class="btn btn-sm btn-outline-secondary border-0" title="Add to Wish List" data-v-vvveb-action="addToWishlist" data-v-product-wishlist-url>
+                    <i class="la la-heart"></i>
+                    <span>Add to Wish List</span>
+                  </button>
+                  <button type="submit" formaction="/compare/1" class="btn btn-sm btn-outline-secondary border-0" title="Compare this Product" data-v-vvveb-action="addToCompare" data-v-product-compare-url>
+                    <i class="la la-random"></i>
+                    <span>Compare this Product</span>
+                  </button>
+                </div>
 
               </div>
 
+
             </div>
-            <!-- 
-							<div class="row g-2">
-								<div class="col-auto">
-
-									<input name="quantity[3]" value="1" size="5" class="form-control" type="number">  
-									
-								</div>
-
-								<div class="col-auto">
-									<a href="#" class="btn btn-primary px-5" data-v-vvveb-action="addToCart">
-									
-										<span class="loading d-none">
-											<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
-											</span>
-											<span >Add to cart</span>...
-										</span>
-
-										<span class="button-text" >
-											<i class="la la-shopping-bag la-lg me-2"></i> Add to cart
-										</span>
-									
-									
-									</a>   	
-								</div>
-
-								<div class="col-auto">
-							
-									<a href="#" class="btn btn-light border" data-v-vvveb-action="addToCart">
-									
-										<span class="loading d-none">
-											<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
-											</span>
-											<span >Add to favorites</span>...
-										</span>
-
-										<span class="button-text" >
-											<i class="la la-heart la-lg"></i>
-										</span>
-									
-									
-									</a>  					
-								</div>
-								
-								<div class="col-auto">
-							
-										<a href="#" class="btn btn-light border" data-v-vvveb-action="addToCart">
-										
-											<span class="loading d-none">
-												<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
-												</span>
-												<span >Add to compare</span>...
-											</span>
-
-											<span class="button-text" >
-												<i class="la la-random la-lg"></i>
-											</span>
-										
-										
-										</a>  
-									</div>
-							</div>
-							-->
 
           </div>
         </form>
 
       </div>
 
-      <ul class="nav nav-tabs mt-5" id="productTabs" role="tablist">
+      <ul class="nav nav-tabs nav-scroll bg-body sticky-top mt-5" id="productTabs" role="tablist" style="top:120px">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="description-tab-pane" aria-selected="true">
+          <a class="nav-link active" id="description-tab" data-bs-target="#description" href="#description" type="button" role="tab" aria-controls="description" aria-selected="true">
             Description
-          </button>
+          </a>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews-tab-pane" type="button" role="tab" aria-controls="reviews-tab-pane" aria-selected="false">
+          <a class="nav-link" id="specifications-tab" data-bs-target="#specifications" href="#specifications" type="button" role="tab" aria-controls="specifications" aria-selected="false">
+            Specifications
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="reviews-tab" data-bs-target="#reviews" href="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">
             Reviews
-          </button>
+          </a>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="details-tab" data-bs-toggle="tab" data-bs-target="#details-tab-pane" type="button" role="tab" aria-controls="details-tab-pane" aria-selected="false">
-            Details
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="questions-tab" data-bs-toggle="tab" data-bs-target="#questions-tab-pane" type="button" role="tab" aria-controls="questions-tab-pane" aria-selected="false">
+          <a class="nav-link" id="questions-tab" data-bs-target="#questions" href="#questions" type="button" role="tab" aria-controls="questions" aria-selected="false">
             Questions &amp; Answers
-          </button>
+          </a>
         </li>
       </ul>
 
-      <div class="tab-content" id="productTabsContent">
-        <div class="tab-pane show active" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
+      <div class="tab-content nav-scroll" id="productTabsContent" data-bs-spy="scroll" data-bs-target="#productTabs" data-bs-root-margin="0px 0px -20%" data-bs-smooth-scroll="false">
+
+        <div class="tab-pane show active" id="description" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
+
+          <h4>Description</h4>
 
           <div class="description" data-v-product-content>
 
-            Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin. Praesent at tempus lectus, eleifend blandit felis. Fusce augue arcu, consequat a nisl aliquet, consectetur elementum turpis. Donec iaculis lobortis nisl, et viverra risus imperdiet eu. Etiam mollis posuere elit non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis arcu a magna sodales venenatis. Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.
+            <p>All in the world know the beauty of the beautiful, and in doing this they have (the idea of) what ugliness is; they all know the skill of the skilful, and in doing this they have (the idea of) what the want of skill is.</p>
+
+            <p>So it is that existence and nonexistence give birth the one to (the idea of) the other; that difficulty and ease produce the one (the idea of) the other; that length and shortness fashion out the one the figure of the other; that (the ideas of) height and lowness arise from the contrast of the one with the other; that the musical notes and tones become harmonious through the relation of one with another; and that being before and behind give the idea of one following another.</p>
+
+            <p>Therefore the sage manages affairs without doing anything, and conveys his instructions without the use of speech.</p>
+
+            <p>All things spring up, and there is not one which declines to show itself; they grow, and there is no claim made for their ownership; they go through their processes, and there is no expectation (of a reward for the results). The work is accomplished, and there is no resting in it (as an achievement).</p>
+
+            <blockquote>
+              <p>
+                <span>The work is done, but how no one can see;</span>
+                <br>
+                <span>`This this that makes the power not cease to be.</span>
+              </p>
+            </blockquote>
 
           </div>
 
+
         </div>
-        <div class="tab-pane" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
-          <div id="reviews" class="product-reviews mt-4" data-v-component-reviews>
+        <div class="tab-pane" id="specifications" role="tabpanel" aria-labelledby="specifications-tab" tabindex="0">
+          <div id="specifications" class="product-specifications mt-4" data-v-component-product-attributes>
+            <h4>Specifications</h4>
+
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <tbody data-v-attributes>
+                  <tr data-v-group>
+                    <td colspan="2">
+                      <strong data-v-attribute-group>Processor</strong>
+                    </td>
+                  </tr>
+                  <tr data-v-attribute>
+                    <td data-v-attribute-name>Number of cores</td>
+                    <td data-v-attribute-text>16</td>
+                  </tr>
+                  <tr data-v-attribute>
+                    <td data-v-attribute-name>Frequency</td>
+                    <td data-v-attribute-text>3.6 GHZ</td>
+                  </tr>
+                  <tr data-v-attribute>
+                    <td data-v-attribute-name>TDP</td>
+                    <td data-v-attribute-text>65 W</td>
+                  </tr>
+                  <tr data-v-attribute>
+                    <td data-v-attribute-name>Lithography</td>
+                    <td data-v-attribute-text>7 nm</td>
+                  </tr>
+                  <tr data-v-attribute>
+                    <td data-v-attribute-name>L2 Cache</td>
+                    <td data-v-attribute-text>3 MB</td>
+                  </tr>
+                  <tr data-v-attribute>
+                    <td data-v-attribute-name>L3 Cache</td>
+                    <td data-v-attribute-text>32 MB</td>
+                  </tr>
+                  <tr data-v-group>
+                    <td colspan="2">
+                      <strong data-v-attribute-group>Memory</strong>
+                    </td>
+                  </tr>
+                  <tr data-v-attribute>
+                    <td data-v-attribute-name>Type</td>
+                    <td data-v-attribute-text>DDR4</td>
+                  </tr>
+                  <tr data-v-attribute>
+                    <td data-v-attribute-name>Capacity</td>
+                    <td data-v-attribute-text>32 GB</td>
+                  </tr>
+                  <tr data-v-attribute>
+                    <td data-v-attribute-name>Frequency</td>
+                    <td data-v-attribute-text>1600 MHZ</td>
+                  </tr>
+                  <tr data-v-attribute>
+                    <td data-v-attribute-name>Latency</td>
+                    <td data-v-attribute-text>9 CL</td>
+                  </tr>
+                  <tr data-v-attribute>
+                    <td data-v-attribute-name>Voltage</td>
+                    <td data-v-attribute-text>1,5 V</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+        <div class="tab-pane" id="reviews" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
+          <div class="product-reviews mt-4" data-v-component-reviews>
+            <h4>Reviews</h4>
+
+
+            <div class="row border-top border-bottom py-4">
+              <div class="col-sm-3">
+                <div class="rating-block text-center">
+                  <h2 class="text-muted mb-0">4.3</h2>
+                  <span>
+                    <span class="la la-star text-warning fs-3"></span>
+                  </span>
+                  <span>
+                    <span class="la la-star text-warning fs-3"></span>
+                  </span>
+                  <span>
+                    <span class="la la-star text-warning fs-3"></span>
+                  </span>
+                  <span>
+                    <span class="la la-star text-muted fs-3"></span>
+                  </span>
+                  <span>
+                    <span class="la la-star text-muted  fs-3"></span>
+                  </span>
+
+                  <h6 class="">15 reviews</h6>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="float-start">
+                  <div class="float-start" style="width:35px; line-height:1;">
+                    <div style="height:9px; margin:5px 0;">5 <span class="la la-star"></span>
+                    </div>
+                  </div>
+                  <div class="float-start" style="width:180px;">
+                    <div class="progress" style="height:9px; margin:8px 0;">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" style="width: 1000%">
+                        <span class="sr-only">80% Complete (danger)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="float-end" style="margin-left:10px;">1</div>
+                </div>
+                <div class="float-start">
+                  <div class="float-start" style="width:35px; line-height:1;">
+                    <div style="height:9px; margin:5px 0;">4 <span class="la la-star"></span>
+                    </div>
+                  </div>
+                  <div class="float-start" style="width:180px;">
+                    <div class="progress" style="height:9px; margin:8px 0;">
+                      <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="5" style="width: 80%">
+                        <span class="sr-only">80% Complete (danger)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="float-end" style="margin-left:10px;">1</div>
+                </div>
+                <div class="float-start">
+                  <div class="float-start" style="width:35px; line-height:1;">
+                    <div style="height:9px; margin:5px 0;">3 <span class="la la-star"></span>
+                    </div>
+                  </div>
+                  <div class="float-start" style="width:180px;">
+                    <div class="progress" style="height:9px; margin:8px 0;">
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" style="width: 60%">
+                        <span class="sr-only">80% Complete (danger)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="float-end" style="margin-left:10px;">0</div>
+                </div>
+                <div class="float-start">
+                  <div class="float-start" style="width:35px; line-height:1;">
+                    <div style="height:9px; margin:5px 0;">2 <span class="la la-star"></span>
+                    </div>
+                  </div>
+                  <div class="float-start" style="width:180px;">
+                    <div class="progress" style="height:9px; margin:8px 0;">
+                      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5" style="width: 40%">
+                        <span class="sr-only">80% Complete (danger)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="float-end" style="margin-left:10px;">0</div>
+                </div>
+                <div class="float-start">
+                  <div class="float-start" style="width:35px; line-height:1;">
+                    <div style="height:9px; margin:5px 0;">1 <span class="la la-star"></span>
+                    </div>
+                  </div>
+                  <div class="float-start" style="width:180px;">
+                    <div class="progress" style="height:9px; margin:8px 0;">
+                      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" style="width: 20%">
+                        <span class="sr-only">80% Complete (danger)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="float-end" style="margin-left:10px;">0</div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="rating-block text-center">
+                  <i class="la la-check-circle text-success fs-1"></i>
+                  <div class="">5 reviews from buyers</div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="rating-block text-center">
+                  <i class="la la-thumbs-up text-primary fs-1"></i>
+                  <div class="">100% recommendations</div>
+                </div>
+              </div>
+            </div>
 
             <ol class="review-list list-unstyled mb-3">
               <li class="review mb-4" data-v-review>
@@ -1027,7 +1347,7 @@
                     </div>
 
                     <div class="review-meta text-small text-muted">
-                      <span data-v-review-date_added data-filter-friendly_date>Jan 29, 2018</span>
+                      <span data-v-review-created_at data-filter-friendly_date>Jan 29, 2018</span>
                     </div>
 
                   </div>
@@ -1065,7 +1385,7 @@
                     </div>
 
                     <div class="review-meta text-small text-muted">
-                      <span data-v-review-date_added data-filter-friendly_date>Jan 29, 2018</span>
+                      <span data-v-review-created_at data-filter-friendly_date>Jan 29, 2018</span>
                     </div>
 
                   </div>
@@ -1106,7 +1426,7 @@
                     </div>
 
                     <div class="review-meta text-small text-muted">
-                      <span data-v-review-date_added data-filter-friendly_date>Jan 29, 2018</span>
+                      <span data-v-review-created_at data-filter-friendly_date>Jan 29, 2018</span>
                     </div>
 
                   </div>
@@ -1131,8 +1451,12 @@
             </ol>
           </div>
 
+          <button data-bs-toggle="collapse" href="#reviews-form" role="button" aria-expanded="false" aria-controls="reviews-form" class="btn btn-light border">
+            <span>Leave review</span>
+            <i class="la la-angle-down ms-2"></i>
+          </button>
 
-          <div class="reviews-form">
+          <div class="reviews-form collapse mt-4" id="reviews-form">
 
             <div class="notifications" data-v-notifications>
 
@@ -1223,7 +1547,7 @@
                   <button type="submit" value="logout" class="btn link-primary">
 
                     <span class="loading d-none">
-                      <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                      <span class="spinner-border spinner-border-sm align-middle" role="status">
                       </span>
                       <span>Loading ...</span>...
                     </span>
@@ -1271,24 +1595,25 @@
 
                 <button type="submit" value="review" class="btn btn-primary">
                   <span class="loading d-none">
-                    <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                    <span>producting</span>...
+                    <span class="spinner-border spinner-border-sm align-middle" role="status"> </span>
+                    <span>Posting</span>...
                   </span>
 
                   <span class="button-text">
-                    Post comment
+                    <span>Post review</span>
+                    <i class="la la-long-arrow-alt-right ms-1"></i>
                   </span>
                 </button>
 
               </form>
             </div>
+
           </div>
 
         </div>
-        <div class="tab-pane" id="details-tab-pane" role="tabpanel" aria-labelledby="details-tab" tabindex="0">
-        </div>
-        <div class="tab-pane" id="questions-tab-pane" role="tabpanel" aria-labelledby="questions-tab" tabindex="0">
-          <div id="questions" class="product-questions mt-4" data-v-component-questions>
+        <div class="tab-pane" id="questions" role="tabpanel" aria-labelledby="questions-tab" tabindex="0">
+          <div class="product-questions mt-4" data-v-component-questions>
+            <h4>Questions and anwsers</h4>
 
             <ol class="question-list list-unstyled mb-3">
               <li class="question mb-4" data-v-question>
@@ -1309,7 +1634,7 @@
                     </div>
 
                     <div class="question-meta text-small text-muted">
-                      <span data-v-question-date_added data-filter-friendly_date>Jan 29, 2018</span>
+                      <span data-v-question-created_at data-filter-friendly_date>Jan 29, 2018</span>
                     </div>
 
                   </div>
@@ -1347,7 +1672,7 @@
                     </div>
 
                     <div class="question-meta text-small text-muted">
-                      <span data-v-question-date_added data-filter-friendly_date>Jan 29, 2018</span>
+                      <span data-v-question-created_at data-filter-friendly_date>Jan 29, 2018</span>
                     </div>
 
                   </div>
@@ -1388,7 +1713,7 @@
                     </div>
 
                     <div class="question-meta text-small text-muted">
-                      <span data-v-question-date_added data-filter-friendly_date>Jan 29, 2018</span>
+                      <span data-v-question-created_at data-filter-friendly_date>Jan 29, 2018</span>
                     </div>
 
                   </div>
@@ -1414,7 +1739,12 @@
           </div>
 
 
-          <div class="questions-form">
+          <button data-bs-toggle="collapse" href="#questions-form" role="button" aria-expanded="false" aria-controls="questions-form" class="btn btn-light border">
+            <span>Ask question</span>
+            <i class="la la-angle-down ms-2"></i>
+          </button>
+
+          <div class="questions-form collapse mt-4" id="questions-form">
 
             <div class="notifications" data-v-notifications>
 
@@ -1558,12 +1888,14 @@
                   </span>
 
                   <span class="button-text">
-                    Post question
+                    <span>Post question</span>
+                    <i class="la la-long-arrow-alt-right ms-1"></i>
                   </span>
                 </button>
 
               </form>
             </div>
+
           </div>
 
         </div>
@@ -1572,7 +1904,7 @@
 
       <div data-v-component-products="index" data-v-related="url.product_id" data-v-limit="6" data-v-page="url">
         <div data-v-if="count > 0">
-          <h3>Related products</h3>
+          <h3 class="mt-5">Related products</h3>
           <div class="row g-3">
             <div class="col-md-6 col-lg-4 col-xl-3" data-v-product>
               <div class="product">
@@ -1591,7 +1923,12 @@
 
                     <!-- Favourite -->
                     <div class="product-favourite">
-                      <a href="product/product.html" data-v-product-url data-v-product-title class="la la-heart"></a>
+                      <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-wishlist-url></a>
+                    </div>
+
+                    <!-- Compare -->
+                    <div class="product-compare">
+                      <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-compare-url></a>
                     </div>
                   </div>
 
@@ -1609,7 +1946,7 @@
                       <!-- Add to Cart -->
                       <div class="add-to-cart-btn">
                         <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                        <a href="" class="btn btn-primary w-100" data-v-product-url="cart/cart/index" data-v-vvveb-action="addToCart" data-product_id="1">
+                        <a href="" class="btn btn-primary w-100" data-v-product-add-cart-url data-v-vvveb-action="addToCart" data-product_id="1">
                           <span class="loading d-none">
                             <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                             <span>Add to cart</span>...
@@ -1764,36 +2101,41 @@ $(document).on("click", ".dropdown-toggle",function (e) {
 		parent.removeClass("show"); 
 	}
 });
-
-/*	
-setTimeout(function() {
-	document.getElementById("screen").attributes["class"].value = "show"
-}, 500);
-
-(function() {
-
-  var hamburger = {
-    navToggle: document.querySelector('.navbar-toggler'),
-    nav: document.querySelector('.navbar-collapse'),
-
-    doToggle: function(e) {
-      //e.preventDefault();
-      this.navToggle.classList.toggle('show');
-      this.nav.classList.toggle('show');
-    }
-  };
-
-  hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-  hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-
-}());
-*/
 </script>
 
 
 
   <script>
 $('.carousel-item:first').addClass("active");
+/*
+$('a[href^="#"]').click(function (e) {
+	e.preventDefault();
+	return false;
+});
+*/
+/*
+//anchors not working properly due to base href, add full url to anchors
+$('a[href^="#"]').attr("href", function (i,a) {
+	return window.location.href + a;
+});
+$('a[href^="#"]').on("click", function (e) {
+	window.location.hash = this.attributes.href.value;
+});
+*/
+$('a[href^="#"]').bind('click.smoothscroll',function (e) {
+	var target = this.hash,
+	//window.location.hash = this.attributes.href.value;
+	$target = $(target);
+	//window.location.hash = target;
+
+	$('html, body').stop().animate({
+		'scrollTop': $target.offset().top-200//subscract header height
+	}, 900, 'swing', function () {
+		//window.location.hash = target;
+	});
+	
+	return false;
+});
 </script>
 
 </body>

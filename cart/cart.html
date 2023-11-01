@@ -119,9 +119,14 @@
 
 
 
+  <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/posts" />
+  <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
+
   <link rel="icon" type="image/x-icon" href="../../media/favicon.ico" data-v-global-site-favicon>
 
   <link rel="manifest" href="/manifest.webmanifest">
+
+  <link rel="alternate" hreflang="" href="" />
 
   <link rel="stylesheet" href="js/aos.css">
   <noscript>
@@ -135,9 +140,7 @@
 </head>
 
 
-
 <body>
-
   <nav class="navigation-1 clearfix">
 
     <div id="top" class="top-nav clearfix">
@@ -194,25 +197,25 @@
                   <div class="dropdown-menu dropdown-menu-end">
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="EUR" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>€</span>
-                        <span data-v-currency-symbol_right>€</span>
+                      <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>€</span>
+                        <span data-v-currency-sign_end>€</span>
                         <span class="ms-1" data-v-currency-name>Euro</span>
                       </button>
                     </div>
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="GBP" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>£</span>
-                        <span data-v-currency-symbol_right>£</span>
+                      <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>£</span>
+                        <span data-v-currency-sign_end>£</span>
                         <span class="ms-1" data-v-currency-name>Pound Sterling</span>
                       </button>
                     </div>
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="USD" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>$</span>
-                        <span data-v-currency-symbol_right>$</span>
+                      <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>$</span>
+                        <span data-v-currency-sign_end>$</span>
                         <span class="ms-1" data-v-currency-name>US Dollar</span>
                       </button>
                     </div>
@@ -237,7 +240,7 @@
                   <div class="dropdown-menu dropdown-menu-end">
 
                     <div data-v-language>
-                      <button class="dropdown-item" type="submit" formaction value="eng" name="language" data-v-language-code>
+                      <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
                         <!-- <i class="la la-flag la-lg me-2"></i> -->
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
 
@@ -248,7 +251,7 @@
                     </div>
 
                     <div data-v-language>
-                      <button class="dropdown-item" type="submit" formaction value="ro" name="language" data-v-language-code>
+                      <button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
                         <!-- <i class="la la-flag la-lg me-2"></i> -->
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
                         <!-- <a href="" data-v-language-url>  -->
@@ -265,9 +268,6 @@
         </div>
       </div>
     </div>
-
-
-
 
     <div class="navbar navbar-expand-md">
 
@@ -513,12 +513,12 @@
                           <tr data-v-cart-product>
                             <td class="text-center">
                               <a href="#40" data-v-cart-product-url>
-                                <img src="img/demo/product.jpg" alt="iPhone" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                                <img src="img/demo/product.jpg" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                               </a>
                             </td>
                             <td class="text-start">
                               <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                iPhone 5
+                                Product name
                               </a>
 
                               <span data-v-cart-product-quantity>1</span>
@@ -534,12 +534,12 @@
                           <tr data-v-cart-product>
                             <td class="text-center">
                               <a href="#40" data-v-cart-product-url>
-                                <img src="img/demo/product.jpg" alt="iPhone" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                                <img src="img/demo/product.jpg" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                               </a>
                             </td>
                             <td class="text-start">
                               <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                iPhone 5
+                                Product name
                               </a>
 
                               <span data-v-cart-product-quantity>1</span>
@@ -658,8 +658,6 @@
   </nav>
 
 
-
-
   <main id="site-content" role="main">
 
     <!-- Page Content -->
@@ -691,12 +689,12 @@
                       <tr data-v-cart-product>
                         <td class="text-center cart-img">
                           <a href="#40" data-v-cart-product-url>
-                            <img src="img/demo/product.jpg" loading="lazy" alt="iPhone" class="img-rounded" data-v-cart-product-image width=80 loading="lazy">
+                            <img src="img/demo/product.jpg" loading="lazy" alt="Product name" class="img-rounded" data-v-cart-product-image width=80 loading="lazy">
                           </a>
                         </td>
                         <td class="text-start">
                           <a href="#40" data-v-cart-product-url>
-                            <span data-v-cart-product-name>iPhone 5</span>
+                            <span data-v-cart-product-name>Product name</span>
                           </a>
                           <div class="price">
                             <span data-v-cart-product-price_tax_formatted>$246.40</span>
@@ -730,12 +728,12 @@
                       <tr data-v-cart-product>
                         <td class="text-center cart-img">
                           <a href="#40" data-v-cart-product-url>
-                            <img src="img/demo/product.jpg" loading="lazy" alt="iPhone" class="img-rounded" data-v-cart-product-image width=80 loading="lazy">
+                            <img src="img/demo/product.jpg" loading="lazy" alt="Product name" class="img-rounded" data-v-cart-product-image width=80 loading="lazy">
                           </a>
                         </td>
                         <td class="text-start">
                           <a href="#40" data-v-cart-product-url>
-                            <span data-v-cart-product-name>iPhone 5</span>
+                            <span data-v-cart-product-name>Product name</span>
                           </a>
                           <div class="price">
                             <span data-v-cart-product-price_tax_formatted>$246.40</span>
@@ -884,7 +882,6 @@
     </div>
   </main>
 
-
   <footer class="footer-1" title="footer-1">
     <div class="container" data-v-component-menu="footer" data-v-slug="main-footer">
 
@@ -972,7 +969,6 @@
 
   </footer>
 
-
   <div class="bg-image"></div>
 
   <div class="alert alert-light alert-dismissible fade alert-top" role="alert" style="display:none">
@@ -1015,76 +1011,8 @@ $(document).on("click", ".dropdown-toggle",function (e) {
 		parent.removeClass("show"); 
 	}
 });
-
-/*	
-setTimeout(function() {
-	document.getElementById("screen").attributes["class"].value = "show"
-}, 500);
-
-(function() {
-
-  var hamburger = {
-    navToggle: document.querySelector('.navbar-toggler'),
-    nav: document.querySelector('.navbar-collapse'),
-
-    doToggle: function(e) {
-      //e.preventDefault();
-      this.navToggle.classList.toggle('show');
-      this.nav.classList.toggle('show');
-    }
-  };
-
-  hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-  hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-
-}());
-*/
 </script>
 
-  <script>
-$('body').on('change', '[name="quantity"]', function (e) {
-	let product = $(this).parents("[data-v-cart-product]");
-	let id = product[0].dataset.product_id;
-	let quantity = this.value;
-	let updateElements = ['#cart-container [data-product_id="' + id + '"] .price', '#cart-container [data-product_id="' + id + '"] .total', ".cart-right-column", ".mini-cart"];
-	
-	delay(() => VvvebTheme.Cart.update(id, quantity, this, updateElements), 1000);
-});
-
-$('.cart-table .quantity').on('click', '.btn-plus', function (e) {
-	$("input[type=number]", this.parentNode).val(function( index, value ) {
-	  return ++value;
-	}).change();
-});
-
-$('.cart-table .quantity').on('click', '.btn-minus', function (e) {
-	$("input[type=number]", this.parentNode).val(function( index, value ) {
-	  return Math.max(--value, 1);
-	}).change();
-});
-
-$('body').on('click', '.btn-remove', function (e) {
-	let product = $(this).parents("[data-v-cart-product]");
-	let id = product[0].dataset.product_id;
-	let quantity = this.value;
-	let updateElements = [".cart-right-column", ".mini-cart"];
-
-	product.addClass("bg-light");
-	delay(() => VvvebTheme.Cart.remove(id, this, updateElements, () => product.remove()), 500);
-	//if cart empty refresh page, if not empty prevent refresh and update with ajax
-	if ($("#cart-container [data-v-cart-product]").length > 1) {
-		//e.preventDefault();
-	} else {
-		//return;
-	}
-	e.preventDefault();
-});
-</script>
-  <style>
-    .cart-img {
-      height: 120px;
-    }
-  </style>
 </body>
 
 </html>

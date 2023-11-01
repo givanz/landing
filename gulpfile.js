@@ -140,7 +140,7 @@ async function screenshots(dirs = []) {
 		}			
 
 		let content = fs.readFileSync(section,'utf8');
-		let html = `<html><head><base href="../../"><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&amp;family=Open+Sans:wght@400;700&amp;family=Manrope:wght@400;500;600;700&amp;" rel="stylesheet"><link href="/css/style.bundle.css" rel="stylesheet"></head><body>${content}</body></html>`;
+		let html = `<html><head><base href="../../"><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&amp;family=Inter:wght@400;700&amp;" rel="stylesheet"><link href="/css/style.bundle.css" rel="stylesheet"><link href="/css/screenshots.css" rel="stylesheet"></head><body>${content}</body></html>`;
 		fs.writeFileSync(sectionScreenshot, html);
 		
 		//await page.setContent(html, {"waitUntil":"networkidle0"});
@@ -275,7 +275,7 @@ function sections(type = "section", dirs = []) {
 		let name;
 		let id;
 		let html;
-		let sectionsHtml = '<html><head><base src="../"><link href="../css/style.bundle.css" rel="stylesheet"></head><body>';
+		let sectionsHtml = '<html><head><base src="../"><link href="../css/style.bundle.css" rel="stylesheet"><link href="../css/screenshots.css" rel="stylesheet"></head><body>';
 		let image = '';
 		
 		let sections = [];

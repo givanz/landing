@@ -1,18 +1,18 @@
-<div class="row" data-v-component-address>
-	 <div class="mb-2 col-6" data-v-class-if-col-12="count <= 1" data-v-address>
+<div class="row" data-v-component-user-address>
+	 <div class="mb-2 col-6" data-v-class-if-col-12="count <= 1" data-v-user_address>
 		<div class="card">
 			<div class="card-body">
 				<div class="form-check form-control-lg">
-					  <input class="form-check-input" type="radio" value="" name="billing_address_id" data-v-address-label-id data-v-address-address_id>
-					  <label class="form-check-label text-small" role="button" for="billing_address_id" data-v-address-label-for>
+					  <input class="form-check-input" type="radio" value="" name="billing_address_id" data-v-user_address-label-id data-v-user_address-user_address_id>
+					  <label class="form-check-label text-small" role="button" for="billing_address_id" data-v-user_address-label-for>
 						
-							<span data-v-address-first_name>First name</span>
-							<span data-v-address-last_name>Last  name</span>
-							<div data-v-address-company>Company</div>
-							<span data-v-address-address_1>Address 1</span>
-							<span data-v-address-address_2>Address 2</span>
-							<span data-v-address-city>Bucharest</span>
-							<span data-v-address-postcode>9800</span>
+							<span data-v-user_address-first_name>First name</span>
+							<span data-v-user_address-last_name>Last  name</span>
+							<div  data-v-user_address-company>Company</div>
+							<span data-v-user_address-address_1>Address 1</span>
+							<span data-v-user_address-address_2>Address 2</span>
+							<span data-v-user_address-city>Bucharest</span>
+							<span data-v-user_address-post_code>9800</span>
 						
 					  </label>
 				</div>
@@ -60,10 +60,10 @@
 			</div>	
 			<div class="col-12 mb-3">
 				<label class="col-form-label" for="country">Region <span class="text-danger text-small">*</span></label>
-				<select class="form-select" id="billing_zone_id" name="billing_address[zone_id]" data-v-zones required readonly>
-				  <option value="1" data-v-option>Zone 1</option>
-				  <option value="2" data-v-option>Zone 2</option>
-				  <option value="3" data-v-option>Zone 3</option>
+				<select class="form-select" id="billing_region_id" name="billing_address[region_id]" data-v-regions required readonly>
+				  <option value="1" data-v-option>region 1</option>
+				  <option value="2" data-v-option>region 2</option>
+				  <option value="3" data-v-option>region 3</option>
 				</select>
 			</div>
 			<div class="col-12 mb-3">
@@ -72,8 +72,8 @@
 				<input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="">
 			</div>
 			<div class="col-12 mb-3">
-				<label class="col-form-label" for="postcode">Postcode <span class="text-danger text-small">*</span></label>
-				<input type="text" class="form-control" id="billing_postcode" name="billing_address[postcode]" minlength="3" value="">
+				<label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span></label>
+				<input type="text" class="form-control" id="billing_post_code" name="billing_address[post_code]" minlength="3" value="">
 			</div>
 			<div class="col-12 mb-3">
 				<label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span></label>

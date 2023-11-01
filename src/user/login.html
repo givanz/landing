@@ -32,11 +32,16 @@
 									<input type="hidden" name="csrf" data-v-csrf>
 									<div class="mb-3">
 										<label class="form-label" for="input-email">E-Mail Address</label>
-										<input type="email" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control" required>
+										<div class="input-group">
+											<span class="input-group-text"> <i class="la la-envelope"></i> </span>
+											<input type="email" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control" required>
+										</div>
 									</div>
+									
 									<div class="mb-3">
 										<label class="form-label" for="input-password">Password</label>
 										<div class="input-group">
+ 										  <span class="input-group-text"> <i class="la la-lock"></i> </span>
 										  <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password"  id="password" name="password"  value="" aria-label="Password" required>
 										  <div class="input-group-append">
 											<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this)"><i class="la la-eye-slash"></i></button>

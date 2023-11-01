@@ -123,9 +123,14 @@
 
 
 
+  <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/posts" />
+  <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
+
   <link rel="icon" type="image/x-icon" href="../../media/favicon.ico" data-v-global-site-favicon>
 
   <link rel="manifest" href="/manifest.webmanifest">
+
+  <link rel="alternate" hreflang="" href="" />
 
   <link rel="stylesheet" href="js/aos.css">
   <noscript>
@@ -751,7 +756,7 @@
                 <div class="col-lg-4 col-md-4">
                   <div class="card-body d-flex align-items-center c-detail pl-0">
                     <div class="me-3 align-self-center">
-                      <i class="la la-map fa-lg"></i>
+                      <i class="la la-map la-lg"></i>
                     </div>
                     <div>
                       <h6>Address</h6>
@@ -764,7 +769,7 @@
                 <div class="col-lg-4 col-md-4">
                   <div class="card-body d-flex align-items-center c-detail">
                     <div class="me-3 align-self-center">
-                      <i class="la la-phone fa-lg"></i>
+                      <i class="la la-phone la-lg"></i>
                     </div>
                     <div>
                       <h6>Phone</h6>
@@ -775,7 +780,7 @@
                 <div class="col-lg-4 col-md-4">
                   <div class="card-body d-flex align-items-center c-detail">
                     <div class="me-3 align-self-center">
-                      <i class="la la-email fa-lg"></i>
+                      <i class="la la-email la-lg"></i>
                     </div>
                     <div>
                       <h6>Email</h6>
@@ -839,30 +844,6 @@ $(document).on("click", ".dropdown-toggle",function (e) {
 		parent.removeClass("show"); 
 	}
 });
-
-/*	
-setTimeout(function() {
-	document.getElementById("screen").attributes["class"].value = "show"
-}, 500);
-
-(function() {
-
-  var hamburger = {
-    navToggle: document.querySelector('.navbar-toggler'),
-    nav: document.querySelector('.navbar-collapse'),
-
-    doToggle: function(e) {
-      //e.preventDefault();
-      this.navToggle.classList.toggle('show');
-      this.nav.classList.toggle('show');
-    }
-  };
-
-  hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-  hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-
-}());
-*/
 </script>
 
 

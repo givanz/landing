@@ -119,9 +119,14 @@
 
 
 
+  <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/posts" />
+  <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
+
   <link rel="icon" type="image/x-icon" href="../../media/favicon.ico" data-v-global-site-favicon>
 
   <link rel="manifest" href="/manifest.webmanifest">
+
+  <link rel="alternate" hreflang="" href="" />
 
   <link rel="stylesheet" href="js/aos.css">
   <noscript>
@@ -193,25 +198,25 @@
                   <div class="dropdown-menu dropdown-menu-end">
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="EUR" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>€</span>
-                        <span data-v-currency-symbol_right>€</span>
+                      <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>€</span>
+                        <span data-v-currency-sign_end>€</span>
                         <span class="ms-1" data-v-currency-name>Euro</span>
                       </button>
                     </div>
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="GBP" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>£</span>
-                        <span data-v-currency-symbol_right>£</span>
+                      <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>£</span>
+                        <span data-v-currency-sign_end>£</span>
                         <span class="ms-1" data-v-currency-name>Pound Sterling</span>
                       </button>
                     </div>
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="USD" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>$</span>
-                        <span data-v-currency-symbol_right>$</span>
+                      <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>$</span>
+                        <span data-v-currency-sign_end>$</span>
                         <span class="ms-1" data-v-currency-name>US Dollar</span>
                       </button>
                     </div>
@@ -236,7 +241,7 @@
                   <div class="dropdown-menu dropdown-menu-end">
 
                     <div data-v-language>
-                      <button class="dropdown-item" type="submit" formaction value="eng" name="language" data-v-language-code>
+                      <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
                         <!-- <i class="la la-flag la-lg me-2"></i> -->
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
 
@@ -247,7 +252,7 @@
                     </div>
 
                     <div data-v-language>
-                      <button class="dropdown-item" type="submit" formaction value="ro" name="language" data-v-language-code>
+                      <button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
                         <!-- <i class="la la-flag la-lg me-2"></i> -->
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
                         <!-- <a href="" data-v-language-url>  -->
@@ -264,9 +269,6 @@
         </div>
       </div>
     </div>
-
-
-
 
     <div class="navbar navbar-expand-md">
 
@@ -512,12 +514,12 @@
                           <tr data-v-cart-product>
                             <td class="text-center">
                               <a href="#40" data-v-cart-product-url>
-                                <img src="img/demo/product.jpg" alt="iPhone" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                                <img src="img/demo/product.jpg" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                               </a>
                             </td>
                             <td class="text-start">
                               <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                iPhone 5
+                                Product name
                               </a>
 
                               <span data-v-cart-product-quantity>1</span>
@@ -533,12 +535,12 @@
                           <tr data-v-cart-product>
                             <td class="text-center">
                               <a href="#40" data-v-cart-product-url>
-                                <img src="img/demo/product.jpg" alt="iPhone" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                                <img src="img/demo/product.jpg" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                               </a>
                             </td>
                             <td class="text-start">
                               <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                iPhone 5
+                                Product name
                               </a>
 
                               <span data-v-cart-product-quantity>1</span>
@@ -662,98 +664,96 @@
     <div class="container mb-2">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8">
-          <div class="regular-page-content-wrapper section-padding-80">
-            <div class="regular-page-text">
+          <div class="regular-page-text">
 
-              <div class="card card-default">
-                <div class="card-body">
-                  <div class="text-center">
+            <div class="card card-default">
+              <div class="card-body">
+                <div class="text-center">
 
-                    <h2 class="text-center">
-                      <i class="la la-lock fa-4x"></i> Reset account password
-                    </h2>
-                    <p>Enter your account email and we will send you a reset link to change your password.</p>
-                    <div class="card-body">
+                  <h2 class="text-center">
+                    <i class="la la-lock"></i> Reset account password
+                  </h2>
+                  <p>Enter your account email and we will send you a reset link to change your password.</p>
+                  <div class="card-body">
 
-                      <div class="notifications" data-v-notifications>
+                    <div class="notifications" data-v-notifications>
 
-                        <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error>
+                      <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error>
 
-                          <div class="icon align-middle me-2">
-                            <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
-                          </div>
+                        <div class="icon align-middle me-2">
+                          <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                        </div>
 
-                          <div class="flex-grow-1 align-self-center text-small">
-                            <div>
-                              <div data-v-notification-text>
-                                This is a placeholder for a notification message.
-                              </div>
+                        <div class="flex-grow-1 align-self-center text-small">
+                          <div>
+                            <div data-v-notification-text>
+                              This is a placeholder for a notification message.
                             </div>
                           </div>
-
-
-                          <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">
-                              <!-- <i class="la la-times"></i> -->
-                            </span>
-                          </button>
                         </div>
 
-                        <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success>
 
-                          <div class="icon align-middle me-2">
-                            <i class="align-middle la la-2x lh-1 la-check-circle"></i>
-                          </div>
+                        <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">
+                            <!-- <i class="la la-times"></i> -->
+                          </span>
+                        </button>
+                      </div>
 
-                          <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
-                            This is a placeholder for a success message.
-                          </div>
+                      <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success>
 
-                          <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">
-                              <!-- <i class="la la-times"></i> -->
-                            </span>
-                          </button>
+                        <div class="icon align-middle me-2">
+                          <i class="align-middle la la-2x lh-1 la-check-circle"></i>
                         </div>
 
-                        <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info>
-
-                          <div class="icon align-middle me-2">
-                            <i class="align-middle la la-2x lh-1  la-info-circle"></i>
-                          </div>
-
-                          <div class="flex-grow-1 align-self-center" data-v-notification-text>
-                            This is a placeholder for a info message.
-                          </div>
-
-                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">
-                              <!-- <i class="la la-times"></i> -->
-                            </span>
-                          </button>
+                        <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+                          This is a placeholder for a success message.
                         </div>
+
+                        <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">
+                            <!-- <i class="la la-times"></i> -->
+                          </span>
+                        </button>
+                      </div>
+
+                      <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info>
+
+                        <div class="icon align-middle me-2">
+                          <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+                        </div>
+
+                        <div class="flex-grow-1 align-self-center" data-v-notification-text>
+                          This is a placeholder for a info message.
+                        </div>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">
+                            <!-- <i class="la la-times"></i> -->
+                          </span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                    <form method="post" role="form" id="reset" class="fade-in-effect" enctype="multipart/form-data" action="" data-v-url="user/reset">
+                      <div class="mb-3">
+
+
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon1" required>
 
                       </div>
 
-                      <form method="post" role="form" id="reset" class="fade-in-effect" enctype="multipart/form-data" action="" data-v-url="user/reset">
-                        <div class="mb-3">
 
 
-                          <input type="email" name="email" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon1" required>
+                      <div class="mb-3">
+                        <button class="btn btn-primary" type="submit">
+                          <span>Send reset link</span>
+                          <i class="la la-arrow-right float-end ms-2"></i>
+                        </button>
+                      </div>
+                    </form>
 
-                        </div>
-
-
-
-                        <div class="mb-3">
-                          <button class="btn btn-primary" type="submit">
-                            <span>Send reset link</span>
-                            <i class="la la-arrow-right float-end ms-2"></i>
-                          </button>
-                        </div>
-                      </form>
-
-                    </div>
                   </div>
                 </div>
               </div>
@@ -895,30 +895,6 @@ $(document).on("click", ".dropdown-toggle",function (e) {
 		parent.removeClass("show"); 
 	}
 });
-
-/*	
-setTimeout(function() {
-	document.getElementById("screen").attributes["class"].value = "show"
-}, 500);
-
-(function() {
-
-  var hamburger = {
-    navToggle: document.querySelector('.navbar-toggler'),
-    nav: document.querySelector('.navbar-collapse'),
-
-    doToggle: function(e) {
-      //e.preventDefault();
-      this.navToggle.classList.toggle('show');
-      this.nav.classList.toggle('show');
-    }
-  };
-
-  hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-  hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-
-}());
-*/
 </script>
 
 

@@ -1,0 +1,161 @@
+<div id="options" class="product-options mt-4" data-v-component-product-options>
+	<div data-v-if="count > 0">
+		<hr class="border opacity-50">
+		
+		<h6>Available Options</h6>
+		
+		<div class="form-group image" data-v-option>
+			<label class="form-label" data-v-option-name>Color</label>
+
+				<div data-v-if="option.type = 'radio'">
+					<div class="radio" data-v-value>
+						<label>
+						  <input type="radio" name="option[1]" value="1" data-v-value-input>
+						  <div>
+							<img src="img/demo/blue.gif" alt="Blue" data-v-if="value.image" data-v-value-image>
+							  <span data-v-value-name>Blue</span>
+							  <span data-v-if="value.price > 0">
+								(<span data-v-value-price_formatted>+$50</span>)
+							  </span>
+						  </div>
+						</label>
+					  </div>
+					  <div class="radio" data-v-value>
+						<label>
+						  <input type="radio" name="option[1]" value="2" data-v-value-input>
+						  <div>
+							  <img src="img/demo/green.gif" alt="Green" data-v-if="value.image" data-v-value-image>
+							  <span data-v-value-name>Green</span>
+							  <span data-v-if="value.price > 0">
+								(<span data-v-value-price_formatted>+$50</span>)
+							  </span>
+						  </div>
+						</label>
+					  </div>
+					  <div class="radio" data-v-value>
+						<label>
+						  <input type="radio" name="option[1]" value="3" data-v-value-input>
+						  <div>
+							  <img src="img/demo/navy.gif" alt="Navy" data-v-if="value.image" data-v-value-image>
+							  <span data-v-value-name>Navy</span>
+							  <span data-v-if="value.price > 0">
+								(<span data-v-value-price_formatted>+$50</span>)
+							  </span>
+						  </div>
+						</label>
+					</div>
+				</div>
+				
+				<div data-v-if="option.type = 'checkbox'">
+					<div class="checkbox mb-2" data-v-value>
+						<label class="form-check-label form-control">
+						  <div class="form-check">
+							  <input type="checkbox" class="form-check-input" name="option[2]" value="1" data-v-value-input>
+							  <img src="img/demo/blue.gif" height="32" alt="Blue" data-v-if="value.image" data-v-value-image>
+  							  <span data-v-value-name>Blue</span>
+							  <span data-v-if="value.price > 0">
+								(<span data-v-value-price_formatted>+$50</span>)
+							  </span>
+						  </div>
+						</label>
+					  </div>
+					<div class="checkbox mb-2" data-v-value>
+						<label class="form-check-label form-control">
+						  <div>
+							  <input type="checkbox" class="form-check-input" name="option[2]" value="2" data-v-value-input>
+							  <img src="img/demo/green.gif" height="32" alt="Green" data-v-if="value.image" data-v-value-image>
+							  <span data-v-value-name>Green</span>
+							  <span data-v-if="value.price > 0">
+								(<span data-v-value-price_formatted>+$50</span>)
+							  </span>
+						  </div>
+						</label>
+					  </div>
+					<div class="checkbox mb-2" data-v-value>
+						<label class="form-check-label form-control">
+						  <div>
+							  <input type="checkbox" class="form-check-input" name="option[2]" value="3" data-v-value-input>
+							  <img src="img/demo/navy.gif" height="32" alt="Navy" data-v-if="value.image" data-v-value-image>
+							  <span data-v-value-name>Navy</span>
+							  <span data-v-if="value.price > 0">
+								(<span data-v-value-price_formatted>+$50</span>)
+							  </span>
+						  </div>
+						</label>
+					</div>
+				</div>				
+				
+				<div data-v-if="option.type = 'select'">
+					<select class="form-select" data-v-option-input>
+						<option value="" data-v-value>Option 1</option>
+						<option value="" data-v-value>Option 2</option>
+						<option value="" data-v-value>Option 3</option>
+					</select>
+				</div>
+				
+				
+				<div data-v-if="option.type = 'text'">
+					<input type="text" class="form-control" name="option[1]" value="" data-v-option-input>
+				</div>
+
+				<div data-v-if="option.type = 'number'">
+					<input type="number" class="form-control" name="option[1]" value="" data-v-option-input>
+				</div>
+
+				<div data-v-if="option.type = 'email'">
+					<input type="email" class="form-control" name="option[1]" value="" data-v-option-input>
+				</div>
+
+				<div data-v-if="option.type = 'textarea'">
+					<textarea class="form-control" name="option[1]" data-v-option-input></textarea>
+				</div>
+
+				<div data-v-if="option.type = 'file'">
+					<input type="file" class="form-control" name="option[1]" value="" data-v-option-input>
+				</div>
+
+				<div data-v-if="option.type = 'date'">
+					<input type="date" class="form-control" name="option[1]" value="" data-v-option-input>
+				</div>
+
+				<div data-v-if="option.type = 'time'">
+					<input type="time" class="form-control" name="option[1]" value="" data-v-option-input>
+				</div>
+
+				<div data-v-if="option.type = 'datetime'">
+					<input type="datetime-local" class="form-control" name="option[1]" value="" data-v-option-input>
+				</div>
+		</div>
+		
+		<div class="form-group" data-v-option>
+			<label class="form-label">Size</label>
+			
+			<div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="option[240]" value="62">
+						<div>XS</div>
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="option[240]" value="60">
+						<div>M</div>
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="option[240]" value="63">
+						<div>L</div>
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="option[240]" value="61">
+						<div>XL</div>
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

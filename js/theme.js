@@ -24,8 +24,10 @@ function toggleNavbarTheme () {
 
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function navbarSticky() {
-  let isSticky = (window.pageYOffset >= sticky);		
+function navbarSticky(isSticky) {
+  if (isSticky == undefined) {
+	  isSticky = (window.pageYOffset >= sticky);		
+  }
 		
   if (isSticky) {
 	  if (!navbar.classList.contains("sticky")) {
@@ -38,6 +40,12 @@ function navbarSticky() {
 		toggleNavbarTheme();
 	  }
   }
+}
+
+function setCookie(name, value) {
+	document.cookie = name + "=" + value + ";";
+	//try to set cookie to all subdomains
+	document.cookie = name + "=" + value + ";path=/;domain=." + window.location.host.replace(/^.*?\./, '') + ";";
 }
 
 let theme = $("html").attr("data-bs-theme");
@@ -65,19 +73,19 @@ $("#color-theme-switch").click(function () {
 
 	$("html").attr("data-bs-theme", theme);
 	//localStorage.setItem("theme", theme);
-	document.cookie = "theme=" + theme + ";path=/;domain=." + window.location.host.replace(/^.*?\./, '') + ";";
+	setCookie("theme", theme);
 	//serverStorage.setItem();
 });
 
 
 // product page
 $('body').on('change', '[name="quantity"]', function (e) {
-	//let product = $(this).parents("[data-v-product]");
-	//let id = product[0].dataset.product_id;
-	//let quantity = this.value;
-	//let updateElements = ['#cart-container [data-product_id="' + id + '"] .price', '#cart-container [data-product_id="' + id + '"] .total', ".cart-right-column", ".mini-cart"];
+	let product = $(this).parents("[data-v-product], [data-v-cart-product]");
+	let id = product[0].dataset.product_id;
+	let quantity = this.value;
+	let updateElements = ['#cart-container [data-product_id="' + id + '"] .price', '#cart-container [data-product_id="' + id + '"] .total', ".cart-right-column", ".mini-cart"];
 	
-	//delay(() => VvvebTheme.Cart.update(id, quantity, this, updateElements), 1000);
+	delay(() => VvvebTheme.Cart.update(id, {quantity}, this, updateElements), 1000);
 });
 
 $('.quantity').on('click', '.btn-plus', function (e) {
@@ -106,8 +114,8 @@ function zoom(e) {
 
 $('div.zoom').on('mousemove', zoom);
 
-/*
+
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('js/service-worker.js');
+  navigator.serviceWorker.register('js/service-worker.js').then((function(t) {})).catch((function(t) {}));
 }
-*/
+

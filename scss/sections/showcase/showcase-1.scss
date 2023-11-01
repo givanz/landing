@@ -31,6 +31,7 @@
 		i.la, i.lab {
 			padding:0.5rem 1rem 0 0;
 			font-size: 2rem;
+			color:var(--bs-primary);
 		}
 	}
 	
@@ -53,9 +54,9 @@
 
 	h3 {
 		margin-bottom: 2.1rem;
-		font-size: 2.4rem;
+		font-size: 2rem;
 		font-weight:600;
-		letter-spacing: -.015em;
+		letter-spacing: -1px;
 	}
 	
 	a {

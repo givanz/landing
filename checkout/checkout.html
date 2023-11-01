@@ -119,9 +119,14 @@
 
 
 
+  <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/posts" />
+  <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
+
   <link rel="icon" type="image/x-icon" href="../../media/favicon.ico" data-v-global-site-favicon>
 
   <link rel="manifest" href="/manifest.webmanifest">
+
+  <link rel="alternate" hreflang="" href="" />
 
   <link rel="stylesheet" href="js/aos.css">
   <noscript>
@@ -193,25 +198,25 @@
                   <div class="dropdown-menu dropdown-menu-end">
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="EUR" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>€</span>
-                        <span data-v-currency-symbol_right>€</span>
+                      <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>€</span>
+                        <span data-v-currency-sign_end>€</span>
                         <span class="ms-1" data-v-currency-name>Euro</span>
                       </button>
                     </div>
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="GBP" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>£</span>
-                        <span data-v-currency-symbol_right>£</span>
+                      <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>£</span>
+                        <span data-v-currency-sign_end>£</span>
                         <span class="ms-1" data-v-currency-name>Pound Sterling</span>
                       </button>
                     </div>
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="USD" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>$</span>
-                        <span data-v-currency-symbol_right>$</span>
+                      <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>$</span>
+                        <span data-v-currency-sign_end>$</span>
                         <span class="ms-1" data-v-currency-name>US Dollar</span>
                       </button>
                     </div>
@@ -236,7 +241,7 @@
                   <div class="dropdown-menu dropdown-menu-end">
 
                     <div data-v-language>
-                      <button class="dropdown-item" type="submit" formaction value="eng" name="language" data-v-language-code>
+                      <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
                         <!-- <i class="la la-flag la-lg me-2"></i> -->
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
 
@@ -247,7 +252,7 @@
                     </div>
 
                     <div data-v-language>
-                      <button class="dropdown-item" type="submit" formaction value="ro" name="language" data-v-language-code>
+                      <button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
                         <!-- <i class="la la-flag la-lg me-2"></i> -->
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
                         <!-- <a href="" data-v-language-url>  -->
@@ -264,9 +269,6 @@
         </div>
       </div>
     </div>
-
-
-
 
     <div class="navbar navbar-expand-md">
 
@@ -512,12 +514,12 @@
                           <tr data-v-cart-product>
                             <td class="text-center">
                               <a href="#40" data-v-cart-product-url>
-                                <img src="img/demo/product.jpg" alt="iPhone" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                                <img src="img/demo/product.jpg" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                               </a>
                             </td>
                             <td class="text-start">
                               <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                iPhone 5
+                                Product name
                               </a>
 
                               <span data-v-cart-product-quantity>1</span>
@@ -533,12 +535,12 @@
                           <tr data-v-cart-product>
                             <td class="text-center">
                               <a href="#40" data-v-cart-product-url>
-                                <img src="img/demo/product.jpg" alt="iPhone" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                                <img src="img/demo/product.jpg" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                               </a>
                             </td>
                             <td class="text-start">
                               <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                iPhone 5
+                                Product name
                               </a>
 
                               <span data-v-cart-product-quantity>1</span>
@@ -868,21 +870,21 @@
 
                     </div>
 
-                    <div class="row" data-v-component-address>
-                      <div class="mb-2 col-6" data-v-class-if-col-12="count <= 1" data-v-address>
+                    <div class="row" data-v-component-user-address>
+                      <div class="mb-2 col-6" data-v-class-if-col-12="count <= 1" data-v-user_address>
                         <div class="card">
                           <div class="card-body">
                             <div class="form-check form-control-lg">
-                              <input class="form-check-input" type="radio" value="" name="billing_address_id" data-v-address-label-id data-v-address-address_id>
-                              <label class="form-check-label text-small" role="button" for="billing_address_id" data-v-address-label-for>
+                              <input class="form-check-input" type="radio" value="" name="billing_address_id" data-v-user_address-label-id data-v-user_address-user_address_id>
+                              <label class="form-check-label text-small" role="button" for="billing_address_id" data-v-user_address-label-for>
 
-                                <span data-v-address-first_name>First name</span>
-                                <span data-v-address-last_name>Last name</span>
-                                <div data-v-address-company>Company</div>
-                                <span data-v-address-address_1>Address 1</span>
-                                <span data-v-address-address_2>Address 2</span>
-                                <span data-v-address-city>Bucharest</span>
-                                <span data-v-address-postcode>9800</span>
+                                <span data-v-user_address-first_name>First name</span>
+                                <span data-v-user_address-last_name>Last name</span>
+                                <div data-v-user_address-company>Company</div>
+                                <span data-v-user_address-address_1>Address 1</span>
+                                <span data-v-user_address-address_2>Address 2</span>
+                                <span data-v-user_address-city>Bucharest</span>
+                                <span data-v-user_address-post_code>9800</span>
 
                               </label>
                             </div>
@@ -932,10 +934,10 @@
                           <div class="col-12 mb-3">
                             <label class="col-form-label" for="country">Region <span class="text-danger text-small">*</span>
                             </label>
-                            <select class="form-select" id="billing_zone_id" name="billing_address[zone_id]" data-v-zones required readonly>
-                              <option value="1" data-v-option>Zone 1</option>
-                              <option value="2" data-v-option>Zone 2</option>
-                              <option value="3" data-v-option>Zone 3</option>
+                            <select class="form-select" id="billing_region_id" name="billing_address[region_id]" data-v-regions required readonly>
+                              <option value="1" data-v-option>region 1</option>
+                              <option value="2" data-v-option>region 2</option>
+                              <option value="3" data-v-option>region 3</option>
                             </select>
                           </div>
                           <div class="col-12 mb-3">
@@ -945,9 +947,9 @@
                             <input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="">
                           </div>
                           <div class="col-12 mb-3">
-                            <label class="col-form-label" for="postcode">Postcode <span class="text-danger text-small">*</span>
+                            <label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span>
                             </label>
-                            <input type="text" class="form-control" id="billing_postcode" name="billing_address[postcode]" minlength="3" value="">
+                            <input type="text" class="form-control" id="billing_post_code" name="billing_address[post_code]" minlength="3" value="">
                           </div>
                           <div class="col-12 mb-3">
                             <label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span>
@@ -1011,10 +1013,10 @@
                         <div class="col-12 mb-3">
                           <label class="col-form-label" for="country">Region <span class="text-danger text-small">*</span>
                           </label>
-                          <select class="form-select" id="shipping_zone_id" name="shipping_address[zone_id]" data-v-zones readonly>
-                            <option value="1" data-v-option>Zone 1</option>
-                            <option value="2" data-v-option>Zone 2</option>
-                            <option value="3" data-v-option>Zone 3</option>
+                          <select class="form-select" id="shipping_region_id" name="shipping_address[region_id]" data-v-regions readonly>
+                            <option value="1" data-v-option>region 1</option>
+                            <option value="2" data-v-option>region 2</option>
+                            <option value="3" data-v-option>region 3</option>
                           </select>
                         </div>
                         <div class="col-12 mb-3">
@@ -1024,9 +1026,9 @@
                           <input type="text" class="form-control" id="shipping_shipping_address_2" name="shipping_address[address_2]" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="">
                         </div>
                         <div class="col-12 mb-3">
-                          <label class="col-form-label" for="postcode">Postcode <span class="text-danger text-small">*</span>
+                          <label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span>
                           </label>
-                          <input type="text" class="form-control" id="shipping_postcode" name="shipping_address[postcode]" minlength="3" value="">
+                          <input type="text" class="form-control" id="shipping_post_code" name="shipping_address[post_code]" minlength="3" value="">
                         </div>
                         <div class="col-12 mb-3">
                           <label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span>
@@ -1036,7 +1038,7 @@
                         <div class="col-12 mb-3">
                           <label class="col-form-label" for="state">Province <span class="text-danger text-small">*</span>
                           </label>
-                          <input type="text" class="form-control" id="shipping_zone_id" name="shipping_address[zone_id]" minlength="3" value="">
+                          <input type="text" class="form-control" id="shipping_region_id" name="shipping_address[region_id]" minlength="3" value="">
                         </div>
                         <div class="col-12 mb-3">
                           <label class="col-form-label" for="phone_number">Phone No <span class="text-danger text-small">*</span>
@@ -1077,12 +1079,12 @@
                             <tr data-v-cart-product>
                               <td class="text-center">
                                 <a href="#40" data-v-cart-product-url>
-                                  <img src="img/demo/product.jpg" alt="iPhone" loading="lazy" class="img-rounded" data-v-cart-product-image width=50>
+                                  <img src="img/demo/product.jpg" alt="Product name" loading="lazy" class="img-rounded" data-v-cart-product-image width=50>
                                 </a>
                               </td>
                               <td class="text-center">
                                 <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                  iPhone 5
+                                  Product name
                                 </a>
                               </td>
                               <td class="text-end">
@@ -1097,12 +1099,12 @@
                             <tr data-v-cart-product>
                               <td class="text-center">
                                 <a href="#40" data-v-cart-product-url>
-                                  <img src="img/demo/product.jpg" alt="iPhone" loading="lazy" class="img-rounded" data-v-cart-product-image width=50>
+                                  <img src="img/demo/product.jpg" alt="Product name" loading="lazy" class="img-rounded" data-v-cart-product-image width=50>
                                 </a>
                               </td>
                               <td class="text-center">
                                 <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                  iPhone 5
+                                  Product name
                                 </a>
                               </td>
                               <td class="text-end">
@@ -1295,8 +1297,8 @@
 
 
                     <div class="mb-3">
-                      <label for="comment">Order Notes</label>
-                      <textarea name="comment" id="comment" cols="30" rows="5" class="form-control" placeholder=""></textarea>
+                      <label for="notes">Order Notes</label>
+                      <textarea name="notes" id="notes" cols="30" rows="5" class="form-control" placeholder=""></textarea>
                     </div>
 
                     <button type="submit" href="" class="btn btn-primary w-100" data-v-url="checkout/checkout/confirm">
@@ -1443,30 +1445,6 @@ $(document).on("click", ".dropdown-toggle",function (e) {
 		parent.removeClass("show"); 
 	}
 });
-
-/*	
-setTimeout(function() {
-	document.getElementById("screen").attributes["class"].value = "show"
-}, 500);
-
-(function() {
-
-  var hamburger = {
-    navToggle: document.querySelector('.navbar-toggler'),
-    nav: document.querySelector('.navbar-collapse'),
-
-    doToggle: function(e) {
-      //e.preventDefault();
-      this.navToggle.classList.toggle('show');
-      this.nav.classList.toggle('show');
-    }
-  };
-
-  hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-  hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-
-}());
-*/
 </script>
 
 
@@ -1560,43 +1538,43 @@ $(function() {
 	
 });
 
-//load zones for zone select when country changes
-let zonesUrl = '{ $this->zonesUrl }';
-let zones = [];
+//load regions for region select when country changes
+let regionsUrl = '{ $this->regionsUrl }';
+let regions = [];
 
-function addZonesToSelect(zoneSelect, data, zone_id = 0, countrySelect) {
-	zoneSelect.html('');
+function addRegionsToSelect(regionSelect, data, region_id = 0, countrySelect) {
+	regionSelect.html('');
 	for (i in data) {
-		let zone = data[i];
-		zoneSelect.append('<option value="' + zone.zone_id + '">' + zone.name + '</option>');
+		let region = data[i];
+		regionSelect.append('<option value="' + region.region_id + '">' + region.name + '</option>');
 	}
-	zoneSelect.val(zone_id);
-	zoneSelect.removeAttr("readonly");
+	regionSelect.val(region_id);
+	regionSelect.removeAttr("readonly");
 	countrySelect.removeAttribute("readonly");
 }
 
 $("body").on("change", "[data-v-countries]", function () {
-	let zoneGroup = $(this).parents(".row");
-	let zoneSelect = $("[data-v-zones]", zoneGroup);
+	let regionGroup = $(this).parents(".row");
+	let regionSelect = $("[data-v-regions]", regionGroup);
 	let country_id = this.value;
-	let zone_id = this.dataset.vZoneId;
+	let region_id = this.dataset.vRegionId;
 	let self = this;
 	this.readonly = false;
 
 	if (country_id) {
-		if (zones[country_id]) {
-			addZonesToSelect(zoneSelect, zones[country_id], zone_id, self);
+		if (regions[country_id]) {
+			addRegionsToSelect(regionSelect, regions[country_id], region_id, self);
 			$("[data-v-countries][readonly]:first").change();
 		} else {
-			$.get(zonesUrl + "&country_id=" + country_id).done(function( data ) {
-				zones[country_id] = data;
-				addZonesToSelect(zoneSelect, data, zone_id, self);
+			$.get(regionsUrl + "&country_id=" + country_id).done(function( data ) {
+				regions[country_id] = data;
+				addRegionsToSelect(regionSelect, data, region_id, self);
 				$("[data-v-countries][readonly]:first", self).change();
 			});
 		}
 	}
 	
-	this.dataset.vZoneId = 0;
+	this.dataset.vRegionId = 0;
 });
 
 function togglePasswordInput(element, input) {

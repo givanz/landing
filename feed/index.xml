@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel data-v-component-posts data-v-limit="10">
+	<title>News Vvveb</title>
+	<link>https://vvveb.com/feed/</link>
+	<description>The latest news about Vvveb</description>
+	<lastBuildDate>Fri, 31 Dec 2022 00:04:20 +0000</lastBuildDate>
+
+		<item data-v-post>
+			<title data-v-post-name>What's new in 0.1</title>
+			<link></link>
+		</item>
+		<item data-v-post>
+			<title data-v-post-name>New features planned for the next version</title>
+			<link></link>
+		</item>
+		<item data-v-post>
+			<title data-v-post-name>Introducing the new multi site feature</title>
+			<link></link>
+		</item>
+		<item data-v-post>
+			<title data-v-post-name>How to use media library</title>
+			<link></link>
+		</item>
+		<item data-v-post>
+			<title data-v-post-name>Vvveb Beta 1 version released</title>
+			<link></link>
+		</item>
+	</channel>
+</rss>

@@ -40,11 +40,11 @@
 			.navbar-nav {
 		
 				a.nav-link {
-					/*font-size: 1rem;*/
+					text-transform: none;
+					//color: var(--bs-secondary-color); 
 					//font-weight: 500;
 					padding: 2.1rem 1rem 2.1rem;
 					text-transform:none;
-
 					&:hover {
 						background-color: rgba(var(--bs-body-color-rgb),.015);
 						color: var(--bs-blue);

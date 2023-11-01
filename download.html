@@ -129,9 +129,14 @@
 
 
 
+  <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/posts" />
+  <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
+
   <link rel="icon" type="image/x-icon" href="../../media/favicon.ico" data-v-global-site-favicon>
 
   <link rel="manifest" href="/manifest.webmanifest">
+
+  <link rel="alternate" hreflang="" href="" />
 
   <link rel="stylesheet" href="js/aos.css">
   <noscript>
@@ -205,7 +210,7 @@
             </li>
             <li class="nav-item">
               <a id="color-theme-switch" class="nav-link" href="javascript:void(0);" title="Switch sidebar color theme">
-                <i class="la la-sun la-lg"></i>
+                <i class="la la-sun"></i>
               </a>
             </li>
 
@@ -270,7 +275,7 @@
 	<div class="heading">
 		<h1>Open Source CMS<br/> Reinvented</h1>
 		
-		<h2>Powerful and easy to use drag and drop builder<br/> for blogs, websites or ecommerce stores.</h2>
+		<h2>Powerful and easy to use drag and drop website builder<br/> for blogs, ecommerce stores or anything else.</h2>
 	
 		<div class="btns">
 			<a class="btn btn-lg btn-primary" href="/download.php" role="button"><span>&#9889;</span> Free download <b>›</b></a>
@@ -383,7 +388,7 @@
             <h3>Better Security</h3>
             <div class="d-flex">
               <i class="la la-lock la-lg"></i>
-              <p>Vvveb is 100% safe against sql injections a vulnerability that affects many CMSs.</p>
+              <p>Vvveb is 100% safe against sql injections a vulnerability that affects many CMS.</p>
             </div>
             <div class="d-flex">
               <i class="la la-key la-lg"></i>
@@ -710,30 +715,6 @@ $(document).on("click", ".dropdown-toggle",function (e) {
 		parent.removeClass("show"); 
 	}
 });
-
-/*	
-setTimeout(function() {
-	document.getElementById("screen").attributes["class"].value = "show"
-}, 500);
-
-(function() {
-
-  var hamburger = {
-    navToggle: document.querySelector('.navbar-toggler'),
-    nav: document.querySelector('.navbar-collapse'),
-
-    doToggle: function(e) {
-      //e.preventDefault();
-      this.navToggle.classList.toggle('show');
-      this.nav.classList.toggle('show');
-    }
-  };
-
-  hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-  hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-
-}());
-*/
 </script>
 
   <script>

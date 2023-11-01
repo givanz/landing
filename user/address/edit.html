@@ -119,9 +119,14 @@
 
 
 
+  <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/posts" />
+  <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
+
   <link rel="icon" type="image/x-icon" href="../../media/favicon.ico" data-v-global-site-favicon>
 
   <link rel="manifest" href="/manifest.webmanifest">
+
+  <link rel="alternate" hreflang="" href="" />
 
   <link rel="stylesheet" href="js/aos.css">
   <noscript>
@@ -193,25 +198,25 @@
                   <div class="dropdown-menu dropdown-menu-end">
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="EUR" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>€</span>
-                        <span data-v-currency-symbol_right>€</span>
+                      <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>€</span>
+                        <span data-v-currency-sign_end>€</span>
                         <span class="ms-1" data-v-currency-name>Euro</span>
                       </button>
                     </div>
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="GBP" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>£</span>
-                        <span data-v-currency-symbol_right>£</span>
+                      <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>£</span>
+                        <span data-v-currency-sign_end>£</span>
                         <span class="ms-1" data-v-currency-name>Pound Sterling</span>
                       </button>
                     </div>
 
                     <div data-v-currency>
-                      <button type="button" class="dropdown-item" value="USD" name="currency" data-v-currency-code>
-                        <span data-v-currency-symbol_left>$</span>
-                        <span data-v-currency-symbol_right>$</span>
+                      <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+                        <span data-v-currency-sign_start>$</span>
+                        <span data-v-currency-sign_end>$</span>
                         <span class="ms-1" data-v-currency-name>US Dollar</span>
                       </button>
                     </div>
@@ -236,7 +241,7 @@
                   <div class="dropdown-menu dropdown-menu-end">
 
                     <div data-v-language>
-                      <button class="dropdown-item" type="submit" formaction value="eng" name="language" data-v-language-code>
+                      <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
                         <!-- <i class="la la-flag la-lg me-2"></i> -->
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
 
@@ -247,7 +252,7 @@
                     </div>
 
                     <div data-v-language>
-                      <button class="dropdown-item" type="submit" formaction value="ro" name="language" data-v-language-code>
+                      <button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
                         <!-- <i class="la la-flag la-lg me-2"></i> -->
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
                         <!-- <a href="" data-v-language-url>  -->
@@ -264,9 +269,6 @@
         </div>
       </div>
     </div>
-
-
-
 
     <div class="navbar navbar-expand-md">
 
@@ -512,12 +514,12 @@
                           <tr data-v-cart-product>
                             <td class="text-center">
                               <a href="#40" data-v-cart-product-url>
-                                <img src="img/demo/product.jpg" alt="iPhone" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                                <img src="img/demo/product.jpg" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                               </a>
                             </td>
                             <td class="text-start">
                               <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                iPhone 5
+                                Product name
                               </a>
 
                               <span data-v-cart-product-quantity>1</span>
@@ -533,12 +535,12 @@
                           <tr data-v-cart-product>
                             <td class="text-center">
                               <a href="#40" data-v-cart-product-url>
-                                <img src="img/demo/product.jpg" alt="iPhone" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                                <img src="img/demo/product.jpg" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                               </a>
                             </td>
                             <td class="text-start">
                               <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                iPhone 5
+                                Product name
                               </a>
 
                               <span data-v-cart-product-quantity>1</span>
@@ -730,7 +732,7 @@
 
         </div>
 
-        <div class="col-md-9 justify-content-center border-start px-4" data-v-component-user>
+        <div class="col-md-9 justify-content-center border-start px-4">
           <div class="notifications" data-v-notifications>
 
             <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error>
@@ -793,56 +795,56 @@
 
           <h2>Address</h2>
 
-          <form id="profile-form" action="" method="post" class="needs-validation" data-v-address>
+          <form id="profile-form" action="" method="post" class="needs-validation" data-v-user_address>
             <input type="hidden" name="action" id="action" value="save">
 
 
             <div class="mb-3 row">
               <label for="input-first_name" class="col-sm-2 col-form-label">First name</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="input-first_name" placeholder="First name" name="address[first_name]" data-v-address-first_name required>
+                <input type="text" class="form-control" id="input-first_name" placeholder="First name" name="user_address[first_name]" data-v-user_address-first_name required>
               </div>
             </div>
 
             <div class="mb-3 row">
               <label for="input-last_name" class="col-sm-2 col-form-label">Last name</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="input-last_name" placeholder="Last name" name="address[last_name]" data-v-address-last_name required>
+                <input type="text" class="form-control" id="input-last_name" placeholder="Last name" name="user_address[last_name]" data-v-user_address-last_name required>
               </div>
             </div>
 
             <div class="mb-3 row">
               <label for="input-company" class="col-sm-2 col-form-label">Company</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="input-company" placeholder="Company" name="address[company]" data-v-address-company>
+                <input type="text" class="form-control" id="input-company" placeholder="Company" name="user_address[company]" data-v-user_address-company>
               </div>
             </div>
 
             <div class="mb-3 row">
               <label for="input-address_1" class="col-sm-2 col-form-label">Address 1</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="input-address_1" placeholder="Address 1" name="address[address_1]" data-v-address-address_1>
+                <input type="text" class="form-control" id="input-address_1" placeholder="Address 1" name="user_address[address_1]" data-v-user_address-address_1>
               </div>
             </div>
 
             <div class="mb-3 row">
               <label for="input-address_2" class="col-sm-2 col-form-label">Address 2</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="input-address_2" placeholder="Address 2" name="address[address_2]" data-v-address-address_2>
+                <input type="text" class="form-control" id="input-address_2" placeholder="Address 2" name="user_address[address_2]" data-v-user_address-address_2>
               </div>
             </div>
 
             <div class="mb-3 row">
               <label for="input-city" class="col-sm-2 col-form-label">City</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="input-city" placeholder="City" name="address[city]" data-v-address-city>
+                <input type="text" class="form-control" id="input-city" placeholder="City" name="user_address[city]" data-v-user_address-city>
               </div>
             </div>
 
             <div class="mb-3 row">
-              <label for="input-postcode" class="col-sm-2 col-form-label">Post code</label>
+              <label for="input-post_code" class="col-sm-2 col-form-label">Post code</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="input-postcode" placeholder="Post code" name="address[postcode]" data-v-address-postcode>
+                <input type="text" class="form-control" id="input-post_code" placeholder="Post code" name="user_address[post_code]" data-v-user_address-post_code>
               </div>
             </div>
 
@@ -850,7 +852,7 @@
               <label class="col-sm-2 col-form-label" for="country">Country <span class="text-danger text-small">*</span>
               </label>
               <div class="col-sm-10">
-                <select class="form-select" id="country_id" name="address[country_id]" data-v-countries required readonly>
+                <select class="form-select" id="country_id" name="user_address[country_id]" data-v-countries required readonly>
                   <option value="1" data-v-option>
                     Country 1
                   </option>
@@ -862,13 +864,13 @@
             </div>
 
             <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label" for="country">Region <span class="text-danger text-small">*</span>
+              <label class="col-sm-2 col-form-label" for="country">region <span class="text-danger text-small">*</span>
               </label>
               <div class="col-sm-10">
-                <select class="form-select" id="zone_id" name="address[zone_id]" data-v-zones required readonly>
-                  <option value="1" data-v-option>Zone 1</option>
-                  <option value="2" data-v-option>Zone 2</option>
-                  <option value="3" data-v-option>Zone 3</option>
+                <select class="form-select" id="region_id" name="user_address[region_id]" data-v-regions required readonly>
+                  <option value="1" data-v-option>region 1</option>
+                  <option value="2" data-v-option>region 2</option>
+                  <option value="3" data-v-option>region 3</option>
                 </select>
               </div>
             </div>
@@ -880,7 +882,7 @@
                 <span>Address list</span>
               </a>
 
-              <button type="submit" href="" class="btn btn-primary btn-icon ms-1" onclick="document.getElementById('action').value ='save';if (validator(validator_json)) document.getElementById('settings-form').submit();">
+              <button type="submit" href="" class="btn btn-primary btn-icon ms-1">
                 <i class="la la-save me-2"></i>
                 <span>Save address</span>
               </button>
@@ -1024,30 +1026,6 @@ $(document).on("click", ".dropdown-toggle",function (e) {
 		parent.removeClass("show"); 
 	}
 });
-
-/*	
-setTimeout(function() {
-	document.getElementById("screen").attributes["class"].value = "show"
-}, 500);
-
-(function() {
-
-  var hamburger = {
-    navToggle: document.querySelector('.navbar-toggler'),
-    nav: document.querySelector('.navbar-collapse'),
-
-    doToggle: function(e) {
-      //e.preventDefault();
-      this.navToggle.classList.toggle('show');
-      this.nav.classList.toggle('show');
-    }
-  };
-
-  hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-  hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-
-}());
-*/
 </script>
 
 

@@ -104,12 +104,6 @@
       text-align: center;
     }
 
-    .u-margin-bottom-none {
-      margin-bottom: 0;
-    }
-
-
-
     .button {
       background-color: #3869D4;
       border-top: 10px solid #3869D4;
@@ -133,7 +127,7 @@
       border-left: 18px solid #22BC66;
     }
 
-    .button--red {
+    .button-danger {
       background-color: #FF6136;
       border-top: 10px solid #FF6136;
       border-right: 18px solid #FF6136;
@@ -150,153 +144,13 @@
 
 
 
-    .attributes {
-      margin: 0 0 21px;
-    }
-
-    .attributes_content {
-      background-color: #F4F4F7;
-      padding: 16px;
-    }
-
-    .attributes_item {
-      padding: 0;
-    }
-
-
-
-    .related {
-      width: 100%;
-      margin: 0;
-      padding: 25px 0 0 0;
-      -premailer-width: 100%;
-      -premailer-cellpadding: 0;
-      -premailer-cellspacing: 0;
-    }
-
-    .related_item {
-      padding: 10px 0;
-      color: #CBCCCF;
-      font-size: 15px;
-      line-height: 18px;
-    }
-
-    .related_item-title {
-      display: block;
-      margin: .5em 0 0;
-    }
-
-    .related_item-thumb {
-      display: block;
-      padding-bottom: 10px;
-    }
-
-    .related_heading {
-      border-top: 1px solid #CBCCCF;
-      text-align: center;
-      padding: 25px 0 10px;
-    }
-
-
-
-    .discount {
-      width: 100%;
-      margin: 0;
-      padding: 24px;
-      -premailer-width: 100%;
-      -premailer-cellpadding: 0;
-      -premailer-cellspacing: 0;
-      background-color: #F4F4F7;
-      border: 2px dashed #CBCCCF;
-    }
-
-    .discount_heading {
-      text-align: center;
-    }
-
-    .discount_body {
-      text-align: center;
-      font-size: 15px;
-    }
-
-
-
-    .social {
-      width: auto;
-    }
-
-    .social td {
-      padding: 0;
-      width: auto;
-    }
-
-    .social_icon {
-      height: 20px;
-      margin: 0 8px 10px 8px;
-      padding: 0;
-    }
-
-
-
-    .purchase {
-      width: 100%;
-      margin: 0;
-      padding: 35px 0;
-      -premailer-width: 100%;
-      -premailer-cellpadding: 0;
-      -premailer-cellspacing: 0;
-    }
-
-    .purchase_content {
-      width: 100%;
-      margin: 0;
-      padding: 25px 0 0 0;
-      -premailer-width: 100%;
-      -premailer-cellpadding: 0;
-      -premailer-cellspacing: 0;
-    }
-
-    .purchase_item {
-      padding: 10px 0;
-      color: #51545E;
-      font-size: 15px;
-      line-height: 18px;
-    }
-
-    .purchase_heading {
-      padding-bottom: 8px;
-      border-bottom: 1px solid #EAEAEC;
-    }
-
-    .purchase_heading p {
-      margin: 0;
-      color: #85878E;
-      font-size: 12px;
-    }
-
-    .purchase_footer {
-      padding-top: 15px;
-      border-top: 1px solid #EAEAEC;
-    }
-
-    .purchase_total {
-      margin: 0;
-      text-align: right;
-      font-weight: bold;
-      color: #333333;
-    }
-
-    .purchase_total--label {
-      padding: 0 15px 0 0;
-    }
-
     body {
-      background-color: #F2F4F6;
-      color: #51545E;
+      background-color: #f8f9fb;
+      color: #444;
     }
 
     p {
-      color: #51545E;
+      color: #444;
     }
 
     .wrapper {
@@ -306,7 +160,7 @@
       -premailer-width: 100%;
       -premailer-cellpadding: 0;
       -premailer-cellspacing: 0;
-      background-color: #F2F4F6;
+      background-color: #f8f9fb;
     }
 
     .content {
@@ -439,10 +293,11 @@
                   <td class="content-cell">
                     <div>
                       <h1>Hi <span data-v-first_name>John</span>
-                        <span data-v-last_name>Doe</span>
-                        <span data-v-display_name>Joe</span>,
+                        <span data-v-last_name>Doe</span> (<span data-v-display_name>Joe</span>),
                       </h1>
-                      <p>You recently requested to reset your password for your <span data-v-website>Vvveb</span> account. Use the button below to reset it. <strong>This password reset is only valid for the next 24 hours.</strong>
+                      <p>You recently requested to reset your password for your <span data-v-website>Vvveb</span> account. Use the button below to reset it.</p>
+                      <p>
+                        <strong>This password reset is only valid for the next 24 hours.</strong>
                       </p>
                       <!-- Action -->
                       <table class="action" align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation">
@@ -451,7 +306,7 @@
                             <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                               <tr>
                                 <td align="center">
-                                  <a href="#" data-v-reset_url class="button btn-success" target="_blank">
+                                  <a href="#" data-v-reset_url class="button btn-success">
                                     <span>Reset your password</span>
                                   </a>
                                 </td>

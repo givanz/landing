@@ -1,11 +1,7 @@
 @@include('../_includes/html-head.html', {"title": "Cart", "path": "../"})
 
-
 <body>
-	
-	@@include('../_includes/header.html')
-
-
+@@include('../_includes/header.html')
 
 <main id="site-content" role="main">
 
@@ -38,12 +34,12 @@
 							<tr data-v-cart-product>
 								<td class="text-center cart-img">
 									<a href="#40" data-v-cart-product-url>
-										<img src="img/demo/product.jpg" loading="lazy" alt="iPhone" class="img-rounded" data-v-cart-product-image width=80 loading="lazy">
+										<img src="img/demo/product.jpg" loading="lazy" alt="Product name" class="img-rounded" data-v-cart-product-image width=80 loading="lazy">
 									</a>
 								</td>
 								<td class="text-start">
 									<a href="#40" data-v-cart-product-url>
-										<span data-v-cart-product-name>iPhone 5</span>
+										<span data-v-cart-product-name>Product name</span>
 									</a>
 									<div class="price">
 										<span data-v-cart-product-price_tax_formatted>$246.40</span>
@@ -77,12 +73,12 @@
 							<tr data-v-cart-product>
 								<td class="text-center cart-img">
 									<a href="#40" data-v-cart-product-url>
-										<img src="img/demo/product.jpg" loading="lazy" alt="iPhone" class="img-rounded" data-v-cart-product-image width=80 loading="lazy">
+										<img src="img/demo/product.jpg" loading="lazy" alt="Product name" class="img-rounded" data-v-cart-product-image width=80 loading="lazy">
 									</a>
 								</td>
 								<td class="text-start">
 									<a href="#40" data-v-cart-product-url>
-										<span data-v-cart-product-name>iPhone 5</span>
+										<span data-v-cart-product-name>Product name</span>
 									</a>
 									<div class="price">
 										<span data-v-cart-product-price_tax_formatted>$246.40</span>
@@ -221,53 +217,7 @@
 	</div>
 </main>
     
-
 @@include('../_includes/footer.html')   
- 
 @@include('../_includes/footer-scripts.html')    
-<script>
-$('body').on('change', '[name="quantity"]', function (e) {
-	let product = $(this).parents("[data-v-cart-product]");
-	let id = product[0].dataset.product_id;
-	let quantity = this.value;
-	let updateElements = ['#cart-container [data-product_id="' + id + '"] .price', '#cart-container [data-product_id="' + id + '"] .total', ".cart-right-column", ".mini-cart"];
-	
-	delay(() => VvvebTheme.Cart.update(id, quantity, this, updateElements), 1000);
-});
-
-$('.cart-table .quantity').on('click', '.btn-plus', function (e) {
-	$("input[type=number]", this.parentNode).val(function( index, value ) {
-	  return ++value;
-	}).change();
-});
-
-$('.cart-table .quantity').on('click', '.btn-minus', function (e) {
-	$("input[type=number]", this.parentNode).val(function( index, value ) {
-	  return Math.max(--value, 1);
-	}).change();
-});
-
-$('body').on('click', '.btn-remove', function (e) {
-	let product = $(this).parents("[data-v-cart-product]");
-	let id = product[0].dataset.product_id;
-	let quantity = this.value;
-	let updateElements = [".cart-right-column", ".mini-cart"];
-
-	product.addClass("bg-light");
-	delay(() => VvvebTheme.Cart.remove(id, this, updateElements, () => product.remove()), 500);
-	//if cart empty refresh page, if not empty prevent refresh and update with ajax
-	if ($("#cart-container [data-v-cart-product]").length > 1) {
-		//e.preventDefault();
-	} else {
-		//return;
-	}
-	e.preventDefault();
-});
-</script>
-<style>
-.cart-img {
-	height:120px;
-}
-</style>
 </body>
 </html>

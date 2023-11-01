@@ -1,5 +1,121 @@
 <nav class="navigation-3 clearfix fixed-top transparent" title="navigation-3">
 
+	<div id="top" class="top-nav clearfix" data-bs-theme="dark">
+		<div class="container">
+			<div class="nav float-start">
+				<ul class="list-inline" data-v-component-site>
+					<li class="list-inline-item" data-v-if="site.phone-number"><a href="tel:5511112377" data-v-site-phone-number><i class="la la-phone"></i><span class="d-none d-md-inline text-muted" data-v-site-phone-number>+55 (111) 123 777</span></a> </li>
+					<li class="list-inline-item"  data-v-if="site.contact-email"><a href="mailto:contact@mysite.com" data-v-site-contact-email><i class="la la-envelope"></i> <span class="d-none d-md-inline text-muted" data-v-site-contact-email>contact@mysite.com</span></a></li>
+					<li class="list-inline-item"></li>
+				</ul>
+			</div>
+			<div class="nav float-end">
+				<ul class="list-inline">
+					<!--
+					<li class="list-inline-item"><a href="#" id="wishlist-total" title="Wish List (0)"><i class="la la-heart"></i> <span class="d-none d-md-inline">Favorites</span></a></li>
+					<li class="list-inline-item"><a href="#" title="Checkout"><i class="la la-share"></i> <span class="d-none d-md-inline">Checkout</span></a></li>
+					<li class="list-inline-item">
+						<div class="dropdown">
+							<a href="" class="dropdown-toggle" data-bs-toggle="dropdown"><i class="la la-user"></i> <span class="d-none d-md-inline">My Account</span></i></a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="#" class="dropdown-item">Register</a></li>
+								<li><a href="#" class="dropdown-item">Login</a></li>
+							</ul>
+						</div>
+					</li>
+					-->
+					<li class="list-inline-item">
+					
+						<a id="color-theme-switch" href="javascript:void(0);" title="Switch sidebar color theme">
+							<i class="la la-sun la-lg"></i>
+						</a>
+
+					</li>
+					<li class="list-inline-item">
+							<div data-v-component-currency>
+								<form method="post" enctype="multipart/form-data" id="form-currency">
+
+									<a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<!-- <i class="la la-dollar-sign me-1"></i> -->
+										<span class="d-none d-md-inline" data-v-currency-info-name>USD</span>
+									</a>
+								
+									
+									<div class="dropdown-menu dropdown-menu-end">
+										
+										<div data-v-currency>
+										  <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
+											<span data-v-currency-sign_start>€</span>
+											<span data-v-currency-sign_end>€</span>
+											<span class="ms-1" data-v-currency-name>Euro</span>
+										  </button>
+										</div>
+
+										<div data-v-currency>
+										  <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
+											<span data-v-currency-sign_start>£</span>
+											<span data-v-currency-sign_end>£</span>
+											<span class="ms-1" data-v-currency-name>Pound Sterling</span>
+										  </button>
+										</div>
+
+										<div data-v-currency>
+										  <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+											<span data-v-currency-sign_start>$</span>
+											<span data-v-currency-sign_end>$</span>
+											<span class="ms-1" data-v-currency-name>US Dollar</span>
+										  </button>
+										</div>
+										
+									</div>
+								</form>
+							</div>		                    
+					</li>		
+					<li class="list-inline-item">
+					<div data-v-component-language>
+							<form method="post" enctype="multipart/form-data" id="form-language">
+
+								<a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<!-- <i class="la la-flag me-1"></i> -->
+									<!-- 
+									<img src="" data-v-language-info-img>
+									-->
+									<span class="d-none d-md-inline" data-v-language-info-name>English</span>
+								</a>
+							
+								
+								<div class="dropdown-menu dropdown-menu-end">
+									
+									<div data-v-language>
+										<button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+											<!-- <i class="la la-flag la-lg me-2"></i> -->
+											<img src="" loading="lazy" class="me-1" data-v-language-img>
+												
+												<!-- <a href="" data-v-language-url> -->
+													<span data-v-language-name>English</span>
+												<!-- </a> -->
+										</button>
+									</div>
+									
+									<div data-v-language>
+										<button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
+											<!-- <i class="la la-flag la-lg me-2"></i> -->
+											<img src="" loading="lazy" class="me-1" data-v-language-img>
+												<!-- <a href="" data-v-language-url>  -->
+													<span data-v-language-name>Romanian</span>
+												<!-- </a>  -->
+										</button>
+									</div>
+									
+								</div>
+							</form>
+						</div>					
+					</li>		
+				</ul>
+			</div>
+		</div>
+	</div>
+
  		<div class="navbar navbar-expand-md navbar-dark">
 			
 			<div class="container">

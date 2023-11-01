@@ -59,19 +59,4 @@
 			//background: #00bd56 !important;
 		}
 	}
-	&:hover {
-		-webkit-box-shadow: 0px 24px 48px -13px rgba(var(--bs-body-color-rgb), 0.11);
-		-moz-box-shadow: 0px 24px 48px -13px rgba(var(--bs-body-color-rgb), 0.11);
-		box-shadow: 0px 24px 48px -13px rgba(var(--bs-body-color-rgb), 0.11);
-	}
-	&:focus {
-		-webkit-box-shadow: 0px 24px 48px -13px rgba(var(--bs-body-color-rgb), 0.11);
-		-moz-box-shadow: 0px 24px 48px -13px rgba(var(--bs-body-color-rgb), 0.11);
-		box-shadow: 0px 24px 48px -13px rgba(var(--bs-body-color-rgb), 0.11);
-	}
-}
-@media (max-width: 991.98px) {
-	.pricing-table-3 {
-		margin-top: 30px;
-	}
 }

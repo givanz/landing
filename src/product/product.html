@@ -8,7 +8,7 @@
 	
 		@@include('../_includes/breadcrumb.html')
 
-        <div class="row g-0">
+        <div class="row g-0 mb-4">
 			<div class="col-md-6 col-sm-12">
 			
 				<div id="product-gallery" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-v-product-images>
@@ -86,11 +86,12 @@
 						<i class="la la-star"></i>
 						<i class="la la-star-half"></i>
 					</small>
-					<a href="#reviews-tab-pane" class="ms-2" data-bs-toggle="tab" type="button" data-bs-target="#reviews-tab-pane">(30 reviews)</a>
+					<a href="#reviews" class="ms-2" type="button" data-bs-target="#reviews">(30 reviews)</a>
 				</div>
 
 				<p class="product-price">
 					<span class="price" data-v-product-price_tax_formatted>$49.00</span>
+
 					<span class="text-decoration-line-through text-secondary text-opacity-75">$350</span>
 					<small class="fs-6 ms-2 text-danger">26% Off</small>
 				</p>
@@ -103,7 +104,11 @@
 					<span class="currency">$</span>
 				</p>
 				-->
+
 				<!-- Form -->
+				
+				@@include('product-variant.html')   
+				
 				<form class="cart-form clearfix" method="post" action="/cart">
 				
 					<div class="cart-fav-box ">
@@ -115,56 +120,9 @@
 
 
 							<div>
+								@@include('product-options.html')   
 
-								<hr class="border opacity-50">
-								<h6>Available Options</h6>
-								<div class="form-group image">
-									<label class="form-label">Color</label>
-									<div id="input-option239">
-										<div class="radio">
-											<label>
-												<input type="radio" name="option[239]" value="59">
-															 <img src="http://moda4.nicolethemes.com/image/cache/catalog/colors/blue-cr-50x50.gif" alt="Blue">
-													  &nbsp;<span>Blue</span>
-																  </label>
-										</div>
-										<div class="radio">
-											<label>
-												<input type="radio" name="option[239]" value="65">
-															 <img src="http://moda4.nicolethemes.com/image/cache/catalog/colors/green-cr-50x50.gif" alt="Green">
-													  &nbsp;<span>Green</span>
-																  </label>
-										</div>
-										<div class="radio">
-											<label>
-												<input type="radio" name="option[239]" value="64">
-															 <img src="http://moda4.nicolethemes.com/image/cache/catalog/colors/navy-cr-50x50.gif" alt="Navy">
-													  &nbsp;<span>Navy</span>
-																  </label>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="form-label">Size</label>
-									<div id="input-option240">
-										<div class="radio">
-											<label>
-												<input type="radio" name="option[240]" value="62">XS</label>
-										</div>
-										<div class="radio">
-											<label>
-												<input type="radio" name="option[240]" value="60">M</label>
-										</div>
-										<div class="radio">
-											<label>
-												<input type="radio" name="option[240]" value="63">L</label>
-										</div>
-										<div class="radio">
-											<label>
-												<input type="radio" name="option[240]" value="61">XL</label>
-										</div>
-									</div>
-								</div>
+								@@include('product-subscriptions.html')  
 
 								<hr class="border opacity-50">
 
@@ -176,9 +134,9 @@
 									-->
 									<div class="quantity">
 										<div class="input-group spinner">
-											<button class="btn btn-minus"><i class="la la-minus"></i></button>
+											<button class="btn btn-minus" type="button"><i class="la la-minus"></i></button>
 											<input type="number" name="quantity" value="1" size="1" id="input-quantity" class="form-control">
-											<button class="btn btn-plus"><i class="la la-plus"></i></button>
+											<button class="btn btn-plus" type="button"><i class="la la-plus"></i></button>
 										</div>
 									</div>
 
@@ -210,144 +168,106 @@
 										
 									</button>
 
-									<div class="product_wish_compare mt-3">
-										<button  type="submit" formaction="/wishlist/1" class="btn btn-sm btn-outline-secondary border-0" title="Add to Wish List">
-											<i class="la la-heart"></i> Add to Wish List
+									<div class="product_wish_compare mt-4">
+										<button  type="submit" formaction="/wishlist/1" class="btn btn-sm btn-outline-secondary border-0" title="Add to Wish List"  data-v-vvveb-action="addToWishlist" data-v-product-wishlist-url>
+											<i class="la la-heart"></i> <span>Add to Wish List</span>
 										</button>
-										<button  type="submit" formaction="/compare/1" class="btn btn-sm btn-outline-secondary border-0" title="Compare this Product">
-											<i class="la la-random"></i> Compare this Product
+										<button  type="submit" formaction="/compare/1" class="btn btn-sm btn-outline-secondary border-0" title="Compare this Product"  data-v-vvveb-action="addToCompare" data-v-product-compare-url>
+											<i class="la la-random"></i> <span>Compare this Product</span>
 										</button>
 									</div>
 
-								</div>
-
-							</div>
-							<!-- 
-							<div class="row g-2">
-								<div class="col-auto">
-
-									<input name="quantity[3]" value="1" size="5" class="form-control" type="number">  
-									
-								</div>
-
-								<div class="col-auto">
-									<a href="#" class="btn btn-primary px-5" data-v-vvveb-action="addToCart">
-									
-										<span class="loading d-none">
-											<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
-											</span>
-											<span >Add to cart</span>...
-										</span>
-
-										<span class="button-text" >
-											<i class="la la-shopping-bag la-lg me-2"></i> Add to cart
-										</span>
-									
-									
-									</a>   	
-								</div>
-
-								<div class="col-auto">
-							
-									<a href="#" class="btn btn-light border" data-v-vvveb-action="addToCart">
-									
-										<span class="loading d-none">
-											<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
-											</span>
-											<span >Add to favorites</span>...
-										</span>
-
-										<span class="button-text" >
-											<i class="la la-heart la-lg"></i>
-										</span>
-									
-									
-									</a>  					
 								</div>
 								
-								<div class="col-auto">
-							
-										<a href="#" class="btn btn-light border" data-v-vvveb-action="addToCart">
-										
-											<span class="loading d-none">
-												<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
-												</span>
-												<span >Add to compare</span>...
-											</span>
-
-											<span class="button-text" >
-												<i class="la la-random la-lg"></i>
-											</span>
-										
-										
-										</a>  
-									</div>
+ 
 							</div>
-							-->
 						
 					</div>
 				</form>
 				
 			</div>
 
-				<ul class="nav nav-tabs mt-5" id="productTabs" role="tablist">
+				<ul class="nav nav-tabs nav-scroll bg-body sticky-top mt-5" id="productTabs" role="tablist" style="top:120px">
 				  <li class="nav-item" role="presentation">
-					<button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="description-tab-pane" aria-selected="true">
+					<a class="nav-link active" id="description-tab" data-bs-target="#description" href="#description" type="button" role="tab" aria-controls="description" aria-selected="true">
 						Description
-					</button>
+					</a>
 				  </li>
 				  <li class="nav-item" role="presentation">
-					<button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews-tab-pane" type="button" role="tab" aria-controls="reviews-tab-pane" aria-selected="false">
+					<a class="nav-link" id="specifications-tab" data-bs-target="#specifications" href="#specifications" type="button" role="tab" aria-controls="specifications" aria-selected="false">
+						Specifications
+					</a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a class="nav-link" id="reviews-tab" data-bs-target="#reviews" href="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">
 						Reviews
-					</button>
-				  </li>
+					</a>
+				  </li>				 
 				  <li class="nav-item" role="presentation">
-					<button class="nav-link" id="details-tab" data-bs-toggle="tab" data-bs-target="#details-tab-pane" type="button" role="tab" aria-controls="details-tab-pane" aria-selected="false">
-						Details
-					</button>
-				  </li>			  
-				  <li class="nav-item" role="presentation">
-					<button class="nav-link" id="questions-tab" data-bs-toggle="tab" data-bs-target="#questions-tab-pane" type="button" role="tab" aria-controls="questions-tab-pane" aria-selected="false">
+					<a class="nav-link" id="questions-tab" data-bs-target="#questions" href="#questions" type="button" role="tab" aria-controls="questions" aria-selected="false">
 						Questions &amp; Answers
-					</button>
+					</a>
 				  </li>
 				</ul>
 				
-				<div class="tab-content" id="productTabsContent">
-				  <div class="tab-pane show active" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
+				<div class="tab-content nav-scroll" id="productTabsContent" 
+					data-bs-spy="scroll" 
+					data-bs-target="#productTabs" 
+					data-bs-root-margin="0px 0px -20%" 
+					data-bs-smooth-scroll="false">
+					
+				  <div class="tab-pane show active" id="description" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
 				  
+					<h4>Description</h4>
+					
 					<div class="description" data-v-product-content>
 					
-						Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin. Praesent at tempus lectus, eleifend blandit felis. Fusce augue arcu, consequat a nisl aliquet, consectetur elementum turpis. Donec iaculis lobortis nisl, et viverra risus imperdiet eu. Etiam mollis posuere elit non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis arcu a magna sodales venenatis. Integer non diam sit amet magna luctus mollis ac eu nisi. In accumsan tellus ut dapibus blandit.
+						<p>All in the world know the beauty of the beautiful, and in doing this they have (the idea of) what ugliness is; they all know the skill of the skilful, and in doing this they have (the idea of) what the want of skill is.</p>
+
+						<p>So it is that existence and nonexistence give birth the one to (the idea of) the other; that difficulty and ease produce the one (the idea of) the other; that length and shortness fashion out the one the figure of the other; that (the ideas of) height and lowness arise from the contrast of the one with the other; that the musical notes and tones become harmonious through the relation of one with another; and that being before and behind give the idea of one following another.</p>
+
+						<p>Therefore the sage manages affairs without doing anything, and conveys his instructions without the use of speech.</p>
+
+						<p>All things spring up, and there is not one which declines to show itself; they grow, and there is no claim made for their ownership; they go through their processes, and there is no expectation (of a reward for the results). The work is accomplished, and there is no resting in it (as an achievement).</p>
+
+						<blockquote>
+							<p>
+							<span>The work is done, but how no one can see;</span>
+							<br>
+							<span>`This this that makes the power not cease to be.</span>
+							</p>
+						</blockquote>
 						
 					</div>
+					
 				  
 				  </div>
-				  <div class="tab-pane" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
-					  @@include('../_includes/product-reviews.html')   
+				  <div class="tab-pane" id="specifications" role="tabpanel" aria-labelledby="specifications-tab" tabindex="0">
+					  @@include('product-specifications.html')   
 				  </div>
-				  <div class="tab-pane" id="details-tab-pane" role="tabpanel" aria-labelledby="details-tab" tabindex="0">
-				  </div>
-				  <div class="tab-pane" id="questions-tab-pane" role="tabpanel" aria-labelledby="questions-tab" tabindex="0">
-					  @@include('../_includes/product-questions.html')   
+				  <div class="tab-pane" id="reviews" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
+					  @@include('product-reviews.html')   
+				  </div>		  
+				  <div class="tab-pane" id="questions" role="tabpanel" aria-labelledby="questions-tab" tabindex="0">
+					  @@include('product-questions.html')   
 				  </div>
 				</div>
 				
 						
-            <div data-v-component-products="index" data-v-related="url.product_id" data-v-limit="6" data-v-page="url">
-				<div data-v-if="count > 0" >
-				  <h3>Related products</h3>
-				  <div class="row g-3">
-					  <div class="col-md-6 col-lg-4 col-xl-3" data-v-product>
-						<div class="product">
-						
-							@@include('../_includes/product-list-item.html')
-						
-						</div>
-					 </div>             		
-				 </div>
-				 </div>
-			</div>
+				<div data-v-component-products="index" data-v-related="url.product_id" data-v-limit="6" data-v-page="url">
+					<div data-v-if="count > 0" >
+					  <h3 class="mt-5">Related products</h3>
+					  <div class="row g-3">
+						  <div class="col-md-6 col-lg-4 col-xl-3" data-v-product>
+							<div class="product">
+							
+								@@include('../_includes/product-list-item.html')
+							
+							</div>
+						 </div>             		
+					 </div>
+					 </div>
+				</div>
         </div>
     </main>
     
@@ -359,7 +279,36 @@
 
 <script>
 $('.carousel-item:first').addClass("active");
-</script>  	
+/*
+$('a[href^="#"]').click(function (e) {
+	e.preventDefault();
+	return false;
+});
+*/
+/*
+//anchors not working properly due to base href, add full url to anchors
+$('a[href^="#"]').attr("href", function (i,a) {
+	return window.location.href + a;
+});
+$('a[href^="#"]').on("click", function (e) {
+	window.location.hash = this.attributes.href.value;
+});
+*/
+$('a[href^="#"]').bind('click.smoothscroll',function (e) {
+	var target = this.hash,
+	//window.location.hash = this.attributes.href.value;
+	$target = $(target);
+	//window.location.hash = target;
+
+	$('html, body').stop().animate({
+		'scrollTop': $target.offset().top-200//subscract header height
+	}, 900, 'swing', function () {
+		//window.location.hash = target;
+	});
+	
+	return false;
+});
+</script>
   	
 </body>
 </html>

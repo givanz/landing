@@ -1,4 +1,5 @@
-<div id="questions" class="product-questions mt-4" data-v-component-questions>
+<div class="product-questions mt-4" data-v-component-questions>
+		<h4>Questions and anwsers</h4>
 
 		<ol class="question-list list-unstyled mb-3">
 			<li class="question mb-4" data-v-question>
@@ -17,7 +18,7 @@
 							</div>
 
 							<div class="question-meta text-small text-muted">
-								<span data-v-question-date_added data-filter-friendly_date>Jan 29, 2018</span>
+								<span data-v-question-created_at data-filter-friendly_date>Jan 29, 2018</span>
 							</div>
 
 						</div>
@@ -54,7 +55,7 @@
 							</div>
 
 							<div class="question-meta text-small text-muted">
-								<span data-v-question-date_added data-filter-friendly_date>Jan 29, 2018</span>
+								<span data-v-question-created_at data-filter-friendly_date>Jan 29, 2018</span>
 							</div>
 
 						</div>
@@ -92,7 +93,7 @@
 							</div>
 
 							<div class="question-meta text-small text-muted">
-								<span data-v-question-date_added data-filter-friendly_date>Jan 29, 2018</span>
+								<span data-v-question-created_at data-filter-friendly_date>Jan 29, 2018</span>
 							</div>
 
 						</div>
@@ -117,9 +118,11 @@
 	</div>
 
 	
-   <div class="questions-form">
+   <button data-bs-toggle="collapse" href="#questions-form" role="button" aria-expanded="false" aria-controls="questions-form" class="btn btn-light border"><span>Ask question</span> <i class="la la-angle-down ms-2"></i></button>
+	
+   <div class="questions-form collapse mt-4" id="questions-form">   
 
-	@@include('notifications.html')
+	@@include('../_includes/notifications.html')
 
 	<div>
 		<h5>Leave a reply</h5>
@@ -198,10 +201,11 @@
                     </span>
 
                     <span class="button-text">
-                        Post question
+                        <span>Post question</span><i class="la la-long-arrow-alt-right ms-1"></i>
                     </span>
 			  </button>
 			
 		</form>
 	</div>
+	
 </div>

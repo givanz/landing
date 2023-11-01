@@ -94,8 +94,8 @@
 						@@include('./_payment.html')
 
 						<div class="mb-3">
-							<label for="comment">Order Notes</label>
-							<textarea name="comment" id="comment" cols="30" rows="5" class="form-control" placeholder=""></textarea>
+							<label for="notes">Order Notes</label>
+							<textarea name="notes" id="notes" cols="30" rows="5" class="form-control" placeholder=""></textarea>
 						</div>
 
 						<button type="submit" href="" class="btn btn-primary w-100" data-v-url="checkout/checkout/confirm">
@@ -206,43 +206,43 @@ $(function() {
 	
 });
 
-//load zones for zone select when country changes
-let zonesUrl = '{ $this->zonesUrl }';
-let zones = [];
+//load regions for region select when country changes
+let regionsUrl = '{ $this->regionsUrl }';
+let regions = [];
 
-function addZonesToSelect(zoneSelect, data, zone_id = 0, countrySelect) {
-	zoneSelect.html('');
+function addRegionsToSelect(regionSelect, data, region_id = 0, countrySelect) {
+	regionSelect.html('');
 	for (i in data) {
-		let zone = data[i];
-		zoneSelect.append('<option value="' + zone.zone_id + '">' + zone.name + '</option>');
+		let region = data[i];
+		regionSelect.append('<option value="' + region.region_id + '">' + region.name + '</option>');
 	}
-	zoneSelect.val(zone_id);
-	zoneSelect.removeAttr("readonly");
+	regionSelect.val(region_id);
+	regionSelect.removeAttr("readonly");
 	countrySelect.removeAttribute("readonly");
 }
 
 $("body").on("change", "[data-v-countries]", function () {
-	let zoneGroup = $(this).parents(".row");
-	let zoneSelect = $("[data-v-zones]", zoneGroup);
+	let regionGroup = $(this).parents(".row");
+	let regionSelect = $("[data-v-regions]", regionGroup);
 	let country_id = this.value;
-	let zone_id = this.dataset.vZoneId;
+	let region_id = this.dataset.vRegionId;
 	let self = this;
 	this.readonly = false;
 
 	if (country_id) {
-		if (zones[country_id]) {
-			addZonesToSelect(zoneSelect, zones[country_id], zone_id, self);
+		if (regions[country_id]) {
+			addRegionsToSelect(regionSelect, regions[country_id], region_id, self);
 			$("[data-v-countries][readonly]:first").change();
 		} else {
-			$.get(zonesUrl + "&country_id=" + country_id).done(function( data ) {
-				zones[country_id] = data;
-				addZonesToSelect(zoneSelect, data, zone_id, self);
+			$.get(regionsUrl + "&country_id=" + country_id).done(function( data ) {
+				regions[country_id] = data;
+				addRegionsToSelect(regionSelect, data, region_id, self);
 				$("[data-v-countries][readonly]:first", self).change();
 			});
 		}
 	}
 	
-	this.dataset.vZoneId = 0;
+	this.dataset.vRegionId = 0;
 });
 
 function togglePasswordInput(element, input) {
