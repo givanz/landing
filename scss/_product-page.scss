@@ -14,13 +14,6 @@ input.form-control[type=number] {
 	background-size:70%;
 }
 
-.nav-tabs .nav-link {
-	border:none;
-	color:$secondary;
-	//padding:0.5rem 1rem;
-}
-
-
 
 .product
 {
@@ -28,7 +21,13 @@ input.form-control[type=number] {
    margin-top:10px;
    /*padding-bottom:10px;*/
    
-   .nav-tabs .nav-link.active {
+	.nav-tabs .nav-link {
+		border:none;
+		color:$secondary;
+		//padding:0.5rem 1rem;
+	}
+
+.nav-tabs .nav-link.active {
 	border:none;
 	color:var(--bs-link-color);
 	border-bottom:2px solid var(--bs-link-color);

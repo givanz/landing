@@ -79,21 +79,28 @@
 				
 				
 				<div class="my-2">
-					<small class="text-warning"> 
-						<i class="la la-star"></i>
-						<i class="la la-star"></i>
-						<i class="la la-star"></i>
-						<i class="la la-star"></i>
-						<i class="la la-star-half"></i>
+					<small class="text-secondary" data-v-if="product.rating"> 
+						<i class="la la-star" data-v-class-if-text-warning="product.rating >= 1"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product.rating >= 2"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product.rating >= 3"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product.rating >= 4"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product.rating >= 5"></i>
+						<!-- <i class="la la-star-half"></i> -->
 					</small>
-					<a href="#reviews" class="ms-2" type="button" data-bs-target="#reviews">(30 reviews)</a>
+					<a href="#reviews" data-v-if="product.reviews" class="ms-2" type="button" data-bs-target="#reviews">(<span data-v-product-reviews>no</span> reviews)</a>
 				</div>
 
-				<p class="product-price">
-					<span class="price" data-v-product-price_tax_formatted>$49.00</span>
+				<p class="product-price" data-v-if="product.promotion">
+					<span class="price" data-v-product-promotion_tax_formatted>$49.00</span>
 
-					<span class="text-decoration-line-through text-secondary text-opacity-75">$350</span>
-					<small class="fs-6 ms-2 text-danger">26% Off</small>
+					<span class="text-decoration-line-through text-secondary text-opacity-75" data-v-product-price_tax_formatted>$350</span>
+					<small class="fs-6 ms-2 text-danger">
+						<span data-v-product-promotion_discount>30</span>% Off
+					</small>
+				</p>
+
+				<p class="product-price" data-v-if-not="product.promotion">
+					<span class="price" data-v-product-price_tax_formatted>$49.00</span>
 				</p>
 				
 				<!--
@@ -140,7 +147,7 @@
 										</div>
 									</div>
 
-									<button type="submit" formaction="/cart/1" id="button-cart" data-loading-text="Loading..." class="btn btn-primary btn-shadow px-4 mx-2 button-cart" data-v-vvveb-action="addToCart" data-v-product-cart-url>
+									<button type="submit" formaction="/cart/1" id="button-cart" data-loading-text="Loading..." class="btn btn-primary btn-shadow px-4 mx-2 button-cart" data-v-vvveb-action="addToCart" data-v-product-add_cart_url>
 									
 										<span class="loading d-none">
 											<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -154,7 +161,7 @@
 										
 									</button> 
 
-									<button type="submit" formaction="/checkout/1" id="buynow" data-loading-text="Loading..." class="btn btn-light btn-shadow border px-4 buynow" data-v-product-buy-url>
+									<button type="submit" formaction="/checkout/1" id="buynow" data-loading-text="Loading..." class="btn btn-light btn-shadow border px-4 buynow" data-v-product-buy_url>
 									
 										<span class="loading d-none">
 											<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -169,12 +176,12 @@
 									</button>
 
 									<div class="product_wish_compare mt-4">
-										<button  type="submit" formaction="/wishlist/1" class="btn btn-sm btn-outline-secondary border-0" title="Add to Wish List"  data-v-vvveb-action="addToWishlist" data-v-product-wishlist-url>
+										<a href="/wishlist/1" class="btn btn-sm btn-outline-secondary border-0" title="Add to Wish List"  data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
 											<i class="la la-heart"></i> <span>Add to Wish List</span>
-										</button>
-										<button  type="submit" formaction="/compare/1" class="btn btn-sm btn-outline-secondary border-0" title="Compare this Product"  data-v-vvveb-action="addToCompare" data-v-product-compare-url>
+										</a>
+										<a href="/compare/1" class="btn btn-sm btn-outline-secondary border-0" title="Compare this Product"  data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
 											<i class="la la-random"></i> <span>Compare this Product</span>
-										</button>
+										</a>
 									</div>
 
 								</div>

@@ -68,12 +68,12 @@
 			</div>
 			<div class="col-12 mb-3">
 				<label class="col-form-label" for="street_address">Address <span class="text-danger text-small">*</span></label>
-				<input type="text" class="form-control mb-3" id="billing_address_1" name="billing_address[address_1]" value="" placeholder="Street address" minlength="5" required>
-				<input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="">
+				<input type="text" class="form-control mb-3" id="billing_address_1" name="billing_address[address_1]" autocomplete="billing street-address"  value="" placeholder="Street address" minlength="5" required>
+				<input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" autocomplete="billing address-level2"  placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="">
 			</div>
 			<div class="col-12 mb-3">
 				<label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span></label>
-				<input type="text" class="form-control" id="billing_post_code" name="billing_address[post_code]" minlength="3" value="">
+				<input type="text" class="form-control" id="billing_post_code" name="billing_address[post_code]" autocomplete="billing postal-code" minlength="3" value="">
 			</div>
 			<div class="col-12 mb-3">
 				<label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span></label>

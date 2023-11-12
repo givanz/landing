@@ -105,14 +105,34 @@
 				</div>
 			</div>
 		</div>			
+		
+		
+		<div class="border-top border-bottom py-4">			
+			<h6>User contributed images</h6>
+			
+			<div class="">
+				  <div class="d-inline-block" data-v-image>
+					<a href="/product/product-fifteen" title="Product 15" data-toggle="lightbox" data-gallery="review-gallery"  data-v-image-src>
+					  <img src="/image-cache/product/5-1-150x0.jpg" alt="" class="img-thumbnail m-1" loading="lazy" data-v-thumb-src>
+					  
+					</a>
+				  </div>
+				  <div class="d-inline-block" data-v-image>
+					<a href="/product/product-fifteen" title="Product 15" data-toggle="lightbox" data-gallery="review-gallery" data-v-image-src>
+					  <img src="/image-cache/product/4-1-150x0.jpg" alt="" class="img-thumbnail m-1" loading="lazy" data-v-thumb-src>
+					  
+					</a>
+				  </div>
+			</div>	
+		</div>			
 
-		<ol class="review-list list-unstyled mb-3">
+		<ol class="review-list list-unstyled my-3">
 			<li class="review mb-4" data-v-review>
 
 					<div class="review-wrap d-flex ">
 
-						<figure class="review-author-avatar me-2">
-							<img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
+						<figure class="author-avatar me-2">
+							<img src="img/sections/team/1.jpg" alt="user" width="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
 						</figure>
 
 						<div class="review-author">
@@ -121,8 +141,19 @@
 								<a rel="external nofollow ugc" href="#" data-v-if="review.url"><span data-v-review-author>Maria Williams</span></a>
 								<span data-v-review-author data-v-if-not="review.url">Maria Williams</span>
 							</div>
+							
+							<div class="d-inline-block">
+								<small class="text-secondary" data-v-if="product.rating"> 
+									<i class="la la-star" data-v-class-if-text-warning="review.rating >= 1"></i>
+									<i class="la la-star" data-v-class-if-text-warning="review.rating >= 2"></i>
+									<i class="la la-star" data-v-class-if-text-warning="review.rating >= 3"></i>
+									<i class="la la-star" data-v-class-if-text-warning="review.rating >= 4"></i>
+									<i class="la la-star" data-v-class-if-text-warning="review.rating >= 5"></i>
+									<!-- <i class="la la-star-half"></i> -->
+								</small>
+							</div>
 
-							<div class="review-meta text-small text-muted">
+							<div class="review-meta text-small text-muted d-inline-block">
 								<span data-v-review-created_at data-filter-friendly_date>Jan 29, 2018</span>
 							</div>
 
@@ -131,13 +162,28 @@
 					</div>
 
 	
-					<div data-v-review-content>
+					<div class="my-2" data-v-review-content>
 						<p>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
 					</div>
 
 					<div class="alert alert-light my-2 small" data-v-if="review.status = 0">
 						<div>Your review is awaiting moderation.</div>
 						<div>This is a preview, your review will be visible after it has been approved.</div>
+					</div>
+					
+					<div>
+					  <div class="user-image" data-v-user-image>
+						<a href="/product/product-fifteen" title="Product 15"  data-toggle="lightbox" data-gallery="user-gallery" data-v-image-src>
+						  <img src="/image-cache/product/5-1-150x0.jpg" alt="" class="img-thumbnail m-1" loading="lazy" data-v-thumb-src>
+						  
+						</a>
+					  </div>
+					  <div class="user-image" data-v-user-image>
+						<a href="/product/product-fifteen" title="Product 15"  data-toggle="lightbox" data-gallery="user-gallery" data-v-image-src">
+						  <img src="/image-cache/product/4-1-150x0.jpg" alt="" class="img-thumbnail m-1" loading="lazy" data-v-thumb-src>
+						  
+						</a>
+					  </div>
 					</div>
 
 					<div class="reply">
@@ -149,8 +195,8 @@
 
 					<div class="review-wrap d-flex ">
 
-						<figure class="review-author-avatar me-2">
-							<img src="http://placehold.it/60x60" alt="user" width="60" height="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
+						<figure class="author-avatar me-2">
+							<img src="http://placehold.it/60x60" alt="user" width="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
 						</figure>
 
 						<div class="review-author">
@@ -168,7 +214,7 @@
 					</div>
 
 	
-					<div data-v-review-content>
+					<div class="my-2" data-v-review-content>
 						<p>This is a reply review.</p>
 					</div>
 
@@ -186,8 +232,8 @@
 
 					<div class="review-wrap d-flex ">
 
-						<figure class="review-author-avatar me-2">
-							<img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
+						<figure class="author-avatar me-2">
+							<img src="img/sections/team/1.jpg" alt="user" width="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
 						</figure>
 
 						<div class="review-author">
@@ -244,7 +290,7 @@
 			<i class="la la-window-close"></i></a>
 			-->
 			
-			<form action method="product" enctype="multipart/form-data" data-v-url="user/login" data-selector=".product-reviews">
+			<form action method="post" enctype="multipart/form-data" data-v-url="user/login" data-selector=".product-reviews">
 
 				<span>Logged in as <b data-v-global-user-display_name>author</b></span>
 
@@ -267,7 +313,7 @@
 			
 		</div>
 
-		<form id="review-form" method="product" action="" data-v-vvveb-action="addreview" data-v-vvveb-on="submit">
+		<form id="review-form" method="post" action="" data-v-vvveb-action="addreview" data-v-vvveb-on="submit">
 			
 			<input type="hidden" name="product_id" data-v-product-product_id>
 			<input type="hidden" name="slug" data-v-product-slug>

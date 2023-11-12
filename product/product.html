@@ -439,8 +439,8 @@
 			</span>
 		</a> -->
                         <hr>
-                        <span>Don’t have an account?</strong>
-                          <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
+                        <span>Don’t have an account?</span>
+                        <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
 
                       </div>
 
@@ -659,6 +659,7 @@
   </nav>
 
 
+
   <main id="site-content" role="main" class="container product" data-v-component-product>
 
     <nav aria-label="breadcrumb" class="text-muted text-small" data-v-component-breadcrumb>
@@ -752,21 +753,28 @@
 
 
         <div class="my-2">
-          <small class="text-warning">
-            <i class="la la-star"></i>
-            <i class="la la-star"></i>
-            <i class="la la-star"></i>
-            <i class="la la-star"></i>
-            <i class="la la-star-half"></i>
+          <small class="text-secondary" data-v-if="product.rating">
+            <i class="la la-star" data-v-class-if-text-warning="product.rating >= 1"></i>
+            <i class="la la-star" data-v-class-if-text-warning="product.rating >= 2"></i>
+            <i class="la la-star" data-v-class-if-text-warning="product.rating >= 3"></i>
+            <i class="la la-star" data-v-class-if-text-warning="product.rating >= 4"></i>
+            <i class="la la-star" data-v-class-if-text-warning="product.rating >= 5"></i>
+            <!-- <i class="la la-star-half"></i> -->
           </small>
-          <a href="#reviews" class="ms-2" type="button" data-bs-target="#reviews">(30 reviews)</a>
+          <a href="#reviews" data-v-if="product.reviews" class="ms-2" type="button" data-bs-target="#reviews">(<span data-v-product-reviews>no</span> reviews)</a>
         </div>
 
-        <p class="product-price">
-          <span class="price" data-v-product-price_tax_formatted>$49.00</span>
+        <p class="product-price" data-v-if="product.promotion">
+          <span class="price" data-v-product-promotion_tax_formatted>$49.00</span>
 
-          <span class="text-decoration-line-through text-secondary text-opacity-75">$350</span>
-          <small class="fs-6 ms-2 text-danger">26% Off</small>
+          <span class="text-decoration-line-through text-secondary text-opacity-75" data-v-product-price_tax_formatted>$350</span>
+          <small class="fs-6 ms-2 text-danger">
+            <span data-v-product-promotion_discount>30</span>% Off
+          </small>
+        </p>
+
+        <p class="product-price" data-v-if-not="product.promotion">
+          <span class="price" data-v-product-price_tax_formatted>$49.00</span>
         </p>
 
         <!--
@@ -1045,7 +1053,7 @@
                   </div>
                 </div>
 
-                <button type="submit" formaction="/cart/1" id="button-cart" data-loading-text="Loading..." class="btn btn-primary btn-shadow px-4 mx-2 button-cart" data-v-vvveb-action="addToCart" data-v-product-cart-url>
+                <button type="submit" formaction="/cart/1" id="button-cart" data-loading-text="Loading..." class="btn btn-primary btn-shadow px-4 mx-2 button-cart" data-v-vvveb-action="addToCart" data-v-product-add_cart_url>
 
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -1060,7 +1068,7 @@
 
                 </button>
 
-                <button type="submit" formaction="/checkout/1" id="buynow" data-loading-text="Loading..." class="btn btn-light btn-shadow border px-4 buynow" data-v-product-buy-url>
+                <button type="submit" formaction="/checkout/1" id="buynow" data-loading-text="Loading..." class="btn btn-light btn-shadow border px-4 buynow" data-v-product-buy_url>
 
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -1076,14 +1084,14 @@
                 </button>
 
                 <div class="product_wish_compare mt-4">
-                  <button type="submit" formaction="/wishlist/1" class="btn btn-sm btn-outline-secondary border-0" title="Add to Wish List" data-v-vvveb-action="addToWishlist" data-v-product-wishlist-url>
+                  <a href="/wishlist/1" class="btn btn-sm btn-outline-secondary border-0" title="Add to Wish List" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
                     <i class="la la-heart"></i>
                     <span>Add to Wish List</span>
-                  </button>
-                  <button type="submit" formaction="/compare/1" class="btn btn-sm btn-outline-secondary border-0" title="Compare this Product" data-v-vvveb-action="addToCompare" data-v-product-compare-url>
+                  </a>
+                  <a href="/compare/1" class="btn btn-sm btn-outline-secondary border-0" title="Compare this Product" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
                     <i class="la la-random"></i>
                     <span>Compare this Product</span>
-                  </button>
+                  </a>
                 </div>
 
               </div>
@@ -1161,27 +1169,27 @@
                   </tr>
                   <tr data-v-attribute>
                     <td data-v-attribute-name>Number of cores</td>
-                    <td data-v-attribute-text>16</td>
+                    <td data-v-attribute-value>16</td>
                   </tr>
                   <tr data-v-attribute>
                     <td data-v-attribute-name>Frequency</td>
-                    <td data-v-attribute-text>3.6 GHZ</td>
+                    <td data-v-attribute-value>3.6 GHZ</td>
                   </tr>
                   <tr data-v-attribute>
                     <td data-v-attribute-name>TDP</td>
-                    <td data-v-attribute-text>65 W</td>
+                    <td data-v-attribute-value>65 W</td>
                   </tr>
                   <tr data-v-attribute>
                     <td data-v-attribute-name>Lithography</td>
-                    <td data-v-attribute-text>7 nm</td>
+                    <td data-v-attribute-value>7 nm</td>
                   </tr>
                   <tr data-v-attribute>
                     <td data-v-attribute-name>L2 Cache</td>
-                    <td data-v-attribute-text>3 MB</td>
+                    <td data-v-attribute-value>3 MB</td>
                   </tr>
                   <tr data-v-attribute>
                     <td data-v-attribute-name>L3 Cache</td>
-                    <td data-v-attribute-text>32 MB</td>
+                    <td data-v-attribute-value>32 MB</td>
                   </tr>
                   <tr data-v-group>
                     <td colspan="2">
@@ -1190,23 +1198,23 @@
                   </tr>
                   <tr data-v-attribute>
                     <td data-v-attribute-name>Type</td>
-                    <td data-v-attribute-text>DDR4</td>
+                    <td data-v-attribute-value>DDR4</td>
                   </tr>
                   <tr data-v-attribute>
                     <td data-v-attribute-name>Capacity</td>
-                    <td data-v-attribute-text>32 GB</td>
+                    <td data-v-attribute-value>32 GB</td>
                   </tr>
                   <tr data-v-attribute>
                     <td data-v-attribute-name>Frequency</td>
-                    <td data-v-attribute-text>1600 MHZ</td>
+                    <td data-v-attribute-value>1600 MHZ</td>
                   </tr>
                   <tr data-v-attribute>
                     <td data-v-attribute-name>Latency</td>
-                    <td data-v-attribute-text>9 CL</td>
+                    <td data-v-attribute-value>9 CL</td>
                   </tr>
                   <tr data-v-attribute>
                     <td data-v-attribute-name>Voltage</td>
-                    <td data-v-attribute-text>1,5 V</td>
+                    <td data-v-attribute-value>1,5 V</td>
                   </tr>
                 </tbody>
               </table>
@@ -1328,13 +1336,33 @@
               </div>
             </div>
 
-            <ol class="review-list list-unstyled mb-3">
+
+            <div class="border-top border-bottom py-4">
+              <h6>User contributed images</h6>
+
+              <div class="">
+                <div class="d-inline-block" data-v-image>
+                  <a href="/product/product-fifteen" title="Product 15" data-toggle="lightbox" data-gallery="review-gallery" data-v-image-src>
+                    <img src="/image-cache/product/5-1-150x0.jpg" alt="" class="img-thumbnail m-1" loading="lazy" data-v-thumb-src>
+
+                  </a>
+                </div>
+                <div class="d-inline-block" data-v-image>
+                  <a href="/product/product-fifteen" title="Product 15" data-toggle="lightbox" data-gallery="review-gallery" data-v-image-src>
+                    <img src="/image-cache/product/4-1-150x0.jpg" alt="" class="img-thumbnail m-1" loading="lazy" data-v-thumb-src>
+
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <ol class="review-list list-unstyled my-3">
               <li class="review mb-4" data-v-review>
 
                 <div class="review-wrap d-flex ">
 
-                  <figure class="review-author-avatar me-2">
-                    <img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
+                  <figure class="author-avatar me-2">
+                    <img src="img/sections/team/1.jpg" alt="user" width="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
                   </figure>
 
                   <div class="review-author">
@@ -1346,7 +1374,18 @@
                       <span data-v-review-author data-v-if-not="review.url">Maria Williams</span>
                     </div>
 
-                    <div class="review-meta text-small text-muted">
+                    <div class="d-inline-block">
+                      <small class="text-secondary" data-v-if="product.rating">
+                        <i class="la la-star" data-v-class-if-text-warning="review.rating >= 1"></i>
+                        <i class="la la-star" data-v-class-if-text-warning="review.rating >= 2"></i>
+                        <i class="la la-star" data-v-class-if-text-warning="review.rating >= 3"></i>
+                        <i class="la la-star" data-v-class-if-text-warning="review.rating >= 4"></i>
+                        <i class="la la-star" data-v-class-if-text-warning="review.rating >= 5"></i>
+                        <!-- <i class="la la-star-half"></i> -->
+                      </small>
+                    </div>
+
+                    <div class="review-meta text-small text-muted d-inline-block">
                       <span data-v-review-created_at data-filter-friendly_date>Jan 29, 2018</span>
                     </div>
 
@@ -1355,13 +1394,28 @@
                 </div>
 
 
-                <div data-v-review-content>
+                <div class="my-2" data-v-review-content>
                   <p>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
                 </div>
 
                 <div class="alert alert-light my-2 small" data-v-if="review.status = 0">
                   <div>Your review is awaiting moderation.</div>
                   <div>This is a preview, your review will be visible after it has been approved.</div>
+                </div>
+
+                <div>
+                  <div class="user-image" data-v-user-image>
+                    <a href="/product/product-fifteen" title="Product 15" data-toggle="lightbox" data-gallery="user-gallery" data-v-image-src>
+                      <img src="/image-cache/product/5-1-150x0.jpg" alt="" class="img-thumbnail m-1" loading="lazy" data-v-thumb-src>
+
+                    </a>
+                  </div>
+                  <div class="user-image" data-v-user-image>
+                    <a href="/product/product-fifteen" title="Product 15" data-toggle="lightbox" data-gallery="user-gallery" data-v-image-src">
+                      <img src="/image-cache/product/4-1-150x0.jpg" alt="" class="img-thumbnail m-1" loading="lazy" data-v-thumb-src>
+
+                    </a>
+                  </div>
                 </div>
 
                 <div class="reply">
@@ -1374,8 +1428,8 @@
 
                 <div class="review-wrap d-flex ">
 
-                  <figure class="review-author-avatar me-2">
-                    <img src="http://placehold.it/60x60" alt="user" width="60" height="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
+                  <figure class="author-avatar me-2">
+                    <img src="http://placehold.it/60x60" alt="user" width="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
                   </figure>
 
                   <div class="review-author">
@@ -1393,7 +1447,7 @@
                 </div>
 
 
-                <div data-v-review-content>
+                <div class="my-2" data-v-review-content>
                   <p>This is a reply review.</p>
                 </div>
 
@@ -1412,8 +1466,8 @@
 
                 <div class="review-wrap d-flex ">
 
-                  <figure class="review-author-avatar me-2">
-                    <img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
+                  <figure class="author-avatar me-2">
+                    <img src="img/sections/team/1.jpg" alt="user" width="60" data-v-review-avatar loading="lazy" data-v-if="review.avatar">
                   </figure>
 
                   <div class="review-author">
@@ -1537,7 +1591,7 @@
 			<i class="la la-window-close"></i></a>
 			-->
 
-                <form action method="product" enctype="multipart/form-data" data-v-url="user/login" data-selector=".product-reviews">
+                <form action method="post" enctype="multipart/form-data" data-v-url="user/login" data-selector=".product-reviews">
 
                   <span>Logged in as <b data-v-global-user-display_name>author</b>
                   </span>
@@ -1562,7 +1616,7 @@
 
               </div>
 
-              <form id="review-form" method="product" action="" data-v-vvveb-action="addreview" data-v-vvveb-on="submit">
+              <form id="review-form" method="post" action="" data-v-vvveb-action="addreview" data-v-vvveb-on="submit">
 
                 <input type="hidden" name="product_id" data-v-product-product_id>
                 <input type="hidden" name="slug" data-v-product-slug>
@@ -1613,15 +1667,15 @@
         </div>
         <div class="tab-pane" id="questions" role="tabpanel" aria-labelledby="questions-tab" tabindex="0">
           <div class="product-questions mt-4" data-v-component-questions>
-            <h4>Questions and anwsers</h4>
+            <h4 class="border-top pt-4">Questions and anwsers</h4>
 
-            <ol class="question-list list-unstyled mb-3">
+            <ol class="question-list list-unstyled my-3">
               <li class="question mb-4" data-v-question>
 
                 <div class="question-wrap d-flex ">
 
-                  <figure class="question-author-avatar me-2">
-                    <img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
+                  <figure class="author-avatar me-2">
+                    <img src="img/sections/team/1.jpg" alt="user" width="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
                   </figure>
 
                   <div class="question-author">
@@ -1642,7 +1696,7 @@
                 </div>
 
 
-                <div data-v-question-content>
+                <div class="my-2" data-v-question-content>
                   <p>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
                 </div>
 
@@ -1661,8 +1715,8 @@
 
                 <div class="question-wrap d-flex ">
 
-                  <figure class="question-author-avatar me-2">
-                    <img src="http://placehold.it/60x60" alt="user" width="60" height="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
+                  <figure class="author-avatar me-2">
+                    <img src="http://placehold.it/60x60" alt="user" width="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
                   </figure>
 
                   <div class="question-author">
@@ -1680,7 +1734,7 @@
                 </div>
 
 
-                <div data-v-question-content>
+                <div class="my-2" data-v-question-content>
                   <p>This is a reply question.</p>
                 </div>
 
@@ -1699,8 +1753,8 @@
 
                 <div class="question-wrap d-flex ">
 
-                  <figure class="question-author-avatar me-2">
-                    <img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
+                  <figure class="author-avatar me-2">
+                    <img src="img/sections/team/1.jpg" alt="user" width="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
                   </figure>
 
                   <div class="question-author">
@@ -1720,7 +1774,7 @@
 
                 </div>
 
-                <div data-v-question-content>
+                <div class="my-2" data-v-question-content>
                   <p>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
                 </div>
 
@@ -1825,7 +1879,7 @@
 			<i class="la la-window-close"></i></a>
 			-->
 
-                <form action method="product" enctype="multipart/form-data" data-v-url="user/login" data-selector=".product-questions">
+                <form action method="post" enctype="multipart/form-data" data-v-url="user/login" data-selector=".product-questions">
 
                   <span>Logged in as <b data-v-global-user-display_name>author</b>
                   </span>
@@ -1850,7 +1904,7 @@
 
               </div>
 
-              <form id="question-form" method="product" action="" data-v-vvveb-action="addquestion" data-v-vvveb-on="submit">
+              <form id="question-form" method="post" action="" data-v-vvveb-action="addquestion" data-v-vvveb-on="submit">
 
                 <input type="hidden" name="product_id" data-v-product-product_id>
                 <input type="hidden" name="slug" data-v-product-slug>
@@ -1884,7 +1938,7 @@
                 <button type="submit" value="question" class="btn btn-primary">
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                    <span>producting</span>...
+                    <span>Posting</span>...
                   </span>
 
                   <span class="button-text">
@@ -1923,12 +1977,16 @@
 
                     <!-- Favourite -->
                     <div class="product-favourite">
-                      <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-wishlist-url></a>
+                      <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                        <span></span>
+                      </a>
                     </div>
 
                     <!-- Compare -->
                     <div class="product-compare">
-                      <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-compare-url></a>
+                      <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                        <span></span>
+                      </a>
                     </div>
                   </div>
 
@@ -1946,7 +2004,7 @@
                       <!-- Add to Cart -->
                       <div class="add-to-cart-btn">
                         <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                        <a href="" class="btn btn-primary w-100" data-v-product-add-cart-url data-v-vvveb-action="addToCart" data-product_id="1">
+                        <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                           <span class="loading d-none">
                             <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                             <span>Add to cart</span>...

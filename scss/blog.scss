@@ -219,7 +219,7 @@ ul.tags {
 }
 
 /* comments */
-.post-comments {
+.post-comments, .product-reviews, .product-questions {
 	position:relative;
 	
 	a {
@@ -228,15 +228,29 @@ ul.tags {
 	}
 }
 
-.comment-author-avatar {
+.author-avatar {
 	position:absolute;
-	left:-5rem;
-    min-width: 60px;
-    background: var(--bs-secondary-bg);
-    min-height: 60px;
+	left:-90px;
+    min-width: 80px;
+    min-height: 80px;
+    
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+	&:empty, .empty {
+		width: 80px;
+		height: 80px;
+		//background: var(--bs-secondary-bg);
+		background: rgba(var(--bs-secondary-bg-rgb), 0.5);
+	}
 }
 
-.comment {
+.review-list, .question-list {
+	margin-left:5.5rem;
+}
+
+.comment, .review, .question {
 	position:relative;
 	
 	&.level-1 {
@@ -249,6 +263,15 @@ ul.tags {
 
 	&.level-3 {
 		margin-left:3rem;
+	}
+}
+
+.review-list {
+	.user-image {
+		display:inline-block;
+		max-width:80px;
+		margin-right:0.3rem;
+		margin-bottom:0.3rem;
 	}
 }
 

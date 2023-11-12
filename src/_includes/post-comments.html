@@ -1,19 +1,22 @@
 <div id="comments" class="post-comments mt-4" data-v-component-comments>
 		<h4 class="comments-title">Comments</h4>
 
-		<ol class="comment-list list-unstyled mb-3">
+		<ol class="comment-list list-unstyled mb-3" data-v-if="count > 0">
 			<li class="comment mb-4" data-v-comment>
 
 					<div class="comment-wrap d-flex ">
 
-						<figure class="comment-author-avatar me-2">
-							<img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-comment-avatar loading="lazy" data-v-if="comment.avatar">
+						<figure class="author-avatar me-2">
+							<img src="img/sections/team/1.jpg" alt="user" width="60" data-v-comment-avatar loading="lazy" data-v-if="comment.avatar">
+							<div class="empty" data-v-if-not="comment.avatar"></div>
 						</figure>
 
 						<div class="comment-author">
 
 							<div class="comment-author">
-								<a rel="external nofollow ugc" href="#" data-v-if="comment.url"><span data-v-comment-author>Maria Williams</span></a>
+								<a rel="external nofollow ugc" href="#" data-v-if="comment.url">
+									<span data-v-comment-author>Maria Williams</span>
+								</a>
 								<span data-v-comment-author data-v-if-not="comment.url">Maria Williams</span>
 							</div>
 
@@ -44,7 +47,7 @@
 
 					<div class="comment-wrap d-flex ">
 
-						<figure class="comment-author-avatar me-2">
+						<figure class="author-avatar me-2">
 							<img src="http://placehold.it/60x60" alt="user" width="60" height="60" data-v-comment-avatar loading="lazy" data-v-if="comment.avatar">
 						</figure>
 
@@ -81,7 +84,7 @@
 
 					<div class="comment-wrap d-flex ">
 
-						<figure class="comment-author-avatar me-2">
+						<figure class="author-avatar me-2">
 							<img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-comment-avatar loading="lazy" data-v-if="comment.avatar">
 						</figure>
 
@@ -115,20 +118,17 @@
 
 			</li>
 		</ol>
-	</div>
-
 	
    <div class="comments-form">
 
 	@@include('notifications.html')
 
-	<div>
 		<h5>Leave a reply</h5>
-		<span class="replyto" style="display:none"><h3>Reply to <b data-comment-author>author</b></h3>
+		<div class="replyto" style="display:none"><h3>Reply to <b data-comment-author>author</b></h3>
 			<a href="#comment-form" class="reply-btn d-inline-block" data-comment_id="0" data-v-vvveb-action="replyTo">
 			Cancel reply 
 			<i class="la la-window-close"></i></a>
-		</span>
+		</div>
 		
 		
 		<div class="loggedin mb-3" data-v-if="this.global.user_id">
@@ -153,7 +153,7 @@
 					</span>
 
 					<span class="button-text">
-						Logout <i class="la la-sign-out-alt"></i></a>
+						Logout <i class="la la-sign-out-alt"></i>
 					</span>
 				
 				</button>	
@@ -161,7 +161,7 @@
 			
 		</div>
 
-		<form id="comment-form" method="post" action="" data-v-vvveb-action="addComment" data-v-vvveb-on="submit">
+		<form id="comment-form" method="post" action="#" data-v-vvveb-action="addComment" data-v-vvveb-on="submit">
 			
 			<input type="hidden" name="post_id" data-v-post-post_id>
 			<input type="hidden" name="slug" data-v-post-slug>
@@ -174,11 +174,11 @@
 			
 			  <div data-v-if-not="this.global.user_id">	
 				  <div class="mb-3">
-					<label for="exampleInputEmail1" class="form-label">Name</label>
+					<label for="author" class="form-label">Name</label>
 					<input type="text" placeholder="Name" name="author" class="form-control" required>
 				  </div>
 				  <div class="mb-3">
-					<label for="exampleInputPassword1" class="form-label">Email address</label>
+					<label for="email" class="form-label">Email address</label>
 					<input type="email" placeholder="Email" name="email" class="form-control" required>
 				  </div>
 			  </div>

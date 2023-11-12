@@ -24,5 +24,9 @@
 			align-items: center;
 			padding: 2.5rem 1rem 2rem;
 		}
+
+		.dropdown-toggle::after {
+			font-size:60%;
+		}
 	}
 }

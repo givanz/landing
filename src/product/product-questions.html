@@ -1,13 +1,13 @@
 <div class="product-questions mt-4" data-v-component-questions>
-		<h4>Questions and anwsers</h4>
+		<h4 class="border-top pt-4">Questions and anwsers</h4>
 
-		<ol class="question-list list-unstyled mb-3">
+		<ol class="question-list list-unstyled my-3">
 			<li class="question mb-4" data-v-question>
 
 					<div class="question-wrap d-flex ">
 
-						<figure class="question-author-avatar me-2">
-							<img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
+						<figure class="author-avatar me-2">
+							<img src="img/sections/team/1.jpg" alt="user" width="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
 						</figure>
 
 						<div class="question-author">
@@ -26,7 +26,7 @@
 					</div>
 
 	
-					<div data-v-question-content>
+					<div class="my-2" data-v-question-content>
 						<p>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
 					</div>
 
@@ -44,8 +44,8 @@
 
 					<div class="question-wrap d-flex ">
 
-						<figure class="question-author-avatar me-2">
-							<img src="http://placehold.it/60x60" alt="user" width="60" height="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
+						<figure class="author-avatar me-2">
+							<img src="http://placehold.it/60x60" alt="user" width="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
 						</figure>
 
 						<div class="question-author">
@@ -63,7 +63,7 @@
 					</div>
 
 	
-					<div data-v-question-content>
+					<div class="my-2" data-v-question-content>
 						<p>This is a reply question.</p>
 					</div>
 
@@ -81,8 +81,8 @@
 
 					<div class="question-wrap d-flex ">
 
-						<figure class="question-author-avatar me-2">
-							<img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
+						<figure class="author-avatar me-2">
+							<img src="img/sections/team/1.jpg" alt="user" width="60" data-v-question-avatar loading="lazy" data-v-if="question.avatar">
 						</figure>
 
 						<div class="question-author">
@@ -100,7 +100,7 @@
 
 					</div>
 
-					<div data-v-question-content>
+					<div class="my-2" data-v-question-content>
 						<p>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
 					</div>
 
@@ -140,7 +140,7 @@
 			<i class="la la-window-close"></i></a>
 			-->
 			
-			<form action method="product" enctype="multipart/form-data" data-v-url="user/login" data-selector=".product-questions">
+			<form action method="post" enctype="multipart/form-data" data-v-url="user/login" data-selector=".product-questions">
 
 				<span>Logged in as <b data-v-global-user-display_name>author</b></span>
 
@@ -163,7 +163,7 @@
 			
 		</div>
 
-		<form id="question-form" method="product" action="" data-v-vvveb-action="addquestion" data-v-vvveb-on="submit">
+		<form id="question-form" method="post" action="" data-v-vvveb-action="addquestion" data-v-vvveb-on="submit">
 			
 			<input type="hidden" name="product_id" data-v-product-product_id>
 			<input type="hidden" name="slug" data-v-product-slug>
@@ -197,7 +197,7 @@
 			  <button type="submit" value="question" class="btn btn-primary">
 			  <span class="loading d-none">
 					<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                        <span>producting</span>...
+                        <span>Posting</span>...
                     </span>
 
                     <span class="button-text">

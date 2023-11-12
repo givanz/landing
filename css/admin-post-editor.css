@@ -9670,6 +9670,14 @@ h2, .h2 {
 	vertical-align:0em !important;
 }
 */
+.dropdown-toggle::after {
+  border: none;
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 80%;
+  content: "\f107";
+  vertical-align: middle; }
+
 .top-nav {
   font-size: 75%;
   padding: 0.3rem;
@@ -14826,26 +14834,41 @@ ul.tags {
   border-radius: 4px; }
 
 /* comments */
-.post-comments {
+.post-comments, .product-reviews, .product-questions {
   position: relative; }
-  .post-comments a {
+  .post-comments a, .product-reviews a, .product-questions a {
     text-decoration: none; }
 
-.comment-author-avatar {
+.author-avatar {
   position: absolute;
-  left: -5rem;
-  min-width: 60px;
-  background: var(--bs-secondary-bg);
-  min-height: 60px; }
+  left: -90px;
+  min-width: 80px;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .author-avatar:empty, .author-avatar .empty {
+    width: 80px;
+    height: 80px;
+    background: rgba(var(--bs-secondary-bg-rgb), 0.5); }
 
-.comment {
+.review-list, .question-list {
+  margin-left: 5.5rem; }
+
+.comment, .review, .question {
   position: relative; }
-  .comment.level-1 {
+  .comment.level-1, .review.level-1, .question.level-1 {
     margin-left: 1rem; }
-  .comment.level-2 {
+  .comment.level-2, .review.level-2, .question.level-2 {
     margin-left: 2rem; }
-  .comment.level-3 {
+  .comment.level-3, .review.level-3, .question.level-3 {
     margin-left: 3rem; }
+
+.review-list .user-image {
+  display: inline-block;
+  max-width: 80px;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem; }
 
 .site-header {
   display: flex;
@@ -15003,14 +15026,13 @@ input.form-control[type=number] {
   background-color: rgba(var(--bs-body-color-rgb), 0.15);
   background-size: 70%; }
 
-.nav-tabs .nav-link {
-  border: none;
-  color: #6c757d; }
-
 .product {
   margin-bottom: 10px;
   margin-top: 10px;
   /*padding-bottom:10px;*/ }
+  .product .nav-tabs .nav-link {
+    border: none;
+    color: #6c757d; }
   .product .nav-tabs .nav-link.active {
     border: none;
     color: var(--bs-link-color);

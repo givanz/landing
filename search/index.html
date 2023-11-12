@@ -439,8 +439,8 @@
 			</span>
 		</a> -->
                         <hr>
-                        <span>Don’t have an account?</strong>
-                          <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
+                        <span>Don’t have an account?</span>
+                        <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
 
                       </div>
 
@@ -659,6 +659,7 @@
   </nav>
 
 
+
   <main id="site-content" role="main">
 
     <!-- Page Content -->
@@ -714,7 +715,7 @@
 
                   <div class="tab-pane" id="nav-products" role="tabpanel" aria-labelledby="nav-products-tab" tabindex="0">
 
-                    <div class="row g-3">
+                    <div class="row g-3 my-3">
                       <div class="col-md-6 col-xl-4" data-v-product>
                         <div class="product">
 
@@ -732,12 +733,16 @@
 
                               <!-- Favourite -->
                               <div class="product-favourite">
-                                <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-wishlist-url></a>
+                                <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                                  <span></span>
+                                </a>
                               </div>
 
                               <!-- Compare -->
                               <div class="product-compare">
-                                <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-compare-url></a>
+                                <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                                  <span></span>
+                                </a>
                               </div>
                             </div>
 
@@ -755,7 +760,7 @@
                                 <!-- Add to Cart -->
                                 <div class="add-to-cart-btn">
                                   <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                                  <a href="" class="btn btn-primary w-100" data-v-product-add-cart-url data-v-vvveb-action="addToCart" data-product_id="1">
+                                  <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                                     <span class="loading d-none">
                                       <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                                       <span>Add to cart</span>...
@@ -845,10 +850,10 @@
 
 
                   <div class="tab-pane" id="nav-posts" role="tabpanel" aria-labelledby="nav-posts-tab" tabindex="0">
-                    <div class="row g-3">
+                    <div class="row g-3 my-3">
                       <div class="col-12 col-lg-4 mb-2" data-v-post>
                         <article class="card h-100">
-                          <div class="card-img-top">
+                          <div class="card-img-top" data-v-if="post.image">
                             <img src="img/demo/product.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
                           </div>
                           <!-- Post Title -->

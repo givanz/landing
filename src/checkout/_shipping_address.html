@@ -46,12 +46,12 @@
 		</div>
 		<div class="col-12 mb-3">
 			<label class="col-form-label" for="street_address">Address <span class="text-danger text-small">*</span></label>
-			<input type="text" class="form-control mb-3" id="shipping_shipping_address_1" name="shipping_address[address_1]" value="" placeholder="Street address" minlength="5" required>
-			<input type="text" class="form-control" id="shipping_shipping_address_2" name="shipping_address[address_2]" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="">
+			<input type="text" class="form-control mb-3" id="shipping_shipping_address_1" name="shipping_address[address_1]" autocomplete="shipping street-address" value="" placeholder="Street address" minlength="5" required>
+			<input type="text" class="form-control" id="shipping_shipping_address_2" name="shipping_address[address_2]" autocomplete="shipping address-level2" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="">
 		</div>
 		<div class="col-12 mb-3">
 			<label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span></label>
-			<input type="text" class="form-control" id="shipping_post_code" name="shipping_address[post_code]" minlength="3" value="">
+			<input type="text" class="form-control" id="shipping_post_code" name="shipping_address[post_code]" autocomplete="shipping postal-code" minlength="3" value="">
 		</div>
 		<div class="col-12 mb-3">
 			<label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span></label>

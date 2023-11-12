@@ -401,6 +401,16 @@ label {
 	vertical-align:0em !important;
 }
 */
+
+.dropdown-toggle::after {
+	border:none;
+    font-family: "Line Awesome Free";
+	font-weight: 900;
+	font-size: 80%;
+    content: "\f107";
+	vertical-align:middle;
+}
+
 .top-nav {
 	font-size:75%;
 	padding:0.3rem;

@@ -35,10 +35,54 @@
 					  </a>
 
 					  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-						<li><a class="dropdown-item" href="#"><i class="la la-arrow-up"></i>&ensp; <span>Price high to low</span></a></li>
-						<li><a class="dropdown-item" href="#"><i class="la la-arrow-down"></i>&ensp; <span>Price low to high</span></a></li>
-						<li><a class="dropdown-item" href="#"><i class="la la-chart-line"></i>&ensp; <span>Popularity</span></a></li>
-						<li><a class="dropdown-item" href="#"><i class="la la-tags"></i>&ensp; <span>Sales</span></a></li>
+						<li>
+							<a class="dropdown-item" href="/shop?order_by=name&direction=asc">
+								<i class="la la-sort-alpha-up"></i>&ensp; <span>Name ascending</span>
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="/shop?order_by=name&direction=desc">
+								<i class="la la-sort-alpha-down"></i>&ensp; <span>Name descending</span>
+							</a>
+						</li>
+						<li><hr class="dropdown-divider"></li>
+						<li>
+							<a class="dropdown-item" href="/shop?order_by=price&direction=asc">
+								<i class="la la-arrow-up"></i>&ensp; <span>Price low to high</span>
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="/shop?order_by=price&direction=desc">
+								<i class="la la-arrow-down"></i>&ensp; <span>Price high to low</span>
+							</a>
+						</li>
+						<li><hr class="dropdown-divider"></li>
+						<li>
+							<a class="dropdown-item" href="/shop?order_by=product_id&direction=desc">
+								<i class="la la-calendar"></i>&ensp; <span>Newest</span>
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="/shop?order_by=views&direction=desc">
+								<i class="la la-certificate"></i>&ensp; <span>Most Popular</span>
+							</a>
+						</li>
+						<li><hr class="dropdown-divider"></li>
+						<li>
+							<a class="dropdown-item" href="/shop?order_by=promotion&direction=desc">
+								<i class="la la-percentage"></i>&ensp; <span>Discount</span>
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="/shop?order_by=review&direction=desc">
+								<i class="la la-tags"></i>&ensp; <span>Most Reviews</span>
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="/shop?order_by=promotion&direction=desc">
+								<i class="la la-star"></i>&ensp; <span>Rating</span>
+							</a>
+						</li>
 					  </ul>
 					</div>
 				  </li>
@@ -46,7 +90,7 @@
 			  </div>
 			</div>
 			
-            <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-page="url" data-v-taxonomy_item_id="url" data-v-image_size="medium">
+            <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-order_by="url" data-v-direction="url" data-v-page="url" data-v-taxonomy_item_id="url" data-v-image_size="medium">
               <div class="col-md-6 col-xl-4" data-v-product>
                 <div class="product">
 				
