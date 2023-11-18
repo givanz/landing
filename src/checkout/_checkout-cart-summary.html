@@ -1,6 +1,6 @@
 <div class="cart-summary" data-v-component-cart>
         <div class="table-responsive mb-3">
-			<table class="table align-middle mb-0">
+			<table class="table cart-table align-middle border-bottom mb-0">
 				<tbody>
 
 					<tr data-v-cart-product>
@@ -9,10 +9,26 @@
 								<img src="img/demo/product.jpg" alt="Product name" loading="lazy" class="img-rounded" data-v-cart-product-image width=50>
 							</a>
 						</td>
-						<td class="text-center">
+						<td class="">
 							<a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
 								Product name
 							</a>
+
+							<div class="option" data-v-if="product.option">
+								<div class="" data-v-product-option>
+									<span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+								</div>
+								<div class="" data-v-product-option>
+									<span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+								</div>
+								<div class="" data-v-product-option>
+									<span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+								</div>
+							</div>
+							
+							<div class="subscription" data-v-if="product.subscription">
+								<span data-v-product-subscription-name>Subscription plan</span>
+							</div>
 						</td>
 						<td class="text-end">
 							<span class="text-small">
@@ -29,7 +45,7 @@
 								<img src="img/demo/product.jpg" alt="Product name" loading="lazy" class="img-rounded" data-v-cart-product-image width=50>
 							</a>
 						</td>
-						<td class="text-center">
+						<td class="">
 							<a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
 								Product name
 							</a>
@@ -43,11 +59,11 @@
 						</td>
 						
 					</tr>
+					<!-- 
 					<tr data-v-if-not="cart.total_items">
-							<td colspan="100">
+							<td colspan="1">
 								<div class="d-flex  p-2">
 									<div class="text-center p-2 opacity-75">
-										<!-- <img src="img/bag.svg" width="20" alt> -->
 										<i class="la la-2x la-shopping-bag"></i>
 									</div>
 									<div class="p-2">
@@ -57,6 +73,7 @@
 								</div>
 							</td>
 					</tr>
+					-->
 				 </tbody>
 
 		  </table>
@@ -95,4 +112,6 @@
 				</div>
 
 		</div>
+		
+		@@include('../cart/_coupon.html')
 </div>

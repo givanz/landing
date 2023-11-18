@@ -1,5 +1,5 @@
 <div class="product-questions mt-4" data-v-component-questions>
-		<h4 class="border-top pt-4">Questions and anwsers</h4>
+		<h4 class="border-top pt-4">Questions and answers</h4>
 
 		<ol class="question-list list-unstyled my-3">
 			<li class="question mb-4" data-v-question>
@@ -32,7 +32,7 @@
 
 					<div class="alert alert-light my-2 small" data-v-if="question.status = 0">
 						<div>Your question is awaiting moderation.</div>
-						<div>This is a pquestion, your question will be visible after it has been approved.</div>
+						<div>This is a question, your question will be visible after it has been approved.</div>
 					</div>
 
 					<div class="reply">
@@ -69,7 +69,7 @@
 
 					<div class="alert alert-light my-2 small" data-v-if="question.status = 0">
 						<div>Your question is awaiting moderation.</div>
-						<div>This is a pquestion, your question will be visible after it has been approved.</div>
+						<div>This is a question, your question will be visible after it has been approved.</div>
 					</div>
 
 					<div class="reply">
@@ -106,7 +106,7 @@
 
 					<div class="alert alert-light my-2 small" data-v-if="question.status = 0">
 						<div>Your question is awaiting moderation.</div>
-						<div>This is a pquestion, your question will be visible after it has been approved.</div>
+						<div>This is a question, your question will be visible after it has been approved.</div>
 					</div>
 
 					<div class="reply">
@@ -115,16 +115,14 @@
 
 			</li>
 		</ol>
-	</div>
 
+	@@include('../_includes/notifications.html')
 	
    <button data-bs-toggle="collapse" href="#questions-form" role="button" aria-expanded="false" aria-controls="questions-form" class="btn btn-light border"><span>Ask question</span> <i class="la la-angle-down ms-2"></i></button>
 	
    <div class="questions-form collapse mt-4" id="questions-form">   
 
-	@@include('../_includes/notifications.html')
 
-	<div>
 		<h5>Leave a reply</h5>
 		<span class="replyto" style="display:none"><h3>Reply to <b data-question-author>author</b></h3>
 			<a href="#question-form" class="reply-btn d-inline-block" data-question_id="0" data-v-vvveb-action="replyTo">
@@ -163,7 +161,7 @@
 			
 		</div>
 
-		<form id="question-form" method="post" action="" data-v-vvveb-action="addquestion" data-v-vvveb-on="submit">
+		<form id="question-form" method="post" action="#" data-v-vvveb-action="addQuestion" data-v-vvveb-on="submit">
 			
 			<input type="hidden" name="product_id" data-v-product-product_id>
 			<input type="hidden" name="slug" data-v-product-slug>
@@ -186,7 +184,7 @@
 			  </div>
 
 			  <div class="mb-3">
-				<textarea name="content" rows="5" cols="4" placeholder="question" class="form-control" required></textarea>
+				<textarea name="content" rows="5" cols="4" placeholder="Enter product question ..." class="form-control" required></textarea>
 			  </div>
 
 			<!-- if these hidden inputs are filled then ignore robots -->

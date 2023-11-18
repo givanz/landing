@@ -189,7 +189,7 @@
               <div data-v-component-currency>
                 <form method="post" enctype="multipart/form-data" id="form-currency">
 
-                  <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <!-- <i class="la la-dollar-sign me-1"></i> -->
                     <span class="d-none d-md-inline" data-v-currency-info-name>USD</span>
                   </a>
@@ -229,7 +229,7 @@
               <div data-v-component-language>
                 <form method="post" enctype="multipart/form-data" id="form-language">
 
-                  <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <!-- <i class="la la-flag me-1"></i> -->
                     <!-- 
 									<img src="" data-v-language-info-img>
@@ -525,9 +525,25 @@
                               <span data-v-cart-product-quantity>1</span>
                               <i class="la la-times text-muted"></i>
                               <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+                              <div class="option" data-v-if="product.option">
+                                <div class="" data-v-product-option>
+                                  <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                                </div>
+                                <div class="" data-v-product-option>
+                                  <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                                </div>
+                                <div class="" data-v-product-option>
+                                  <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                                </div>
+                              </div>
+
+                              <div class="subscription" data-v-if="product.subscription">
+                                <span data-v-product-subscription-name>Subscription plan</span>
+                              </div>
                             </td>
                             <td class="text-end">
-                              <a type="button" class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                              <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
                                 <i class="la la-times"></i>
                               </a>
                             </td>
@@ -546,9 +562,11 @@
                               <span data-v-cart-product-quantity>1</span>
                               <i class="la la-times text-muted"></i>
                               <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+
                             </td>
                             <td class="text-end">
-                              <a type="button" class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                              <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
                                 <i class="la la-times"></i>
                               </a>
                             </td>
@@ -728,7 +746,7 @@
           </div>
 
 
-          <div class="widget mt-5">
+          <div class="widget">
             <span class="d-flex text-muted mb-2">Color</span>
             <ul class="list-unstyled">
               <li>
@@ -766,10 +784,33 @@
             </ul>
           </div>
 
-          <div class="widget mt-5">
-            <span class="d-flex  text-muted mb-2">Price</span>
-          </div>
+          <!--
 
+<div class="widget">
+	<span class="d-flex  text-muted mb-2">Price</span>
+
+	  <div class="">
+		  <div class="price-input">
+			  <label>	
+				  <span>Min</span>
+				  <input type="number" class="input-min form-control" value="2500">
+			  </label>
+			  <label>	
+				  <span>Max</span>
+				  <input type="number" class="input-max form-control" value="7500">
+			  </label>
+		  </div>
+		  <div class="slider">
+			<div class="progress"></div>
+		  </div>
+		  <div class="range-input">
+			<input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+			<input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+		  </div>
+	</div>
+	
+</div>
+-->
         </div>
 
         <div class="col-xl-9">

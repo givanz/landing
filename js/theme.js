@@ -79,15 +79,6 @@ $("#color-theme-switch").click(function () {
 
 
 // product page
-$('body').on('change', '[name="quantity"]', function (e) {
-	let product = $(this).parents("[data-v-product], [data-v-cart-product]");
-	let id = product[0].dataset.product_id;
-	let quantity = this.value;
-	let updateElements = ['#cart-container [data-product_id="' + id + '"] .price', '#cart-container [data-product_id="' + id + '"] .total', ".cart-right-column", ".mini-cart"];
-	
-	delay(() => VvvebTheme.Cart.update(id, {quantity}, this, updateElements), 1000);
-});
-
 $('.quantity').on('click', '.btn-plus', function (e) {
 	$("input[type=number]", this.parentNode).val(function( index, value ) {
 	  return ++value;

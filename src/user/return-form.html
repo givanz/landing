@@ -1,0 +1,237 @@
+@@include('../_includes/html-head.html', {"title": "Vvveb - Return form", "path":"../"})
+
+
+<body class="signup">
+	
+	@@include('../_includes/header.html')
+
+	<main id="site-content" role="main">
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+										  
+					<div class="row">
+					
+						<div class="col-lg-12 mx-auto">
+					
+							<div class="card my-4">
+
+								<div class="card-header bg-body p-5 pb-2">
+									<h1 class="mb-1 h2 fw-bold">Product Return</h1>
+									<p class="text-muted">Please complete the form below to register your return request.</p>
+
+									@@include('../_includes/notifications.html', {type:"login"})
+
+								</div>								
+
+
+							  <div class="card-body p-4">
+								
+								
+								<form action="" method="post" enctype="multipart/form-data" data-v-url="user/index/signup">
+									<input type="hidden" name="csrf" data-v-csrf>	
+
+									  <h5>Order Information</h5>
+									  
+									  <div class="row">
+										  <div class="col-md-6">
+											  <div class="row mb-3">
+												<label for="input-first_name" class="col-sm-4 col-form-label">First Name</label>
+												<div class="col-sm-8">
+												  <input type="text" name="first_name" value="" placeholder="First Name" id="input-first_name" class="form-control" required>
+												</div>
+											  </div>
+											 </div>
+											 <div class="col-md-6">
+											  <div class="row mb-3">
+												<label for="input-last_name" class="col-sm-4 col-form-label">Last Name</label>
+												<div class="col-sm-8">
+												  <input type="text" name="last_name" value="" placeholder="Last Name" id="input-last_name" class="form-control" required>
+												</div>
+											  </div>
+										  </div>
+									  </div>
+
+									<div class="row">
+									  <div class="col-md-6">									  
+										  <div class="row mb-3">
+											<label for="input-email" class="col-sm-4 col-form-label">E-Mail</label>
+											<div class="col-sm-8">
+											  <input type="email" name="email" value="" placeholder="E-Mail" id="input-email" class="form-control" required>
+											</div>
+										  </div>
+										  </div>
+										  <div class="col-md-6">			
+										  <div class="row mb-3">
+											<label for="input-phone_number" class="col-sm-4 col-form-label">Phone number</label>
+											<div class="col-sm-8">
+											  <input type="text" name="phone_number" value="" placeholder="Phone number" id="input-phone_number" class="form-control" required>
+											</div>
+										  </div>
+										</div>
+									  </div>
+									  
+									<div class="row">
+									  <div class="col-md-6">									  
+										  
+										  <div class="row mb-3">
+											<label for="input-order-id" class="col-sm-4 col-form-label">Order ID</label>
+											<div class="col-sm-8">
+											  <input type="text" name="order_id" value="" placeholder="Order ID" id="input-order-id" class="form-control" required>
+											</div>
+										  </div>
+										  </div>
+										 <div class="col-md-6">									  
+										   <div class="row mb-3">
+											<label for="input-date-ordered" class="col-sm-4 col-form-label">Order Date</label>
+											<div class="col-sm-8 col-md-4">
+												<input type="date" name="date_ordered" value="" placeholder="Order Date" id="input-date-ordered" class="form-control" required>
+											</div>
+										  </div>
+									
+										</div>
+									  </div>
+									
+									  <h5>Product Information</h5>
+									
+									<div class="row">
+									  <div class="col-md-6">
+										  <div class="row mb-3">
+											<label for="input-product" class="col-sm-4 col-form-label">Product Name</label>
+											<div class="col-sm-8">
+											  <input type="text" name="product" value="" placeholder="Product Name" id="input-product" class="form-control"> 
+											  <input type="hidden" name="product_id" value="" required>
+											</div>
+										  </div>
+										</div>
+										
+										<div class="col-md-6">
+											
+										  <div class="row mb-3">
+											<label for="input-model" class="col-sm-4 col-form-label">Product Model</label>
+											<div class="col-sm-8">
+											  <input type="text" name="model" value="" placeholder="Product Model" id="input-model" class="form-control" required>
+											</div>
+										  </div>
+										  											 
+										  
+										</div>
+									  </div>
+									  									  
+									<div class="row">
+									  <div class="col-md-6">
+																				  
+										  <div class="row mb-3">
+											<label for="input-quantity" class="col-sm-4 col-form-label">Quantity</label>
+											<div class="col-sm-8">
+											  <input type="number" name="quantity" value="1" placeholder="Quantity" id="input-quantity" class="form-control w-100" required>
+											</div>
+										  </div>
+	
+										  
+										 </div>
+										  
+										 <div class="col-md-6">
+											 
+											<div class="row mb-3">
+											<label class="col-sm-4 col-form-label">Product is opened</label>
+											<div class="col-sm-8">
+											  <div class="form-check form-check-inline">
+												<label class="form-check-label">
+													<input type="radio" name="opened" value="1"class="form-check-input" required>
+													<span>Yes</span>
+												</label>
+											  </div>
+											  <div class="form-check form-check-inline">
+												<label class="form-check-label">
+													<input type="radio" name="opened" value="0" class="form-check-input" required>
+													<span>No</span>
+												</label>
+											  </div>
+											</div>
+										  </div>											 
+										  
+										</div>
+									  </div>
+									  
+									  <div class="row mb-3">
+										<label class="col-sm-2 col-form-label">Reason for Return</label>
+										<div class="col-sm-10">
+										  <div id="return_reason" data-v-return_reason>
+											  <div class="form-check" data-v-option>
+												<label class="form-check-label">
+													<input type="radio" name="return_reason_id" value="1" class="form-check-input" required>
+													<span>Ordered wrong product or size</span>
+												</label>
+											  </div>
+											  <div class="form-check" data-v-option>
+												<label class="form-check-label">
+													<input type="radio" name="return_reason_id" value="2" class="form-check-input" required>
+													<span>Received wrong item</span>
+												</label>
+											  </div>
+											  <div class="form-check" data-v-option>
+												<label class="form-check-label">
+													<input type="radio" name="return_reason_id" value="3" class="form-check-input" required>
+													<span>Product did not match the description</span>
+												</label>
+											  </div>
+											  <div class="form-check" data-v-option>
+												<label class="form-check-label">
+													<input type="radio" name="return_reason_id" value="4" class="form-check-input" required>
+													<span>Damaged or defective</span>
+												</label>
+											  </div>
+											</div>
+										</div>
+									  </div>
+
+									  <div class="row mb-3">
+										<label for="input-comment" class="col-sm-2 col-form-label">Other details</label>
+										<div class="col-sm-10">
+										  <textarea name="comment" rows="5" placeholder="Other details" id="input-comment" class="form-control"></textarea>
+										</div>
+									  </div>
+									  
+									<div class="row">
+									  <div class="col text-end">
+										<button type="submit" class="btn btn-primary"><span>Submit request</span> <i class="la la-arrow-right"></i></button>
+									  </div>
+									</div>
+
+								</form>
+							
+							
+								</div>
+							</div>
+						</div>
+					</div>
+
+            </div>
+        </div>
+    </div>
+    
+</main>
+@@include('../_includes/footer.html')
+@@include('../_includes/footer-scripts.html')
+<style>
+#return_reason {
+	padding: 1rem;
+    border: 1px dashed var(--bs-border-color);
+}
+
+@media screen and (min-width: 800px) {
+	#return_reason {
+		column-count: 2;
+	}
+}
+
+
+#return_reason .form-check {
+	margin-bottom:1rem;
+}
+</style> 	
+</body>
+</html>

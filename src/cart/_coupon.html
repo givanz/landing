@@ -1,0 +1,31 @@
+<div class="list-group mb-3" data-v-cart-coupons>
+	<div class="list-group-item" data-v-cart-coupon>
+		<div class="small" data-v-cart-coupon-name>-10% Discount</div>
+		<span class="badge bg-success-subtle text-body me-2 code" data-v-cart-coupon-code>discount10</span>
+		<button class="btn btn-remove btn-sm btn-remove-coupon float-end" name="removeCoupon"><i class="la la-lg la-times-circle"></i></button>
+	</div>
+	<div class="list-group-item" data-v-cart-coupon>
+		<div class="small" data-v-cart-coupon-name>Free shipping</div>
+		<span class="badge bg-success-subtle text-body me-2 code" data-v-cart-coupon-code>freeship</span>
+		<button class="btn btn-remove btn-sm btn-remove-coupon float-end" name="removeCoupon"><i class="la la-lg la-times-circle"></i></button>
+	</div>
+</div>
+
+@@include('../_includes/notifications.html', {type:"coupon"})
+
+<div class="input-group mb-3">
+	<input type="text" name="coupon" class="form-control" id="coupon_code" placeholder="Coupon Code" aria-label="Coupon Code">
+	<button class="btn btn-outline-primary btn-sm btn-coupon px-4" type="button">
+	
+		<span class="loading d-none">
+			<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+			</span>
+			<span>Applying </span>...
+		</span>
+
+		<span class="button-text">
+			Apply <i class="la la-arrow-right float-end ms-2"></i>
+		</span>
+	
+	</button>
+</div>

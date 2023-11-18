@@ -8,9 +8,7 @@ Vvveb.Sections.add("hero/hero-1", {
       <br /> Reinvented
     </h1>
 
-    <h2>Powerful and easy to use drag and drop website builder
-      <br /> for blogs, ecommerce stores or anything else.
-    </h2>
+    <h2>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
 
     <div class="btns">
       <a class="btn btn-lg btn-primary" href="/download.php" role="button">
@@ -396,7 +394,7 @@ Vvveb.Sections.add("features/features-1", {
 
           <p class="mt-2">Intuitive building with simple drag and drop for sections, components and blocks/snippets.</p>
           <p class="mt-4">
-            <a href="#">Learn More <i class="fas fa-angle-right"></i>
+            <a href="#">Learn More <i class="la la-angle-right"></i>
             </a>
           </p>
         </div>
@@ -413,7 +411,7 @@ Vvveb.Sections.add("features/features-1", {
 
           <p class="mt-2">Code editor with syntax highglighting that updates in real time.</p>
           <p class="mt-4">
-            <a href="#">Learn More <i class="fas fa-angle-right"></i>
+            <a href="#">Learn More <i class="la la-angle-right"></i>
             </a>
           </p>
         </div>
@@ -430,7 +428,7 @@ Vvveb.Sections.add("features/features-1", {
 
           <p class="mt-2">The html for sections blocks and components and this template are built using Bootstrap 5.</p>
           <p class="mt-4">
-            <a href="#">Learn More <i class="fas fa-angle-right"></i>
+            <a href="#">Learn More <i class="la la-angle-right"></i>
             </a>
           </p>
         </div>
@@ -1599,7 +1597,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
               <div class="col-lg-4 col-md-4">
                 <div class="card-body d-flex align-items-center c-detail pl-0">
                   <div class="me-3 align-self-center">
-                    <i class="la la-map fa-lg"></i>
+                    <i class="la la-map la-lg"></i>
                   </div>
                   <div>
                     <h6>Address</h6>
@@ -1612,7 +1610,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
               <div class="col-lg-4 col-md-4">
                 <div class="card-body d-flex align-items-center c-detail">
                   <div class="me-3 align-self-center">
-                    <i class="la la-phone fa-lg"></i>
+                    <i class="la la-phone la-lg"></i>
                   </div>
                   <div>
                     <h6>Phone</h6>
@@ -1623,7 +1621,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
               <div class="col-lg-4 col-md-4">
                 <div class="card-body d-flex align-items-center c-detail">
                   <div class="me-3 align-self-center">
-                    <i class="la la-email fa-lg"></i>
+                    <i class="la la-email la-lg"></i>
                   </div>
                   <div>
                     <h6>Email</h6>
@@ -1962,7 +1960,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <div data-v-component-currency>
               <form method="post" enctype="multipart/form-data" id="form-currency">
 
-                <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <!-- <i class="la la-dollar-sign me-1"></i> -->
                   <span class="d-none d-md-inline" data-v-currency-info-name>USD</span>
                 </a>
@@ -2002,7 +2000,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <div data-v-component-language>
               <form method="post" enctype="multipart/form-data" id="form-language">
 
-                <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <!-- <i class="la la-flag me-1"></i> -->
                   <!-- 
 									<img src="" data-v-language-info-img>
@@ -2212,8 +2210,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
 			</span>
 		</a> -->
                       <hr>
-                      <span>Don’t have an account?</strong>
-                        <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
+                      <span>Don’t have an account?</span>
+                      <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
 
                     </div>
 
@@ -2298,9 +2296,25 @@ Vvveb.Sections.add("navigation/navigation-1", {
                             <span data-v-cart-product-quantity>1</span>
                             <i class="la la-times text-muted"></i>
                             <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+                            <div class="option" data-v-if="product.option">
+                              <div class="" data-v-product-option>
+                                <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                              </div>
+                              <div class="" data-v-product-option>
+                                <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                              </div>
+                              <div class="" data-v-product-option>
+                                <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                              </div>
+                            </div>
+
+                            <div class="subscription" data-v-if="product.subscription">
+                              <span data-v-product-subscription-name>Subscription plan</span>
+                            </div>
                           </td>
                           <td class="text-end">
-                            <a type="button" class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                            <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
                               <i class="la la-times"></i>
                             </a>
                           </td>
@@ -2319,9 +2333,11 @@ Vvveb.Sections.add("navigation/navigation-1", {
                             <span data-v-cart-product-quantity>1</span>
                             <i class="la la-times text-muted"></i>
                             <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+
                           </td>
                           <td class="text-end">
-                            <a type="button" class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                            <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
                               <i class="la la-times"></i>
                             </a>
                           </td>
@@ -2604,8 +2620,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
 			</span>
 		</a> -->
                       <hr>
-                      <span>Don’t have an account?</strong>
-                        <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
+                      <span>Don’t have an account?</span>
+                      <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
 
                     </div>
 
@@ -2690,9 +2706,25 @@ Vvveb.Sections.add("navigation/navigation-1", {
                             <span data-v-cart-product-quantity>1</span>
                             <i class="la la-times text-muted"></i>
                             <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+                            <div class="option" data-v-if="product.option">
+                              <div class="" data-v-product-option>
+                                <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                              </div>
+                              <div class="" data-v-product-option>
+                                <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                              </div>
+                              <div class="" data-v-product-option>
+                                <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                              </div>
+                            </div>
+
+                            <div class="subscription" data-v-if="product.subscription">
+                              <span data-v-product-subscription-name>Subscription plan</span>
+                            </div>
                           </td>
                           <td class="text-end">
-                            <a type="button" class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                            <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
                               <i class="la la-times"></i>
                             </a>
                           </td>
@@ -2711,9 +2743,11 @@ Vvveb.Sections.add("navigation/navigation-1", {
                             <span data-v-cart-product-quantity>1</span>
                             <i class="la la-times text-muted"></i>
                             <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+
                           </td>
                           <td class="text-end">
-                            <a type="button" class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                            <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
                               <i class="la la-times"></i>
                             </a>
                           </td>
@@ -2875,7 +2909,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <div data-v-component-currency>
               <form method="post" enctype="multipart/form-data" id="form-currency">
 
-                <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <!-- <i class="la la-dollar-sign me-1"></i> -->
                   <span class="d-none d-md-inline" data-v-currency-info-name>USD</span>
                 </a>
@@ -2915,7 +2949,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <div data-v-component-language>
               <form method="post" enctype="multipart/form-data" id="form-language">
 
-                <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <!-- <i class="la la-flag me-1"></i> -->
                   <!-- 
 									<img src="" data-v-language-info-img>
@@ -3127,8 +3161,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
 			</span>
 		</a> -->
                       <hr>
-                      <span>Don’t have an account?</strong>
-                        <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
+                      <span>Don’t have an account?</span>
+                      <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
 
                     </div>
 
@@ -3213,9 +3247,25 @@ Vvveb.Sections.add("navigation/navigation-1", {
                             <span data-v-cart-product-quantity>1</span>
                             <i class="la la-times text-muted"></i>
                             <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+                            <div class="option" data-v-if="product.option">
+                              <div class="" data-v-product-option>
+                                <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                              </div>
+                              <div class="" data-v-product-option>
+                                <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                              </div>
+                              <div class="" data-v-product-option>
+                                <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                              </div>
+                            </div>
+
+                            <div class="subscription" data-v-if="product.subscription">
+                              <span data-v-product-subscription-name>Subscription plan</span>
+                            </div>
                           </td>
                           <td class="text-end">
-                            <a type="button" class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                            <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
                               <i class="la la-times"></i>
                             </a>
                           </td>
@@ -3234,9 +3284,11 @@ Vvveb.Sections.add("navigation/navigation-1", {
                             <span data-v-cart-product-quantity>1</span>
                             <i class="la la-times text-muted"></i>
                             <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+
                           </td>
                           <td class="text-end">
-                            <a type="button" class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                            <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
                               <i class="la la-times"></i>
                             </a>
                           </td>
@@ -3522,7 +3574,7 @@ Vvveb.Sections.add("posts/posts-1", {
       <div class="col-12 col-lg-4 mb-2" data-v-post>
 
         <article class="card h-100 shadow-sm">
-          <div class="card-img-top">
+          <div class="card-img-top" data-v-if="post.image">
             <img src="img/demo/product.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
           </div>
           <!-- Post Title -->
@@ -3551,7 +3603,7 @@ Vvveb.Sections.add("posts/posts-1", {
       <div class="col-12 col-lg-4 mb-2" data-v-post>
 
         <article class="card h-100 shadow-sm">
-          <div class="card-img-top">
+          <div class="card-img-top" data-v-if="post.image">
             <img src="img/demo/product.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
           </div>
           <!-- Post Title -->
@@ -3580,7 +3632,7 @@ Vvveb.Sections.add("posts/posts-1", {
       <div class="col-12 col-lg-4 mb-2" data-v-post>
 
         <article class="card h-100 shadow-sm">
-          <div class="card-img-top">
+          <div class="card-img-top" data-v-if="post.image">
             <img src="img/demo/product.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
           </div>
           <!-- Post Title -->
@@ -3984,7 +4036,16 @@ Vvveb.Sections.add("products/products-1", {
 
             <!-- Favourite -->
             <div class="product-favourite">
-              <a href="product/product.html" data-v-product-url data-v-product-title class="la la-heart"></a>
+              <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <span></span>
+              </a>
+            </div>
+
+            <!-- Compare -->
+            <div class="product-compare">
+              <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <span></span>
+              </a>
             </div>
           </div>
 
@@ -4002,7 +4063,7 @@ Vvveb.Sections.add("products/products-1", {
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-url="cart/cart/index" data-v-vvveb-action="addToCart" data-product_id="1">
+                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                     <span>Add to cart</span>...
@@ -4038,7 +4099,16 @@ Vvveb.Sections.add("products/products-1", {
 
             <!-- Favourite -->
             <div class="product-favourite">
-              <a href="product/product.html" data-v-product-url data-v-product-title class="la la-heart"></a>
+              <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <span></span>
+              </a>
+            </div>
+
+            <!-- Compare -->
+            <div class="product-compare">
+              <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <span></span>
+              </a>
             </div>
           </div>
 
@@ -4056,7 +4126,7 @@ Vvveb.Sections.add("products/products-1", {
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-url="cart/cart/index" data-v-vvveb-action="addToCart" data-product_id="1">
+                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                     <span>Add to cart</span>...
@@ -4092,7 +4162,16 @@ Vvveb.Sections.add("products/products-1", {
 
             <!-- Favourite -->
             <div class="product-favourite">
-              <a href="product/product.html" data-v-product-url data-v-product-title class="la la-heart"></a>
+              <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <span></span>
+              </a>
+            </div>
+
+            <!-- Compare -->
+            <div class="product-compare">
+              <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <span></span>
+              </a>
             </div>
           </div>
 
@@ -4110,7 +4189,7 @@ Vvveb.Sections.add("products/products-1", {
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-url="cart/cart/index" data-v-vvveb-action="addToCart" data-product_id="1">
+                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                     <span>Add to cart</span>...
@@ -4146,7 +4225,16 @@ Vvveb.Sections.add("products/products-1", {
 
             <!-- Favourite -->
             <div class="product-favourite">
-              <a href="product/product.html" data-v-product-url data-v-product-title class="la la-heart"></a>
+              <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <span></span>
+              </a>
+            </div>
+
+            <!-- Compare -->
+            <div class="product-compare">
+              <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <span></span>
+              </a>
             </div>
           </div>
 
@@ -4164,7 +4252,7 @@ Vvveb.Sections.add("products/products-1", {
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-url="cart/cart/index" data-v-vvveb-action="addToCart" data-product_id="1">
+                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                     <span>Add to cart</span>...
@@ -4200,7 +4288,16 @@ Vvveb.Sections.add("products/products-1", {
 
             <!-- Favourite -->
             <div class="product-favourite">
-              <a href="product/product.html" data-v-product-url data-v-product-title class="la la-heart"></a>
+              <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <span></span>
+              </a>
+            </div>
+
+            <!-- Compare -->
+            <div class="product-compare">
+              <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <span></span>
+              </a>
             </div>
           </div>
 
@@ -4218,7 +4315,7 @@ Vvveb.Sections.add("products/products-1", {
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-url="cart/cart/index" data-v-vvveb-action="addToCart" data-product_id="1">
+                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                     <span>Add to cart</span>...
@@ -4254,7 +4351,16 @@ Vvveb.Sections.add("products/products-1", {
 
             <!-- Favourite -->
             <div class="product-favourite">
-              <a href="product/product.html" data-v-product-url data-v-product-title class="la la-heart"></a>
+              <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <span></span>
+              </a>
+            </div>
+
+            <!-- Compare -->
+            <div class="product-compare">
+              <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <span></span>
+              </a>
             </div>
           </div>
 
@@ -4272,7 +4378,7 @@ Vvveb.Sections.add("products/products-1", {
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-url="cart/cart/index" data-v-vvveb-action="addToCart" data-product_id="1">
+                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                     <span>Add to cart</span>...
@@ -4308,7 +4414,16 @@ Vvveb.Sections.add("products/products-1", {
 
             <!-- Favourite -->
             <div class="product-favourite">
-              <a href="product/product.html" data-v-product-url data-v-product-title class="la la-heart"></a>
+              <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <span></span>
+              </a>
+            </div>
+
+            <!-- Compare -->
+            <div class="product-compare">
+              <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <span></span>
+              </a>
             </div>
           </div>
 
@@ -4326,7 +4441,7 @@ Vvveb.Sections.add("products/products-1", {
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-url="cart/cart/index" data-v-vvveb-action="addToCart" data-product_id="1">
+                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                     <span>Add to cart</span>...
@@ -4362,7 +4477,16 @@ Vvveb.Sections.add("products/products-1", {
 
             <!-- Favourite -->
             <div class="product-favourite">
-              <a href="product/product.html" data-v-product-url data-v-product-title class="la la-heart"></a>
+              <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <span></span>
+              </a>
+            </div>
+
+            <!-- Compare -->
+            <div class="product-compare">
+              <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <span></span>
+              </a>
             </div>
           </div>
 
@@ -4380,7 +4504,7 @@ Vvveb.Sections.add("products/products-1", {
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-url="cart/cart/index" data-v-vvveb-action="addToCart" data-product_id="1">
+                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                     <span>Add to cart</span>...
@@ -4464,7 +4588,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
           <h3>
             <a href="#">Better Security</a>
           </h3>
-          <p class="text-center">Vvveb is 100% safe against sql injections, a vulerability that affects most CMSs.</p>
+          <p class="text-center">Vvveb is 100% safe against sql injections, a vulerability that affects most CMS.</p>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
@@ -4525,7 +4649,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
           <h3>
             <a href="#">Security</a>
           </h3>
-          <p>Vvveb is 100% safe against sql injections, a vulerability that affects most CMSs.</p>
+          <p>Vvveb is 100% safe against sql injections, a vulerability that affects most CMS.</p>
           <a class="more  d-block" href="#">
             Read more
             <i class="font-icon la la-chevron-circle-right"></i>
@@ -4594,7 +4718,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
           <h3>
             <a href="#">Security</a>
           </h3>
-          <p>Vvveb is 100% safe against sql injections, a vulerability that affects most CMSs.</p>
+          <p>Vvveb is 100% safe against sql injections, a vulerability that affects most CMS.</p>
           <!-- a class="more d-block" href="#">
 			  Read more
 			  <i class="font-icon la la-chevron-circle-right"></i>
@@ -4680,7 +4804,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
             <h3>
               <a href="#">Security</a>
             </h3>
-            <p>Vvveb is 100% safe against sql injections, a vulerability that affects most CMSs.</p>
+            <p>Vvveb is 100% safe against sql injections, a vulerability that affects most CMS.</p>
             <a class="more d-block" href="#">
               Read more
               <i class="font-icon la la-chevron-circle-right"></i>
@@ -4754,7 +4878,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
             <h3>
               <a href="#">Security</a>
             </h3>
-            <p>Vvveb is 100% safe against sql injections, a vulerability that affects most CMSs.</p>
+            <p>Vvveb is 100% safe against sql injections, a vulerability that affects most CMS.</p>
             <a class="more d-block" href="#">
               Read more
               <i class="font-icon la la-chevron-circle-right"></i>
@@ -4923,7 +5047,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
           <h3>
             <a href="#">Security</a>
           </h3>
-          <p class="text-center">Vvveb is 100% safe against sql injections, a vulerability that affects most CMSs.</p>
+          <p class="text-center">Vvveb is 100% safe against sql injections, a vulerability that affects most CMS.</p>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">

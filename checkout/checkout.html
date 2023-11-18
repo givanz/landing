@@ -7,7 +7,7 @@
 
   <base href="../">
 
-  <title>Landing - Checkout</title>
+  <title>Checkout</title>
 
 
 
@@ -189,7 +189,7 @@
               <div data-v-component-currency>
                 <form method="post" enctype="multipart/form-data" id="form-currency">
 
-                  <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <!-- <i class="la la-dollar-sign me-1"></i> -->
                     <span class="d-none d-md-inline" data-v-currency-info-name>USD</span>
                   </a>
@@ -229,7 +229,7 @@
               <div data-v-component-language>
                 <form method="post" enctype="multipart/form-data" id="form-language">
 
-                  <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <!-- <i class="la la-flag me-1"></i> -->
                     <!-- 
 									<img src="" data-v-language-info-img>
@@ -525,9 +525,25 @@
                               <span data-v-cart-product-quantity>1</span>
                               <i class="la la-times text-muted"></i>
                               <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+                              <div class="option" data-v-if="product.option">
+                                <div class="" data-v-product-option>
+                                  <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                                </div>
+                                <div class="" data-v-product-option>
+                                  <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                                </div>
+                                <div class="" data-v-product-option>
+                                  <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                                </div>
+                              </div>
+
+                              <div class="subscription" data-v-if="product.subscription">
+                                <span data-v-product-subscription-name>Subscription plan</span>
+                              </div>
                             </td>
                             <td class="text-end">
-                              <a type="button" class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                              <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
                                 <i class="la la-times"></i>
                               </a>
                             </td>
@@ -546,9 +562,11 @@
                               <span data-v-cart-product-quantity>1</span>
                               <i class="la la-times text-muted"></i>
                               <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+
                             </td>
                             <td class="text-end">
-                              <a type="button" class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                              <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
                                 <i class="la la-times"></i>
                               </a>
                             </td>
@@ -815,23 +833,23 @@
                   <div class="card-body">
                     <div class="row" data-v-if-not="this.global.user_id">
 
-                      <div class="mb-3 col-6" id="first_name_group">
+                      <div class="mb-3 col-6">
                         <label class="col-form-label" for="first_name">First Name <span class="text-danger text-small">*</span>
                         </label>
                         <input type="text" class="form-control" id="first_name" name="first_name" value="" minlength="3" required>
                       </div>
-                      <div class="mb-3 col-6" id="last_name_group">
+                      <div class="mb-3 col-6">
                         <label class="col-form-label" for="last_name">Last Name <span class="text-danger text-small">*</span>
                         </label>
                         <input type="text" class="form-control" id="last_name" name="last_name" value="" minlength="3" required>
                       </div>
-                      <div class="mb-3 col-12 mb-3" id="email_group">
+                      <div class="mb-3 col-12 mb-3">
                         <label class="col-form-label" for="email">Email Address <span class="text-danger text-small">*</span>
                         </label>
                         <input type="email" class="form-control" id="email" name="email" value="" required>
                       </div>
                       <!--
-							<div class="mb-3 col-12 mb-3" id="company_group">
+							<div class="mb-3 col-12 mb-3">
 								<label class="col-form-label" for="company">Company Name</label>
 								<input type="text" class="form-control" id="company" name="company" value="">
 							</div>
@@ -906,16 +924,16 @@
 
                         <div class="row">
                           <!--
-			<div class="mb-3 col-6" id="first_name_group">
+			<div class="mb-3 col-6">
 				<label class="col-form-label" for="billing_first_name">First Name <span class="text-danger text-small">*</span></label>
 				<input type="text" class="form-control" id="billing_first_name" name="billing_address[first_name]" value="" minlength="3" required>
 			</div>
-			<div class="mb-3 col-6" id="last_name_group">
+			<div class="mb-3 col-6">
 				<label class="col-form-label" for="billing_last_name">Last Name <span class="text-danger text-small">*</span></label>
 				<input type="text" class="form-control" id="billing_last_name" name="billing_address[last_name]" value="" minlength="3" required>
 			</div>
 			-->
-                          <div class="mb-3 col-12 mb-3" id="company_group">
+                          <div class="mb-3 col-12 mb-3">
                             <label class="col-form-label" for="billing_company">Company Name</label>
                             <input type="text" class="form-control" id="billing_company" name="billing_address[company]" value="">
                           </div>
@@ -980,22 +998,22 @@
                       <h5>Shipping Address</h5>
 
                       <div class="row">
-                        <div class="mb-3 col-6" id="first_name_group">
+                        <div class="mb-3 col-6">
                           <label class="col-form-label" for="first_name">First Name <span class="text-danger text-small">*</span>
                           </label>
                           <input type="text" class="form-control" id="first_name" name="shipping_address[first_name]" value="" minlength="3" required>
                         </div>
-                        <div class="mb-3 col-6" id="last_name_group">
+                        <div class="mb-3 col-6">
                           <label class="col-form-label" for="last_name">Last Name <span class="text-danger text-small">*</span>
                           </label>
                           <input type="text" class="form-control" id="last_name" name="shipping_address[last_name]" value="" minlength="3" required>
                         </div>
-                        <div class="mb-3 col-12 mb-3" id="email_group">
+                        <div class="mb-3 col-12 mb-3">
                           <label class="col-form-label" for="email">Email Address <span class="text-danger text-small">*</span>
                           </label>
                           <input type="email" class="form-control" id="email" name="shipping_address[email]" value="" required>
                         </div>
-                        <div class="mb-3 col-12 mb-3" id="company_group">
+                        <div class="mb-3 col-12 mb-3">
                           <label class="col-form-label" for="company">Company Name</label>
                           <input type="text" class="form-control" id="company" name="shipping_address[company]" value="">
                         </div>
@@ -1003,11 +1021,11 @@
                           <label class="col-form-label" for="country">Country <span class="text-danger text-small">*</span>
                           </label>
                           <select class="form-select" id="shipping_country_id" name="shipping_address[country_id]" data-v-countries readonly>
-                            <option value="1" data-v-country data-v-country-country_id>
-                              <span data-v-country-name>Country 1</span>
+                            <option value="1" data-v-country data-v-country-country_id data-v-country-name>
+                              Country 1
                             </option>
-                            <option value="2" data-v-country data-v-country-country_id>
-                              <span data-v-country-name>Country 2</span>
+                            <option value="2" data-v-country data-v-country-country_id data-v-country-name>
+                              Country 2
                             </option>
                           </select>
                         </div>
@@ -1074,7 +1092,7 @@
 
                     <div class="cart-summary" data-v-component-cart>
                       <div class="table-responsive mb-3">
-                        <table class="table align-middle mb-0">
+                        <table class="table cart-table align-middle border-bottom mb-0">
                           <tbody>
 
                             <tr data-v-cart-product>
@@ -1083,10 +1101,26 @@
                                   <img src="img/demo/product.jpg" alt="Product name" loading="lazy" class="img-rounded" data-v-cart-product-image width=50>
                                 </a>
                               </td>
-                              <td class="text-center">
+                              <td class="">
                                 <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
                                   Product name
                                 </a>
+
+                                <div class="option" data-v-if="product.option">
+                                  <div class="" data-v-product-option>
+                                    <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                                  </div>
+                                  <div class="" data-v-product-option>
+                                    <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                                  </div>
+                                  <div class="" data-v-product-option>
+                                    <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                                  </div>
+                                </div>
+
+                                <div class="subscription" data-v-if="product.subscription">
+                                  <span data-v-product-subscription-name>Subscription plan</span>
+                                </div>
                               </td>
                               <td class="text-end">
                                 <span class="text-small">
@@ -1103,7 +1137,7 @@
                                   <img src="img/demo/product.jpg" alt="Product name" loading="lazy" class="img-rounded" data-v-cart-product-image width=50>
                                 </a>
                               </td>
-                              <td class="text-center">
+                              <td class="">
                                 <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
                                   Product name
                                 </a>
@@ -1117,21 +1151,21 @@
                               </td>
 
                             </tr>
-                            <tr data-v-if-not="cart.total_items">
-                              <td colspan="100">
-                                <div class="d-flex  p-2">
-                                  <div class="text-center p-2 opacity-75">
-                                    <!-- <img src="img/bag.svg" width="20" alt> -->
-                                    <i class="la la-2x la-shopping-bag"></i>
-                                  </div>
-                                  <div class="p-2">
-                                    <strong>Empty cart</strong>
-                                    <br>
-                                    <span class="text-muted">No products added yet!</span>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
+                            <!-- 
+					<tr data-v-if-not="cart.total_items">
+							<td colspan="1">
+								<div class="d-flex  p-2">
+									<div class="text-center p-2 opacity-75">
+										<i class="la la-2x la-shopping-bag"></i>
+									</div>
+									<div class="p-2">
+										<strong>Empty cart</strong><br>
+										<span class="text-muted">No products added yet!</span>
+									</div>
+								</div>
+							</td>
+					</tr>
+					-->
                           </tbody>
 
                         </table>
@@ -1178,16 +1212,105 @@
                         </div>
 
                       </div>
-                    </div>
+
+                      <div class="list-group mb-3" data-v-cart-coupons>
+                        <div class="list-group-item" data-v-cart-coupon>
+                          <div class="small" data-v-cart-coupon-name>-10% Discount</div>
+                          <span class="badge bg-success-subtle text-body me-2 code" data-v-cart-coupon-code>discount10</span>
+                          <button class="btn btn-remove btn-sm btn-remove-coupon float-end" name="removeCoupon">
+                            <i class="la la-lg la-times-circle"></i>
+                          </button>
+                        </div>
+                        <div class="list-group-item" data-v-cart-coupon>
+                          <div class="small" data-v-cart-coupon-name>Free shipping</div>
+                          <span class="badge bg-success-subtle text-body me-2 code" data-v-cart-coupon-code>freeship</span>
+                          <button class="btn btn-remove btn-sm btn-remove-coupon float-end" name="removeCoupon">
+                            <i class="la la-lg la-times-circle"></i>
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="notifications" data-v-notifications>
+
+                        <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="coupon">
+
+                          <div class="icon align-middle me-2">
+                            <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                          </div>
+
+                          <div class="flex-grow-1 align-self-center text-small">
+                            <div>
+                              <div data-v-notification-text>
+                                This is a placeholder for a notification message.
+                              </div>
+                            </div>
+                          </div>
 
 
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control" id="coupon_code" placeholder="Coupon Code" aria-label="Coupon Code" aria-describedby="button-addon2">
-                      <button class="btn btn-primary btn-sm px-4" type="button">Apply</button>
+                          <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">
+                              <!-- <i class="la la-times"></i> -->
+                            </span>
+                          </button>
+                        </div>
+
+                        <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="coupon">
+
+                          <div class="icon align-middle me-2">
+                            <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+                          </div>
+
+                          <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+                            This is a placeholder for a success message.
+                          </div>
+
+                          <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">
+                              <!-- <i class="la la-times"></i> -->
+                            </span>
+                          </button>
+                        </div>
+
+                        <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="coupon">
+
+                          <div class="icon align-middle me-2">
+                            <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+                          </div>
+
+                          <div class="flex-grow-1 align-self-center" data-v-notification-text>
+                            This is a placeholder for a info message.
+                          </div>
+
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">
+                              <!-- <i class="la la-times"></i> -->
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+
+                      <div class="input-group mb-3">
+                        <input type="text" name="coupon" class="form-control" id="coupon_code" placeholder="Coupon Code" aria-label="Coupon Code">
+                        <button class="btn btn-outline-primary btn-sm btn-coupon px-4" type="button">
+
+                          <span class="loading d-none">
+                            <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                            </span>
+                            <span>Applying </span>...
+                          </span>
+
+                          <span class="button-text">
+                            Apply <i class="la la-arrow-right float-end ms-2"></i>
+                          </span>
+
+                        </button>
+                      </div>
                     </div>
+
 
                     <h6>Shipping</h6>
-                    <div id="accordion" name="accordion" role="tablist" class="accordion mb-3" data-v-component-checkout-shipping>
+                    <div name="accordion" role="tablist" class="accordion mb-3" data-v-component-checkout-shipping>
 
                       <div class="accordion-item" data-v-shipping>
                         <div class="accordion-header" role="tab">
@@ -1243,7 +1366,7 @@
 
 
                     <h6>Payment</h6>
-                    <div id="accordion" name="accordion" role="tablist" class="accordion mb-3" data-v-component-checkout-payment>
+                    <div name="accordion" role="tablist" class="accordion mb-3" data-v-component-checkout-payment>
 
                       <div class="accordion-item" data-v-payment>
                         <div class="accordion-header" role="tab">
@@ -1302,7 +1425,7 @@
                       <textarea name="notes" id="notes" cols="30" rows="5" class="form-control" placeholder=""></textarea>
                     </div>
 
-                    <button type="submit" href="" class="btn btn-primary w-100" data-v-url="checkout/checkout/confirm">
+                    <button type="submit" href="" class="btn btn-primary my-2 w-100" data-v-url="checkout/checkout/confirm">
                       Place order <i class="la la-arrow-right"></i>
                     </button>
                   </div>

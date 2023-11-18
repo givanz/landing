@@ -27,49 +27,36 @@
 	
 	.price {
 		font-size:85%;
+		color: rgba(var(--bs-body-color-rgb), 0.85);
+	}
+	
+	.option, .subscription {
+		margin-top:0.5rem;
+		font-size:80%;
 		color:var(--bs-secondary);
 	}
-	
-	.btn-remove {
-		color:var(--bs-secondary-color);
-		i {
-			color:var(--bs-primary-border-subtle);
-		}
-		&:hover {
-			color:var(--bs-danger);
-			i {
-				visibility:visible;
-				color:var(--bs-danger);
-			}
-			
-		}
-	}
-	
-	/*	
-	input.form-control[type=number] {
-		width: 30px;
-		font-size:14px;
-		-webkit-appearance: none; 
-		appearance: none; 
-		box-shadow:none;
-	 
-		 &:focus {
-			outline: none;
-		}
-		
-		 &::-webkit-inner-spin-button,
-		 &::-webkit-outer-spin-button {
-			 -webkit-appearance: none; 
-			 appearance: none; 
-		}
-	}
-	*/
+
+
 	.mini-cart & {
 		font-size:14px;
 	}
 
 }
 
+.btn-remove {
+	color:var(--bs-secondary-color);
+	i {
+		color:var(--bs-danger-border-subtle);
+	}
+	&:hover {
+		color:var(--bs-danger);
+		i {
+			visibility:visible;
+			color:var(--bs-danger);
+		}
+		
+	}
+}
 
 .quantity {
 	//width:140px;

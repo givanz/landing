@@ -1,10 +1,10 @@
-function refreshCart(name, value) {
+function refreshCart(name, value, element) {
 	VvvebTheme.Cart.module = 'checkout/checkout';
 	VvvebTheme.Cart.component_id = 1;
 	//action, parameters, element, selector, callback
 	let parameters = {};
 	parameters[name] = value;
-	VvvebTheme.Cart.ajax('', parameters, null, ['.cart-summary', '.container > .notifications']);
+	VvvebTheme.Cart.ajax('', parameters, element, ['.cart-summary', '.container > .notifications']);
 	//cart-summary
 }
 
@@ -80,7 +80,7 @@ $(function() {
 		
 		let input = $('[name="shipping_method"], [name="payment_method"]', this);
 
-		refreshCart(input.attr("name"), input.val());
+		refreshCart(input.attr("name"), input.val(), this);
 	});
 	
 	$("[data-v-countries][readonly]:first").change();
@@ -136,3 +136,18 @@ function togglePasswordInput(element, input) {
 		$("i", element).removeClass("la-eye").addClass("la-eye-slash");
 	}
 }
+
+
+$('body').on('click', '.btn-coupon', function (e) {
+	let coupon = $("[name='coupon']").val();
+	let updateElements = [".cart-summary", ".mini-cart"];
+	VvvebTheme.Cart.coupon({coupon, "module": "checkout/checkout"}, this, updateElements)
+	e.preventDefault();
+});
+
+$('body').on('click', '.btn-remove-coupon', function (e) {
+	let coupon = $(".code", this.parentNode).html();
+	let updateElements = [".cart-summary", ".mini-cart"];
+	VvvebTheme.Cart.removeCoupon({coupon, "module": "checkout/checkout"}, this, updateElements)
+	e.preventDefault();
+});

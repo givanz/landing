@@ -9,30 +9,30 @@
 	<h5>Shipping Address</h5>
 
 	<div class="row">
-	  <div class="mb-3 col-6" id="first_name_group">
+	  <div class="mb-3 col-6">
 			<label class="col-form-label" for="first_name">First Name <span class="text-danger text-small">*</span></label>
 			<input type="text" class="form-control" id="first_name" name="shipping_address[first_name]" value="" minlength="3" required>
 		</div>
-		<div class="mb-3 col-6" id="last_name_group">
+		<div class="mb-3 col-6">
 			<label class="col-form-label" for="last_name">Last Name <span class="text-danger text-small">*</span></label>
 			<input type="text" class="form-control" id="last_name" name="shipping_address[last_name]" value="" minlength="3" required>
 		</div>
-		<div class="mb-3 col-12 mb-3" id="email_group">
+		<div class="mb-3 col-12 mb-3">
 			<label class="col-form-label" for="email">Email Address <span class="text-danger text-small">*</span></label>
 			<input type="email" class="form-control" id="email" name="shipping_address[email]" value="" required>
 		</div>                            
-		<div class="mb-3 col-12 mb-3" id="company_group">
+		<div class="mb-3 col-12 mb-3">
 			<label class="col-form-label" for="company">Company Name</label>
 			<input type="text" class="form-control" id="company" name="shipping_address[company]" value="">
 		</div>
 		<div class="col-12 mb-3">
 			<label class="col-form-label" for="country">Country <span class="text-danger text-small">*</span></label>
 			<select class="form-select" id="shipping_country_id" name="shipping_address[country_id]" data-v-countries readonly>
-			  <option value="1" data-v-country data-v-country-country_id>
-				<span data-v-country-name>Country 1</span>
+			  <option value="1" data-v-country data-v-country-country_id data-v-country-name>
+				Country 1
 			  </option>
-			  <option value="2" data-v-country data-v-country-country_id>
-				<span data-v-country-name>Country 2</span>
+			  <option value="2" data-v-country data-v-country-country_id data-v-country-name>
+				Country 2
 			  </option>
 			</select>
 		</div>	

@@ -1,113 +1,114 @@
 <div class="product-reviews mt-4" data-v-component-reviews>
 		<h4>Reviews</h4>
 
-			
+	<div data-v-if="count > 0">		
 		<div class="row border-top border-bottom py-4">
-			<div class="col-sm-3">
+		<!--
+			<div class="col-sm-2">
 				<div class="rating-block text-center">
-					<h2 class="text-muted mb-0">4.3</h2>
-					<span>
-					  <span class="la la-star text-warning fs-3"></span>
-					</span>
-					<span>
-					  <span class="la la-star text-warning fs-3"></span>
-					</span>
-					<span>
-					  <span class="la la-star text-warning fs-3"></span>
-					</span>
-					<span>
-					  <span class="la la-star text-muted fs-3"></span>
-					</span>
-					<span>
-					  <span class="la la-star text-muted  fs-3"></span>
-					</span>
+					<h2 class="text-muted mb-0" data-v-reviews-rating>4.3</h2>
+					<div class="fs-3">
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 1"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 2"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 3"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 4"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 5"></i>
+					</div>
 					
-					<h6 class="">15 reviews</h6>
+					<h6 class=""><span data-v-reviews-count>15</span> reviews</h6>
 				</div>
 			</div>
-			<div class="col-sm-3">
-				<div class="float-start">
-					<div class="float-start" style="width:35px; line-height:1;">
-						<div style="height:9px; margin:5px 0;">5 <span class="la la-star"></span></div>
+			-->
+			<div class="col-sm-6">
+							
+				<div class="d-flex">
+				  <div class="text-center">
+					<span class="display-4 fw-semibold" data-v-reviews-rating>3.1</span><br>
+					<div class="fs-3">
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 1"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 2"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 3"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 4"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 5"></i>
 					</div>
-					<div class="float-start" style="width:180px;">
-						<div class="progress" style="height:9px; margin:8px 0;">
-						  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" style="width: 1000%">
-							<span class="sr-only">80% Complete (danger)</span>
-						  </div>
+					<span class="text-black-50"><span data-v-reviews-count>15</span> reviews</span>
+				  </div>
+				  <div class="flex-grow-1">
+					<div class="row align-items-center">
+					  <div class="col-4 text-end text-secondary">
+						<i class="la la-star"></i><i class="la la-star"></i><i class="la la-star"></i><i class="la la-star"></i><i class="la la-star"></i>
+						<span class="text-muted">(<span class="" data-v-summary-five></span>)</span>
+					  </div>
+					  <div class="col-8">
+						<div class="progress" style="height: 2px;">
+						  <div class="progress-bar" role="progressbar" data-v-summary-five-width aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
+					  </div>
 					</div>
-					<div class="float-end" style="margin-left:10px;">1</div>
-				</div>
-				<div class="float-start">
-					<div class="float-start" style="width:35px; line-height:1;">
-						<div style="height:9px; margin:5px 0;">4 <span class="la la-star"></span></div>
-					</div>
-					<div class="float-start" style="width:180px;">
-						<div class="progress" style="height:9px; margin:8px 0;">
-						  <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="5" style="width: 80%">
-							<span class="sr-only">80% Complete (danger)</span>
-						  </div>
+					<div class="row align-items-center">
+					  <div class="col-4 text-end text-secondary">
+						<i class="la la-star"></i><i class="la la-star"></i><i class="la la-star"></i><i class="la la-star"></i>
+						<span class="text-muted">(<span class="" data-v-summary-four></span>)</span>
+					  </div>
+					  <div class="col-8">
+						<div class="progress" style="height: 2px;">
+						  <div class="progress-bar" role="progressbar" data-v-summary-four-width aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
+					  </div>
 					</div>
-					<div class="float-end" style="margin-left:10px;">1</div>
-				</div>
-				<div class="float-start">
-					<div class="float-start" style="width:35px; line-height:1;">
-						<div style="height:9px; margin:5px 0;">3 <span class="la la-star"></span></div>
-					</div>
-					<div class="float-start" style="width:180px;">
-						<div class="progress" style="height:9px; margin:8px 0;">
-						  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" style="width: 60%">
-							<span class="sr-only">80% Complete (danger)</span>
-						  </div>
+					<div class="row align-items-center">
+					  <div class="col-4 text-end text-secondary">
+						<i class="la la-star"></i><i class="la la-star"></i><i class="la la-star"></i>
+						<span class="text-muted">(<span class="" data-v-summary-three></span>)</span>
+					  </div>
+					  <div class="col-8">
+						<div class="progress" style="height: 2px;">
+						  <div class="progress-bar" role="progressbar"  data-v-summary-three-width aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
+					  </div>
 					</div>
-					<div class="float-end" style="margin-left:10px;">0</div>
-				</div>
-				<div class="float-start">
-					<div class="float-start" style="width:35px; line-height:1;">
-						<div style="height:9px; margin:5px 0;">2 <span class="la la-star"></span></div>
-					</div>
-					<div class="float-start" style="width:180px;">
-						<div class="progress" style="height:9px; margin:8px 0;">
-						  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5" style="width: 40%">
-							<span class="sr-only">80% Complete (danger)</span>
-						  </div>
+					<div class="row align-items-center">
+					  <div class="col-4 text-end text-secondary">
+						<i class="la la-star"></i><i class="la la-star"></i>
+						<span class="text-muted">(<span class="" data-v-summary-two></span>)</span>
+					  </div>
+					  <div class="col-8">
+						<div class="progress" style="height: 2px;">
+						  <div class="progress-bar" role="progressbar" data-v-summary-two-width aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
+					  </div>
 					</div>
-					<div class="float-end" style="margin-left:10px;">0</div>
-				</div>
-				<div class="float-start">
-					<div class="float-start" style="width:35px; line-height:1;">
-						<div style="height:9px; margin:5px 0;">1 <span class="la la-star"></span></div>
-					</div>
-					<div class="float-start" style="width:180px;">
-						<div class="progress" style="height:9px; margin:8px 0;">
-						  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" style="width: 20%">
-							<span class="sr-only">80% Complete (danger)</span>
-						  </div>
+					<div class="row align-items-center">
+					  <div class="col-4 text-end text-secondary">
+						<i class="la la-star"></i>
+						<span class="text-muted">(<span class="" data-v-summary-one></span>)</span>
+					  </div>
+					  <div class="col-8">
+						<div class="progress" style="height: 2px;">
+						  <div class="progress-bar" role="progressbar" data-v-summary-one-width aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
+					  </div>
 					</div>
-					<div class="float-end" style="margin-left:10px;">0</div>
-				</div>
+				  </div>
+				 </div>
+			
 			</div>			
-			<div class="col-sm-3">
+			<div class="col" data-v-if="product_review.buyers > 0">
 				<div class="rating-block text-center">
 					<i class="la la-check-circle text-success fs-1"></i>
-					<div class="">5 reviews from buyers</div>
+					<div class=""><span data-v-reviews-buyers>5</span> reviews from buyers</div>
 				</div>
 			</div>
-			<div class="col-sm-3">
+			<div class="col" data-v-if="product_review.recommendations > 0">
 				<div class="rating-block text-center">
 					<i class="la la-thumbs-up text-primary fs-1"></i>
-					<div class="">100% recommendations</div>
+					<div class=""><span data-v-reviews-recommendations>100</span>% recommendations</div>
 				</div>
 			</div>
 		</div>			
 		
 		
-		<div class="border-top border-bottom py-4">			
+		<div class="border-bottom py-4">			
 			<h6>User contributed images</h6>
 			
 			<div class="">
@@ -266,19 +267,26 @@
 
 			</li>
 		</ol>
+
 	</div>
+	
+	<div data-v-if="count = 0">
+		<div class=" p-4 mb-4 bg-body-tertiary border">
+			<h6>Be the first to write a review!</h6>
+		</div>		
+	</div>		
+	
+	@@include('../_includes/notifications.html')
 
    <button data-bs-toggle="collapse" href="#reviews-form" role="button" aria-expanded="false" aria-controls="reviews-form" class="btn btn-light border"><span>Leave review</span><i class="la la-angle-down ms-2"></i></button>
 	
    <div class="reviews-form collapse mt-4" id="reviews-form">
 
-	@@include('../_includes/notifications.html')
 
-	<div>
-		<h5>Leave a reply</h5>
+		<h5>Leave a review</h5>
 		<span class="replyto" style="display:none"><h3>Reply to <b data-review-author>author</b></h3>
 			<a href="#review-form" class="reply-btn d-inline-block" data-review_id="0" data-v-vvveb-action="replyTo">
-			Cancel reply 
+			Cancel review 
 			<i class="la la-window-close"></i></a>
 		</span>
 		
@@ -313,7 +321,7 @@
 			
 		</div>
 
-		<form id="review-form" method="post" action="" data-v-vvveb-action="addreview" data-v-vvveb-on="submit">
+		<form id="review-form" method="post" action="#" data-v-vvveb-action="addReview" data-v-vvveb-on="submit">
 			
 			<input type="hidden" name="product_id" data-v-product-product_id>
 			<input type="hidden" name="slug" data-v-product-slug>
@@ -336,7 +344,35 @@
 			  </div>
 
 			  <div class="mb-3">
-				<textarea name="content" rows="5" cols="4" placeholder="review" class="form-control" required></textarea>
+					<input type="radio" name="rating" value="1" id="onestar" class="form-check-input btn-check" required>
+					<label class="form-check-label btn btn-outline-secondary btn-sm border-secondary-subtle" for="onestar">
+						<i class="la la-lg la-star text-warning"></i> 
+						1 <span>Star</span>
+					</label>
+					<input type="radio" name="rating" value="2" id="twostars" class="form-check-input btn-check" required>
+					<label class="form-check-label btn btn-outline-secondary btn-sm border-secondary-subtle" for="twostars">
+						<i class="la la-lg la-star text-warning"></i> 
+						2 <span>Stars</span>
+					</label>
+					<input type="radio" name="rating" value="3" id="threestars" class="form-check-input btn-check" required>
+					<label class="form-check-label btn btn-outline-secondary btn-sm border-secondary-subtle" for="threestars">
+						<i class="la la-lg la-star text-warning"></i> 
+						3 <span>Stars</span>
+					</label>
+					<input type="radio" name="rating" value="4" id="fourstars" class="form-check-input btn-check" required>
+					<label class="form-check-label btn btn-outline-secondary btn-sm border-secondary-subtle" for="fourstars">
+						<i class="la la-lg la-star text-warning"></i> 
+						4 <span>Stars</span>
+					</label>
+					<input type="radio" name="rating" value="5" id="fivestars" class="form-check-input btn-check" checked required>
+					<label class="form-check-label btn btn-outline-secondary btn-sm border-secondary-subtle" for="fivestars">
+						<i class="la la-lg la-star text-warning"></i> 
+						5 <span>Stars</span>
+					</label>
+			  </div>
+			  
+			  <div class="mb-3">
+				<textarea name="content" rows="5" cols="4" placeholder="Enter product review ..." class="form-control" required></textarea>
 			  </div>
 
 			<!-- if these hidden inputs are filled then ignore robots -->
@@ -356,6 +392,6 @@
 			  </button>
 			
 		</form>
-	</div>
 	
+	</div>
 </div>

@@ -188,7 +188,7 @@
               <div data-v-component-currency>
                 <form method="post" enctype="multipart/form-data" id="form-currency">
 
-                  <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <!-- <i class="la la-dollar-sign me-1"></i> -->
                     <span class="d-none d-md-inline" data-v-currency-info-name>USD</span>
                   </a>
@@ -228,7 +228,7 @@
               <div data-v-component-language>
                 <form method="post" enctype="multipart/form-data" id="form-language">
 
-                  <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <!-- <i class="la la-flag me-1"></i> -->
                     <!-- 
 									<img src="" data-v-language-info-img>
@@ -524,9 +524,25 @@
                               <span data-v-cart-product-quantity>1</span>
                               <i class="la la-times text-muted"></i>
                               <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+                              <div class="option" data-v-if="product.option">
+                                <div class="" data-v-product-option>
+                                  <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                                </div>
+                                <div class="" data-v-product-option>
+                                  <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                                </div>
+                                <div class="" data-v-product-option>
+                                  <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                                </div>
+                              </div>
+
+                              <div class="subscription" data-v-if="product.subscription">
+                                <span data-v-product-subscription-name>Subscription plan</span>
+                              </div>
                             </td>
                             <td class="text-end">
-                              <a type="button" class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                              <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
                                 <i class="la la-times"></i>
                               </a>
                             </td>
@@ -545,9 +561,11 @@
                               <span data-v-cart-product-quantity>1</span>
                               <i class="la la-times text-muted"></i>
                               <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+
                             </td>
                             <td class="text-end">
-                              <a type="button" class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                              <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
                                 <i class="la la-times"></i>
                               </a>
                             </td>
@@ -681,7 +699,7 @@
                         <th class="text-center">Image</th>
                         <th class="text-start">Product Name</th>
                         <!-- <th class="text-start">Model</th> -->
-                        <th class="text-start">Quantity</th>
+                        <th class="text-center">Quantity</th>
                         <!-- <th class="text-end">Unit Price</th> -->
                         <th class="text-end">Total</th>
                       </tr>
@@ -697,8 +715,25 @@
                           <a href="#40" data-v-cart-product-url>
                             <span data-v-cart-product-name>Product name</span>
                           </a>
+
                           <div class="price">
                             <span data-v-cart-product-price_tax_formatted>$246.40</span>
+                          </div>
+
+                          <div class="option" data-v-if="product.option">
+                            <div class="" data-v-product-option>
+                              <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                            </div>
+                            <div class="" data-v-product-option>
+                              <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                            </div>
+                            <div class="" data-v-product-option>
+                              <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                            </div>
+                          </div>
+
+                          <div class="subscription" data-v-if="product.subscription">
+                            <span data-v-product-subscription-name>Subscription plan</span>
                           </div>
                         </td>
 
@@ -706,16 +741,16 @@
                         <td class="text-center">
                           <div class="quantity">
                             <div class="input-group">
-                              <a type="button" class="btn btn-minus btn-sm">
+                              <a class="btn btn-minus btn-sm">
                                 <i class="la la-minus"></i>
                               </a>
                               <input name="quantity" value="1" size="1" min="1" class="form-control form-control-sm" type="number" data-v-cart-product-quantity>
-                              <a type="button" class="btn btn-plus btn-sm">
+                              <a class="btn btn-plus btn-sm">
                                 <i class="la la-plus"></i>
                               </a>
                             </div>
                           </div>
-                          <a type="button" class="btn btn-sm btn-remove" data-v-cart-product-remove-url>
+                          <a class="btn btn-remove" data-v-cart-product-remove-url>
                             <i class="la la-trash"></i>
                             <!-- <span>Remove</span> -->
                           </a>
@@ -745,16 +780,16 @@
                         <td class="text-center">
                           <div class="quantity">
                             <div class="input-group">
-                              <a type="button" class="btn btn-minus btn-sm">
+                              <a class="btn btn-minus btn-sm">
                                 <i class="la la-minus"></i>
                               </a>
                               <input name="quantity" value="1" size="1" min="1" class="form-control form-control-sm" type="number" data-v-cart-product-quantity>
-                              <a type="button" class="btn btn-plus btn-sm">
+                              <a class="btn btn-plus btn-sm">
                                 <i class="la la-plus"></i>
                               </a>
                             </div>
                           </div>
-                          <a type="button" class="btn btn-sm btn-remove" data-v-cart-product-remove-url>
+                          <a class="btn btn-remove" data-v-cart-product-remove-url>
                             <i class="la la-trash"></i>
                             <!-- <span>Remove</span> -->
                           </a>
@@ -805,7 +840,7 @@
             <div class="col-md-4 cart-right-column">
               <div class="card">
 
-                <div class="card-body">
+                <div class="card-body p-4">
                   <div class="table-responsive mb-2" data-v-cart-totals>
                     <table class="table mb-0 cart-table cart-total" cellspacing="0">
                       <tfoot>
@@ -845,14 +880,104 @@
                     </table>
                   </div>
 
-
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="c_code" placeholder="Coupon Code" aria-label="Coupon Code" aria-describedby="button-addon2">
-                    <button class="btn btn-primary btn-sm px-4" type="button" id="button-addon2">Apply</button>
+                  <div class="list-group mb-3" data-v-cart-coupons>
+                    <div class="list-group-item" data-v-cart-coupon>
+                      <div class="small" data-v-cart-coupon-name>-10% Discount</div>
+                      <span class="badge bg-success-subtle text-body me-2 code" data-v-cart-coupon-code>discount10</span>
+                      <button class="btn btn-remove btn-sm btn-remove-coupon float-end" name="removeCoupon">
+                        <i class="la la-lg la-times-circle"></i>
+                      </button>
+                    </div>
+                    <div class="list-group-item" data-v-cart-coupon>
+                      <div class="small" data-v-cart-coupon-name>Free shipping</div>
+                      <span class="badge bg-success-subtle text-body me-2 code" data-v-cart-coupon-code>freeship</span>
+                      <button class="btn btn-remove btn-sm btn-remove-coupon float-end" name="removeCoupon">
+                        <i class="la la-lg la-times-circle"></i>
+                      </button>
+                    </div>
                   </div>
 
-                  <a href="" class="btn btn-primary w-100" data-v-url="checkout/checkout/index">Checkout <i class="la la-arrow-right"></i>
-                  </a>
+                  <div class="notifications" data-v-notifications>
+
+                    <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="coupon">
+
+                      <div class="icon align-middle me-2">
+                        <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                      </div>
+
+                      <div class="flex-grow-1 align-self-center text-small">
+                        <div>
+                          <div data-v-notification-text>
+                            This is a placeholder for a notification message.
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">
+                          <!-- <i class="la la-times"></i> -->
+                        </span>
+                      </button>
+                    </div>
+
+                    <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="coupon">
+
+                      <div class="icon align-middle me-2">
+                        <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+                      </div>
+
+                      <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+                        This is a placeholder for a success message.
+                      </div>
+
+                      <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">
+                          <!-- <i class="la la-times"></i> -->
+                        </span>
+                      </button>
+                    </div>
+
+                    <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="coupon">
+
+                      <div class="icon align-middle me-2">
+                        <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+                      </div>
+
+                      <div class="flex-grow-1 align-self-center" data-v-notification-text>
+                        This is a placeholder for a info message.
+                      </div>
+
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">
+                          <!-- <i class="la la-times"></i> -->
+                        </span>
+                      </button>
+                    </div>
+
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <input type="text" name="coupon" class="form-control" id="coupon_code" placeholder="Coupon Code" aria-label="Coupon Code">
+                    <button class="btn btn-outline-primary btn-sm btn-coupon px-4" type="button">
+
+                      <span class="loading d-none">
+                        <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                        </span>
+                        <span>Applying </span>...
+                      </span>
+
+                      <span class="button-text">
+                        Apply <i class="la la-arrow-right float-end ms-2"></i>
+                      </span>
+
+                    </button>
+                  </div>
+
+                  <div class="mx-2 mt-5 mb-2">
+                    <a href="" class="btn btn-primary d-block" data-v-url="checkout/checkout/index">Checkout <i class="la la-arrow-right"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -1013,6 +1138,8 @@ $(document).on("click", ".dropdown-toggle",function (e) {
 	}
 });
 </script>
+
+  <script src="js/cart.js"></script>
 
 </body>
 

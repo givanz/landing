@@ -25,7 +25,7 @@
 								<th class="text-center">Image</th>
 								<th class="text-start">Product Name</th>
 								<!-- <th class="text-start">Model</th> -->
-								<th class="text-start">Quantity</th>
+								<th class="text-center">Quantity</th>
 								<!-- <th class="text-end">Unit Price</th> -->
 								<th class="text-end">Total</th>
 							</tr>
@@ -41,8 +41,25 @@
 									<a href="#40" data-v-cart-product-url>
 										<span data-v-cart-product-name>Product name</span>
 									</a>
+									
 									<div class="price">
 										<span data-v-cart-product-price_tax_formatted>$246.40</span>
+									</div>
+									
+									<div class="option" data-v-if="product.option">
+										<div class="" data-v-product-option>
+											<span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+										</div>
+										<div class="" data-v-product-option>
+											<span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+										</div>
+										<div class="" data-v-product-option>
+											<span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+										</div>
+									</div>
+									
+									<div class="subscription" data-v-if="product.subscription">
+										<span data-v-product-subscription-name>Subscription plan</span>
 									</div>
 								</td>
 								
@@ -50,16 +67,16 @@
 								<td class="text-center">
 									<div class="quantity">
 										<div class="input-group">
-											<a type="button" class="btn btn-minus btn-sm">
+											<a  class="btn btn-minus btn-sm">
 												<i class="la la-minus"></i>
 											</a>
 											<input name="quantity" value="1" size="1" min="1" class="form-control form-control-sm" type="number" data-v-cart-product-quantity>  
-											<a type="button" class="btn btn-plus btn-sm">
+											<a  class="btn btn-plus btn-sm">
 												<i class="la la-plus"></i>
 											</a>
 										</div>
 									</div>
-									<a type="button" class="btn btn-sm btn-remove" data-v-cart-product-remove-url>
+									<a  class="btn btn-remove" data-v-cart-product-remove-url>
 										<i class="la la-trash"></i>
 										<!-- <span>Remove</span> -->
 									</a>
@@ -89,16 +106,16 @@
 								<td class="text-center">
 									<div class="quantity">
 										<div class="input-group">
-											<a type="button" class="btn btn-minus btn-sm">
+											<a  class="btn btn-minus btn-sm">
 												<i class="la la-minus"></i>
 											</a>
 											<input name="quantity" value="1" size="1" min="1" class="form-control form-control-sm" type="number" data-v-cart-product-quantity>  
-											<a type="button" class="btn btn-plus btn-sm">
+											<a  class="btn btn-plus btn-sm">
 												<i class="la la-plus"></i>
 											</a>
 										</div>
 									</div>
-									<a type="button" class="btn btn-sm btn-remove" data-v-cart-product-remove-url>
+									<a  class="btn btn-remove" data-v-cart-product-remove-url>
 										<i class="la la-trash"></i>
 										<!-- <span>Remove</span> -->
 									</a>
@@ -149,7 +166,7 @@
 		<div class="col-md-4 cart-right-column">
 			<div class="card">
 			 
-				<div class="card-body">
+				<div class="card-body p-4">
 					<div class="table-responsive mb-2" data-v-cart-totals>
 							<table class="table mb-0 cart-table cart-total" cellspacing="0">
 							  <tfoot>
@@ -181,13 +198,11 @@
 							</table>
 						</div>
 					
+					@@include('_coupon.html')
 					
-					<div class="input-group mb-3">
-						<input type="text" class="form-control" id="c_code" placeholder="Coupon Code" aria-label="Coupon Code" aria-describedby="button-addon2">
-						<button class="btn btn-primary btn-sm px-4" type="button" id="button-addon2">Apply</button>
+					<div class="mx-2 mt-5 mb-2">
+						<a href="" class="btn btn-primary d-block" data-v-url="checkout/checkout/index">Checkout <i class="la la-arrow-right"></i></a>
 					</div>
-					
-					<a href="" class="btn btn-primary w-100" data-v-url="checkout/checkout/index">Checkout <i class="la la-arrow-right"></i></a>
 				</div>
 			</div>
 			
@@ -219,5 +234,7 @@
     
 @@include('../_includes/footer.html')   
 @@include('../_includes/footer-scripts.html')    
+<script src="js/cart.js"></script>
+
 </body>
 </html>
