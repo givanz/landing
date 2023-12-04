@@ -395,7 +395,7 @@
 
                     </div>
 
-                    <form action method="post" enctype="multipart/form-data" data-v-url="user/login" data-v-vvveb-action="login" data-v-vvveb-on="submit">
+                    <form action method="post" enctype="multipart/form-data" data-v-url="user/login" data-v-vvveb-action="login" data-v-vvveb-on="submit" class="login-form">
 
                       <input type="hidden" name="csrf" data-v-csrf>
 
@@ -411,7 +411,7 @@
                           <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" name="password" value="" placeholder="Password" id="input-password" class="form-control" required>
                         </div>
 
-                        <button type="submit" value="Login" class="btn btn-primary 	w-100	">
+                        <button type="submit" value="Login" class="btn btn-primary btn-login w-100">
 
                           <span class="loading d-none">
                             <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -472,7 +472,7 @@
 
                         <input type="hidden" name="logout">
 
-                        <button type="submit" value="logout" class="btn btn-primary 	w-100	">
+                        <button type="submit" value="logout" class="btn btn-primary w-100">
 
                           <span class="loading d-none">
                             <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -762,7 +762,7 @@
                 <div class="card-body p-5">
 
 
-                  <form action="" method="post" enctype="multipart/form-data" data-v-url="user/index/signup">
+                  <form action="" method="post" enctype="multipart/form-data" data-v-url="user/index/signup" id="signup-form">
                     <input type="hidden" name="csrf" data-v-csrf>
 
                     <!--	
@@ -830,7 +830,7 @@
                     </div>
 
                     <div class="mb-3">
-                      <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                      <button type="submit" class="btn btn-primary w-100 btn-signup">Create Account</button>
                     </div>
 
                     <div class="text-center">Have an account? <a href="" data-v-url="user/login/index">Log In</a>

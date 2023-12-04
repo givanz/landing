@@ -394,7 +394,7 @@
 
                     </div>
 
-                    <form action method="post" enctype="multipart/form-data" data-v-url="user/login" data-v-vvveb-action="login" data-v-vvveb-on="submit">
+                    <form action method="post" enctype="multipart/form-data" data-v-url="user/login" data-v-vvveb-action="login" data-v-vvveb-on="submit" class="login-form">
 
                       <input type="hidden" name="csrf" data-v-csrf>
 
@@ -410,7 +410,7 @@
                           <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" name="password" value="" placeholder="Password" id="input-password" class="form-control" required>
                         </div>
 
-                        <button type="submit" value="Login" class="btn btn-primary 	w-100	">
+                        <button type="submit" value="Login" class="btn btn-primary btn-login w-100">
 
                           <span class="loading d-none">
                             <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -471,7 +471,7 @@
 
                         <input type="hidden" name="logout">
 
-                        <button type="submit" value="logout" class="btn btn-primary 	w-100	">
+                        <button type="submit" value="logout" class="btn btn-primary w-100">
 
                           <span class="loading d-none">
                             <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -744,44 +744,45 @@
             </ul>
           </div>
 
-
-          <div class="widget">
-            <span class="d-flex text-muted mb-2">Color</span>
-            <ul class="list-unstyled">
-              <li>
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-1">
-                  <label class="form-check-label" for="color-1">
-                    <span class="bg-red"></span> Red
-                  </label>
-                </div>
-              </li>
-              <li class="mt-1">
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-2">
-                  <label class="form-check-label" for="color-2">
-                    <span class="bg-blue"></span> Blue
-                  </label>
-                </div>
-              </li>
-              <li class="mt-1">
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-3">
-                  <label class="form-check-label" for="color-3">
-                    <span class="bg-green"></span> Green
-                  </label>
-                </div>
-              </li>
-              <li class="mt-1">
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-4">
-                  <label class="form-check-label" for="color-4">
-                    <span class="bg-yellow"></span> Yellow
-                  </label>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <!--
+<div class="widget">
+  <span class="d-flex text-muted mb-2">Color</span>
+  <ul class="list-unstyled">
+	<li>
+	  <div class="form-check form-check-color">
+		<input class="form-check-input" type="checkbox" value="" id="color-1">
+		<label class="form-check-label" for="color-1">
+		  <span class="bg-red"></span> Red
+		</label>
+	  </div>
+	</li>
+	<li class="mt-1">
+	  <div class="form-check form-check-color">
+		<input class="form-check-input" type="checkbox" value="" id="color-2">
+		<label class="form-check-label" for="color-2">
+		  <span class="bg-blue"></span> Blue
+		</label>
+	  </div>
+	</li>
+	<li class="mt-1">
+	  <div class="form-check form-check-color">
+		<input class="form-check-input" type="checkbox" value="" id="color-3">
+		<label class="form-check-label" for="color-3">
+		  <span class="bg-green"></span> Green
+		</label>
+	  </div>
+	</li>
+	<li class="mt-1">
+	  <div class="form-check form-check-color">
+		<input class="form-check-input" type="checkbox" value="" id="color-4">
+		<label class="form-check-label" for="color-4">
+		  <span class="bg-yellow"></span> Yellow
+		</label>
+	  </div>
+	</li>
+  </ul>
+</div>
+-->
 
           <!--
 

@@ -394,7 +394,7 @@
 
                     </div>
 
-                    <form action method="post" enctype="multipart/form-data" data-v-url="user/login" data-v-vvveb-action="login" data-v-vvveb-on="submit">
+                    <form action method="post" enctype="multipart/form-data" data-v-url="user/login" data-v-vvveb-action="login" data-v-vvveb-on="submit" class="login-form">
 
                       <input type="hidden" name="csrf" data-v-csrf>
 
@@ -410,7 +410,7 @@
                           <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" name="password" value="" placeholder="Password" id="input-password" class="form-control" required>
                         </div>
 
-                        <button type="submit" value="Login" class="btn btn-primary 	w-100	">
+                        <button type="submit" value="Login" class="btn btn-primary btn-login w-100">
 
                           <span class="loading d-none">
                             <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -471,7 +471,7 @@
 
                         <input type="hidden" name="logout">
 
-                        <button type="submit" value="logout" class="btn btn-primary 	w-100	">
+                        <button type="submit" value="logout" class="btn btn-primary w-100">
 
                           <span class="loading d-none">
                             <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -876,14 +876,16 @@
 
           </article>
 
-          <div data-v-if="posts.count < 1">
-            <h3 class="text-center py-4 bg-body-tertiary">No posts to display!</h3>
+          <div data-v-if="posts.count < 1" class="border-bottom text-center py-4">
+            <h5>No posts to display!</h5>
           </div>
 
 
-          <div data-v-if="posts.count < 1">
-            <h3 class="text-center py-4 bg-body-tertiary">No posts to display!</h3>
-          </div>
+          <!-- 
+		<div data-v-if="posts.count < 1">
+			<h3 class="text-center py-4 bg-body-tertiary">No posts to display!</h3>
+		</div>
+		-->
 
           <div data-pagination data-v-parent-component="posts" data-v-parent-index="0" data-v-parameters='{}'>
 

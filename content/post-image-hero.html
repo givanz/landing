@@ -391,7 +391,7 @@
 
                         </div>
 
-                        <form action method="post" enctype="multipart/form-data" data-v-url="user/login" data-v-vvveb-action="login" data-v-vvveb-on="submit">
+                        <form action method="post" enctype="multipart/form-data" data-v-url="user/login" data-v-vvveb-action="login" data-v-vvveb-on="submit" class="login-form">
 
                           <input type="hidden" name="csrf" data-v-csrf>
 
@@ -407,7 +407,7 @@
                               <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" name="password" value="" placeholder="Password" id="input-password" class="form-control" required>
                             </div>
 
-                            <button type="submit" value="Login" class="btn btn-primary 	w-100	">
+                            <button type="submit" value="Login" class="btn btn-primary btn-login w-100">
 
                               <span class="loading d-none">
                                 <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -468,7 +468,7 @@
 
                             <input type="hidden" name="logout">
 
-                            <button type="submit" value="logout" class="btn btn-primary 	w-100	">
+                            <button type="submit" value="logout" class="btn btn-primary w-100">
 
                               <span class="loading d-none">
                                 <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -1135,7 +1135,7 @@
 
                 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">
 
-                <button type="submit" value="comment" class="btn btn-primary">
+                <button type="submit" value="comment" class="btn btn-primary btn-submit">
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                     <span>Posting</span>...
