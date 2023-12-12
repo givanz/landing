@@ -23,8 +23,8 @@ $max-width: 35rem !default;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	line-height:1.4;
-	font-weight:600;
+	//line-height:1.4;
+	//font-weight:600;
 	//color: var(--bs-body-color);
 	word-break: break-word;
 }
@@ -57,16 +57,18 @@ h1, h2, h3, h4, h5, h6 {
 	//font-family: 'Noto Serif', serif;
 	//font-family: 'Roboto Slab', serif;
 	
+	/*
 	> * {
 		margin-bottom:1rem;
 	}
+	*/
 	
 	> p, > h1, > h2, > h3,  > h4, > h5, > h6, > blockquote, > span, > ul, pre, > ol   {
 		@include max-width();
 	}
 	
 	h1, h2  {
-		font-weight:600;
+		//font-weight:600;
 	}
 		
 	blockquote {

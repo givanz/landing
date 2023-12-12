@@ -7,11 +7,12 @@ i.la {
 	font-style:normal;
 }
 
-/* Variable fonts usage: */
-:root { font-family: "Inter", sans-serif; }
+/* Variable fonts usage:*/
+:root { --bs-font-sans-serif: "Inter",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif; }
 @supports (font-variation-settings: normal) {
   :root { --bs-font-sans-serif: "InterVariable", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-optical-sizing: auto; }
 }
+
 @font-face {
   font-family: InterVariable;
   font-style: normal;
@@ -19,6 +20,7 @@ i.la {
   font-display: swap;
   src: url("../fonts/inter/InterVariable.woff2") format("woff2");
 }
+
 @font-face {
   font-family: InterVariable;
   font-style: italic;

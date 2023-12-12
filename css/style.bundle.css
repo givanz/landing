@@ -16951,9 +16951,9 @@ div.sticky .logo-dark {
 i.la {
   font-style: normal; }
 
-/* Variable fonts usage: */
+/* Variable fonts usage:*/
 :root {
-  font-family: "Inter", sans-serif; }
+  --bs-font-sans-serif: "Inter",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif; }
 
 @supports (font-variation-settings: normal) {
   :root {
@@ -17329,8 +17329,6 @@ blockquote {
 .post {
   border: none; }
   .post h1, .post .h1, .post h2, .post .h2, .post h3, .post .h3, .post h4, .post .h4, .post h5, .post .h5, .post h6, .post .h6 {
-    line-height: 1.4;
-    font-weight: 600;
     word-break: break-word; }
   .post .post-title, .post .post-title a {
     text-decoration: none;
@@ -17344,15 +17342,16 @@ blockquote {
   .post .post-content {
     font-size: 1.2rem;
     line-height: 1.6;
-    font-family: var(--bs-font-sans-serif); }
-    .post .post-content > * {
-      margin-bottom: 1rem; }
+    font-family: var(--bs-font-sans-serif);
+    /*
+	> * {
+		margin-bottom:1rem;
+	}
+	*/ }
     .post .post-content > p, .post .post-content > h1, .post .post-content > .h1, .post .post-content > h2, .post .post-content > .h2, .post .post-content > h3, .post .post-content > .h3, .post .post-content > h4, .post .post-content > .h4, .post .post-content > h5, .post .post-content > .h5, .post .post-content > h6, .post .post-content > .h6, .post .post-content > blockquote, .post .post-content > span, .post .post-content > ul, .post .post-content pre, .post .post-content > ol {
       max-width: 35rem;
       margin-left: auto;
       margin-right: auto; }
-    .post .post-content h1, .post .post-content .h1, .post .post-content h2, .post .post-content .h2 {
-      font-weight: 600; }
     .post .post-content blockquote {
       font-style: italic;
       padding-bottom: 3px;
@@ -18145,8 +18144,6 @@ div.zoom img {
       margin: 2rem 0 1rem; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  line-height: 1.4;
-  font-weight: 600;
   word-break: break-word; }
 
 .post-title, .post-title a {
@@ -18162,15 +18159,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .post-content {
   font-size: 1.2rem;
   line-height: 1.6;
-  font-family: var(--bs-font-sans-serif); }
-  .post-content > * {
-    margin-bottom: 1rem; }
+  font-family: var(--bs-font-sans-serif);
+  /*
+	> * {
+		margin-bottom:1rem;
+	}
+	*/ }
   .post-content > p, .post-content > h1, .post-content > .h1, .post-content > h2, .post-content > .h2, .post-content > h3, .post-content > .h3, .post-content > h4, .post-content > .h4, .post-content > h5, .post-content > .h5, .post-content > h6, .post-content > .h6, .post-content > blockquote, .post-content > span, .post-content > ul, .post-content pre, .post-content > ol {
     max-width: 35rem;
     margin-left: auto;
     margin-right: auto; }
-  .post-content h1, .post-content .h1, .post-content h2, .post-content .h2 {
-    font-weight: 600; }
   .post-content blockquote {
     font-style: italic;
     padding-bottom: 3px;
