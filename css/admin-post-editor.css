@@ -9309,8 +9309,6 @@ body > section, body > footer, body > header {
 				background: rgba(0,0,0, 0.4);
 			}
 		}*/ }
-  body > section.bg-alternate:nth-child(even), body > footer.bg-alternate:nth-child(even), body > header.bg-alternate:nth-child(even) {
-    background-color: rgba(var(--bs-body-color-rgb), 0.05); }
   body > section .background-container, body > section .overlay, body > footer .background-container, body > footer .overlay, body > header .background-container, body > header .overlay {
     position: absolute;
     top: 0;
@@ -9689,7 +9687,8 @@ h2, .h2 {
   .top-nav ul, .top-nav ol {
     margin: 0; }
   .top-nav a {
-    color: rgba(var(--bs-body-color-rgb), 0.8); }
+    color: rgba(var(--bs-body-color-rgb), 0.8);
+    display: block; }
   .top-nav i {
     color: rgba(var(--bs-body-color-rgb), 0.8); }
 
@@ -9840,37 +9839,40 @@ div.sticky .logo-dark {
   font-family: Line Awesome Brands;
   font-style: normal;
   font-weight: normal;
-  font-display: auto;
+  font-display: swap;
   src: url("../fonts/line-awesome/la-brands-400.eot");
   src: url("../fonts/line-awesome/la-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/line-awesome/la-brands-400.woff2") format("woff2"), url("../fonts/line-awesome/la-brands-400.woff") format("woff"), url("../fonts/line-awesome/la-brands-400.ttf") format("truetype"), url("../fonts/line-awesome/la-brands-400.svg#lineawesome") format("svg"); }
 
 .lab {
-  font-family: Line Awesome Brands;
-  font-weight: 400; }
+  font-family: Line Awesome Brands, monospace;
+  font-weight: 400;
+  line-height: 1; }
 
 @font-face {
   font-family: Line Awesome Free;
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: url("../fonts/line-awesome/la-regular-400.eot");
   src: url("../fonts/line-awesome/la-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/line-awesome/la-regular-400.woff2") format("woff2"), url("../fonts/line-awesome/la-regular-400.woff") format("woff"), url("../fonts/line-awesome/la-regular-400.ttf") format("truetype"), url("../fonts/line-awesome/la-regular-400.svg#lineawesome") format("svg"); }
 
 .la {
-  font-family: Line Awesome Free;
-  font-weight: 400; }
+  font-family: Line Awesome Free, monospace;
+  font-weight: 400;
+  line-height: 1; }
 
 @font-face {
   font-family: Line Awesome Free;
   font-style: normal;
-  font-weight: 900;
-  font-display: auto;
+  font-weight: 410;
+  font-display: swap;
   src: url("../fonts/line-awesome/la-solid-900.eot");
   src: url("../fonts/line-awesome/la-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/line-awesome/la-solid-900.woff2") format("woff2"), url("../fonts/line-awesome/la-solid-900.woff") format("woff"), url("../fonts/line-awesome/la-solid-900.ttf") format("truetype"), url("../fonts/line-awesome/la-solid-900.svg#lineawesome") format("svg"); }
 
 .la {
-  font-family: Line Awesome Free;
-  font-weight: 900; }
+  font-family: Line Awesome Free, monospace;
+  font-weight: 410;
+  line-height: 1; }
 
 .la-lg {
   font-size: 1.33333em;
@@ -14266,7 +14268,7 @@ i.la {
 
 /* Variable fonts usage:*/
 :root {
-  --bs-font-sans-serif: "Inter",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif; }
+  --bs-font-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif; }
 
 @supports (font-variation-settings: normal) {
   :root {
@@ -14759,9 +14761,9 @@ blockquote {
 .inner-page-hero {
   position: relative;
   max-height: 150px;
-  height: 150px;
+  height: 120px;
   overflow: hidden;
-  background-color: var(--bs-light-bg-subtle);
+  background-color: transparent;
   border-bottom: 1px solid rgba(var(--bs-body-color-rgb), 0.07); }
   .inner-page-hero .title-container {
     position: absolute;
@@ -14789,6 +14791,8 @@ blockquote {
       z-index: 1;
       margin: 0;
       font-weight: normal; }
+  .inner-page-hero .breadcrumb {
+    margin: 0; }
   .inner-page-hero img {
     width: 100%;
     top: -30vw;
@@ -14978,9 +14982,9 @@ ul.tags {
             letter-spacing: 0.75px;
             font-weight: 600;
         }*/ }
-    .single-product-wrapper .product-content h6, .single-product-wrapper .product-content .h6 {
+    .single-product-wrapper .product-content a span {
       color: var(--bs-body-color);
-      font-weight: normal;
+      font-weight: 600;
       margin-bottom: 0.2rem; }
     .single-product-wrapper .product-content p {
       margin-bottom: 0;
@@ -15390,7 +15394,7 @@ input.form-control[type=number] {
   font-weight: normal;
   text-decoration: line-through;
   font-size: 12px;
-  color: #888;
+  color: var(--bs-secondary);
   margin: 0px 5px; }
 
 .product .price .price-new {

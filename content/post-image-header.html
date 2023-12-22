@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 
   <base href="../">
 
@@ -103,7 +103,8 @@
 
 
 
-  <link id="landing-css" href="css/style.bundle.css" rel="stylesheet">
+  <link id="landing-css" href="css/style.bundle.css" rel="stylesheet" media="screen">
+
 
 
 
@@ -119,16 +120,6 @@
   <link rel="manifest" href="/manifest.webmanifest">
 
   <link rel="alternate" hreflang="" href="" />
-
-  <link rel="stylesheet" href="js/aos.css">
-  <noscript>
-    <style type="text/css">
-      [data-aos] {
-        opacity: 1 !important;
-        transform: translate(0) scale(1) !important;
-      }
-    </style>
-  </noscript>
 </head>
 
 
@@ -142,32 +133,31 @@
       <nav class="navigation-1 clearfix">
 
         <div id="top" class="top-nav clearfix">
-          <div class="container">
-            <div class="nav float-start">
+          <div class="container d-flex justify-content-between">
+            <div class="nav">
               <ul class="list-inline" data-v-component-site>
                 <li class="list-inline-item" data-v-if="site.phone-number">
-                  <a href="tel:5511112377" data-v-site-phone-number>
+                  <a href="tel:5511112377" class="p-2 p-md-0" title="Phone" data-v-site-phone-number>
                     <i class="la la-phone"></i>
-                    <span class="d-none d-md-inline text-muted" data-v-site-phone-number>+55 (111) 123 777</span>
+                    <span class=" text-muted" data-v-site-phone-number>+55 (111) 123 777</span>
                   </a>
                 </li>
                 <li class="list-inline-item" data-v-if="site.contact-email">
-                  <a href="mailto:contact@mysite.com" data-v-site-contact-email>
+                  <a href="mailto:contact@mysite.com" class="p-2 p-md-0" title="Email" data-v-site-contact-email>
                     <i class="la la-envelope"></i>
-                    <span class="d-none d-md-inline text-muted" data-v-site-contact-email>contact@mysite.com</span>
+                    <span class=" text-muted" data-v-site-contact-email>contact@mysite.com</span>
                   </a>
                 </li>
-                <li class="list-inline-item"></li>
               </ul>
             </div>
-            <div class="nav float-end">
+            <div class="nav">
               <ul class="list-inline">
                 <!--
-					<li class="list-inline-item"><a href="#" id="wishlist-total" title="Wish List (0)"><i class="la la-heart"></i> <span class="d-none d-md-inline">Favorites</span></a></li>
-					<li class="list-inline-item"><a href="#" title="Checkout"><i class="la la-share"></i> <span class="d-none d-md-inline">Checkout</span></a></li>
+					<li class="list-inline-item"><a href="#" id="wishlist-total" title="Wish List (0)"><i class="la la-heart"></i> <span class="">Favorites</span></a></li>
+					<li class="list-inline-item"><a href="#" title="Checkout"><i class="la la-share"></i> <span class="">Checkout</span></a></li>
 					<li class="list-inline-item">
 						<div class="dropdown">
-							<a href="" class="dropdown-toggle" data-bs-toggle="dropdown"><i class="la la-user"></i> <span class="d-none d-md-inline">My Account</span></i></a>
+							<a href="" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"><i class="la la-user"></i> <span class="">My Account</span></i></a>
 							<ul class="dropdown-menu dropdown-menu-right">
 								<li><a href="#" class="dropdown-item">Register</a></li>
 								<li><a href="#" class="dropdown-item">Login</a></li>
@@ -176,19 +166,12 @@
 					</li>
 					-->
                 <li class="list-inline-item">
-
-                  <a id="color-theme-switch" href="javascript:void(0);" title="Switch sidebar color theme">
-                    <i class="la la-sun la-lg"></i>
-                  </a>
-
-                </li>
-                <li class="list-inline-item">
                   <div data-v-component-currency>
                     <form method="post" enctype="multipart/form-data" id="form-currency">
 
-                      <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a class="dropdown-toggle p-2 p-md-0" data-bs-toggle="dropdown" role="button" title="Currency " aria-expanded="false">
                         <!-- <i class="la la-dollar-sign me-1"></i> -->
-                        <span class="d-none d-md-inline" data-v-currency-info-name>USD</span>
+                        <span class="" data-v-currency-info-name>USD</span>
                       </a>
 
 
@@ -226,12 +209,12 @@
                   <div data-v-component-language>
                     <form method="post" enctype="multipart/form-data" id="form-language">
 
-                      <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a class="dropdown-toggle p-2 p-md-0" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
                         <!-- <i class="la la-flag me-1"></i> -->
                         <!-- 
 									<img src="" data-v-language-info-img>
 									-->
-                        <span class="d-none d-md-inline" data-v-language-info-name>English</span>
+                        <span class="" data-v-language-info-name>English</span>
                       </a>
 
 
@@ -262,6 +245,13 @@
                     </form>
                   </div>
                 </li>
+                <li class="list-inline-item">
+
+                  <a id="color-theme-switch" class="p-2 p-md-0" href="javascript:void(0);" role="button" title="Switch sidebar color theme">
+                    <i class="la la-sun la-lg"></i>
+                  </a>
+
+                </li>
               </ul>
             </div>
           </div>
@@ -272,10 +262,11 @@
           <div class="container">
             <div data-v-component-site>
               <a class="navbar-brand" href="/" data-v-url-params='{"host":"www.*.*"}'>
-                <img src="img/logo.png" loading="lazy" class="logo-default" data-v-site-logo>
-                <img src="img/logo.png" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
-                <img src="img/logo-white.png" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-                <img src="img/logo-white.png" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+                <span class="visually-hidden">Logo</span>
+                <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
+                <img src="img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
+                <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+                <img src="img/logo-white.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
               </a>
             </div>
 
@@ -287,7 +278,7 @@
               <ul class="navbar-nav ms-auto" data-v-menu-items>
                 <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
 
-                  <a class="nav-link" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url>
+                  <a class="nav-link" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
                     <span data-v-menu-item-name>Resources</span>
                   </a>
 
@@ -322,9 +313,10 @@
                 <li class="nav-toggle">
                   <!-- User Login Info -->
                   <div class="dropdown user-box nav-item">
-                    <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-url="user/index">
+                    <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                       <!-- <img src="img/user.svg" loading="lazy" width="20" alt> -->
                       <i class="la la-lg la-user"></i>
+                      <span class="visually-hidden">User</span>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-end login-box p-4" aria-labelledby="user-dropdown">
@@ -493,9 +485,10 @@
                   <!-- Cart Area -->
                   <div class="dropdown nav-item mini-cart" data-v-component-cart>
 
-                    <a class="dropdown-toggle cart-info nav-link " href role="button" id="cart-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-url="cart/cart/index">
+                    <a class="dropdown-toggle cart-info nav-link " href role="button" id="cart-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="cart/cart/index">
                       <!-- <img src="img/bag.svg" width="20" alt> -->
                       <i class="la la-lg la-shopping-bag"></i>
+                      <span class="visually-hidden">Cart</span>
                       <strong class="text-top text-bold" data-v-total_items data-v-if="cart.total_items > 0"></strong>
                     </a>
 
@@ -659,7 +652,7 @@
                   <input type="hidden" name="route" value="search">
                   <div class="input-group">
                     <input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
-                    <button class="btn border-0" type="submit">
+                    <button class="btn border-0" type="submit" title="Search">
                       <div class="la-flip-horizontal">
                         <i class="la la-search la-lg" aria-hidden="true"></i>
                       </div>
@@ -1169,15 +1162,15 @@
         <div class="col-md-3">
 
           <div data-v-component-site>
-            <img src="img/logo-white.png" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-            <img src="img/logo.png" loading="lazy" class="logo-default" data-v-site-logo>
+            <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+            <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
           </div>
 
         </div>
 
 
         <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
-          <h6 data-v-menu-item-name>Vvveb</h6>
+          <div class="h6" data-v-menu-item-name>Vvveb</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
               <a href="https://themes.vvveb.com/" data-v-menu-item-url>
@@ -1193,7 +1186,7 @@
         </div>
 
         <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
-          <h6 data-v-menu-item-name>Resources</h6>
+          <div class="h6" data-v-menu-item-name>Resources</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
               <a href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
@@ -1209,7 +1202,7 @@
         </div>
 
         <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
-          <h6 data-v-menu-item-name>Contact</h6>
+          <div class="h6" data-v-menu-item-name>Contact</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
               <a href="" target="contact.html">Contact</a>
@@ -1274,6 +1267,17 @@
   <script id="app-js" src="../../js/app.js"></script>
 
   <!-- Animation -->
+
+  <link rel="stylesheet" href="js/aos.css">
+  <noscript>
+    <style type="text/css">
+      [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+      }
+    </style>
+  </noscript>
+
   <script src="js/aos.js"></script>
   <script>
 AOS.init();

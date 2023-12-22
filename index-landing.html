@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 
   <base href="">
 
@@ -111,7 +111,8 @@
 
 
 
-  <link id="landing-css" href="css/style.bundle.css" rel="stylesheet">
+  <link id="landing-css" href="css/style.bundle.css" rel="stylesheet" media="screen">
+
 
 
 
@@ -131,16 +132,6 @@
   <link rel="manifest" href="/manifest.webmanifest">
 
   <link rel="alternate" hreflang="" href="" />
-
-  <link rel="stylesheet" href="js/aos.css">
-  <noscript>
-    <style type="text/css">
-      [data-aos] {
-        opacity: 1 !important;
-        transform: translate(0) scale(1) !important;
-      }
-    </style>
-  </noscript>
 </head>
 
 
@@ -155,10 +146,11 @@
 
         <div data-v-component-site>
           <a class="navbar-brand" href="/" data-v-url-params='{"host":"www.*.*"}'>
-            <img src="img/logo.png" loading="lazy" class="logo-default" data-v-site-logo>
-            <img src="img/logo.png" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
-            <img src="img/logo-white.png" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-            <img src="img/logo-white.png" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+            <span class="visually-hidden">Logo</span>
+            <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
+            <img src="img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
+            <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+            <img src="img/logo-white.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
           </a>
         </div>
 
@@ -170,7 +162,7 @@
           <ul class="navbar-nav ms-auto" data-v-menu-items>
             <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
 
-              <a class="nav-link" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url>
+              <a class="nav-link" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
                 <span data-v-menu-item-name>Resources</span>
               </a>
 
@@ -203,7 +195,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a id="color-theme-switch" class="nav-link" href="javascript:void(0);" title="Switch sidebar color theme">
+              <a id="color-theme-switch" class="nav-link" href="javascript:void(0);" role="button" title="Switch sidebar color theme">
                 <i class="la la-sun"></i>
               </a>
             </li>
@@ -215,7 +207,7 @@
 						<input type="hidden" name="route" value="search">
 						<div class="input-group">
 							<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
-							<button class="btn border-0" type="submit">
+							<button class="btn border-0" type="submit" title="Search">
 								<div class="la-flip-horizontal">
 									<i class="la la-search la-lg" aria-hidden="true"></i>
 								</div>
@@ -238,7 +230,7 @@
 				<a class="nav-link" href="https://plugins.vvveb.com">Plugins</a>
 			  </li>
 			  <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+				<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
 				<div class="dropdown-menu" aria-labelledby="dropdown01">
 				  <a class="dropdown-item" target="_blank"  href="https://github.com/givanz/VvvebJs/wiki">User Documentation</a>
 				  <a class="dropdown-item" target="_blank"  href="https://github.com/givanz/VvvebJs/wiki">Developer Documentation</a>
@@ -262,33 +254,6 @@
 
   </nav>
 
-
-  <!--
-	<header class="hero-1" title="hero-1">
-
-	<div class="heading">
-		<h1>Open Source CMS<br/> Reinvented</h1>
-		
-		<h2>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
-	
-		<div class="btns">
-			<a class="btn btn-lg btn-primary" href="/download.php" role="button"><span>&#9889;</span> Free download <b>›</b></a>
-			
-			<div class="nav-item dropdown">
-			<a class="btn btn-lg btn-outline-primary nav-link" href="//demo.vvveb.com" role="button">Live demo <span>&rarr;</span> <b>›</b></a>
-				<div class="dropdown-menu" aria-labelledby="dropdown01">
-				  <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/">Page builder</a>
-				  <a class="dropdown-item" target="_blank" href="//demo.vvveb.com">Frontend</a>
-				</div>
-			</div>
-		</div>
-
-		<i class="text-muted"><small>* Note: Early Alpha Preview</small></i>
-	</div>
-
-	
-</header>
-	-->
 
   <header class="hero-1" title="hero-1">
 
@@ -329,6 +294,7 @@
 
 
   </header>
+
 
 
   <!--
@@ -598,15 +564,15 @@
         <div class="col-md-3">
 
           <div data-v-component-site>
-            <img src="img/logo-white.png" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-            <img src="img/logo.png" loading="lazy" class="logo-default" data-v-site-logo>
+            <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+            <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
           </div>
 
         </div>
 
 
         <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
-          <h6 data-v-menu-item-name>Vvveb</h6>
+          <div class="h6" data-v-menu-item-name>Vvveb</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
               <a href="https://themes.vvveb.com/" data-v-menu-item-url>
@@ -622,7 +588,7 @@
         </div>
 
         <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
-          <h6 data-v-menu-item-name>Resources</h6>
+          <div class="h6" data-v-menu-item-name>Resources</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
               <a href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
@@ -638,7 +604,7 @@
         </div>
 
         <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
-          <h6 data-v-menu-item-name>Contact</h6>
+          <div class="h6" data-v-menu-item-name>Contact</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
               <a href="" target="contact.html">Contact</a>
@@ -703,6 +669,17 @@
   <script id="app-js" src="../../js/app.js"></script>
 
   <!-- Animation -->
+
+  <link rel="stylesheet" href="js/aos.css">
+  <noscript>
+    <style type="text/css">
+      [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+      }
+    </style>
+  </noscript>
+
   <script src="js/aos.js"></script>
   <script>
 AOS.init();

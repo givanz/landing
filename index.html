@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 
   <base href="">
 
@@ -111,7 +111,8 @@
 
 
 
-  <link id="landing-css" href="css/style.bundle.css" rel="stylesheet">
+  <link id="landing-css" href="css/style.bundle.css" rel="stylesheet" media="screen">
+
 
 
 
@@ -136,16 +137,6 @@
   <link rel="manifest" href="/manifest.webmanifest">
 
   <link rel="alternate" hreflang="" href="" />
-
-  <link rel="stylesheet" href="js/aos.css">
-  <noscript>
-    <style type="text/css">
-      [data-aos] {
-        opacity: 1 !important;
-        transform: translate(0) scale(1) !important;
-      }
-    </style>
-  </noscript>
 </head>
 
 
@@ -153,32 +144,31 @@
   <nav class="navigation-3 clearfix fixed-top transparent" title="navigation-3">
 
     <div id="top" class="top-nav clearfix" data-bs-theme="dark">
-      <div class="container">
-        <div class="nav float-start">
+      <div class="container d-flex justify-content-between">
+        <div class="nav">
           <ul class="list-inline" data-v-component-site>
             <li class="list-inline-item" data-v-if="site.phone-number">
-              <a href="tel:5511112377" data-v-site-phone-number>
+              <a href="tel:5511112377" class="p-2 p-md-0" title="Phone" data-v-site-phone-number>
                 <i class="la la-phone"></i>
-                <span class="d-none d-md-inline text-muted" data-v-site-phone-number>+55 (111) 123 777</span>
+                <span class=" text-muted" data-v-site-phone-number>+55 (111) 123 777</span>
               </a>
             </li>
-            <li class="list-inline-item" data-v-if="site.contact-email">
-              <a href="mailto:contact@mysite.com" data-v-site-contact-email>
+            <li class="list-inline-item" class="p-2 p-md-0" data-v-if="site.contact-email">
+              <a href="mailto:contact@mysite.com" title="Email" data-v-site-contact-email>
                 <i class="la la-envelope"></i>
-                <span class="d-none d-md-inline text-muted" data-v-site-contact-email>contact@mysite.com</span>
+                <span class=" text-muted" data-v-site-contact-email>contact@mysite.com</span>
               </a>
             </li>
-            <li class="list-inline-item"></li>
           </ul>
         </div>
-        <div class="nav float-end">
+        <div class="nav">
           <ul class="list-inline">
             <!--
-					<li class="list-inline-item"><a href="#" id="wishlist-total" title="Wish List (0)"><i class="la la-heart"></i> <span class="d-none d-md-inline">Favorites</span></a></li>
-					<li class="list-inline-item"><a href="#" title="Checkout"><i class="la la-share"></i> <span class="d-none d-md-inline">Checkout</span></a></li>
+					<li class="list-inline-item"><a href="#" id="wishlist-total" title="Wish List (0)"><i class="la la-heart"></i> <span class="">Favorites</span></a></li>
+					<li class="list-inline-item"><a href="#" title="Checkout"><i class="la la-share"></i> <span class="">Checkout</span></a></li>
 					<li class="list-inline-item">
 						<div class="dropdown">
-							<a href="" class="dropdown-toggle" data-bs-toggle="dropdown"><i class="la la-user"></i> <span class="d-none d-md-inline">My Account</span></i></a>
+							<a href="" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"><i class="la la-user"></i> <span class="">My Account</span></i></a>
 							<ul class="dropdown-menu dropdown-menu-right">
 								<li><a href="#" class="dropdown-item">Register</a></li>
 								<li><a href="#" class="dropdown-item">Login</a></li>
@@ -187,19 +177,12 @@
 					</li>
 					-->
             <li class="list-inline-item">
-
-              <a id="color-theme-switch" href="javascript:void(0);" title="Switch sidebar color theme">
-                <i class="la la-sun la-lg"></i>
-              </a>
-
-            </li>
-            <li class="list-inline-item">
               <div data-v-component-currency>
                 <form method="post" enctype="multipart/form-data" id="form-currency">
 
-                  <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="dropdown-toggle p-2 p-md-0" data-bs-toggle="dropdown" role="button" title="Currency" aria-expanded="false">
                     <!-- <i class="la la-dollar-sign me-1"></i> -->
-                    <span class="d-none d-md-inline" data-v-currency-info-name>USD</span>
+                    <span class="" data-v-currency-info-name>USD</span>
                   </a>
 
 
@@ -237,12 +220,12 @@
               <div data-v-component-language>
                 <form method="post" enctype="multipart/form-data" id="form-language">
 
-                  <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="dropdown-toggle p-2 p-md-0" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
                     <!-- <i class="la la-flag me-1"></i> -->
                     <!-- 
 									<img src="" data-v-language-info-img>
 									-->
-                    <span class="d-none d-md-inline" data-v-language-info-name>English</span>
+                    <span class="" data-v-language-info-name>English</span>
                   </a>
 
 
@@ -273,6 +256,13 @@
                 </form>
               </div>
             </li>
+            <li class="list-inline-item">
+
+              <a id="color-theme-switch" class="p-2 p-md-0" href="javascript:void(0);" role="button" title="Switch sidebar color theme">
+                <i class="la la-sun la-lg"></i>
+              </a>
+
+            </li>
           </ul>
         </div>
       </div>
@@ -284,10 +274,11 @@
 
         <div data-v-component-site>
           <a class="navbar-brand" href="/" data-v-url-params='{"host":"www.*.*"}'>
-            <img src="img/logo.png" loading="lazy" class="logo-default" data-v-site-logo>
-            <img src="img/logo.png" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
-            <img src="img/logo-white.png" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-            <img src="img/logo-white.png" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+            <span class="visually-hidden">Logo</span>
+            <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
+            <img src="img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
+            <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+            <img src="img/logo-white.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
           </a>
         </div>
 
@@ -300,7 +291,7 @@
           <ul class="navbar-nav ms-auto" data-v-menu-items>
             <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
 
-              <a class="nav-link" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url>
+              <a class="nav-link" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
                 <span data-v-menu-item-name>Resources</span>
               </a>
 
@@ -335,9 +326,10 @@
             <li class="nav-toggle">
               <!-- User Login Info -->
               <div class="dropdown user-box nav-item">
-                <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-url="user/index">
+                <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                   <!-- <img src="img/user.svg" loading="lazy" width="20" alt> -->
                   <i class="la la-lg la-user"></i>
+                  <span class="visually-hidden">User</span>
                 </a>
 
                 <div class="dropdown-menu dropdown-menu-end login-box p-4" aria-labelledby="user-dropdown">
@@ -506,9 +498,10 @@
               <!-- Cart Area -->
               <div class="dropdown nav-item mini-cart" data-v-component-cart>
 
-                <a class="dropdown-toggle cart-info nav-link " href role="button" id="cart-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-v-url="cart/cart/index">
+                <a class="dropdown-toggle cart-info nav-link " href role="button" id="cart-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="cart/cart/index">
                   <!-- <img src="img/bag.svg" width="20" alt> -->
                   <i class="la la-lg la-shopping-bag"></i>
+                  <span class="visually-hidden">Cart</span>
                   <strong class="text-top text-bold" data-v-total_items data-v-if="cart.total_items > 0"></strong>
                 </a>
 
@@ -672,7 +665,7 @@
               <input type="hidden" name="route" value="search">
               <div class="input-group">
                 <input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
-                <button class="btn border-0" type="submit">
+                <button class="btn border-0" type="submit" title="Search">
                   <div class="la-flip-horizontal">
                     <i class="la la-search la-lg" aria-hidden="true"></i>
                   </div>
@@ -696,7 +689,7 @@
 					<a class="nav-link" href="https://plugins.vvveb.com">Plugins</a>
 				  </li>
 				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown01">
 					  <a class="dropdown-item" target="_blank"  href="https://github.com/givanz/VvvebJs/wiki">User Documentation</a>
 					  <a class="dropdown-item" target="_blank"  href="https://github.com/givanz/VvvebJs/wiki">Developer Documentation</a>
@@ -728,9 +721,9 @@
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-lg-12">
             <h1 class="heading text-white mb-3" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
-            <h3 class="text-white" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs,
+            <h2 class="text-white h3" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs,
               <br /> presentation or ecommerce stores.
-            </h3>
+            </h2>
 
             <div class="buttons" data-aos="fade-up" data-aos-delay="300">
               <a href="https://www.vvveb.com" class="btn btn-primary text-white me-4">Free Download</a>
@@ -770,7 +763,7 @@
 
     <div class="background-container">
 
-      <img src="img/demo/hero-3.jpg">
+      <img src="img/demo/hero-3.jpg" alt="Hero background">
 
     </div>
 
@@ -851,16 +844,16 @@
               <p>Use any of the hundreds fonts from google fonts for your design.</p>
               <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
             </div>
-            <a href="#">Learn More</a>
+            <a href="#" tile="Code editor features" role="button">Learn More</a>
           </div>
         </div>
         <div class="col-md-5 col-md-5">
-          <img src="img/illustrations.co/day68-happy-cat.svg" loading="lazy" class="img-fluid" />
+          <img src="img/illustrations.co/day68-happy-cat.svg" alt="happy cat" loading="lazy" class="img-fluid" />
         </div>
       </div>
       <div class="row wrap">
         <div class="col-md-6">
-          <img src="img/illustrations.co/day67-dog.svg" loading="lazy" class="img-fluid" />
+          <img src="img/illustrations.co/day67-dog.svg" alt="dog" loading="lazy" class="img-fluid" />
         </div>
         <div class="col-md-6 align-self-center">
           <span class="badge  bg-success rounded-pill px-3">on sale</span>
@@ -870,7 +863,7 @@
             <p>Use any of the hundreds fonts from google fonts for your design.</p>
             <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
           </div>
-          <a href="#">Learn More</a>
+          <a href="#" title="Drag and drop" role="button">Learn More</a>
         </div>
       </div>
     </div>
@@ -926,8 +919,8 @@
             <!-- Product Description -->
             <div class="product-content">
 
-              <a href="product/product.html" data-v-product-url>
-                <h6 data-v-product-name>Product 8</h6>
+              <a href="product/product.html" class="text-body" data-v-product-url>
+                <span data-v-product-name>Product 8</span>
               </a>
 
               <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
@@ -989,8 +982,8 @@
             <!-- Product Description -->
             <div class="product-content">
 
-              <a href="product/product.html" data-v-product-url>
-                <h6 data-v-product-name>Product 8</h6>
+              <a href="product/product.html" class="text-body" data-v-product-url>
+                <span data-v-product-name>Product 8</span>
               </a>
 
               <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
@@ -1052,8 +1045,8 @@
             <!-- Product Description -->
             <div class="product-content">
 
-              <a href="product/product.html" data-v-product-url>
-                <h6 data-v-product-name>Product 8</h6>
+              <a href="product/product.html" class="text-body" data-v-product-url>
+                <span data-v-product-name>Product 8</span>
               </a>
 
               <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
@@ -1115,8 +1108,8 @@
             <!-- Product Description -->
             <div class="product-content">
 
-              <a href="product/product.html" data-v-product-url>
-                <h6 data-v-product-name>Product 8</h6>
+              <a href="product/product.html" class="text-body" data-v-product-url>
+                <span data-v-product-name>Product 8</span>
               </a>
 
               <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
@@ -1178,8 +1171,8 @@
             <!-- Product Description -->
             <div class="product-content">
 
-              <a href="product/product.html" data-v-product-url>
-                <h6 data-v-product-name>Product 8</h6>
+              <a href="product/product.html" class="text-body" data-v-product-url>
+                <span data-v-product-name>Product 8</span>
               </a>
 
               <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
@@ -1241,8 +1234,8 @@
             <!-- Product Description -->
             <div class="product-content">
 
-              <a href="product/product.html" data-v-product-url>
-                <h6 data-v-product-name>Product 8</h6>
+              <a href="product/product.html" class="text-body" data-v-product-url>
+                <span data-v-product-name>Product 8</span>
               </a>
 
               <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
@@ -1304,8 +1297,8 @@
             <!-- Product Description -->
             <div class="product-content">
 
-              <a href="product/product.html" data-v-product-url>
-                <h6 data-v-product-name>Product 8</h6>
+              <a href="product/product.html" class="text-body" data-v-product-url>
+                <span data-v-product-name>Product 8</span>
               </a>
 
               <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
@@ -1367,8 +1360,8 @@
             <!-- Product Description -->
             <div class="product-content">
 
-              <a href="product/product.html" data-v-product-url>
-                <h6 data-v-product-name>Product 8</h6>
+              <a href="product/product.html" class="text-body" data-v-product-url>
+                <span data-v-product-name>Product 8</span>
               </a>
 
               <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
@@ -1408,7 +1401,7 @@
       <div class="row justify-content-center mb-4">
         <div class="col-md-7 text-center">
           <h2 class="mb-1">Some of our users</h2>
-          <h5 class="lead text-muted mb-3">Hear what our users have to say</h5>
+          <h3 class="lead text-muted mb-3">Hear what our users have to say</h3>
         </div>
       </div>
 
@@ -1425,9 +1418,9 @@
 
             <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
 
-            <img src="img/sections/team/1.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow" loading="lazy">
+            <img src="img/sections/team/1.jpg" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow" loading="lazy">
 
-            <h5 class="mb-0">John Doe</h5>
+            <h4 class="mb-0">John Doe</h4>
             <span class="small text-uppercase text-muted">Company Inc.</span>
           </div>
         </div>
@@ -1442,27 +1435,9 @@
             </svg>
 
             <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
-            <img src="img/sections/team/2.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow" loading="lazy">
+            <img src="img/sections/team/2.jpg" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow" loading="lazy">
 
-            <h5 class="mb-0">Jane Doe</h5>
-            <span class="small text-uppercase text-muted">Company Inc.</span>
-          </div>
-        </div>
-
-
-        <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="rounded testimonial">
-
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
-              <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
-              <path d="M5.09 12.3714H9.78C9.7 17.0414 8.78 17.8114 5.91 19.5114C5.58 19.7114 5.47 20.1314 5.67 20.4714C5.87 20.8014 6.29 20.9114 6.63 20.7114C10.01 18.7114 11.19 17.4914 11.19 11.6714V6.28141C11.19 4.57141 9.8 3.19141 8.1 3.19141H5.1C3.33 3.19141 2 4.52141 2 6.28141V9.28141C2 11.0414 3.33 12.3714 5.09 12.3714Z"></path>
-            </svg>
-
-            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
-
-            <img src="img/sections/team/3.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow" loading="lazy">
-
-            <h5 class="mb-0">John Doe</h5>
+            <h4 class="mb-0">Jane Doe</h4>
             <span class="small text-uppercase text-muted">Company Inc.</span>
           </div>
         </div>
@@ -1478,9 +1453,27 @@
 
             <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
 
-            <img src="img/sections/team/4.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow" loading="lazy">
+            <img src="img/sections/team/3.jpg" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow" loading="lazy">
 
-            <h5 class="mb-0">Jane Doe</h5>
+            <h4 class="mb-0">John Doe</h4>
+            <span class="small text-uppercase text-muted">Company Inc.</span>
+          </div>
+        </div>
+
+
+        <div class="col-xl-3 col-sm-6 mb-5">
+          <div class="rounded testimonial">
+
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
+              <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
+              <path d="M5.09 12.3714H9.78C9.7 17.0414 8.78 17.8114 5.91 19.5114C5.58 19.7114 5.47 20.1314 5.67 20.4714C5.87 20.8014 6.29 20.9114 6.63 20.7114C10.01 18.7114 11.19 17.4914 11.19 11.6714V6.28141C11.19 4.57141 9.8 3.19141 8.1 3.19141H5.1C3.33 3.19141 2 4.52141 2 6.28141V9.28141C2 11.0414 3.33 12.3714 5.09 12.3714Z"></path>
+            </svg>
+
+            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
+
+            <img src="img/sections/team/4.jpg" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow" loading="lazy">
+
+            <h4 class="mb-0">Jane Doe</h4>
             <span class="small text-uppercase text-muted">Company Inc.</span>
           </div>
         </div>
@@ -1501,7 +1494,7 @@
         <div class="col-md-4">
           <div class="price-col shadow">
             <div class="img">
-              <img src="img/illustrations.co/104-dumbbell.svg" loading="lazy" class="img-fluid" />
+              <img src="img/illustrations.co/104-dumbbell.svg" alt="104-dumbbell" loading="lazy" class="img-fluid" />
             </div>
             <div class="text-center p-4">
               <span class="excerpt d-block">Personal</span>
@@ -1531,7 +1524,7 @@
         <div class="col-md-4">
           <div class="price-col shadow">
             <div class="img">
-              <img src="img/illustrations.co/107-healthy.svg" loading="lazy" class="img-fluid" />
+              <img src="img/illustrations.co/107-healthy.svg" alt="107-healthy" loading="lazy" class="img-fluid" />
             </div>
             <div class="text-center p-4">
               <span class="excerpt d-block">Business</span>
@@ -1561,7 +1554,7 @@
         <div class="col-md-4">
           <div class="price-col shadow">
             <div class="img">
-              <img src="img/illustrations.co/126-namaste-no-hand-shake.svg" loading="lazy" class="img-fluid" />
+              <img src="img/illustrations.co/126-namaste-no-hand-shake.svg" alt="126-namaste-no-hand-shake" loading="lazy" class="img-fluid" />
             </div>
             <div class="text-center p-4">
               <span class="excerpt d-block">Ultimate</span>
@@ -1628,7 +1621,7 @@
               </div>
               <!-- Hover Content -->
               <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-              <a href="#" data-v-post-url>
+              <a href="#" title="Read more" role="button" data-v-post-url>
                 <span>Read more</span>
                 <i class="la la-angle-right"></i>
               </a>
@@ -1657,7 +1650,7 @@
               </div>
               <!-- Hover Content -->
               <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-              <a href="#" data-v-post-url>
+              <a href="#" title="Read more" role="button" data-v-post-url>
                 <span>Read more</span>
                 <i class="la la-angle-right"></i>
               </a>
@@ -1686,7 +1679,7 @@
               </div>
               <!-- Hover Content -->
               <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-              <a href="#" data-v-post-url>
+              <a href="#" title="Read more" role="button" data-v-post-url>
                 <span>Read more</span>
                 <i class="la la-angle-right"></i>
               </a>
@@ -1707,7 +1700,7 @@
     <div class="container-fluid g-0">
 
       <div style="height:300px" data-component-maps>
-        <iframe loading="lazy" frameborder="0" src="https://maps.google.com/maps?q=Bucharest&z=15&t=q&key=&output=embed" width="100%" height="100%" style="width:100%;height:100%;left:0px">
+        <iframe loading="lazy" frameborder="0" title="map" src="https://maps.google.com/maps?q=Bucharest&z=15&t=q&key=&output=embed" width="100%" height="100%" style="width:100%;height:100%;left:0px">
         </iframe>
       </div>
 
@@ -1868,15 +1861,15 @@
         <div class="col-md-3">
 
           <div data-v-component-site>
-            <img src="img/logo-white.png" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-            <img src="img/logo.png" loading="lazy" class="logo-default" data-v-site-logo>
+            <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+            <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
           </div>
 
         </div>
 
 
         <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
-          <h6 data-v-menu-item-name>Vvveb</h6>
+          <div class="h6" data-v-menu-item-name>Vvveb</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
               <a href="https://themes.vvveb.com/" data-v-menu-item-url>
@@ -1892,7 +1885,7 @@
         </div>
 
         <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
-          <h6 data-v-menu-item-name>Resources</h6>
+          <div class="h6" data-v-menu-item-name>Resources</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
               <a href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
@@ -1908,7 +1901,7 @@
         </div>
 
         <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
-          <h6 data-v-menu-item-name>Contact</h6>
+          <div class="h6" data-v-menu-item-name>Contact</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
               <a href="" target="contact.html">Contact</a>
@@ -1973,6 +1966,17 @@
   <script id="app-js" src="../../js/app.js"></script>
 
   <!-- Animation -->
+
+  <link rel="stylesheet" href="js/aos.css">
+  <noscript>
+    <style type="text/css">
+      [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+      }
+    </style>
+  </noscript>
+
   <script src="js/aos.js"></script>
   <script>
 AOS.init();

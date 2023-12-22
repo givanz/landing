@@ -385,7 +385,7 @@ input.form-control[type=number] {
     font-weight:normal;
     text-decoration:line-through;
     font-size:12px;
-    color:#888;
+    color:var(--bs-secondary);
     margin:0px 5px;
 }  
 

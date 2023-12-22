@@ -2,7 +2,7 @@
   font-family: $la-font-name-lab;
   font-style: normal;
   font-weight: normal;
-  font-display: auto;
+  font-display: swap;
   src: url('#{$la-font-path}/la-brands-400.eot');
   src: url("#{$la-font-path}/la-brands-400.eot?#iefix") format("embedded-opentype"),
   url("#{$la-font-path}/la-brands-400.woff2") format("woff2"),
@@ -12,15 +12,16 @@
 }
 
 .#{$la-css-prefix-lab} {
-  font-family: $la-font-name-lab;
+  font-family: $la-font-name-lab, monospace;
   font-weight: 400;
+  line-height:1;
 }
 
 @font-face {
   font-family: $la-font-name-lar;
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: url('#{$la-font-path}/la-regular-400.eot');
   src: url("#{$la-font-path}/la-regular-400.eot?#iefix") format("embedded-opentype"),
   url("#{$la-font-path}/la-regular-400.woff2") format("woff2"),
@@ -30,15 +31,16 @@
 }
 
 .#{$la-css-prefix-lar} {
-  font-family: $la-font-name-lar;
+  font-family: $la-font-name-lar, monospace;
   font-weight: 400;
+  line-height:1;
 }
 
 @font-face {
   font-family: $la-font-name-las;
   font-style: normal;
-  font-weight: 900;
-  font-display: auto;
+  font-weight: 410;
+  font-display: swap;
   src: url('#{$la-font-path}/la-solid-900.eot');
   src: url("#{$la-font-path}/la-solid-900.eot?#iefix") format("embedded-opentype"),
   url("#{$la-font-path}/la-solid-900.woff2") format("woff2"),
@@ -48,6 +50,7 @@
 }
 
 .#{$la-css-prefix-las} {
-  font-family: $la-font-name-las;
-  font-weight: 900;
+  font-family: $la-font-name-las, monospace;
+  font-weight: 410;
+  line-height:1;
 }

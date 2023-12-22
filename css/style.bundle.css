@@ -107,7 +107,7 @@ footer.footer-1 {
 		top: 0;	
 	}
 	*/ }
-  footer.footer-1 h6, footer.footer-1 .h6 {
+  footer.footer-1 .h6 {
     margin: 1rem 0rem;
     font-weight: 500;
     color: var(--bs-light-text-emphasis); }
@@ -115,8 +115,11 @@ footer.footer-1 {
     display: block;
     font-size: 90%;
     text-decoration: none;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.55rem;
     color: var(--bs-secondary-color); }
+    @media (max-width: 575.98px) {
+      footer.footer-1 nav a {
+        margin-bottom: 1rem; } }
   footer.footer-1 img {
     margin: 2rem auto; }
   footer.footer-1 .footer-copyright {
@@ -1800,8 +1803,6 @@ body > section, body > footer, body > header {
 				background: rgba(0,0,0, 0.4);
 			}
 		}*/ }
-  body > section.bg-alternate:nth-child(even), body > footer.bg-alternate:nth-child(even), body > header.bg-alternate:nth-child(even) {
-    background-color: rgba(var(--bs-body-color-rgb), 0.05); }
   body > section .background-container, body > section .overlay, body > footer .background-container, body > footer .overlay, body > header .background-container, body > header .overlay {
     position: absolute;
     top: 0;
@@ -1896,11 +1897,8 @@ div.sticky .logo-dark {
 
 .showcase-1, .showcase-2 {
   padding: 3rem 0; }
-  .showcase-1 .container, .showcase-2 .container {
-    margin: 0 auto;
-    padding: 0; }
-    .showcase-1 .container > .row, .showcase-2 .container > .row {
-      --bs-gutter-x: 5rem; }
+  .showcase-1 .container > .row, .showcase-2 .container > .row {
+    --bs-gutter-x: 5rem; }
   .showcase-1 .col-md-6, .showcase-2 .col-md-6 {
     padding: 0rem 1.4rem; }
     .showcase-1 .col-md-6 > div, .showcase-2 .col-md-6 > div {
@@ -2004,7 +2002,7 @@ div.sticky .logo-dark {
     text-decoration: none; }
   .showcase-3 p {
     font-size: 1rem;
-    color: #888;
+    color: var(--bs-secondary);
     line-height: 1.9rem;
     padding: 0.5rem 1rem 0;
     margin: 0; }
@@ -2433,12 +2431,9 @@ div.sticky .logo-dark {
   font-weight: 300;
   padding: 3rem; }
 
-.testimonials-1 h5, .testimonials-1 .h5 {
+.testimonials-1 h3, .testimonials-1 .h3 {
   line-height: 22px;
   font-size: 18px; }
-
-.testimonials-1 .font-13 {
-  font-size: 13px; }
 
 .testimonials-1 .subtitle {
   line-height: 24px; }
@@ -2523,16 +2518,6 @@ div.sticky .logo-dark {
 .testimonials-3 .h6 {
   color: #3e4555; }
 
-.testimonials-3 .font-weight-medium {
-  font-weight: 500; }
-
-.testimonials-3 .bg-body-secondary {
-  background-color: #f4f8fa !important; }
-
-.testimonials-3 .subtitle {
-  color: #8d97ad;
-  line-height: 24px; }
-
 .testimonials-3 .testimonial .card-body {
   padding: 40px; }
 
@@ -2550,9 +2535,6 @@ div.sticky .logo-dark {
 .testimonials-3 .card.card-shadow {
   -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
   box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1); }
-
-.testimonials-3 .font-10 {
-  font-size: 10px; }
 
 .testimonials-3 .text-success {
   color: #2cdd9b !important; }
@@ -11996,8 +11978,6 @@ body > section, body > footer, body > header {
 				background: rgba(0,0,0, 0.4);
 			}
 		}*/ }
-  body > section.bg-alternate:nth-child(even), body > footer.bg-alternate:nth-child(even), body > header.bg-alternate:nth-child(even) {
-    background-color: rgba(var(--bs-body-color-rgb), 0.05); }
   body > section .background-container, body > section .overlay, body > footer .background-container, body > footer .overlay, body > header .background-container, body > header .overlay {
     position: absolute;
     top: 0;
@@ -12376,7 +12356,8 @@ h2, .h2 {
   .top-nav ul, .top-nav ol {
     margin: 0; }
   .top-nav a {
-    color: rgba(var(--bs-body-color-rgb), 0.8); }
+    color: rgba(var(--bs-body-color-rgb), 0.8);
+    display: block; }
   .top-nav i {
     color: rgba(var(--bs-body-color-rgb), 0.8); }
 
@@ -12527,37 +12508,40 @@ div.sticky .logo-dark {
   font-family: Line Awesome Brands;
   font-style: normal;
   font-weight: normal;
-  font-display: auto;
+  font-display: swap;
   src: url("../fonts/line-awesome/la-brands-400.eot");
   src: url("../fonts/line-awesome/la-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/line-awesome/la-brands-400.woff2") format("woff2"), url("../fonts/line-awesome/la-brands-400.woff") format("woff"), url("../fonts/line-awesome/la-brands-400.ttf") format("truetype"), url("../fonts/line-awesome/la-brands-400.svg#lineawesome") format("svg"); }
 
 .lab {
-  font-family: Line Awesome Brands;
-  font-weight: 400; }
+  font-family: Line Awesome Brands, monospace;
+  font-weight: 400;
+  line-height: 1; }
 
 @font-face {
   font-family: Line Awesome Free;
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: swap;
   src: url("../fonts/line-awesome/la-regular-400.eot");
   src: url("../fonts/line-awesome/la-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/line-awesome/la-regular-400.woff2") format("woff2"), url("../fonts/line-awesome/la-regular-400.woff") format("woff"), url("../fonts/line-awesome/la-regular-400.ttf") format("truetype"), url("../fonts/line-awesome/la-regular-400.svg#lineawesome") format("svg"); }
 
 .la {
-  font-family: Line Awesome Free;
-  font-weight: 400; }
+  font-family: Line Awesome Free, monospace;
+  font-weight: 400;
+  line-height: 1; }
 
 @font-face {
   font-family: Line Awesome Free;
   font-style: normal;
-  font-weight: 900;
-  font-display: auto;
+  font-weight: 410;
+  font-display: swap;
   src: url("../fonts/line-awesome/la-solid-900.eot");
   src: url("../fonts/line-awesome/la-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/line-awesome/la-solid-900.woff2") format("woff2"), url("../fonts/line-awesome/la-solid-900.woff") format("woff"), url("../fonts/line-awesome/la-solid-900.ttf") format("truetype"), url("../fonts/line-awesome/la-solid-900.svg#lineawesome") format("svg"); }
 
 .la {
-  font-family: Line Awesome Free;
-  font-weight: 900; }
+  font-family: Line Awesome Free, monospace;
+  font-weight: 410;
+  line-height: 1; }
 
 .la-lg {
   font-size: 1.33333em;
@@ -16953,7 +16937,7 @@ i.la {
 
 /* Variable fonts usage:*/
 :root {
-  --bs-font-sans-serif: "Inter",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif; }
+  --bs-font-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif; }
 
 @supports (font-variation-settings: normal) {
   :root {
@@ -17446,9 +17430,9 @@ blockquote {
 .inner-page-hero {
   position: relative;
   max-height: 150px;
-  height: 150px;
+  height: 120px;
   overflow: hidden;
-  background-color: var(--bs-light-bg-subtle);
+  background-color: transparent;
   border-bottom: 1px solid rgba(var(--bs-body-color-rgb), 0.07); }
   .inner-page-hero .title-container {
     position: absolute;
@@ -17476,6 +17460,8 @@ blockquote {
       z-index: 1;
       margin: 0;
       font-weight: normal; }
+  .inner-page-hero .breadcrumb {
+    margin: 0; }
   .inner-page-hero img {
     width: 100%;
     top: -30vw;
@@ -17665,9 +17651,9 @@ ul.tags {
             letter-spacing: 0.75px;
             font-weight: 600;
         }*/ }
-    .single-product-wrapper .product-content h6, .single-product-wrapper .product-content .h6 {
+    .single-product-wrapper .product-content a span {
       color: var(--bs-body-color);
-      font-weight: normal;
+      font-weight: 600;
       margin-bottom: 0.2rem; }
     .single-product-wrapper .product-content p {
       margin-bottom: 0;
@@ -18077,7 +18063,7 @@ input.form-control[type=number] {
   font-weight: normal;
   text-decoration: line-through;
   font-size: 12px;
-  color: #888;
+  color: var(--bs-secondary);
   margin: 0px 5px; }
 
 .product .price .price-new {

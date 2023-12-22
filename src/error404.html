@@ -3,33 +3,58 @@
 <body class="error-404">
 	
 	@@include('./_includes/header.html')
+
+	<section class="inner-page-hero">
+		 <div>
+			<div class="title-container">
+				<div class="container">
+					<h1>Not found</h1>
+				</div>
+			</div>
+		   
+			
+		</div>
+	</section>
+	
 	
         <div class="container">
             <div class="row">
                 <div class="col-12 p-4 m-4">
 					
-					<h2 class="heading1 text-center">Page not found!</h2>
-					<h4 class="text-muted text-center">(error 404)</h4>
-					<br/>
+					<div class="text-center">
+						<h2>Page not found!</h2>
+						<h4 class="text-muted">(error 404)</h4>
 
-						<div data-debug class="my-3">
+						<p>The page you are looking for has been moved or it does not exist</p>
+						
+						<a href="/" class="btn btn-primary"><span>Go to homepage</span><i class="la la-arrow-right ms-2"></i></a>
+					
+					</div>
 
-							<div class="card">
-								<div class="card-body">
-									<p data-v-exception-message style="white-space: pre-wrap;">Message</strong>
-								</div>		
+					<div data-debug class="my-3">
+						<h5>Debug information</h5>
+
+						<div class="card">
+							<div class="card-body">
+								<p data-v-exception-message style="white-space: pre-wrap;">Message</strong>
 							</div>		
+						</div>		
 
-							<div class="card my-2">
-								<div class="card-body">
-									<p data-v-exception-file>File</strong> on line <strong data-v-exception-line_no>1</strong></p>
-								</div>
+						<div class="card my-2" data-v-if="exception">
+							<div class="card-body">
+								<p data-v-exception-file>File</strong> on line <strong data-v-exception-line_no>1</strong></p>
 							</div>
-								
 						</div>
-			   
-					
-					
+						
+						<div class="alert alert-warning d-flex align-items-center alert-dismissible mt-4" role="alert">
+						  <i class="la la-exclamation-triangle la-lg me-2"></i>
+						  <div>
+							If this is not a development website disable debug from <strong>env.php</strong> in the site root folder.
+						  </div>
+						  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+						</div>
+
+					 </div>
                  </div>
             </div>
         </div>

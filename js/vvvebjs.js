@@ -12,4 +12,7 @@ $(window).on("vvveb.getHtml.before", function (e,doc) {
 	
 	//set theme color scheme to auto 
 	$("html[data-bs-theme]", doc).attr("data-bs-theme", "auto");
+	
+	//make sure not dropdown is saved as open
+	$(".dropdown-toggle.show, .dropdown-menu.show", doc).removeClass("show");
 });

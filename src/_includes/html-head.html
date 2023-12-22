@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 	
 	<base href="@@path">
     
@@ -15,7 +15,8 @@
 		@@include('meta/default.html')
 	}
 
-	<link id="landing-css" href="css/style.bundle.css" rel="stylesheet">
+	<link id="landing-css" href="css/style.bundle.css" rel="stylesheet" media="screen">
+	
 	@@if (typeof css !== "undefined")  {
 		@@for (var i = 0; i < css.length; i++) {
 			<link id="style-css" href="`+css[i]+`" rel="stylesheet">
@@ -42,14 +43,4 @@
 	<link rel="manifest" href="/manifest.webmanifest">
 	
 	<link rel="alternate" hreflang="" href=""/>
-	
-	<link rel="stylesheet" href="js/aos.css">	
-	<noscript>
-		<style type="text/css">
-			[data-aos] {
-				opacity: 1 !important;
-				transform: translate(0) scale(1) !important;
-			}
-		</style>
-	</noscript>
 </head>
