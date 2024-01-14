@@ -1,3 +1,5 @@
+$line-height-base: 1.7;
+
 @font-face {
   font-family: $la-font-name-lab;
   font-style: normal;
@@ -14,7 +16,7 @@
 .#{$la-css-prefix-lab} {
   font-family: $la-font-name-lab, monospace;
   font-weight: 400;
-  line-height:1;
+  line-height:$line-height-base;
 }
 
 @font-face {
@@ -33,7 +35,7 @@
 .#{$la-css-prefix-lar} {
   font-family: $la-font-name-lar, monospace;
   font-weight: 400;
-  line-height:1;
+  line-height:$line-height-base;
 }
 
 @font-face {
@@ -52,5 +54,5 @@
 .#{$la-css-prefix-las} {
   font-family: $la-font-name-las, monospace;
   font-weight: 410;
-  line-height:1;
+  line-height:$line-height-base;
 }

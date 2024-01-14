@@ -13,7 +13,12 @@
 			
 				<div id="product-gallery" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-v-product-images>
 				  <div class="carousel-inner">
-					<div class="carousel-item" data-v-product-image data-v-class-if-active="i = 0" >
+					<div class="carousel-item active">
+						<div class="zoom" data-v-product-main-image-background-image>
+							<img src="img/demo/product.jpg" loading="lazy" class="d-block w-100" alt="" data-v-product-main-image>
+						</div>
+					</div>					
+					<div class="carousel-item" data-v-product-image>
 						<div class="zoom" data-v-product-image-background-image>
 							<img src="img/demo/product.jpg" loading="lazy" class="d-block w-100" alt="" data-v-product-image-src>
 						</div>
@@ -37,13 +42,16 @@
 			  <div class="carousel">
 			  
 				<div class="carousel-thumbs" data-v-product-images>
-					<button type="button" data-bs-target="#product-gallery" class="img-thumbnail" data-bs-slide-to="0" data-v-product-image>
-						<img src="" alt="" class="d-block w-100" loading="lazy" data-v-product-image-src>
+					<button type="button" data-bs-target="#product-gallery" class="img-thumbnail" data-bs-slide-to="0">
+						<img src="" alt="" class="d-block w-100" loading="lazy" data-v-product-main-image>
 					</button>
 					<button type="button" data-bs-target="#product-gallery" class="img-thumbnail" data-bs-slide-to="1" data-v-product-image>
 						<img src="" alt="" class="d-block w-100" loading="lazy" data-v-product-image-src>
 					</button>
 					<button type="button" data-bs-target="#product-gallery" class="img-thumbnail" data-bs-slide-to="2" data-v-product-image>
+						<img src="" alt="" class="d-block w-100" loading="lazy" data-v-product-image-src>
+					</button>
+					<button type="button" data-bs-target="#product-gallery" class="img-thumbnail" data-bs-slide-to="3" data-v-product-image>
 						<img src="" alt="" class="d-block w-100" loading="lazy" data-v-product-image-src>
 					</button>
 				</div>

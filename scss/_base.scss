@@ -551,3 +551,47 @@ audio, video {
     box-shadow: 0px 3px 21px 5px rgba(var(--bs-body-color-rgb), 0.03), 0px 3px 3px 0px rgba(var(--bs-body-color-rgb), 0.03), rgba(29, 48, 61, 0.01) 0px 16px 40px 0px;
     --bs-card-border-color: rgba(var(--bs-body-color-rgb), 0.15);
 }
+
+
+.flip-box {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box.enabled:hover .flip-box-inner,
+.flip-box.enabled.back .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  z-index:1;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-box-back {
+  z-index:2;
+  transform: rotateY(180deg);
+}
+
+.flip-box.enabled.vertical:hover .flip-box-inner,
+.flip-box.enabled.vertical.back .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box.vertical .flip-box-back {
+  transform: rotateX(180deg);
+}
