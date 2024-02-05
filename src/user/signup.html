@@ -59,17 +59,17 @@
 									
 									<div class="mb-3 input-group">
 										<span class="input-group-text"> <i class="la la-lock"></i> </span>
-										  <input type="password" minlength="4" autocorrect="off" class="form-control border-start-0" placeholder="Password"  id="password" name="password" autocomplete="new-password" value="" aria-label="Password" required>
+										  <input type="password" minlength="6" autocorrect="off" class="form-control border-start-0" placeholder="Password"  id="password" name="password" autocomplete="new-password" value="" aria-label="Password" required>
 										  <div class="input-group-append">
-											<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, password)"><i class="la la-eye-slash"></i></button>
+											<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'password')"><i class="la la-eye-slash"></i></button>
 										  </div>
 									</div>
 									
 									<div class="mb-3 input-group">
 										<span class="input-group-text"> <i class="la la-lock"></i> </span>
-										  <input type="password" minlength="4" autocorrect="off" autocomplete="new-password" class="form-control border-start-0" placeholder="Repeat password"  id="confirm_password" name="confirm_password" value="" aria-label="Repeat Password" required>
+										  <input type="password" minlength="6" autocorrect="off" autocomplete="new-password" class="form-control border-start-0" placeholder="Repeat password"  id="confirm_password" name="confirm_password" value="" aria-label="Repeat Password" required>
 										  <div class="input-group-append">
-											<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, confirm_password)"><i class="la la-eye-slash"></i></button>
+											<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'confirm_password')"><i class="la la-eye-slash"></i></button>
 										  </div>
 									</div>          
 
@@ -106,8 +106,8 @@
 @@include('../_includes/footer-scripts.html')
 
 <script>
-function togglePasswordInput(element, input) {
-	var password = input;
+function togglePasswordInput(element, id) {
+	var password = document.getElementById(id);
 	if (password.type == "password") {
 		password.type = "text"; 
 		$("i", element).addClass("la-eye").removeClass("la-eye-slash");

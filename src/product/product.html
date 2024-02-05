@@ -98,6 +98,7 @@
 					<a href="#reviews" data-v-if="product.reviews" class="ms-2" type="button" data-bs-target="#reviews">(<span data-v-product-reviews>no</span> reviews)</a>
 				</div>
 
+				
 				<p class="product-price" data-v-if="product.promotion">
 					<span class="price" data-v-product-promotion_tax_formatted>$49.00</span>
 
@@ -111,6 +112,8 @@
 					<span class="price" data-v-product-price_tax_formatted>$49.00</span>
 				</p>
 				
+				<span class="price muted small"><span>Excluding taxes:</span><span data-v-product-price_formatted>$49.00</span></span>
+
 				<!--
 				<p class="product-price fs-3">
 					<span class="old-price text-muted text-small align-middle text-decoration-line-through" data-v-product-price-discount>$65.00</span>

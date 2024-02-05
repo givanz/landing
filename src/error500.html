@@ -32,21 +32,21 @@
 					
 					<div data-debug>
 						<h6>Error</h6>		
-						<div class="card">
+						<div class="card mb-3">
 							<div class="card-body">
 								<p data-v-exception-message style="white-space: pre-wrap;">Message</p>
 							</div>		
 						</div>		
 
 						
-						<div class="card" data-v-if="exception.file">
+						<div class="card mb-3" data-v-if="this.file">
 							<h6 class="card-header">File</h6>
 							<div class="card-body">
-								<p data-v-exception-file>File</strong> on line <strong data-v-exception-line_no>1</p>
+								<span data-v-exception-file>File</span> on line <strong data-v-exception-line_no>1</strong>
 							</div>
 						</div>
 							
-						<div class="card" data-v-if="exception.line">
+						<div class="card mb-3" data-v-if="this.line">
 							<h6 class="card-header">Code</h6>
 							<div class="card-body" data-v-exception-lines>
 								<p data-v-exception-line style="white-space: pre-wrap;">line</p>
@@ -59,7 +59,7 @@
 							</div>						
 						</div -->						
 
-						<div class="card" data-v-if="exception.trace">
+						<div class="card mb-3" data-v-if="this.trace">
 							<h6 class="card-header">Trace</h6>
 							<div class="card-body">
 								<p class="card-body" data-v-exception-trace style="white-space: pre-wrap;">Trace</p>

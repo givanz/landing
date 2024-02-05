@@ -44,7 +44,7 @@
  										  <span class="input-group-text"> <i class="la la-lock"></i> </span>
 										  <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password"  id="password" name="password"  value="" aria-label="Password" required>
 										  <div class="input-group-append">
-											<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this)"><i class="la la-eye-slash"></i></button>
+											<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'password')"><i class="la la-eye-slash"></i></button>
 										  </div>
 										</div>
 										
@@ -91,8 +91,8 @@
   	
 
 <script>
-function togglePasswordInput(element) {
-	var password = document.getElementById("password");
+function togglePasswordInput(element, id) {
+	var password = document.getElementById(id);
 	if (password.type == "password") {
 		password.type = "text"; 
 		$("i", element).addClass("la-eye").removeClass("la-eye-slash");

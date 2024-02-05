@@ -1,4 +1,4 @@
-<nav class="navigation-3 clearfix fixed-top transparent" title="navigation-3">
+<nav class="navigation-3 clearfix fixed-top transparent" title="navigation-3" data-v-copy-from="index.html,.navigation-3">
 
 	<div id="top" class="top-nav clearfix" data-bs-theme="dark">
 		<div class="container d-flex justify-content-between">
@@ -142,55 +142,7 @@
 				<span class="navbar-toggler-icon"></span>
 			  </button>
 
-			  <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
-				<ul class="navbar-nav ms-auto" data-v-menu-items>
-				  <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
-					
-					<a class="nav-link" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
-						<span data-v-menu-item-name>Resources</span>
-					</a>
-					
-					<div class="dropdown-menu" data-v-menu-item-recursive>
-					  <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
-						<a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url><span data-v-menu-item-name>User Documentation</span></a>
-					  </div> 
-					  <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
-						<a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url><span data-v-menu-item-name>Developer Documentation</span></a>
-					  </div> 
-					</div>
-				  </li>
-				  <li class="nav-item" data-v-menu-item>
-					<a class="nav-link" href="https://blog.vvveb.com"  data-v-menu-item-url><span data-v-menu-item-name>Blog</span></a>
-				  </li>
-				  <li class="nav-item" data-v-menu-item>
-					<a class="nav-link" href="https://www.vvveb.com/page/contact"  data-v-menu-item-url><span data-v-menu-item-name>Contact</span></a>
-				  </li>
-				  <li class="nav-item" data-v-menu-item>
-					<a class="nav-link" href="https://www.vvveb.com"  data-v-menu-item-url><span data-v-menu-item-name>About us</span></a>
-				  </li>
-				  <li class="nav-toggle">
-					@@include('../../_includes/user-dropdown.html')
-				  </li>
-				  <li class="nav-toggle">
-					@@include('../../_includes/cart-dropdown.html')
-				  </li>
-				</ul>
-				
-				<div class="search-area toggle-hover">
-					<form action="/search" method="get" data-v-action="/search">
-						<input type="hidden" name="route" value="search">
-						<div class="input-group">
-							<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
-							<button class="btn border-0" type="submit" title="Search">
-								<div class="la-flip-horizontal">
-									<i class="la la-search la-lg" aria-hidden="true"></i>
-								</div>
-							</button>
-						</div>			  
-					</form>
-				</div>
-
-			  </div>
+			  @@include('../../_includes/top-menu.html')
 			  
 			  <!--
 			  <div class="collapse navbar-collapse" id="navbar">

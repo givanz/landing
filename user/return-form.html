@@ -134,7 +134,7 @@
 
 <body class="signup">
 
-  <nav class="navigation-1 clearfix">
+  <nav class="navigation-1 clearfix" data-v-copy-from="blank.html,.navigation-1">
 
     <div id="top" class="top-nav clearfix">
       <div class="container d-flex justify-content-between">
@@ -280,29 +280,68 @@
 
         <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
           <ul class="navbar-nav ms-auto" data-v-menu-items>
-            <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
+            <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-              <a class="nav-link" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
-                <span data-v-menu-item-name>Resources</span>
+              <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
+                <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
+                <span data-v-menu-item-content>
+                  <p>
+                    <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
+                  </p>
+                </span>
               </a>
 
               <div class="dropdown-menu" data-v-menu-item-recursive>
-                <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                   <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                    <span data-v-menu-item-name>User Documentation</span>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
+                    <span data-v-menu-item-content>
+                      <div class="row">
+                        <div class="col-6 align-self-center">
+                          <img src="/media/posts/4.jpg" alt="Post" width="250" loading="lazy" class="rounded">
+                        </div>
+                        <div class="col-6">
+                          <h4>Features</h4>
+                          <p class="text-muted">Just a few mentions, but there is more</p>
+                          <ul class="list-unstyled">
+                            <li class="text-primary">Page builder</li>
+                            <li class="text-primary">Mega menu</li>
+                            <li class="text-primary">Multi language</li>
+                            <li class="text-primary">Advanced SEO</li>
+                            <li class="text-primary">Ecommerce</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </span>
                   </a>
                 </div>
-                <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                   <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                    <span data-v-menu-item-name>Developer Documentation</span>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
+                    <span data-v-menu-item-content></span>
                   </a>
                 </div>
               </div>
             </li>
-            <li class="nav-item" data-v-menu-item>
-              <a class="nav-link" href="https://blog.vvveb.com" data-v-menu-item-url>
+            <li class="nav-item dropdown" data-v-menu-item>
+              <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-v-menu-item-url>
                 <span data-v-menu-item-name>Blog</span>
               </a>
+
+              <div class="dropdown-menu" data-v-menu-item-recursive>
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'">User Documentation</span>
+                    <span data-v-menu-item-content></span>
+                  </a>
+                </div>
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
+                    <span data-v-menu-item-content></span>
+                  </a>
+                </div>
+              </div>
             </li>
             <li class="nav-item" data-v-menu-item>
               <a class="nav-link" href="https://www.vvveb.com/page/contact" data-v-menu-item-url>
@@ -666,6 +705,7 @@
           </div>
 
         </div>
+
       </div>
     </div>
   </nav>
@@ -942,7 +982,7 @@
     </div>
 
   </main>
-  <footer class="footer-1" title="footer-1">
+  <footer class="footer-1" title="footer-1" data-v-copy-from="index.html,.footer-1">
     <div class="container" data-v-component-menu="footer" data-v-slug="main-footer">
 
       <div class="row" data-v-menu-items>
