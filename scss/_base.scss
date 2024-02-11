@@ -153,12 +153,9 @@ h2 {
 label {
 	
 }
-.btn-primary {
-	//color: #fff;
-	//background-color: #007bff;
-	//border-color: #007bff;
-	
-	//padding: 1rem 4rem;
+
+.btn-shadow {
+		box-shadow: 0 4px 4px rgba(var(--bs-body-color-rgb), 0.08), 0 1px 2px rgba(var(--bs-body-color-rgb), 0.2), inset 0 6px 12px rgba(var(--bs-body-bg-rgb), 0.12), inset 0 1px 1px rgba(var(--bs-body-bg-rgb), 0.2);
 }
 
 @media screen and (max-width: 767px) {
@@ -332,8 +329,9 @@ label {
 	--bs-navbar-color:rgba(var(--bs-emphasis-color-rgb), 0.8);
 }
 */
-.navbar .navbar-nav a.nav-link, .navbar .navbar-nav a.nav-link span {
+.navbar .navbar-nav a.nav-link, .navbar .navbar-nav a.nav-link span:last-child {
 	display:inline-block;
+    white-space: nowrap;	
 }
 
 .navbar-nav a.nav-link span > p:last-child {
@@ -616,3 +614,86 @@ audio, video {
 		display:inline-block;
 	}
 }
+
+
+
+
+
+.c-compare {
+  --h: 9;
+  --m: 1rem 0;
+  --w: 16;
+  --thumb-bgc: red;
+  --thumb-bgc-focus: hsla(0, 70%, 70%, 0.7);
+  --thumb-w: 1rem;
+
+  margin: var(--m);
+  position: relative;
+}
+.c-compare::after {
+  content: "";
+  display: block;
+  padding-bottom: calc((var(--h) / var(--w)) * 100%);
+}
+.c-compare__left,
+.c-compare__right {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+.c-compare__left {
+  clip-path: polygon(0% 0%, var(--value) 0%, var(--value) 100%, 0% 100%);
+}
+.c-compare__right {
+  clip-path: polygon(100% 0%, var(--value) 0%, var(--value) 100%, 100% 100%);
+}
+.c-compare__range {
+  background-color: transparent;
+  box-sizing: border-box;
+  font-family: inherit;
+  height: 100%;
+  margin: 0;
+  outline: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.c-compare__range::-moz-range-thumb {
+  background-color: var(--thumb-bgc);
+  cursor: ew-resize;
+  height: 100%;  
+  width: var(--thumb-w);
+}
+.c-compare__range::-webkit-slider-thumb {
+  background-color: var(--thumb-bgc);
+  cursor: ew-resize;
+  height: 100%;  
+  width: var(--thumb-w);
+}
+.c-compare__range:focus::-webkit-slider-thumb {
+  background-color: var(--thumb-bgc-focus);
+  box-shadow: 0 0 0 3px var(--thumb-bgc);
+}
+.c-compare__range:focus::-moz-range-thumb {
+  background-color: var(--thumb-bgc-focus);
+  box-shadow: 0 0 0 3px var(--thumb-bgc);
+}
+.c-compare__range::-moz-range-track {
+  background: transparent;
+  background-size: 100%;
+  box-sizing: border-box;
+}
+.c-compare__range::-webkit-slider-runnable-track {
+  background: transparent;
+  background-size: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+.c-compare__range,
+.c-compare__range::-webkit-slider-runnable-track,
+.c-compare__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+}
+

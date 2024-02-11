@@ -123,7 +123,7 @@
     }
 
     .hero-3 {
-      //height:80vh;		//background-position:bottom center;	}	.hero-3 h1.heading {		font-size:56px;		line-height:84px;	}	.showcase-3 {		margin-top:-200px;		z-index:3;	}	.showcase-3 .feature {	}	.showcase .showcase-img {		min-height: 30rem;		background-size: cover;	}
+      //height:80vh;		//background-position:bottom center;	}	.showcase-3 {		margin-top:-200px;		z-index:3;	}
   </style>
 
 
@@ -141,29 +141,30 @@
 
 
 <body class="home">
-  <nav class="navigation-3 clearfix fixed-top transparent" title="navigation-3" data-v-copy-from="index.html,.navigation-3">
+  <nav class="navigation-3 clearfix fixed-top transparent" title="navigation-3" data-v-save-global="index.html,.navigation-3">
 
     <div id="top" class="top-nav clearfix" data-bs-theme="dark">
-      <div class="container d-flex justify-content-between">
-        <div class="nav">
-          <ul class="list-inline" data-v-component-site>
-            <li class="list-inline-item" data-v-if="site.phone-number">
-              <a href="tel:5511112377" class="p-2 p-md-0" title="Phone" data-v-site-phone-number>
-                <i class="la la-phone"></i>
-                <span class=" text-muted" data-v-site-phone-number>+55 (111) 123 777</span>
-              </a>
-            </li>
-            <li class="list-inline-item" class="p-2 p-md-0" data-v-if="site.contact-email">
-              <a href="mailto:contact@mysite.com" title="Email" data-v-site-contact-email>
-                <i class="la la-envelope"></i>
-                <span class=" text-muted" data-v-site-contact-email>contact@mysite.com</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="nav">
-          <ul class="list-inline">
-            <!--
+      <div class="container">
+        <div class="d-flex justify-content-between  flex-md-row d-flex flex-column flex-md-row">
+          <div class="nav">
+            <ul class="list-inline" data-v-component-site>
+              <li class="list-inline-item" data-v-if="site.phone-number">
+                <a href="tel:5511112377" class="p-2 p-md-0" title="Phone" data-v-site-phone-number>
+                  <i class="la la-phone"></i>
+                  <span class=" text-muted" data-v-site-phone-number>+55 (111) 123 777</span>
+                </a>
+              </li>
+              <li class="list-inline-item" class="p-2 p-md-0" data-v-if="site.contact-email">
+                <a href="mailto:contact@mysite.com" title="Email" data-v-site-contact-email>
+                  <i class="la la-envelope"></i>
+                  <span class=" text-muted" data-v-site-contact-email>contact@mysite.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav">
+            <ul class="list-inline">
+              <!--
 					<li class="list-inline-item"><a href="#" id="wishlist-total" title="Wish List (0)"><i class="la la-heart"></i> <span class="">Favorites</span></a></li>
 					<li class="list-inline-item"><a href="#" title="Checkout"><i class="la la-share"></i> <span class="">Checkout</span></a></li>
 					<li class="list-inline-item">
@@ -176,94 +177,95 @@
 						</div>
 					</li>
 					-->
-            <li class="list-inline-item">
-              <div data-v-component-currency>
-                <form method="post" enctype="multipart/form-data" id="form-currency">
+              <li class="list-inline-item">
+                <div data-v-component-currency>
+                  <form method="post" enctype="multipart/form-data" id="form-currency">
 
-                  <a class="dropdown-toggle p-2 p-md-0" data-bs-toggle="dropdown" role="button" title="Currency" aria-expanded="false">
-                    <!-- <i class="la la-dollar-sign me-1"></i> -->
-                    <span class="" data-v-currency-info-name>USD</span>
-                  </a>
+                    <a class="dropdown-toggle p-2 p-md-0" data-bs-toggle="dropdown" role="button" title="Currency" aria-expanded="false">
+                      <!-- <i class="la la-dollar-sign me-1"></i> -->
+                      <span class="" data-v-currency-info-name>USD</span>
+                    </a>
 
 
-                  <div class="dropdown-menu dropdown-menu-end">
+                    <div class="dropdown-menu dropdown-menu-end">
 
-                    <div data-v-currency>
-                      <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
-                        <span data-v-currency-sign_start>€</span>
-                        <span data-v-currency-sign_end>€</span>
-                        <span class="ms-1" data-v-currency-name>Euro</span>
-                      </button>
+                      <div data-v-currency>
+                        <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
+                          <span data-v-currency-sign_start>€</span>
+                          <span data-v-currency-sign_end>€</span>
+                          <span class="ms-1" data-v-currency-name>Euro</span>
+                        </button>
+                      </div>
+
+                      <div data-v-currency>
+                        <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
+                          <span data-v-currency-sign_start>£</span>
+                          <span data-v-currency-sign_end>£</span>
+                          <span class="ms-1" data-v-currency-name>Pound Sterling</span>
+                        </button>
+                      </div>
+
+                      <div data-v-currency>
+                        <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+                          <span data-v-currency-sign_start>$</span>
+                          <span data-v-currency-sign_end>$</span>
+                          <span class="ms-1" data-v-currency-name>US Dollar</span>
+                        </button>
+                      </div>
+
                     </div>
+                  </form>
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <div data-v-component-language>
+                  <form method="post" enctype="multipart/form-data" id="form-language">
 
-                    <div data-v-currency>
-                      <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
-                        <span data-v-currency-sign_start>£</span>
-                        <span data-v-currency-sign_end>£</span>
-                        <span class="ms-1" data-v-currency-name>Pound Sterling</span>
-                      </button>
-                    </div>
-
-                    <div data-v-currency>
-                      <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
-                        <span data-v-currency-sign_start>$</span>
-                        <span data-v-currency-sign_end>$</span>
-                        <span class="ms-1" data-v-currency-name>US Dollar</span>
-                      </button>
-                    </div>
-
-                  </div>
-                </form>
-              </div>
-            </li>
-            <li class="list-inline-item">
-              <div data-v-component-language>
-                <form method="post" enctype="multipart/form-data" id="form-language">
-
-                  <a class="dropdown-toggle p-2 p-md-0" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
-                    <!-- <i class="la la-flag me-1"></i> -->
-                    <!-- 
+                    <a class="dropdown-toggle p-2 p-md-0" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
+                      <!-- <i class="la la-flag me-1"></i> -->
+                      <!-- 
 									<img src="" data-v-language-info-img>
 									-->
-                    <span class="" data-v-language-info-name>English</span>
-                  </a>
+                      <span class="" data-v-language-info-name>English</span>
+                    </a>
 
 
-                  <div class="dropdown-menu dropdown-menu-end">
+                    <div class="dropdown-menu dropdown-menu-end">
 
-                    <div data-v-language>
-                      <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
-                        <!-- <i class="la la-flag la-lg me-2"></i> -->
-                        <img src="" loading="lazy" class="me-1" data-v-language-img>
+                      <div data-v-language>
+                        <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+                          <!-- <i class="la la-flag la-lg me-2"></i> -->
+                          <img src="" loading="lazy" class="me-1" data-v-language-img>
 
-                        <!-- <a href="" data-v-language-url> -->
-                        <span data-v-language-name>English</span>
-                        <!-- </a> -->
-                      </button>
+                          <!-- <a href="" data-v-language-url> -->
+                          <span data-v-language-name>English</span>
+                          <!-- </a> -->
+                        </button>
+                      </div>
+
+                      <div data-v-language>
+                        <button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
+                          <!-- <i class="la la-flag la-lg me-2"></i> -->
+                          <img src="" loading="lazy" class="me-1" data-v-language-img>
+                          <!-- <a href="" data-v-language-url>  -->
+                          <span data-v-language-name>Romanian</span>
+                          <!-- </a>  -->
+                        </button>
+                      </div>
+
                     </div>
+                  </form>
+                </div>
+              </li>
+              <li class="list-inline-item">
 
-                    <div data-v-language>
-                      <button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
-                        <!-- <i class="la la-flag la-lg me-2"></i> -->
-                        <img src="" loading="lazy" class="me-1" data-v-language-img>
-                        <!-- <a href="" data-v-language-url>  -->
-                        <span data-v-language-name>Romanian</span>
-                        <!-- </a>  -->
-                      </button>
-                    </div>
+                <a id="color-theme-switch" class="p-2 p-md-0" href="javascript:void(0);" role="button" title="Switch sidebar color theme">
+                  <i class="la la-sun la-lg"></i>
+                </a>
 
-                  </div>
-                </form>
-              </div>
-            </li>
-            <li class="list-inline-item">
-
-              <a id="color-theme-switch" class="p-2 p-md-0" href="javascript:void(0);" role="button" title="Switch sidebar color theme">
-                <i class="la la-sun la-lg"></i>
-              </a>
-
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -307,7 +309,7 @@
                     <span data-v-menu-item-content>
                       <div class="row">
                         <div class="col-6 align-self-center">
-                          <img src="/media/posts/4.jpg" alt="Post" width="250" loading="lazy" class="rounded">
+                          <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded">
                         </div>
                         <div class="col-6">
                           <h4>Features</h4>
@@ -715,6 +717,7 @@
 
         </div>
 
+
         <!--
 			  <div class="collapse navbar-collapse" id="navbar">
 				<ul class="navbar-nav ms-auto">
@@ -759,14 +762,18 @@
       <div>
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-lg-12">
-            <h1 class="heading text-white mb-3" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
+            <h1 class="heading text-white mb-3 display-4" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
             <h2 class="text-white h3" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs,
               <br /> presentation or ecommerce stores.
             </h2>
 
             <div class="buttons" data-aos="fade-up" data-aos-delay="300">
-              <a href="https://www.vvveb.com" class="btn btn-primary text-white me-4">Free Download</a>
-              <a href="https://www.vvveb.com" class="btn btn-white text-white">Live Demo</a>
+              <a href="https://www.vvveb.com" class="btn btn-primary text-white">
+                <span>&#9889;</span>
+                <span>Free Download</span>
+                <b>›</b>
+              </a>
+              <a href="https://demo.vvveb.com" class="btn btn-white text-white">Live Demo</a>
             </div>
 
 
@@ -778,15 +785,9 @@
     <div class="separator bottom">
 
       <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" height="250" fill="var(--bs-body-bg)" preserveAspectRatio="none">
-        <defs>
-          <style>
-            .cls-1 {
-              fill: inherit
-            }
-          </style>
-        </defs>
+        <defs></defs>
         <title>rough-edges-bottom</title>
-        <path class="cls-1" d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)" />
+        <path d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)" />
       </svg>
 
     </div>
@@ -814,7 +815,7 @@
         <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
           <div class="feature">
             <div class="font-container text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="96" height="96" color="#1064ea" fill="#fff">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="96" height="96" color="#1064ea" fill="#1064ea">
                 <polyline points="336 176 225.2 304 176 255.8" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></polyline>
                 <path d="M463.1,112.37C373.68,96.33,336.71,84.45,256,48,175.29,84.45,138.32,96.33,48.9,112.37,32.7,369.13,240.58,457.79,256,464,271.42,457.79,479.3,369.13,463.1,112.37Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></path>
               </svg>
@@ -828,7 +829,7 @@
         <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
           <div class="feature">
             <div class="font-container text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="96" height="96" color="#1064ea" fill="#fff">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="96" height="96" color="#1064ea" fill="#1064ea">
                 <path d="M419.1,337.45a3.94,3.94,0,0,0-6.1,0c-10.5,12.4-45,46.55-45,77.66,0,27,21.5,48.89,48,48.89h0c26.5,0,48-22,48-48.89C464,384,429.7,349.85,419.1,337.45Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px"></path>
                 <path d="M387,287.9,155.61,58.36a36,36,0,0,0-51,0l-5.15,5.15a36,36,0,0,0,0,51l52.89,52.89,57-57L56.33,263.2a28,28,0,0,0,.3,40l131.2,126a28.05,28.05,0,0,0,38.9-.1c37.8-36.6,118.3-114.5,126.7-122.9,5.8-5.8,18.2-7.1,28.7-7.1h.3A6.53,6.53,0,0,0,387,287.9Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px"></path>
               </svg>
@@ -842,7 +843,7 @@
         <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
           <div class="feature">
             <div class="font-container text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" width="96" height="96" color="#1064ea" fill="#fff" stroke-width="28">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" width="96" height="96" color="#1064ea" fill="#1064ea" stroke-width="28">
                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill-rule="evenodd" d="M80,176a16,16,0,0,0-16,16V408c0,30.24,25.76,56,56,56H392c30.24,0,56-24.51,56-54.75V192a16,16,0,0,0-16-16Z"></path>
                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill-rule="evenodd" d="M160,176V144a96,96,0,0,1,96-96h0a96,96,0,0,1,96,96v32"></path>
               </svg>
@@ -856,7 +857,7 @@
         <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
           <div class="feature">
             <div class="font-container text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="96" height="96" color="#1064ea" fill="#fff">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="96" height="96" color="#1064ea" fill="#1064ea">
                 <path d="M80,464V68.14a8,8,0,0,1,4-6.9C91.81,56.66,112.92,48,160,48c64,0,145,48,192,48a199.53,199.53,0,0,0,77.23-15.77A2,2,0,0,1,432,82.08V301.44a4,4,0,0,1-2.39,3.65C421.37,308.7,392.33,320,352,320c-48,0-128-32-192-32s-80,16-80,16" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"></path>
               </svg>
             </div>
@@ -1892,7 +1893,7 @@
   </section>
 
 
-  <footer class="footer-1" title="footer-1" data-v-copy-from="index.html,.footer-1">
+  <footer class="footer-1" title="footer-1" data-v-save-global="index.html,.footer-1">
     <div class="container" data-v-component-menu="footer" data-v-slug="main-footer">
 
       <div class="row" data-v-menu-items>

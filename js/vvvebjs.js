@@ -6,7 +6,9 @@ Landing theme VvvebJs editor integration
 
 $(window).on("vvveb.getHtml.before", function (e,doc) {
 	//remove sticky class from navbar
-	doc.defaultView.navbarSticky(false);
+	if (doc.defaultView.navbarSticky){
+		doc.defaultView.navbarSticky(false);
+	}
 	//$(".navbar", doc).removeClass("sticky");
 	//doc.defaultView.scrollTo(0,0);
 	
