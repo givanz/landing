@@ -1297,8 +1297,8 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
             <span>
               <i class="la la-lg la-phone"></i> Phone:
             </span>
-            <a href="tel:5511112377" data-v-site-phone-number>
-              <span data-v-site-phone-number>+55 (111) 123 777</span>
+            <a href="tel:5511112377" data-v-site-description-phone-number>
+              <span data-v-site-description-phone-number>+55 (111) 123 777</span>
             </a>
           </p>
         </div>
@@ -1927,10 +1927,10 @@ Vvveb.Sections.add("navigation/navigation-1", {
       <div class="d-flex justify-content-between  flex-md-row d-flex flex-column flex-md-row">
         <div class="nav">
           <ul class="list-inline" data-v-component-site>
-            <li class="list-inline-item" data-v-if="site.phone-number">
-              <a href="tel:5511112377" class="p-2 p-md-0" title="Phone" data-v-site-phone-number>
+            <li class="list-inline-item" data-v-if="site.description.phone-number">
+              <a href="tel:5511112377" class="p-2 p-md-0" title="Phone" data-v-site-description-phone-number>
                 <i class="la la-phone"></i>
-                <span class=" text-muted" data-v-site-phone-number>+55 (111) 123 777</span>
+                <span class=" text-muted" data-v-site-description-phone-number>+55 (111) 123 777</span>
               </a>
             </li>
             <li class="list-inline-item" data-v-if="site.contact-email">
@@ -2086,7 +2086,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                   <span data-v-menu-item-content>
                     <div class="row">
                       <div class="col-6 align-self-center">
-                        <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded">
+                        <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
                       </div>
                       <div class="col-6">
                         <h4>Features</h4>
@@ -2540,7 +2540,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                   <span data-v-menu-item-content>
                     <div class="row">
                       <div class="col-6 align-self-center">
-                        <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded">
+                        <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
                       </div>
                       <div class="col-6">
                         <h4>Features</h4>
@@ -2964,10 +2964,10 @@ Vvveb.Sections.add("navigation/navigation-1", {
       <div class="d-flex justify-content-between  flex-md-row d-flex flex-column flex-md-row">
         <div class="nav">
           <ul class="list-inline" data-v-component-site>
-            <li class="list-inline-item" data-v-if="site.phone-number">
-              <a href="tel:5511112377" class="p-2 p-md-0" title="Phone" data-v-site-phone-number>
+            <li class="list-inline-item" data-v-if="site.description.phone-number">
+              <a href="tel:5511112377" class="p-2 p-md-0" title="Phone" data-v-site-description-phone-number>
                 <i class="la la-phone"></i>
-                <span class=" text-muted" data-v-site-phone-number>+55 (111) 123 777</span>
+                <span class=" text-muted" data-v-site-description-phone-number>+55 (111) 123 777</span>
               </a>
             </li>
             <li class="list-inline-item" class="p-2 p-md-0" data-v-if="site.contact-email">
@@ -3125,7 +3125,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                   <span data-v-menu-item-content>
                     <div class="row">
                       <div class="col-6 align-self-center">
-                        <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded">
+                        <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
                       </div>
                       <div class="col-6">
                         <h4>Features</h4>
@@ -4717,8 +4717,8 @@ Vvveb.Sections.add("showcase/showcase-1", {
     html: `<section class="showcase-3" title="showcase-3">
   <div class="container">
     <div class="row g-1 justify-content-center">
-      <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-        <div class="feature">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="feature" data-aos="fade-up" data-aos-delay="100">
           <div class="font-container text-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="96" height="96" color="#1064ea" fill="#1064ea">
               <polyline points="336 176 225.2 304 176 255.8" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></polyline>
@@ -4731,8 +4731,8 @@ Vvveb.Sections.add("showcase/showcase-1", {
           <p class="text-center">Vvveb is 100% safe against sql injections, a vulerability that affects most CMS.</p>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-        <div class="feature">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="feature" data-aos="fade-up" data-aos-delay="200">
           <div class="font-container text-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="96" height="96" color="#1064ea" fill="#1064ea">
               <path d="M419.1,337.45a3.94,3.94,0,0,0-6.1,0c-10.5,12.4-45,46.55-45,77.66,0,27,21.5,48.89,48,48.89h0c26.5,0,48-22,48-48.89C464,384,429.7,349.85,419.1,337.45Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px"></path>
@@ -4745,8 +4745,8 @@ Vvveb.Sections.add("showcase/showcase-1", {
           <p class="text-center">Vvveb uses only html for templating for maximum flexibility.</p>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-        <div class="feature">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="feature" data-aos="fade-up" data-aos-delay="300">
           <div class="font-container text-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" width="96" height="96" color="#1064ea" fill="#1064ea" stroke-width="28">
               <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill-rule="evenodd" d="M80,176a16,16,0,0,0-16,16V408c0,30.24,25.76,56,56,56H392c30.24,0,56-24.51,56-54.75V192a16,16,0,0,0-16-16Z"></path>
@@ -4759,8 +4759,8 @@ Vvveb.Sections.add("showcase/showcase-1", {
           <p class="text-center">Vvveb is a full featured ecommerce platform with advanced functionality.</p>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-        <div class="feature">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="feature" data-aos="fade-up" data-aos-delay="400">
           <div class="font-container text-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="96" height="96" color="#1064ea" fill="#1064ea">
               <path d="M80,464V68.14a8,8,0,0,1,4-6.9C91.81,56.66,112.92,48,160,48c64,0,145,48,192,48a199.53,199.53,0,0,0,77.23-15.77A2,2,0,0,1,432,82.08V301.44a4,4,0,0,1-2.39,3.65C421.37,308.7,392.33,320,352,320c-48,0-128-32-192-32s-80,16-80,16" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"></path>

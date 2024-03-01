@@ -140,10 +140,10 @@
         <div class="d-flex justify-content-between  flex-md-row d-flex flex-column flex-md-row">
           <div class="nav">
             <ul class="list-inline" data-v-component-site>
-              <li class="list-inline-item" data-v-if="site.phone-number">
-                <a href="tel:5511112377" class="p-2 p-md-0" title="Phone" data-v-site-phone-number>
+              <li class="list-inline-item" data-v-if="site.description.phone-number">
+                <a href="tel:5511112377" class="p-2 p-md-0" title="Phone" data-v-site-description-phone-number>
                   <i class="la la-phone"></i>
-                  <span class=" text-muted" data-v-site-phone-number>+55 (111) 123 777</span>
+                  <span class=" text-muted" data-v-site-description-phone-number>+55 (111) 123 777</span>
                 </a>
               </li>
               <li class="list-inline-item" data-v-if="site.contact-email">
@@ -299,7 +299,7 @@
                     <span data-v-menu-item-content>
                       <div class="row">
                         <div class="col-6 align-self-center">
-                          <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded">
+                          <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
                         </div>
                         <div class="col-6">
                           <h4>Features</h4>
@@ -781,43 +781,234 @@
             </ul>
           </div>
 
+
+          <div class="widget">
+            <span class="d-flex text-muted mb-2">Color</span>
+            <ul class="list-unstyled">
+              <li>
+                <div class="form-check form-check-color">
+                  <input class="form-check-input" type="checkbox" value="" id="color-1">
+                  <label class="form-check-label" for="color-1">
+                    <span class="bg-red"></span> Red
+                  </label>
+                </div>
+              </li>
+              <li class="mt-1">
+                <div class="form-check form-check-color">
+                  <input class="form-check-input" type="checkbox" value="" id="color-2">
+                  <label class="form-check-label" for="color-2">
+                    <span class="bg-blue"></span> Blue
+                  </label>
+                </div>
+              </li>
+              <li class="mt-1">
+                <div class="form-check form-check-color">
+                  <input class="form-check-input" type="checkbox" value="" id="color-3">
+                  <label class="form-check-label" for="color-3">
+                    <span class="bg-green"></span> Green
+                  </label>
+                </div>
+              </li>
+              <li class="mt-1">
+                <div class="form-check form-check-color">
+                  <input class="form-check-input" type="checkbox" value="" id="color-4">
+                  <label class="form-check-label" for="color-4">
+                    <span class="bg-yellow"></span> Yellow
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+
           <!--
-<div class="widget">
-  <span class="d-flex text-muted mb-2">Color</span>
-  <ul class="list-unstyled">
-	<li>
-	  <div class="form-check form-check-color">
-		<input class="form-check-input" type="checkbox" value="" id="color-1">
-		<label class="form-check-label" for="color-1">
-		  <span class="bg-red"></span> Red
-		</label>
-	  </div>
-	</li>
-	<li class="mt-1">
-	  <div class="form-check form-check-color">
-		<input class="form-check-input" type="checkbox" value="" id="color-2">
-		<label class="form-check-label" for="color-2">
-		  <span class="bg-blue"></span> Blue
-		</label>
-	  </div>
-	</li>
-	<li class="mt-1">
-	  <div class="form-check form-check-color">
-		<input class="form-check-input" type="checkbox" value="" id="color-3">
-		<label class="form-check-label" for="color-3">
-		  <span class="bg-green"></span> Green
-		</label>
-	  </div>
-	</li>
-	<li class="mt-1">
-	  <div class="form-check form-check-color">
-		<input class="form-check-input" type="checkbox" value="" id="color-4">
-		<label class="form-check-label" for="color-4">
-		  <span class="bg-yellow"></span> Yellow
-		</label>
-	  </div>
-	</li>
-  </ul>
+<div class="list-group group">
+    <span class="list-group-item group">Size</span>
+
+    <div class="list-group-item">
+        <div id="option-groupSize">
+
+            <label class="checkbox">
+<input name="filter_option[]" type="checkbox" value="46">
+<span>Small <strong>(1)</strong></span>
+</label>
+
+            <label class="checkbox">
+<input name="filter_option[]" type="checkbox" value="47">
+<span>Medium <strong>(1)</strong></span>
+</label>
+
+            <label class="checkbox">
+<input name="filter_option[]" type="checkbox" value="48">
+<span>Large <strong>(1)</strong></span>
+</label>
+
+            <label class="checkbox">
+<input name="filter_option[]" type="checkbox" value="61">
+<span>XS <strong>(11)</strong></span>
+</label>
+
+            <label class="checkbox">
+<input name="filter_option[]" type="checkbox" value="62">
+<span>S <strong>(15)</strong></span>
+</label>
+
+            <label class="checkbox">
+<input name="filter_option[]" type="checkbox" value="63">
+<span>M <strong>(12)</strong></span>
+</label>
+
+            <label class="checkbox">
+<input name="filter_option[]" type="checkbox" value="64">
+<span>L <strong>(6)</strong></span>
+</label>
+
+            <label class="checkbox">
+<input name="filter_option[]" type="checkbox" value="65">
+<span>XL <strong>(10)</strong></span>
+</label>
+
+            <label class="checkbox">
+<input name="filter_option[]" type="checkbox" value="66">
+<span>XXL <strong>(6)</strong></span>
+</label>
+        </div>
+    </div>
+
+    <span class="list-group-item group">Color</span>
+
+    <div class="list-group-item">
+        <div id="option-groupColor">
+
+            <label class="checkbox image">
+
+<input name="filter_option[]" type="checkbox" value="49">
+
+<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/blue-20x20.gif" alt="">
+<span>Blue <strong>(3)</strong></span>
+</label>
+
+            <label class="checkbox image">
+
+<input name="filter_option[]" type="checkbox" value="50">
+
+<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/gold-20x20.gif" alt="">
+<span>Gold <strong>(3)</strong></span>
+</label>
+
+            <label class="checkbox image">
+
+<input name="filter_option[]" type="checkbox" value="51">
+
+<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/green-20x20.gif" alt="">
+<span>Green <strong>(3)</strong></span>
+</label>
+
+            <label class="checkbox image">
+
+<input name="filter_option[]" type="checkbox" value="52">
+
+<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/hotpink-20x20.gif" alt="">
+<span>Hot pink <strong>(5)</strong></span>
+</label>
+
+            <label class="checkbox image">
+
+<input name="filter_option[]" type="checkbox" value="53">
+
+<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/lemon-20x20.gif" alt="">
+<span>Lemon <strong>(4)</strong></span>
+</label>
+
+            <label class="checkbox image">
+
+<input name="filter_option[]" type="checkbox" value="54">
+
+<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/lime-20x20.gif" alt="">
+<span>Lime <strong>(3)</strong></span>
+</label>
+
+            <label class="checkbox image">
+
+<input name="filter_option[]" type="checkbox" value="55">
+
+<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/navy-20x20.gif" alt="">
+<span>Navy <strong>(9)</strong></span>
+</label>
+
+            <label class="checkbox image">
+
+<input name="filter_option[]" type="checkbox" value="56">
+
+<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/orange-20x20.gif" alt="">
+<span>Orange <strong>(1)</strong></span>
+</label>
+
+            <label class="checkbox image">
+
+<input name="filter_option[]" type="checkbox" value="57">
+
+<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/red-20x20.gif" alt="">
+<span>Red <strong>(5)</strong></span>
+</label>
+
+            <label class="checkbox image">
+
+<input name="filter_option[]" type="checkbox" value="58">
+
+<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/slate-20x20.gif" alt="">
+<span>Slate <strong>(5)</strong></span>
+</label>
+
+            <label class="checkbox image">
+
+<input name="filter_option[]" type="checkbox" value="59">
+
+<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/teal-20x20.gif" alt="">
+<span>Teal <strong>(2)</strong></span>
+</label>
+
+            <label class="checkbox image">
+
+<input name="filter_option[]" type="checkbox" value="60">
+
+<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/vanilla-20x20.gif" alt="">
+<span>Vanilla <strong>(2)</strong></span>
+</label>
+        </div>
+    </div>
+
+    <span class="list-group-item group">Manufacturer</span>
+
+    <div class="list-group-item">
+        <div id="manufacturer-group">
+
+            <label class="checkbox image">
+<input name="filter_manufacturer[]" type="checkbox" value="6">
+<img src="http://anne.nicolethemes.com/image/cache/catalog/demo/palm_logo-he-100x30.jpg" alt=""> <span>Palm</span>
+</label>
+
+            <label class="checkbox image">
+<input name="filter_manufacturer[]" type="checkbox" value="7">
+<span>Hewlett-Packard</span>
+</label>
+
+            <label class="checkbox image">
+<input name="filter_manufacturer[]" type="checkbox" value="8">
+<img src="http://anne.nicolethemes.com/image/cache/catalog/demo/apple_logo-he-100x30.jpg" alt=""> <span>Apple</span>
+</label>
+
+            <label class="checkbox image">
+<input name="filter_manufacturer[]" type="checkbox" value="9">
+<img src="http://anne.nicolethemes.com/image/cache/catalog/demo/canon_logo-he-100x30.jpg" alt=""> <span>Canon</span>
+</label>
+
+            <label class="checkbox image">
+<input name="filter_manufacturer[]" type="checkbox" value="10">
+<img src="http://anne.nicolethemes.com/image/cache/catalog/demo/sony_logo-he-100x30.jpg" alt=""> <span>Sony</span>
+</label>
+        </div>
+    </div>
+
 </div>
 -->
 

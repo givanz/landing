@@ -414,10 +414,10 @@ Vvveb.Blocks.add("product/product-1", {
         <span data-v-product-name>Product 8</span>
       </a>
 
-      <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
+      <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
       <!-- Hover Content -->
-      <div class="hover-content">
+      <div class="hover-content" data-v-if="_product.price > 0">
         <!-- Add to Cart -->
         <div class="add-to-cart-btn">
           <input type="hidden" name="product_id" value="" data-v-product-product_id />
