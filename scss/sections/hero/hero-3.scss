@@ -84,7 +84,7 @@
 			top: 0;
 			content: "";
 			//background: rgba(var(--bs-body-color-rgb), 0.6);
-			background: rgba(0,0,0, 0.6);
+			background: rgba(var(--bs-body-color-rgb), 0.6);
 		}
 	}
 	*/	

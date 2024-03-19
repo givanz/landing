@@ -1,7 +1,14 @@
 .hero-5 {
+	height:100vh;
+	min-height:800px;
 	
-	& > .container {
-		position: relative;
-		z-index: 2;
+	> .container > .row {
+		height:100vh;
+		min-height:800px;
+	}
+	
+	.overlay {
+		background: rgba(var(--bs-body-color-rgb), 1);
+		opacity:0.5;
 	}
 }

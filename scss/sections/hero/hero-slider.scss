@@ -1,0 +1,45 @@
+.hero-slider {
+	height:100vh;
+	min-height:800px;
+	
+	> .container > .row {
+		height:100vh;
+		min-height:800px;
+	}
+	
+	.overlay {
+		background: rgba(var(--bs-body-color-rgb), 1);
+		opacity:0.5;
+	}
+	
+	
+	.swiper-slide {
+	
+		> img + .content {
+			position:absolute;
+			z-index:2;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+
+			>.container, > .container-fluid {
+				position: relative;
+				z-index: 2;
+				
+				> div {
+					position: relative;
+					height: 100%;
+					min-height:960px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+		
+		.overlay {
+			z-index:1;
+		}
+	}
+}

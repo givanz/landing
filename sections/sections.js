@@ -3,44 +3,52 @@ Vvveb.Sections.add("hero/hero-1", {
     image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-1-thumb.jpeg",
     html: `<header class="hero-1" title="hero-1">
 
-  <div class="heading">
-    <h1 class="display-1">Open Source CMS Reinvented</h1>
+  <div class="container">
+    <div class="heading">
+      <h1 class="display-1">Open Source CMS Reinvented</h1>
 
-    <h2 class="fs-3">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
+      <h2 class="fs-3">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
 
-    <div class="btns">
-      <a class="btn btn-primary btn-shadow" href="/download.php" role="button">
-        <span>&#9889;</span>
-        <span>Free Download</span>
-        <b>›</b>
-      </a>
-
-      <div class="nav-item dropdown">
-        <a class="btn btn-outline-primary nav-link dropdown-toggle" href="//demo.vvveb.com" role="button">Live demo <b>›</b>
+      <div class="btns">
+        <a class="btn btn-primary btn-shadow" href="/download.php" role="button">
+          <span>&#9889;</span>
+          <span>Free Download</span>
+          <b>›</b>
         </a>
-        <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/">Page builder</a>
-          <a class="dropdown-item" target="_blank" href="//demo.vvveb.com">Frontend</a>
-          <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin">Admin dashboard</a>
+
+        <div class="nav-item dropdown">
+          <a class="btn btn-outline-primary nav-link dropdown-toggle" href="//demo.vvveb.com" role="button">Live demo <b>›</b>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/">Page builder</a>
+            <a class="dropdown-item" target="_blank" href="//demo.vvveb.com">Frontend</a>
+            <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin">Admin dashboard</a>
+          </div>
         </div>
       </div>
+
+      <i class="text-muted">
+        <small>* Note: Beta Version</small>
+      </i>
     </div>
 
-    <i class="text-muted">
-      <small>* Note: Beta Version</small>
-    </i>
+    <div class="frame mx-auto">
+      <video loading="lazy" src="video/intro.mp4" muted loop controls poster="https://www.vvveb.com/img/dark-theme.png"></video>
+    </div>
   </div>
 
-  <div class="frame mx-auto">
-    <video loading="lazy" src="video/intro.mp4" muted loop controls poster="https://www.vvveb.com/img/dark-theme.png"></video>
+  <div class="overlay">
   </div>
 
+  <div class="background-container">
+    <img src="img/demo/hero-3.jpg" alt="Hero background" loading="lazy">
+  </div>
 
 </header>`
 });Vvveb.Sections.add("hero/hero-2", {
     name: "Hero 2",
     image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-2-thumb.jpeg",
-    html: `<header class="hero-2 overlay" title="hero-2">
+    html: `<header class="hero-2" title="hero-2">
 
   <div class="container">
     <div class="row align-items-center justify-content-between">
@@ -81,6 +89,9 @@ Vvveb.Sections.add("hero/hero-1", {
     </svg>
   </div>
 
+  <div class="overlay">
+  </div>
+
 </header>`
 });Vvveb.Sections.add("hero/hero-3", {
     name: "Hero 3",
@@ -113,7 +124,7 @@ Vvveb.Sections.add("hero/hero-1", {
 
   <div class="separator bottom">
 
-    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" height="250" fill="var(--bs-body-bg)" preserveAspectRatio="none">
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" height="100" fill="var(--bs-body-bg)" preserveAspectRatio="none">
       <defs></defs>
       <title>rough-edges-bottom</title>
       <path d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)" />
@@ -140,16 +151,25 @@ Vvveb.Sections.add("hero/hero-1", {
 });Vvveb.Sections.add("hero/hero-4", {
     name: "Hero 4",
     image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-4-thumb.jpeg",
-    html: `<header class="hero-4 overlay" title="hero-4">
+    html: `<header class="hero-4" title="hero-4">
 
   <div class="container">
     <div class="row align-items-center justify-content-center text-center">
       <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-        <h1 class="heading text-white mb-3">The next generation website builder</h1>
-        <!-- h5 class="subheading text-white">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h5 -->
+        <h1 class="heading text-white mb-3 display-4">The next generation website builder</h1>
+        <h4 class="subheading text-white mb-5">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h4>
+
+        <img width="350" src="img/demo/video-1.jpg" class="shadow img-thumbnail">
+
         <div class="buttons">
-          <a href="https://www.vvveb.com" class="btn btn-outline-light me-4">Free Download</a>
-          <a href="https://www.vvveb.com" class="btn text-white me-4">Live demo</a>
+
+          <a href="https://www.vvveb.com" class="btn btn-success text-white btn-lg">
+            <span>⚡</span>
+            <span>Free Download</span>
+            <b>›</b>
+          </a>
+          <a href="https://demo.vvveb.com" class="btn btn-white text-white btn-lg">Live Demo</a>
+
         </div>
       </div>
     </div>
@@ -171,6 +191,9 @@ Vvveb.Sections.add("hero/hero-1", {
 
   </div>
 
+  <div class="overlay">
+  </div>
+
   <div class="background-container">
     <img src="img/demo/hero-3.jpg" alt="Hero background">
   </div>
@@ -178,12 +201,12 @@ Vvveb.Sections.add("hero/hero-1", {
 });Vvveb.Sections.add("hero/hero-5", {
     name: "Hero 5",
     image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-5-thumb.jpeg",
-    html: `<header class="hero-5 pt-5 pb-5 mt-0 align-items-center d-flex overlay" style="min-height: 100vh; background-size: cover; background-image: url('img/demo/hero-3.jpg');" title="hero-5">
+    html: `<header class="hero-5" title="hero-5">
 
   <div class="container" style="z-index:2">
     <div class="row align-items-center d-flex justify-content-between">
       <div class="col-12 col-md-6 pb-5 order-2 order-sm-2 ">
-        <h1 class="  text-white font-weight-bold mb-3 mt-5 display-3">The next generation website builder.</h1>
+        <h1 class="text-white fw-bold mb-3 mt-5 display-3">The next generation website builder.</h1>
         <p class="lead text-white">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
         <div class=" d-flex mt-3 mb-1">
           <a class="btn btn-primary btn-lg  mt-md-3 " href="https://www.vvveb.com" role="button">Download Now</a>
@@ -216,13 +239,304 @@ Vvveb.Sections.add("hero/hero-1", {
 
   </div>
 
+  <div class="overlay">
+  </div>
+
   <div class="background-container">
     <img src="img/demo/hero-3.jpg" alt="Hero background">
   </div>
 
 </header>`
+});Vvveb.Sections.add("hero/hero-6", {
+    name: "Hero 6",
+    image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-6-thumb.jpeg",
+    html: `<header class="hero-6" title="hero-6">
+
+  <div class="container">
+    <div>
+      <div class="row align-items-center justify-content-center text-start">
+        <div class="col-lg-7">
+          <h1 class="heading text-white mb-3 display-3 fw-bold" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
+          <h2 class="text-white h3" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs,
+            <br> websites or ecommerce stores.
+          </h2>
+
+
+          <div class="buttons mt-4" data-aos="fade-up" data-aos-delay="300">
+            <a href="https://www.vvveb.com" class="btn btn-success text-white btn-lg">
+              <span>⚡</span>
+              <span>Free Download</span>
+              <b>›</b>
+            </a>
+            <a href="https://demo.vvveb.com" class="btn btn-white text-white btn-lg">Live Demo</a>
+          </div>
+
+
+        </div>
+        <div class="col-lg-5">
+          <img src="img/demo/video-1.jpg" class="shadow img-thumbnail" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="separator bottom">
+
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" preserveAspectRatio="none">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: var(--bs-body-bg);
+          }
+        </style>
+      </defs>
+      <title>rough-edges-bottom</title>
+      <path class="cls-1" d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)" />
+    </svg>
+
+  </div>
+
+  <div class="overlay">
+  </div>
+
+  <div class="background-container">
+    <img src="img/demo/hero-3.jpg" alt="Hero background" loading="lazy">
+  </div>
+</header>`
+});Vvveb.Sections.add("hero/hero-7", {
+    name: "Hero 7",
+    image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-7-thumb.jpeg",
+    html: `<header class="hero-7" title="hero-7">
+
+  <div class="container">
+    <div>
+      <div class="row align-items-center justify-content-center text-start g-5">
+        <div class="col-lg-5">
+          <img src="img/demo/video-1.jpg" class="shadow img-thumbnail">
+        </div>
+
+        <div class="col-lg-7">
+          <h1 class="heading text-white mb-3 display-3 fw-bold" data-aos="fade-up" data-aos-delay="100">Open source CMS reinvented</h1>
+          <h2 class="text-white h3" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs,
+            <br> websites or ecommerce stores.
+          </h2>
+
+
+          <div class="buttons mt-4" data-aos="fade-up" data-aos-delay="300">
+            <a href="https://www.vvveb.com" class="btn btn-success text-white btn-lg">
+              <span>⚡</span>
+              <span>Free Download</span>
+              <b>›</b>
+            </a>
+            <a href="https://demo.vvveb.com" class="btn btn-white text-white  btn-lg">Live Demo</a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="separator bottom">
+
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" preserveAspectRatio="none">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: var(--bs-body-bg);
+          }
+        </style>
+      </defs>
+      <title>rough-edges-bottom</title>
+      <path class="cls-1" d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)" />
+    </svg>
+
+  </div>
+
+  <div class="overlay">
+  </div>
+
+  <div class="background-container">
+    <img src="img/demo/hero-3.jpg" alt="Hero background">
+  </div>
+</header>`
+});Vvveb.Sections.add("hero/hero-slider", {
+    name: "Hero slider",
+    image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-slider-thumb.jpeg",
+    html: `<header class="hero-slider" title="hero-slider">
+
+
+  <div class="swiper" data-slides-per-view="1" data-draggable="true">
+    <div class="swiper-wrapper">
+
+
+      <div class="swiper-slide">
+        <img src="img/demo/hero-3.jpg" loading="lazy">
+        <div class="content">
+          <div class="container">
+            <div>
+              <div class="row align-items-center justify-content-center text-start">
+                <div class="col-lg-7">
+                  <h1 class="heading text-white mb-3 display-3 fw-bold" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
+                  <h2 class="text-white h3" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs,
+                    <br> websites or ecommerce stores.
+                  </h2>
+
+
+                  <div class="buttons mt-4" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://www.vvveb.com" class="btn btn-primary text-white btn-lg">
+                      <span>⚡</span>
+                      <span>Free Download</span>
+                      <b>›</b>
+                    </a>
+                    <a href="https://demo.vvveb.com" class="btn btn-white text-white btn-lg">Live Demo</a>
+                  </div>
+
+
+                </div>
+                <div class="col-lg-5">
+                  <img src="img/demo/video-1.jpg" class="shadow img-thumbnail" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+
+      <div class="swiper-slide">
+        <img src="img/demo/hero-3.jpg" loading="lazy">
+        <div class="content">
+          <div class="container">
+            <div>
+              <div class="row align-items-center justify-content-center text-center">
+                <div class="col-lg-12">
+                  <h1 class="heading text-white mb-3 display-4 fw-bold" data-aos="fade-up" data-aos-delay="100">The fastest and leanest CMS</h1>
+                  <h2 class="text-white h3" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs,
+                    <br> presentation or ecommerce stores.
+                  </h2>
+
+                  <div class="buttons mt-4" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://www.vvveb.com" class="btn btn-primary text-white  btn-lg">
+                      <span>⚡</span>
+                      <span>Free Download</span>
+                      <b>›</b>
+                    </a>
+                    <a href="https://demo.vvveb.com" class="btn btn-white text-white  btn-lg">Live Demo</a>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="img/demo/hero-3.jpg" loading="lazy">
+        <div class="content">
+          <div class="container">
+            <div>
+              <div class="row align-items-center justify-content-center text-start g-5">
+                <div class="col-lg-5">
+                  <img src="img/demo/video-1.jpg" class="shadow img-thumbnail" loading="lazy">
+                </div>
+
+                <div class="col-lg-7">
+                  <h1 class="heading text-white mb-3 display-3 fw-bold" data-aos="fade-up" data-aos-delay="100">Open source CMS reinvented</h1>
+                  <h2 class="text-white h3" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs,
+                    <br> websites or ecommerce stores.
+                  </h2>
+
+
+                  <div class="buttons mt-4" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://www.vvveb.com" class="btn btn-primary text-white btn-lg">
+                      <span>⚡</span>
+                      <span>Free Download</span>
+                      <b>›</b>
+                    </a>
+                    <a href="https://demo.vvveb.com" class="btn btn-white text-white  btn-lg">Live Demo</a>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+  <div class="separator bottom">
+
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" preserveAspectRatio="none">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: var(--bs-body-bg);
+          }
+        </style>
+      </defs>
+      <title>rough-edges-bottom</title>
+      <path class="cls-1" d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)" />
+    </svg>
+
+  </div>
+
+
+  <div class="background-container">
+    <img src="img/demo/hero-3.jpg" alt="Hero background" loading="lazy">
+  </div>
+
+
+  <script id="swiper-js" src="../../js/libs/swiper/swiper-bundle.min.js"></script>
+  <link id="swiper-css" href="../../js/libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script>
+var swiper = [];
+function initSwiper(onlyNew = false) {
+	var list = document.querySelectorAll('.swiper' + (onlyNew ? ":not(.swiper-initialized)" : "") );
+	list.forEach(el => {
+		//el.dataset
+		let params = {      
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},      
+			pagination: {
+				el: ".swiper-pagination",
+		  },
+		};
+		for (i in el.dataset) {
+			let param = el.dataset[i];
+			if (param[0] = '{') {
+				param = JSON.parse(param);
+			}
+			params[i] = param;
+		}
+		swiper.push(new Swiper(el, params))
+		//swiper.push(new Swiper(el, { ...{autoplay:{delay: 500}}, ...el.dataset}))		
+	});
+}	
+$(document).ready(function() {
+	initSwiper();
 });
-	Vvveb.SectionsGroup["Hero"] = ["hero/hero-1","hero/hero-2","hero/hero-3","hero/hero-4","hero/hero-5"];
+</script>
+
+</header>`
+});
+	Vvveb.SectionsGroup["Hero"] = ["hero/hero-1","hero/hero-2","hero/hero-3","hero/hero-4","hero/hero-5","hero/hero-6","hero/hero-7","hero/hero-slider"];
 Vvveb.Sections.add("features/features-1", {
     name: "Features 1",
     image: Vvveb.themeBaseUrl + "/screenshots/features/features-1-thumb.jpeg",
@@ -231,14 +545,17 @@ Vvveb.Sections.add("features/features-1", {
     <div class="row wrap">
       <div class="col-md-7 align-self-center">
         <div class="max-box">
-          <span class="badge  bg-success rounded-pill px-3">new</span>
+          <span class="badge  bg-success rounded-pill px-3 opacity-50">new</span>
           <h3 class="mt-2">Code editor with syntax highglighting that updates in real time</h3>
           <div class="mt-4">
             <p>The html for sections blocks and components and this template are built using Bootstrap.</p>
             <p>Use any of the hundreds fonts from google fonts for your design.</p>
             <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
           </div>
-          <a href="#" tile="Code editor features" role="button">Learn More</a>
+          <a href="#" tile="Code editor features" role="button">
+            <span>Learn More</span>
+            <i class="la la-long-arrow-alt-right ms-1"></i>
+          </a>
         </div>
       </div>
       <div class="col-md-5 col-md-5">
@@ -250,14 +567,17 @@ Vvveb.Sections.add("features/features-1", {
         <img src="img/illustrations.co/day67-dog.svg" alt="dog" loading="lazy" class="img-fluid" />
       </div>
       <div class="col-md-6 align-self-center">
-        <span class="badge  bg-success rounded-pill px-3">on sale</span>
+        <span class="badge  bg-success rounded-pill px-3 opacity-50">on sale</span>
         <h3 class="mt-2">Intuitive building with simple drag and drop for sections, components and blocks</h3>
         <div class="mt-4">
           <p>The html for sections blocks and components and this template are built using Bootstrap.</p>
           <p>Use any of the hundreds fonts from google fonts for your design.</p>
           <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
         </div>
-        <a href="#" title="Drag and drop" role="button">Learn More</a>
+        <a href="#" title="Drag and drop" role="button">
+          <span>Learn More</span>
+          <i class="la la-long-arrow-alt-right ms-1"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -1285,7 +1605,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
         <div data-v-component-site>
           <p class="mt-5">
             <span>
-              <i class="la la-lg la-envelope"></i> Email:
+              <i class="la la-lg la-envelope opacity-50"></i> Email:
             </span>
             <span data-v-if="site.contact-email">
               <a href="mailto:contact@mysite.com" data-v-site-contact-email>
@@ -1295,7 +1615,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
           </p>
           <p class="">
             <span>
-              <i class="la la-lg la-phone"></i> Phone:
+              <i class="la la-lg la-phone opacity-50"></i> Phone:
             </span>
             <a href="tel:5511112377" data-v-site-description-phone-number>
               <span data-v-site-description-phone-number>+55 (111) 123 777</span>
@@ -1407,7 +1727,9 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
 
           <div class="row mt-4">
             <div class="col">
-              <button type="submit" class="btn btn-primary">Submit <i class="la la-long-arrow-alt-right ms-1"></i>
+              <button type="submit" class="btn btn-primary">
+                <span>Submit</span>
+                <i class="la la-lg la-envelope opacity-50 ms-2"></i>
               </button>
             </div>
           </div>
@@ -2350,12 +2672,15 @@ Vvveb.Sections.add("navigation/navigation-1", {
                             <div class="option" data-v-if="product.option">
                               <div class="" data-v-product-option>
                                 <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                                <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                               </div>
                               <div class="" data-v-product-option>
                                 <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                                <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                               </div>
                               <div class="" data-v-product-option>
                                 <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                                <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                               </div>
                             </div>
 
@@ -2804,12 +3129,15 @@ Vvveb.Sections.add("navigation/navigation-1", {
                             <div class="option" data-v-if="product.option">
                               <div class="" data-v-product-option>
                                 <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                                <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                               </div>
                               <div class="" data-v-product-option>
                                 <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                                <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                               </div>
                               <div class="" data-v-product-option>
                                 <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                                <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                               </div>
                             </div>
 
@@ -3389,12 +3717,15 @@ Vvveb.Sections.add("navigation/navigation-1", {
                             <div class="option" data-v-if="product.option">
                               <div class="" data-v-product-option>
                                 <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                                <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                               </div>
                               <div class="" data-v-product-option>
                                 <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                                <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                               </div>
                               <div class="" data-v-product-option>
                                 <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                                <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                               </div>
                             </div>
 
@@ -4071,7 +4402,10 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
                 <span class="la la-check me-2"></span>Free Support
               </li>
             </ul>
-            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="#" class="btn btn-primary">
+              <span>Get Started</span>
+              <i class="la la-long-arrow-alt-right ms-1"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -4101,7 +4435,10 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
                 <span class="la la-check me-2"></span>Free Support
               </li>
             </ul>
-            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="#" class="btn btn-primary">
+              <span>Get Started</span>
+              <i class="la la-long-arrow-alt-right ms-1"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -4131,7 +4468,10 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
                 <span class="la la-check me-2"></span>Free Support
               </li>
             </ul>
-            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="#" class="btn btn-primary">
+              <span>Get Started</span>
+              <i class="la la-long-arrow-alt-right ms-1"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -4720,7 +5060,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
       <div class="col-12 col-sm-6 col-md-6 col-lg-3">
         <div class="feature" data-aos="fade-up" data-aos-delay="100">
           <div class="font-container text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="96" height="96" color="#1064ea" fill="#1064ea">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="72" height="72" color="#1064ea" fill="#1064ea">
               <polyline points="336 176 225.2 304 176 255.8" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></polyline>
               <path d="M463.1,112.37C373.68,96.33,336.71,84.45,256,48,175.29,84.45,138.32,96.33,48.9,112.37,32.7,369.13,240.58,457.79,256,464,271.42,457.79,479.3,369.13,463.1,112.37Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></path>
             </svg>
@@ -4734,7 +5074,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
       <div class="col-12 col-sm-6 col-md-6 col-lg-3">
         <div class="feature" data-aos="fade-up" data-aos-delay="200">
           <div class="font-container text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="96" height="96" color="#1064ea" fill="#1064ea">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="72" height="72" color="#1064ea" fill="#1064ea">
               <path d="M419.1,337.45a3.94,3.94,0,0,0-6.1,0c-10.5,12.4-45,46.55-45,77.66,0,27,21.5,48.89,48,48.89h0c26.5,0,48-22,48-48.89C464,384,429.7,349.85,419.1,337.45Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px"></path>
               <path d="M387,287.9,155.61,58.36a36,36,0,0,0-51,0l-5.15,5.15a36,36,0,0,0,0,51l52.89,52.89,57-57L56.33,263.2a28,28,0,0,0,.3,40l131.2,126a28.05,28.05,0,0,0,38.9-.1c37.8-36.6,118.3-114.5,126.7-122.9,5.8-5.8,18.2-7.1,28.7-7.1h.3A6.53,6.53,0,0,0,387,287.9Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px"></path>
             </svg>
@@ -4748,7 +5088,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
       <div class="col-12 col-sm-6 col-md-6 col-lg-3">
         <div class="feature" data-aos="fade-up" data-aos-delay="300">
           <div class="font-container text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" width="96" height="96" color="#1064ea" fill="#1064ea" stroke-width="28">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" width="72" height="72" color="#1064ea" fill="#1064ea" stroke-width="28">
               <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill-rule="evenodd" d="M80,176a16,16,0,0,0-16,16V408c0,30.24,25.76,56,56,56H392c30.24,0,56-24.51,56-54.75V192a16,16,0,0,0-16-16Z"></path>
               <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill-rule="evenodd" d="M160,176V144a96,96,0,0,1,96-96h0a96,96,0,0,1,96,96v32"></path>
             </svg>
@@ -4762,7 +5102,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
       <div class="col-12 col-sm-6 col-md-6 col-lg-3">
         <div class="feature" data-aos="fade-up" data-aos-delay="400">
           <div class="font-container text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="96" height="96" color="#1064ea" fill="#1064ea">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="72" height="72" color="#1064ea" fill="#1064ea">
               <path d="M80,464V68.14a8,8,0,0,1,4-6.9C91.81,56.66,112.92,48,160,48c64,0,145,48,192,48a199.53,199.53,0,0,0,77.23-15.77A2,2,0,0,1,432,82.08V301.44a4,4,0,0,1-2.39,3.65C421.37,308.7,392.33,320,352,320c-48,0-128-32-192-32s-80,16-80,16" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"></path>
             </svg>
           </div>
@@ -6289,9 +6629,10 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
       <div class="col-xl-3 col-sm-6 mb-5">
         <div class="rounded testimonial">
 
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
-            <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
-            <path d="M5.09 12.3714H9.78C9.7 17.0414 8.78 17.8114 5.91 19.5114C5.58 19.7114 5.47 20.1314 5.67 20.4714C5.87 20.8014 6.29 20.9114 6.63 20.7114C10.01 18.7114 11.19 17.4914 11.19 11.6714V6.28141C11.19 4.57141 9.8 3.19141 8.1 3.19141H5.1C3.33 3.19141 2 4.52141 2 6.28141V9.28141C2 11.0414 3.33 12.3714 5.09 12.3714Z"></path>
+          <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+              <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
+            </g>
           </svg>
 
           <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
@@ -6307,10 +6648,12 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
       <div class="col-xl-3 col-sm-6 mb-5">
         <div class="rounded testimonial">
 
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
-            <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
-            <path d="M5.09 12.3714H9.78C9.7 17.0414 8.78 17.8114 5.91 19.5114C5.58 19.7114 5.47 20.1314 5.67 20.4714C5.87 20.8014 6.29 20.9114 6.63 20.7114C10.01 18.7114 11.19 17.4914 11.19 11.6714V6.28141C11.19 4.57141 9.8 3.19141 8.1 3.19141H5.1C3.33 3.19141 2 4.52141 2 6.28141V9.28141C2 11.0414 3.33 12.3714 5.09 12.3714Z"></path>
+          <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+              <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
+            </g>
           </svg>
+
 
           <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
           <img src="img/sections/team/2.jpg" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow" loading="lazy">
@@ -6324,10 +6667,12 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
       <div class="col-xl-3 col-sm-6 mb-5">
         <div class="rounded testimonial">
 
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
-            <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
-            <path d="M5.09 12.3714H9.78C9.7 17.0414 8.78 17.8114 5.91 19.5114C5.58 19.7114 5.47 20.1314 5.67 20.4714C5.87 20.8014 6.29 20.9114 6.63 20.7114C10.01 18.7114 11.19 17.4914 11.19 11.6714V6.28141C11.19 4.57141 9.8 3.19141 8.1 3.19141H5.1C3.33 3.19141 2 4.52141 2 6.28141V9.28141C2 11.0414 3.33 12.3714 5.09 12.3714Z"></path>
+          <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+              <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
+            </g>
           </svg>
+
 
           <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
 
@@ -6342,10 +6687,12 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
       <div class="col-xl-3 col-sm-6 mb-5">
         <div class="rounded testimonial">
 
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
-            <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
-            <path d="M5.09 12.3714H9.78C9.7 17.0414 8.78 17.8114 5.91 19.5114C5.58 19.7114 5.47 20.1314 5.67 20.4714C5.87 20.8014 6.29 20.9114 6.63 20.7114C10.01 18.7114 11.19 17.4914 11.19 11.6714V6.28141C11.19 4.57141 9.8 3.19141 8.1 3.19141H5.1C3.33 3.19141 2 4.52141 2 6.28141V9.28141C2 11.0414 3.33 12.3714 5.09 12.3714Z"></path>
+          <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+              <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
+            </g>
           </svg>
+
 
           <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
 
@@ -6375,10 +6722,12 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
 
         <div class="row">
           <div class="col-md-12">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
-              <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
-              <path d="M5.09 12.3714H9.78C9.7 17.0414 8.78 17.8114 5.91 19.5114C5.58 19.7114 5.47 20.1314 5.67 20.4714C5.87 20.8014 6.29 20.9114 6.63 20.7114C10.01 18.7114 11.19 17.4914 11.19 11.6714V6.28141C11.19 4.57141 9.8 3.19141 8.1 3.19141H5.1C3.33 3.19141 2 4.52141 2 6.28141V9.28141C2 11.0414 3.33 12.3714 5.09 12.3714Z"></path>
+            <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g>
+                <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
+              </g>
             </svg>
+
 
             <div class="card-subtitle mt-3">
               <p class="text-muted"> I really enjoyed working with them, they are Group of Professionals and they know what they're Doing</p>
@@ -6403,10 +6752,12 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
 
         <div class="row">
           <div class="col-md-12">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
-              <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
-              <path d="M5.09 12.3714H9.78C9.7 17.0414 8.78 17.8114 5.91 19.5114C5.58 19.7114 5.47 20.1314 5.67 20.4714C5.87 20.8014 6.29 20.9114 6.63 20.7114C10.01 18.7114 11.19 17.4914 11.19 11.6714V6.28141C11.19 4.57141 9.8 3.19141 8.1 3.19141H5.1C3.33 3.19141 2 4.52141 2 6.28141V9.28141C2 11.0414 3.33 12.3714 5.09 12.3714Z"></path>
+            <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g>
+                <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
+              </g>
             </svg>
+
 
             <div class="card-subtitle mt-3">
               <p class="text-muted"> I really enjoyed working with them, they are Group of Professionals and they know what they're Doing</p>
@@ -6430,10 +6781,12 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
 
         <div class="row">
           <div class="col-md-12">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
-              <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
-              <path d="M5.09 12.3714H9.78C9.7 17.0414 8.78 17.8114 5.91 19.5114C5.58 19.7114 5.47 20.1314 5.67 20.4714C5.87 20.8014 6.29 20.9114 6.63 20.7114C10.01 18.7114 11.19 17.4914 11.19 11.6714V6.28141C11.19 4.57141 9.8 3.19141 8.1 3.19141H5.1C3.33 3.19141 2 4.52141 2 6.28141V9.28141C2 11.0414 3.33 12.3714 5.09 12.3714Z"></path>
+            <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g>
+                <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
+              </g>
             </svg>
+
 
             <div class="card-subtitle mt-3">
               <p class="text-muted"> I really enjoyed working with them, they are Group of Professionals and they know what they're Doing</p>
@@ -6456,10 +6809,12 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
 
         <div class="row">
           <div class="col-md-12">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
-              <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
-              <path d="M5.09 12.3714H9.78C9.7 17.0414 8.78 17.8114 5.91 19.5114C5.58 19.7114 5.47 20.1314 5.67 20.4714C5.87 20.8014 6.29 20.9114 6.63 20.7114C10.01 18.7114 11.19 17.4914 11.19 11.6714V6.28141C11.19 4.57141 9.8 3.19141 8.1 3.19141H5.1C3.33 3.19141 2 4.52141 2 6.28141V9.28141C2 11.0414 3.33 12.3714 5.09 12.3714Z"></path>
+            <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g>
+                <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
+              </g>
             </svg>
+
 
             <div class="card-subtitle mt-3">
               <p class="text-muted"> I really enjoyed working with them, they are Group of Professionals and they know what they're Doing</p>
@@ -6498,10 +6853,12 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
           <div class="card-body">
 
 
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
-              <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
-              <path d="M5.09 12.3714H9.78C9.7 17.0414 8.78 17.8114 5.91 19.5114C5.58 19.7114 5.47 20.1314 5.67 20.4714C5.87 20.8014 6.29 20.9114 6.63 20.7114C10.01 18.7114 11.19 17.4914 11.19 11.6714V6.28141C11.19 4.57141 9.8 3.19141 8.1 3.19141H5.1C3.33 3.19141 2 4.52141 2 6.28141V9.28141C2 11.0414 3.33 12.3714 5.09 12.3714Z"></path>
+            <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g>
+                <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
+              </g>
             </svg>
+
 
             <div class="card-subtitle mt-3">
               <p class="text-muted"> I really enjoyed working with them, they are Group of Professionals and they know what they're Doing</p>
@@ -6520,10 +6877,12 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
       <div class="card col-md-3">
         <div class="card-content">
           <div class="card-body">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
-              <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
-              <path d="M5.09 12.3714H9.78C9.7 17.0414 8.78 17.8114 5.91 19.5114C5.58 19.7114 5.47 20.1314 5.67 20.4714C5.87 20.8014 6.29 20.9114 6.63 20.7114C10.01 18.7114 11.19 17.4914 11.19 11.6714V6.28141C11.19 4.57141 9.8 3.19141 8.1 3.19141H5.1C3.33 3.19141 2 4.52141 2 6.28141V9.28141C2 11.0414 3.33 12.3714 5.09 12.3714Z"></path>
+            <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g>
+                <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
+              </g>
             </svg>
+
 
             <div class="card-subtitle mt-3">
               <p class="text-muted"> I really enjoyed working with them, they are Group of Professionals and they know what they're Doing</p>
@@ -6542,10 +6901,12 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
       <div class="card col-md-3">
         <div class="card-content">
           <div class="card-body">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#0011ff">
-              <path d="M15.9082 12.3714H20.5982C20.5182 17.0414 19.5982 17.8114 16.7282 19.5114C16.3982 19.7114 16.2882 20.1314 16.4882 20.4714C16.6882 20.8014 17.1082 20.9114 17.4482 20.7114C20.8282 18.7114 22.0082 17.4914 22.0082 11.6714V6.28141C22.0082 4.57141 20.6182 3.19141 18.9182 3.19141H15.9182C14.1582 3.19141 12.8282 4.52141 12.8282 6.28141V9.28141C12.8182 11.0414 14.1482 12.3714 15.9082 12.3714Z"></path>
-              <path d="M5.09 12.3714H9.78C9.7 17.0414 8.78 17.8114 5.91 19.5114C5.58 19.7114 5.47 20.1314 5.67 20.4714C5.87 20.8014 6.29 20.9114 6.63 20.7114C10.01 18.7114 11.19 17.4914 11.19 11.6714V6.28141C11.19 4.57141 9.8 3.19141 8.1 3.19141H5.1C3.33 3.19141 2 4.52141 2 6.28141V9.28141C2 11.0414 3.33 12.3714 5.09 12.3714Z"></path>
+            <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g>
+                <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
+              </g>
             </svg>
+
 
             <div class="card-subtitle mt-3">
               <p class="text-muted"> I really enjoyed working with them, they are Group of Professionals and they know what they're Doing</p>

@@ -40,6 +40,7 @@
 	.subheading {
 		font-family:var(--bs-font-body);
 		//font-size:2rem;
+		margin-bottom:3rem;
 	}
 	.svg-wrapper {
 		position: absolute;
@@ -50,22 +51,12 @@
 	}
 	
 	.buttons {
-		margin-top:5rem;
+		margin-top:3rem;
 		font-family:var(--bs-font-body);
 	}
 	
-	&.overlay {
-		position: relative;
-		
-		&:before {
-			z-index: 1;
-			position: absolute;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			top: 0;
-			content: "";
-			background: rgba(0,0,0, 0.4);
-		}
+	.overlay {
+		background: rgba(var(--bs-body-color-rgb), 1);
+		opacity:0.5;
 	}
 }

@@ -46,15 +46,15 @@
 										<span data-v-cart-product-price_tax_formatted>$246.40</span>
 									</div>
 									
-									<div class="option" data-v-if="product.option">
+									<div class="option" data-v-if="product.option_value">
 										<div class="" data-v-product-option>
-											<span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+											<span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span> <span data-v-if="value.price > 0">(<span data-v-product-option-price_formatted></span>)</span>
 										</div>
 										<div class="" data-v-product-option>
-											<span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+											<span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span> <span data-v-if="value.price > 0">(<span data-v-product-option-price_formatted></span>)</span>
 										</div>
 										<div class="" data-v-product-option>
-											<span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+											<span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span> <span data-v-if="value.price > 0">(<span data-v-product-option-price_formatted></span>)</span>
 										</div>
 									</div>
 									

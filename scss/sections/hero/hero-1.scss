@@ -3,9 +3,7 @@
 	text-align: center;
 	background-position: bottom center;
 	background-repeat: no-repeat;
-	background-image: url(../img/background.svg);
 	background-size: 100%;
-	background: rgba(var(--bs-body-bg-rgb),0.9);
 	position: relative;
 
 	display: flex;
@@ -221,6 +219,10 @@
 			min-width: 300px;
 			width: 100%;
 		}
+	}
+	
+	.overlay {
+		background:var(--bs-body-bg);
 	}
 
 }
