@@ -283,7 +283,7 @@
           <ul class="navbar-nav ms-auto" data-v-menu-items>
             <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-              <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
+              <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
                 <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
                 <span data-v-menu-item-content>
                   <p>
@@ -294,7 +294,7 @@
 
               <div class="dropdown-menu" data-v-menu-item-recursive>
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <a class="dropdown-item" data-v-class-if-active="category.active" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
                     <span data-v-menu-item-content>
                       <div class="row">
@@ -317,7 +317,7 @@
                   </a>
                 </div>
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
                     <span data-v-menu-item-content></span>
                   </a>
@@ -725,326 +725,7 @@
     <div class="container">
       <div class="row justify-content-between">
 
-
-        <div class="col-xl-3 d-none d-xl-block">
-          <!-- Categories Widget -->
-          <div class="widget" data-v-component-product-categories="sidebar" data-v-type="categories" data-v-limit="0" data-v-parent_id="0" data-v-post_type="product">
-            <div>
-              <span class="d-flex text-muted mb-2">Categories</span>
-              <div class="card-body">
-                <ul class="list-unstyled" data-v-cats>
-                  <li data-v-cat>
-                    <a href="#" data-v-cat-url>
-                      <span data-v-cat-name>Web Design</span>
-                    </a>
-                  </li>
-                  <li data-v-cat>
-                    <a href="#" data-v-cat-url>
-                      <span data-v-cat-name>HTML</span>
-                    </a>
-                  </li>
-                  <li data-v-cat>
-                    <a href="#" data-v-cat-url>
-                      <span data-v-cat-name>Freebies</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Manufacturers Widget -->
-          <div class="widget">
-            <span class="d-flex text-muted mb-2">Brands</span>
-            <ul class="list-unstyled" data-v-component-product-manufacturers="sidebar" data-v-type="categories">
-              <li data-v-manufacturer>
-                <div class="form-check form-check-minimal">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    <span data-v-manufacturer-name>Mango</span>
-                  </label>
-                </div>
-              </li>
-              <li data-v-manufacturer>
-                <div class="form-check form-check-minimal">
-                  <input class="form-check-input" type="checkbox" value="" id="brand-2">
-                  <label class="form-check-label" for="brand-2">
-                    <span data-v-manufacturer-name>Assos</span>
-                  </label>
-                </div>
-              </li>
-              <li data-v-manufacturer>
-                <div class="form-check form-check-minimal">
-                  <label class="form-check-label" for="brand-3">
-                    <input class="form-check-input" type="checkbox" value="" id="brand-3">
-                    <span data-v-manufacturer-name>Brand name</span>
-                  </label>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-
-          <div class="widget">
-            <span class="d-flex text-muted mb-2">Color</span>
-            <ul class="list-unstyled">
-              <li>
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-1">
-                  <label class="form-check-label" for="color-1">
-                    <span class="bg-red"></span> Red
-                  </label>
-                </div>
-              </li>
-              <li class="mt-1">
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-2">
-                  <label class="form-check-label" for="color-2">
-                    <span class="bg-blue"></span> Blue
-                  </label>
-                </div>
-              </li>
-              <li class="mt-1">
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-3">
-                  <label class="form-check-label" for="color-3">
-                    <span class="bg-green"></span> Green
-                  </label>
-                </div>
-              </li>
-              <li class="mt-1">
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-4">
-                  <label class="form-check-label" for="color-4">
-                    <span class="bg-yellow"></span> Yellow
-                  </label>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <!--
-<div class="list-group group">
-    <span class="list-group-item group">Size</span>
-
-    <div class="list-group-item">
-        <div id="option-groupSize">
-
-            <label class="checkbox">
-<input name="filter_option[]" type="checkbox" value="46">
-<span>Small <strong>(1)</strong></span>
-</label>
-
-            <label class="checkbox">
-<input name="filter_option[]" type="checkbox" value="47">
-<span>Medium <strong>(1)</strong></span>
-</label>
-
-            <label class="checkbox">
-<input name="filter_option[]" type="checkbox" value="48">
-<span>Large <strong>(1)</strong></span>
-</label>
-
-            <label class="checkbox">
-<input name="filter_option[]" type="checkbox" value="61">
-<span>XS <strong>(11)</strong></span>
-</label>
-
-            <label class="checkbox">
-<input name="filter_option[]" type="checkbox" value="62">
-<span>S <strong>(15)</strong></span>
-</label>
-
-            <label class="checkbox">
-<input name="filter_option[]" type="checkbox" value="63">
-<span>M <strong>(12)</strong></span>
-</label>
-
-            <label class="checkbox">
-<input name="filter_option[]" type="checkbox" value="64">
-<span>L <strong>(6)</strong></span>
-</label>
-
-            <label class="checkbox">
-<input name="filter_option[]" type="checkbox" value="65">
-<span>XL <strong>(10)</strong></span>
-</label>
-
-            <label class="checkbox">
-<input name="filter_option[]" type="checkbox" value="66">
-<span>XXL <strong>(6)</strong></span>
-</label>
-        </div>
-    </div>
-
-    <span class="list-group-item group">Color</span>
-
-    <div class="list-group-item">
-        <div id="option-groupColor">
-
-            <label class="checkbox image">
-
-<input name="filter_option[]" type="checkbox" value="49">
-
-<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/blue-20x20.gif" alt="">
-<span>Blue <strong>(3)</strong></span>
-</label>
-
-            <label class="checkbox image">
-
-<input name="filter_option[]" type="checkbox" value="50">
-
-<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/gold-20x20.gif" alt="">
-<span>Gold <strong>(3)</strong></span>
-</label>
-
-            <label class="checkbox image">
-
-<input name="filter_option[]" type="checkbox" value="51">
-
-<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/green-20x20.gif" alt="">
-<span>Green <strong>(3)</strong></span>
-</label>
-
-            <label class="checkbox image">
-
-<input name="filter_option[]" type="checkbox" value="52">
-
-<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/hotpink-20x20.gif" alt="">
-<span>Hot pink <strong>(5)</strong></span>
-</label>
-
-            <label class="checkbox image">
-
-<input name="filter_option[]" type="checkbox" value="53">
-
-<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/lemon-20x20.gif" alt="">
-<span>Lemon <strong>(4)</strong></span>
-</label>
-
-            <label class="checkbox image">
-
-<input name="filter_option[]" type="checkbox" value="54">
-
-<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/lime-20x20.gif" alt="">
-<span>Lime <strong>(3)</strong></span>
-</label>
-
-            <label class="checkbox image">
-
-<input name="filter_option[]" type="checkbox" value="55">
-
-<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/navy-20x20.gif" alt="">
-<span>Navy <strong>(9)</strong></span>
-</label>
-
-            <label class="checkbox image">
-
-<input name="filter_option[]" type="checkbox" value="56">
-
-<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/orange-20x20.gif" alt="">
-<span>Orange <strong>(1)</strong></span>
-</label>
-
-            <label class="checkbox image">
-
-<input name="filter_option[]" type="checkbox" value="57">
-
-<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/red-20x20.gif" alt="">
-<span>Red <strong>(5)</strong></span>
-</label>
-
-            <label class="checkbox image">
-
-<input name="filter_option[]" type="checkbox" value="58">
-
-<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/slate-20x20.gif" alt="">
-<span>Slate <strong>(5)</strong></span>
-</label>
-
-            <label class="checkbox image">
-
-<input name="filter_option[]" type="checkbox" value="59">
-
-<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/teal-20x20.gif" alt="">
-<span>Teal <strong>(2)</strong></span>
-</label>
-
-            <label class="checkbox image">
-
-<input name="filter_option[]" type="checkbox" value="60">
-
-<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/vanilla-20x20.gif" alt="">
-<span>Vanilla <strong>(2)</strong></span>
-</label>
-        </div>
-    </div>
-
-    <span class="list-group-item group">Manufacturer</span>
-
-    <div class="list-group-item">
-        <div id="manufacturer-group">
-
-            <label class="checkbox image">
-<input name="filter_manufacturer[]" type="checkbox" value="6">
-<img src="http://anne.nicolethemes.com/image/cache/catalog/demo/palm_logo-he-100x30.jpg" alt=""> <span>Palm</span>
-</label>
-
-            <label class="checkbox image">
-<input name="filter_manufacturer[]" type="checkbox" value="7">
-<span>Hewlett-Packard</span>
-</label>
-
-            <label class="checkbox image">
-<input name="filter_manufacturer[]" type="checkbox" value="8">
-<img src="http://anne.nicolethemes.com/image/cache/catalog/demo/apple_logo-he-100x30.jpg" alt=""> <span>Apple</span>
-</label>
-
-            <label class="checkbox image">
-<input name="filter_manufacturer[]" type="checkbox" value="9">
-<img src="http://anne.nicolethemes.com/image/cache/catalog/demo/canon_logo-he-100x30.jpg" alt=""> <span>Canon</span>
-</label>
-
-            <label class="checkbox image">
-<input name="filter_manufacturer[]" type="checkbox" value="10">
-<img src="http://anne.nicolethemes.com/image/cache/catalog/demo/sony_logo-he-100x30.jpg" alt=""> <span>Sony</span>
-</label>
-        </div>
-    </div>
-
-</div>
--->
-
-          <!--
-
-<div class="widget">
-	<span class="d-flex  text-muted mb-2">Price</span>
-
-	  <div class="">
-		  <div class="price-input">
-			  <label>	
-				  <span>Min</span>
-				  <input type="number" class="input-min form-control" value="2500">
-			  </label>
-			  <label>	
-				  <span>Max</span>
-				  <input type="number" class="input-max form-control" value="7500">
-			  </label>
-		  </div>
-		  <div class="slider">
-			<div class="progress"></div>
-		  </div>
-		  <div class="range-input">
-			<input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-			<input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-		  </div>
-	</div>
-	
-</div>
--->
-        </div>
-
-        <div class="col-xl-9">
+        <div class="col">
 
           <div class="row g-3 g-md-5 align-items-end">
             <div class="col-md-6">
@@ -1111,7 +792,7 @@
             </div>
           </div>
 
-          <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-page="url" data-v-manufacturer_id="url" data-v-image_size="medium">
+          <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-page="url" data-v-manufacturer_id="url" data-v-image_size="medium" data-v-filter="url">
             <div class="col-md-6 col-xl-4" data-v-product>
               <div class="product">
 
@@ -1174,11 +855,15 @@
 
               </div>
             </div>
+
+            <div data-v-if="index < 1">
+              <h4 class="text-center py-4">No products to display!</h4>
+            </div>
           </div>
 
           <div class="mt-4 py-2">
 
-            <div data-pagination data-v-parent-component="products" data-v-parent-index="0" data-v-parameters='{}'>
+            <div data-pagination data-v-parent-component="products" data-v-parent-index="0" data-v-query-string="true" data-v-parameters='{}'>
 
               <nav data-v-if="pagecount > 1">
                 <ul class="pagination pagination-sm justify-content-end" style="--bs-pagination-border-color:transparent;border-top: 1px solid var(--bs-border-color);padding-top: 1rem;">
@@ -1393,6 +1078,7 @@ $(document).on("click", ".dropdown-toggle",function (e) {
 </script>
 
 
+  <script id="filter-js" src="../../js/filter.js"></script>
 
 </body>
 

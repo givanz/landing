@@ -283,7 +283,7 @@
           <ul class="navbar-nav ms-auto" data-v-menu-items>
             <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-              <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
+              <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
                 <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
                 <span data-v-menu-item-content>
                   <p>
@@ -294,7 +294,7 @@
 
               <div class="dropdown-menu" data-v-menu-item-recursive>
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <a class="dropdown-item" data-v-class-if-active="category.active" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
                     <span data-v-menu-item-content>
                       <div class="row">
@@ -317,7 +317,7 @@
                   </a>
                 </div>
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
                     <span data-v-menu-item-content></span>
                   </a>
@@ -754,20 +754,20 @@
           </div>
 
           <!-- Manufacturers Widget -->
-          <div class="widget">
+          <div class="widget filters">
             <span class="d-flex text-muted mb-2">Brands</span>
-            <ul class="list-unstyled" data-v-component-product-manufacturers="sidebar" data-v-type="categories">
+            <ul class="list-unstyled" data-v-component-product-manufacturers="sidebar" data-v-filter="url">
               <li data-v-manufacturer>
                 <div class="form-check form-check-minimal">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
+                    <input class="form-check-input" type="checkbox" name="manufacturer_id[]" value="" data-v-manufacturer-manufacturer_id>
                     <span data-v-manufacturer-name>Mango</span>
                   </label>
                 </div>
               </li>
               <li data-v-manufacturer>
                 <div class="form-check form-check-minimal">
-                  <input class="form-check-input" type="checkbox" value="" id="brand-2">
+                  <input class="form-check-input" type="checkbox" name="manufacturer_id[]" value="" data-v-manufacturer-manufacturer_id>
                   <label class="form-check-label" for="brand-2">
                     <span data-v-manufacturer-name>Assos</span>
                   </label>
@@ -776,7 +776,7 @@
               <li data-v-manufacturer>
                 <div class="form-check form-check-minimal">
                   <label class="form-check-label" for="brand-3">
-                    <input class="form-check-input" type="checkbox" value="" id="brand-3">
+                    <input class="form-check-input" type="checkbox" name="manufacturer_id[]" value="" data-v-manufacturer-manufacturer_id>
                     <span data-v-manufacturer-name>Brand name</span>
                   </label>
                 </div>
@@ -784,44 +784,75 @@
             </ul>
           </div>
 
-
-          <div class="widget">
-            <span class="d-flex text-muted mb-2">Color</span>
-            <ul class="list-unstyled">
-              <li>
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-1">
-                  <label class="form-check-label" for="color-1">
-                    <span class="bg-red"></span> Red
+          <div class="widget filters">
+            <span class="d-flex text-muted mb-2">Vendors</span>
+            <ul class="list-unstyled" data-v-component-product-vendors="sidebar" data-v-filter="url">
+              <li data-v-vendor>
+                <div class="form-check form-check-minimal">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="vendor_id[]" value="" data-v-vendor-vendor_id>
+                    <span data-v-vendor-name>Mango</span>
                   </label>
                 </div>
               </li>
-              <li class="mt-1">
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-2">
-                  <label class="form-check-label" for="color-2">
-                    <span class="bg-blue"></span> Blue
+              <li data-v-vendor>
+                <div class="form-check form-check-minimal">
+                  <input class="form-check-input" type="checkbox" name="vendor_id[]" value="" data-v-vendor-vendor_id>
+                  <label class="form-check-label" for="brand-2">
+                    <span data-v-vendor-name>Assos</span>
                   </label>
                 </div>
               </li>
-              <li class="mt-1">
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-3">
-                  <label class="form-check-label" for="color-3">
-                    <span class="bg-green"></span> Green
-                  </label>
-                </div>
-              </li>
-              <li class="mt-1">
-                <div class="form-check form-check-color">
-                  <input class="form-check-input" type="checkbox" value="" id="color-4">
-                  <label class="form-check-label" for="color-4">
-                    <span class="bg-yellow"></span> Yellow
+              <li data-v-vendor>
+                <div class="form-check form-check-minimal">
+                  <label class="form-check-label" for="brand-3">
+                    <input class="form-check-input" type="checkbox" name="vendor_id[]" value="" data-v-vendor-vendor_id>
+                    <span data-v-vendor-name>Brand name</span>
                   </label>
                 </div>
               </li>
             </ul>
           </div>
+
+          <!--
+<div class="widget">
+  <span class="d-flex text-muted mb-2">Color</span>
+  <ul class="list-unstyled">
+	<li>
+	  <div class="form-check form-check-color">
+		<input class="form-check-input" type="checkbox" value="" id="color-1">
+		<label class="form-check-label" for="color-1">
+		  <span class="bg-red"></span> Red
+		</label>
+	  </div>
+	</li>
+	<li class="mt-1">
+	  <div class="form-check form-check-color">
+		<input class="form-check-input" type="checkbox" value="" id="color-2">
+		<label class="form-check-label" for="color-2">
+		  <span class="bg-blue"></span> Blue
+		</label>
+	  </div>
+	</li>
+	<li class="mt-1">
+	  <div class="form-check form-check-color">
+		<input class="form-check-input" type="checkbox" value="" id="color-3">
+		<label class="form-check-label" for="color-3">
+		  <span class="bg-green"></span> Green
+		</label>
+	  </div>
+	</li>
+	<li class="mt-1">
+	  <div class="form-check form-check-color">
+		<input class="form-check-input" type="checkbox" value="" id="color-4">
+		<label class="form-check-label" for="color-4">
+		  <span class="bg-yellow"></span> Yellow
+		</label>
+	  </div>
+	</li>
+  </ul>
+</div>
+-->
 
           <!--
 <div class="list-group group">
@@ -1042,6 +1073,7 @@
 	
 </div>
 -->
+
         </div>
 
         <div class="col-xl-9">
@@ -1110,8 +1142,7 @@
               </ul>
             </div>
           </div>
-
-          <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-page="url" data-v-taxonomy_item_id="url" data-v-image_size="medium">
+          <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-order_by="url" data-v-direction="url" data-v-page="url" data-v-taxonomy_item_id="url" data-v-image_size="medium" data-v-filter="url">
             <div class="col-md-6 col-xl-4" data-v-product>
               <div class="product">
 
@@ -1174,11 +1205,16 @@
 
               </div>
             </div>
+
+            <div data-v-if="index < 1">
+              <h4 class="text-center py-4">No products to display!</h4>
+            </div>
+
           </div>
 
           <div class="mt-4 py-2">
 
-            <div data-pagination data-v-parent-component="products" data-v-parent-index="0" data-v-parameters='{}'>
+            <div data-pagination data-v-parent-component="products" data-v-parent-index="0" data-v-query-string="true" data-v-parameters='{}'>
 
               <nav data-v-if="pagecount > 1">
                 <ul class="pagination pagination-sm justify-content-end" style="--bs-pagination-border-color:transparent;border-top: 1px solid var(--bs-border-color);padding-top: 1rem;">
@@ -1392,6 +1428,8 @@ $(document).on("click", ".dropdown-toggle",function (e) {
 });
 </script>
 
+
+  <script id="filter-js" src="../../js/filter.js"></script>
 
 
 </body>

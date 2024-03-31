@@ -12,12 +12,7 @@
       <div class="container">
         <div class="row justify-content-between">
 		
-		
-         <div class="col-xl-3 d-none d-xl-block">
-			@@include('_sidebar.html')
-		 </div>
-		  
-          <div class="col-xl-9">
+          <div class="col">
 
 			<div class="row g-3 g-md-5 align-items-end">
 			  <div class="col-md-6">
@@ -46,19 +41,23 @@
 			  </div>
 			</div>
 			
-            <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-page="url" data-v-manufacturer_id="url" data-v-image_size="medium">
+            <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-page="url" data-v-manufacturer_id="url" data-v-image_size="medium"  data-v-filter="url">
               <div class="col-md-6 col-xl-4" data-v-product>
                 <div class="product">
 				
 					@@include('../_includes/product-list-item.html')
 				
 				</div>
-                </div>             		
+                </div>   
+          		
+				<div data-v-if="index < 1">
+					<h4 class="text-center py-4">No products to display!</h4>
+				</div>
 			 </div>
             
 				<div class="mt-4 py-2">
 				
-					@@include('../_includes/pagination.html', {"component": "products", "component-index":0})
+					@@include('../_includes/pagination.html', {"component": "products", "component-index":0, "query_string":true})
 			
 				</div>
 			</div>
@@ -68,10 +67,11 @@
     </main>
 
    
-	@@include('../_includes/footer.html')   
-	 
-	@@include('../_includes/footer-scripts.html')    
-  	
+@@include('../_includes/footer.html')   
+ 
+@@include('../_includes/footer-scripts.html')    
+
+<script id="filter-js" src="../../js/filter.js"></script>  	
   	
 </body>
 </html>

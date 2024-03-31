@@ -88,19 +88,24 @@
 			  </div>
 			</div>
 			
-            <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-order_by="url" data-v-direction="url" data-v-page="url" data-v-taxonomy_item_id="url" data-v-image_size="medium">
+            <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-order_by="url" data-v-direction="url" data-v-page="url" data-v-taxonomy_item_id="url" data-v-image_size="medium" data-v-filter="url">
               <div class="col-md-6 col-xl-4" data-v-product>
                 <div class="product">
 				
 					@@include('../_includes/product-list-item.html')
-				
+					
 				</div>
-                </div>             		
+                </div>  
+
+				<div data-v-if="index < 1">
+					<h4 class="text-center py-4">No products to display!</h4>
+				</div>
+           		
 			 </div>
             
 				<div class="mt-4 py-2">
 				
-					@@include('../_includes/pagination.html', {"component": "products", "component-index":0})
+					@@include('../_includes/pagination.html', {"component": "products", "component-index":0, "query_string":true})
 			
 				</div>
 			</div>
@@ -114,7 +119,7 @@
  
 @@include('../_includes/footer-scripts.html')    
 
-<script src="js/filters.js"></script>  	
+<script id="filter-js" src="../../js/filter.js"></script>
   	
 </body>
 </html>

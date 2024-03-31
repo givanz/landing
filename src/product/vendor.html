@@ -14,7 +14,36 @@
 		
 		
          <div class="col-xl-3 d-none d-xl-block">
-			@@include('_sidebar.html')
+			<!-- Manufacturers Widget -->
+			<div class="widget filters">
+			  <span class="d-flex text-muted mb-2">Brands</span>
+			  <ul class="list-unstyled" data-v-component-product-manufacturers="sidebar" data-v-filter="url">
+				<li data-v-manufacturer>
+				  <div class="form-check form-check-minimal">
+					<label class="form-check-label">
+					  <input class="form-check-input" type="checkbox" name="manufacturer_id[]" value="" data-v-manufacturer-manufacturer_id>
+					  <span data-v-manufacturer-name>Mango</span>
+					</label>
+				  </div>
+				</li>
+				<li data-v-manufacturer>
+				  <div class="form-check form-check-minimal">
+					<input class="form-check-input" type="checkbox" name="manufacturer_id[]" value="" data-v-manufacturer-manufacturer_id>
+					<label class="form-check-label" for="brand-2">
+					  <span data-v-manufacturer-name>Assos</span>
+					</label>
+				  </div>
+				</li>
+				<li data-v-manufacturer>
+				  <div class="form-check form-check-minimal">
+					<label class="form-check-label" for="brand-3">
+					  <input class="form-check-input" type="checkbox" name="manufacturer_id[]" value="" data-v-manufacturer-manufacturer_id>
+					  <span data-v-manufacturer-name>Brand name</span>
+					</label>
+				  </div>
+				</li>
+			  </ul>
+			</div>
 		 </div>
 		  
           <div class="col-xl-9">
@@ -48,7 +77,7 @@
 			  </div>
 			</div>
 			
-            <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-page="url" data-v-vendor_id="url" data-v-image_size="medium">
+            <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-page="url" data-v-vendor_id="url" data-v-image_size="medium"  data-v-filter="url">
               <div class="col-md-6 col-xl-4" data-v-product>
                 <div class="product">
 				
@@ -56,11 +85,15 @@
 				
 				</div>
                 </div>             		
+
+				<div data-v-if="index < 1">
+					<h4 class="text-center py-4">No products to display!</h4>
+				</div>
 			 </div>
             
 				<div class="mt-4 py-2">
 				
-					@@include('../_includes/pagination.html', {"component": "products", "component-index":0})
+					@@include('../_includes/pagination.html', {"component": "products", "component-index":0, "query_string":true})
 			
 				</div>
 			</div>
@@ -70,10 +103,11 @@
     </main>
 
    
-	@@include('../_includes/footer.html')   
-	 
-	@@include('../_includes/footer-scripts.html')    
-  	
+@@include('../_includes/footer.html')   
+ 
+@@include('../_includes/footer-scripts.html')    
+
+<script id="filter-js" src="../../js/filter.js"></script>  	
   	
 </body>
 </html>
