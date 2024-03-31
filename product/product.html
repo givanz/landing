@@ -283,7 +283,7 @@
           <ul class="navbar-nav ms-auto" data-v-menu-items>
             <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-              <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
+              <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
                 <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
                 <span data-v-menu-item-content>
                   <p>
@@ -294,7 +294,7 @@
 
               <div class="dropdown-menu" data-v-menu-item-recursive>
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <a class="dropdown-item" data-v-class-if-active="category.active" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
                     <span data-v-menu-item-content>
                       <div class="row">
@@ -317,7 +317,7 @@
                   </a>
                 </div>
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
                     <span data-v-menu-item-content></span>
                   </a>
@@ -1106,53 +1106,58 @@
 
               <hr class="border opacity-50">
 
-              <div class="form-group mt-5">
-                <!--
-									
-									<label class="form-label" for="input-quantity">Qty</label>&nbsp;
+              <div class="form-group">
 
-									-->
-                <div class="quantity">
-                  <div class="input-group spinner">
-                    <button class="btn btn-minus" type="button">
-                      <i class="la la-minus"></i>
-                    </button>
-                    <input type="number" name="quantity" value="1" size="1" id="input-quantity" class="form-control">
-                    <button class="btn btn-plus" type="button">
-                      <i class="la la-plus"></i>
-                    </button>
+                <div class="mt-4 d-inline-block">
+                  <!--
+									
+                        <label class="form-label" for="input-quantity">Qty</label>&nbsp;
+
+                  -->
+                  <div class="quantity">
+                    <div class="input-group spinner">
+                      <button class="btn btn-minus" type="button">
+                        <i class="la la-minus"></i>
+                      </button>
+                      <input type="number" name="quantity" value="1" size="1" id="input-quantity" class="form-control">
+                      <button class="btn btn-plus" type="button">
+                        <i class="la la-plus"></i>
+                      </button>
+                    </div>
                   </div>
+
+                  <button type="submit" formaction="/cart/1" id="button-cart" class="btn btn-primary btn-shadow px-4 mx-2 button-cart" data-v-vvveb-action="addToCart" data-v-product-add_cart_url>
+
+                    <span class="loading d-none">
+                      <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                      </span>
+                      <span>Add to cart</span>...
+                    </span>
+
+                    <span class="button-text">
+                      <i class="la la-shopping-bag la-lg me-2"></i>
+                      <span>Add to cart</span>
+                    </span>
+
+                  </button>
                 </div>
 
-                <button type="submit" formaction="/cart/1" id="button-cart" class="btn btn-primary btn-shadow px-4 mx-2 button-cart" data-v-vvveb-action="addToCart" data-v-product-add_cart_url>
+                <div class="mt-4 d-inline-block">
+                  <button type="submit" formaction="/checkout/1" id="buynow" class="btn btn-light btn-shadow border px-4 buynow" data-v-product-buy_url>
 
-                  <span class="loading d-none">
-                    <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                    <span class="loading d-none">
+                      <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                      </span>
+                      <span>Add to cart</span>...
                     </span>
-                    <span>Add to cart</span>...
-                  </span>
 
-                  <span class="button-text">
-                    <i class="la la-shopping-bag la-lg me-2"></i>
-                    <span>Add to cart</span>
-                  </span>
-
-                </button>
-
-                <button type="submit" formaction="/checkout/1" id="buynow" class="btn btn-light btn-shadow border px-4 buynow" data-v-product-buy_url>
-
-                  <span class="loading d-none">
-                    <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                    <span class="button-text">
+                      <span>Buy now</span>
+                      <i class="la la-arrow-right la-lg ms-2"></i>
                     </span>
-                    <span>Add to cart</span>...
-                  </span>
 
-                  <span class="button-text">
-                    <span>Buy now</span>
-                    <i class="la la-arrow-right la-lg ms-2"></i>
-                  </span>
-
-                </button>
+                  </button>
+                </div>
 
                 <div class="product_wish_compare mt-4">
                   <a href="/wishlist/1" class="btn btn-sm btn-outline-secondary border-0" title="Add to wish list" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
@@ -1175,7 +1180,7 @@
 
       </div>
 
-      <ul class="nav nav-tabs nav-scroll bg-body sticky-top mt-5" id="productTabs" role="tablist" style="top:120px">
+      <ul class="nav nav-tabs nav-scroll bg-body sticky-top mt-5" id="productTabs" role="tablist">
         <li class="nav-item" role="presentation">
           <a class="nav-link active" id="description-tab" data-bs-target="#description" href="#description" type="button" role="tab" aria-controls="description" aria-selected="true">
             Description

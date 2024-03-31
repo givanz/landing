@@ -18313,6 +18313,9 @@ div.zoom img {
 .nav-scroll {
   --bs-nav-link-padding-y:1rem;
   --bs-nav-link-padding-x:1rem; }
+  @media (min-width: 768px) {
+    .nav-scroll {
+      top: 120px; } }
   .nav-scroll.nav-tabs {
     z-index: 3; }
     .nav-scroll.nav-tabs:after {

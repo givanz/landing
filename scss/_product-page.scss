@@ -443,6 +443,10 @@ div.zoom img {
 	--bs-nav-link-padding-y:1rem;
 	--bs-nav-link-padding-x:1rem;
 	
+	@media (min-width: 768px) {  
+		top:120px;
+	}
+	
 	&.nav-tabs {
 		z-index:3;
 		

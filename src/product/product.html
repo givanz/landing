@@ -144,47 +144,52 @@
 
 								<hr class="border opacity-50">
 
-								<div class="form-group mt-5">
+								<div class="form-group">
+									
+									<div class="mt-4 d-inline-block">
 									<!--
 									
 									<label class="form-label" for="input-quantity">Qty</label>&nbsp;
 
 									-->
-									<div class="quantity">
-										<div class="input-group spinner">
-											<button class="btn btn-minus" type="button"><i class="la la-minus"></i></button>
-											<input type="number" name="quantity" value="1" size="1" id="input-quantity" class="form-control">
-											<button class="btn btn-plus" type="button"><i class="la la-plus"></i></button>
+										<div class="quantity">
+											<div class="input-group spinner">
+												<button class="btn btn-minus" type="button"><i class="la la-minus"></i></button>
+												<input type="number" name="quantity" value="1" size="1" id="input-quantity" class="form-control">
+												<button class="btn btn-plus" type="button"><i class="la la-plus"></i></button>
+											</div>
 										</div>
+
+										<button type="submit" formaction="/cart/1" id="button-cart" class="btn btn-primary btn-shadow px-4 mx-2 button-cart" data-v-vvveb-action="addToCart" data-v-product-add_cart_url>
+										
+											<span class="loading d-none">
+												<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+												</span>
+												<span>Add to cart</span>...
+											</span>
+
+											<span class="button-text" >
+												<i class="la la-shopping-bag la-lg me-2"></i> <span>Add to cart</span>
+											</span>
+											
+										</button> 
+									</div> 
+
+									<div class="mt-4 d-inline-block">
+										<button type="submit" formaction="/checkout/1" id="buynow" class="btn btn-light btn-shadow border px-4 buynow" data-v-product-buy_url>
+										
+											<span class="loading d-none">
+												<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+												</span>
+												<span >Add to cart</span>...
+											</span>
+
+											<span class="button-text" >
+												<span>Buy now</span> <i class="la la-arrow-right la-lg ms-2"></i> 
+											</span>
+											
+										</button>
 									</div>
-
-									<button type="submit" formaction="/cart/1" id="button-cart" class="btn btn-primary btn-shadow px-4 mx-2 button-cart" data-v-vvveb-action="addToCart" data-v-product-add_cart_url>
-									
-										<span class="loading d-none">
-											<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
-											</span>
-											<span>Add to cart</span>...
-										</span>
-
-										<span class="button-text" >
-											<i class="la la-shopping-bag la-lg me-2"></i> <span>Add to cart</span>
-										</span>
-										
-									</button> 
-
-									<button type="submit" formaction="/checkout/1" id="buynow" class="btn btn-light btn-shadow border px-4 buynow" data-v-product-buy_url>
-									
-										<span class="loading d-none">
-											<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
-											</span>
-											<span >Add to cart</span>...
-										</span>
-
-										<span class="button-text" >
-											<span>Buy now</span> <i class="la la-arrow-right la-lg ms-2"></i> 
-										</span>
-										
-									</button>
 
 									<div class="product_wish_compare mt-4">
 										<a href="/wishlist/1" class="btn btn-sm btn-outline-secondary border-0" title="Add to wish list"  data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
@@ -205,7 +210,7 @@
 				
 			</div>
 
-				<ul class="nav nav-tabs nav-scroll bg-body sticky-top mt-5" id="productTabs" role="tablist" style="top:120px">
+				<ul class="nav nav-tabs nav-scroll bg-body sticky-top mt-5" id="productTabs" role="tablist">
 				  <li class="nav-item" role="presentation">
 					<a class="nav-link active" id="description-tab" data-bs-target="#description" href="#description" type="button" role="tab" aria-controls="description" aria-selected="true">
 						Description
