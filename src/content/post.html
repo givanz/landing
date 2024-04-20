@@ -56,12 +56,15 @@
 
 
 <main id="site-content" role="main" data-v-component-post="post">
-
+	
 	<!-- Page Content -->
 	<div class="container">
+		<div class="mb-4">@@include('../_includes/breadcrumb.html')</div>
+	
 		<div class="title-container post">
 			<div class="container">
 				<h1 class="display-4 fw-bolder text-center" data-v-post-name>Post title</h1>	
+
 			
 				<ul class="post-meta">
 
@@ -109,8 +112,8 @@
 
 		@@include('../_includes/blog-post-single.html', {"class": " post-archive-item post"})
 
-	  </div>
-
+	  </div>	  
+	  
 		<!--@@include('../_includes/sidebar.html', {"cols": "col-md-4 col-lg-3 mt-4"})-->
 
 	</div>

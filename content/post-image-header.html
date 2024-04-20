@@ -280,7 +280,7 @@
               <ul class="navbar-nav ms-auto" data-v-menu-items>
                 <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-                  <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
+                  <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
                     <span data-v-menu-item-content>
                       <p>
@@ -291,7 +291,7 @@
 
                   <div class="dropdown-menu" data-v-menu-item-recursive>
                     <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                      <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                      <a class="dropdown-item" data-v-class-if-active="category.active" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                         <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
                         <span data-v-menu-item-content>
                           <div class="row">
@@ -314,7 +314,7 @@
                       </a>
                     </div>
                     <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                      <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                      <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
                         <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
                         <span data-v-menu-item-content></span>
                       </a>
@@ -560,12 +560,15 @@
                                   <div class="option" data-v-if="product.option">
                                     <div class="" data-v-product-option>
                                       <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                                      <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                                     </div>
                                     <div class="" data-v-product-option>
                                       <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                                      <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                                     </div>
                                     <div class="" data-v-product-option>
                                       <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                                      <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                                     </div>
                                   </div>
 
@@ -713,7 +716,7 @@
 
       <div class="title-container">
         <div class="container">
-          <h1 class="display-5 text-center" data-aos="fade-up" data-aos-duration="500" data-v-post-name>Begin each day by telling yourself</h1>
+          <h1 class="display-5 text-center text-white" data-aos="fade-up" data-aos-duration="500" data-v-post-name>Begin each day by telling yourself</h1>
 
           <h5 class="text-center my-4 mb-5 w-50 mx-auto" data-aos="fade-up" data-aos-duration="500" data-v-post-excerpt>Today I shall be meeting with interference, ingratitude, insolence, disloyalty, ill-will, and selfishness all of them due to the offenders` ignorance of what is good or evil.</h5>
           <ul class="post-meta" data-aos="fade-up" data-aos-duration="200">
@@ -906,6 +909,23 @@
                   </a>
                 </li>
               </ul>
+            </div>
+          </div>
+
+          <div class="py-4 border-top border-bottom" data-v-component-admin data-v-admin_id="url">
+            <div class="row">
+              <div class="col-md-3 align-self-center">
+                <img class="img-fluid d-block rounded-circle border p-2 mx-auto" src="../../media/placeholder.svg" data-v-admin-avatar_url>
+              </div>
+              <div class="col-md-9 align-self-center">
+                <span class="text-muted">Meet the author</span>
+                <h4 data-v-admin-display_name>John Doe</h4>
+                <div class="mb-2" data-v-admin-bio>My bio</div>
+
+                <a href="#" data-v-admin-url>
+                  <span>All author posts</span>
+                </a>
+              </div>
             </div>
           </div>
 

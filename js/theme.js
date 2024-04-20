@@ -48,53 +48,67 @@ function setCookie(name, value) {
 	document.cookie = name + "=" + value + ";path=/;domain=." + window.location.host.replace(/^.*?\./, '') + ";";
 }
 
-let theme = $("html").attr("data-bs-theme");
-if (theme && theme == "dark" || document.cookie.indexOf("theme=dark") > 0) {
-	$("#color-theme-switch i").removeClass("la-sun").addClass("la-moon");
-	$("html").attr("data-bs-theme", "dark");
-} else {
-	$("#color-theme-switch i").removeClass("la-moon").addClass("la-sun");
+let themeSwitch = document.querySelector("#color-theme-switch i");
+let theme = document.documentElement.dataset.bsTheme;
+if (theme) {
+	if (theme == "dark") {
+		let themeSwitch = document.querySelector("#color-theme-switch i");
+		themeSwitch.classList.remove("la-sun")
+		themeSwitch.classList.add("la-moon");
+	}
 }
-	//$("html").attr("data-bs-theme", theme);
-
-$("#color-theme-switch").click(function () {
 	
-	let theme = $("html").attr("data-bs-theme");
+themeSwitch.addEventListener("click", function (event) {
+	
+	let theme = document.documentElement.dataset.bsTheme;
 	
 	if (theme == "dark") {
 		theme = "light";
-		$("i",this).removeClass("la-moon").addClass("la-sun");
+		themeSwitch.classList.remove("la-sun")
+		themeSwitch.classList.add("la-moon");
 	} else if (theme == "light" || theme == "auto" || !theme) {
 		theme = "dark";
-		$("i", this).removeClass("la-sun").addClass("la-moon");
+		themeSwitch.classList.remove("la-moon")
+		themeSwitch.classList.add("la-sun");
 	} else {
 		theme = "auto";
 	}
-
-	$("html").attr("data-bs-theme", theme);
+	
+	document.documentElement.dataset.bsTheme = theme;
 	//localStorage.setItem("theme", theme);
 	setCookie("theme", theme);
 	//serverStorage.setItem();
 });
 
-
 // product page
-$('.quantity').on('click', '.btn-plus', function (e) {
-	$("input[type=number]", this.parentNode).val(function( index, value ) {
-	  return ++value;
-	}).change();
+document.querySelectorAll('.quantity').forEach(e => e.addEventListener('click', function (e) {
+	let btn = e.target.closest(".btn-plus");
+	if (btn) {
+		let nrInput = btn.parentNode.querySelector("input[type=number]");
+		nrInput.value = parseInt(nrInput.value) + 1;
+		nrInput.dispatchEvent(new KeyboardEvent("change", {
+			bubbles: true,
+			cancelable: true,
+		}));		
+	}
 	return false;
-});
+}));
 
-$('.quantity').on('click', '.btn-minus', function (e) {
-	$("input[type=number]", this.parentNode).val(function( index, value ) {
-	  return Math.max(--value, 1);
-	}).change();
+document.querySelectorAll('.quantity').forEach(e => e.addEventListener('click', function (e) {
+	let btn = e.target.closest(".btn-minus");
+	if (btn) {
+		let nrInput = btn.parentNode.querySelector("input[type=number]");
+		nrInput.value = Math.max(1, parseInt(nrInput.value) - 1);
+		nrInput.dispatchEvent(new KeyboardEvent("change", {
+			bubbles: true,
+			cancelable: true,
+		}));		
+	}
 	return false;
-});
+}));
 
 function zoom(e) {
-    var img = e.currentTarget;
+    let img = e.currentTarget;
     offsetX = e.offsetX || (e.touches ? e.touches[0].pageX : 0);
     offsetY = e.offsetY || (e.touches ? e.touches[0].pageY : 0);
 	
@@ -103,7 +117,7 @@ function zoom(e) {
 	img.style.backgroundPosition = x + "% " + y + "%";
 }
 
-$('div.zoom').on('mousemove', zoom);
+document.querySelectorAll('div.zoom').forEach(e => e.addEventListener('mousemove', zoom));
 
 
 if ('serviceWorker' in navigator) {

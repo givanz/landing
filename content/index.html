@@ -283,7 +283,7 @@
           <ul class="navbar-nav ms-auto" data-v-menu-items>
             <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-              <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
+              <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
                 <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
                 <span data-v-menu-item-content>
                   <p>
@@ -294,7 +294,7 @@
 
               <div class="dropdown-menu" data-v-menu-item-recursive>
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <a class="dropdown-item" data-v-class-if-active="category.active" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
                     <span data-v-menu-item-content>
                       <div class="row">
@@ -317,7 +317,7 @@
                   </a>
                 </div>
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
                     <span data-v-menu-item-content></span>
                   </a>
@@ -563,12 +563,15 @@
                               <div class="option" data-v-if="product.option">
                                 <div class="" data-v-product-option>
                                   <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                                  <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                                 </div>
                                 <div class="" data-v-product-option>
                                   <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                                  <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                                 </div>
                                 <div class="" data-v-product-option>
                                   <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                                  <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
                                 </div>
                               </div>
 
@@ -718,11 +721,32 @@
 
     <!-- Page Content -->
     <div class="container">
+      <div class="mb-4">
+        <nav aria-label="breadcrumb" class="text-muted text-small" data-v-component-breadcrumb>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item" data-v-breadcrumb-item>
+              <a href="#" data-v-breadcrumb-item-url data-v-if="breadcrumb.url">
+                <span data-v-breadcrumb-item-text>Home</span>
+              </a>
+              <span data-v-breadcrumb-item-text data-v-if-not="breadcrumb.url">Home</span>
+            </li>
+            <li class="breadcrumb-item" data-v-breadcrumb-item>
+              <a href="#" data-v-breadcrumb-item-url data-v-if="breadcrumb.url">
+                <span data-v-breadcrumb-item-text>Library</span>
+              </a>
+              <span data-v-breadcrumb-item-text data-v-if-not="breadcrumb.url">Library</span>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page" data-v-breadcrumb-item>
+              <span>Data</span>
+            </li>
+          </ol>
+        </nav>
+      </div>
 
       <div class="row">
 
         <!-- Blog Entries Column -->
-        <div class="col-md-7 col-lg-8 col-xl-9" data-v-component-posts="popular" data-v-limit="10" data-v-image_size="large">
+        <div class="col-md-7 col-lg-8 col-xl-9" data-v-component-posts="popular" data-v-limit="4" data-v-image_size="large">
 
           <!-- Blog Post -->
 
@@ -858,7 +882,7 @@
                         </a>
                       </li>
                       <li data-v-categories-cat>
-                        <a href="#" data-v-tag-url>
+                        <a href="#" data-v-cat-url>
                           <span data-v-cat-name>cat 2</span>
                         </a>
                       </li>

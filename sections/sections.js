@@ -41,7 +41,7 @@ Vvveb.Sections.add("hero/hero-1", {
   </div>
 
   <div class="background-container">
-    <img src="img/demo/hero-3.jpg" alt="Hero background" loading="lazy">
+    <img src="img//background.svg" alt="Hero background" loading="lazy">
   </div>
 
 </header>`
@@ -558,26 +558,28 @@ Vvveb.Sections.add("features/features-1", {
           </a>
         </div>
       </div>
-      <div class="col-md-5 col-md-5">
-        <img src="img/illustrations.co/day68-happy-cat.svg" alt="happy cat" loading="lazy" class="img-fluid" />
+      <div class="col-md-5">
+        <img src="img/illustrations.co/118-macbook.svg" alt="Macbook" loading="lazy" class="img-fluid" />
       </div>
     </div>
     <div class="row wrap">
-      <div class="col-md-6">
-        <img src="img/illustrations.co/day67-dog.svg" alt="dog" loading="lazy" class="img-fluid" />
+      <div class="col-md-5">
+        <img src="img/illustrations.co/day95-app-development.svg" alt="App development" loading="lazy" class="img-fluid" />
       </div>
-      <div class="col-md-6 align-self-center">
-        <span class="badge  bg-success rounded-pill px-3 opacity-50">on sale</span>
-        <h3 class="mt-2">Intuitive building with simple drag and drop for sections, components and blocks</h3>
-        <div class="mt-4">
-          <p>The html for sections blocks and components and this template are built using Bootstrap.</p>
-          <p>Use any of the hundreds fonts from google fonts for your design.</p>
-          <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
+      <div class="col-md-7 align-self-center">
+        <div class="max-box ms-auto">
+          <span class="badge  bg-success rounded-pill px-3 opacity-50">on sale</span>
+          <h3 class="mt-2">Intuitive building with simple drag and drop for sections, components and blocks</h3>
+          <div class="mt-4">
+            <p>The html for sections blocks and components and this template are built using Bootstrap.</p>
+            <p>Use any of the hundreds fonts from google fonts for your design.</p>
+            <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
+          </div>
+          <a href="#" title="Drag and drop" role="button">
+            <span>Learn More</span>
+            <i class="la la-long-arrow-alt-right ms-1"></i>
+          </a>
         </div>
-        <a href="#" title="Drag and drop" role="button">
-          <span>Learn More</span>
-          <i class="la la-long-arrow-alt-right ms-1"></i>
-        </a>
       </div>
     </div>
   </div>
@@ -2392,7 +2394,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
         <ul class="navbar-nav ms-auto" data-v-menu-items>
           <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-            <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
+            <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
               <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
               <span data-v-menu-item-content>
                 <p>
@@ -2403,7 +2405,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
             <div class="dropdown-menu" data-v-menu-item-recursive>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                <a class="dropdown-item" data-v-class-if-active="category.active" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                   <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
                   <span data-v-menu-item-content>
                     <div class="row">
@@ -2426,7 +2428,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                 </a>
               </div>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
                   <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
                   <span data-v-menu-item-content></span>
                 </a>
@@ -2849,7 +2851,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
         <ul class="navbar-nav ms-auto" data-v-menu-items>
           <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-            <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
+            <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
               <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
               <span data-v-menu-item-content>
                 <p>
@@ -2860,7 +2862,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
             <div class="dropdown-menu" data-v-menu-item-recursive>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                <a class="dropdown-item" data-v-class-if-active="category.active" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                   <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
                   <span data-v-menu-item-content>
                     <div class="row">
@@ -2883,7 +2885,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                 </a>
               </div>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
                   <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
                   <span data-v-menu-item-content></span>
                 </a>
@@ -3437,7 +3439,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
         <ul class="navbar-nav ms-auto" data-v-menu-items>
           <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-            <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
+            <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
               <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
               <span data-v-menu-item-content>
                 <p>
@@ -3448,7 +3450,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
             <div class="dropdown-menu" data-v-menu-item-recursive>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                <a class="dropdown-item" data-v-class-if-active="category.active" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                   <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
                   <span data-v-menu-item-content>
                     <div class="row">
@@ -3471,7 +3473,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                 </a>
               </div>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
                   <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
                   <span data-v-menu-item-content></span>
                 </a>
