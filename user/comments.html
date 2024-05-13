@@ -296,7 +296,7 @@
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                   <a class="dropdown-item" data-v-class-if-active="category.active" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
-                    <span data-v-menu-item-content>
+                    <span data-v-if="category.content" data-v-menu-item-content>
                       <div class="row">
                         <div class="col-6 align-self-center">
                           <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
@@ -479,32 +479,55 @@
 
 
                       <div class="user-form" data-v-if="component.user_id">
-                        <div>Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
+                        <div class="text-center">Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
                           <b data-v-user-last_name data-filter-capitalize>Doe</b>
                         </div>
 
-                        <ul class="m-2 list-unstyled">
+                        <div class="dropdown-divider opacity-50 my-3"></div>
+
+                        <ul class="m-3 list-unstyled">
                           <li>
-                            <a href="user" data-v-url="user/index">My account</a>
+                            <a href="user" data-v-url="user/index">
+                              <i class="la la-user la-lg text-muted m-1"></i>
+                              <span>My account</span>
+                            </a>
                           </li>
                           <li>
-                            <a href="user/comments" data-v-url="user/comments/index">Comments</a>
+                            <a href="user/comments" data-v-url="user/comments/index">
+                              <i class="la la-comment la-lg text-muted m-1"></i>
+                              <span>Comments</span>
+                            </a>
                           </li>
                           <li>
-                            <a href="user/orders" data-v-url="user/orders/index">Orders</a>
+                            <a href="user/orders" data-v-url="user/orders/index">
+                              <i class="la la-shopping-bag la-lg text-muted m-1"></i>
+                              <span>Orders</span>
+                            </a>
                           </li>
                           <li>
-                            <a href="user/downloads" data-v-url="user/downloads/index">Downloads</a>
+                            <a href="user/downloads" data-v-url="user/downloads/index">
+                              <i class="la la-hand-holding-heart la-lg text-muted m-1"></i>
+                              <span>Wishlist</span>
+                            </a>
                           </li>
                           <li>
-                            <a href="user/profile" data-v-url="user/profile/index">Profile</a>
+                            <a href="user/downloads" data-v-url="user/downloads/index">
+                              <i class="la la-download la-lg text-muted m-1"></i>
+                              <span>Downloads</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="user/profile" data-v-url="user/profile/index">
+                              <i class="la la-cogs la-lg text-muted m-1"></i>
+                              <span>Profile</span>
+                            </a>
                           </li>
                         </ul>
 
 
                         <input type="hidden" name="logout">
 
-                        <button type="submit" value="logout" class="btn btn-primary w-100">
+                        <button type="submit" value="logout" class="btn btn-sm btn-primary w-100">
 
                           <span class="loading d-none">
                             <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -513,7 +536,9 @@
                           </span>
 
                           <span class="button-text">
-                            Logout
+                            <i class="la la-sign-out-alt la-lg m-1"></i>
+                            <span>Log out</span>
+                            </a>
                           </span>
 
                         </button>
@@ -727,37 +752,49 @@
           <ul class="nav flex-column nav-pills me-4 user-nav">
             <li class="nav-item">
               <a class="nav-link" href="user" data-v-url="user/index">
-                <i class="la la-tachometer-alt me-2"></i>Dashboard
+                <i class="la la-tachometer-alt la-lg me-1"></i>
+                <span>Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="user/orders" data-v-url="user/orders/index">
-                <i class="la la-shopping-bag me-2"></i>Your Orders
+                <i class="la la-shopping-bag la-lg me-1"></i>
+                <span>Your Orders</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="user/profile" data-v-url="user/profile/index">
-                <i class="la la-cogs me-2"></i>Settings
+                <i class="la la-cogs la-lg me-1"></i>
+                <span>Settings</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="user/address" data-v-url="user/address/index">
-                <i class="la la-map-pin me-2"></i>Address
+                <i class="la la-map-pin la-lg me-1"></i>
+                <span>Address</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="user/downloads" data-v-url="user/downloads/index">
-                <i class="la la-download me-2"></i>Downloads
+                <i class="la la-download la-lg me-1"></i>
+                <span>Downloads</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="user/comments" data-v-url="user/comments/index">
-                <i class="la la-comment me-2"></i>Comments
+                <i class="la la-comment la-lg me-1"></i>
+                <span>Comments</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="user/wishlist" data-v-url="user/wishlist/index">
+                <i class="la la-hand-holding-heart la-lg me-1"></i>
+                <span>Wishlist</span>
               </a>
             </li>
             <!--	
   <li class="nav-item">
-	<a class="nav-link" href="user/notifications" data-v-url="user/notifications/index"><i class="la la-bell me-2"></i>Notification</a>
+	<a class="nav-link" href="user/notifications" data-v-url="user/notifications/index"><i class="la la-bell la-lg me-1"></i><span>Notification</span></a>
   </li>
   -->
             <li class="nav-item">
@@ -778,7 +815,9 @@
                   </span>
 
                   <span class="button-text">
-                    <i class="la la-sign-out-alt me-2"></i>Log out</a>
+                    <i class="la la-sign-out-alt la-lg me-1"></i>
+                    <span>Log out</span>
+                    </a>
                   </span>
 
                 </button>
@@ -789,7 +828,7 @@
 
         </div>
 
-        <div class="col-md-9 justify-content-center border-start" data-v-component-user>
+        <div class="col-md-9 justify-content-center bcomment-start px-4">
           <div class="notifications" data-v-notifications>
 
             <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error>
@@ -852,7 +891,115 @@
 
           <h2>Comments</h2>
 
-          <span>You don't have any comments.</span>
+          <div class="table-responsive" data-v-user_id="" data-v-post_id="null" data-v-component-comments>
+            <table class="table table-hover border-top">
+              <thead>
+                <tr>
+                  <td class="text-center">Comment</td>
+                  <td class="text-center">Author</td>
+                  <td class="text-center">Status</td>
+                  <td class="text-center">Date added</td>
+                  <td>Actions</td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr data-v-comment>
+                  <td class="text-center">
+                    <span data-v-comment-content></span>
+                  </td>
+                  <td class="text-center">
+                    <span data-v-comment-author data-filter-capitalize></span>
+                  </td>
+                  <td class="text-center">
+                    <span data-v-comment-status></span>
+                  </td>
+                  <td class="text-center">
+                    <span data-v-comment-created_at data-filter-friendly_date></span>
+                  </td>
+                  <td class="text-center">
+                    <a href="" title="View" class="btn btn-primary btn-sm" data-v-comment-url>
+                      <i class="la la-eye"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr data-v-if-not="count >= 1">
+                  <td colspan="100">
+                    <div class="text-center p-4">
+                      <div>
+                        <i class="la la-comment-alt fs-1 mb-2"></i>
+                        <h6>No comments to display!</h6>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div data-pagination data-v-parent-component="comments" data-v-parent-index="0" data-v-parameters='{}'>
+
+            <nav data-v-if="pagecount > 1">
+              <ul class="pagination pagination-sm justify-content-end" style="--bs-pagination-border-color:transparent;border-top: 1px solid var(--bs-border-color);padding-top: 1rem;">
+
+                <!--
+			<li class="page-item pager-first" data-first>
+				<a class="page-link" title="First page" href="#" data-page-url data-v-if="current_page > 1">
+					<span aria-hidden="true" class="la la-angle-double-left"></span>
+					<span class="sr-only">First</span>
+				</a>
+			</li>
+			-->
+
+                <li class="page-item pager-prev" data-prev>
+
+                  <a class="page-link" href="#" aria-label="Previous" title="Previous page" data-page-url data-v-if="current_page > 1">
+                    <span aria-hidden="true" class="la la-angle-left la-lg"></span>
+                    <!-- <span>Newer Posts</span> -->
+                  </a>
+
+                </li>
+
+
+
+                <li class="page-item" data-page>
+                  <a class="page-link" href="#" data-page-no data-page-url>1</a>
+                </li>
+                <li class="page-item" data-page>
+                  <a class="page-link" href="#" data-page-no data-page-url>2</a>
+                </li>
+                <li class="page-item" data-page>
+                  <a class="page-link" href="#" data-page-no data-page-url>3</a>
+                </li>
+                <li class="page-item" data-page>
+                  <a class="page-link" href="#" data-page-no data-page-url>4</a>
+                </li>
+                <li class="page-item" data-page>
+                  <a class="page-link" href="#" data-page-no data-page-url>5</a>
+                </li>
+
+                <li class="page-item pager-next" data-next>
+                  <a class="page-link" href="#" aria-label="Next" title="Next page" data-page-url data-v-if="current_page < pagecount">
+                    <!-- <span>Older Posts</span> -->
+                    <span aria-hidden="true" class="la la-angle-right la-lg"></span>
+                  </a>
+                </li>
+
+                <!--
+			<li class="page-item pager-last" data-last>
+				<a class="page-link" title="Last page" href="#" data-page-url data-v-if="current_page < pagecount">
+				<span aria-hidden="true" class="la la-angle-double-right"></span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+			-->
+
+              </ul>
+            </nav>
+          </div>
+
+
+
         </div>
       </div>
     </div>
@@ -961,8 +1108,6 @@
   </div>
 
   <!-- Vvveb Common Js -->
-  <!-- <script src="../../js/jquery.min.js"></script> -->
-  <script id="jquery-js" src="js/jquery.min.js"></script>
   <script id="popper-js" src="../../js/popper.min.js"></script>
   <!-- <script src="../../js/bootstrap.min.js"></script> -->
   <!-- <script src="../../js/bootstrap.bundle.min.js"></script> -->
@@ -983,22 +1128,10 @@
   </noscript>
 
   <script src="js/aos.js"></script>
-  <script>
-AOS.init();
-</script>
-
   <script src="js/theme.js"></script>
 
   <script>
-$(document).on("click", ".dropdown-toggle",function (e) { 
-	let link = $(this);
-	let parent = link.parents(".nav-toggle");
-	if (link.hasClass("show")) {
-		parent.addClass("show"); 
-	} else {
-		parent.removeClass("show"); 
-	}
-});
+	AOS.init();
 </script>
 
 

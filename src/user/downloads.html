@@ -15,13 +15,69 @@
 					 
 				</div>
 
-				<div class="col-md-9 justify-content-center border-start" data-v-component-user>
+				<div class="col-md-9 justify-content-center bdigital_asset-start px-4">
 					@@include('../_includes/notifications.html')
 				
 					<h2>Downloads</h2>
-					
-					<span>You don't have any downloads.</span>
+
+					<div class="table-responsive"  data-v-order_status_id="2" data-v-component-digital_assets>
+						<table class="table table-hover border-top">
+								<thead>
+								<tr>
+								<td class="text-center">Order id</td>
+								<td class="text-center">Client</td>
+								<!-- <td class="text-center">No products</td> -->
+								<td class="text-center">Status</td>
+								<td class="text-center">File</td>
+								<!-- <td class="text-start">Tracking Code</td> -->
+								<td class="text-center">Date added</td>
+								<td>Download</td>
+								</tr>
+								</thead>
+
+							 <tbody>
+							 <tr data-v-digital_asset>
+								  <td class="text-center">
+									<span>#</span>
+									<span data-v-digital_asset-digital_asset_id>1</span>
+								  </td>
+								  <td class="text-center">
+									<span data-v-digital_asset-first_name data-filter-capitalize></span>
+									<span data-v-digital_asset-last_name data-filter-capitalize></span>
+								  </td>
+								  <td class="text-center">
+									<span data-v-digital_asset-file></span>
+								  </td>
+								  <td class="text-center">
+									<span data-v-digital_asset-total></span>
+								  </td>
+								  <td class="text-center">
+									<span data-v-digital_asset-created_at data-filter-friendly_date></span>
+								  </td>
+								  <td class="text-center">
+									  <a href="" title="View" class="btn btn-primary btn-sm" data-v-digital_asset-url>
+										<i class="la la-download"></i>
+									  </a> 
+								 </td>
+							</tr>
+							<tr data-v-if-not="count >= 1">
+								<td colspan="100">
+									<div class="text-center p-4">
+										<div>
+											<i class="la la-box fs-1 mb-2"></i>
+											<h6>No downloads to display!</h6>											
+										</div>
+									</div>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					  </div>
+					  
+					  @@include('../_includes/pagination.html', {"component": "digital_assets", "component-index":0})
+			
 				</div>
+				
             </div>
         </div>
 	</main>

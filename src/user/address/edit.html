@@ -21,7 +21,7 @@
 				
 					<h2>Address</h2>
 										
-					<form id="profile-form" action="" method="post" class="settings" data-v-user_address>
+					<form id="profile-form" action="" method="post" class="address" data-v-user_address>
 						<input type="hidden" name="action" id="action" value="save">
 						   
 					
@@ -89,12 +89,12 @@
 						</div>	
 						
 						<div class="mb-3 row">
-							<label class="col-sm-2 col-form-label" for="country">region <span class="text-danger text-small">*</span></label>
+							<label class="col-sm-2 col-form-label" for="country">Region <span class="text-danger text-small">*</span></label>
 							<div class="col-sm-10">
 								<select class="form-select" id="region_id" name="user_address[region_id]" data-v-regions required readonly>
-								  <option value="1" data-v-option>region 1</option>
-								  <option value="2" data-v-option>region 2</option>
-								  <option value="3" data-v-option>region 3</option>
+								  <option value="1" data-v-option></option>
+								  <option value="2" data-v-option></option>
+								  <option value="3" data-v-option></option>
 								</select>
 							</div>
 						</div>
@@ -121,10 +121,15 @@
 	</main>
 
 
-	@@include('../../_includes/footer.html')
+@@include('../../_includes/footer.html')
 
-	@@include('../../_includes/footer-scripts.html')
-  	
+@@include('../../_includes/footer-scripts.html')
+
+<script>
+let regionsUrl = '{ $this->regionsUrl }';
+</script>
+
+<script src="js/checkout.js"></script>
   	
 </body>
 </html>

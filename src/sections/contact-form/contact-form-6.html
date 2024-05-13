@@ -41,7 +41,7 @@
 	  
 		@@include('../../_includes/notifications.html')
 	  
-		<form action="" method="post">
+		<form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
   		  <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
 		
 		  <div class="row">
@@ -82,7 +82,17 @@
 	  
 		  <div class="row mt-4">
 			<div class="col">
-			  <button type="submit" class="btn btn-primary"><span>Submit</span><i class="la la-lg la-envelope opacity-50 ms-2"></i></button>
+			  <button type="submit" class="btn btn-primary">
+				<span class="loading d-none">
+					<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+					</span>
+					<span>Submitting</span> ...
+				</span>
+
+				<span class="button-text">
+					<span>Submit</span><i class="la la-lg la-envelope opacity-50 ms-2"></i>
+				</span>
+				</button>
 			</div>
 		  </div>
 		</form>

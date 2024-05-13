@@ -8,146 +8,183 @@ function refreshCart(name, value, element) {
 	//cart-summary
 }
 
-function toggleBillingAddress(e) {
+function toggleBillingAddress(element) {
 
-	let address = $(".billing_address");
-	if (e.target.value == 0) {
-		$("input,select,textarea", address).prop("disabled", false);	
-		address.show();
+	let address = document.querySelector(".billing_address");
+	if (element.value == 0) {
+		address.querySelectorAll("input,select,textarea").forEach(e => e.removeAttribute("disabled"));	
+		address.style.display = "";
 	} else {
-		$("input,select,textarea", address).prop("disabled", true);	
-		address.hide();
+		address.querySelectorAll("input,select,textarea").forEach(e => e.setAttribute("disabled", "true"));	
+		address.style.display = "none";
 	}
 }
 
 function toggleShippingAddress(element) {
-	let address = $(".shipping_address");
-	if (element.checked == 0) {
-		$("input,select,textarea", address).prop("disabled", true);	
-		address.hide();
-	} else {
-		$("input,select,textarea", address).prop("disabled", false);	
-		address.show();
+	let address = document.querySelector(".shipping_address");
+	if (element) {
+		if (element.checked == 0) {
+			address.querySelectorAll("input,select,textarea").forEach(e => e.setAttribute("disabled", "true"));	
+			address.style.display = "none";
+		} else {
+			address.querySelectorAll("input,select,textarea").forEach(e => e.removeAttribute("disabled"));	
+			address.style.display = "";
+		}
 	}
 }
 
 function toggleRegister(element) {
-	let register = $(".register-account");
+	let register = document.querySelector(".register-account");
 	
 	if (element.value == 'false') {
-		$("input,select,textarea", register).prop("disabled", true);	
-		register.hide();
+		register.querySelectorAll("input,select,textarea").forEach(e => e.setAttribute("disabled", "true"));	
+		register.style.display = "none";
 	} else {
-		$("input,select,textarea", register).prop("disabled", false);	
-		register.show();
+		register.querySelectorAll("input,select,textarea").forEach(e => e.removeAttribute("disabled"));	
+		register.style.display = "";
 	}
 }
 
 //show billing address form if no address is selected
-$(function() {
+window.addEventListener('DOMContentLoaded', (e) => {
 
-	$("body").on("change", "[name=billing_address_id]", toggleBillingAddress);
+	document.addEventListener("change", e => {
+		let element = e.target.closest("[name=billing_address_id]");
+		if (element) {
+			toggleBillingAddress(element);
+		}
+	});
 
-	if (!$("#billing_address_new").prop("checked") && !$("[name=billing_address_id]:checked").val()) {
+	if (!document.getElementById("billing_address_new")?.checked && !document.querySelector("[name=billing_address_id]:checked")?.value) {
 		//if new address is not checked and no address is selected
-		$("[name=billing_address_id]:first").click();//select first address
+		document.querySelector("[name=billing_address_id]")?.dispatchEvent(new MouseEvent('click'));//select first address
 	}
 	
-	let billing_address = $("[name=billing_address_id]:checked");
+	let billing_address = document.querySelector("[name=billing_address_id]:checked");
 	//if an address is selected hide billing address form
-	if (billing_address.length && billing_address.val() != false) {
-		$(".billing_address").hide();
+	if (billing_address && billing_address.value != false) {
+		document.querySelector(".billing_address").style.display = "none";
 	}
 	
 	//hide shipping address form if same as billing checkbox is checked
 	toggleShippingAddress(document.getElementById("shipping-form-check"));
 	
 	//if login form is filled show form
-	if ($("#checkout-login-form [name=password]").val()) {
-		$('#checkout-login-container').show();
-		$('#login-form-check').prop("checked", true);
+	if (document.querySelector("#checkout-login-form [name=password]")?.value) {
+		document.getElementById('checkout-login-container').style.display = "";
+		document.getElementById('login-form-check').checked = true;
 	}
 	
 	//if shipping or payment method is selected collapse the accordion
-	$('.accordion-item input[type="radio"]:checked').parents("label").click();
+	document.querySelector('.accordion-item input[type="radio"]:checked')?.closest("label").dispatchEvent(new MouseEvent('click'));
 
-	$('.accordion-item').on("click", "label", function(e) {
-		$(".collapse", e.delegateTarget.parentNode).collapse("hide");
-		$(".accordion-button", e.delegateTarget.parentNode).addClass("collapsed");
+	document.addEventListener("click", function(e) {
+		let element = e.target.closest(".accordion-header label input");
+		if (element) {
+			e.stopPropagation();
+			
+			let item = element.closest(".accordion-item");
+			let collapse = item.querySelector(":scope > .collapse");
 
-		$(".accordion-button", e.delegateTarget).toggleClass("collapsed");
-		$(".collapse", e.delegateTarget).collapse('toggle');
-		
-		let input = $('[name="shipping_method"], [name="payment_method"]', this);
+			item.parentNode.querySelectorAll(".collapse.show").forEach(e => bootstrap.Collapse.getOrCreateInstance(e)?.hide());
+			item.parentNode.querySelectorAll(".accordion-button").forEach(e => e.classList.add("collapsed"));
 
-		refreshCart(input.attr("name"), input.val(), this);
+			item.querySelector(".accordion-button").classList.remove("collapsed");
+			bootstrap.Collapse.getOrCreateInstance(collapse)?.show();
+
+			let input = item.querySelector('[name="shipping_method"], [name="payment_method"]');
+			refreshCart(input.getAttribute("name"), input.value, element);
+		}
 	});
 	
-	$("[data-v-countries][readonly]:first").change();
-	
+	document.querySelector("[data-v-countries][readonly]")?.dispatchEvent(new Event('change', {bubbles:true}));
+	document.querySelector('input[name="register"]:checked')?.dispatchEvent(new MouseEvent('click', {bubbles:true}));
 });
 
 //load regions for region select when country changes
-//let regionsUrl = '{ $this->regionsUrl }';
 let regions = [];
 
 function addRegionsToSelect(regionSelect, data, region_id = 0, countrySelect) {
-	regionSelect.html('');
-	for (i in data) {
-		let region = data[i];
-		regionSelect.append('<option value="' + region.region_id + '">' + region.name + '</option>');
+	regionSelect.replaceChildren();
+	for (const region of data) {
+		regionSelect.append(new Option(region.name, region.region_id));
 	}
-	regionSelect.val(region_id);
-	regionSelect.removeAttr("readonly");
+	regionSelect.value = region_id;
+	regionSelect.removeAttribute("readonly");
 	countrySelect.removeAttribute("readonly");
 }
 
-$("body").on("change", "[data-v-countries]", function () {
-	let regionGroup = $(this).parents(".row");
-	let regionSelect = $("[data-v-regions]", regionGroup);
-	let country_id = this.value;
-	let region_id = this.dataset.vRegionId;
-	let self = this;
-	this.readonly = false;
+document.addEventListener("change", function (e) {
+	let element = e.target.closest("[data-v-countries]");
+	if (element) {
+		let regionGroup = element.closest(".address");
+		let regionSelect = regionGroup.querySelector("[data-v-regions]");
+		let country_id = element.value;
+		let region_id = element.dataset.vRegionId;
+		let self = element;
+		element.readonly = false;
 
-	if (country_id) {
-		if (regions[country_id]) {
-			addRegionsToSelect(regionSelect, regions[country_id], region_id, self);
-			$("[data-v-countries][readonly]:first").change();
-		} else {
-			$.get(regionsUrl + "&country_id=" + country_id).done(function( data ) {
-				regions[country_id] = data;
-				addRegionsToSelect(regionSelect, data, region_id, self);
-				$("[data-v-countries][readonly]:first", self).change();
-			});
+		if (country_id) {
+			if (regions[country_id]) {
+				addRegionsToSelect(regionSelect, regions[country_id], region_id, self);
+				document.querySelector("[data-v-countries][readonly]")?.dispatchEvent(new Event('change'));
+			} else {
+				fetch(regionsUrl + "&country_id=" + country_id)
+				 .then(response => {
+					if (!response.ok) { throw new Error(response) }
+					return response.json()
+				 })
+				.then(data => {
+					regions[country_id] = data;
+					addRegionsToSelect(regionSelect, data, region_id, self);
+					document.querySelector("[data-v-countries][readonly]")?.dispatchEvent(new Event('change', {bubbles:true}));
+				})
+				.catch(error => {
+					console.log(error.statusText);
+					//displayToast("bg-danger", "Revision", "Error!");
+				});				
+			}
 		}
+		
+		element.dataset.vRegionId = 0;
 	}
-	
-	this.dataset.vRegionId = 0;
 });
 
 function togglePasswordInput(element, input) {
-	var password = document.getElementById(input);
+	let password = document.getElementById(input);
 	if (password.type == "password") {
 		password.type = "text"; 
-		$("i", element).addClass("la-eye").removeClass("la-eye-slash");
+		let i = element.querySelector("i")
+		i.classList.add("la-eye")
+		i.classList.remove("la-eye-slash");
 	} else {
 		password.type = "password";
-		$("i", element).removeClass("la-eye").addClass("la-eye-slash");
+		let i = element.querySelector("i")
+		i.classList.remove("la-eye")
+		i.classList.add("la-eye-slash");
 	}
 }
 
 
-$('body').on('click', '.btn-coupon', function (e) {
-	let coupon = $("[name='coupon']").val();
-	let updateElements = [".cart-summary", ".mini-cart"];
-	VvvebTheme.Cart.coupon({coupon, "module": "checkout/checkout"}, this, updateElements)
-	e.preventDefault();
+document.addEventListener('click', function (e) {
+	let element = e.target.closest('.btn-coupon, .btn-remove-coupon');
+	if (element) {
+		let updateElements = [".cart-right-column", ".mini-cart", ".cart-summary"];
+		VvvebTheme.Cart.module= 'checkout/checkout';
+		if (element.classList.contains("btn-remove-coupon")) {
+			let coupon = element.parentNode.querySelector(".code").innerHTML;
+			let container = e.target.closest("[data-v-cart-coupon]");
+			VvvebTheme.Cart.removeCoupon({coupon}, element, updateElements);
+			container.remove();
+		} else {
+			let coupon = document.querySelector("[name='coupon']").value;
+			VvvebTheme.Cart.coupon({coupon}, element, updateElements);
+		}
+		e.preventDefault();
+	}
 });
 
-$('body').on('click', '.btn-remove-coupon', function (e) {
-	let coupon = $(".code", this.parentNode).html();
-	let updateElements = [".cart-summary", ".mini-cart"];
-	VvvebTheme.Cart.removeCoupon({coupon, "module": "checkout/checkout"}, this, updateElements)
-	e.preventDefault();
-});
+function toggleLoginForm() {
+	let container = document.getElementById('checkout-login-container');
+	container.style.display = container.style.display ? "" : "none";
+}

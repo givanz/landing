@@ -5,7 +5,7 @@
   </label>
 </div>
 
-<div id="checkout-shipping-container" class="shipping_address mb-2">
+<div id="checkout-shipping-container" class="shipping_address address mb-2">
 	<h5>Shipping Address</h5>
 
 	<div class="row">
@@ -39,27 +39,23 @@
 		<div class="col-12 mb-3">
 			<label class="col-form-label" for="country">Region <span class="text-danger text-small">*</span></label>
 			<select class="form-select" id="shipping_region_id" name="shipping_address[region_id]" data-v-regions readonly>
-			  <option value="1" data-v-option>region 1</option>
-			  <option value="2" data-v-option>region 2</option>
-			  <option value="3" data-v-option>region 3</option>
+			  <option value="1" data-v-option></option>
+			  <option value="2" data-v-option></option>
+			  <option value="3" data-v-option></option>
 			</select>
 		</div>
 		<div class="col-12 mb-3">
 			<label class="col-form-label" for="street_address">Address <span class="text-danger text-small">*</span></label>
 			<input type="text" class="form-control mb-3" id="shipping_shipping_address_1" name="shipping_address[address_1]" autocomplete="shipping street-address" value="" placeholder="Street address" minlength="5" required>
-			<input type="text" class="form-control" id="shipping_shipping_address_2" name="shipping_address[address_2]" autocomplete="shipping address-level2" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="">
+			<input type="text" class="form-control" id="shipping_shipping_address_2" name="shipping_address[address_2]" autocomplete="shipping address-level2" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="" required>
 		</div>
 		<div class="col-12 mb-3">
 			<label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span></label>
-			<input type="text" class="form-control" id="shipping_post_code" name="shipping_address[post_code]" autocomplete="shipping postal-code" minlength="3" maxlength="10" value="">
+			<input type="text" class="form-control" id="shipping_post_code" name="shipping_address[post_code]" autocomplete="shipping postal-code" minlength="3" maxlength="10" value="" required>
 		</div>
 		<div class="col-12 mb-3">
 			<label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span></label>
-			<input type="text" class="form-control" id="shipping_city" name="shipping_address[city]" minlength="3" value="">
-		</div>
-		<div class="col-12 mb-3">
-			<label class="col-form-label" for="state">Province <span class="text-danger text-small">*</span></label>
-			<input type="text" class="form-control" id="shipping_region_id" name="shipping_address[region_id]" minlength="3" value="">
+			<input type="text" class="form-control" id="shipping_city" name="shipping_address[city]" minlength="3" value="" required>
 		</div>
 		<div class="col-12 mb-3">
 			<label class="col-form-label" for="phone_number">Phone No <span class="text-danger text-small">*</span></label>

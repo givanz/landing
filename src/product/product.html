@@ -301,13 +301,7 @@
 
 
 <script>
-$('.carousel-item:first').addClass("active");
-/*
-$('a[href^="#"]').click(function (e) {
-	e.preventDefault();
-	return false;
-});
-*/
+document.querySelector('.carousel-item').classList.add("active");
 /*
 //anchors not working properly due to base href, add full url to anchors
 $('a[href^="#"]').attr("href", function (i,a) {
@@ -317,19 +311,22 @@ $('a[href^="#"]').on("click", function (e) {
 	window.location.hash = this.attributes.href.value;
 });
 */
-$('a[href^="#"]').bind('click.smoothscroll',function (e) {
-	var target = this.hash,
-	//window.location.hash = this.attributes.href.value;
-	$target = $(target);
-	//window.location.hash = target;
-
-	$('html, body').stop().animate({
-		'scrollTop': $target.offset().top-200//subscract header height
-	}, 900, 'swing', function () {
+document.addEventListener('click',function (e) {
+	let element = e.target.closest('a[href^="#"]');
+	if (element) {
+		let target = element.hash,
+		//window.location.hash = element.attributes.href.value;
+		$target = document.querySelector(target);
 		//window.location.hash = target;
-	});
-	
-	return false;
+
+		document.firstElementChild.scroll({
+		  top: $target.offsetTop - 200,//substract header height,
+		  behavior: "smooth",
+		});
+		
+		e.preventDefault();
+		return false;
+	}
 });
 </script>
   	

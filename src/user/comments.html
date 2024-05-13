@@ -15,12 +15,59 @@
 					 
 				</div>
 
-				<div class="col-md-9 justify-content-center border-start" data-v-component-user>
+				<div class="col-md-9 justify-content-center bcomment-start px-4">
 					@@include('../_includes/notifications.html')
 				
 					<h2>Comments</h2>
-					
-					<span>You don't have any comments.</span>
+
+					<div class="table-responsive" data-v-user_id="" data-v-post_id="null" data-v-component-comments>
+						<table class="table table-hover border-top">
+								<thead>
+								<tr>
+								<td class="text-center">Comment</td>
+								<td class="text-center">Author</td>
+								<td class="text-center">Status</td>
+								<td class="text-center">Date added</td>
+								<td>Actions</td>
+								</tr>
+								</thead>
+
+							 <tbody>
+							 <tr data-v-comment>
+								  <td class="text-center">
+									<span data-v-comment-content></span>
+								  </td>
+								  <td class="text-center">
+									<span data-v-comment-author data-filter-capitalize></span>
+								  </td>
+								  <td class="text-center">
+									<span data-v-comment-status></span>
+								  </td>
+								  <td class="text-center">
+									<span data-v-comment-created_at data-filter-friendly_date></span>
+								  </td>
+								  <td class="text-center">
+									  <a href="" title="View" class="btn btn-primary btn-sm" data-v-comment-url>
+										<i class="la la-eye"></i>
+									  </a> 
+								 </td>
+							</tr>
+							<tr data-v-if-not="count >= 1">
+								<td colspan="100">
+									<div class="text-center p-4">
+										<div>
+											<i class="la la-comment-alt fs-1 mb-2"></i>
+											<h6>No comments to display!</h6>											
+										</div>
+									</div>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					  </div>
+					  
+					  @@include('../_includes/pagination.html', {"component": "comments", "component-index":0})
+			
 				</div>
             </div>
         </div>

@@ -17,10 +17,10 @@
 
 				<div class="col-md-9 justify-content-center border-start px-4">
 					@@include('../_includes/notifications.html')
-				
-					<h2>Orders</h2>
 
-					<div class="table-responsive"  data-v-component-order>
+					<h2>Order</h2>
+
+					<div class="table-responsive"  data-v-customer_order_id="url" data-v-component-order>
 						<table class="table table-hover border-top">
 								<thead>
 								<tr>
@@ -74,7 +74,7 @@
 						</table>
 					  </div>
 					  
-					  @@include('../_includes/pagination.html', {"component": "orders", "component-index":0})
+					  
 			
 				</div>
             </div>

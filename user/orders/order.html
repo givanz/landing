@@ -7,7 +7,7 @@
 
   <base href="../">
 
-  <title>Vvveb - Downloads</title>
+  <title>Vvveb - Orders</title>
 
 
 
@@ -828,7 +828,7 @@
 
         </div>
 
-        <div class="col-md-9 justify-content-center bdigital_asset-start px-4">
+        <div class="col-md-9 justify-content-center border-start px-4">
           <div class="notifications" data-v-notifications>
 
             <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error>
@@ -889,128 +889,324 @@
 
           </div>
 
-          <h2>Downloads</h2>
+          <div data-v-customer_order_id="url" data-v-component-order>
 
-          <div class="table-responsive" data-v-order_status_id="2" data-v-component-digital_assets>
-            <table class="table table-hover border-top">
-              <thead>
-                <tr>
-                  <td class="text-center">Order id</td>
-                  <td class="text-center">Client</td>
-                  <!-- <td class="text-center">No products</td> -->
-                  <td class="text-center">Status</td>
-                  <td class="text-center">File</td>
-                  <!-- <td class="text-start">Tracking Code</td> -->
-                  <td class="text-center">Date added</td>
-                  <td>Download</td>
-                </tr>
-              </thead>
+            <h2>Order ID: <span data-v-order-customer_order_id>#001</span>
+            </h2>
 
-              <tbody>
-                <tr data-v-digital_asset>
-                  <td class="text-center">
-                    <span>#</span>
-                    <span data-v-digital_asset-digital_asset_id>1</span>
-                  </td>
-                  <td class="text-center">
-                    <span data-v-digital_asset-first_name data-filter-capitalize></span>
-                    <span data-v-digital_asset-last_name data-filter-capitalize></span>
-                  </td>
-                  <td class="text-center">
-                    <span data-v-digital_asset-file></span>
-                  </td>
-                  <td class="text-center">
-                    <span data-v-digital_asset-total></span>
-                  </td>
-                  <td class="text-center">
-                    <span data-v-digital_asset-created_at data-filter-friendly_date></span>
-                  </td>
-                  <td class="text-center">
-                    <a href="" title="View" class="btn btn-primary btn-sm" data-v-digital_asset-url>
-                      <i class="la la-download"></i>
-                    </a>
-                  </td>
-                </tr>
-                <tr data-v-if-not="count >= 1">
-                  <td colspan="100">
-                    <div class="text-center p-4">
-                      <div>
-                        <i class="la la-box fs-1 mb-2"></i>
-                        <h6>No downloads to display!</h6>
+            <div class="table-responsive order-table table-bordered">
+              <table class="table mb-0 text-nowrap align-middle" data-v-cart>
+                <thead>
+                  <tr>
+                    <th class="text-center">Image</th>
+                    <th class="text-start">Product Name</th>
+                    <!-- <th class="text-start">Model</th> -->
+                    <th class="text-start">Quantity</th>
+                    <th class="text-end">Unit Price</th>
+                    <th class="text-end">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-v-order-product>
+                    <td class="text-center order-img">
+                      <a href="#40" data-v-order-product-url>
+                        <img src="#" alt="Product name" class="img-rounded" data-v-order-product-image width=50 loading="lazy">
+                      </a>
+                    </td>
+                    <td class="text-start">
+                      <a href="#40" target="_blank" data-v-order-product-url>
+                        <span data-v-order-product-name>Product name</span>
+                      </a>
+
+                      <div class="option" data-v-if="product.option_value">
+                        <div class="" data-v-product-option>
+                          <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                          <span data-v-if="value.price">(<span data-v-product-option-price_formatted></span>)</span>
+                        </div>
+                        <div class="" data-v-product-option>
+                          <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                          <span data-v-if="value.price">(<span data-v-product-option-price_formatted></span>)</span>
+                        </div>
+                        <div class="" data-v-product-option>
+                          <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                          <span data-v-if="value.price">(<span data-v-product-option-price_formatted></span>)</span>
+                        </div>
                       </div>
+
+                      <div class="price">
+                        <span data-v-order-product-price_tax_formatted>$160.40</span>
+                      </div>
+                    </td>
+
+                    <!-- <td class="text-start">product 11</td> -->
+                    <td class="text-start">
+                      <span data-v-order-product-quantity>1</span>
+                    </td>
+                    <td class="text-end unit-price">
+                      <span data-v-order-product-price_formatted>1</span>
+                    </td>
+                    <!-- <td class="text-end price" data-v-order-product-price>$123.20</td> -->
+                    <td class="text-end total px-4">
+                      <span data-v-order-product-tax_formatted>$146.40</span>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tfoot data-v-order-totals>
+                  <tr data-v-order-totals-total>
+                    <td colspan="4" class="text-end">
+                      <small data-v-order-total-title>Sub-Total</small>:
+                    </td>
+                    <td class="text-end" data-v-order-total-value_formatted>$101.00</td>
+                  </tr>
+                  <tr data-v-order-totals-total>
+                    <td colspan="4" class="text-end">
+                      <small>Eco Tax (2.00):</small>
+                    </td>
+                    <td class="text-end">$2.00</td>
+                  </tr>
+                  <tr data-v-order-totals-total>
+                    <td colspan="4" class="text-end">
+                      <small>VAT (19%):</small>
+                    </td>
+                    <td class="text-end">$20.20</td>
+                  </tr>
+                  <tr data-v-order-totals-total>
+                    <td colspan="4" class="text-end">
+                      <small>Total:</small>
+                    </td>
+                    <td class="text-end">$123.20</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" class="text-end">Total:</td>
+                    <td class="text-end" data-v-order-total_formatted>$0</td>
+                  </tr>
+                </tfoot>
+
+              </table>
+
+            </div>
+
+
+            <div data-v-order>
+
+              <div class="d-md-flex justify-content-between">
+                <div class="d-flex align-items-center mb-2 mb-md-0">
+                  <span class="badge ms-2" data-v-order-order_status>Pending</span>
+                </div>
+              </div>
+              <div class="mt-4">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 col-12">
+                    <div class="mb-6">
+                      <div class="customer_details">
+                        <div class="clearfix">
+                          <h6 class="float-start">Customer Details</h6>
+                        </div>
+                        <div class="display mb-1 lh-lg">
+                          <div data-v-order-first_name data-first_name-text>First Name</div>
+                          <div data-v-order-last_name data-last_name-text>Last Name</div>
+                          <div data-v-order-email data-email-text>mail@mail.com</div>
+                          <div data-v-order-phone_number data-phone_number-text>12345678</div>
+
+                          <a href="#" data-v-order-user_url data-v-if="this.order.user_id">
+                            <span>View Profile</span>
+                          </a>
+
+                          <div data-v-if="this.order.comment">
+                            <h6 class="mt-2">Order note</h6>
+                            <div data-v-order-comment>12345678</div>
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-12">
+                    <div class="mb-6">
+                      <div class="order_details">
+                        <div class="clearfix">
+                          <h6 class="float-start">Order Details</h6>
+                        </div>
+
+                        <div class="display">
+                          <p class="mb-1 lh-lg">
+                          <table class="table table-borderless table-sm">
+                            <tr>
+                              <td>
+                                <span class="text-muted">Order ID:</span>
+                              </td>
+                              <td>
+                                <span data-v-order-order_id>001</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="text-muted">Order Invoice:</span>
+                              </td>
+                              <td>
+                                <span data-v-order-invoice_no>V1-</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="text-muted">Order Date:</span>
+                              </td>
+                              <td>
+                                <details>
+                                  <summary>
+                                    <span>
+                                      <span data-v-order-created_at data-filter-friendly_date>23/10/2019</span>
+                                  </summary>
+                                  <p>
+                                    <span class="badge bg-light text-muted" data-v-order-created_at>23/10/2019</span>
+                                    </span>
+                                  </p>
+                                </details>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="text-muted">Payment method:</span>
+                              </td>
+                              <td>
+                                <details>
+                                  <summary>
+                                    <span>
+                                      <span data-v-order-payment_title>Cash data-payment_title>Cash-text On Delivery</span>
+                                  </summary>
+                                  <p>
+                                    <span class="badge bg-light text-muted" data-v-order-payment_method>Cash data-payment_method>Cash-text On Delivery</span>
+                                    </span>
+                                    <br />
+                                    <span data-v-order-payment_description>Flat data-payment_description>Flat-text Shipping Rate</span>
+                                    <br />
+                                  </p>
+                                </details>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="text-muted">Shipping method:</span>
+                              </td>
+                              <td>
+                                <details>
+                                  <summary>
+                                    <span>
+                                      <span data-v-order-shipping_title>>Flat data-shipping_title>>Flat-text Shipping Rate</span>
+                                  </summary>
+                                  <p>
+                                    <span class="badge bg-light text-muted" data-v-order-shipping_method>Flat data-shipping_method>Flat-text Shipping Rate</span>
+                                    </span>
+                                    <br />
+                                    <span data-v-order-shipping_description>Flat data-shipping_description>Flat-text Shipping Rate</span>
+                                    <br />
+                                  </p>
+                                </details>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="text-muted">Order Total:</span>
+                              </td>
+                              <td>
+                                <span data-v-order-total_formatted>$734.28</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="text-muted">Reward points:</span>
+                              </td>
+                              <td>
+                                <span data-v-order-points>$734.28</span>
+                              </td>
+                            </tr>
+                            <td>
+                              <span class="text-muted">Status</span>
+                            </td>
+                            <td>
+                              <span data-v-order-order_status>Pending</span>
+                              <!--
+				  <select class="form-select">
+					<option selected="">Status</option>
+					<option value="Success">Success</option>
+					<option value="Pending">Pending</option>
+					<option value="Cancel">Cancel</option>
+				  </select>
+				-->
+                            </td>
+                            </tr>
+                          </table>
+                          </p>
+                        </div>
+
+                      </div>
+
+
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-12">
+                    <div class="mb-6">
+                      <div class="billing_address">
+                        <div class="clearfix">
+                          <h6 class="float-start">Billing Address</h6>
+                        </div>
+                        <div class="display mb-1 lh-lg">
+                          <div data-v-order-billing_first_name data-billing_first_name-text></div>
+                          <div data-v-order-billing_last_name data-billing_last_name-text></div>
+                          <div data-v-order-billing_company data-billing_company-text></div>
+                          <div data-v-order-billing_address_1 data-billing_address_1-text></div>
+                          <div data-v-order-billing_address_2 data-billing_address_2-text></div>
+                          <div data-v-order-billing_city data-billing_city-text></div>
+                          <div data-v-order-billing_post_code data-billing_post_code-text></div>
+                          <div data-v-order-billing_country data-billing_country_id></div>
+                          <div data-v-order-billing_region data-billing_region></div>
+                          <!--
+		<div data-v-order-billing_fields data-billing_fields-text></div>
+		-->
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-12">
+                    <div class="mb-6">
+                      <div class="shipping_address">
+                        <div class="clearfix">
+                          <h6 class="float-start">Shipping Address</h6>
+                        </div>
+                        <div class="display mb-1 lh-lg">
+                          <div data-v-order-shipping_first_name data-shipping_first_name-text></div>
+                          <div data-v-order-shipping_last_name data-shipping_last_name-text></div>
+                          <div data-v-order-shipping_company data-shipping_company-text></div>
+                          <div data-v-order-shipping_address_1 data-shipping_address_1-text></div>
+                          <div data-v-order-shipping_address_2 data-shipping_address_2-text></div>
+                          <div data-v-order-shipping_city data-shipping_city-text></div>
+                          <div data-v-order-shipping_post_code data-shipping_post_code-text></div>
+                          <div data-v-order-shipping_country data-shipping_country_id-text></div>
+                          <div data-v-order-shipping_region data-shipping_region_id-text></div>
+                          <!--
+		<div data-v-order-shipping_fields data-shipping_fields-text></div>
+		-->
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </form>
+
+            </div>
+
+
           </div>
-
-          <div data-pagination data-v-parent-component="digital_assets" data-v-parent-index="0" data-v-parameters='{}'>
-
-            <nav data-v-if="pagecount > 1">
-              <ul class="pagination pagination-sm justify-content-end" style="--bs-pagination-border-color:transparent;border-top: 1px solid var(--bs-border-color);padding-top: 1rem;">
-
-                <!--
-			<li class="page-item pager-first" data-first>
-				<a class="page-link" title="First page" href="#" data-page-url data-v-if="current_page > 1">
-					<span aria-hidden="true" class="la la-angle-double-left"></span>
-					<span class="sr-only">First</span>
-				</a>
-			</li>
-			-->
-
-                <li class="page-item pager-prev" data-prev>
-
-                  <a class="page-link" href="#" aria-label="Previous" title="Previous page" data-page-url data-v-if="current_page > 1">
-                    <span aria-hidden="true" class="la la-angle-left la-lg"></span>
-                    <!-- <span>Newer Posts</span> -->
-                  </a>
-
-                </li>
-
-
-
-                <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url>1</a>
-                </li>
-                <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url>2</a>
-                </li>
-                <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url>3</a>
-                </li>
-                <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url>4</a>
-                </li>
-                <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url>5</a>
-                </li>
-
-                <li class="page-item pager-next" data-next>
-                  <a class="page-link" href="#" aria-label="Next" title="Next page" data-page-url data-v-if="current_page < pagecount">
-                    <!-- <span>Older Posts</span> -->
-                    <span aria-hidden="true" class="la la-angle-right la-lg"></span>
-                  </a>
-                </li>
-
-                <!--
-			<li class="page-item pager-last" data-last>
-				<a class="page-link" title="Last page" href="#" data-page-url data-v-if="current_page < pagecount">
-				<span aria-hidden="true" class="la la-angle-double-right"></span>
-					<span class="sr-only">Last</span>
-				</a>
-			</li>
-			-->
-
-              </ul>
-            </nav>
-          </div>
-
-
-
         </div>
-
       </div>
+
+    </div>
+    </div>
     </div>
   </main>
 

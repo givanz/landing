@@ -25,7 +25,7 @@ window.addEventListener("vvveb.getHtml.before", function(event) {
 
 window.addEventListener("vvveb.getHtml.after", function(event) {
 	let doc = event.detail;
-	//remove animate on scroll classes
-	doc.querySelectorAll("[data-aos]").forEach(e => e.classList.remove("aos-animate", "aos-init"));
+	//add animate on scroll classes back
+	doc.querySelectorAll("[data-aos]").forEach(e => e.classList.add("aos-animate", "aos-init"));
 });
 

@@ -1,50 +1,63 @@
-$('body').on('change', '[name="quantity"]', function (e) {
-	let product = $(this).parents("[data-v-cart-product]");
-	let key = product[0].dataset.key;
-	let quantity = this.value;
-	let updateElements = ['#cart-container [data-key="' + key + '"] .price', '#cart-container [data-key="' + key + '"] .total', ".cart-right-column", ".mini-cart"];
-	
-	delay(() => VvvebTheme.Cart.update(key, {quantity}, this, updateElements), 1000);
+document.addEventListener('change', function (e) {
+	let element = e.target.closest('[name="quantity"]');
+	if (element) {
+		let product = element.closest("[data-v-cart-product]");
+		let key = product.dataset.key;
+		let quantity = element.value;
+		let updateElements = ['#cart-container [data-key="' + key + '"] .price', '#cart-container [data-key="' + key + '"] .total', ".cart-right-column", ".mini-cart"];
+		
+		delay(() => VvvebTheme.Cart.update(key, {quantity}, element, updateElements), 1000);
+	}
 });
 /*
-$('.cart-table .quantity').on('click', '.btn-plus', function (e) {
-	$("input[type=number]", this.parentNode).val(function( index, value ) {
+document.querySelectorAll('.cart-table .quantity').on('click', '.btn-plus', function (e) {
+	("input[type =number]", this.parentNode).val(function( index, value ) {
 	  return ++value;
 	}).change();
 });
 
-$('.cart-table .quantity').on('click', '.btn-minus', function (e) {
-	$("input[type=number]", this.parentNode).val(function( index, value ) {
+document.querySelectorAll('.cart-table .quantity').on('click', '.btn-minus', function (e) {
+	("input[type =number]", this.parentNode).val(function( index, value ) {
 	  return Math.max(--value, 1);
 	}).change();
 });
 */
-$('body').on('click', '.btn-coupon', function (e) {
-	let coupon = $("[name='coupon']").val();
-	let updateElements = [".cart-right-column", ".mini-cart"];
-	VvvebTheme.Cart.coupon({coupon}, this, updateElements)
-	e.preventDefault();
-});
 
-$('body').on('click', '.btn-remove-coupon', function (e) {
-	let coupon = $(".code", this.parentNode).html();
-	let updateElements = [".cart-right-column", ".mini-cart"];
-	VvvebTheme.Cart.removeCoupon({coupon}, this, updateElements)
-	e.preventDefault();
-});
-
-$('body').on('click', '.btn-remove', function (e) {
-	let product = $(this).parents("[data-v-cart-product]");
-	let key = product[0].dataset.key;
-	let quantity = this.value;
-	let updateElements = [".cart-right-column", ".mini-cart"];
-
-	product.addClass("bg-light");
-	delay(() => VvvebTheme.Cart.remove(key, this, updateElements, () => product.remove()), 500);
-	//if cart empty refresh page, if not empty prevent refresh and update with ajax
-	if ($("#cart-container [data-v-cart-product]").length > 1) {
+document.addEventListener('click', function (e) {
+	let element = e.target.closest('.btn-coupon, .btn-remove-coupon');
+	if (element) {
+		let updateElements = [".cart-right-column", ".mini-cart"];
+		if (element.classList.contains("btn-remove-coupon")) {
+			let coupon = element.parentNode.querySelector(".code").innerHTML;
+			let container = e.target.closest("[data-v-cart-coupon]");
+			
+			VvvebTheme.Cart.removeCoupon({coupon}, element, updateElements);
+			container.remove();
+		} else {
+			let coupon = document.querySelector("[name='coupon']").value;
+			VvvebTheme.Cart.coupon({coupon}, element, updateElements);
+		}
 		e.preventDefault();
-	} else {
-		//return;
+	}
+});
+
+document.addEventListener('click', function (e) {
+	let element = e.target.closest('.btn-remove');
+	if (element) {
+		let product = element.closest("[data-v-cart-product]");
+		if (product) {
+			let key = product.dataset.key;
+			let quantity = element.value;
+			let updateElements = [".cart-right-column", ".mini-cart"];
+
+			product.classList.add("opacity-50");
+			delay(() => VvvebTheme.Cart.remove(key, element, updateElements, () => product.remove()), 500);
+			//if cart empty refresh page, if not empty prevent refresh and update with ajax
+			if (document.querySelectorAll("#cart-container [data-v-cart-product]").length > 1) {
+				e.preventDefault();
+			} else {
+				//return;
+			}
+		}
 	}
 });

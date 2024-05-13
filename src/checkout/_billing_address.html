@@ -24,11 +24,11 @@
 	<div class="form-check mx-3 mb-4 form-control-lg" data-v-if="count > 0">
 	  <input class="form-check-input" type="radio" value="0" name="billing_address_id" id="billing_address_new">
 	  <label class="form-check-label text-small"  role="button" for="billing_address_new">
-		I want to use a new address
+		I want to use a new billing address
 	  </label>
 	</div>
 
-	<div class="billing_address">
+	<div class="billing_address address">
 		<h5>Billing Address</h5>
 
 		<div class="row">
@@ -61,15 +61,15 @@
 			<div class="col-12 mb-3">
 				<label class="col-form-label" for="country">Region <span class="text-danger text-small">*</span></label>
 				<select class="form-select" id="billing_region_id" name="billing_address[region_id]" data-v-regions required readonly>
-				  <option value="1" data-v-option>region 1</option>
-				  <option value="2" data-v-option>region 2</option>
-				  <option value="3" data-v-option>region 3</option>
+				  <option value="1" data-v-option></option>
+				  <option value="2" data-v-option></option>
+				  <option value="3" data-v-option></option>
 				</select>
 			</div>
 			<div class="col-12 mb-3">
 				<label class="col-form-label" for="street_address">Address <span class="text-danger text-small">*</span></label>
 				<input type="text" class="form-control mb-3" id="billing_address_1" name="billing_address[address_1]" autocomplete="billing street-address"  value="" placeholder="Street address" minlength="5" required>
-				<input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" autocomplete="billing address-level2"  placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="">
+				<input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" autocomplete="billing address-level2"  placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="" required>
 			</div>
 			<div class="col-12 mb-3">
 				<label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span></label>

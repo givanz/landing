@@ -125,3 +125,30 @@ if ('serviceWorker' in navigator) {
         .then(function (registration){console.log('Service worker registered successfully');})
         .catch(function (e){console.error('Error during service worker registration:', e);});
 }
+
+function togglePasswordInput(element, input) {
+	let password = document.getElementById(input);
+	if (password.type == "password") {
+		password.type = "text"; 
+		let i = element.querySelector("i")
+		i.classList.add("la-eye")
+		i.classList.remove("la-eye-slash");
+	} else {
+		password.type = "password";
+		let i = element.querySelector("i")
+		i.classList.remove("la-eye")
+		i.classList.add("la-eye-slash");
+	}
+}
+
+document.addEventListener("click", function (e) { 
+	let link = e.target.closest(".dropdown-toggle");
+	if (link) {
+		let parent = link.closest(".nav-toggle");
+		if (link.classList.contains("show")) {
+			parent.classList.add("show"); 
+		} else {
+			parent.classList.remove("show"); 
+		}
+	}
+});

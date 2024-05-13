@@ -296,7 +296,7 @@
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                   <a class="dropdown-item" data-v-class-if-active="category.active" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
-                    <span data-v-menu-item-content>
+                    <span data-v-if="category.content" data-v-menu-item-content>
                       <div class="row">
                         <div class="col-6 align-self-center">
                           <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
@@ -479,32 +479,55 @@
 
 
                       <div class="user-form" data-v-if="component.user_id">
-                        <div>Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
+                        <div class="text-center">Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
                           <b data-v-user-last_name data-filter-capitalize>Doe</b>
                         </div>
 
-                        <ul class="m-2 list-unstyled">
+                        <div class="dropdown-divider opacity-50 my-3"></div>
+
+                        <ul class="m-3 list-unstyled">
                           <li>
-                            <a href="user" data-v-url="user/index">My account</a>
+                            <a href="user" data-v-url="user/index">
+                              <i class="la la-user la-lg text-muted m-1"></i>
+                              <span>My account</span>
+                            </a>
                           </li>
                           <li>
-                            <a href="user/comments" data-v-url="user/comments/index">Comments</a>
+                            <a href="user/comments" data-v-url="user/comments/index">
+                              <i class="la la-comment la-lg text-muted m-1"></i>
+                              <span>Comments</span>
+                            </a>
                           </li>
                           <li>
-                            <a href="user/orders" data-v-url="user/orders/index">Orders</a>
+                            <a href="user/orders" data-v-url="user/orders/index">
+                              <i class="la la-shopping-bag la-lg text-muted m-1"></i>
+                              <span>Orders</span>
+                            </a>
                           </li>
                           <li>
-                            <a href="user/downloads" data-v-url="user/downloads/index">Downloads</a>
+                            <a href="user/downloads" data-v-url="user/downloads/index">
+                              <i class="la la-hand-holding-heart la-lg text-muted m-1"></i>
+                              <span>Wishlist</span>
+                            </a>
                           </li>
                           <li>
-                            <a href="user/profile" data-v-url="user/profile/index">Profile</a>
+                            <a href="user/downloads" data-v-url="user/downloads/index">
+                              <i class="la la-download la-lg text-muted m-1"></i>
+                              <span>Downloads</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="user/profile" data-v-url="user/profile/index">
+                              <i class="la la-cogs la-lg text-muted m-1"></i>
+                              <span>Profile</span>
+                            </a>
                           </li>
                         </ul>
 
 
                         <input type="hidden" name="logout">
 
-                        <button type="submit" value="logout" class="btn btn-primary w-100">
+                        <button type="submit" value="logout" class="btn btn-sm btn-primary w-100">
 
                           <span class="loading d-none">
                             <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -513,7 +536,9 @@
                           </span>
 
                           <span class="button-text">
-                            Logout
+                            <i class="la la-sign-out-alt la-lg m-1"></i>
+                            <span>Log out</span>
+                            </a>
                           </span>
 
                         </button>
@@ -799,13 +824,13 @@
         <div class="container" data-v-if-not="this.global.user_id">
 
           <div class="form-check mb-1 form-control-lg">
-            <input class="form-check-input" type="checkbox" value="" id="login-form-check" onclick="$('#checkout-login-container').toggle()">
+            <input class="form-check-input" type="checkbox" value="" id="login-form-check" onclick="toggleLoginForm()">
             <label class="form-check-label text-small" for="login-form-check">
               I already have an account
             </label>
           </div>
 
-          <div id="checkout-login-container" class="collapse">
+          <div id="checkout-login-container" class="" style="display:none">
             <div data-v-component-user id="checkout-login-form" class="card p-4 mb-2">
 
               <form action method="post" enctype="multipart/form-data">
@@ -954,11 +979,11 @@
                       <div class="form-check mx-3 mb-4 form-control-lg" data-v-if="count > 0">
                         <input class="form-check-input" type="radio" value="0" name="billing_address_id" id="billing_address_new">
                         <label class="form-check-label text-small" role="button" for="billing_address_new">
-                          I want to use a new address
+                          I want to use a new billing address
                         </label>
                       </div>
 
-                      <div class="billing_address">
+                      <div class="billing_address address">
                         <h5>Billing Address</h5>
 
                         <div class="row">
@@ -993,16 +1018,16 @@
                             <label class="col-form-label" for="country">Region <span class="text-danger text-small">*</span>
                             </label>
                             <select class="form-select" id="billing_region_id" name="billing_address[region_id]" data-v-regions required readonly>
-                              <option value="1" data-v-option>region 1</option>
-                              <option value="2" data-v-option>region 2</option>
-                              <option value="3" data-v-option>region 3</option>
+                              <option value="1" data-v-option></option>
+                              <option value="2" data-v-option></option>
+                              <option value="3" data-v-option></option>
                             </select>
                           </div>
                           <div class="col-12 mb-3">
                             <label class="col-form-label" for="street_address">Address <span class="text-danger text-small">*</span>
                             </label>
                             <input type="text" class="form-control mb-3" id="billing_address_1" name="billing_address[address_1]" autocomplete="billing street-address" value="" placeholder="Street address" minlength="5" required>
-                            <input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" autocomplete="billing address-level2" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="">
+                            <input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" autocomplete="billing address-level2" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="" required>
                           </div>
                           <div class="col-12 mb-3">
                             <label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span>
@@ -1033,7 +1058,7 @@
                       </label>
                     </div>
 
-                    <div id="checkout-shipping-container" class="shipping_address mb-2">
+                    <div id="checkout-shipping-container" class="shipping_address address mb-2">
                       <h5>Shipping Address</h5>
 
                       <div class="row">
@@ -1072,31 +1097,26 @@
                           <label class="col-form-label" for="country">Region <span class="text-danger text-small">*</span>
                           </label>
                           <select class="form-select" id="shipping_region_id" name="shipping_address[region_id]" data-v-regions readonly>
-                            <option value="1" data-v-option>region 1</option>
-                            <option value="2" data-v-option>region 2</option>
-                            <option value="3" data-v-option>region 3</option>
+                            <option value="1" data-v-option></option>
+                            <option value="2" data-v-option></option>
+                            <option value="3" data-v-option></option>
                           </select>
                         </div>
                         <div class="col-12 mb-3">
                           <label class="col-form-label" for="street_address">Address <span class="text-danger text-small">*</span>
                           </label>
                           <input type="text" class="form-control mb-3" id="shipping_shipping_address_1" name="shipping_address[address_1]" autocomplete="shipping street-address" value="" placeholder="Street address" minlength="5" required>
-                          <input type="text" class="form-control" id="shipping_shipping_address_2" name="shipping_address[address_2]" autocomplete="shipping address-level2" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="">
+                          <input type="text" class="form-control" id="shipping_shipping_address_2" name="shipping_address[address_2]" autocomplete="shipping address-level2" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="" required>
                         </div>
                         <div class="col-12 mb-3">
                           <label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span>
                           </label>
-                          <input type="text" class="form-control" id="shipping_post_code" name="shipping_address[post_code]" autocomplete="shipping postal-code" minlength="3" maxlength="10" value="">
+                          <input type="text" class="form-control" id="shipping_post_code" name="shipping_address[post_code]" autocomplete="shipping postal-code" minlength="3" maxlength="10" value="" required>
                         </div>
                         <div class="col-12 mb-3">
                           <label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span>
                           </label>
-                          <input type="text" class="form-control" id="shipping_city" name="shipping_address[city]" minlength="3" value="">
-                        </div>
-                        <div class="col-12 mb-3">
-                          <label class="col-form-label" for="state">Province <span class="text-danger text-small">*</span>
-                          </label>
-                          <input type="text" class="form-control" id="shipping_region_id" name="shipping_address[region_id]" minlength="3" value="">
+                          <input type="text" class="form-control" id="shipping_city" name="shipping_address[city]" minlength="3" value="" required>
                         </div>
                         <div class="col-12 mb-3">
                           <label class="col-form-label" for="phone_number">Phone No <span class="text-danger text-small">*</span>
@@ -1109,14 +1129,14 @@
 
                     <div class="mb-3">
                       <div class="form-check mb-1">
-                        <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                        <input type="checkbox" class="form-check-input" id="terms" name="terms" value="true" required>
                         <label class="form-check-label" for="terms">
                           </span>I agree to</span>
                           <a href="page/terms-conditions" target="_blank" data-v-url="content/page/index" data-v-url-params='{"slug":"terms-conditions"}'>Terms and conditions</a>
                         </label>
                       </div>
                       <div class="form-check mb-1">
-                        <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+                        <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter" value="true">
                         <label class="form-check-label" for="newsletter">Subscribe to our newsletter</label>
                       </div>
                     </div>
@@ -1581,8 +1601,6 @@
   </div>
 
   <!-- Vvveb Common Js -->
-  <!-- <script src="../../js/jquery.min.js"></script> -->
-  <script id="jquery-js" src="js/jquery.min.js"></script>
   <script id="popper-js" src="../../js/popper.min.js"></script>
   <!-- <script src="../../js/bootstrap.min.js"></script> -->
   <!-- <script src="../../js/bootstrap.bundle.min.js"></script> -->
@@ -1603,22 +1621,10 @@
   </noscript>
 
   <script src="js/aos.js"></script>
-  <script>
-AOS.init();
-</script>
-
   <script src="js/theme.js"></script>
 
   <script>
-$(document).on("click", ".dropdown-toggle",function (e) { 
-	let link = $(this);
-	let parent = link.parents(".nav-toggle");
-	if (link.hasClass("show")) {
-		parent.addClass("show"); 
-	} else {
-		parent.removeClass("show"); 
-	}
-});
+	AOS.init();
 </script>
 
   <script>

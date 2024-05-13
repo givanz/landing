@@ -529,9 +529,8 @@ function initSwiper(onlyNew = false) {
 		//swiper.push(new Swiper(el, { ...{autoplay:{delay: 500}}, ...el.dataset}))		
 	});
 }	
-$(document).ready(function() {
-	initSwiper();
-});
+
+initSwiper();
 </script>
 
 </header>`
@@ -1688,7 +1687,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
 
         </div>
 
-        <form action="" method="post">
+        <form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
           <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">
 
           <div class="row">
@@ -1730,8 +1729,16 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
           <div class="row mt-4">
             <div class="col">
               <button type="submit" class="btn btn-primary">
-                <span>Submit</span>
-                <i class="la la-lg la-envelope opacity-50 ms-2"></i>
+                <span class="loading d-none">
+                  <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                  </span>
+                  <span>Submitting</span> ...
+                </span>
+
+                <span class="button-text">
+                  <span>Submit</span>
+                  <i class="la la-lg la-envelope opacity-50 ms-2"></i>
+                </span>
               </button>
             </div>
           </div>
@@ -2407,7 +2414,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                 <a class="dropdown-item" data-v-class-if-active="category.active" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                   <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
-                  <span data-v-menu-item-content>
+                  <span data-v-if="category.content" data-v-menu-item-content>
                     <div class="row">
                       <div class="col-6 align-self-center">
                         <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
@@ -2590,32 +2597,55 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
 
                     <div class="user-form" data-v-if="component.user_id">
-                      <div>Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
+                      <div class="text-center">Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
                         <b data-v-user-last_name data-filter-capitalize>Doe</b>
                       </div>
 
-                      <ul class="m-2 list-unstyled">
+                      <div class="dropdown-divider opacity-50 my-3"></div>
+
+                      <ul class="m-3 list-unstyled">
                         <li>
-                          <a href="user" data-v-url="user/index">My account</a>
+                          <a href="user" data-v-url="user/index">
+                            <i class="la la-user la-lg text-muted m-1"></i>
+                            <span>My account</span>
+                          </a>
                         </li>
                         <li>
-                          <a href="user/comments" data-v-url="user/comments/index">Comments</a>
+                          <a href="user/comments" data-v-url="user/comments/index">
+                            <i class="la la-comment la-lg text-muted m-1"></i>
+                            <span>Comments</span>
+                          </a>
                         </li>
                         <li>
-                          <a href="user/orders" data-v-url="user/orders/index">Orders</a>
+                          <a href="user/orders" data-v-url="user/orders/index">
+                            <i class="la la-shopping-bag la-lg text-muted m-1"></i>
+                            <span>Orders</span>
+                          </a>
                         </li>
                         <li>
-                          <a href="user/downloads" data-v-url="user/downloads/index">Downloads</a>
+                          <a href="user/downloads" data-v-url="user/downloads/index">
+                            <i class="la la-hand-holding-heart la-lg text-muted m-1"></i>
+                            <span>Wishlist</span>
+                          </a>
                         </li>
                         <li>
-                          <a href="user/profile" data-v-url="user/profile/index">Profile</a>
+                          <a href="user/downloads" data-v-url="user/downloads/index">
+                            <i class="la la-download la-lg text-muted m-1"></i>
+                            <span>Downloads</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="user/profile" data-v-url="user/profile/index">
+                            <i class="la la-cogs la-lg text-muted m-1"></i>
+                            <span>Profile</span>
+                          </a>
                         </li>
                       </ul>
 
 
                       <input type="hidden" name="logout">
 
-                      <button type="submit" value="logout" class="btn btn-primary w-100">
+                      <button type="submit" value="logout" class="btn btn-sm btn-primary w-100">
 
                         <span class="loading d-none">
                           <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -2624,7 +2654,9 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         </span>
 
                         <span class="button-text">
-                          Logout
+                          <i class="la la-sign-out-alt la-lg m-1"></i>
+                          <span>Log out</span>
+                          </a>
                         </span>
 
                       </button>
@@ -2864,7 +2896,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                 <a class="dropdown-item" data-v-class-if-active="category.active" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                   <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
-                  <span data-v-menu-item-content>
+                  <span data-v-if="category.content" data-v-menu-item-content>
                     <div class="row">
                       <div class="col-6 align-self-center">
                         <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
@@ -3047,32 +3079,55 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
 
                     <div class="user-form" data-v-if="component.user_id">
-                      <div>Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
+                      <div class="text-center">Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
                         <b data-v-user-last_name data-filter-capitalize>Doe</b>
                       </div>
 
-                      <ul class="m-2 list-unstyled">
+                      <div class="dropdown-divider opacity-50 my-3"></div>
+
+                      <ul class="m-3 list-unstyled">
                         <li>
-                          <a href="user" data-v-url="user/index">My account</a>
+                          <a href="user" data-v-url="user/index">
+                            <i class="la la-user la-lg text-muted m-1"></i>
+                            <span>My account</span>
+                          </a>
                         </li>
                         <li>
-                          <a href="user/comments" data-v-url="user/comments/index">Comments</a>
+                          <a href="user/comments" data-v-url="user/comments/index">
+                            <i class="la la-comment la-lg text-muted m-1"></i>
+                            <span>Comments</span>
+                          </a>
                         </li>
                         <li>
-                          <a href="user/orders" data-v-url="user/orders/index">Orders</a>
+                          <a href="user/orders" data-v-url="user/orders/index">
+                            <i class="la la-shopping-bag la-lg text-muted m-1"></i>
+                            <span>Orders</span>
+                          </a>
                         </li>
                         <li>
-                          <a href="user/downloads" data-v-url="user/downloads/index">Downloads</a>
+                          <a href="user/downloads" data-v-url="user/downloads/index">
+                            <i class="la la-hand-holding-heart la-lg text-muted m-1"></i>
+                            <span>Wishlist</span>
+                          </a>
                         </li>
                         <li>
-                          <a href="user/profile" data-v-url="user/profile/index">Profile</a>
+                          <a href="user/downloads" data-v-url="user/downloads/index">
+                            <i class="la la-download la-lg text-muted m-1"></i>
+                            <span>Downloads</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="user/profile" data-v-url="user/profile/index">
+                            <i class="la la-cogs la-lg text-muted m-1"></i>
+                            <span>Profile</span>
+                          </a>
                         </li>
                       </ul>
 
 
                       <input type="hidden" name="logout">
 
-                      <button type="submit" value="logout" class="btn btn-primary w-100">
+                      <button type="submit" value="logout" class="btn btn-sm btn-primary w-100">
 
                         <span class="loading d-none">
                           <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -3081,7 +3136,9 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         </span>
 
                         <span class="button-text">
-                          Logout
+                          <i class="la la-sign-out-alt la-lg m-1"></i>
+                          <span>Log out</span>
+                          </a>
                         </span>
 
                       </button>
@@ -3452,7 +3509,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                 <a class="dropdown-item" data-v-class-if-active="category.active" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                   <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
-                  <span data-v-menu-item-content>
+                  <span data-v-if="category.content" data-v-menu-item-content>
                     <div class="row">
                       <div class="col-6 align-self-center">
                         <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
@@ -3635,32 +3692,55 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
 
                     <div class="user-form" data-v-if="component.user_id">
-                      <div>Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
+                      <div class="text-center">Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
                         <b data-v-user-last_name data-filter-capitalize>Doe</b>
                       </div>
 
-                      <ul class="m-2 list-unstyled">
+                      <div class="dropdown-divider opacity-50 my-3"></div>
+
+                      <ul class="m-3 list-unstyled">
                         <li>
-                          <a href="user" data-v-url="user/index">My account</a>
+                          <a href="user" data-v-url="user/index">
+                            <i class="la la-user la-lg text-muted m-1"></i>
+                            <span>My account</span>
+                          </a>
                         </li>
                         <li>
-                          <a href="user/comments" data-v-url="user/comments/index">Comments</a>
+                          <a href="user/comments" data-v-url="user/comments/index">
+                            <i class="la la-comment la-lg text-muted m-1"></i>
+                            <span>Comments</span>
+                          </a>
                         </li>
                         <li>
-                          <a href="user/orders" data-v-url="user/orders/index">Orders</a>
+                          <a href="user/orders" data-v-url="user/orders/index">
+                            <i class="la la-shopping-bag la-lg text-muted m-1"></i>
+                            <span>Orders</span>
+                          </a>
                         </li>
                         <li>
-                          <a href="user/downloads" data-v-url="user/downloads/index">Downloads</a>
+                          <a href="user/downloads" data-v-url="user/downloads/index">
+                            <i class="la la-hand-holding-heart la-lg text-muted m-1"></i>
+                            <span>Wishlist</span>
+                          </a>
                         </li>
                         <li>
-                          <a href="user/profile" data-v-url="user/profile/index">Profile</a>
+                          <a href="user/downloads" data-v-url="user/downloads/index">
+                            <i class="la la-download la-lg text-muted m-1"></i>
+                            <span>Downloads</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="user/profile" data-v-url="user/profile/index">
+                            <i class="la la-cogs la-lg text-muted m-1"></i>
+                            <span>Profile</span>
+                          </a>
                         </li>
                       </ul>
 
 
                       <input type="hidden" name="logout">
 
-                      <button type="submit" value="logout" class="btn btn-primary w-100">
+                      <button type="submit" value="logout" class="btn btn-sm btn-primary w-100">
 
                         <span class="loading d-none">
                           <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -3669,7 +3749,9 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         </span>
 
                         <span class="button-text">
-                          Logout
+                          <i class="la la-sign-out-alt la-lg m-1"></i>
+                          <span>Log out</span>
+                          </a>
                         </span>
 
                       </button>

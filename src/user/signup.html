@@ -105,18 +105,5 @@
 
 @@include('../_includes/footer-scripts.html')
 
-<script>
-function togglePasswordInput(element, id) {
-	var password = document.getElementById(id);
-	if (password.type == "password") {
-		password.type = "text"; 
-		$("i", element).addClass("la-eye").removeClass("la-eye-slash");
-	} else {
-		password.type = "password";
-		$("i", element).removeClass("la-eye").addClass("la-eye-slash");
-	}
-}
-</script>
-  	
 </body>
 </html>

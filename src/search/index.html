@@ -124,9 +124,7 @@
 @@include('../_includes/footer-scripts.html')
 
 <script>
-$(function () {
-	$('#nav-search button:first').tab('show');
-});
+bootstrap.Tab.getOrCreateInstance('#nav-search button').show();
 </script>
 </body>
 

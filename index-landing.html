@@ -772,8 +772,6 @@
   </div>
 
   <!-- Vvveb Common Js -->
-  <!-- <script src="../../js/jquery.min.js"></script> -->
-  <script id="jquery-js" src="js/jquery.min.js"></script>
   <script id="popper-js" src="../../js/popper.min.js"></script>
   <!-- <script src="../../js/bootstrap.min.js"></script> -->
   <!-- <script src="../../js/bootstrap.bundle.min.js"></script> -->
@@ -794,22 +792,10 @@
   </noscript>
 
   <script src="js/aos.js"></script>
-  <script>
-AOS.init();
-</script>
-
   <script src="js/theme.js"></script>
 
   <script>
-$(document).on("click", ".dropdown-toggle",function (e) { 
-	let link = $(this);
-	let parent = link.parents(".nav-toggle");
-	if (link.hasClass("show")) {
-		parent.addClass("show"); 
-	} else {
-		parent.removeClass("show"); 
-	}
-});
+	AOS.init();
 </script>
 
   <script>
