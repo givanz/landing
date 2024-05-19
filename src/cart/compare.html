@@ -1,0 +1,127 @@
+@@include('../_includes/html-head.html', {"title": "Landing - Product listing", "path":"../"})
+
+<body>
+	
+	@@include('../_includes/header.html')
+	
+	
+	<main id="site-content" role="main">
+      <div class="container mt-5">
+
+      </div>
+      <div class="container">
+        <div class="row g-5 justify-content-between">
+		  
+          <div class="col-md-12">
+
+			<div class="row g-3 g-md-5 align-items-end">
+			  <div class="col-md-6">
+
+				@@include('../_includes/breadcrumb.html')
+				
+			  </div>
+			  <div class="col-md-6 text-md-end">
+			  </div>
+			</div>
+			
+
+				<div class="alert alert-warning alert-dismissible fade show" role="alert" data-v-if-not="this.products.count > 1">
+					<span>You need to add at least two products to compare</span>
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+				
+				<div class="table-responsive" data-v-if="this.products.count > 1">
+				  <table class="table table-bordered table-striped table-hover align-middle" style="--bs-table-hover-bg:rgba(var(--bs-primary-rgb), 0.05);">
+					<thead>
+						<tr class="text-center" data-v-products>
+							<th></th>
+							<td class="position-relative" data-v-product>
+							
+								<span class="position-absolute end-0 me-2">
+									<a href="" class="btn btn-sm btn-outline-secondary border-0" data-v-product-remove_url>
+										<i class="la la-lg la-times"></i>
+									</a>
+								</span>
+								
+								<a href="#"  data-v-product-url>
+									<img class="img-fluid" src="" data-v-product-image>
+									<div class="my-2" data-v-product-name>Product 1</div>
+								</a>
+								
+								<div data-v-product-price_tax_formatted>$0</div>
+								
+								<span class="add-to-cart-btn">
+									<input type="hidden" name="product_id" value="16" data-v-product-product_id="">
+									<a href="/cart/add/16" class="btn btn-sm btn-primary mb-2" data-v-product-add_cart_url="" data-v-vvveb-action="addToCart" data-product_id="16">
+									  <span class="loading d-none">
+										<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
+										<span>Add to cart</span>... </span>
+
+									  <span class="button-text">
+			 Add to cart </span>
+									</a>
+								</span>
+
+							</th>                    
+							<td data-v-product>
+							  <img  src="" data-v-product-image>
+								<a href="#"  data-v-product-url >
+									<span data-v-product-name>Product 2</span>
+								</a>
+
+								<div data-v-product-price_tax_formatted>$0</div>
+
+							</th>                    
+							<td data-v-product>
+							  <img  src="" data-v-product-image>
+								<a href="#"  data-v-product-url >
+									<span data-v-product-name>Product 3</span>
+								</a>
+
+								<div data-v-product-price_tax_formatted>$0</div>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr data-v-specs>
+							<td data-v-specs-name>Spec name</td>
+							<td data-v-spec>Value 1</td>
+							<td data-v-spec>Value 2</td>
+							<td data-v-spec>-</td>
+							<td data-v-spec>-</td>
+							<td data-v-spec>-</td>
+						</tr>
+						<tr data-v-specs>
+							<td data-v-specs-name>Spec name</td>
+							<td data-v-spec>Value 1</td>
+							<td data-v-spec>Value 2</td>
+							<td data-v-spec>-</td>
+							<td data-v-spec>-</td>
+							<td data-v-spec>-</td>
+						</tr>
+						<tr data-v-specs>
+							<td data-v-specs-name>Spec name</td>
+							<td data-v-spec>Value 1</td>
+							<td data-v-spec>Value 2</td>
+							<td data-v-spec>-</td>
+							<td data-v-spec>-</td>
+							<td data-v-spec>-</td>
+						</tr>
+					</tbody>
+				</table>
+			 </div>
+			</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+   
+@@include('../_includes/footer.html')   
+ 
+@@include('../_includes/footer-scripts.html')    
+
+<script src="js/filters.js"></script>  	
+  	
+</body>
+</html>

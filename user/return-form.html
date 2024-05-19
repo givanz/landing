@@ -512,7 +512,7 @@
                             </a>
                           </li>
                           <li>
-                            <a href="user/downloads" data-v-url="user/downloads/index">
+                            <a href="user/wishlist" data-v-url="user/wishlist/index">
                               <i class="la la-download la-lg text-muted m-1"></i>
                               <span>Downloads</span>
                             </a>
@@ -762,7 +762,7 @@
 
                   <div class="notifications" data-v-notifications>
 
-                    <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="login">
+                    <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="return">
 
                       <div class="icon align-middle me-2">
                         <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
@@ -784,7 +784,7 @@
                       </button>
                     </div>
 
-                    <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="login">
+                    <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="return">
 
                       <div class="icon align-middle me-2">
                         <i class="align-middle la la-2x lh-1 la-check-circle"></i>
@@ -801,7 +801,7 @@
                       </button>
                     </div>
 
-                    <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="login">
+                    <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="return">
 
                       <div class="icon align-middle me-2">
                         <i class="align-middle la la-2x lh-1  la-info-circle"></i>
@@ -826,8 +826,9 @@
                 <div class="card-body p-4">
 
 
-                  <form action="" method="post" enctype="multipart/form-data" data-v-url="user/index/signup">
+                  <form action="" method="post" enctype="multipart/form-data" data-v-url="user/return-form/save">
                     <input type="hidden" name="csrf" data-v-csrf>
+                    <input type="hidden" name="action" value="save">
 
                     <h5>Order Information</h5>
 
@@ -875,14 +876,14 @@
                         <div class="row mb-3">
                           <label for="input-order-id" class="col-sm-4 col-form-label">Order ID</label>
                           <div class="col-sm-8">
-                            <input type="text" name="order_id" value="" placeholder="Order ID" id="input-order-id" class="form-control" required>
+                            <input type="text" name="customer_order_id" value="" placeholder="Order ID" id="input-order-id" class="form-control" required>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="row mb-3">
                           <label for="input-date-ordered" class="col-sm-4 col-form-label">Order Date</label>
-                          <div class="col-sm-8 col-md-4">
+                          <div class="col-sm-8">
                             <input type="date" name="date_ordered" value="" placeholder="Order Date" id="input-date-ordered" class="form-control" required>
                           </div>
                         </div>
@@ -987,7 +988,7 @@
                     <div class="row mb-3">
                       <label for="input-comment" class="col-sm-2 col-form-label">Other details</label>
                       <div class="col-sm-10">
-                        <textarea name="comment" rows="5" placeholder="Other details" id="input-comment" class="form-control"></textarea>
+                        <textarea name="note" rows="5" placeholder="Other details" id="input-comment" class="form-control"></textarea>
                       </div>
                     </div>
 
@@ -1018,7 +1019,7 @@
 
       <div class="row" data-v-menu-items>
 
-        <div class="col-md-3">
+        <div class="col-md">
 
           <div data-v-component-site>
             <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
@@ -1028,7 +1029,7 @@
         </div>
 
 
-        <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+        <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
           <div class="h6" data-v-menu-item-name>Vvveb</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
@@ -1044,7 +1045,7 @@
           </nav>
         </div>
 
-        <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+        <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
           <div class="h6" data-v-menu-item-name>Resources</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
@@ -1060,7 +1061,7 @@
           </nav>
         </div>
 
-        <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+        <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
           <div class="h6" data-v-menu-item-name>Contact</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
@@ -1086,8 +1087,8 @@
       <div class="container">
         <div class="d-flex flex-column flex-md-row">
           <div class="text-muted flex-grow-1">
-            <a class="btn-link text-muted" href="/page/terms-conditions" target="_blank">Terms and conditions</a> |
-            <a class="btn-link text-muted" href="/page/privacy-policy" target="_blank">Privacy Policy</a>
+            <a class="btn-link text-muted" href="/page/terms-conditions">Terms and conditions</a> |
+            <a class="btn-link text-muted" href="/page/privacy-policy">Privacy Policy</a>
           </div>
           <div class="text-muted">
             &copy; <span data-v-year>2023</span>
@@ -1158,6 +1159,10 @@
       margin-bottom: 1rem;
     }
   </style>
+  <script>
+let dateOrdered = document.getElementById('input-date-ordered');
+if (!dateOrdered.value) dateOrdered.valueAsDate = new Date();
+</script>
 </body>
 
 </html>

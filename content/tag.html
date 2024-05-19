@@ -511,7 +511,7 @@
                             </a>
                           </li>
                           <li>
-                            <a href="user/downloads" data-v-url="user/downloads/index">
+                            <a href="user/wishlist" data-v-url="user/wishlist/index">
                               <i class="la la-download la-lg text-muted m-1"></i>
                               <span>Downloads</span>
                             </a>
@@ -1055,7 +1055,7 @@
             </div>
 
             <!-- Recent posts Widget -->
-            <div class="card archives-widget" data-v-component-posts="recent-posts-sidebar" data-v-limit="4">
+            <div class="card archives-widget" data-v-component-posts="recent-posts-sidebar" data-v-page="1" data-v-limit="4">
               <div>
                 <h6 class="card-header">Recent posts</h6>
                 <div class="card-body">
@@ -1076,7 +1076,7 @@
             </div>
 
             <!-- Recent comments Widget -->
-            <div class="card archives-widget" data-v-component-comments="recent-comments-sidebar" data-v-limit="4" data-v-post_title="true" data-v-order="desc">
+            <div class="card archives-widget" data-v-component-comments="recent-comments-sidebar" data-v-page="1" data-v-limit="4" data-v-post_title="true" data-v-order="desc">
               <div>
                 <h6 class="card-header">Recent comments</h6>
                 <div class="card-body">
@@ -1220,7 +1220,7 @@
 
       <div class="row" data-v-menu-items>
 
-        <div class="col-md-3">
+        <div class="col-md">
 
           <div data-v-component-site>
             <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
@@ -1230,7 +1230,7 @@
         </div>
 
 
-        <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+        <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
           <div class="h6" data-v-menu-item-name>Vvveb</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
@@ -1246,7 +1246,7 @@
           </nav>
         </div>
 
-        <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+        <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
           <div class="h6" data-v-menu-item-name>Resources</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
@@ -1262,7 +1262,7 @@
           </nav>
         </div>
 
-        <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+        <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
           <div class="h6" data-v-menu-item-name>Contact</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
@@ -1288,8 +1288,8 @@
       <div class="container">
         <div class="d-flex flex-column flex-md-row">
           <div class="text-muted flex-grow-1">
-            <a class="btn-link text-muted" href="/page/terms-conditions" target="_blank">Terms and conditions</a> |
-            <a class="btn-link text-muted" href="/page/privacy-policy" target="_blank">Privacy Policy</a>
+            <a class="btn-link text-muted" href="/page/terms-conditions">Terms and conditions</a> |
+            <a class="btn-link text-muted" href="/page/privacy-policy">Privacy Policy</a>
           </div>
           <div class="text-muted">
             &copy; <span data-v-year>2023</span>

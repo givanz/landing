@@ -1,0 +1,78 @@
+<div class="order_details">
+	<div class="clearfix">
+		<h6 class="float-start">Order Details</h6>
+	</div>		
+
+	<div class="display">
+		<p class="mb-1 lh-lg">
+		  <table class="table table-borderless table-sm">
+			<tr>
+				<td><span class="text-muted">Order ID:</span> </td>
+				<td><span data-v-order-order_id>001</span></td>
+			</tr>
+			<!--
+			<tr>
+				<td><span class="text-muted">Order Invoice:</span> </td>
+				<td><span data-v-order-invoice_no>V1-</span></td>
+			</tr>
+			-->
+			<tr>
+				<td><span class="text-muted">Order Date:</span> </td>
+			<td>
+			<details>
+			  <summary><span><span data-v-order-created_at data-filter-friendly_date>23/10/2019</span></summary>
+			  <p><span class="badge bg-light text-muted" data-v-order-created_at>23/10/2019</span></span></p>
+			</details>	
+			</td>
+			</tr>
+			<tr>
+				<td><span class="text-muted">Payment method:</span> </td>
+				<td>
+				<details>
+				  <summary><span><span data-v-order-payment_title>Cash data-payment_title>Cash-text On Delivery</span></summary>
+				  <p>
+					<span class="badge bg-light text-muted" data-v-order-payment_method>Cash data-payment_method>Cash-text On Delivery</span></span><br/>
+					<span data-v-order-payment_description>Flat data-payment_description>Flat-text Shipping Rate</span><br/>
+				  </p>
+				</details>	
+				 </td>
+			</tr>
+			<tr>
+				<td><span class="text-muted">Shipping method:</span></td>
+				<td>
+				<details>
+				  <summary><span><span data-v-order-shipping_title>>Flat data-shipping_title>>Flat-text Shipping Rate</span></summary>
+				  <p>
+					<span class="badge bg-light text-muted" data-v-order-shipping_method>Flat data-shipping_method>Flat-text Shipping Rate</span></span><br/>
+					<span data-v-order-shipping_description>Flat data-shipping_description>Flat-text Shipping Rate</span><br/>
+				  </p>
+				</details>	
+				</td>
+			</tr>
+			<tr>
+				<td><span class="text-muted">Order Total:</span></td>
+				<td><span data-v-order-total_formatted>$734.28</span></td>
+			</tr>
+			<tr>
+				<td><span class="text-muted">Reward points:</span></td>
+				<td><span data-v-order-points>$734.28</span></td>
+			</tr>
+				<td><span class="text-muted">Status</span></td>
+				<td>
+				<span data-v-order-order_status>Pending</span> 
+				<!--
+				  <select class="form-select">
+					<option selected="">Status</option>
+					<option value="Success">Success</option>
+					<option value="Pending">Pending</option>
+					<option value="Cancel">Cancel</option>
+				  </select>
+				-->
+				</td>
+			</tr>
+		  </table>
+		</p>
+	</div>  
+	
+</div>  
+  

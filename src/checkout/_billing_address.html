@@ -47,7 +47,7 @@
 				<input type="text" class="form-control" id="billing_company" name="billing_address[company]" value="">
 			</div>
 						
-			<div class="col-12 mb-3">
+			<div class="col-6 mb-3">
 				<label class="col-form-label" for="country">Country <span class="text-danger text-small">*</span></label>
 				<select class="form-select" id="billing_country_id" name="billing_address[country_id]" data-v-countries required readonly>
 				  <option value="" data-v-option>
@@ -58,7 +58,7 @@
 				  </option>
 				</select>
 			</div>	
-			<div class="col-12 mb-3">
+			<div class="col-6 mb-3">
 				<label class="col-form-label" for="country">Region <span class="text-danger text-small">*</span></label>
 				<select class="form-select" id="billing_region_id" name="billing_address[region_id]" data-v-regions required readonly>
 				  <option value="1" data-v-option></option>
@@ -71,19 +71,14 @@
 				<input type="text" class="form-control mb-3" id="billing_address_1" name="billing_address[address_1]" autocomplete="billing street-address"  value="" placeholder="Street address" minlength="5" required>
 				<input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" autocomplete="billing address-level2"  placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="" required>
 			</div>
-			<div class="col-12 mb-3">
+			<div class="col-6 mb-3">
 				<label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span></label>
 				<input type="text" class="form-control" id="billing_post_code" name="billing_address[post_code]" autocomplete="billing postal-code" minlength="3" maxlength="10" value="">
 			</div>
-			<div class="col-12 mb-3">
+			<div class="col-6 mb-3">
 				<label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span></label>
 				<input type="text" class="form-control" id="billing_city" name="billing_address[city]" minlength="3" value="" required>
 			</div>
-			<div class="col-12 mb-3">
-				<label class="col-form-label" for="phone_number">Phone No <span class="text-danger text-small">*</span></label>
-				<input type="text" class="form-control" id="phone_number" name="phone_number" min="0" placeholder="Phone number" minlength="3" maxlength="32" value="">
-			</div>
-
 		</div>
 	</div>
 

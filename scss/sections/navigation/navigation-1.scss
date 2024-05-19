@@ -52,7 +52,21 @@
 					padding: 2.1rem 1rem 2.1rem;
 					text-transform:none;
 					//color: var(--bs-navbar-active-color);
-
+					/*
+					&.active {
+						background-color:rgba(var(--bs-primary-rgb), 0.05);
+						
+						&:after {
+							content: '';
+							border-bottom: 2px solid rgba(var(--bs-primary-rgb), 0.5);
+							width: 100%;
+							position: absolute;
+							left: 0;
+							top: 0px;
+						}
+					}
+					*/
+					
 					&:hover {
 						//background-color: rgba(var(--bs-body-color-rgb),.015);
 						//color: var(--bs-blue);

@@ -1,0 +1,79 @@
+@@include('../../_includes/html-head.html', {"title": "Vvveb - Orders", "path":"../"})
+
+<body>
+	
+	@@include('../../_includes/header.html')
+
+	<main id="site-content" role="main">
+
+
+        <div class="container my-5">
+            <div class="row">
+				<div class="col-md-3">
+				
+					 @@include('../../_includes/user-sidebar.html')
+					 
+				</div>
+
+				<div class="col-md-9 justify-content-center border-start px-4">
+					@@include('../../_includes/notifications.html')
+
+					<div data-v-customer_order_id="url" data-v-component-order>
+
+						<h2>Order ID: <span data-v-order-customer_order_id>#001</span></h2>
+
+						@@include('_order_cart.html')				
+
+						<div data-v-order>
+
+								<div class="d-md-flex justify-content-between">
+								  <div class="d-flex align-items-center mb-2 mb-md-0">
+									<span class="badge ms-2" data-v-order-order_status>Pending</span>
+								  </div>
+								</div>
+								<div class="mt-4">
+								  <div class="row">
+									<div class="col-lg-6 col-md-12 col-12">
+									  <div class="mb-6">
+										@@include('_order_customer.html')				
+									  </div>
+									</div>
+									<div class="col-lg-6 col-md-12 col-12">
+									  <div class="mb-6">
+										@@include('_order_details.html')				
+									  </div>
+									</div>
+									<div class="col-lg-6 col-md-12 col-12">
+									  <div class="mb-6">
+										@@include('_order_billing_address.html')				
+									  </div>
+									</div>
+									<div class="col-lg-6 col-md-12 col-12">
+									  <div class="mb-6">
+										@@include('_order_shipping_address.html')				
+									  </div>
+									</div>
+								  </div>
+								</div>
+								
+								</form>	
+
+							  </div>
+
+							
+								</div>
+							  </div>
+					  </div>
+			
+				</div>
+            </div>
+        </div>
+	</main>
+
+	@@include('../../_includes/footer.html')
+
+	@@include('../../_includes/footer-scripts.html')
+  	
+  	
+</body>
+</html>

@@ -1,0 +1,121 @@
+@@include('../_includes/html-head.html', {"title": "Vvveb - Orders", "path":"../"})
+
+<body>
+	
+	@@include('../_includes/header.html')
+
+	<main id="site-content" role="main">
+
+
+	<div class="container my-5">
+		<div class="row">
+
+		<div class="col-md-12 justify-content-center">
+		
+			@@include('../_includes/notifications.html')
+
+			<div data-v-if="this.validOrder">
+			<div data-v-customer_order_id="url" data-v-email="url" data-v-component-order>
+
+				<h2>Order ID: <span data-v-order-customer_order_id>#001</span></h2>
+
+				@@include('orders/_order_cart.html')				
+
+				<div data-v-order>
+
+						<div class="d-md-flex justify-content-between">
+						  <div class="d-flex align-items-center mb-2 mb-md-0">
+							<span class="badge ms-2" data-v-order-order_status>Pending</span>
+						  </div>
+						</div>
+						<div class="mt-4">
+						  <div class="row">
+							<div class="col-lg-6 col-md-12 col-12">
+							  <div class="mb-6">
+								@@include('orders/_order_customer.html')				
+							  </div>
+							</div>
+							<div class="col-lg-6 col-md-12 col-12">
+							  <div class="mb-6">
+								@@include('orders/_order_details.html')				
+							  </div>
+							</div>
+							<div class="col-lg-6 col-md-12 col-12">
+							  <div class="mb-6">
+								@@include('orders/_order_billing_address.html')				
+							  </div>
+							</div>
+							<div class="col-lg-6 col-md-12 col-12">
+							  <div class="mb-6">
+								@@include('orders/_order_shipping_address.html')				
+							  </div>
+							</div>
+						  </div>
+						</div>
+						
+					  </div>
+				</div>
+			</div>
+			</div>
+					  
+			<div class="col-md-12">
+				<div class="card mt-4">
+				<div class="card-body">
+				
+				<form action method="post" enctype="multipart/form-data">
+					
+					<input type="hidden" name="csrf" data-v-csrf>
+					<input type="hidden" name="action" value="order">
+					
+					<div class="login-form col-12 mx-auto">
+						
+						<div class="row mb-3">
+							<label class="col-4 col-form-label" for="input-email">E-Mail Address</label>
+							<div class="col-8">
+								<input type="email" name="email" value placeholder="E-Mail Address" id="input-email" class="form-control" required>
+							</div>
+						</div>
+						
+						<div class="row mb-3">
+							<label class="col-4 col-form-label" for="customer-order-id">Order id</label>
+							<div class="col-8">
+								
+							  <input type="text" minlength="4" autocorrect="off" class="form-control" placeholder="Order id"  id="customer-order-id" name="customer_order_id"  value="" aria-label="Order id" required>
+							</div>
+						</div>
+						
+						<div class="text-end">
+						
+							<button type="submit" name="login" value="Login" class="btn btn-primary">
+								
+								<span class="loading d-none">
+									<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+									</span>
+									<span>Checking</span>...
+								</span>
+
+								<span class="button-text">
+									<span>Submit</span> <i class="la la-arrow-right float-end ms-2"></i>
+								</span>
+							
+							</button>			
+									
+						</div>							
+					</div>							
+					
+				</form>
+					 
+			</div>
+			</div>
+			</div>					  
+		  </div>
+		</div>
+	</main>
+
+	@@include('../_includes/footer.html')
+
+	@@include('../_includes/footer-scripts.html')
+  	
+  	
+</body>
+</html>

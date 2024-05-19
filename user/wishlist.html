@@ -511,7 +511,7 @@
                             </a>
                           </li>
                           <li>
-                            <a href="user/downloads" data-v-url="user/downloads/index">
+                            <a href="user/wishlist" data-v-url="user/wishlist/index">
                               <i class="la la-download la-lg text-muted m-1"></i>
                               <span>Downloads</span>
                             </a>
@@ -891,50 +891,59 @@
 
           <h2>Wishlist</h2>
 
-          <div class="table-responsive" data-v-component-wishlist>
-            <table class="table table-hover bwishlist-top">
-              <thead>
-                <tr>
-                  <td class="text-center">Product</td>
-                  <td class="text-center">Date added</td>
-                  <td>Actions</td>
-                </tr>
-              </thead>
+          <form method="post" action="">
+            <input type="hidden" name="action" value="delete">
+            <div class="table-responsive" data-v-component-user-wishlist>
+              <table class="table table-hover border-top align-middle text-center" style="--bs-table-hover-bg:rgba(var(--bs-primary-rgb), 0.05);">
+                <thead>
+                  <tr>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Date added</td>
+                    <td>Actions</td>
+                  </tr>
+                </thead>
 
-              <tbody>
-                <tr data-v-product>
-                  <td class="text-center">
-                    <a data-v-product-product-url href="#">
-                      <span data-v-product-product-name></span>
-                    </a>
-                  </td>
-                  <td class="text-center">
-                    <span data-v-product-created_at data-filter-friendly_date></span>
-                  </td>
-                  <td class="text-center">
-                    <a href="" title="View" class="btn btn-primary btn-sm" data-v-product-url>
-                      <i class="la la-eye"></i>
-                    </a>
-                    <a href="" title="Delete" class="btn btn-danger-outline btn-sm" data-v-product-delete-url>
-                      <i class="la la-trash"></i>
-                    </a>
-                  </td>
-                </tr>
-                <tr data-v-if-not="count >= 1">
-                  <td colspan="100">
-                    <div class="text-center p-4">
-                      <div>
-                        <i class="la la-comment-alt fs-1 mb-2"></i>
-                        <h6>No products to display!</h6>
+                <tbody>
+                  <tr data-v-product>
+                    <td>
+                      <a data-v-product-url href="#">
+                        <img src="" width="75" data-v-product-image>
+                      </a>
+                    </td>
+                    <td>
+                      <a data-v-product-url href="#">
+                        <span data-v-product-name></span>
+                      </a>
+                    </td>
+                    <td>
+                      <span data-v-product-created_at data-filter-friendly_date></span>
+                    </td>
+                    <td>
+                      <a href="" title="View" class="btn btn-outline-primary btn-sm border-0" data-v-product-url>
+                        <i class="la la-eye"></i>
+                      </a>
+                      <button type="submit" id="button-cart" value="" name="product_id" class="btn btn-outline-danger btn-sm border-0" title="Delete">
+                        <i class="la la-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr data-v-if-not="count >= 1">
+                    <td colspan="100">
+                      <div class="text-center p-4">
+                        <div>
+                          <i class="la la-comment-alt fs-1 mb-2"></i>
+                          <h6>No products to display!</h6>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
 
-          <div data-pagination data-v-parent-component="wishlist" data-v-parent-index="0" data-v-parameters='{}'>
+          <div data-pagination data-v-parent-component="user_wishlist" data-v-parent-index="0" data-v-parameters='{}'>
 
             <nav data-v-if="pagecount > 1">
               <ul class="pagination pagination-sm justify-content-end" style="--bs-pagination-border-color:transparent;border-top: 1px solid var(--bs-border-color);padding-top: 1rem;">
@@ -1007,7 +1016,7 @@
 
       <div class="row" data-v-menu-items>
 
-        <div class="col-md-3">
+        <div class="col-md">
 
           <div data-v-component-site>
             <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
@@ -1017,7 +1026,7 @@
         </div>
 
 
-        <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+        <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
           <div class="h6" data-v-menu-item-name>Vvveb</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
@@ -1033,7 +1042,7 @@
           </nav>
         </div>
 
-        <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+        <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
           <div class="h6" data-v-menu-item-name>Resources</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
@@ -1049,7 +1058,7 @@
           </nav>
         </div>
 
-        <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+        <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
           <div class="h6" data-v-menu-item-name>Contact</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
@@ -1075,8 +1084,8 @@
       <div class="container">
         <div class="d-flex flex-column flex-md-row">
           <div class="text-muted flex-grow-1">
-            <a class="btn-link text-muted" href="/page/terms-conditions" target="_blank">Terms and conditions</a> |
-            <a class="btn-link text-muted" href="/page/privacy-policy" target="_blank">Privacy Policy</a>
+            <a class="btn-link text-muted" href="/page/terms-conditions">Terms and conditions</a> |
+            <a class="btn-link text-muted" href="/page/privacy-policy">Privacy Policy</a>
           </div>
           <div class="text-muted">
             &copy; <span data-v-year>2023</span>
