@@ -574,7 +574,21 @@ footer.footer-1 {
       .navigation-1 .navbar .navbar-nav a.nav-link {
         font-size: 1rem;
         padding: 2.1rem 1rem 2.1rem;
-        text-transform: none; }
+        text-transform: none;
+        /*
+					&.active {
+						background-color:rgba(var(--bs-primary-rgb), 0.05);
+						
+						&:after {
+							content: '';
+							border-bottom: 2px solid rgba(var(--bs-primary-rgb), 0.5);
+							width: 100%;
+							position: absolute;
+							left: 0;
+							top: 0px;
+						}
+					}
+					*/ }
         .navigation-1 .navbar .navbar-nav a.nav-link:hover {
           color: var(--bs-navbar-hover-color); }
       .navigation-1 .navbar .navbar-nav nav.navbar-expand-md a.nav-link {
@@ -12423,8 +12437,7 @@ h2, .h2 {
     color: rgba(var(--bs-body-color-rgb), 0.8); }
 
 audio, video {
-  max-width: 100%;
-  width: 100%; }
+  max-width: 100%; }
 
 .alert-info {
   background-color: rgba(var(--bs-info-bg-rgb), 0.07); }

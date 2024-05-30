@@ -58,9 +58,17 @@
 			</div>
 			</div>
 					  
-			<div class="col-md-12">
-				<div class="card mt-4">
-				<div class="card-body">
+			<div class="col-12 col-lg-8 mx-auto">
+				<div class="card card-default mt-4">
+
+				<div class="card-header bg-body p-5 pb-2">
+					<h1 class="mb-1 h2 fw-bold">Order tracking</h1>
+					<p class="text-muted">Please fill the form below to search for your order.</p>
+
+					@@include('../_includes/notifications.html', {type:"return"})
+
+				</div>			
+				<div class="card-body p-4">
 				
 				<form action method="post" enctype="multipart/form-data">
 					

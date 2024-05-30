@@ -506,13 +506,13 @@
                           <li>
                             <a href="user/downloads" data-v-url="user/downloads/index">
                               <i class="la la-hand-holding-heart la-lg text-muted m-1"></i>
-                              <span>Wishlist</span>
+                              <span>Downloads</span>
                             </a>
                           </li>
                           <li>
                             <a href="user/wishlist" data-v-url="user/wishlist/index">
                               <i class="la la-download la-lg text-muted m-1"></i>
-                              <span>Downloads</span>
+                              <span>Wishlist</span>
                             </a>
                           </li>
                           <li>
@@ -746,18 +746,36 @@
     <!-- Page Content -->
     <div class="container">
 
+      <div>
+        <nav aria-label="breadcrumb" class="text-muted text-small" data-v-component-breadcrumb>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item" data-v-breadcrumb-item>
+              <a href="#" data-v-breadcrumb-item-url data-v-if="breadcrumb.url">
+                <span data-v-breadcrumb-item-text>Home</span>
+              </a>
+              <span data-v-breadcrumb-item-text data-v-if-not="breadcrumb.url">Home</span>
+            </li>
+            <li class="breadcrumb-item" data-v-breadcrumb-item>
+              <a href="#" data-v-breadcrumb-item-url data-v-if="breadcrumb.url">
+                <span data-v-breadcrumb-item-text>Library</span>
+              </a>
+              <span data-v-breadcrumb-item-text data-v-if-not="breadcrumb.url">Library</span>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page" data-v-breadcrumb-item>
+              <span>Data</span>
+            </li>
+          </ol>
+        </nav>
+      </div>
 
       <div id="cart-container">
         <form action="" method="post" enctype="multipart/form-data" data-v-if="this.cart.total_items" data-v-cart-page>
-          <!--	
-		<h3 class="mb-4">Cart (<span data-v-cart-total_items>2</span> items)</h3>
-		-->
 
           <div class="row">
             <div class="col-md-8">
               <div class="card mb-4">
                 <div class="table-responsive card-body cart-table p-0">
-                  <table class="table align-middle" data-v-cart>
+                  <table class="table align-middle m-0" data-v-cart>
                     <thead class="table-lig2ht">
                       <tr>
                         <th class="text-center">Image</th>
@@ -817,8 +835,8 @@
                               </a>
                             </div>
                           </div>
-                          <a class="btn btn-remove" data-v-cart-product-remove-url>
-                            <i class="la la-trash"></i>
+                          <a class="btn btn-sm btn-remove" data-v-cart-product-remove-url>
+                            <i class="la la-times-circle la-lg"></i>
                             <!-- <span>Remove</span> -->
                           </a>
                           </a>
@@ -876,8 +894,18 @@
                         </td>
                       </tr>
                     </tbody>
-
+                    <tfooter>
+                      <tr>
+                        <td colspan="4" class="text-end border-top small text-muted">
+                          <span data-v-cart-cart-total_items>2</span> items
+                          <span data-v-cart-cart-total_weight>2</span>
+                          <span data-v-cart-cart-weight_unit>kg</span>
+                        </td>
+                      </tr>
+                    </tfooter>
                   </table>
+
+
                   <!--
 					<table class="table mb-0 cart-table cart-total" cellspacing="0">
 						  <tfoot>
@@ -902,6 +930,7 @@
 					-->
                 </div>
               </div>
+
             </div>
 
             <div class="col-md-4 cart-right-column">
@@ -1103,6 +1132,16 @@
                 <span data-v-menu-item-name>Plugins</span>
               </a>
             </div>
+            <div data-v-menu-item data-v-if="category.children == 0">
+              <a href="content/index.html" data-v-menu-item-url>
+                <span data-v-menu-item-name>Blog</span>
+              </a>
+            </div>
+            <div data-v-menu-item data-v-if="category.children == 0">
+              <a href="product/index.html" data-v-menu-item-url>
+                <span data-v-menu-item-name>Shop</span>
+              </a>
+            </div>
           </nav>
         </div>
 
@@ -1119,6 +1158,16 @@
                 <span data-v-menu-item-name>Developer documentation</span>
               </a>
             </div>
+            <div data-v-menu-item data-v-if="category.children == 0">
+              <a href="pricing.html" data-v-menu-item-url>
+                <span data-v-menu-item-name>Pricing</span>
+              </a>
+            </div>
+            <div data-v-menu-item data-v-if="category.children == 0">
+              <a href="services.html" data-v-menu-item-url>
+                <span data-v-menu-item-name>Services</span>
+              </a>
+            </div>
           </nav>
         </div>
 
@@ -1126,7 +1175,22 @@
           <div class="h6" data-v-menu-item-name>Contact</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
-              <a href="" target="contact.html">Contact</a>
+              <a href="" href="contact.html">Contact us</a>
+              <a href="" href="portfolio.html">Portfolio</a>
+              <a href="" href="about.html">About us</a>
+              <a href="" href="user/return-form.html">Return form</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
+          <div class="h6" data-v-menu-item-name>My account</div>
+          <nav data-v-menu-item-recursive>
+            <div data-v-menu-item data-v-if="category.children == 0">
+              <a href="" href="user/order-tracking.html">Order tracking</a>
+              <a href="" href="user/wishlist.html">Wishlist</a>
+              <a href="" href="user/orders.html">Orders</a>
+              <a href="" href="cart/compare.html">Compare</a>
             </div>
           </nav>
         </div>
@@ -1148,8 +1212,8 @@
       <div class="container">
         <div class="d-flex flex-column flex-md-row">
           <div class="text-muted flex-grow-1">
-            <a class="btn-link text-muted" href="/page/terms-conditions">Terms and conditions</a> |
-            <a class="btn-link text-muted" href="/page/privacy-policy">Privacy Policy</a>
+            <a class="btn-link text-muted" href="content/page.html">Terms and conditions</a> |
+            <a class="btn-link text-muted" href="content/page.html">Privacy Policy</a>
           </div>
           <div class="text-muted">
             &copy; <span data-v-year>2023</span>
@@ -1161,6 +1225,7 @@
     </div>
 
   </footer>
+
 
   <div class="bg-image"></div>
 

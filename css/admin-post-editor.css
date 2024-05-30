@@ -9685,8 +9685,7 @@ h2, .h2 {
     color: rgba(var(--bs-body-color-rgb), 0.8); }
 
 audio, video {
-  max-width: 100%;
-  width: 100%; }
+  max-width: 100%; }
 
 .alert-info {
   background-color: rgba(var(--bs-info-bg-rgb), 0.07); }

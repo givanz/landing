@@ -35,21 +35,21 @@
 			<!--
 			<div class="mb-3 col-6">
 				<label class="col-form-label" for="billing_first_name">First Name <span class="text-danger text-small">*</span></label>
-				<input type="text" class="form-control" id="billing_first_name" name="billing_address[first_name]" value="" minlength="3" required>
+				<input type="text" class="form-control" id="billing_first_name" name="billing_address[first_name]" value="" minlength="3" autocomplete="given-name" required>
 			</div>
 			<div class="mb-3 col-6">
 				<label class="col-form-label" for="billing_last_name">Last Name <span class="text-danger text-small">*</span></label>
-				<input type="text" class="form-control" id="billing_last_name" name="billing_address[last_name]" value="" minlength="3" required>
+				<input type="text" class="form-control" id="billing_last_name" name="billing_address[last_name]" value="" minlength="3" autocomplete="family-name" required>
 			</div>
 			-->
 			<div class="mb-3 col-12 mb-3">
 				<label class="col-form-label" for="billing_company">Company Name</label>
-				<input type="text" class="form-control" id="billing_company" name="billing_address[company]" value="">
+				<input type="text" class="form-control" id="billing_company" name="billing_address[company]" value="" autocomplete="organization">
 			</div>
 						
 			<div class="col-6 mb-3">
 				<label class="col-form-label" for="country">Country <span class="text-danger text-small">*</span></label>
-				<select class="form-select" id="billing_country_id" name="billing_address[country_id]" data-v-countries required readonly>
+				<select class="form-select" id="billing_country_id" name="billing_address[country_id]" autocomplete="billing country-name" data-v-countries required readonly>
 				  <option value="" data-v-option>
 					Country 1
 				  </option>
@@ -60,7 +60,7 @@
 			</div>	
 			<div class="col-6 mb-3">
 				<label class="col-form-label" for="country">Region <span class="text-danger text-small">*</span></label>
-				<select class="form-select" id="billing_region_id" name="billing_address[region_id]" data-v-regions required readonly>
+				<select class="form-select" id="billing_region_id" name="billing_address[region_id]" autocomplete="billing address-level1" data-v-regions required readonly>
 				  <option value="1" data-v-option></option>
 				  <option value="2" data-v-option></option>
 				  <option value="3" data-v-option></option>
@@ -68,16 +68,16 @@
 			</div>
 			<div class="col-12 mb-3">
 				<label class="col-form-label" for="street_address">Address <span class="text-danger text-small">*</span></label>
-				<input type="text" class="form-control mb-3" id="billing_address_1" name="billing_address[address_1]" autocomplete="billing street-address"  value="" placeholder="Street address" minlength="5" required>
-				<input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" autocomplete="billing address-level2"  placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="" required>
+				<input type="text" class="form-control mb-3" id="billing_address_1" name="billing_address[address_1]" autocomplete="billing street-address"  value="" placeholder="Street address" minlength="5" autocomplete="shipping street-address" required>
+				<input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="" autocomplete="billing address-line1" required>
 			</div>
 			<div class="col-6 mb-3">
 				<label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span></label>
-				<input type="text" class="form-control" id="billing_post_code" name="billing_address[post_code]" autocomplete="billing postal-code" minlength="3" maxlength="10" value="">
+				<input type="text" class="form-control" id="billing_post_code" name="billing_address[post_code]" autocomplete="billing postal-code" minlength="3" maxlength="10" autocomplete="billing postal-code" value="">
 			</div>
 			<div class="col-6 mb-3">
 				<label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span></label>
-				<input type="text" class="form-control" id="billing_city" name="billing_address[city]" minlength="3" value="" required>
+				<input type="text" class="form-control" id="billing_city" name="billing_address[city]" minlength="3" value="" autocomplete="billing address-level2" required>
 			</div>
 		</div>
 	</div>

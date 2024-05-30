@@ -1986,7 +1986,7 @@ Vvveb.Sections.add("footer/footer-1", {
 
     <div class="row" data-v-menu-items>
 
-      <div class="col-md-3">
+      <div class="col-md">
 
         <div data-v-component-site>
           <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
@@ -1996,7 +1996,7 @@ Vvveb.Sections.add("footer/footer-1", {
       </div>
 
 
-      <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+      <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
         <div class="h6" data-v-menu-item-name>Vvveb</div>
         <nav data-v-menu-item-recursive>
           <div data-v-menu-item data-v-if="category.children == 0">
@@ -2009,10 +2009,20 @@ Vvveb.Sections.add("footer/footer-1", {
               <span data-v-menu-item-name>Plugins</span>
             </a>
           </div>
+          <div data-v-menu-item data-v-if="category.children == 0">
+            <a href="content/index.html" data-v-menu-item-url>
+              <span data-v-menu-item-name>Blog</span>
+            </a>
+          </div>
+          <div data-v-menu-item data-v-if="category.children == 0">
+            <a href="product/index.html" data-v-menu-item-url>
+              <span data-v-menu-item-name>Shop</span>
+            </a>
+          </div>
         </nav>
       </div>
 
-      <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+      <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
         <div class="h6" data-v-menu-item-name>Resources</div>
         <nav data-v-menu-item-recursive>
           <div data-v-menu-item data-v-if="category.children == 0">
@@ -2025,14 +2035,39 @@ Vvveb.Sections.add("footer/footer-1", {
               <span data-v-menu-item-name>Developer documentation</span>
             </a>
           </div>
+          <div data-v-menu-item data-v-if="category.children == 0">
+            <a href="pricing.html" data-v-menu-item-url>
+              <span data-v-menu-item-name>Pricing</span>
+            </a>
+          </div>
+          <div data-v-menu-item data-v-if="category.children == 0">
+            <a href="services.html" data-v-menu-item-url>
+              <span data-v-menu-item-name>Services</span>
+            </a>
+          </div>
         </nav>
       </div>
 
-      <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+      <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
         <div class="h6" data-v-menu-item-name>Contact</div>
         <nav data-v-menu-item-recursive>
           <div data-v-menu-item data-v-if="category.children == 0">
-            <a href="" target="contact.html">Contact</a>
+            <a href="" href="contact.html">Contact us</a>
+            <a href="" href="portfolio.html">Portfolio</a>
+            <a href="" href="about.html">About us</a>
+            <a href="" href="user/return-form.html">Return form</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
+        <div class="h6" data-v-menu-item-name>My account</div>
+        <nav data-v-menu-item-recursive>
+          <div data-v-menu-item data-v-if="category.children == 0">
+            <a href="" href="user/order-tracking.html">Order tracking</a>
+            <a href="" href="user/wishlist.html">Wishlist</a>
+            <a href="" href="user/orders.html">Orders</a>
+            <a href="" href="cart/compare.html">Compare</a>
           </div>
         </nav>
       </div>
@@ -2054,8 +2089,8 @@ Vvveb.Sections.add("footer/footer-1", {
     <div class="container">
       <div class="d-flex flex-column flex-md-row">
         <div class="text-muted flex-grow-1">
-          <a class="btn-link text-muted" href="/page/terms-conditions" target="_blank">Terms and conditions</a> |
-          <a class="btn-link text-muted" href="/page/privacy-policy" target="_blank">Privacy Policy</a>
+          <a class="btn-link text-muted" href="content/page.html">Terms and conditions</a> |
+          <a class="btn-link text-muted" href="content/page.html">Privacy Policy</a>
         </div>
         <div class="text-muted">
           &copy; <span data-v-year>2023</span>
@@ -2074,7 +2109,7 @@ Vvveb.Sections.add("footer/footer-1", {
 
   <div class="container py-5">
     <div class="row py-4">
-      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+      <div class="col-md">
         <img src="img/logo.png" alt="Site logo" loading="lazy" alt="" width="180" class="mb-3">
         <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
         <ul class="list-inline mt-4">
@@ -2105,7 +2140,7 @@ Vvveb.Sections.add("footer/footer-1", {
           </li>
         </ul>
       </div>
-      <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+      <div class="col-md">
         <h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
         <ul class="list-unstyled mb-0">
           <li class="mb-2">
@@ -2122,7 +2157,7 @@ Vvveb.Sections.add("footer/footer-1", {
           </li>
         </ul>
       </div>
-      <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+      <div class="col-md">
         <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
         <ul class="list-unstyled mb-0">
           <li class="mb-2">
@@ -2166,7 +2201,7 @@ Vvveb.Sections.add("footer/footer-1", {
     <div class="row" data-v-menu-items>
 
 
-      <div class="col-md-3">
+      <div class="col-md">
 
         <div data-v-component-site>
           <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
@@ -2176,7 +2211,7 @@ Vvveb.Sections.add("footer/footer-1", {
       </div>
 
 
-      <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+      <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
         <div class="h6" data-v-menu-item-name>Vvveb</div>
         <nav data-v-menu-item-recursive>
           <div data-v-menu-item data-v-if="category.children == 0">
@@ -2192,7 +2227,7 @@ Vvveb.Sections.add("footer/footer-1", {
         </nav>
       </div>
 
-      <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+      <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
         <div class="h6" data-v-menu-item-name>Resources</div>
         <nav data-v-menu-item-recursive>
           <div data-v-menu-item data-v-if="category.children == 0">
@@ -2208,7 +2243,7 @@ Vvveb.Sections.add("footer/footer-1", {
         </nav>
       </div>
 
-      <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
+      <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
         <div class="h6" data-v-menu-item-name>Contact</div>
         <nav data-v-menu-item-recursive>
           <div data-v-menu-item data-v-if="category.children == 0">
@@ -2234,8 +2269,8 @@ Vvveb.Sections.add("footer/footer-1", {
     <div class="container">
       <div class="d-flex">
         <div class="text-muted text-small flex-grow-1">
-          <a class="btn-link text-muted" href="/page/terms-conditions" target="_blank">Terms and conditions</a> |
-          <a class="btn-link text-muted" href="/page/privacy-policy" target="_blank">Privacy Policy</a>
+          <a class="btn-link text-muted" href="/page/terms-conditions">Terms and conditions</a> |
+          <a class="btn-link text-muted" href="/page/privacy-policy">Privacy Policy</a>
         </div>
         <div class="text-muted text-small">
           &copy; <span data-v-year>2023</span>
@@ -2625,13 +2660,13 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <li>
                           <a href="user/downloads" data-v-url="user/downloads/index">
                             <i class="la la-hand-holding-heart la-lg text-muted m-1"></i>
-                            <span>Wishlist</span>
+                            <span>Downloads</span>
                           </a>
                         </li>
                         <li>
-                          <a href="user/downloads" data-v-url="user/downloads/index">
+                          <a href="user/wishlist" data-v-url="user/wishlist/index">
                             <i class="la la-download la-lg text-muted m-1"></i>
-                            <span>Downloads</span>
+                            <span>Wishlist</span>
                           </a>
                         </li>
                         <li>
@@ -3107,13 +3142,13 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <li>
                           <a href="user/downloads" data-v-url="user/downloads/index">
                             <i class="la la-hand-holding-heart la-lg text-muted m-1"></i>
-                            <span>Wishlist</span>
+                            <span>Downloads</span>
                           </a>
                         </li>
                         <li>
-                          <a href="user/downloads" data-v-url="user/downloads/index">
+                          <a href="user/wishlist" data-v-url="user/wishlist/index">
                             <i class="la la-download la-lg text-muted m-1"></i>
-                            <span>Downloads</span>
+                            <span>Wishlist</span>
                           </a>
                         </li>
                         <li>
@@ -3720,13 +3755,13 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <li>
                           <a href="user/downloads" data-v-url="user/downloads/index">
                             <i class="la la-hand-holding-heart la-lg text-muted m-1"></i>
-                            <span>Wishlist</span>
+                            <span>Downloads</span>
                           </a>
                         </li>
                         <li>
-                          <a href="user/downloads" data-v-url="user/downloads/index">
+                          <a href="user/wishlist" data-v-url="user/wishlist/index">
                             <i class="la la-download la-lg text-muted m-1"></i>
-                            <span>Downloads</span>
+                            <span>Wishlist</span>
                           </a>
                         </li>
                         <li>

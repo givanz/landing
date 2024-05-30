@@ -507,13 +507,13 @@
                           <li>
                             <a href="user/downloads" data-v-url="user/downloads/index">
                               <i class="la la-hand-holding-heart la-lg text-muted m-1"></i>
-                              <span>Wishlist</span>
+                              <span>Downloads</span>
                             </a>
                           </li>
                           <li>
                             <a href="user/wishlist" data-v-url="user/wishlist/index">
                               <i class="la la-download la-lg text-muted m-1"></i>
-                              <span>Downloads</span>
+                              <span>Wishlist</span>
                             </a>
                           </li>
                           <li>
@@ -842,7 +842,7 @@
                   <div class="row mb-3">
                     <label class="col-4 col-form-label" for="input-email">E-Mail Address</label>
                     <div class="col-8">
-                      <input type="email" name="email" value placeholder="E-Mail Address" id="input-email" class="form-control" required>
+                      <input type="email" name="email" value placeholder="E-Mail Address" id="input-email" class="form-control" autocomplete="email" required>
                     </div>
                   </div>
 
@@ -900,22 +900,22 @@
                       <div class="mb-3 col-6">
                         <label class="col-form-label" for="first_name">First Name <span class="text-danger text-small">*</span>
                         </label>
-                        <input type="text" class="form-control" id="first_name" name="first_name" value="" minlength="3" required>
+                        <input type="text" class="form-control" id="first_name" name="first_name" value="" minlength="3" autocomplete="given-name" required>
                       </div>
                       <div class="mb-3 col-6">
                         <label class="col-form-label" for="last_name">Last Name <span class="text-danger text-small">*</span>
                         </label>
-                        <input type="text" class="form-control" id="last_name" name="last_name" value="" minlength="3" required>
+                        <input type="text" class="form-control" id="last_name" name="last_name" value="" minlength="3" autocomplete="family-name" required>
                       </div>
                       <div class="col-6 mb-3">
                         <label class="col-form-label" for="email">Email Address <span class="text-danger text-small">*</span>
                         </label>
-                        <input type="email" class="form-control" id="email" name="email" value="" required>
+                        <input type="email" class="form-control" id="email" name="email" value="" autocomplete="email" required>
                       </div>
                       <div class="col-6 mb-3">
                         <label class="col-form-label" for="phone_number">Phone No <span class="text-danger text-small">*</span>
                         </label>
-                        <input type="text" class="form-control" id="phone_number" name="phone_number" min="0" placeholder="Phone number" minlength="3" maxlength="32" value="" required>
+                        <input type="text" class="form-control" id="phone_number" name="phone_number" min="0" placeholder="Phone number" minlength="3" maxlength="32" value="" autocomplete="tel" required>
                       </div>
 
                       <!--
@@ -946,7 +946,7 @@
                           <label class="col-form-label" for="register-password">Password</label>
 
                           <div class="input-group">
-                            <input type="password" minlength="6" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password" id="register-password" name="password" value="" aria-label="Password" required>
+                            <input type="password" minlength="6" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password" id="register-password" name="password" value="" aria-label="Password" autocomplete="new-password" required>
                             <div class="input-group-append">
                               <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this,'register-password')">
                                 <i class="la la-eye-slash"></i>
@@ -958,6 +958,15 @@
 
 
                     </div>
+
+                    <div class="row" data-v-if="this.global.user_id">
+                      <div class="col mb-3" data-v-if-not="this.global.user.phone_number">
+                        <label class="col-form-label" for="phone_number">Phone No <span class="text-danger text-small">*</span>
+                        </label>
+                        <input type="text" class="form-control" id="phone_number" name="phone_number" min="0" placeholder="Phone number" minlength="3" maxlength="32" value="" autocomplete="tel" required>
+                      </div>
+                    </div>
+
 
                     <div class="row" data-v-component-user-address>
                       <div class="mb-2 col-6" data-v-class-if-col-12="count <= 1" data-v-user_address>
@@ -996,22 +1005,22 @@
                           <!--
 			<div class="mb-3 col-6">
 				<label class="col-form-label" for="billing_first_name">First Name <span class="text-danger text-small">*</span></label>
-				<input type="text" class="form-control" id="billing_first_name" name="billing_address[first_name]" value="" minlength="3" required>
+				<input type="text" class="form-control" id="billing_first_name" name="billing_address[first_name]" value="" minlength="3" autocomplete="given-name" required>
 			</div>
 			<div class="mb-3 col-6">
 				<label class="col-form-label" for="billing_last_name">Last Name <span class="text-danger text-small">*</span></label>
-				<input type="text" class="form-control" id="billing_last_name" name="billing_address[last_name]" value="" minlength="3" required>
+				<input type="text" class="form-control" id="billing_last_name" name="billing_address[last_name]" value="" minlength="3" autocomplete="family-name" required>
 			</div>
 			-->
                           <div class="mb-3 col-12 mb-3">
                             <label class="col-form-label" for="billing_company">Company Name</label>
-                            <input type="text" class="form-control" id="billing_company" name="billing_address[company]" value="">
+                            <input type="text" class="form-control" id="billing_company" name="billing_address[company]" value="" autocomplete="organization">
                           </div>
 
                           <div class="col-6 mb-3">
                             <label class="col-form-label" for="country">Country <span class="text-danger text-small">*</span>
                             </label>
-                            <select class="form-select" id="billing_country_id" name="billing_address[country_id]" data-v-countries required readonly>
+                            <select class="form-select" id="billing_country_id" name="billing_address[country_id]" autocomplete="billing country-name" data-v-countries required readonly>
                               <option value="" data-v-option>
                                 Country 1
                               </option>
@@ -1023,7 +1032,7 @@
                           <div class="col-6 mb-3">
                             <label class="col-form-label" for="country">Region <span class="text-danger text-small">*</span>
                             </label>
-                            <select class="form-select" id="billing_region_id" name="billing_address[region_id]" data-v-regions required readonly>
+                            <select class="form-select" id="billing_region_id" name="billing_address[region_id]" autocomplete="billing address-level1" data-v-regions required readonly>
                               <option value="1" data-v-option></option>
                               <option value="2" data-v-option></option>
                               <option value="3" data-v-option></option>
@@ -1032,18 +1041,18 @@
                           <div class="col-12 mb-3">
                             <label class="col-form-label" for="street_address">Address <span class="text-danger text-small">*</span>
                             </label>
-                            <input type="text" class="form-control mb-3" id="billing_address_1" name="billing_address[address_1]" autocomplete="billing street-address" value="" placeholder="Street address" minlength="5" required>
-                            <input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" autocomplete="billing address-level2" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="" required>
+                            <input type="text" class="form-control mb-3" id="billing_address_1" name="billing_address[address_1]" autocomplete="billing street-address" value="" placeholder="Street address" minlength="5" autocomplete="shipping street-address" required>
+                            <input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="" autocomplete="billing address-line1" required>
                           </div>
                           <div class="col-6 mb-3">
                             <label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span>
                             </label>
-                            <input type="text" class="form-control" id="billing_post_code" name="billing_address[post_code]" autocomplete="billing postal-code" minlength="3" maxlength="10" value="">
+                            <input type="text" class="form-control" id="billing_post_code" name="billing_address[post_code]" autocomplete="billing postal-code" minlength="3" maxlength="10" autocomplete="billing postal-code" value="">
                           </div>
                           <div class="col-6 mb-3">
                             <label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span>
                             </label>
-                            <input type="text" class="form-control" id="billing_city" name="billing_address[city]" minlength="3" value="" required>
+                            <input type="text" class="form-control" id="billing_city" name="billing_address[city]" minlength="3" value="" autocomplete="billing address-level2" required>
                           </div>
                         </div>
                       </div>
@@ -1065,12 +1074,12 @@
                         <div class="mb-3 col-6">
                           <label class="col-form-label" for="first_name">First Name <span class="text-danger text-small">*</span>
                           </label>
-                          <input type="text" class="form-control" id="first_name" name="shipping_address[first_name]" value="" minlength="3" required>
+                          <input type="text" class="form-control" id="first_name" name="shipping_address[first_name]" value="" minlength="3" autocomplete="given-name" required>
                         </div>
                         <div class="mb-3 col-6">
                           <label class="col-form-label" for="last_name">Last Name <span class="text-danger text-small">*</span>
                           </label>
-                          <input type="text" class="form-control" id="last_name" name="shipping_address[last_name]" value="" minlength="3" required>
+                          <input type="text" class="form-control" id="last_name" name="shipping_address[last_name]" value="" minlength="3" autocomplete="family-name" required>
                         </div>
                         <div class="mb-3 col-md-6 mb-3">
                           <label class="col-form-label" for="email">Email Address <span class="text-danger text-small">*</span>
@@ -1079,12 +1088,12 @@
                         </div>
                         <div class="mb-3 col-md-6 mb-3">
                           <label class="col-form-label" for="company">Company Name</label>
-                          <input type="text" class="form-control" id="company" name="shipping_address[company]" value="">
+                          <input type="text" class="form-control" id="company" name="shipping_address[company]" value="" autocomplete="organization">
                         </div>
                         <div class="col-md-6 mb-3">
                           <label class="col-form-label" for="country">Country <span class="text-danger text-small">*</span>
                           </label>
-                          <select class="form-select" id="shipping_country_id" name="shipping_address[country_id]" data-v-countries readonly>
+                          <select class="form-select" id="shipping_country_id" name="shipping_address[country_id]" autocomplete="shipping  country-name" data-v-countries required readonly>
                             <option value="1" data-v-country data-v-country-country_id data-v-country-name>
                               Country 1
                             </option>
@@ -1096,7 +1105,7 @@
                         <div class="col-md-6 mb-3">
                           <label class="col-form-label" for="country">Region <span class="text-danger text-small">*</span>
                           </label>
-                          <select class="form-select" id="shipping_region_id" name="shipping_address[region_id]" data-v-regions readonly>
+                          <select class="form-select" id="shipping_region_id" name="shipping_address[region_id]" autocomplete="shipping  address-level1" data-v-regions required readonly>
                             <option value="1" data-v-option></option>
                             <option value="2" data-v-option></option>
                             <option value="3" data-v-option></option>
@@ -1105,18 +1114,18 @@
                         <div class="col-12 mb-3">
                           <label class="col-form-label" for="street_address">Address <span class="text-danger text-small">*</span>
                           </label>
-                          <input type="text" class="form-control mb-3" id="shipping_shipping_address_1" name="shipping_address[address_1]" autocomplete="shipping street-address" value="" placeholder="Street address" minlength="5" required>
-                          <input type="text" class="form-control" id="shipping_shipping_address_2" name="shipping_address[address_2]" autocomplete="shipping address-level2" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="" required>
+                          <input type="text" class="form-control mb-3" id="shipping_shipping_address_1" name="shipping_address[address_1]" autocomplete="shipping street-address" value="" placeholder="Street address" minlength="5" autocomplete="shipping street-address" required>
+                          <input type="text" class="form-control" id="shipping_shipping_address_2" name="shipping_address[address_2]" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="" autocomplete="shipping  address-line1" required>
                         </div>
                         <div class="col-md-6 mb-3">
                           <label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span>
                           </label>
-                          <input type="text" class="form-control" id="shipping_post_code" name="shipping_address[post_code]" autocomplete="shipping postal-code" minlength="3" maxlength="10" value="" required>
+                          <input type="text" class="form-control" id="shipping_post_code" name="shipping_address[post_code]" autocomplete="shipping postal-code" minlength="3" maxlength="10" value="" autocomplete="shipping  postal-code" autocomplete="shipping  postal-code" required>
                         </div>
                         <div class="col-md-6 mb-3">
                           <label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span>
                           </label>
-                          <input type="text" class="form-control" id="shipping_city" name="shipping_address[city]" minlength="3" value="" required>
+                          <input type="text" class="form-control" id="shipping_city" name="shipping_address[city]" minlength="3" value="" value="" autocomplete="shipping  address-level2" required>
                         </div>
                         <!--
 		<div class="col-12 mb-3">
@@ -1127,6 +1136,7 @@
 
                       </div>
                     </div>
+
 
                     <div class="mb-3">
                       <div class="form-check mb-1">
@@ -1370,7 +1380,7 @@
 
 
                     <h6>Shipping</h6>
-                    <div name="accordion" role="tablist" class="accordion mb-3" data-v-component-checkout-shipping>
+                    <div name="accordion" role="tablist" class="accordion mb-3" data-v-checkout="true" data-v-component-checkout-shipping>
 
                       <div class="accordion-item" data-v-shipping>
                         <div class="accordion-header" role="tab">
@@ -1428,7 +1438,7 @@
 
 
                     <h6>Payment</h6>
-                    <div name="accordion" role="tablist" class="accordion mb-3" data-v-component-checkout-payment>
+                    <div name="accordion" role="tablist" class="accordion mb-3" data-v-checkout="true" data-v-component-checkout-payment>
 
                       <div class="accordion-item" data-v-payment>
                         <div class="accordion-header" role="tab">
@@ -1527,6 +1537,16 @@
                 <span data-v-menu-item-name>Plugins</span>
               </a>
             </div>
+            <div data-v-menu-item data-v-if="category.children == 0">
+              <a href="content/index.html" data-v-menu-item-url>
+                <span data-v-menu-item-name>Blog</span>
+              </a>
+            </div>
+            <div data-v-menu-item data-v-if="category.children == 0">
+              <a href="product/index.html" data-v-menu-item-url>
+                <span data-v-menu-item-name>Shop</span>
+              </a>
+            </div>
           </nav>
         </div>
 
@@ -1543,6 +1563,16 @@
                 <span data-v-menu-item-name>Developer documentation</span>
               </a>
             </div>
+            <div data-v-menu-item data-v-if="category.children == 0">
+              <a href="pricing.html" data-v-menu-item-url>
+                <span data-v-menu-item-name>Pricing</span>
+              </a>
+            </div>
+            <div data-v-menu-item data-v-if="category.children == 0">
+              <a href="services.html" data-v-menu-item-url>
+                <span data-v-menu-item-name>Services</span>
+              </a>
+            </div>
           </nav>
         </div>
 
@@ -1550,7 +1580,22 @@
           <div class="h6" data-v-menu-item-name>Contact</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
-              <a href="" target="contact.html">Contact</a>
+              <a href="" href="contact.html">Contact us</a>
+              <a href="" href="portfolio.html">Portfolio</a>
+              <a href="" href="about.html">About us</a>
+              <a href="" href="user/return-form.html">Return form</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
+          <div class="h6" data-v-menu-item-name>My account</div>
+          <nav data-v-menu-item-recursive>
+            <div data-v-menu-item data-v-if="category.children == 0">
+              <a href="" href="user/order-tracking.html">Order tracking</a>
+              <a href="" href="user/wishlist.html">Wishlist</a>
+              <a href="" href="user/orders.html">Orders</a>
+              <a href="" href="cart/compare.html">Compare</a>
             </div>
           </nav>
         </div>
@@ -1572,8 +1617,8 @@
       <div class="container">
         <div class="d-flex flex-column flex-md-row">
           <div class="text-muted flex-grow-1">
-            <a class="btn-link text-muted" href="/page/terms-conditions">Terms and conditions</a> |
-            <a class="btn-link text-muted" href="/page/privacy-policy">Privacy Policy</a>
+            <a class="btn-link text-muted" href="content/page.html">Terms and conditions</a> |
+            <a class="btn-link text-muted" href="content/page.html">Privacy Policy</a>
           </div>
           <div class="text-muted">
             &copy; <span data-v-year>2023</span>
@@ -1585,6 +1630,7 @@
     </div>
 
   </footer>
+
 
 
   <div class="bg-image"></div>

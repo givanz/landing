@@ -1,10 +1,11 @@
-function refreshCart(name, value, element) {
+function refreshCart(parameters, element, update = false) {
 	VvvebTheme.Cart.module = 'checkout/checkout';
 	VvvebTheme.Cart.component_id = 1;
 	//action, parameters, element, selector, callback
-	let parameters = {};
-	parameters[name] = value;
-	VvvebTheme.Cart.ajax('', parameters, element, ['.cart-summary', '.container > .notifications']);
+	if (!update) {
+		update = ['.cart-summary', '.container > .notifications'];
+	}
+	VvvebTheme.Cart.ajax('', parameters, element, update);
 	//cart-summary
 }
 
@@ -45,9 +46,9 @@ function toggleRegister(element) {
 	}
 }
 
-//show billing address form if no address is selected
 window.addEventListener('DOMContentLoaded', (e) => {
 
+	//show billing address form if no address is selected
 	document.addEventListener("change", e => {
 		let element = e.target.closest("[name=billing_address_id]");
 		if (element) {
@@ -93,11 +94,13 @@ window.addEventListener('DOMContentLoaded', (e) => {
 			bootstrap.Collapse.getOrCreateInstance(collapse)?.show();
 
 			let input = item.querySelector('[name="shipping_method"], [name="payment_method"]');
-			refreshCart(input.getAttribute("name"), input.value, element);
+			let parameters = {};
+			parameters[element.name] = element.value;
+			refreshCart(parameters, element);
 		}
 	});
 	
-	document.querySelector("[data-v-countries][readonly]")?.dispatchEvent(new Event('change', {bubbles:true}));
+	//document.querySelector("[data-v-countries][readonly]")?.dispatchEvent(new Event('change', {bubbles:true}));
 	document.querySelector('input[name="register"]:checked')?.dispatchEvent(new MouseEvent('click', {bubbles:true}));
 });
 
@@ -114,6 +117,15 @@ function addRegionsToSelect(regionSelect, data, region_id = 0, countrySelect) {
 	countrySelect.removeAttribute("readonly");
 }
 
+function reloadRegions(element){
+	let parameters = {};
+	if (element) {
+		document.querySelectorAll("[data-v-countries],[data-v-regions]").forEach(e => parameters[e.name] = e.value ?? 0);
+	}
+	document.querySelector("[data-v-countries][readonly]")?.dispatchEvent(new Event('change'));
+	refreshCart(parameters, element, ['.cart-summary', '[data-v-component-checkout-shipping]' ,'[data-v-component-checkout-payment]']);
+}
+
 document.addEventListener("change", function (e) {
 	let element = e.target.closest("[data-v-countries]");
 	if (element) {
@@ -127,7 +139,7 @@ document.addEventListener("change", function (e) {
 		if (country_id) {
 			if (regions[country_id]) {
 				addRegionsToSelect(regionSelect, regions[country_id], region_id, self);
-				document.querySelector("[data-v-countries][readonly]")?.dispatchEvent(new Event('change'));
+				reloadRegions(element);
 			} else {
 				fetch(regionsUrl + "&country_id=" + country_id)
 				 .then(response => {
@@ -138,6 +150,7 @@ document.addEventListener("change", function (e) {
 					regions[country_id] = data;
 					addRegionsToSelect(regionSelect, data, region_id, self);
 					document.querySelector("[data-v-countries][readonly]")?.dispatchEvent(new Event('change', {bubbles:true}));
+					reloadRegions(element);					
 				})
 				.catch(error => {
 					console.log(error.statusText);
@@ -147,6 +160,11 @@ document.addEventListener("change", function (e) {
 		}
 		
 		element.dataset.vRegionId = 0;
+	} else {
+		let element = e.target.closest("[data-v-regions]");
+		if (element) {
+			reloadRegions(element);
+		}
 	}
 });
 

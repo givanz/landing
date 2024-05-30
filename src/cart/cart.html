@@ -8,18 +8,18 @@
 	<!-- Page Content -->
 	<div class="container">
 	
+		<div>
+			@@include('../_includes/breadcrumb.html')
+		</div>
 	
       <div id="cart-container">
       <form action="" method="post" enctype="multipart/form-data"  data-v-if="this.cart.total_items" data-v-cart-page>
-		<!--	
-		<h3 class="mb-4">Cart (<span data-v-cart-total_items>2</span> items)</h3>
-		-->
 
 		<div class="row">
 		<div class="col-md-8">
 			<div class="card mb-4">
 				<div class="table-responsive card-body cart-table p-0">
-					<table class="table align-middle" data-v-cart>
+					<table class="table align-middle m-0" data-v-cart>
 						<thead class="table-lig2ht">
 							<tr>
 								<th class="text-center">Image</th>
@@ -76,8 +76,8 @@
 											</a>
 										</div>
 									</div>
-									<a  class="btn btn-remove" data-v-cart-product-remove-url>
-										<i class="la la-trash"></i>
+									<a  class="btn btn-sm btn-remove" data-v-cart-product-remove-url>
+										<i class="la la-times-circle la-lg"></i>
 										<!-- <span>Remove</span> -->
 									</a>
 									</a>
@@ -135,8 +135,17 @@
 								</td>
 							</tr>
 						 </tbody>
-
+						 <tfooter>
+							<tr>
+							<td colspan="4" class="text-end border-top small text-muted">
+								<span data-v-cart-cart-total_items>2</span> items 
+								<span data-v-cart-cart-total_weight>2</span> <span data-v-cart-cart-weight_unit>kg</span> 
+							</td>
+							</tr>
+						 </tfooter>
 				  </table>
+				  
+
 				  <!--
 					<table class="table mb-0 cart-table cart-total" cellspacing="0">
 						  <tfoot>
@@ -161,6 +170,7 @@
 					-->
 				</div>
 			</div>
+			
    		</div>
 
 		<div class="col-md-4 cart-right-column">
