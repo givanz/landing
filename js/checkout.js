@@ -85,13 +85,19 @@ window.addEventListener('DOMContentLoaded', (e) => {
 			e.stopPropagation();
 			
 			let item = element.closest(".accordion-item");
+			let parent = item.parentNode;
 			let collapse = item.querySelector(":scope > .collapse");
 
-			item.parentNode.querySelectorAll(".collapse.show").forEach(e => bootstrap.Collapse.getOrCreateInstance(e)?.hide());
-			item.parentNode.querySelectorAll(".accordion-button").forEach(e => e.classList.add("collapsed"));
+			parent.querySelectorAll(".collapse.show").forEach(e => bootstrap.Collapse.getOrCreateInstance(e)?.hide());
+			parent.querySelectorAll(".accordion-button").forEach(e => e.classList.add("collapsed"));
 
 			item.querySelector(".accordion-button").classList.remove("collapsed");
 			bootstrap.Collapse.getOrCreateInstance(collapse)?.show();
+			
+			//disable inputs for non selected payment and shipping methods to avoid form validation issues
+			parent.querySelectorAll(".collapse:not(.show) input, .collapse:not(.show) select, .collapse:not(.show) textarea").forEach(e => e.setAttribute("disabled", "true"));	
+			//enable only for selected method
+			parent.querySelectorAll(".collapse.show input, .collapse.show select, .collapse.show textarea").forEach(e => e.removeAttribute("disabled"));	
 
 			let input = item.querySelector('[name="shipping_method"], [name="payment_method"]');
 			let parameters = {};
@@ -206,3 +212,6 @@ function toggleLoginForm() {
 	let container = document.getElementById('checkout-login-container');
 	container.style.display = container.style.display ? "" : "none";
 }
+
+
+document.querySelectorAll(".accordion-button .form-check-input:checked").forEach(e => e.parentNode.classList.remove("collapsed"));
