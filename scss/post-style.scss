@@ -105,6 +105,19 @@ h1, h2, h3, h4, h5, h6 {
 		margin: 0 auto;
 		height: auto;
 	}	
+
+	iframe {
+		vertical-align: middle;
+		max-width: 100%;
+		margin: 0 auto;
+		display:block;
+	}	
+	
+	div.iframe {
+		display:flex;
+		justify-content: center;
+		position:relative;
+	}
 	
 	.align-left {
 		margin-right:1rem;

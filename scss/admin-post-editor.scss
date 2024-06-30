@@ -1,3 +1,4 @@
+//$max-width: 35rem !default;
 $max-width: 960px;
 
 @import "style";
@@ -13,4 +14,10 @@ body {
 audio, video {
 	max-width:100%;
 	width:100%;
+}
+
+@import "blocks/**/*";
+
+.mce-content-body [data-component-gallery][data-mce-selected] {
+	outline:2px solid #4099ff;
 }

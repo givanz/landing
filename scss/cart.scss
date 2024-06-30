@@ -126,7 +126,7 @@
 
 .cart-box,
 .checkout-page [data-v-component-cart] {
-	.table-responsive {
-		max-height:320px;
+	> .table-responsive {
+		max-height:250px;
 	}
 }

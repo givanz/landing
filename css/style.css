@@ -14838,6 +14838,15 @@ blockquote {
       max-width: 100%;
       margin: 0 auto;
       height: auto; }
+    .post .post-content iframe {
+      vertical-align: middle;
+      max-width: 100%;
+      margin: 0 auto;
+      display: block; }
+    .post .post-content div.iframe {
+      display: flex;
+      justify-content: center;
+      position: relative; }
     .post .post-content .align-left {
       margin-right: 1rem; }
     .post .post-content .align-right {
@@ -15656,6 +15665,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     max-width: 100%;
     margin: 0 auto;
     height: auto; }
+  .post-content iframe {
+    vertical-align: middle;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block; }
+  .post-content div.iframe {
+    display: flex;
+    justify-content: center;
+    position: relative; }
   .post-content .align-left {
     margin-right: 1rem; }
   .post-content .align-right {
@@ -15770,9 +15788,9 @@ figure.align-center {
 .cart-total td {
   font-weight: 500; }
 
-.cart-box .table-responsive,
-.checkout-page [data-v-component-cart] .table-responsive {
-  max-height: 320px; }
+.cart-box > .table-responsive,
+.checkout-page [data-v-component-cart] > .table-responsive {
+  max-height: 250px; }
 
 :root,
 [data-bs-theme="light"] {

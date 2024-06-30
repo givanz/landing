@@ -57,6 +57,15 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 100%;
     margin: 0 auto;
     height: auto; }
+  .post-content iframe {
+    vertical-align: middle;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block; }
+  .post-content div.iframe {
+    display: flex;
+    justify-content: center;
+    position: relative; }
   .post-content .align-left {
     margin-right: 1rem; }
   .post-content .align-right {
