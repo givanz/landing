@@ -27,7 +27,7 @@
 		
 		&.btn-white {
 			background:rgba(var(--bs-white-rgb), 0.2);
-			color:#fff;
+			color: var(--bs-light);
 		}
 		
 		&.btn-primary {
@@ -51,10 +51,12 @@
 	h1.heading {
 		//font-size: 60px;
 		font-weight: 700;
+		color: var(--bs-light);
 	}
-	h2.subheading {
+	h2 {
 		//font-size: 32px;
-	}
+		color: var(--bs-light);
+    }
 	
 	h3 {
 		font-weight:normal;

@@ -124,9 +124,10 @@
 	}
 }
 
-.cart-box,
+.cart-box > div,
 .checkout-page [data-v-component-cart] {
 	> .table-responsive {
 		max-height:250px;
+		overflow-y: auto;
 	}
 }

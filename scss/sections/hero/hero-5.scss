@@ -11,4 +11,8 @@
 		background: rgba(var(--bs-body-color-rgb), 1);
 		opacity:0.5;
 	}
+	
+	h1, p.lead {
+	    color: var(--bs-light);
+	}
 }

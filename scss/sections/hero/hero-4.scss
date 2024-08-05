@@ -36,11 +36,13 @@
 	.heading {
 		//font-size: 50px;
 		font-weight: 700;
+		color: var(--bs-light);
 	}
 	.subheading {
 		font-family:var(--bs-font-body);
 		//font-size:2rem;
 		margin-bottom:3rem;
+		color: var(--bs-light);		
 	}
 	.svg-wrapper {
 		position: absolute;

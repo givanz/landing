@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 
   <base href="../">
 
@@ -111,7 +111,9 @@
 
 
 
-  <link id="landing-css" href="css/style.bundle.css" rel="stylesheet">
+  <link id="landing-css" href="css/style.bundle.css" rel="stylesheet" media="screen">
+  <link id="vvvebjs-css" href="css/custom.css" rel="stylesheet" media="screen">
+
 
 
 
@@ -122,21 +124,11 @@
   <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/posts" />
   <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
 
-  <link rel="icon" type="image/x-icon" href="../../media/favicon.ico" data-v-global-site-favicon>
+  <link rel="icon" type="image/x-icon" href="../../media/favicon.ico" data-v-global-site.favicon>
 
   <link rel="manifest" href="/manifest.webmanifest">
 
   <link rel="alternate" hreflang="" href="" />
-
-  <link rel="stylesheet" href="js/aos.css">
-  <noscript>
-    <style type="text/css">
-      [data-aos] {
-        opacity: 1 !important;
-        transform: translate(0) scale(1) !important;
-      }
-    </style>
-  </noscript>
 </head>
 
 
@@ -150,33 +142,41 @@
       <div class="row wrap">
         <div class="col-md-7 align-self-center">
           <div class="max-box">
-            <span class="badge  bg-success rounded-pill px-3">new</span>
+            <span class="badge  bg-success rounded-pill px-3 opacity-50">new</span>
             <h3 class="mt-2">Code editor with syntax highglighting that updates in real time</h3>
             <div class="mt-4">
               <p>The html for sections blocks and components and this template are built using Bootstrap.</p>
               <p>Use any of the hundreds fonts from google fonts for your design.</p>
               <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
             </div>
-            <a href="#">Learn More</a>
+            <a href="#" tile="Code editor features" role="button">
+              <span>Learn More</span>
+              <i class="la la-long-arrow-alt-right ms-1"></i>
+            </a>
           </div>
         </div>
-        <div class="col-md-5 col-md-5">
-          <img src="img/illustrations.co/day68-happy-cat.svg" loading="lazy" class="img-fluid" />
+        <div class="col-md-5">
+          <img src="img/illustrations.co/118-macbook.svg" alt="Macbook" loading="lazy" class="img-fluid" />
         </div>
       </div>
       <div class="row wrap">
-        <div class="col-md-6">
-          <img src="img/illustrations.co/day67-dog.svg" loading="lazy" class="img-fluid" />
+        <div class="col-md-5">
+          <img src="img/illustrations.co/day95-app-development.svg" alt="App development" loading="lazy" class="img-fluid" />
         </div>
-        <div class="col-md-6 align-self-center">
-          <span class="badge  bg-success rounded-pill px-3">on sale</span>
-          <h3 class="mt-2">Intuitive building with simple drag and drop for sections, components and blocks</h3>
-          <div class="mt-4">
-            <p>The html for sections blocks and components and this template are built using Bootstrap.</p>
-            <p>Use any of the hundreds fonts from google fonts for your design.</p>
-            <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
+        <div class="col-md-7 align-self-center">
+          <div class="max-box ms-auto">
+            <span class="badge  bg-success rounded-pill px-3 opacity-50">on sale</span>
+            <h3 class="mt-2">Intuitive building with simple drag and drop for sections, components and blocks</h3>
+            <div class="mt-4">
+              <p>The html for sections blocks and components and this template are built using Bootstrap.</p>
+              <p>Use any of the hundreds fonts from google fonts for your design.</p>
+              <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
+            </div>
+            <a href="#" title="Drag and drop" role="button">
+              <span>Learn More</span>
+              <i class="la la-long-arrow-alt-right ms-1"></i>
+            </a>
           </div>
-          <a href="#">Learn More</a>
         </div>
       </div>
     </div>
@@ -188,7 +188,7 @@
 
     <div class="row no-gutters">
       <div class="col-lg-6">
-        <img alt="image" src="img/illustrations.co/day68-happy-cat.svg" loading="lazy" class="img-fluid">
+        <img alt="image" src="img/illustrations.co/day68-happy-cat.svg" alt="happy cat" loading="lazy" class="img-fluid">
       </div>
 
       <div class="col-lg-6 bg-primary bg-gradient text-white d-flex">
@@ -285,7 +285,7 @@
         </div>
 
         <div class="col-lg-6">
-          <img src="img/illustrations.co/day67-dog.svg" loading="lazy" class="img-fluid" />
+          <img src="img/illustrations.co/day67-dog.svg" alt="dog" loading="lazy" class="img-fluid" />
         </div>
 
         <div class="col-md-12 mt-3 text-center">
@@ -371,7 +371,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-md-8 col-lg-6 m-md-auto ms-lg-0 me-lg-auto">
-          <img src="img/illustrations.co/day67-dog.svg" loading="lazy" class="img-fluid" />
+          <img src="img/illustrations.co/day67-dog.svg" alt="dog" loading="lazy" class="img-fluid" />
         </div>
         <div class="col-12 col-lg-6 col-xl-5 ms-sm-auto pt-5 pt-lg-0">
           <h2>Open Source CMS Reinvented</h2>
@@ -423,7 +423,7 @@
       <div class="row text-center justify-content-center">
         <div class="col-12 col-sm-4 col-xl-3 m-md-auto">
           <div>
-            <img alt="image" loading="lazy" src="img/illustrations.co/109-map-location.svg">
+            <img loading="lazy" src="img/illustrations.co/109-map-location.svg" alt="map location">
             <h3>Drag and drop</h3>
             <p class="lead text-muted mt-4">Intuitive building with simple drag and drop for sections, components and blocks/snippets</p>
 
@@ -433,7 +433,7 @@
 
         <div class="col-12 col-sm-4 col-xl-3 m-md-auto">
           <div>
-            <img alt="image" loading="lazy" src="img/illustrations.co/107-healthy.svg">
+            <img loading="lazy" src="img/illustrations.co/107-healthy.svg" alt="dumbbell">
             <h3>Live code editor</h3>
             <p class="lead text-muted mt-4">Code editor with syntax highglighting that updates in real time</p>
 
@@ -443,7 +443,7 @@
 
         <div class="col-12 col-sm-4 col-xl-3 m-md-auto">
           <div>
-            <img alt="image" loading="lazy" src="img/illustrations.co/104-dumbbell.svg">
+            <img loading="lazy" src="img/illustrations.co/104-dumbbell.svg" alt="dumbbell">
             <h3>Bootstrap 5</h3>
             <p class="lead text-muted mt-4">The html for sections blocks and components and this template are built using bootrap 5</p>
 
@@ -466,7 +466,7 @@
       <div class="row text-center justify-content-center">
         <div class="col-12 col-md-6 col-lg-3">
           <div>
-            <img alt="image" loading="lazy" src="img/illustrations.co/109-map-location.svg">
+            <img alt="map location" loading="lazy" src="img/illustrations.co/109-map-location.svg">
             <h3>Drag and drop</h3>
             <p class="lead text-muted mt-4">Intuitive building with simple drag and drop for sections, components and blocks/snippets</p>
 
@@ -476,7 +476,7 @@
 
         <div class="col-12 col-md-6 col-lg-3">
           <div>
-            <img alt="image" loading="lazy" src="img/illustrations.co/107-healthy.svg">
+            <img alt="healthy" loading="lazy" src="img/illustrations.co/107-healthy.svg">
             <h3>Live code editor</h3>
             <p class="lead text-muted mt-4">Code editor with syntax highglighting that updates in real time</p>
 
@@ -486,7 +486,7 @@
 
         <div class="col-12 col-md-6 col-lg-3">
           <div>
-            <img alt="image" loading="lazy" src="img/illustrations.co/104-dumbbell.svg">
+            <img alt="dumbbell" loading="lazy" src="img/illustrations.co/104-dumbbell.svg">
             <h3>Bootstrap 5</h3>
             <p class="lead text-muted mt-4">The html for sections blocks and components and this template are built using Bootstrap 5</p>
 
@@ -496,7 +496,7 @@
 
         <div class="col-12 col-md-6 col-lg-3">
           <div>
-            <img alt="image" loading="lazy" src="img/illustrations.co/126-namaste-no-hand-shake.svg">
+            <img alt="namaste" loading="lazy" src="img/illustrations.co/126-namaste-no-hand-shake.svg">
             <h3>Google fonts</h3>
             <p class="lead text-muted mt-4">Use any of the hundreds fonts from google fonts for your design</p>
 
@@ -520,7 +520,7 @@
         <div class="col-12 col-md-4">
           <div class="row">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/109-map-location.svg">
+              <img alt="map location" loading="lazy" src="img/illustrations.co/109-map-location.svg">
             </div>
             <div class="col-9">
               <h4>Drag and drop</h4>
@@ -533,7 +533,7 @@
         <div class="col-12 col-md-4 pt-3 pt-sm-4">
           <div class="row">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/107-healthy.svg">
+              <img alt="healthy" loading="lazy" src="img/illustrations.co/107-healthy.svg">
             </div>
             <div class="col-9">
               <h4>Live code editor</h4>
@@ -546,7 +546,7 @@
         <div class="col-12 col-md-4 pt-3 pt-sm-4">
           <div class="row">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/104-dumbbell.svg">
+              <img alt="dumbbell" loading="lazy" src="img/illustrations.co/104-dumbbell.svg">
             </div>
             <div class="col-9">
               <h4>Bootstrap 5</h4>
@@ -561,7 +561,7 @@
         <div class="col-12 col-md-4">
           <div class="row">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/126-namaste-no-hand-shake.svg">
+              <img alt="namaste" loading="lazy" src="img/illustrations.co/126-namaste-no-hand-shake.svg">
             </div>
             <div class="col-9">
               <h4>Google fonts</h4>
@@ -574,7 +574,7 @@
         <div class="col-12 col-md-4 pt-3 pt-sm-4">
           <div class="row">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/109-map-location.svg">
+              <img alt="map location" loading="lazy" src="img/illustrations.co/109-map-location.svg">
             </div>
             <div class="col-9">
               <h4>Drag and drop</h4>
@@ -587,7 +587,7 @@
         <div class="col-12 col-md-4 pt-3 pt-sm-4">
           <div class="row">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/107-healthy.svg">
+              <img alt="healthy" loading="lazy" src="img/illustrations.co/107-healthy.svg">
             </div>
             <div class="col-9">
               <h4>Bootstrap 5</h4>
@@ -613,7 +613,7 @@
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="row">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/109-map-location.svg">
+              <img alt="map location" loading="lazy" src="img/illustrations.co/109-map-location.svg">
             </div>
             <div class="col-9">
               <h4>Drag and drop</h4>
@@ -625,7 +625,7 @@
         <div class="col-12 col-sm-6 col-lg-3 pt-3 pt-sm-0">
           <div class="row">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/107-healthy.svg">
+              <img alt="healthy" loading="lazy" src="img/illustrations.co/107-healthy.svg">
             </div>
             <div class="col-9">
               <h4>Live code editor</h4>
@@ -637,7 +637,7 @@
         <div class="col-12 col-sm-6 col-lg-3 pt-3 pt-lg-0">
           <div class="row">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/104-dumbbell.svg">
+              <img alt="dumbbell" loading="lazy" src="img/illustrations.co/104-dumbbell.svg">
             </div>
             <div class="col-9">
               <h4>Bootstrap 5</h4>
@@ -649,7 +649,7 @@
         <div class="col-12 col-sm-6 col-lg-3 pt-3 pt-lg-0">
           <div class="row">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/126-namaste-no-hand-shake.svg">
+              <img alt="namaste" loading="lazy" src="img/illustrations.co/126-namaste-no-hand-shake.svg">
             </div>
             <div class="col-9">
               <h4>Google fonts</h4>
@@ -664,7 +664,7 @@
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="row">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/109-map-location.svg">
+              <img alt="map location" loading="lazy" src="img/illustrations.co/109-map-location.svg">
             </div>
             <div class="col-9">
               <h4>Drag and drop</h4>
@@ -676,7 +676,7 @@
         <div class="col-12 col-sm-6 col-lg-3 pt-3 pt-sm-0">
           <div class="row">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/107-healthy.svg">
+              <img alt="healthy" loading="lazy" src="img/illustrations.co/107-healthy.svg">
             </div>
             <div class="col-9">
               <h4>Bootstrap 5</h4>
@@ -688,7 +688,7 @@
         <div class="col-12 col-sm-6 col-lg-3 pt-3 pt-lg-0">
           <div class="row">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/109-map-location.svg">
+              <img alt="map location" loading="lazy" src="img/illustrations.co/109-map-location.svg">
 
             </div>
             <div class="col-9">
@@ -701,7 +701,7 @@
         <div class="col-12 col-sm-6 col-lg-3 pt-3 pt-lg-0">
           <div class="row">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/107-healthy.svg">
+              <img alt="healthy" loading="lazy" src="img/illustrations.co/107-healthy.svg">
             </div>
             <div class="col-9">
               <h4>Live code editor</h4>
@@ -720,13 +720,13 @@
     <div class="container">
       <div class="row text-end align-items-center">
         <div class="col-12 col-md-6 m-auto">
-          <img src="img/illustrations.co/day67-dog.svg" loading="lazy" class="img-fluid" />
+          <img src="img/illustrations.co/day67-dog.svg" alt="dog" loading="lazy" class="img-fluid">
         </div>
 
         <div class="col-12 col-md-7 col-lg-5 m-auto text-start pt-5">
           <div class="row pb-lg-5">
             <div class="col-3">
-              <img alt="image" loading="lazy" src="img/illustrations.co/107-healthy.svg">
+              <img src="img/illustrations.co/107-healthy.svg" alt="healthy" loading="lazy" class="img-fluid">
             </div>
             <div class="col-9">
               <h3>
@@ -738,7 +738,7 @@
 
           <div class="row pt-4 pt-md-5 pb-lg-5">
             <div class="col-3">
-              <img alt="image" src="img/illustrations.co/104-dumbbell.svg" loading="lazy" class="img-fluid">
+              <img alt="image" src="img/illustrations.co/104-dumbbell.svg" alt="dumbbell" loading="lazy" class="img-fluid">
             </div>
             <div class="col-9">
               <h3>
@@ -751,7 +751,7 @@
 
           <div class="row pt-4 pt-md-5">
             <div class="col-3">
-              <img alt="image" src="img/illustrations.co/109-map-location.svg" loading="lazy" class="img-fluid">
+              <img alt="image" src="img/illustrations.co/109-map-location.svg" alt="map location" loading="lazy" class="img-fluid">
             </div>
             <div class="col-9">
               <h3>
@@ -772,7 +772,7 @@
       <div class="row text-center">
         <div class="col-12 col-md-8 col-lg-4">
           <div>
-            <img alt="image" src="img/illustrations.co/109-map-location.svg" loading="lazy" class="img-fluid">
+            <img alt="image" src="img/illustrations.co/109-map-location.svg" alt="map location" loading="lazy" class="img-fluid">
             <h3>Drag and drop</h3>
             <p class="lead text-muted mt-4">Intuitive building with simple drag and drop for sections, components and blocks/snippets.</p>
 
@@ -782,7 +782,7 @@
 
         <div class="col-12 col-md-8 col-lg-4">
           <div>
-            <img alt="image" src="img/illustrations.co/107-healthy.svg" loading="lazy" class="img-fluid">
+            <img alt="image" src="img/illustrations.co/107-healthy.svg" alt="healthy" loading="lazy" class="img-fluid">
             <h3>Live code editor</h3>
             <p class="lead text-muted mt-4">Code editor with syntax highglighting that updates in real time.</p>
 
@@ -792,7 +792,7 @@
 
         <div class="col-12 col-md-8 col-lg-4">
           <div>
-            <img alt="image" src="img/illustrations.co/104-dumbbell.svg" loading="lazy" class="img-fluid">
+            <img alt="image" src="img/illustrations.co/104-dumbbell.svg" alt="dumbbell" loading="lazy" class="img-fluid">
             <h3>Bootstrap 5 Components</h3>
             <p class="lead text-muted mt-4">The html for sections blocks and components and this template are built using bootstrap 5.</p>
 
@@ -822,8 +822,6 @@
   </div>
 
   <!-- Vvveb Common Js -->
-  <!-- <script src="../../js/jquery.min.js"></script> -->
-  <script id="jquery-js" src="js/jquery.min.js"></script>
   <script id="popper-js" src="../../js/popper.min.js"></script>
   <!-- <script src="../../js/bootstrap.min.js"></script> -->
   <!-- <script src="../../js/bootstrap.bundle.min.js"></script> -->
@@ -832,23 +830,22 @@
   <script id="app-js" src="../../js/app.js"></script>
 
   <!-- Animation -->
-  <script src="js/aos.js"></script>
-  <script>
-AOS.init();
-</script>
 
+  <link rel="stylesheet" href="js/aos.css">
+  <noscript>
+    <style type="text/css">
+      [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+      }
+    </style>
+  </noscript>
+
+  <script src="js/aos.js"></script>
   <script src="js/theme.js"></script>
 
   <script>
-$(document).on("click", ".dropdown-toggle",function (e) { 
-	let link = $(this);
-	let parent = link.parents(".nav-toggle");
-	if (link.hasClass("show")) {
-		parent.addClass("show"); 
-	} else {
-		parent.removeClass("show"); 
-	}
-});
+	AOS.init();
 </script>
 
 

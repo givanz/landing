@@ -14801,7 +14801,7 @@ blockquote {
 		margin-bottom:1rem;
 	}
 	*/ }
-    .post .post-content > p, .post .post-content > h1, .post .post-content > .h1, .post .post-content > h2, .post .post-content > .h2, .post .post-content > h3, .post .post-content > .h3, .post .post-content > h4, .post .post-content > .h4, .post .post-content > h5, .post .post-content > .h5, .post .post-content > h6, .post .post-content > .h6, .post .post-content > blockquote, .post .post-content > span, .post .post-content > ul, .post .post-content pre, .post .post-content > ol {
+    .post .post-content > p, .post .post-content > h1, .post .post-content > .h1, .post .post-content > h2, .post .post-content > .h2, .post .post-content > h3, .post .post-content > .h3, .post .post-content > h4, .post .post-content > .h4, .post .post-content > h5, .post .post-content > .h5, .post .post-content > h6, .post .post-content > .h6, .post .post-content > blockquote, .post .post-content > span, .post .post-content > ul, .post .post-content pre, .post .post-content > ol, .post .post-content > details {
       max-width: 960px;
       margin-left: auto;
       margin-right: auto; }
@@ -15628,7 +15628,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 		margin-bottom:1rem;
 	}
 	*/ }
-  .post-content > p, .post-content > h1, .post-content > .h1, .post-content > h2, .post-content > .h2, .post-content > h3, .post-content > .h3, .post-content > h4, .post-content > .h4, .post-content > h5, .post-content > .h5, .post-content > h6, .post-content > .h6, .post-content > blockquote, .post-content > span, .post-content > ul, .post-content pre, .post-content > ol {
+  .post-content > p, .post-content > h1, .post-content > .h1, .post-content > h2, .post-content > .h2, .post-content > h3, .post-content > .h3, .post-content > h4, .post-content > .h4, .post-content > h5, .post-content > .h5, .post-content > h6, .post-content > .h6, .post-content > blockquote, .post-content > span, .post-content > ul, .post-content pre, .post-content > ol, .post-content > details {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto; }
@@ -15788,9 +15788,10 @@ figure.align-center {
 .cart-total td {
   font-weight: 500; }
 
-.cart-box > .table-responsive,
+.cart-box > div > .table-responsive,
 .checkout-page [data-v-component-cart] > .table-responsive {
-  max-height: 250px; }
+  max-height: 250px;
+  overflow-y: auto; }
 
 :root,
 [data-bs-theme="light"] {
@@ -15822,7 +15823,7 @@ body {
 		margin-bottom:1rem;
 	}
 	*/ }
-    body .post-content > p, body .post-content > h1, body .post-content > .h1, body .post-content > h2, body .post-content > .h2, body .post-content > h3, body .post-content > .h3, body .post-content > h4, body .post-content > .h4, body .post-content > h5, body .post-content > .h5, body .post-content > h6, body .post-content > .h6, body .post-content > blockquote, body .post-content > span, body .post-content > ul, body .post-content pre, body .post-content > ol {
+    body .post-content > p, body .post-content > h1, body .post-content > .h1, body .post-content > h2, body .post-content > .h2, body .post-content > h3, body .post-content > .h3, body .post-content > h4, body .post-content > .h4, body .post-content > h5, body .post-content > .h5, body .post-content > h6, body .post-content > .h6, body .post-content > blockquote, body .post-content > span, body .post-content > ul, body .post-content pre, body .post-content > ol, body .post-content > details {
       max-width: 960px;
       margin-left: auto;
       margin-right: auto; }
@@ -15900,8 +15901,7 @@ body {
     margin-right: auto; }
 
 audio, video {
-  max-width: 100%;
-  width: 100%; }
+  max-width: 100%; }
 
 .gallery {
   column-count: 4;

@@ -1,0 +1,15 @@
+<div class="container" data-v-component-posts="posts-1" data-v-limit="3" data-v-image_size="medium">
+	<div class="row">
+	   
+	   @@for (var i = 0; i < 3; i++) {
+	   
+		<div class="col-12 col-lg-4 mb-2" data-v-post>
+			
+			@@include('../../_includes/blog-list-item.html', {"class":"h-100 shadow-sm"})
+			
+		</div>              
+
+	   }
+	
+	</div>
+</div>

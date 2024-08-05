@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 
   <base href="../">
 
@@ -111,7 +111,9 @@
 
 
 
-  <link id="landing-css" href="css/style.bundle.css" rel="stylesheet">
+  <link id="landing-css" href="css/style.bundle.css" rel="stylesheet" media="screen">
+  <link id="vvvebjs-css" href="css/custom.css" rel="stylesheet" media="screen">
+
 
 
 
@@ -126,21 +128,11 @@
   <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/posts" />
   <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
 
-  <link rel="icon" type="image/x-icon" href="../../media/favicon.ico" data-v-global-site-favicon>
+  <link rel="icon" type="image/x-icon" href="../../media/favicon.ico" data-v-global-site.favicon>
 
   <link rel="manifest" href="/manifest.webmanifest">
 
   <link rel="alternate" hreflang="" href="" />
-
-  <link rel="stylesheet" href="js/aos.css">
-  <noscript>
-    <style type="text/css">
-      [data-aos] {
-        opacity: 1 !important;
-        transform: translate(0) scale(1) !important;
-      }
-    </style>
-  </noscript>
 </head>
 
 
@@ -150,39 +142,52 @@
 
   <header class="hero-1" title="hero-1">
 
-    <div class="heading">
-      <h1>Open Source CMS
-        <br /> Reinvented
-      </h1>
+    <div class="container">
+      <div class="heading">
+        <h1 class="display-1">Open Source CMS Reinvented</h1>
 
-      <h2>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
+        <h2 class="fs-3">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
 
-      <div class="btns">
-        <a class="btn btn-lg btn-primary" href="/download.php" role="button">
-          <span>&#9889;</span> Free download <b>›</b>
-        </a>
-
-        <div class="nav-item dropdown">
-          <a class="btn btn-lg btn-outline-primary nav-link" href="//demo.vvveb.com" role="button">Live demo <span>&rarr;</span>
+        <div class="btns">
+          <a class="btn btn-primary btn-shadow" href="/download.php" role="button">
+            <span>&#9889;</span>
+            <span>Free Download</span>
             <b>›</b>
           </a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/">Page builder</a>
-            <a class="dropdown-item" target="_blank" href="//demo.vvveb.com">Frontend</a>
+
+          <div class="nav-item dropdown">
+            <a class="btn btn-outline-primary nav-link dropdown-toggle" href="//demo.vvveb.com" role="button">Live demo <b>›</b>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/">Page builder</a>
+              <a class="dropdown-item" target="_blank" href="//demo.vvveb.com">Frontend</a>
+              <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin">Admin dashboard</a>
+            </div>
           </div>
         </div>
+
+        <i class="text-muted">
+          <small>* Note: Beta Version</small>
+        </i>
       </div>
 
-      <i class="text-muted">
-        <small>* Note: Early Alpha Preview</small>
-      </i>
+      <div class="frame mx-auto">
+        <video loading="lazy" src="video/intro.mp4" muted loop controls poster="https://www.vvveb.com/img/dark-theme.png"></video>
+      </div>
     </div>
 
+    <div class="overlay">
+    </div>
+
+    <div class="background-container">
+      <img src="img//background.svg" alt="Hero background" loading="lazy">
+    </div>
 
   </header>
+
   <hr />
 
-  <header class="hero-2 overlay" title="hero-2">
+  <header class="hero-2" title="hero-2">
 
     <div class="container">
       <div class="row align-items-center justify-content-between">
@@ -190,8 +195,13 @@
           <h1 class="heading text-white">The next generation website builder</h1>
           <p class="text-white-50 mb-5">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
           <p>
-            <a href="https://www.vvveb.com" class="btn btn-white">Free Download</a>
-            <a href="https://www.vvveb.com" class="btn text-white">Live Demo</a>
+            <a href="https://www.vvveb.com" class="btn btn-white">
+              <span>&#9889;</span>
+              <span>Free Download</span>
+              <b>›</b>
+            </a>
+
+            <a href="https://demo.vvveb.com" class="btn text-white">Live Demo</a>
           </p>
         </div>
         <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
@@ -206,7 +216,7 @@
     </div>
 
     <div class="separator bottom">
-      <svg height="100px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+      <svg height="100px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" fill="var(--bs-body-bg)" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px" width="100%" height="250">
         <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
 		c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
         <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
@@ -216,6 +226,9 @@
         <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
 		c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
       </svg>
+    </div>
+
+    <div class="overlay">
     </div>
 
   </header>
@@ -228,14 +241,18 @@
       <div>
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-lg-12">
-            <h1 class="heading text-white mb-3" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
-            <h3 class="text-white" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs,
+            <h1 class="heading text-white mb-3 display-4" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
+            <h2 class="text-white h3" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs,
               <br /> presentation or ecommerce stores.
-            </h3>
+            </h2>
 
             <div class="buttons" data-aos="fade-up" data-aos-delay="300">
-              <a href="https://www.vvveb.com" class="btn btn-primary text-white me-4">Free Download</a>
-              <a href="https://www.vvveb.com" class="btn btn-white text-white">Live Demo</a>
+              <a href="https://www.vvveb.com" class="btn btn-primary text-white">
+                <span>&#9889;</span>
+                <span>Free Download</span>
+                <b>›</b>
+              </a>
+              <a href="https://demo.vvveb.com" class="btn btn-white text-white">Live Demo</a>
             </div>
 
 
@@ -246,16 +263,10 @@
 
     <div class="separator bottom">
 
-      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" height="250" fill="var(--bs-body-bg)" preserveAspectRatio="none">
-        <defs>
-          <style>
-            .cls-1 {
-              fill: inherit
-            }
-          </style>
-        </defs>
+      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" height="100" fill="var(--bs-body-bg)" preserveAspectRatio="none">
+        <defs></defs>
         <title>rough-edges-bottom</title>
-        <path class="cls-1" d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)" />
+        <path d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)" />
       </svg>
 
     </div>
@@ -271,23 +282,32 @@
 
     <div class="background-container">
 
-      <img src="img/demo/hero-3.jpg">
+      <img src="img/demo/hero-3.jpg" alt="Hero background">
 
     </div>
 
   </header>
   <hr />
 
-  <header class="hero-4 overlay" title="hero-4">
+  <header class="hero-4" title="hero-4">
 
     <div class="container">
       <div class="row align-items-center justify-content-center text-center">
         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-          <h1 class="heading text-white mb-3">The next generation website builder</h1>
-          <!-- h5 class="subheading text-white">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h5 -->
+          <h1 class="heading text-white mb-3 display-4">The next generation website builder</h1>
+          <h4 class="subheading text-white mb-5">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h4>
+
+          <img width="350" src="img/demo/video-1.jpg" class="shadow img-thumbnail">
+
           <div class="buttons">
-            <a href="https://www.vvveb.com" class="btn btn-outline-light me-4">Free Download</a>
-            <a href="https://www.vvveb.com" class="btn text-white me-4">Live demo</a>
+
+            <a href="https://www.vvveb.com" class="btn btn-success text-white btn-lg">
+              <span>⚡</span>
+              <span>Free Download</span>
+              <b>›</b>
+            </a>
+            <a href="https://demo.vvveb.com" class="btn btn-white text-white btn-lg">Live Demo</a>
+
           </div>
         </div>
       </div>
@@ -309,19 +329,22 @@
 
     </div>
 
+    <div class="overlay">
+    </div>
+
     <div class="background-container">
-      <img src="img/demo/hero-3.jpg">
+      <img src="img/demo/hero-3.jpg" alt="Hero background">
     </div>
   </header>
 
   <hr />
 
-  <header class="hero-5 pt-5 pb-5 mt-0 align-items-center d-flex overlay" style="min-height: 100vh; background-size: cover; background-image: url('img/demo/hero-3.jpg');" title="hero-5">
+  <header class="hero-5" title="hero-5">
 
     <div class="container" style="z-index:2">
       <div class="row align-items-center d-flex justify-content-between">
         <div class="col-12 col-md-6 pb-5 order-2 order-sm-2 ">
-          <h1 class="  text-white font-weight-bold mb-3 mt-5 display-3">The next generation website builder.</h1>
+          <h1 class="text-white fw-bold mb-3 mt-5 display-3">The next generation website builder.</h1>
           <p class="lead text-white">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
           <div class=" d-flex mt-3 mb-1">
             <a class="btn btn-primary btn-lg  mt-md-3 " href="https://www.vvveb.com" role="button">Download Now</a>
@@ -354,8 +377,11 @@
 
     </div>
 
+    <div class="overlay">
+    </div>
+
     <div class="background-container">
-      <img src="img/demo/hero-3.jpg">
+      <img src="img/demo/hero-3.jpg" alt="Hero background">
     </div>
 
   </header>
@@ -378,8 +404,6 @@
   </div>
 
   <!-- Vvveb Common Js -->
-  <!-- <script src="../../js/jquery.min.js"></script> -->
-  <script id="jquery-js" src="js/jquery.min.js"></script>
   <script id="popper-js" src="../../js/popper.min.js"></script>
   <!-- <script src="../../js/bootstrap.min.js"></script> -->
   <!-- <script src="../../js/bootstrap.bundle.min.js"></script> -->
@@ -388,23 +412,22 @@
   <script id="app-js" src="../../js/app.js"></script>
 
   <!-- Animation -->
-  <script src="js/aos.js"></script>
-  <script>
-AOS.init();
-</script>
 
+  <link rel="stylesheet" href="js/aos.css">
+  <noscript>
+    <style type="text/css">
+      [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+      }
+    </style>
+  </noscript>
+
+  <script src="js/aos.js"></script>
   <script src="js/theme.js"></script>
 
   <script>
-$(document).on("click", ".dropdown-toggle",function (e) { 
-	let link = $(this);
-	let parent = link.parents(".nav-toggle");
-	if (link.hasClass("show")) {
-		parent.addClass("show"); 
-	} else {
-		parent.removeClass("show"); 
-	}
-});
+	AOS.init();
 </script>
 
 

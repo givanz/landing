@@ -80,12 +80,12 @@ window.addEventListener('DOMContentLoaded', (e) => {
 	document.querySelector('.accordion-item input[type="radio"]:checked')?.closest("label").dispatchEvent(new MouseEvent('click'));
 
 	document.addEventListener("click", function(e) {
-		let element = e.target.closest(".accordion-header label input");
+		let element = e.target.closest(".accordion-header label");
 		if (element) {
-			e.stopPropagation();
+			//e.stopPropagation();
 			
 			let item = element.closest(".accordion-item");
-			let parent = item.parentNode;
+			let parent = item.closest(".accordion");
 			let collapse = item.querySelector(":scope > .collapse");
 
 			parent.querySelectorAll(".collapse.show").forEach(e => bootstrap.Collapse.getOrCreateInstance(e)?.hide());
@@ -95,9 +95,9 @@ window.addEventListener('DOMContentLoaded', (e) => {
 			bootstrap.Collapse.getOrCreateInstance(collapse)?.show();
 			
 			//disable inputs for non selected payment and shipping methods to avoid form validation issues
-			parent.querySelectorAll(".collapse:not(.show) input, .collapse:not(.show) select, .collapse:not(.show) textarea").forEach(e => e.setAttribute("disabled", "true"));	
+			parent.querySelectorAll(".accordion-body input, .accordion-body select, .accordion-body textarea").forEach(e => e.setAttribute("disabled", "true"));	
 			//enable only for selected method
-			parent.querySelectorAll(".collapse.show input, .collapse.show select, .collapse.show textarea").forEach(e => e.removeAttribute("disabled"));	
+			item.querySelectorAll(".accordion-body input, .accordion-body select, .accordion-body textarea").forEach(e => e.removeAttribute("disabled"));	
 
 			let input = item.querySelector('[name="shipping_method"], [name="payment_method"]');
 			let parameters = {};

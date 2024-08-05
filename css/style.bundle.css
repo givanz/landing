@@ -206,6 +206,7 @@ footer.footer-1 {
     text-shadow: 1px 1px 2px var(--bs-body-bg);
     letter-spacing: -0.05rem; }
   .hero-1 h2, .hero-1 .h2 {
+    font-weight: normal;
     margin: 1.4rem auto 0rem;
     z-index: 2;
     position: relative;
@@ -312,10 +313,12 @@ footer.footer-1 {
     position: relative;
     z-index: 2; }
   .hero-2 .heading {
-    font-size: 50px;
-    font-weight: 700; }
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--bs-light); }
   .hero-2 .subheading {
-    font-size: 32px; }
+    font-size: 1.4rem;
+    color: var(--bs-light); }
   .hero-2 .svg-wrapper {
     position: absolute;
     bottom: 0;
@@ -390,7 +393,7 @@ footer.footer-1 {
     box-shadow: rgba(var(--bs-body-color-rgb), 0.25) 0px 5px 15px -5px; }
     .hero-3 .btn.btn-white {
       background: rgba(var(--bs-white-rgb), 0.2);
-      color: #fff; }
+      color: var(--bs-light); }
   .hero-3 > .container, .hero-3 > .container-fluid, .hero-3 > .container-sm, .hero-3 > .container-md, .hero-3 > .container-lg, .hero-3 > .container-xl, .hero-3 > .container-xxl {
     position: relative;
     z-index: 2; }
@@ -402,7 +405,10 @@ footer.footer-1 {
       justify-content: center;
       align-items: center; }
   .hero-3 h1.heading, .hero-3 .heading.h1 {
-    font-weight: 700; }
+    font-weight: 700;
+    color: var(--bs-light); }
+  .hero-3 h2, .hero-3 .h2 {
+    color: var(--bs-light); }
   .hero-3 h3, .hero-3 .h3 {
     font-weight: normal; }
   .hero-3 .svg-wrapper {
@@ -442,10 +448,12 @@ footer.footer-1 {
     position: relative;
     z-index: 2; }
   .hero-4 .heading {
-    font-weight: 700; }
+    font-weight: 700;
+    color: var(--bs-light); }
   .hero-4 .subheading {
     font-family: var(--bs-font-body);
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    color: var(--bs-light); }
   .hero-4 .svg-wrapper {
     position: absolute;
     bottom: 0;
@@ -468,6 +476,8 @@ footer.footer-1 {
   .hero-5 .overlay {
     background: rgba(var(--bs-body-color-rgb), 1);
     opacity: 0.5; }
+  .hero-5 h1, .hero-5 .h1, .hero-5 p.lead {
+    color: var(--bs-light); }
 
 .hero-6 {
   height: 100vh;
@@ -488,6 +498,8 @@ footer.footer-1 {
   .hero-6 .overlay {
     background: rgba(var(--bs-body-color-rgb), 1);
     opacity: 0.5; }
+  .hero-6 h1, .hero-6 .h1, .hero-6 h2, .hero-6 .h2 {
+    color: var(--bs-light); }
 
 .hero-7 {
   height: 100vh;
@@ -508,6 +520,8 @@ footer.footer-1 {
   .hero-7 .overlay {
     background: rgba(var(--bs-body-color-rgb), 1);
     opacity: 0.5; }
+  .hero-7 h1, .hero-7 .h1, .hero-7 h2, .hero-7 .h2 {
+    color: var(--bs-light); }
 
 .hero-slider {
   height: 100vh;
@@ -17553,7 +17567,7 @@ blockquote {
 		margin-bottom:1rem;
 	}
 	*/ }
-    .post .post-content > p, .post .post-content > h1, .post .post-content > .h1, .post .post-content > h2, .post .post-content > .h2, .post .post-content > h3, .post .post-content > .h3, .post .post-content > h4, .post .post-content > .h4, .post .post-content > h5, .post .post-content > .h5, .post .post-content > h6, .post .post-content > .h6, .post .post-content > blockquote, .post .post-content > span, .post .post-content > ul, .post .post-content pre, .post .post-content > ol {
+    .post .post-content > p, .post .post-content > h1, .post .post-content > .h1, .post .post-content > h2, .post .post-content > .h2, .post .post-content > h3, .post .post-content > .h3, .post .post-content > h4, .post .post-content > .h4, .post .post-content > h5, .post .post-content > .h5, .post .post-content > h6, .post .post-content > .h6, .post .post-content > blockquote, .post .post-content > span, .post .post-content > ul, .post .post-content pre, .post .post-content > ol, .post .post-content > details {
       max-width: 35rem;
       margin-left: auto;
       margin-right: auto; }
@@ -18380,7 +18394,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 		margin-bottom:1rem;
 	}
 	*/ }
-  .post-content > p, .post-content > h1, .post-content > .h1, .post-content > h2, .post-content > .h2, .post-content > h3, .post-content > .h3, .post-content > h4, .post-content > .h4, .post-content > h5, .post-content > .h5, .post-content > h6, .post-content > .h6, .post-content > blockquote, .post-content > span, .post-content > ul, .post-content pre, .post-content > ol {
+  .post-content > p, .post-content > h1, .post-content > .h1, .post-content > h2, .post-content > .h2, .post-content > h3, .post-content > .h3, .post-content > h4, .post-content > .h4, .post-content > h5, .post-content > .h5, .post-content > h6, .post-content > .h6, .post-content > blockquote, .post-content > span, .post-content > ul, .post-content pre, .post-content > ol, .post-content > details {
     max-width: 35rem;
     margin-left: auto;
     margin-right: auto; }
@@ -18540,9 +18554,10 @@ figure.align-center {
 .cart-total td {
   font-weight: 500; }
 
-.cart-box > .table-responsive,
+.cart-box > div > .table-responsive,
 .checkout-page [data-v-component-cart] > .table-responsive {
-  max-height: 250px; }
+  max-height: 250px;
+  overflow-y: auto; }
 
 :root,
 [data-bs-theme="light"] {

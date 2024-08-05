@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 		margin-bottom:1rem;
 	}
 	*/ }
-  .post-content > p, .post-content > h1, .post-content > h2, .post-content > h3, .post-content > h4, .post-content > h5, .post-content > h6, .post-content > blockquote, .post-content > span, .post-content > ul, .post-content pre, .post-content > ol {
+  .post-content > p, .post-content > h1, .post-content > h2, .post-content > h3, .post-content > h4, .post-content > h5, .post-content > h6, .post-content > blockquote, .post-content > span, .post-content > ul, .post-content pre, .post-content > ol, .post-content > details {
     max-width: 35rem;
     margin-left: auto;
     margin-right: auto; }

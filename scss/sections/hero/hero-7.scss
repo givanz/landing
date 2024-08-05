@@ -25,4 +25,8 @@
 		background: rgba(var(--bs-body-color-rgb), 1);
 		opacity:0.5;
 	}
+
+	h1, h2 {
+		color: var(--bs-light);
+    }
 }

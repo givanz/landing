@@ -25,11 +25,13 @@
 		z-index: 2;
 	}
 	.heading {
-		font-size: 50px;
+		font-size: 3.2rem;
 		font-weight: 700;
+		color: var(--bs-light);
 	}
 	.subheading {
-		font-size: 32px;
+		font-size: 1.4rem;
+		color: var(--bs-light);
 	}
 	.svg-wrapper {
 		position: absolute;

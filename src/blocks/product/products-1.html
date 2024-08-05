@@ -1,0 +1,19 @@
+<div class="container" 
+	data-v-component-products="popular" 
+	data-v-limit="8" 
+	data-v-image_size="medium"
+>
+	<div class="row">
+		
+			@@for (var i = 0; i < 8; i++) {
+		 
+			<div class="col-md-3" data-v-product>
+			
+				@@include('../../_includes/product-list-item.html')
+			
+			</div>
+		 
+		}
+		
+	</div>
+</div>
