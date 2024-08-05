@@ -10,6 +10,9 @@ npm run gulp blocks
 //take screenshots for all sections
 npm run gulp screenshots 
 
+//take screenshots for all blocks
+npm run gulp screenshots-blocks
+
 //take screenshots for specified section groups
 npm run gulp screenshots -hero -features 
 */ 
@@ -68,9 +71,9 @@ gulp.task('watch', function () {
 });
 
 var current_section = "posts";
-async function screenshots(dirs = []) {
-	let sectionsDir = path.resolve("./sections/");
-	let screenshotDir = path.resolve("./screenshots/");
+async function screenshots(type = "sections", dirs = []) {
+	let sectionsDir = path.resolve("./" + type);
+	let screenshotDir = path.resolve("./screenshots/" + type + "/");
 	let styleCss = path.resolve("./css/style.css");
 	let selector = "body > section";
 	let sections = [];
@@ -93,8 +96,6 @@ async function screenshots(dirs = []) {
 				
 		});	 	
 	}
-	
-	
 
 	const browser = await puppeteer.launch({
 		args: [
@@ -245,7 +246,6 @@ let sectionsSortOrder = [ "hero", "features",  "banner", "services"];
 //generate sections for VvvebJs
 function sections(type = "section", dirs = []) {
 	let sectionsDir = path.resolve(`./${type}s/`);
-	let screenshotDir = path.resolve("./screenshots/");
 	let styleCss = path.resolve("./css/style.css");
 	let baseDir = path.resolve(".");
 	let dir = [];
@@ -286,7 +286,7 @@ function sections(type = "section", dirs = []) {
 			name = sectionFile.replace(".html","");
 			id = `${group}/${name}`;
 			name = prettify(name);
-			image = `screenshots/${group}/` + sectionFile.replace(".html", "-thumb.jpeg");
+			image = `screenshots/${type}s/${group}/` + sectionFile.replace(".html", "-thumb.jpeg");
 			html = fs.readFileSync(`${filePath}/${sectionFile}`,'utf8');
 			sections.push(id);
 			
@@ -312,11 +312,11 @@ gulp.task('connect', async function (done) {
 });
 
 gulp.task('take-screenshots',  async function (done) {
-	 await screenshots(parameters());
+	 await screenshots('sections');
 });
 
 gulp.task('take-screenshots-blocks',  async function (done) {
-	 await screenshots("./blocks/");
+	 await screenshots("blocks");
 });
 
 gulp.task('sections', async function () {
