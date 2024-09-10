@@ -27,7 +27,8 @@
 							</div>
 							
 							<div class="subscription" data-v-if="product.subscription">
-								<span data-v-product-subscription-name>Subscription plan</span>
+								<span>Subscription plan</span>:
+								<span data-v-cart-product-subscription_name>Subscription plan</span>
 							</div>
 						</td>
 						<td class="text-end">
@@ -87,7 +88,7 @@
 							 <td colspan="5" class="text-end"><small data-v-cart-total-title>Sub-Total</small>:</td>
 							 <td class="text-end">
 								<span data-v-cart-total-text data-v-if="total.text"> - </span>
-								 <span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
+								<span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
 							 </td>
 						  </tr>
 						  <tr data-v-cart-total>

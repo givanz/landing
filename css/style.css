@@ -9587,7 +9587,7 @@ h2, .h2 {
 
 .frame {
   background: #f5f9ff;
-  background: var(--bs-tertiary-bg);
+  background: var(--bs-gray-700);
   box-shadow: 0 0 1px 0 rgba(var(--bs-body-color-rgb), 0.2), 0 3px 4px 0 rgba(87, 87, 87, 0.1), 0 10px 15px 0 rgba(5, 4, 10, 0.06), rgba(var(--bs-body-color-rgb), 0.2) 0px 4px 14px 0px;
   border-radius: 4px;
   padding: 2.1rem 0 0;
@@ -15163,6 +15163,11 @@ ul.tags {
     opacity: 1;
     visibility: visible; }
 
+.products-sidebar .widget {
+  font-size: 14px; }
+  .products-sidebar .widget strong {
+    font-size: 12px; }
+
 .add-to-cart-btn {
   background: var(--bs-primary); }
 
@@ -15170,7 +15175,7 @@ ul.tags {
 .price-input {
   width: 100%;
   display: flex;
-  margin: 30px 0 35px;
+  margin: 10px 0 20px;
   justify-content: space-between; }
   .price-input label {
     display: flex;

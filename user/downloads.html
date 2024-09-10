@@ -505,7 +505,8 @@
                               </div>
 
                               <div class="subscription" data-v-if="product.subscription">
-                                <span data-v-product-subscription-name>Subscription plan</span>
+                                <span>Subscription plan</span>:
+                                <span data-v-cart-product-subscription_name>Subscription plan</span>
                               </div>
                             </td>
                             <td class="text-end">
@@ -795,17 +796,16 @@
 
           <h2>Downloads</h2>
 
-          <div class="table-responsive" data-v-order_status_id="2" data-v-component-digital_assets>
+          <div class="table-responsive" data-v-order_status_id="4" data-v-component-digital_assets>
             <table class="table table-hover border-top">
               <thead>
                 <tr>
                   <td class="text-center">Order id</td>
-                  <td class="text-center">Client</td>
+                  <td class="text-center">Product name</td>
+                  <td class="text-center">Name</td>
                   <!-- <td class="text-center">No products</td> -->
-                  <td class="text-center">Status</td>
                   <td class="text-center">File</td>
                   <!-- <td class="text-start">Tracking Code</td> -->
-                  <td class="text-center">Date added</td>
                   <td>Download</td>
                 </tr>
               </thead>
@@ -814,23 +814,19 @@
                 <tr data-v-digital_asset>
                   <td class="text-center">
                     <span>#</span>
-                    <span data-v-digital_asset-digital_asset_id>1</span>
+                    <span data-v-digital_asset-customer_order_id>1</span>
                   </td>
                   <td class="text-center">
-                    <span data-v-digital_asset-first_name data-filter-capitalize></span>
-                    <span data-v-digital_asset-last_name data-filter-capitalize></span>
+                    <span data-v-digital_asset-product_name></span>
                   </td>
                   <td class="text-center">
-                    <span data-v-digital_asset-file></span>
+                    <span data-v-digital_asset-name></span>
                   </td>
                   <td class="text-center">
-                    <span data-v-digital_asset-total></span>
+                    <span data-v-digital_asset-public></span>
                   </td>
                   <td class="text-center">
-                    <span data-v-digital_asset-created_at data-filter-friendly_date></span>
-                  </td>
-                  <td class="text-center">
-                    <a href="" title="View" class="btn btn-primary btn-sm" data-v-digital_asset-url>
+                    <a href="" title="Download" class="btn btn-primary btn-sm" data-v-digital_asset-url download>
                       <i class="la la-download"></i>
                     </a>
                   </td>

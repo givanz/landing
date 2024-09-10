@@ -505,7 +505,8 @@
                               </div>
 
                               <div class="subscription" data-v-if="product.subscription">
-                                <span data-v-product-subscription-name>Subscription plan</span>
+                                <span>Subscription plan</span>:
+                                <span data-v-cart-product-subscription_name>Subscription plan</span>
                               </div>
                             </td>
                             <td class="text-end">
@@ -667,7 +668,7 @@
       <div class="row">
 
         <!-- Blog Entries Column -->
-        <div class="col-md-7 col-lg-8 col-xl-9" data-v-component-posts="popular" data-v-limit="10" data-v-taxonomy_item_slug="url.slug" data-v-image_size="large">
+        <div class="col-md-7 col-lg-8 col-xl-9" data-v-component-posts="popular" data-v-page="url" data-v-limit="10" data-v-taxonomy_item_slug="url.slug" data-v-image_size="large">
 
           <!-- Blog Post -->
 
@@ -878,7 +879,7 @@
 
                 <li class="page-item pager-prev" data-prev>
 
-                  <a class="page-link" href="#" aria-label="Previous" title="Previous page" data-page-url data-v-if="current_page > 1">
+                  <a class="page-link" href="#" aria-label="Previous" title="Previous page" data-page-url data-scroll="top" data-v-if="current_page > 1">
                     <span aria-hidden="true" class="la la-angle-left la-lg"></span>
                     <!-- <span>Newer Posts</span> -->
                   </a>
@@ -888,23 +889,23 @@
 
 
                 <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url>1</a>
+                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">1</a>
                 </li>
                 <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url>2</a>
+                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">2</a>
                 </li>
                 <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url>3</a>
+                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">3</a>
                 </li>
                 <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url>4</a>
+                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">4</a>
                 </li>
                 <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url>5</a>
+                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">5</a>
                 </li>
 
                 <li class="page-item pager-next" data-next>
-                  <a class="page-link" href="#" aria-label="Next" title="Next page" data-page-url data-v-if="current_page < pagecount">
+                  <a class="page-link" href="#" aria-label="Next" title="Next page" data-page-url data-scroll="top" data-v-if="current_page < pagecount">
                     <!-- <span>Older Posts</span> -->
                     <span aria-hidden="true" class="la la-angle-right la-lg"></span>
                   </a>

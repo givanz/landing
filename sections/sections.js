@@ -1,6 +1,6 @@
 Vvveb.Sections.add("hero/hero-1", {
     name: "Hero 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/hero/hero-1-thumb.jpeg",
     html: `<header class="hero-1" title="hero-1">
 
   <div class="container">
@@ -47,14 +47,14 @@ Vvveb.Sections.add("hero/hero-1", {
 </header>`
 });Vvveb.Sections.add("hero/hero-2", {
     name: "Hero 2",
-    image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-2-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/hero/hero-2-thumb.jpeg",
     html: `<header class="hero-2" title="hero-2">
 
   <div class="container">
     <div class="row align-items-center justify-content-between">
       <div class="col-lg-6 mb-5 ms-5" data-aos="fade-up" data-aos-delay="0">
-        <h1 class="heading text-white">The next generation website builder</h1>
-        <p class="text-white-50 mb-5">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
+        <h1 class="heading">The next generation website builder</h1>
+        <p class="subheading mb-5">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
         <p>
           <a href="https://www.vvveb.com" class="btn btn-white">
             <span>&#9889;</span>
@@ -95,25 +95,23 @@ Vvveb.Sections.add("hero/hero-1", {
 </header>`
 });Vvveb.Sections.add("hero/hero-3", {
     name: "Hero 3",
-    image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-3-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/hero/hero-3-thumb.jpeg",
     html: `<header class="hero-3" title="hero-3">
 
   <div class="container">
     <div>
       <div class="row align-items-center justify-content-center text-center">
         <div class="col-lg-12">
-          <h1 class="heading text-white mb-3 display-4" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
-          <h2 class="text-white h3" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs,
-            <br /> presentation or ecommerce stores.
-          </h2>
+          <h1 class="heading mb-3 display-4" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
+          <h2 class="h3 col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h2>
 
           <div class="buttons" data-aos="fade-up" data-aos-delay="300">
-            <a href="https://www.vvveb.com" class="btn btn-primary text-white">
+            <a href="https://www.vvveb.com" class="btn btn-primary">
               <span>&#9889;</span>
               <span>Free Download</span>
               <b>›</b>
             </a>
-            <a href="https://demo.vvveb.com" class="btn btn-white text-white">Live Demo</a>
+            <a href="https://demo.vvveb.com" class="btn btn-white">Live Demo</a>
           </div>
 
 
@@ -150,25 +148,25 @@ Vvveb.Sections.add("hero/hero-1", {
 </header>`
 });Vvveb.Sections.add("hero/hero-4", {
     name: "Hero 4",
-    image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-4-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/hero/hero-4-thumb.jpeg",
     html: `<header class="hero-4" title="hero-4">
 
   <div class="container">
     <div class="row align-items-center justify-content-center text-center">
       <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-        <h1 class="heading text-white mb-3 display-4">The next generation website builder</h1>
-        <h4 class="subheading text-white mb-5">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h4>
+        <h1 class="heading mb-3 display-4">The next generation website builder</h1>
+        <h4 class="subheading mb-5">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h4>
 
         <img width="350" src="img/demo/video-1.jpg" class="shadow img-thumbnail">
 
         <div class="buttons">
 
-          <a href="https://www.vvveb.com" class="btn btn-success text-white btn-lg">
+          <a href="https://www.vvveb.com" class="btn btn-success btn-lg">
             <span>⚡</span>
             <span>Free Download</span>
             <b>›</b>
           </a>
-          <a href="https://demo.vvveb.com" class="btn btn-white text-white btn-lg">Live Demo</a>
+          <a href="https://demo.vvveb.com" class="btn btn-white btn-lg">Live Demo</a>
 
         </div>
       </div>
@@ -200,14 +198,14 @@ Vvveb.Sections.add("hero/hero-1", {
 </header>`
 });Vvveb.Sections.add("hero/hero-5", {
     name: "Hero 5",
-    image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-5-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/hero/hero-5-thumb.jpeg",
     html: `<header class="hero-5" title="hero-5">
 
   <div class="container" style="z-index:2">
     <div class="row align-items-center d-flex justify-content-between">
       <div class="col-12 col-md-6 pb-5 order-2 order-sm-2 ">
-        <h1 class="text-white fw-bold mb-3 mt-5 display-3">The next generation website builder.</h1>
-        <p class="lead text-white">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
+        <h1 class="fw-bold mb-3 mt-5 display-3">The next generation website builder.</h1>
+        <p class="lead">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
         <div class=" d-flex mt-3 mb-1">
           <a class="btn btn-primary btn-lg  mt-md-3 " href="https://www.vvveb.com" role="button">Download Now</a>
         </div>
@@ -249,26 +247,24 @@ Vvveb.Sections.add("hero/hero-1", {
 </header>`
 });Vvveb.Sections.add("hero/hero-6", {
     name: "Hero 6",
-    image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-6-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/hero/hero-6-thumb.jpeg",
     html: `<header class="hero-6" title="hero-6">
 
   <div class="container">
     <div>
       <div class="row align-items-center justify-content-center text-start">
         <div class="col-lg-7">
-          <h1 class="heading text-white mb-3 display-3 fw-bold" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
-          <h2 class="text-white h3" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs,
-            <br> websites or ecommerce stores.
-          </h2>
+          <h1 class="heading mb-3 display-3 fw-bold" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
+          <h2 class="h3 col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
 
 
           <div class="buttons mt-4" data-aos="fade-up" data-aos-delay="300">
-            <a href="https://www.vvveb.com" class="btn btn-success text-white btn-lg">
+            <a href="https://www.vvveb.com" class="btn btn-success btn-lg">
               <span>⚡</span>
               <span>Free Download</span>
               <b>›</b>
             </a>
-            <a href="https://demo.vvveb.com" class="btn btn-white text-white btn-lg">Live Demo</a>
+            <a href="https://demo.vvveb.com" class="btn btn-white btn-lg">Live Demo</a>
           </div>
 
 
@@ -305,7 +301,7 @@ Vvveb.Sections.add("hero/hero-1", {
 </header>`
 });Vvveb.Sections.add("hero/hero-7", {
     name: "Hero 7",
-    image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-7-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/hero/hero-7-thumb.jpeg",
     html: `<header class="hero-7" title="hero-7">
 
   <div class="container">
@@ -316,19 +312,17 @@ Vvveb.Sections.add("hero/hero-1", {
         </div>
 
         <div class="col-lg-7">
-          <h1 class="heading text-white mb-3 display-3 fw-bold" data-aos="fade-up" data-aos-delay="100">Open source CMS reinvented</h1>
-          <h2 class="text-white h3" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs,
-            <br> websites or ecommerce stores.
-          </h2>
+          <h1 class="heading mb-3 display-3 fw-bold" data-aos="fade-up" data-aos-delay="100">Open source CMS reinvented</h1>
+          <h2 class="h3 col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
 
 
           <div class="buttons mt-4" data-aos="fade-up" data-aos-delay="300">
-            <a href="https://www.vvveb.com" class="btn btn-success text-white btn-lg">
+            <a href="https://www.vvveb.com" class="btn btn-success btn-lg">
               <span>⚡</span>
               <span>Free Download</span>
               <b>›</b>
             </a>
-            <a href="https://demo.vvveb.com" class="btn btn-white text-white  btn-lg">Live Demo</a>
+            <a href="https://demo.vvveb.com" class="btn btn-white btn-lg">Live Demo</a>
           </div>
 
 
@@ -362,7 +356,7 @@ Vvveb.Sections.add("hero/hero-1", {
 </header>`
 });Vvveb.Sections.add("hero/hero-slider", {
     name: "Hero slider",
-    image: Vvveb.themeBaseUrl + "/screenshots/hero/hero-slider-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/hero/hero-slider-thumb.jpeg",
     html: `<header class="hero-slider" title="hero-slider">
 
 
@@ -377,10 +371,8 @@ Vvveb.Sections.add("hero/hero-1", {
             <div>
               <div class="row align-items-center justify-content-center text-start">
                 <div class="col-lg-7">
-                  <h1 class="heading text-white mb-3 display-3 fw-bold" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
-                  <h2 class="text-white h3" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs,
-                    <br> websites or ecommerce stores.
-                  </h2>
+                  <h1 class="heading mb-3 display-3 fw-bold" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
+                  <h2 class="h3 col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
 
 
                   <div class="buttons mt-4" data-aos="fade-up" data-aos-delay="300">
@@ -538,7 +530,7 @@ initSwiper();
 	Vvveb.SectionsGroup["Hero"] = ["hero/hero-1","hero/hero-2","hero/hero-3","hero/hero-4","hero/hero-5","hero/hero-6","hero/hero-7","hero/hero-slider"];
 Vvveb.Sections.add("features/features-1", {
     name: "Features 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/features/features-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/features/features-1-thumb.jpeg",
     html: `<section class="features-1 bg-alternate" title="features-1">
   <div class="container">
     <div class="row wrap">
@@ -585,7 +577,7 @@ Vvveb.Sections.add("features/features-1", {
 </section>`
 });Vvveb.Sections.add("features/features-2", {
     name: "Features 2",
-    image: Vvveb.themeBaseUrl + "/screenshots/features/features-2-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/features/features-2-thumb.jpeg",
     html: `<section class="features-2 py-5 bg-alternate" title="features-2">
 
   <div class="row no-gutters">
@@ -623,7 +615,7 @@ Vvveb.Sections.add("features/features-1", {
 </section>`
 });Vvveb.Sections.add("features/features-3", {
     name: "Features 3",
-    image: Vvveb.themeBaseUrl + "/screenshots/features/features-3-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/features/features-3-thumb.jpeg",
     html: `<section class="features-3 py-5 bg-alternate" title="features-3">
   <div class="container">
 
@@ -698,7 +690,7 @@ Vvveb.Sections.add("features/features-1", {
 </section>`
 });Vvveb.Sections.add("features/features-4", {
     name: "Features 4",
-    image: Vvveb.themeBaseUrl + "/screenshots/features/features-4-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/features/features-4-thumb.jpeg",
     html: `<section class="features-4 py-5 bg-primary bg-gradient text-white" title="features-4">
 
   <div class="container">
@@ -767,7 +759,7 @@ Vvveb.Sections.add("features/features-1", {
 </section>`
 });Vvveb.Sections.add("features/features-5", {
     name: "Features 5",
-    image: Vvveb.themeBaseUrl + "/screenshots/features/features-5-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/features/features-5-thumb.jpeg",
     html: `<section class="features-5 py-5 bg-alternate" title="features-5">
 
   <div class="container">
@@ -814,7 +806,7 @@ Vvveb.Sections.add("features/features-1", {
 </section>`
 });Vvveb.Sections.add("features/features-6", {
     name: "Features 6",
-    image: Vvveb.themeBaseUrl + "/screenshots/features/features-6-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/features/features-6-thumb.jpeg",
     html: `<section class="features-6 py-5 bg-alternate" title="features-6">
   <div class="container">
     <div class="row text-center">
@@ -857,7 +849,7 @@ Vvveb.Sections.add("features/features-1", {
 </section>`
 });Vvveb.Sections.add("features/features-7", {
     name: "Features 7",
-    image: Vvveb.themeBaseUrl + "/screenshots/features/features-7-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/features/features-7-thumb.jpeg",
     html: `<section class="features-7 py-5 bg-alternate" title="features-7">
   <div class="container">
     <div class="row text-center">
@@ -910,7 +902,7 @@ Vvveb.Sections.add("features/features-1", {
 </section>`
 });Vvveb.Sections.add("features/features-8", {
     name: "Features 8",
-    image: Vvveb.themeBaseUrl + "/screenshots/features/features-8-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/features/features-8-thumb.jpeg",
     html: `<section class="features-8 py-5 bg-alternate" title="features-8">
   <div class="container">
     <div class="row text-center">
@@ -1003,7 +995,7 @@ Vvveb.Sections.add("features/features-1", {
 </section>`
 });Vvveb.Sections.add("features/features-9", {
     name: "Features 9",
-    image: Vvveb.themeBaseUrl + "/screenshots/features/features-9-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/features/features-9-thumb.jpeg",
     html: `<section class="features-9 py-5 bg-alternate" title="features-9">
   <div class="container">
     <div class="row text-center">
@@ -1117,7 +1109,7 @@ Vvveb.Sections.add("features/features-1", {
 </section>`
 });Vvveb.Sections.add("features/features-10", {
     name: "Features 10",
-    image: Vvveb.themeBaseUrl + "/screenshots/features/features-10-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/features/features-10-thumb.jpeg",
     html: `<section class="features-10 py-5 bg-alternate" title="features-10">
   <div class="container">
     <div class="row text-end align-items-center">
@@ -1168,7 +1160,7 @@ Vvveb.Sections.add("features/features-1", {
 </section>`
 });Vvveb.Sections.add("features/features-11", {
     name: "Features 11",
-    image: Vvveb.themeBaseUrl + "/screenshots/features/features-11-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/features/features-11-thumb.jpeg",
     html: `<section class="features-11 py-5 bg-alternate" title="features-11">
   <div class="container">
     <div class="row text-center">
@@ -1208,7 +1200,7 @@ Vvveb.Sections.add("features/features-1", {
 	Vvveb.SectionsGroup["Features"] = ["features/features-1","features/features-2","features/features-3","features/features-4","features/features-5","features/features-6","features/features-7","features/features-8","features/features-9","features/features-10","features/features-11"];
 Vvveb.Sections.add("base/1-column", {
     name: "1 column",
-    image: Vvveb.themeBaseUrl + "/screenshots/base/1-column-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/base/1-column-thumb.jpeg",
     html: `<section title="one column" class="py-4">
   <div class="container">
     <div class="row">
@@ -1218,7 +1210,7 @@ Vvveb.Sections.add("base/1-column", {
 </section>`
 });Vvveb.Sections.add("base/2-columns", {
     name: "2 columns",
-    image: Vvveb.themeBaseUrl + "/screenshots/base/2-columns-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/base/2-columns-thumb.jpeg",
     html: `<section title="two columns" class="py-4">
   <div class="container">
     <div class="row">
@@ -1229,7 +1221,7 @@ Vvveb.Sections.add("base/1-column", {
 </section>`
 });Vvveb.Sections.add("base/3-columns", {
     name: "3 columns",
-    image: Vvveb.themeBaseUrl + "/screenshots/base/3-columns-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/base/3-columns-thumb.jpeg",
     html: `<section title="three columns" class="py-4">
   <div class="container">
     <div class="row">
@@ -1241,7 +1233,7 @@ Vvveb.Sections.add("base/1-column", {
 </section>`
 });Vvveb.Sections.add("base/4-columns", {
     name: "4 columns",
-    image: Vvveb.themeBaseUrl + "/screenshots/base/4-columns-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/base/4-columns-thumb.jpeg",
     html: `<section title="four columns" class="py-4">
   <div class="container">
     <div class="row">
@@ -1254,7 +1246,7 @@ Vvveb.Sections.add("base/1-column", {
 </section>`
 });Vvveb.Sections.add("base/6-columns", {
     name: "6 columns",
-    image: Vvveb.themeBaseUrl + "/screenshots/base/6-columns-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/base/6-columns-thumb.jpeg",
     html: `<section title="six columns" class="py-4">
   <div class="container">
     <div class="row">
@@ -1269,7 +1261,7 @@ Vvveb.Sections.add("base/1-column", {
 </section>`
 });Vvveb.Sections.add("base/8-columns", {
     name: "8 columns",
-    image: Vvveb.themeBaseUrl + "/screenshots/base/8-columns-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/base/8-columns-thumb.jpeg",
     html: `<section title="eight columns" class="py-4">
   <div class="container">
     <div class="row">
@@ -1286,7 +1278,7 @@ Vvveb.Sections.add("base/1-column", {
 </section>`
 });Vvveb.Sections.add("base/12-columns", {
     name: "12 columns",
-    image: Vvveb.themeBaseUrl + "/screenshots/base/12-columns-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/base/12-columns-thumb.jpeg",
     html: `<section title="twelve columns" class="py-4">
   <div class="container">
     <div class="row">
@@ -1307,7 +1299,7 @@ Vvveb.Sections.add("base/1-column", {
 </section>`
 });Vvveb.Sections.add("base/blank", {
     name: "Blank",
-    image: Vvveb.themeBaseUrl + "/screenshots/base/blank-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/base/blank-thumb.jpeg",
     html: `<section title="blank" class="py-4">
   <div class="container">
     <h1>Blank container</h1>
@@ -1317,7 +1309,7 @@ Vvveb.Sections.add("base/1-column", {
 	Vvveb.SectionsGroup["Base"] = ["base/1-column","base/2-columns","base/3-columns","base/4-columns","base/6-columns","base/8-columns","base/12-columns","base/blank"];
 Vvveb.Sections.add("contact-form/contact-form-1", {
     name: "Contact form 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/contact-form/contact-form-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/contact-form/contact-form-1-thumb.jpeg",
     html: `<section class="contact-form-9" title="contact-form-9">
   <div class="container py-5 my-5">
     <div class="row py-5">
@@ -1368,7 +1360,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
 </section>`
 });Vvveb.Sections.add("contact-form/contact-form-2", {
     name: "Contact form 2",
-    image: Vvveb.themeBaseUrl + "/screenshots/contact-form/contact-form-2-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/contact-form/contact-form-2-thumb.jpeg",
     html: `<section class="contact-form-11 pt-0" title="contact-form-11">
   <div class="container-fluid p-0 pb-5">
     <iframe loading="lazy" class="map" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" style="border:0" allowfullscreen="" width="100%" height="300" frameborder="0"></iframe>
@@ -1419,7 +1411,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
 </section>`
 });Vvveb.Sections.add("contact-form/contact-form-3", {
     name: "Contact form 3",
-    image: Vvveb.themeBaseUrl + "/screenshots/contact-form/contact-form-3-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/contact-form/contact-form-3-thumb.jpeg",
     html: `<section class="contact-form-12 py-0" title="contact-form-12">
   <div class="container py-5" style="background-image: url(img/sections/contct-form-12.jpg);">
     <div class="row text-center justify-content-center">
@@ -1470,7 +1462,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
 </section>`
 });Vvveb.Sections.add("contact-form/contact-form-4", {
     name: "Contact form 4",
-    image: Vvveb.themeBaseUrl + "/screenshots/contact-form/contact-form-4-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/contact-form/contact-form-4-thumb.jpeg",
     html: `<section class="contact-form-13" title="contact-form-13">
   <div class="container">
     <div class="row text-center justify-content-center">
@@ -1523,7 +1515,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
 </section>`
 });Vvveb.Sections.add("contact-form/contact-form-5", {
     name: "Contact form 5",
-    image: Vvveb.themeBaseUrl + "/screenshots/contact-form/contact-form-5-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/contact-form/contact-form-5-thumb.jpeg",
     html: `<section class="contact-form-2 container-fluid px-5 my-5" title="contact-form-2">
   <div class="row justify-content-center">
     <div class="col-xl-10">
@@ -1581,7 +1573,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
 </section>`
 });Vvveb.Sections.add("contact-form/contact-form-6", {
     name: "Contact form 6",
-    image: Vvveb.themeBaseUrl + "/screenshots/contact-form/contact-form-6-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/contact-form/contact-form-6-thumb.jpeg",
     html: `<section title="contact-form-6" class="contact-form-6">
   <div class="container-fluid g-0">
 
@@ -1689,6 +1681,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
 
         <form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
           <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">
+          <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>
 
           <div class="row">
             <div class="col">
@@ -1749,7 +1742,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
 </section>`
 });Vvveb.Sections.add("contact-form/contact-form-7", {
     name: "Contact form 7",
-    image: Vvveb.themeBaseUrl + "/screenshots/contact-form/contact-form-7-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/contact-form/contact-form-7-thumb.jpeg",
     html: `<section class="contact-form-8" title="contact-form-8">
   <div class="container">
     <div class="row text-center justify-content-center">
@@ -1794,7 +1787,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
 </section>`
 });Vvveb.Sections.add("contact-form/contact-form-8", {
     name: "Contact form 8",
-    image: Vvveb.themeBaseUrl + "/screenshots/contact-form/contact-form-8-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/contact-form/contact-form-8-thumb.jpeg",
     html: `<section class="contact-form-8 pt-0" title="contact-form-8">
   <div class="container-fluid p-0 pb-3">
     <iframe loading="lazy" class="map" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" style="border:0" allowfullscreen="" width="100%" height="300" frameborder="0"></iframe>
@@ -1885,7 +1878,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
 </section>`
 });Vvveb.Sections.add("contact-form/contact-form-9", {
     name: "Contact form 9",
-    image: Vvveb.themeBaseUrl + "/screenshots/contact-form/contact-form-9-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/contact-form/contact-form-9-thumb.jpeg",
     html: `<section class="contact-form-3 py-5" title="contact-form-3">
   <div class="row no-gutters">
     <div class="container">
@@ -1980,7 +1973,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
 	Vvveb.SectionsGroup["Contact form"] = ["contact-form/contact-form-1","contact-form/contact-form-2","contact-form/contact-form-3","contact-form/contact-form-4","contact-form/contact-form-5","contact-form/contact-form-6","contact-form/contact-form-7","contact-form/contact-form-8","contact-form/contact-form-9"];
 Vvveb.Sections.add("footer/footer-1", {
     name: "Footer 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/footer/footer-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/footer/footer-1-thumb.jpeg",
     html: `<footer class="footer-1" title="footer-1" data-v-save-global="index.html,.footer-1">
   <div class="container" data-v-component-menu="footer" data-v-slug="main-footer">
 
@@ -2094,7 +2087,7 @@ Vvveb.Sections.add("footer/footer-1", {
         </div>
         <div class="text-muted">
           &copy; <span data-v-year>2023</span>
-          <span data-v-global-site-title>Vvveb</span>. <span>Powered by</span>
+          <span data-v-global-site.title>Vvveb</span>. <span>Powered by</span>
           <a href="https://vvveb.com" class="btn-link text-muted" target="_blank">Vvveb</a>
         </div>
       </div>
@@ -2104,7 +2097,7 @@ Vvveb.Sections.add("footer/footer-1", {
 </footer>`
 });Vvveb.Sections.add("footer/footer-2", {
     name: "Footer 2",
-    image: Vvveb.themeBaseUrl + "/screenshots/footer/footer-2-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/footer/footer-2-thumb.jpeg",
     html: `<footer class="bg-white" title="footer-2" data-v-save-global="index.html,.footer-2">
 
   <div class="container py-5">
@@ -2194,7 +2187,7 @@ Vvveb.Sections.add("footer/footer-1", {
 </footer>`
 });Vvveb.Sections.add("footer/footer-3", {
     name: "Footer 3",
-    image: Vvveb.themeBaseUrl + "/screenshots/footer/footer-3-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/footer/footer-3-thumb.jpeg",
     html: `<footer class="footer-3 bg-dark text-white" title="footer-3" data-v-save-global="index.html,.footer-3">
   <div class="container" data-v-component-menu="footer" data-v-slug="main-menu">
 
@@ -2285,7 +2278,7 @@ Vvveb.Sections.add("footer/footer-1", {
 	Vvveb.SectionsGroup["Footer"] = ["footer/footer-1","footer/footer-2","footer/footer-3"];
 Vvveb.Sections.add("navigation/navigation-1", {
     name: "Navigation 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/navigation/navigation-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/navigation/navigation-1-thumb.jpeg",
     html: `<nav class="navigation-1 clearfix" data-v-save-global="blank.html,.navigation-1">
 
   <div id="top" class="top-nav clearfix">
@@ -2894,7 +2887,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 </nav>`
 });Vvveb.Sections.add("navigation/navigation-2", {
     name: "Navigation 2",
-    image: Vvveb.themeBaseUrl + "/screenshots/navigation/navigation-2-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/navigation/navigation-2-thumb.jpeg",
     html: `<nav class="navigation-2 clearfix fixed-top transparent" title="navigation-2" data-v-save-global="index.html,.navigation-2">
 
   <div class="container">
@@ -3378,7 +3371,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 </nav>`
 });Vvveb.Sections.add("navigation/navigation-3", {
     name: "Navigation 3",
-    image: Vvveb.themeBaseUrl + "/screenshots/navigation/navigation-3-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/navigation/navigation-3-thumb.jpeg",
     html: `<nav class="navigation-3 clearfix fixed-top transparent" title="navigation-3" data-v-save-global="index.html,.navigation-3">
 
   <div id="top" class="top-nav clearfix" data-bs-theme="dark">
@@ -4022,7 +4015,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 </nav>`
 });Vvveb.Sections.add("navigation/navigation-4", {
     name: "Navigation 4",
-    image: Vvveb.themeBaseUrl + "/screenshots/navigation/navigation-4-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/navigation/navigation-4-thumb.jpeg",
     html: `<nav class="navigation-4 clearfix" data-v-save-global="index.html,.navigation-4">
 
   <div class="navbar navbar-expand-md">
@@ -4142,7 +4135,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 	Vvveb.SectionsGroup["Navigation"] = ["navigation/navigation-1","navigation/navigation-2","navigation/navigation-3","navigation/navigation-4"];
 Vvveb.Sections.add("posts/posts-1", {
     name: "Posts 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/posts/posts-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/posts/posts-1-thumb.jpeg",
     html: `<section class="posts-1" title="latest-post-1">
   <div class="container">
     <div class="row">
@@ -4165,7 +4158,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
         <article class="card h-100 shadow-sm">
           <div class="card-img-top" data-v-if="post.image">
-            <img src="img/demo/product.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+            <img src="img/demo/video-1.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
           </div>
           <!-- Post Title -->
           <div class="card-body">
@@ -4194,7 +4187,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
         <article class="card h-100 shadow-sm">
           <div class="card-img-top" data-v-if="post.image">
-            <img src="img/demo/product.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+            <img src="img/demo/video-1.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
           </div>
           <!-- Post Title -->
           <div class="card-body">
@@ -4223,7 +4216,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
         <article class="card h-100 shadow-sm">
           <div class="card-img-top" data-v-if="post.image">
-            <img src="img/demo/product.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+            <img src="img/demo/video-1.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
           </div>
           <!-- Post Title -->
           <div class="card-body">
@@ -4253,7 +4246,7 @@ Vvveb.Sections.add("posts/posts-1", {
 </section>`
 });Vvveb.Sections.add("posts/posts-2", {
     name: "Posts 2",
-    image: Vvveb.themeBaseUrl + "/screenshots/posts/posts-2-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/posts/posts-2-thumb.jpeg",
     html: `<section class="pt-5 pb-5" title="posts-2">
   <div class="container">
     <div class="row">
@@ -4407,7 +4400,7 @@ Vvveb.Sections.add("posts/posts-1", {
 </section>`
 });Vvveb.Sections.add("posts/posts-3", {
     name: "Posts 3",
-    image: Vvveb.themeBaseUrl + "/screenshots/posts/posts-3-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/posts/posts-3-thumb.jpeg",
     html: `<section class="posts-3 py-5" title="posts-3">
   <div class="container">
 
@@ -4485,7 +4478,7 @@ Vvveb.Sections.add("posts/posts-1", {
 	Vvveb.SectionsGroup["Posts"] = ["posts/posts-1","posts/posts-2","posts/posts-3"];
 Vvveb.Sections.add("pricing-table/pricing-table-3", {
     name: "Pricing table 3",
-    image: Vvveb.themeBaseUrl + "/screenshots/pricing-table/pricing-table-3-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/pricing-table/pricing-table-3-thumb.jpeg",
     html: `<section class="pricing-table-3" title="pricing-table-3">
   <div class="container">
     <div class="row justify-content-center pb-2">
@@ -4601,7 +4594,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
 	Vvveb.SectionsGroup["Pricing table"] = ["pricing-table/pricing-table-3"];
 Vvveb.Sections.add("products/products-1", {
     name: "Products 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/products/products-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/products/products-1-thumb.jpeg",
     html: `<section class="products-1" title="latest-products-1">
   <div class="container">
     <div class="row">
@@ -5128,11 +5121,9 @@ Vvveb.Sections.add("products/products-1", {
 </section>`
 });
 	Vvveb.SectionsGroup["Products"] = ["products/products-1"];
-
-	Vvveb.SectionsGroup["Reusable"] = [""];
 Vvveb.Sections.add("showcase/showcase-1", {
     name: "Showcase 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/showcase/showcase-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-1-thumb.jpeg",
     html: `<section class="d-flex showcase-1" title="showcase-1">
   <div class="container">
     <div class="row align-items-center w-100">
@@ -5152,7 +5143,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
 </section>`
 });Vvveb.Sections.add("showcase/showcase-2", {
     name: "Showcase 2",
-    image: Vvveb.themeBaseUrl + "/screenshots/showcase/showcase-2-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-2-thumb.jpeg",
     html: `<section class="d-flex showcase-2" title="showcase-2">
   <div class="container">
     <div class="row align-items-center w-100">
@@ -5172,7 +5163,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
 </section>`
 });Vvveb.Sections.add("showcase/showcase-3", {
     name: "Showcase 3",
-    image: Vvveb.themeBaseUrl + "/screenshots/showcase/showcase-3-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-3-thumb.jpeg",
     html: `<section class="showcase-3" title="showcase-3">
   <div class="container">
     <div class="row g-1 justify-content-center">
@@ -5236,7 +5227,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
 </section>`
 });Vvveb.Sections.add("showcase/showcase-4", {
     name: "Showcase 4",
-    image: Vvveb.themeBaseUrl + "/screenshots/showcase/showcase-4-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-4-thumb.jpeg",
     html: `<section class="showcase-4" title="showcase-4">
   <div class="container">
     <div class="row g-1 justify-content-center">
@@ -5305,7 +5296,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
 </section>`
 });Vvveb.Sections.add("showcase/showcase-5", {
     name: "Showcase 5",
-    image: Vvveb.themeBaseUrl + "/screenshots/showcase/showcase-5-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-5-thumb.jpeg",
     html: `<section class="showcase-5" title="showcase-5">
   <div class="container">
     <div class="row justify-content-center">
@@ -5374,7 +5365,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
 </section>`
 });Vvveb.Sections.add("showcase/showcase-6", {
     name: "Showcase 6",
-    image: Vvveb.themeBaseUrl + "/screenshots/showcase/showcase-6-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-6-thumb.jpeg",
     html: `<section class="showcase-6" title="showcase-6">
   <div class="separator top">
     <svg class="pricing-divider-img" enable-background="new 0 0 300 100" height="100px" id="Layer_1" fill="currentColor" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" width="300px" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
@@ -5464,7 +5455,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
 </section>`
 });Vvveb.Sections.add("showcase/showcase-7", {
     name: "Showcase 7",
-    image: Vvveb.themeBaseUrl + "/screenshots/showcase/showcase-7-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-7-thumb.jpeg",
     html: `<section class="showcase-7" title="showcase-7">
   <div class="container">
     <div class="row justify-content-center">
@@ -5524,7 +5515,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
 </section>`
 });Vvveb.Sections.add("showcase/showcase-8", {
     name: "Showcase 8",
-    image: Vvveb.themeBaseUrl + "/screenshots/showcase/showcase-8-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-8-thumb.jpeg",
     html: `<section class="showcase-8" title="showcase-8">
   <div class="container">
     <div class="row justify-content-center">
@@ -5549,7 +5540,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
 </section>`
 });Vvveb.Sections.add("showcase/showcase-9", {
     name: "Showcase 9",
-    image: Vvveb.themeBaseUrl + "/screenshots/showcase/showcase-9-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-9-thumb.jpeg",
     html: `<section class="showcase-8" title="showcase-9">
   <div class="container">
     <div class="row justify-content-center">
@@ -5574,7 +5565,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
 </section>`
 });Vvveb.Sections.add("showcase/showcase-10", {
     name: "Showcase 10",
-    image: Vvveb.themeBaseUrl + "/screenshots/showcase/showcase-10-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-10-thumb.jpeg",
     html: `<section class="showcase-10" title="showcase-10">
   <div class="container">
     <div class="row justify-content-center">
@@ -5599,7 +5590,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
 </section>`
 });Vvveb.Sections.add("showcase/showcase-11", {
     name: "Showcase 11",
-    image: Vvveb.themeBaseUrl + "/screenshots/showcase/showcase-11-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-11-thumb.jpeg",
     html: `<section class="pt-5 pb-5">
   <div class="container">
     <div class="row align-items-center justify-content-center">
@@ -5634,7 +5625,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
 </section>`
 });Vvveb.Sections.add("showcase/showcase-12", {
     name: "Showcase 12",
-    image: Vvveb.themeBaseUrl + "/screenshots/showcase/showcase-12-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-12-thumb.jpeg",
     html: `<section class="showcase-12" title="showcase-12">
   <div class="container">
     <div class="row g-1 justify-content-center">
@@ -5689,7 +5680,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
 	Vvveb.SectionsGroup["Showcase"] = ["showcase/showcase-1","showcase/showcase-2","showcase/showcase-3","showcase/showcase-4","showcase/showcase-5","showcase/showcase-6","showcase/showcase-7","showcase/showcase-8","showcase/showcase-9","showcase/showcase-10","showcase/showcase-11","showcase/showcase-12"];
 Vvveb.Sections.add("team/team-1", {
     name: "Team 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/team/team-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/team/team-1-thumb.jpeg",
     html: `<section class="py-5" title="team-1">
   <div class="container">
     <div class="row justify-content-center mb-4">
@@ -5891,7 +5882,7 @@ Vvveb.Sections.add("team/team-1", {
 </section>`
 });Vvveb.Sections.add("team/team-2", {
     name: "Team 2",
-    image: Vvveb.themeBaseUrl + "/screenshots/team/team-2-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/team/team-2-thumb.jpeg",
     html: `<section class="py-5 team-2" title="team-2">
   <div class="container">
     <div class="row justify-content-center mb-4">
@@ -6037,7 +6028,7 @@ Vvveb.Sections.add("team/team-1", {
 </section>`
 });Vvveb.Sections.add("team/team-3", {
     name: "Team 3",
-    image: Vvveb.themeBaseUrl + "/screenshots/team/team-3-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/team/team-3-thumb.jpeg",
     html: `<section class="py-5" title="team-5">
   <div class="container">
     <div class="row justify-content-center mb-4">
@@ -6228,7 +6219,7 @@ Vvveb.Sections.add("team/team-1", {
 </section>`
 });Vvveb.Sections.add("team/team-4", {
     name: "Team 4",
-    image: Vvveb.themeBaseUrl + "/screenshots/team/team-4-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/team/team-4-thumb.jpeg",
     html: `<section class="py-5" title="team-6">
   <div class="container">
     <div class="row justify-content-center mb-4">
@@ -6372,7 +6363,7 @@ Vvveb.Sections.add("team/team-1", {
 </section>`
 });Vvveb.Sections.add("team/team-5", {
     name: "Team 5",
-    image: Vvveb.themeBaseUrl + "/screenshots/team/team-5-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/team/team-5-thumb.jpeg",
     html: `<section class="py-5" title="team-7">
   <div class="container">
     <div class="row justify-content-center mb-4">
@@ -6574,7 +6565,7 @@ Vvveb.Sections.add("team/team-1", {
 </section>`
 });Vvveb.Sections.add("team/team-6", {
     name: "Team 6",
-    image: Vvveb.themeBaseUrl + "/screenshots/team/team-6-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/team/team-6-thumb.jpeg",
     html: `<section class="p-4" title="team-11">
   <div class="container">
     <div class="row text-center">
@@ -6732,7 +6723,7 @@ Vvveb.Sections.add("team/team-1", {
 	Vvveb.SectionsGroup["Team"] = ["team/team-1","team/team-2","team/team-3","team/team-4","team/team-5","team/team-6"];
 Vvveb.Sections.add("testimonials/testimonials-1", {
     name: "Testimonials 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/testimonials/testimonials-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/testimonials/testimonials-1-thumb.jpeg",
     html: `<section class="testimonials-1 bg-alternate" title="testimonials-1">
   <div class="container">
     <div class="row justify-content-center mb-4">
@@ -6826,7 +6817,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
 </section>`
 });Vvveb.Sections.add("testimonials/testimonials-2", {
     name: "Testimonials 2",
-    image: Vvveb.themeBaseUrl + "/screenshots/testimonials/testimonials-2-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/testimonials/testimonials-2-thumb.jpeg",
     html: `<section class="py-5" title="testimonials-2">
   <div class="container">
     <div class="row justify-content-center mb-4">
@@ -6957,7 +6948,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
 </section>`
 });Vvveb.Sections.add("testimonials/testimonials-3", {
     name: "Testimonials 3",
-    image: Vvveb.themeBaseUrl + "/screenshots/testimonials/testimonials-3-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/sections/testimonials/testimonials-3-thumb.jpeg",
     html: `<section class="py-5 team-2" title="testimonials-3">
   <div class="container">
     <div class="row justify-content-center mb-4">
