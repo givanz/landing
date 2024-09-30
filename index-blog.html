@@ -623,20 +623,27 @@
           </li>
         </ul>
 
-        <div class="search-area toggle-hover">
-          <form action="/search" method="get" data-v-action="/search">
-            <input type="hidden" name="route" value="search">
-            <div class="input-group">
-              <input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
-              <button class="btn border-0" type="submit" title="Search">
-                <div class="la-flip-horizontal">
-                  <i class="la la-search la-lg" aria-hidden="true"></i>
-                </div>
-              </button>
-            </div>
-          </form>
-        </div>
+        <button class="btn btn-outline-secondary border-0" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
+          <div class="la-flip-horizontal">
+            <i class="la la-search la-lg" aria-hidden="true"></i>
+          </div>
+        </button>
 
+        <!--
+	<div class="search-area toggle-hover">
+		<form action="/search" method="get" data-v-action="/search">
+			<input type="hidden" name="route" value="search">
+			<div class="input-group">
+				<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
+				<button class="btn border-0" type="submit" title="Search">
+					<div class="la-flip-horizontal">
+						<i class="la la-search la-lg" aria-hidden="true"></i>
+					</div>
+				</button>
+			</div>			  
+		</form>
+	</div>
+-->
       </div>
 
 
@@ -865,7 +872,7 @@
 
               <li class="page-item pager-prev" data-prev>
 
-                <a class="page-link" href="#" aria-label="Previous" title="Previous page" data-page-url data-v-if="current_page > 1">
+                <a class="page-link" href="#" aria-label="Previous" title="Previous page" data-page-url data-scroll="top" data-v-if="current_page > 1">
                   <span aria-hidden="true" class="la la-angle-left la-lg"></span>
                   <!-- <span>Newer Posts</span> -->
                 </a>
@@ -875,23 +882,23 @@
 
 
               <li class="page-item" data-page>
-                <a class="page-link" href="#" data-page-no data-page-url>1</a>
+                <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">1</a>
               </li>
               <li class="page-item" data-page>
-                <a class="page-link" href="#" data-page-no data-page-url>2</a>
+                <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">2</a>
               </li>
               <li class="page-item" data-page>
-                <a class="page-link" href="#" data-page-no data-page-url>3</a>
+                <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">3</a>
               </li>
               <li class="page-item" data-page>
-                <a class="page-link" href="#" data-page-no data-page-url>4</a>
+                <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">4</a>
               </li>
               <li class="page-item" data-page>
-                <a class="page-link" href="#" data-page-no data-page-url>5</a>
+                <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">5</a>
               </li>
 
               <li class="page-item pager-next" data-next>
-                <a class="page-link" href="#" aria-label="Next" title="Next page" data-page-url data-v-if="current_page < pagecount">
+                <a class="page-link" href="#" aria-label="Next" title="Next page" data-page-url data-scroll="top" data-v-if="current_page < pagecount">
                   <!-- <span>Older Posts</span> -->
                   <span aria-hidden="true" class="la la-angle-right la-lg"></span>
                 </a>
@@ -1059,6 +1066,33 @@
     <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
   </div>
 </div>
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+
+        <form>
+          <input type="hidden" name="route" value="search">
+          <div class="input-group">
+            <input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
+            <button class="btn btn-outline-primary border" type="submit" title="Search">
+              <div class="la-flip-horizontal">
+                <i class="la la-search la-lg" aria-hidden="true"></i>
+              </div>
+            </button>
+          </div>
+        </form>
+
+        <div class="search-results">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Vvveb Common Js -->
 <script id="popper-js" src="../../js/popper.min.js"></script>

@@ -708,6 +708,33 @@
     </div>
   </div>
 
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <form>
+            <input type="hidden" name="route" value="search">
+            <div class="input-group">
+              <input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
+              <button class="btn btn-outline-primary border" type="submit" title="Search">
+                <div class="la-flip-horizontal">
+                  <i class="la la-search la-lg" aria-hidden="true"></i>
+                </div>
+              </button>
+            </div>
+          </form>
+
+          <div class="search-results">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Vvveb Common Js -->
   <script id="popper-js" src="../../js/popper.min.js"></script>
   <!-- <script src="../../js/bootstrap.min.js"></script> -->

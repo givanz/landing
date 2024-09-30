@@ -121,6 +121,93 @@
 
 @@include('../_includes/footer.html')
 
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        
+        <form >
+		  <input type="hidden" name="route" value="search">
+		  <div class="input-group">
+			<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
+			<button class="btn btn-outline-primary border" type="submit" title="Search">
+			  <div class="la-flip-horizontal">
+				<i class="la la-search la-lg" aria-hidden="true"></i>
+			  </div>
+			</button>
+		  </div>
+		</form>
+		
+		<div class="search-results">
+			
+			<div data-v-component-products data-v-limit="6" data-v-search="url" data-v-search_boolean="true" data-v-page="url" data-v-type="" data-v-taxonomy_item_id="url" data-v-image_size="thumb">
+			<div data-v-component-posts  data-v-limit="6" data-v-search="url" data-v-search_boolean="true" data-v-type="" data-v-image_size="thumb">
+				
+				<div class="products mt-2" data-v-if="products.search && products.count > 0">
+					<span class="small text-muted">Products</span>
+					<div class="border">
+						<div class="search-item" data-v-product>
+							<a href="" data-v-product-url>
+								<img src="img/demo/product.jpg" width="48" data-v-product-image>
+								<span data-v-product-name>Product</span>
+							</a>
+						</div>
+						<div class="search-item" data-v-product>
+							<a href="" data-v-product-url>
+								<img src="img/demo/product.jpg" width="48" data-v-product-image>
+								<span data-v-product-name>Product</span>
+							</a>
+						</div>
+						<div class="search-item" data-v-product>
+							<a href="" data-v-product-url>
+								<img src="img/demo/product.jpg" width="48" data-v-product-image>
+								<span data-v-product-name>Product</span>
+							</a>
+						</div>
+						
+						<div class="small p-1" data-v-if="products.count <= 0">
+							No products found!
+						</div>
+					</div>
+				</div>
+				
+				<div class="posts mt-2" data-v-if="posts.search">
+					<span class="small text-muted">Pages</span>
+					<div class="border">
+						<div class="search-item" data-v-post>
+							<a href="" data-v-post-url class="flex">
+								<img src="img/demo/video-1.jpg"  width="48"  data-v-post-image data-v-if="post.image">
+								<span data-v-post-name>Post</span>
+							</a>
+						</div>
+						<div class="search-item" data-v-post>
+							<a href="" data-v-post-url class="flex">
+								<img src="img/demo/video-1.jpg"  width="48"  data-v-post-image data-v-if="post.image">
+								<span data-v-post-name>Post</span>
+							</a>
+						</div>
+						<div class="search-item" data-v-post>
+							<a href="" data-v-post-url class="flex">
+								<img src="img/demo/video-1.jpg"  width="48"  data-v-post-image data-v-if="post.image">
+								<span data-v-post-name>Post</span>
+							</a>
+						</div>
+						<div class="small p-1" data-v-if="posts.count <= 0">
+							No posts found!
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			</div>
+		</div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
 @@include('../_includes/footer-scripts.html')
 
 <script>

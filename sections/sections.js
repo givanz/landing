@@ -27,9 +27,6 @@ Vvveb.Sections.add("hero/hero-1", {
         </div>
       </div>
 
-      <i class="text-muted">
-        <small>* Note: Beta Version</small>
-      </i>
     </div>
 
     <div class="frame mx-auto">
@@ -2747,7 +2744,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
                             </div>
 
                             <div class="subscription" data-v-if="product.subscription">
-                              <span data-v-product-subscription-name>Subscription plan</span>
+                              <span>Subscription plan</span>:
+                              <span data-v-cart-product-subscription_name>Subscription plan</span>
                             </div>
                           </td>
                           <td class="text-end">
@@ -2865,20 +2863,27 @@ Vvveb.Sections.add("navigation/navigation-1", {
           </li>
         </ul>
 
-        <div class="search-area toggle-hover">
-          <form action="/search" method="get" data-v-action="/search">
-            <input type="hidden" name="route" value="search">
-            <div class="input-group">
-              <input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
-              <button class="btn border-0" type="submit" title="Search">
-                <div class="la-flip-horizontal">
-                  <i class="la la-search la-lg" aria-hidden="true"></i>
-                </div>
-              </button>
-            </div>
-          </form>
-        </div>
+        <button class="btn btn-outline-secondary border-0" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
+          <div class="la-flip-horizontal">
+            <i class="la la-search la-lg" aria-hidden="true"></i>
+          </div>
+        </button>
 
+        <!--
+	<div class="search-area toggle-hover">
+		<form action="/search" method="get" data-v-action="/search">
+			<input type="hidden" name="route" value="search">
+			<div class="input-group">
+				<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
+				<button class="btn border-0" type="submit" title="Search">
+					<div class="la-flip-horizontal">
+						<i class="la la-search la-lg" aria-hidden="true"></i>
+					</div>
+				</button>
+			</div>			  
+		</form>
+	</div>
+-->
       </div>
 
 
@@ -3229,7 +3234,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
                             </div>
 
                             <div class="subscription" data-v-if="product.subscription">
-                              <span data-v-product-subscription-name>Subscription plan</span>
+                              <span>Subscription plan</span>:
+                              <span data-v-cart-product-subscription_name>Subscription plan</span>
                             </div>
                           </td>
                           <td class="text-end">
@@ -3347,20 +3353,27 @@ Vvveb.Sections.add("navigation/navigation-1", {
           </li>
         </ul>
 
-        <div class="search-area toggle-hover">
-          <form action="/search" method="get" data-v-action="/search">
-            <input type="hidden" name="route" value="search">
-            <div class="input-group">
-              <input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
-              <button class="btn border-0" type="submit" title="Search">
-                <div class="la-flip-horizontal">
-                  <i class="la la-search la-lg" aria-hidden="true"></i>
-                </div>
-              </button>
-            </div>
-          </form>
-        </div>
+        <button class="btn btn-outline-secondary border-0" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
+          <div class="la-flip-horizontal">
+            <i class="la la-search la-lg" aria-hidden="true"></i>
+          </div>
+        </button>
 
+        <!--
+	<div class="search-area toggle-hover">
+		<form action="/search" method="get" data-v-action="/search">
+			<input type="hidden" name="route" value="search">
+			<div class="input-group">
+				<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
+				<button class="btn border-0" type="submit" title="Search">
+					<div class="la-flip-horizontal">
+						<i class="la la-search la-lg" aria-hidden="true"></i>
+					</div>
+				</button>
+			</div>			  
+		</form>
+	</div>
+-->
       </div>
 
     </div>
@@ -3842,7 +3855,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
                             </div>
 
                             <div class="subscription" data-v-if="product.subscription">
-                              <span data-v-product-subscription-name>Subscription plan</span>
+                              <span>Subscription plan</span>:
+                              <span data-v-cart-product-subscription_name>Subscription plan</span>
                             </div>
                           </td>
                           <td class="text-end">
@@ -3960,20 +3974,27 @@ Vvveb.Sections.add("navigation/navigation-1", {
           </li>
         </ul>
 
-        <div class="search-area toggle-hover">
-          <form action="/search" method="get" data-v-action="/search">
-            <input type="hidden" name="route" value="search">
-            <div class="input-group">
-              <input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
-              <button class="btn border-0" type="submit" title="Search">
-                <div class="la-flip-horizontal">
-                  <i class="la la-search la-lg" aria-hidden="true"></i>
-                </div>
-              </button>
-            </div>
-          </form>
-        </div>
+        <button class="btn btn-outline-secondary border-0" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
+          <div class="la-flip-horizontal">
+            <i class="la la-search la-lg" aria-hidden="true"></i>
+          </div>
+        </button>
 
+        <!--
+	<div class="search-area toggle-hover">
+		<form action="/search" method="get" data-v-action="/search">
+			<input type="hidden" name="route" value="search">
+			<div class="input-group">
+				<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
+				<button class="btn border-0" type="submit" title="Search">
+					<div class="la-flip-horizontal">
+						<i class="la la-search la-lg" aria-hidden="true"></i>
+					</div>
+				</button>
+			</div>			  
+		</form>
+	</div>
+-->
       </div>
 
 

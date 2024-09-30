@@ -9761,6 +9761,22 @@ audio, video {
 .search-area.toggle-hover:hover button[type=submit] {
   background-color: var(--bs-primary-bg-subtle); }
 
+.search-results {
+  font-size: 14px; }
+  .search-results .search-item {
+    border-bottom: 1px solid var(--bs-border-color);
+    min-height: 48px;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center; }
+    .search-results .search-item a {
+      display: block;
+      width: 100%; }
+    .search-results .search-item:hover {
+      background: var(--bs-primary-bg-subtle); }
+    .search-results .search-item:last-child {
+      border: none; }
+
 .card-default {
   box-shadow: 0 4px 40px rgba(var(--bs-body-color-rgb), 0.07), inset 0 -1px 0 rgba(var(--bs-body-color-rgb), 0.07);
   box-shadow: 0px 3px 21px 5px rgba(var(--bs-body-color-rgb), 0.03), 0px 3px 3px 0px rgba(var(--bs-body-color-rgb), 0.03), rgba(29, 48, 61, 0.01) 0px 16px 40px 0px;
