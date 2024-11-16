@@ -711,7 +711,7 @@
   </div>
 
   <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-body">
 
@@ -765,7 +765,7 @@
 </script>
 
 
-  <header class="hero-slider" title="hero-slider">
+  <header class="hero-slider" aria-label="hero-slider">
 
 
     <div class="swiper" data-slides-per-view="1" data-draggable="true">
@@ -936,7 +936,7 @@ initSwiper();
   </header>
 
 
-  <section class="showcase-3" title="showcase-3">
+  <section class="showcase-3" aria-label="showcase-3">
     <div class="container">
       <div class="row g-1 justify-content-center">
         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
@@ -999,7 +999,7 @@ initSwiper();
   </section>
 
 
-  <section class="features-1 bg-alternate" title="features-1">
+  <section class="features-1 bg-alternate" aria-label="features-1">
     <div class="container">
       <div class="row wrap">
         <div class="col-md-7 align-self-center">
@@ -1045,7 +1045,7 @@ initSwiper();
   </section>
 
 
-  <section class="products-1" title="latest-products-1">
+  <section class="products-1" aria-label="latest-products-1">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -1098,14 +1098,21 @@ initSwiper();
                 <span data-v-product-name>Product 8</span>
               </a>
 
-              <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
               <!-- Hover Content -->
-              <div class="hover-content" data-v-if="_product.price > 0">
+              <div class="hover-content" data-v-if="prod.price > 0">
                 <!-- Add to Cart -->
                 <div class="add-to-cart-btn">
                   <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                  <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                  <a href="javascript:void();" class="btn btn-danger w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                    <span class="button-text">
+                      Out of stock
+                    </span>
+                  </a>
+
+                  <a href="" class="btn btn-primary w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                     <span class="loading d-none">
                       <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                       <span>Add to cart</span>...
@@ -1161,14 +1168,21 @@ initSwiper();
                 <span data-v-product-name>Product 8</span>
               </a>
 
-              <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
               <!-- Hover Content -->
-              <div class="hover-content" data-v-if="_product.price > 0">
+              <div class="hover-content" data-v-if="prod.price > 0">
                 <!-- Add to Cart -->
                 <div class="add-to-cart-btn">
                   <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                  <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                  <a href="javascript:void();" class="btn btn-danger w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                    <span class="button-text">
+                      Out of stock
+                    </span>
+                  </a>
+
+                  <a href="" class="btn btn-primary w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                     <span class="loading d-none">
                       <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                       <span>Add to cart</span>...
@@ -1224,14 +1238,21 @@ initSwiper();
                 <span data-v-product-name>Product 8</span>
               </a>
 
-              <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
               <!-- Hover Content -->
-              <div class="hover-content" data-v-if="_product.price > 0">
+              <div class="hover-content" data-v-if="prod.price > 0">
                 <!-- Add to Cart -->
                 <div class="add-to-cart-btn">
                   <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                  <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                  <a href="javascript:void();" class="btn btn-danger w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                    <span class="button-text">
+                      Out of stock
+                    </span>
+                  </a>
+
+                  <a href="" class="btn btn-primary w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                     <span class="loading d-none">
                       <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                       <span>Add to cart</span>...
@@ -1287,14 +1308,21 @@ initSwiper();
                 <span data-v-product-name>Product 8</span>
               </a>
 
-              <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
               <!-- Hover Content -->
-              <div class="hover-content" data-v-if="_product.price > 0">
+              <div class="hover-content" data-v-if="prod.price > 0">
                 <!-- Add to Cart -->
                 <div class="add-to-cart-btn">
                   <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                  <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                  <a href="javascript:void();" class="btn btn-danger w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                    <span class="button-text">
+                      Out of stock
+                    </span>
+                  </a>
+
+                  <a href="" class="btn btn-primary w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                     <span class="loading d-none">
                       <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                       <span>Add to cart</span>...
@@ -1350,14 +1378,21 @@ initSwiper();
                 <span data-v-product-name>Product 8</span>
               </a>
 
-              <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
               <!-- Hover Content -->
-              <div class="hover-content" data-v-if="_product.price > 0">
+              <div class="hover-content" data-v-if="prod.price > 0">
                 <!-- Add to Cart -->
                 <div class="add-to-cart-btn">
                   <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                  <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                  <a href="javascript:void();" class="btn btn-danger w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                    <span class="button-text">
+                      Out of stock
+                    </span>
+                  </a>
+
+                  <a href="" class="btn btn-primary w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                     <span class="loading d-none">
                       <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                       <span>Add to cart</span>...
@@ -1413,14 +1448,21 @@ initSwiper();
                 <span data-v-product-name>Product 8</span>
               </a>
 
-              <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
               <!-- Hover Content -->
-              <div class="hover-content" data-v-if="_product.price > 0">
+              <div class="hover-content" data-v-if="prod.price > 0">
                 <!-- Add to Cart -->
                 <div class="add-to-cart-btn">
                   <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                  <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                  <a href="javascript:void();" class="btn btn-danger w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                    <span class="button-text">
+                      Out of stock
+                    </span>
+                  </a>
+
+                  <a href="" class="btn btn-primary w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                     <span class="loading d-none">
                       <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                       <span>Add to cart</span>...
@@ -1476,14 +1518,21 @@ initSwiper();
                 <span data-v-product-name>Product 8</span>
               </a>
 
-              <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
               <!-- Hover Content -->
-              <div class="hover-content" data-v-if="_product.price > 0">
+              <div class="hover-content" data-v-if="prod.price > 0">
                 <!-- Add to Cart -->
                 <div class="add-to-cart-btn">
                   <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                  <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                  <a href="javascript:void();" class="btn btn-danger w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                    <span class="button-text">
+                      Out of stock
+                    </span>
+                  </a>
+
+                  <a href="" class="btn btn-primary w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                     <span class="loading d-none">
                       <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                       <span>Add to cart</span>...
@@ -1539,14 +1588,21 @@ initSwiper();
                 <span data-v-product-name>Product 8</span>
               </a>
 
-              <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
               <!-- Hover Content -->
-              <div class="hover-content" data-v-if="_product.price > 0">
+              <div class="hover-content" data-v-if="prod.price > 0">
                 <!-- Add to Cart -->
                 <div class="add-to-cart-btn">
                   <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                  <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                  <a href="javascript:void();" class="btn btn-danger w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                    <span class="button-text">
+                      Out of stock
+                    </span>
+                  </a>
+
+                  <a href="" class="btn btn-primary w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                     <span class="loading d-none">
                       <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                       <span>Add to cart</span>...
@@ -1571,7 +1627,7 @@ initSwiper();
   </section>
 
 
-  <section class="testimonials-1 bg-alternate" title="testimonials-1">
+  <section class="testimonials-1 bg-alternate" aria-label="testimonials-1">
     <div class="container">
       <div class="row justify-content-center mb-4">
         <div class="col-md-7 text-center">
@@ -1664,7 +1720,7 @@ initSwiper();
   </section>
 
 
-  <section class="pricing-table-3" title="pricing-table-3">
+  <section class="pricing-table-3" aria-label="pricing-table-3">
     <div class="container">
       <div class="row justify-content-center pb-2">
         <div class="col-md-7 heading-section text-center">
@@ -1777,7 +1833,7 @@ initSwiper();
   </section>
 
 
-  <section class="posts-1" title="latest-post-1">
+  <section class="posts-1" aria-label="latest-post-1">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -2168,7 +2224,7 @@ initSwiper();
           </div>
           <div class="text-muted">
             &copy; <span data-v-year>2023</span>
-            <span data-v-global-site.title>Vvveb</span>. <span>Powered by</span>
+            <span data-v-global-site.description.title>Vvveb</span>. <span>Powered by</span>
             <a href="https://vvveb.com" class="btn-link text-muted" target="_blank">Vvveb</a>
           </div>
         </div>

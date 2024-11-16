@@ -747,14 +747,21 @@
                                 <span data-v-product-name>Product 8</span>
                               </a>
 
-                              <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+                              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
                               <!-- Hover Content -->
-                              <div class="hover-content" data-v-if="_product.price > 0">
+                              <div class="hover-content" data-v-if="prod.price > 0">
                                 <!-- Add to Cart -->
                                 <div class="add-to-cart-btn">
                                   <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                                  <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                                  <a href="javascript:void();" class="btn btn-danger w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                                    <span class="button-text">
+                                      Out of stock
+                                    </span>
+                                  </a>
+
+                                  <a href="" class="btn btn-primary w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
                                     <span class="loading d-none">
                                       <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
                                       <span>Add to cart</span>...
@@ -1259,7 +1266,7 @@
           </div>
           <div class="text-muted">
             &copy; <span data-v-year>2023</span>
-            <span data-v-global-site.title>Vvveb</span>. <span>Powered by</span>
+            <span data-v-global-site.description.title>Vvveb</span>. <span>Powered by</span>
             <a href="https://vvveb.com" class="btn-link text-muted" target="_blank">Vvveb</a>
           </div>
         </div>
@@ -1300,18 +1307,21 @@
                       <a href="" data-v-product-url>
                         <img src="img/demo/product.jpg" width="48" data-v-product-image>
                         <span data-v-product-name>Product</span>
+                        <span class="p-2 small text-muted float-end " data-v-if="prod.price > 0" data-v-product-price_tax_formatted="">$256.99</span>
                       </a>
                     </div>
                     <div class="search-item" data-v-product>
                       <a href="" data-v-product-url>
                         <img src="img/demo/product.jpg" width="48" data-v-product-image>
                         <span data-v-product-name>Product</span>
+                        <span class="p-2 small text-muted float-end " data-v-if="prod.price > 0" data-v-product-price_tax_formatted="">$256.99</span>
                       </a>
                     </div>
                     <div class="search-item" data-v-product>
                       <a href="" data-v-product-url>
                         <img src="img/demo/product.jpg" width="48" data-v-product-image>
                         <span data-v-product-name>Product</span>
+                        <span class="p-2 small text-muted float-end " data-v-if="prod.price > 0" data-v-product-price_tax_formatted="">$256.99</span>
                       </a>
                     </div>
 
@@ -1372,7 +1382,7 @@
   </div>
 
   <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-body">
 

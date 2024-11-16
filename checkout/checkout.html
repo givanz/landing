@@ -774,6 +774,7 @@
                   </div>
 
                   <div class="text-end">
+                    <a href="#recover" target="_blank" data-v-url="user/reset/index" class="text-muted me-3">Forgot your password?</a>
 
                     <button type="submit" name="login" value="Login" class="btn btn-primary">
 
@@ -959,7 +960,7 @@
                           <div class="col-6 mb-3">
                             <label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span>
                             </label>
-                            <input type="text" class="form-control" id="billing_post_code" name="billing_address[post_code]" autocomplete="billing postal-code" minlength="3" maxlength="10" autocomplete="billing postal-code" value="">
+                            <input type="text" class="form-control" id="billing_post_code" name="billing_address[post_code]" autocomplete="billing postal-code" minlength="3" maxlength="10" autocomplete="billing postal-code" value="" required>
                           </div>
                           <div class="col-6 mb-3">
                             <label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span>
@@ -1032,7 +1033,7 @@
                         <div class="col-md-6 mb-3">
                           <label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span>
                           </label>
-                          <input type="text" class="form-control" id="shipping_post_code" name="shipping_address[post_code]" autocomplete="shipping postal-code" minlength="3" maxlength="10" value="" autocomplete="shipping  postal-code" autocomplete="shipping  postal-code" required>
+                          <input type="text" class="form-control" id="shipping_post_code" name="shipping_address[post_code]" autocomplete="shipping postal-code" minlength="3" maxlength="10" value="" autocomplete="shipping  postal-code" required>
                         </div>
                         <div class="col-md-6 mb-3">
                           <label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span>
@@ -1541,7 +1542,7 @@
           </div>
           <div class="text-muted">
             &copy; <span data-v-year>2023</span>
-            <span data-v-global-site.title>Vvveb</span>. <span>Powered by</span>
+            <span data-v-global-site.description.title>Vvveb</span>. <span>Powered by</span>
             <a href="https://vvveb.com" class="btn-link text-muted" target="_blank">Vvveb</a>
           </div>
         </div>
@@ -1567,7 +1568,7 @@
   </div>
 
   <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-body">
 

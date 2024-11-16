@@ -51,13 +51,14 @@ document.addEventListener('click', function (e) {
 			let updateElements = [".cart-right-column", ".mini-cart"];
 
 			product.classList.add("opacity-50");
-			delay(() => VvvebTheme.Cart.remove(key, element, updateElements, () => product.remove()), 500);
-			//if cart empty refresh page, if not empty prevent refresh and update with ajax
-			if (document.querySelectorAll("#cart-container [data-v-cart-product]").length > 1) {
-				e.preventDefault();
-			} else {
-				//return;
-			}
+			VvvebTheme.Cart.remove(key, element, updateElements, () => {
+				product.remove();
+				//if cart empty refresh page
+				if (document.querySelectorAll("#cart-container [data-v-cart-product]").length == 0 ) {
+					location.reload();
+				}
+			});
+			e.preventDefault();
 		}
 	}
 });

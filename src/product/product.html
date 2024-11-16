@@ -7,7 +7,7 @@
     <main id="site-content" role="main" class="container product" data-v-component-product>
 	
 		@@include('../_includes/breadcrumb.html')
-
+		
         <div class="row g-0 mb-4">
 			<div class="col-md-6 col-sm-12">
 			
@@ -79,10 +79,15 @@
 					</a>
 				</div>
 
-				<div data-v-if="product.vendor_id">
+				<div>
 					<span class="text-muted">Availability</span>
 					<span data-v-product-stock_status_name>In stock</span>
 				</div>
+				
+				<div data-v-if="product.stock_quantity < 1">
+					<span class="text-muted">Stock</span>
+					<span class="badge text-bg-danger">Out of stock</span>
+				</div>				
 				
 				
 				
@@ -155,12 +160,12 @@
 										<div class="quantity">
 											<div class="input-group spinner">
 												<button class="btn btn-minus" type="button"><i class="la la-minus"></i></button>
-												<input type="number" name="quantity" value="1" size="1" id="input-quantity" class="form-control">
+												<input type="number" name="quantity" value="1" size="1" min="{$product.minimum_quantity}" max="{$product.stock_quantity}" id="input-quantity" class="form-control">
 												<button class="btn btn-plus" type="button"><i class="la la-plus"></i></button>
 											</div>
 										</div>
 
-										<button type="submit" formaction="/cart/1" id="button-cart" class="btn btn-primary btn-shadow px-4 mx-2 button-cart" data-v-vvveb-action="addToCart" data-v-product-add_cart_url>
+										<button data-v-attr-if-disabled="product.stock_quantity < 1" type="submit" formaction="/cart/1" id="button-cart" class="btn btn-primary btn-shadow px-4 mx-2 button-cart" data-v-vvveb-action="addToCart" data-v-product-add_cart_url>
 										
 											<span class="loading d-none">
 												<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -176,7 +181,7 @@
 									</div> 
 
 									<div class="mt-4 d-inline-block">
-										<button type="submit" formaction="/checkout/1" id="buynow" class="btn btn-light btn-shadow border px-4 buynow" data-v-product-buy_url>
+										<button data-v-attr-if-disabled="product.stock_quantity < 1" type="submit" formaction="/checkout/1" id="buynow" class="btn btn-light btn-shadow border px-4 buynow" data-v-product-buy_url>
 										
 											<span class="loading d-none">
 												<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">

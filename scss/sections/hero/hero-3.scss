@@ -48,12 +48,12 @@
 			align-items: center;
 		}
 	}
-	h1.heading {
+	.heading {
 		//font-size: 60px;
 		font-weight: 700;
-		color: var(--bs-light);
+		//color: var(--bs-light);
 	}
-	h2 {
+	h1, h2, h3, h4, h5, h6 {
 		//font-size: 32px;
 		color: var(--bs-light);
     }
