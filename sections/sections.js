@@ -2501,14 +2501,14 @@ Vvveb.Sections.add("navigation/navigation-1", {
           </li>
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown user-box nav-item">
+            <div class="dropdown nav-item">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="img/user.svg" loading="lazy" width="20" alt> -->
                 <i class="la la-lg la-user"></i>
                 <span class="visually-hidden">User</span>
               </a>
 
-              <div class="dropdown-menu dropdown-menu-end login-box p-4" aria-labelledby="user-dropdown">
+              <div class="dropdown-menu dropdown-menu-end login-box user-box p-4" aria-labelledby="user-dropdown">
 
                 <div data-v-component-user>
 
@@ -2580,12 +2580,20 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
                       <div class="mb-3">
                         <label class="form-label" for="input-email">E-Mail Address</label>
-                        <input type="email" name="email" value placeholder="E-Mail Address" id="input-email" class="form-control" required>
+                        <input type="email" name="email" value placeholder="E-Mail Address" id="user-email" class="form-control" data-v-user-email required>
                       </div>
 
                       <div class="mb-3">
                         <label class="form-label" for="input-password">Password</label>
-                        <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" name="password" value="" placeholder="Password" id="input-password" class="form-control" required>
+
+                        <div class="input-group">
+                          <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password" id="user-password" name="password" value="" aria-label="Password" required>
+                          <div class="input-group-append">
+                            <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'user-password')">
+                              <i class="la la-eye-slash"></i>
+                            </button>
+                          </div>
+                        </div>
                       </div>
 
                       <button type="submit" value="Login" class="btn btn-primary btn-login w-100">
@@ -2618,7 +2626,10 @@ Vvveb.Sections.add("navigation/navigation-1", {
 		</a> -->
                       <hr>
                       <span>Don’t have an account?</span>
+                      <br>
                       <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
+                      <span class="text-body-tertiary">|</span>
+                      <a href="/user/login" data-v-url="user/login/index">Login</a>
 
                     </div>
 
@@ -2689,6 +2700,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                       </button>
                     </div>
                   </form>
+
 
                 </div>
               </div>
@@ -2991,14 +3003,14 @@ Vvveb.Sections.add("navigation/navigation-1", {
           </li>
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown user-box nav-item">
+            <div class="dropdown nav-item">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="img/user.svg" loading="lazy" width="20" alt> -->
                 <i class="la la-lg la-user"></i>
                 <span class="visually-hidden">User</span>
               </a>
 
-              <div class="dropdown-menu dropdown-menu-end login-box p-4" aria-labelledby="user-dropdown">
+              <div class="dropdown-menu dropdown-menu-end login-box user-box p-4" aria-labelledby="user-dropdown">
 
                 <div data-v-component-user>
 
@@ -3070,12 +3082,20 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
                       <div class="mb-3">
                         <label class="form-label" for="input-email">E-Mail Address</label>
-                        <input type="email" name="email" value placeholder="E-Mail Address" id="input-email" class="form-control" required>
+                        <input type="email" name="email" value placeholder="E-Mail Address" id="user-email" class="form-control" data-v-user-email required>
                       </div>
 
                       <div class="mb-3">
                         <label class="form-label" for="input-password">Password</label>
-                        <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" name="password" value="" placeholder="Password" id="input-password" class="form-control" required>
+
+                        <div class="input-group">
+                          <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password" id="user-password" name="password" value="" aria-label="Password" required>
+                          <div class="input-group-append">
+                            <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'user-password')">
+                              <i class="la la-eye-slash"></i>
+                            </button>
+                          </div>
+                        </div>
                       </div>
 
                       <button type="submit" value="Login" class="btn btn-primary btn-login w-100">
@@ -3108,7 +3128,10 @@ Vvveb.Sections.add("navigation/navigation-1", {
 		</a> -->
                       <hr>
                       <span>Don’t have an account?</span>
+                      <br>
                       <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
+                      <span class="text-body-tertiary">|</span>
+                      <a href="/user/login" data-v-url="user/login/index">Login</a>
 
                     </div>
 
@@ -3179,6 +3202,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                       </button>
                     </div>
                   </form>
+
 
                 </div>
               </div>
@@ -3612,14 +3636,14 @@ Vvveb.Sections.add("navigation/navigation-1", {
           </li>
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown user-box nav-item">
+            <div class="dropdown nav-item">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="img/user.svg" loading="lazy" width="20" alt> -->
                 <i class="la la-lg la-user"></i>
                 <span class="visually-hidden">User</span>
               </a>
 
-              <div class="dropdown-menu dropdown-menu-end login-box p-4" aria-labelledby="user-dropdown">
+              <div class="dropdown-menu dropdown-menu-end login-box user-box p-4" aria-labelledby="user-dropdown">
 
                 <div data-v-component-user>
 
@@ -3691,12 +3715,20 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
                       <div class="mb-3">
                         <label class="form-label" for="input-email">E-Mail Address</label>
-                        <input type="email" name="email" value placeholder="E-Mail Address" id="input-email" class="form-control" required>
+                        <input type="email" name="email" value placeholder="E-Mail Address" id="user-email" class="form-control" data-v-user-email required>
                       </div>
 
                       <div class="mb-3">
                         <label class="form-label" for="input-password">Password</label>
-                        <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" name="password" value="" placeholder="Password" id="input-password" class="form-control" required>
+
+                        <div class="input-group">
+                          <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password" id="user-password" name="password" value="" aria-label="Password" required>
+                          <div class="input-group-append">
+                            <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'user-password')">
+                              <i class="la la-eye-slash"></i>
+                            </button>
+                          </div>
+                        </div>
                       </div>
 
                       <button type="submit" value="Login" class="btn btn-primary btn-login w-100">
@@ -3729,7 +3761,10 @@ Vvveb.Sections.add("navigation/navigation-1", {
 		</a> -->
                       <hr>
                       <span>Don’t have an account?</span>
+                      <br>
                       <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
+                      <span class="text-body-tertiary">|</span>
+                      <a href="/user/login" data-v-url="user/login/index">Login</a>
 
                     </div>
 
@@ -3800,6 +3835,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                       </button>
                     </div>
                   </form>
+
 
                 </div>
               </div>

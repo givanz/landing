@@ -75,3 +75,22 @@
 		}
 	}
 }
+
+
+
+@media (min-width: 768px) {
+.navbar-collapse {
+		display: flex !important;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.navbar-dark  .navbar-collapse {
+		background: var(--bs-body-color);
+		padding:1rem;
+	}
+	.navbar-collapse {
+		background: var(--bs-body-bg);
+	}
+}

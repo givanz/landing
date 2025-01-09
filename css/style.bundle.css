@@ -675,6 +675,17 @@ footer.footer-1 {
       .navigation-3 .navbar .dropdown-toggle::after {
         font-size: 60%; } }
 
+@media (min-width: 768px) {
+  .navbar-collapse {
+    display: flex !important; } }
+
+@media screen and (max-width: 767px) {
+  .navbar-dark .navbar-collapse {
+    background: var(--bs-body-color);
+    padding: 1rem; }
+  .navbar-collapse {
+    background: var(--bs-body-bg); } }
+
 @media screen and (min-width: 767px) {
   .navigation-4 {
     top: 0;
@@ -17432,6 +17443,207 @@ i.la {
   font-display: swap;
   src: url("../fonts/inter/InterDisplay-BlackItalic.woff2") format("woff2"); }
 
+@font-feature-values InterVariable {
+  @character-variant {
+    cv01: 1;
+    cv02: 2;
+    cv03: 3;
+    cv04: 4;
+    cv05: 5;
+    cv06: 6;
+    cv07: 7;
+    cv08: 8;
+    cv09: 9;
+    cv10: 10;
+    cv11: 11;
+    cv12: 12;
+    cv13: 13;
+    alt-1: 1;
+    /* Alternate one */
+    alt-3: 9;
+    /* Flat-top three */
+    open-4: 2;
+    /* Open four */
+    open-6: 3;
+    /* Open six */
+    open-9: 4;
+    /* Open nine */
+    lc-l-with-tail: 5;
+    /* Lower-case L with tail */
+    simplified-u: 6;
+    /* Simplified u */
+    alt-double-s: 7;
+    /* Alternate German double s */
+    uc-i-with-serif: 8;
+    /* Upper-case i with serif */
+    uc-g-with-spur: 10;
+    /* Capital G with spur */
+    single-story-a: 11;
+    /* Single-story a */
+    compact-lc-f: 12;
+    /* Compact f */
+    compact-lc-t: 13;
+    /* Compact t */ }
+  @styleset {
+    ss01: 1;
+    ss02: 2;
+    ss03: 3;
+    ss04: 4;
+    ss05: 5;
+    ss06: 6;
+    ss07: 7;
+    ss08: 8;
+    open-digits: 1;
+    /* Open digits */
+    disambiguation: 2;
+    /* Disambiguation (with zero) */
+    disambiguation-except-zero: 4;
+    /* Disambiguation (no zero) */
+    round-quotes-and-commas: 3;
+    /* Round quotes &amp; commas */
+    square-punctuation: 7;
+    /* Square punctuation */
+    square-quotes: 8;
+    /* Square quotes */
+    circled-characters: 5;
+    /* Circled characters */
+    squared-characters: 6;
+    /* Squared characters */ } }
+
+@font-feature-values Inter {
+  @character-variant {
+    cv01: 1;
+    cv02: 2;
+    cv03: 3;
+    cv04: 4;
+    cv05: 5;
+    cv06: 6;
+    cv07: 7;
+    cv08: 8;
+    cv09: 9;
+    cv10: 10;
+    cv11: 11;
+    cv12: 12;
+    cv13: 13;
+    alt-1: 1;
+    /* Alternate one */
+    alt-3: 9;
+    /* Flat-top three */
+    open-4: 2;
+    /* Open four */
+    open-6: 3;
+    /* Open six */
+    open-9: 4;
+    /* Open nine */
+    lc-l-with-tail: 5;
+    /* Lower-case L with tail */
+    simplified-u: 6;
+    /* Simplified u */
+    alt-double-s: 7;
+    /* Alternate German double s */
+    uc-i-with-serif: 8;
+    /* Upper-case i with serif */
+    uc-g-with-spur: 10;
+    /* Capital G with spur */
+    single-story-a: 11;
+    /* Single-story a */
+    compact-lc-f: 12;
+    /* Compact f */
+    compact-lc-t: 13;
+    /* Compact t */ }
+  @styleset {
+    ss01: 1;
+    ss02: 2;
+    ss03: 3;
+    ss04: 4;
+    ss05: 5;
+    ss06: 6;
+    ss07: 7;
+    ss08: 8;
+    open-digits: 1;
+    /* Open digits */
+    disambiguation: 2;
+    /* Disambiguation (with zero) */
+    disambiguation-except-zero: 4;
+    /* Disambiguation (no zero) */
+    round-quotes-and-commas: 3;
+    /* Round quotes &amp; commas */
+    square-punctuation: 7;
+    /* Square punctuation */
+    square-quotes: 8;
+    /* Square quotes */
+    circled-characters: 5;
+    /* Circled characters */
+    squared-characters: 6;
+    /* Squared characters */ } }
+
+@font-feature-values InterDisplay {
+  @character-variant {
+    cv01: 1;
+    cv02: 2;
+    cv03: 3;
+    cv04: 4;
+    cv05: 5;
+    cv06: 6;
+    cv07: 7;
+    cv08: 8;
+    cv09: 9;
+    cv10: 10;
+    cv11: 11;
+    cv12: 12;
+    cv13: 13;
+    alt-1: 1;
+    /* Alternate one */
+    alt-3: 9;
+    /* Flat-top three */
+    open-4: 2;
+    /* Open four */
+    open-6: 3;
+    /* Open six */
+    open-9: 4;
+    /* Open nine */
+    lc-l-with-tail: 5;
+    /* Lower-case L with tail */
+    simplified-u: 6;
+    /* Simplified u */
+    alt-double-s: 7;
+    /* Alternate German double s */
+    uc-i-with-serif: 8;
+    /* Upper-case i with serif */
+    uc-g-with-spur: 10;
+    /* Capital G with spur */
+    single-story-a: 11;
+    /* Single-story a */
+    compact-lc-f: 12;
+    /* Compact f */
+    compact-lc-t: 13;
+    /* Compact t */ }
+  @styleset {
+    ss01: 1;
+    ss02: 2;
+    ss03: 3;
+    ss04: 4;
+    ss05: 5;
+    ss06: 6;
+    ss07: 7;
+    ss08: 8;
+    open-digits: 1;
+    /* Open digits */
+    disambiguation: 2;
+    /* Disambiguation (with zero) */
+    disambiguation-except-zero: 4;
+    /* Disambiguation (no zero) */
+    round-quotes-and-commas: 3;
+    /* Round quotes &amp; commas */
+    square-punctuation: 7;
+    /* Square punctuation */
+    square-quotes: 8;
+    /* Square quotes */
+    circled-characters: 5;
+    /* Circled characters */
+    squared-characters: 6;
+    /* Squared characters */ } }
+
 /*
 @media screen and (max-width: 767px) {
 	.navbar-collapse.show {
@@ -17490,7 +17702,10 @@ i.la {
     .nav-item.dropdown .dropdown-menu-start {
       left: 0; }
     .nav-item.dropdown:hover > .dropdown-toggle + .dropdown-menu,
-    .nav-item.dropdown:hover > .dropdown-menu {
+    .nav-item.dropdown:hover > .dropdown-menu, .nav-item.dropdown:focus > .dropdown-toggle + .dropdown-menu,
+    .nav-item.dropdown:focus > .dropdown-menu, .nav-item.dropdown:focus-within > .dropdown-toggle + .dropdown-menu,
+    .nav-item.dropdown:focus-within > .dropdown-menu, .nav-item.dropdown:focus-visible > .dropdown-toggle + .dropdown-menu,
+    .nav-item.dropdown:focus-visible > .dropdown-menu {
       transform: translateY(0);
       opacity: 1;
       visibility: visible;

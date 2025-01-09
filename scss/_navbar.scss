@@ -73,7 +73,14 @@
 			left: 0;
 		}
 		
-		&:hover {
+		&:hover,
+		/*
+		&:active,
+		&:target 
+		*/ 
+		&:focus,
+		&:focus-within,
+		&:focus-visible{
 			> .dropdown-toggle + .dropdown-menu,
 			> .dropdown-menu  {
 				transform: translateY(0);
