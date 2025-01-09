@@ -22,7 +22,7 @@ const fileinclude = require('gulp-file-include');
 //const sass = require('gulp-sass')(require('sass'));
 const sass = require('gulp-sass')(require('node-sass'));
 const sassGlob = require('gulp-sass-glob');
-const formatHtml = require('gulp-format-html');
+const { formatHTML } = require('gulp-format-html');
 //const gutil = require('gulp-util');
 const rename = require("gulp-rename");
 const imageResize = require('gulp-image-resize');
@@ -52,7 +52,7 @@ gulp.task('fileinclude', function() {
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(formatHtml())
+    .pipe(formatHTML())
     .pipe( touch() )
     .pipe(gulp.dest('./'));
 });
