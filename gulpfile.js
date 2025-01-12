@@ -167,8 +167,9 @@ async function screenshots(type = "sections", dirs = []) {
 			head.append(base);
 		}, baseHref);
 		*/
-		const element = await page.$$("body > *");
-		//await page.screenshot({ path: screenshot, fullPage: true, type: 'png' });
+		
+		const element = await page.$$("body > div, body > section, body > header, body > footer");
+		//await page.screenshot({ path: screenshot, fullPage: false, type: 'png' });
 		await element[0].screenshot({ path: screenshot, type: 'png' });
 		
 		gulp.src(screenshot)

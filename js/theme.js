@@ -50,35 +50,46 @@ function setCookie(name, value) {
 
 let themeSwitch = document.querySelector("#color-theme-switch i");
 let theme = document.documentElement.dataset.bsTheme;
+let themeCookie = document.cookie.match(/theme=(.*?);/);
+if (themeCookie && themeCookie[1]) {
+	theme = themeCookie[1];
+}
+
 if (theme) {
 	if (theme == "dark") {
 		let themeSwitch = document.querySelector("#color-theme-switch i");
 		themeSwitch.classList.remove("la-sun")
 		themeSwitch.classList.add("la-moon");
+		document.documentElement.dataset.bsTheme = theme;
 	}
 }
 	
-themeSwitch.addEventListener("click", function (event) {
+
+document.addEventListener("click", function (e) { 
+	let link = e.target.closest("#color-theme-switch");	
+	if (link) {
+		let themeSwitch = link.querySelector("i");
+		let theme = document.documentElement.dataset.bsTheme;
 	
-	let theme = document.documentElement.dataset.bsTheme;
-	
-	if (theme == "dark") {
-		theme = "light";
-		themeSwitch.classList.remove("la-sun")
-		themeSwitch.classList.add("la-moon");
-	} else if (theme == "light" || theme == "auto" || !theme) {
-		theme = "dark";
-		themeSwitch.classList.remove("la-moon")
-		themeSwitch.classList.add("la-sun");
-	} else {
-		theme = "auto";
+		if (theme == "dark") {
+			theme = "light";
+			themeSwitch.classList.remove("la-moon");
+			themeSwitch.classList.add("la-sun");
+		} else if (theme == "light" || theme == "auto" || !theme) {
+			theme = "dark";
+			themeSwitch.classList.remove("la-sun");
+			themeSwitch.classList.add("la-moon");
+		} else {
+			theme = "auto";
+		}
+
+		document.documentElement.dataset.bsTheme = theme;
+		//localStorage.setItem("theme", theme);
+		setCookie("theme", theme);
+		//serverStorage.setItem();
 	}
-	
-	document.documentElement.dataset.bsTheme = theme;
-	//localStorage.setItem("theme", theme);
-	setCookie("theme", theme);
-	//serverStorage.setItem();
 });
+
 
 // product page
 document.querySelectorAll('.quantity').forEach(e => e.addEventListener('click', function (e) {
@@ -152,3 +163,12 @@ document.addEventListener("click", function (e) {
 		}
 	}
 });
+
+//theme ajax configuration
+
+//include elements that will be updated on ajax calls, include body > section to trigger whole page update if sections mismatch between different page structures
+VvvebTheme.ajax.siteContainer  = ["#site-content", ".inner-page-hero", "body > section"];
+//include posts, product and menu items for ajax
+//VvvebTheme.ajax.selector = "a[data-url], a[data-page-url], a[data-v-menu-item-url], a[data-v-post-url], a[data-v-product-url], a[data-v-cat-url], a[data-v-archive-url], a[data-v-admin-url], a[data-v-post-author-url], a[data-v-breadcrumb-item-url]"; 
+//skip home for dark hero and contact form for google js code
+//VvvebTheme.ajax.skipUrl = ["/", "/page/contact"];

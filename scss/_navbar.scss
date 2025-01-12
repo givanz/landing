@@ -25,6 +25,10 @@
 	.dropdown-menu {
 		box-shadow: 0 0 28px rgba(var(--bs-body-color-rgb),.2);
 		border: none;
+		
+		p:empty {
+			display: none;
+		}
 	}
 	
 	.nav-item.dropdown {

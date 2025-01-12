@@ -14889,6 +14889,8 @@ i.la {
   .dropdown-menu {
     box-shadow: 0 0 28px rgba(var(--bs-body-color-rgb), 0.2);
     border: none; }
+    .dropdown-menu p:empty {
+      display: none; }
   .nav-item.dropdown {
     /*
 		> .nav-link.dropdown-toggle {

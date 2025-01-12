@@ -61,25 +61,51 @@
  
   <div class="card-footer text-muted">
 	
-	<div  data-v-component-content-categories="blog-post" data-v-type="tags" data-v-post_id="url">
-		<div>
-			<ul data-v-cats class="tags">
-			  <li data-v-cat>
-				<a href="content/tag.html"  data-v-cat-url><span data-v-cat-name>tag 1</span></a>
-			  </li>
-			  <li data-v-cat>
-				<a href="content/tag.html"  data-v-cat-url><span data-v-cat-name>tag 2</span></a>
-			  </li>
-			  <li data-v-cat>
-				<a href="content/tag.html"  data-v-cat-url><span data-v-cat-name>tag 3</span></a>
-			  </li>
-			  <li data-v-cat>
-				<a href="content/tag.html"  data-v-cat-url><span data-v-cat-name>tag 4</span></a>
-			  </li>
-		</ul>
+		<div class="d-flex tags">
+			<div data-v-categories>
+				<div data-v-if="categories > 0" class="me-4"> 
+					<i class="la la-archive"></i>
+					<ul class="tags d-inline-block">
+						  <li data-v-categories-cat>
+							<a href="#" data-v-categories-cat-url>
+								<span data-v-categories-cat-name>cat 1</span>
+							</a>
+						  </li>
+						  <li data-v-categories-cat>
+							<a href="content/tag.html"  data-v-cat-url><span data-v-cat-name>tag 2</span></a>
+						  </li>
+						  <li data-v-categories-cat>
+							<a href="content/tag.html"  data-v-cat-url><span data-v-cat-name>tag 3</span></a>
+						  </li>
+						  <li data-v-categories-cat>
+							<a href="content/tag.html"  data-v-cat-url><span data-v-cat-name>tag 4</span></a>
+						  </li>
+					</ul>
+				</div>
+		  </div>
+		
+			<div data-v-tags>
+				<div data-v-if="tags > 0"> 
+				    <i class="la la-tag"></i>
+					<ul class="tags d-inline-block">
+						  <li data-v-tags-tag>
+							<a href="#"  data-v-tags-tag-url>
+								<span data-v-tags-tag-name>tag 1</span>
+							</a>
+						  </li>
+						  <li data-v-tags-tag>
+							<a href="#" data-v-tag-url><span data-v-cat-name>tag 2</span></a>
+						  </li>
+						  <li data-v-tags-tag>
+							<a href="#" data-v-tag-url><span data-v-cat-name>tag 3</span></a>
+						  </li>
+						  <li data-v-tags-tag>
+							<a href="#" data-v-tag-url><span data-v-cat-name>tag 4</span></a>
+						  </li>
+					</ul>
+			  </div>
+		  </div>
 	  </div>
-	</div>
-
 		
 		<!--
 		<a class="float-end" href="content/post.html" data-v-post-url><span>Read More </span></a>

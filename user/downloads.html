@@ -170,7 +170,7 @@
 
       <div class="container">
         <div data-v-component-site>
-          <a class="navbar-brand" href="/" data-v-url-params='{"host":"www.*.*"}'>
+          <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"www.*.*"}'>
             <span class="visually-hidden">Logo</span>
             <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
             <img src="img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
@@ -675,43 +675,43 @@
 
           <ul class="nav flex-column nav-pills me-4 user-nav">
             <li class="nav-item">
-              <a class="nav-link" href="user" data-v-url="user/index">
+              <a class="nav-link" href="user" data-url data-selector="#user-container" data-v-url="user/index">
                 <i class="la la-tachometer-alt la-lg me-1"></i>
                 <span>Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="user/orders" data-v-url="user/orders/index">
+              <a class="nav-link" href="user/orders" data-url data-selector="#user-container" data-v-url="user/orders/index">
                 <i class="la la-shopping-bag la-lg me-1"></i>
                 <span>Your Orders</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="user/profile" data-v-url="user/profile/index">
+              <a class="nav-link" href="user/profile" data-url data-selector="#user-container" data-v-url="user/profile/index">
                 <i class="la la-cogs la-lg me-1"></i>
                 <span>Settings</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="user/address" data-v-url="user/address/index">
+              <a class="nav-link" href="user/address" data-url data-selector="#user-container" data-v-url="user/address/index">
                 <i class="la la-map-pin la-lg me-1"></i>
                 <span>Address</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="user/downloads" data-v-url="user/downloads/index">
+              <a class="nav-link" href="user/downloads" data-url data-selector="#user-container" data-v-url="user/downloads/index">
                 <i class="la la-download la-lg me-1"></i>
                 <span>Downloads</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="user/comments" data-v-url="user/comments/index">
+              <a class="nav-link" href="user/comments" data-url data-selector="#user-container" data-v-url="user/comments/index">
                 <i class="la la-comment la-lg me-1"></i>
                 <span>Comments</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="user/wishlist" data-v-url="user/wishlist/index">
+              <a class="nav-link" href="user/wishlist" data-url data-selector="#user-container" data-v-url="user/wishlist/index">
                 <i class="la la-hand-holding-heart la-lg me-1"></i>
                 <span>Wishlist</span>
               </a>
@@ -750,9 +750,10 @@
             </li>
           </ul>
 
+
         </div>
 
-        <div class="col-md-9 justify-content-center bdigital_asset-start px-4">
+        <div class="col-md-9 justify-content-center border-start px-4" id="user-container">
           <div class="notifications" data-v-notifications>
 
             <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error>
@@ -867,7 +868,7 @@
           <div data-pagination data-v-parent-component="digital_assets" data-v-parent-index="0" data-v-parameters='{}'>
 
             <nav data-v-if="pagecount > 1">
-              <ul class="pagination pagination-sm justify-content-end" style="--bs-pagination-border-color:transparent;border-top: 1px solid var(--bs-border-color);padding-top: 1rem;">
+              <ul class="pagination pagination-sm justify-content-end pt-1 mt-1" style="--bs-pagination-border-color:transparent;border-top: 1px solid var(--bs-border-color);">
 
                 <!--
 			<li class="page-item pager-first" data-first>
@@ -880,7 +881,7 @@
 
                 <li class="page-item pager-prev" data-prev>
 
-                  <a class="page-link" href="#" aria-label="Previous" title="Previous page" data-page-url data-scroll="top" data-v-if="current_page > 1">
+                  <a class="page-link" href="#" aria-label="Previous" title="Previous page" data-page-url data-scroll="start" data-v-if="current_page > 1">
                     <span aria-hidden="true" class="la la-angle-left la-lg"></span>
                     <!-- <span>Newer Posts</span> -->
                   </a>
@@ -890,23 +891,23 @@
 
 
                 <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">1</a>
+                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="start">1</a>
                 </li>
                 <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">2</a>
+                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="start">2</a>
                 </li>
                 <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">3</a>
+                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="start">3</a>
                 </li>
                 <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">4</a>
+                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="start">4</a>
                 </li>
                 <li class="page-item" data-page>
-                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="top">5</a>
+                  <a class="page-link" href="#" data-page-no data-page-url data-scroll="start">5</a>
                 </li>
 
                 <li class="page-item pager-next" data-next>
-                  <a class="page-link" href="#" aria-label="Next" title="Next page" data-page-url data-scroll="top" data-v-if="current_page < pagecount">
+                  <a class="page-link" href="#" aria-label="Next" title="Next page" data-page-url data-scroll="start" data-v-if="current_page < pagecount">
                     <!-- <span>Older Posts</span> -->
                     <span aria-hidden="true" class="la la-angle-right la-lg"></span>
                   </a>
