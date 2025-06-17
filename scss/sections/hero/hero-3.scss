@@ -20,16 +20,16 @@
 		margin: 0rem 1rem 1rem 0;
 		//border-radius: 30px;
 		//text-transform: uppercase;
-		font-size: 16px;
-		font-weight: 600;
+		//font-size: 16px;
+		//font-weight: 600;
 		//letter-spacing: .1rem;		
 		box-shadow: rgba(var(--bs-body-color-rgb), 0.25) 0px 5px 15px -5px;
-		
+		/*
 		&.btn-white {
 			background:rgba(var(--bs-white-rgb), 0.2);
 			color: var(--bs-light);
 		}
-		
+		*/
 		&.btn-primary {
 			//background:#006cff;
 		}
@@ -43,6 +43,8 @@
 			position: relative;
 			height: 100%;
 			min-height:960px;
+			min-height:calc(100vh - 200px);
+			min-height:calc(max(100vh - 200px, 1080px));
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -92,6 +94,16 @@
 	*/	
 	
 	@media screen and (max-width: 767px) {
+	
+		>.container, > .container-fluid {
+			
+			> div {
+				position: relative;
+				height: 100%;
+				min-height:100vh;
+			}
+		}
+	
 		.btn {
 			min-width: 300px;
 			//width: 90%;

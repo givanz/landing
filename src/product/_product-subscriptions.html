@@ -1,0 +1,35 @@
+<div id="subscriptions" class="product-subscriptions mt-4" data-v-component-product-subscriptions>
+	<div data-v-if="count > 0">
+		
+		<div class="card">
+			<!-- one time purchase -->
+			<div class="card-header bg-body" data-v-if="product.subscription_onetime">
+				<div class="form-check form-check-inline radio">
+				  <label class="form-check-label">
+					<input class="form-check-input" type="radio" name="subscription_plan_id" required value="0">
+					<!-- <span data-v-subscription-name>Subscription name</span> -->
+					<span>One time purchase</span>
+				  </label>
+				</div>
+			</div>
+			<label class="card-header bg-body" data-v-if="count > 0" data-v-if-not="product.subscription_onetime">Subscription</label>
+			<!--/ one time purchase -->
+			
+			<div class="card-body">
+				<label class="mb-3" data-v-if="product.subscription_onetime">Subscription</label>
+				<div class="form-check form-check-inline radio mb-2" data-v-subscription>
+				  <label class="form-check-label">
+					<input class="form-check-input" type="radio" name="subscription_plan_id" required data-v-subscription-subscription_plan_id>
+					<!-- <span data-v-subscription-name>Subscription name</span> -->
+					<span data-v-subscription-content>Subscription description</span>
+				  </label>
+				</div>
+			</div>
+		</div>
+		
+		<div class="my-3 small">
+			<div>Auto-renews, skip or cancel anytime.</div>
+			<a class="link-secondary text-decoration-underline" href="/page/subscription-policy" target="_blank">View subscription policy</a>
+		</div>
+	</div>
+</div>

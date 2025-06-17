@@ -4,28 +4,30 @@
 	
 	@@include('../_includes/header.html')
 	
-    <main id="site-content" role="main" class="container product" data-v-component-product>
+    <main id="site-content" role="main">
+		<div class="container product"  data-v-component-product data-v-product_variant_id="url">
 	
 		@@include('../_includes/breadcrumb.html')
 		
-        <div class="row g-0 mb-4">
-			<div class="col-md-6 col-sm-12">
+        <div class="row g-5 mb-4">
+			<div class="col-lg-8 col-md-6 col-sm-12">
 			
 				<div id="product-gallery" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-v-product-images>
 				  <div class="carousel-inner">
 					<div class="carousel-item active">
-						<div class="zoom" data-v-product-main-image-background-image>
-							<img src="img/demo/product.jpg" loading="lazy" class="d-block w-100" alt="" data-v-product-main-image>
+						<div data-v-class-if-zoom="product.image" data-v-product-main-image-background-image>
+							<img src="img/demo/product.webp" loading="lazy" class="d-block w-100" alt="" data-v-if="product.image" data-v-product-main-image>
+							<img src="media/placeholder.svg" class="d-block w-100 bg-body-tertiary" loading="lazy" alt="" data-v-if-not="product.image"/>
 						</div>
 					</div>					
 					<div class="carousel-item" data-v-product-image>
 						<div class="zoom" data-v-product-image-background-image>
-							<img src="img/demo/product.jpg" loading="lazy" class="d-block w-100" alt="" data-v-product-image-src>
+							<img src="img/demo/product.webp" loading="lazy" class="d-block w-100" alt="" data-v-product-image-src>
 						</div>
 					</div>
 					<div class="carousel-item" data-v-product-image>
 						<div class="zoom" data-v-product-image-background-image>
-							<img src="img/demo/product-2.jpg" loading="lazy" class="d-block w-100" alt="" data-v-product-image-src>
+							<img src="img/demo/product-2.webp" loading="lazy" class="d-block w-100" alt="" data-v-product-image-src>
 						</div>
 					</div>
 				  </div>
@@ -62,19 +64,19 @@
 			
 			</div>
 
-			<div class="col-md-6 col-sm-12 p-4" id="product">
+			<div class="col-lg-4 col-md-6 col-sm-12 p-4" id="product">
 				<h1 class="product-name mb-2" data-v-product-name>One Shoulder Glitter Midi Dress</h1>
 
 				<div data-v-if="product.manufacturer_id">
 					<span class="text-muted">Manufacturer</span>
-					<a href="#" data-v-product-manufacturer_url>
+					<a data-v-product-manufacturer_url>
 						<span data-v-product-manufacturer_name>mango</span>
 					</a>
 				</div>
 
 				<div data-v-if="product.vendor_id">
 					<span class="text-muted">Vendor</span>
-					<a href="#" data-v-product-vendor_url>
+					<a data-v-product-vendor_url>
 						<span data-v-product-vendor_name>mango</span>
 					</a>
 				</div>
@@ -114,10 +116,13 @@
 				</p>
 
 				<p class="product-price" data-v-if-not="product.promotion">
-					<span class="price" data-v-product-price_tax_formatted>$49.00</span>
+			        <span class="price old-price" data-v-if="product.old_price > 0" data-v-product-old_price_tax_formatted>$100.00</span>        
+					<span class="price" data-v-if="product.price > 0" data-v-product-price_tax_formatted>$49.00</span>
+					<span class="badge text-bg-secondary on-sale mx-1 align-text-bottom" data-v-class-if-d-none="product.old_price <= 0">Sale</span>        						
 				</p>
+
 				
-				<span class="price muted small"><span>Excluding taxes:</span><span data-v-product-price_formatted>$49.00</span></span>
+				<span class="muted small"><span>Excluding taxes:</span><span data-v-product-price_formatted>$49.00</span></span>
 
 				<!--
 				<p class="product-price fs-3">
@@ -130,7 +135,7 @@
 
 				<!-- Form -->
 				
-				@@include('product-variant.html')   
+				@@include('_product-variants.html')   
 				
 				<form class="cart-form clearfix" method="post" action="/cart">
 				
@@ -138,14 +143,13 @@
 						<!-- Cart -->
 						<!-- button type="submit" name="addtocart" value="5" class="btn btn-primary" data-v-product-id data-v-vvveb-action="addToCart">Add to cart</button -->
 						
-							<input type="hidden" name="product_id" data-v-product-product_id>
+							<input type="hidden" name="product_id"  value="" data-v-product-product_id>
+							<input type="hidden" name="product_variant_id" value="">
 							
-
-
 							<div>
-								@@include('product-options.html')   
+								@@include('_product-options.html')   
 
-								@@include('product-subscriptions.html')  
+								@@include('_product-subscriptions.html')  
 
 								<hr class="border opacity-50">
 
@@ -157,7 +161,7 @@
 									<label class="form-label" for="input-quantity">Qty</label>&nbsp;
 
 									-->
-										<div class="quantity">
+										<div class="quantity mb-2">
 											<div class="input-group spinner">
 												<button class="btn btn-minus" type="button"><i class="la la-minus"></i></button>
 												<input type="number" name="quantity" value="1" size="1" min="{$product.minimum_quantity}" max="{$product.stock_quantity}" id="input-quantity" class="form-control">
@@ -165,7 +169,8 @@
 											</div>
 										</div>
 
-										<button data-v-attr-if-disabled="product.stock_quantity < 1" type="submit" formaction="/cart/1" id="button-cart" class="btn btn-primary btn-shadow px-4 mx-2 button-cart" data-v-vvveb-action="addToCart" data-v-product-add_cart_url>
+										<button data-v-attr-if-disabled="product.stock_quantity < 1" type="submit" formaction="/cart/1" id="button-cart" 
+											class="btn btn-primary btn-shadow w-100 button-cart" data-v-vvveb-action="addToCart" data-v-product-add_cart_url>
 										
 											<span class="loading d-none">
 												<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -178,10 +183,8 @@
 											</span>
 											
 										</button> 
-									</div> 
 
-									<div class="mt-4 d-inline-block">
-										<button data-v-attr-if-disabled="product.stock_quantity < 1" type="submit" formaction="/checkout/1" id="buynow" class="btn btn-light btn-shadow border px-4 buynow" data-v-product-buy_url>
+										<button data-v-attr-if-disabled="product.stock_quantity < 1" type="submit" formaction="/checkout/1" id="buynow" class="btn btn-light btn-shadow border w-100 w-100 buynow" data-v-product-buy_url>
 										
 											<span class="loading d-none">
 												<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -214,6 +217,7 @@
 				</form>
 				
 			</div>
+        </div>
 
 				<ul class="nav nav-tabs nav-scroll bg-body sticky-top mt-5" id="productTabs" role="tablist">
 				  <li class="nav-item" role="presentation">
@@ -271,13 +275,13 @@
 				  
 				  </div>
 				  <div class="tab-pane" id="specifications" role="tabpanel" aria-labelledby="specifications-tab" tabindex="0">
-					  @@include('product-specifications.html')   
+					  @@include('_product-specifications.html')   
 				  </div>
 				  <div class="tab-pane" id="reviews" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
-					  @@include('product-reviews.html')   
+					  @@include('_product-reviews.html')   
 				  </div>		  
 				  <div class="tab-pane" id="questions" role="tabpanel" aria-labelledby="questions-tab" tabindex="0">
-					  @@include('product-questions.html')   
+					  @@include('_product-questions.html')   
 				  </div>
 				</div>
 				
@@ -296,7 +300,7 @@
 					 </div>
 					 </div>
 				</div>
-        </div>
+		</div>
     </main>
     
 

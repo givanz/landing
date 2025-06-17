@@ -4,13 +4,13 @@
 	<div class="card-header">
 
 		<a class="post-title" href="content/post.html" data-v-post-url> 
-			<h2 class="card-title display-4 text-center" data-aos="fade" data-aos-duration="500" data-v-post-name>Begin each day by telling yourself</h2>
+			<img class="img-fluid" src="img/demo/hero-3.webp" loading="lazy" alt="Card image cap" data-aos="zoom-in-up" data-aos-duration="200"  data-v-post-image data-v-if="post.image">
 		</a>
 
 
 		<div class="post-meta-wrapper post-meta-single post-meta-single-top" data-aos="fade-up" data-aos-duration="200">
 
-				<ul class="post-meta mb-0">
+				<ul class="post-meta text-start my-2">
 
 					<li class="post-author meta-wrapper">
 							<span class="meta-icon">
@@ -44,14 +44,20 @@
 				</ul><!-- .post-meta -->
 
 	     </div>
+	     
+		<a class="post-title" href="content/post.html" data-v-post-url> 
+			
+			<h2 class="card-title h4" data-aos="fade" data-aos-duration="500" data-v-post-name>Begin each day by telling yourself</h2>
+		</a>
+
 	</div>
 	
 	
 <!--  <img class="img-fluid" src="http://place-hold.it/1200x300" alt="Card image cap" data-aos="zoom-in-up" data-aos-duration="200" data-v-post-image data-v-if="post.image"> -->
 	
-  <div class="card-body">
+  <div class="card-body py-0">
 
-		<div class="card-text post-content" data-v-post-excerpt>
+		<div class="card-text" data-v-post-excerpt>
 		
 				<p>Today I shall be meeting with interference, ingratitude, insolence, disloyalty, ill-will, and selfishness all of them due to the offenders` ignorance of what is good or evil.</p>
 		
@@ -59,15 +65,15 @@
 
   </div>
  
-  <div class="card-footer text-muted">
+  <div class="card-footer text-muted m-0 mb-4">
 	
-		<div class="d-flex tags">
+		<div class="tags">
 			<div data-v-categories>
 				<div data-v-if="categories > 0" class="me-4"> 
 					<i class="la la-archive"></i>
 					<ul class="tags d-inline-block">
 						  <li data-v-categories-cat>
-							<a href="#" data-v-categories-cat-url>
+							<a data-v-categories-cat-url>
 								<span data-v-categories-cat-name>cat 1</span>
 							</a>
 						  </li>
@@ -89,18 +95,18 @@
 				    <i class="la la-tag"></i>
 					<ul class="tags d-inline-block">
 						  <li data-v-tags-tag>
-							<a href="#"  data-v-tags-tag-url>
+							<a  data-v-tags-tag-url>
 								<span data-v-tags-tag-name>tag 1</span>
 							</a>
 						  </li>
 						  <li data-v-tags-tag>
-							<a href="#" data-v-tag-url><span data-v-cat-name>tag 2</span></a>
+							<a data-v-tag-url><span data-v-cat-name>tag 2</span></a>
 						  </li>
 						  <li data-v-tags-tag>
-							<a href="#" data-v-tag-url><span data-v-cat-name>tag 3</span></a>
+							<a data-v-tag-url><span data-v-cat-name>tag 3</span></a>
 						  </li>
 						  <li data-v-tags-tag>
-							<a href="#" data-v-tag-url><span data-v-cat-name>tag 4</span></a>
+							<a data-v-tag-url><span data-v-cat-name>tag 4</span></a>
 						  </li>
 					</ul>
 			  </div>

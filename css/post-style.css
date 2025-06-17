@@ -3,13 +3,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-title, .post-title a {
   text-decoration: none;
-  color: var(--bs-body-color); }
-  .post-title h1, .post-title h2, .post-title a h1, .post-title a h2 {
-    font-weight: 700; }
-  .post-title h3, .post-title a h3 {
-    font-size: 1rem; }
+  color: var(--bs-body-color);
+  /*	
+		h3 {
+			font-size:1.2rem;	
+			line-height:1.4rem;	
+		}
+		*/ }
+  .post-title h1, .post-title h2, .post-title h3, .post-title a h1, .post-title a h2, .post-title a h3 {
+    font-weight: 600; }
   .post-title:hover, .post-title a:hover {
     text-decoration: underline; }
+
+a.post-title {
+  display: block; }
 
 .post-content {
   font-size: 1.2rem;

@@ -3,7 +3,7 @@
 <body class="error-404">
 	
 	@@include('./_includes/header.html')
-
+<!--
 	<section class="inner-page-hero">
 		 <div>
 			<div class="title-container">
@@ -15,19 +15,37 @@
 			
 		</div>
 	</section>
-	
-	
+-->	
+	<main id="site-content" role="main">
+		
         <div class="container">
             <div class="row">
                 <div class="col-12 p-4 m-4">
 					
 					<div class="text-center">
-						<h2>Page not found!</h2>
-						<h4 class="text-muted">(error 404)</h4>
+						<div class=" display-2">
+							<i class="la la-directions bg-warning me-2 bg-opacity-50" style="border-radius:100px;width: 120px;height: 120px;display: inline-block;font-size: 60px;line-height: 2;"></i>
+						</div>
+						<h1>Page not found!</h1>
+						<p class="text-muted mb-2 fw-normal">(error 404)</p>
 
-						<p>The page you are looking for has been moved or it does not exist</p>
+						<p class="lead">The page you are looking for has been moved or it does not exist</p>
 						
-						<a href="/" class="btn btn-primary"><span>Go to homepage</span><i class="la la-arrow-right ms-2"></i></a>
+						<div class="col-lg-6 mt-4 mb-5 mx-auto">
+							 <form action="/search" method="get"> 
+							  <input type="hidden" name="route" value="search">
+							  <div class="input-group">
+								<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
+								<button class="btn btn-outline-primary border" type="submit" title="Search">
+								  <div class="la-flip-horizontal">
+									<i class="la la-search la-lg" aria-hidden="true"></i>
+								  </div>
+								</button>
+							  </div>
+							</form>
+						</div>
+						
+						<a href="/" class="btn btn-outline-primary btn-sm" data-url><i class="la la-home"></i><span>Go to homepage</span><i class="la la-arrow-right ms-2"></i></a>
 					
 					</div>
 
@@ -59,6 +77,8 @@
                  </div>
             </div>
         </div>
+
+    </main>
     
 
     @@include('./_includes/footer.html')   

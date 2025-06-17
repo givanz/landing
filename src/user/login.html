@@ -9,15 +9,15 @@
 
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-9">
 										  
 					<div class="row">
 					
-						<div class="col-lg-8 mx-auto">
+						<div class="col-lg-8 col-xl-7 mx-auto">
 					
 							<div class="card card-default my-4">
 
-								<div class="card-header bg-body p-5 pb-2">
+								<div class="card-header bg-body">
 									<h1 class="mb-1 h2 fw-bold">Sign in</h1>
 									<p class="text-muted">Welcome back! Enter your email to get started.</p>
 
@@ -26,26 +26,24 @@
 								</div>								
 
 
-							  <div class="card-body p-5">
+							  <div class="card-body">
 								
-								<form action="" method="post" enctype="multipart/form-data" data-v-url="user/index/login" id="login-form">
+								<form action="" method="post" enctype="multipart/form-data" id="login-form">
 									<input type="hidden" name="csrf" data-v-csrf>
 									<div class="mb-3">
 										<label class="form-label" for="input-email">E-Mail Address</label>
 										<div class="input-group">
-											<span class="input-group-text"> <i class="la la-envelope"></i> </span>
-											<input type="email" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control" required>
+											<span class="input-group-text bg-body"> <i class="la la-envelope"></i> </span>
+											<input type="email" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control border-start-0" required>
 										</div>
 									</div>
 									
 									<div class="mb-3">
 										<label class="form-label" for="input-password">Password</label>
 										<div class="input-group">
- 										  <span class="input-group-text"> <i class="la la-lock"></i> </span>
-										  <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password"  id="password" name="password"  value="" aria-label="Password" required>
-										  <div class="input-group-append">
-											<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'password')"><i class="la la-eye-slash"></i></button>
-										  </div>
+ 										  <span class="input-group-text bg-body"> <i class="la la-lock"></i> </span>
+										  <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control border-start-0" placeholder="Password"  id="password" name="password"  value="" aria-label="Password" required>
+										  <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'password')"><i class="la la-eye-slash"></i></button>
 										</div>
 										
 									</div>
@@ -59,12 +57,12 @@
 										  </label>
 										</div>
 										
-										 <a href="#recover"  data-v-url="user/reset/index" class="text-muted float-end">Forgot your password?</a>
+										 <a href="#recover"  data-v-url="user/reset/index" class="float-end">Forgot your password?</a>
 									</div>
 
 									<div class="mb-3 clearfix">
 											
-										<button type="submit" value="Login" class="btn btn-primary px-5 float-end btn-login" ><span>Login</span><i class="la la-arrow-right float-end ms-2"></i></button>
+										<button type="submit" value="Login" class="btn btn-primary w-100 btn-login btn-lg my-3" ><span>Login</span><i class="la la-arrow-right ms-2"></i></button>
 									
 									</div>
 									
@@ -83,8 +81,7 @@
     </div>
     </main>
     
-	</main>
-
+    
 	@@include('../_includes/footer.html')
 
 	@@include('../_includes/footer-scripts.html')

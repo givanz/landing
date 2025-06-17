@@ -3,7 +3,7 @@
 <body class="error-500">
 	
 	@@include('./_includes/header.html')
-	
+<!--	
 	<section class="inner-page-hero">
 		 <div>
 			<div class="title-container">
@@ -15,19 +15,21 @@
 			
 		</div>
 	</section>
-	
+-->	
 
         <div class="container">
             <div class="row">
                 <div class="col-12 my-5">
 					<div class="text-center">
+						<div class=" display-2">
+							<i class="la la-tools bg-warning me-2 bg-opacity-50" style="border-radius:100px;width: 120px;height: 120px;display: inline-block;font-size: 60px;line-height: 2;"></i>
+						</div>
 						<h1>Internal server error!</h1>
+						<p class="text-muted mb-2 fw-normal">(error 500)</p>
+
+						<p class="lead">The site is experiencing some dificulties, please try again, if the problem persists please contact support.</p>
 						
-						<p>
-							The site is experiencing some dificulties, please try again, if the problem persists please contact support.
-						</p>	
-						
-						<a href="/" class="btn btn-primary my-4"><span>Go to homepage</span><i class="la la-arrow-right ms-2"></i></a>
+						<a href="/" class="btn btn-outline-primary btn-sm" data-url><i class="la la-home"></i><span>Go to homepage</span><i class="la la-arrow-right ms-2"></i></a>
 					</div>
 					
 					<div data-debug>

@@ -15,6 +15,7 @@
   <link rel="canonical" href="">
 
   <link id="landing-css" href="css/style.bundle.css" rel="stylesheet" media="screen">
+  <link id="fonts-css" href="css/fonts.css" rel="stylesheet" media="screen">
   <link id="vvvebjs-css" href="css/custom.css" rel="stylesheet" media="screen">
 
 
@@ -24,10 +25,12 @@
 
 
 
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/feed/index">
   <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/posts" />
   <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
+  <link rel="alternate" type="application/rss+xml" title="Products" href="/feed/products" />
 
-  <link rel="icon" type="image/x-icon" href="../../media/favicon.ico" data-v-global-site.favicon>
+  <link rel="icon" type="image/x-icon" href="media/favicon.ico" data-v-global-site.favicon>
 
   <link rel="manifest" href="/manifest.webmanifest">
 
@@ -62,14 +65,14 @@
           <div class="nav">
             <ul class="list-inline">
               <!--
-					<li class="list-inline-item"><a href="#" id="wishlist-total" title="Wish List (0)"><i class="la la-heart"></i> <span class="">Favorites</span></a></li>
-					<li class="list-inline-item"><a href="#" title="Checkout"><i class="la la-share"></i> <span class="">Checkout</span></a></li>
+					<li class="list-inline-item"><a id="wishlist-total" title="Wish List (0)"><i class="la la-heart"></i> <span class="">Favorites</span></a></li>
+					<li class="list-inline-item"><a title="Checkout"><i class="la la-share"></i> <span class="">Checkout</span></a></li>
 					<li class="list-inline-item">
 						<div class="dropdown">
 							<a href="" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"><i class="la la-user"></i> <span class="">My Account</span></i></a>
 							<ul class="dropdown-menu dropdown-menu-right">
-								<li><a href="#" class="dropdown-item">Register</a></li>
-								<li><a href="#" class="dropdown-item">Login</a></li>
+								<li><a class="dropdown-item">Register</a></li>
+								<li><a class="dropdown-item">Login</a></li>
 							</ul>
 						</div>
 					</li>
@@ -156,7 +159,7 @@
               </li>
               <li class="list-inline-item">
 
-                <a id="color-theme-switch" class="p-2 p-md-0" href="javascript:void(0);" role="button" title="Switch sidebar color theme">
+                <a id="color-theme-switch" class="p-2 p-md-0" role="button" title="Switch sidebar color theme">
                   <i class="la la-sun la-lg"></i>
                 </a>
 
@@ -171,7 +174,8 @@
 
       <div class="container">
         <div data-v-component-site>
-          <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"www.*.*"}'>
+          <!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"www.*.*"}'><span class="visually-hidden">Logo</span> -->
+          <a class="navbar-brand" href="/" data-v-site-url'>
             <span class="visually-hidden">Logo</span>
             <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
             <img src="img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
@@ -188,9 +192,9 @@
           <ul class="navbar-nav ms-auto" data-v-menu-items>
             <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-              <a class="nav-link dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
-                <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
-                <span data-v-menu-item-content>
+              <a class="nav-link dropdown-toggle" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
+                <span data-v-menu-item-name data-v-if-not="category.type = 'text' && category.name"></span>
+                <span data-v-if="category.content" data-v-menu-item-content>
                   <p>
                     <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
                   </p>
@@ -199,12 +203,12 @@
 
               <div class="dropdown-menu" data-v-menu-item-recursive>
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                  <a class="dropdown-item" data-v-class-if-active="category.active" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <a class="dropdown-item" data-v-class-if-active="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
                     <span data-v-if="category.content" data-v-menu-item-content>
                       <div class="row">
                         <div class="col-6 align-self-center">
-                          <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                          <img src="img/demo/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
                         </div>
                         <div class="col-6">
                           <h4>Features</h4>
@@ -259,6 +263,7 @@
                 <span data-v-menu-item-name>About us</span>
               </a>
             </li>
+
             <li class="nav-toggle">
               <!-- User Login Info -->
               <div class="dropdown nav-item">
@@ -268,7 +273,7 @@
                   <span class="visually-hidden">User</span>
                 </a>
 
-                <div class="dropdown-menu dropdown-menu-end login-box user-box p-4" aria-labelledby="user-dropdown">
+                <div class="dropdown-menu dropdown-menu-end login-box user-box" aria-labelledby="user-dropdown">
 
                   <div data-v-component-user>
 
@@ -332,7 +337,7 @@
 
                     </div>
 
-                    <form action method="post" enctype="multipart/form-data" data-v-url="user/login" data-v-vvveb-action="login" data-v-vvveb-on="submit" class="login-form">
+                    <form action method="post" enctype="multipart/form-data" data-v-url="user/login/index" data-v-vvveb-action="login" data-v-vvveb-on="submit" class="login-form">
 
                       <input type="hidden" name="csrf" data-v-csrf>
 
@@ -348,15 +353,13 @@
 
                           <div class="input-group">
                             <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password" id="user-password" name="password" value="" aria-label="Password" required>
-                            <div class="input-group-append">
-                              <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'user-password')">
-                                <i class="la la-eye-slash"></i>
-                              </button>
-                            </div>
+                            <button class="btn btn-sm px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'user-password')">
+                              <i class="la la-eye-slash"></i>
+                            </button>
                           </div>
                         </div>
 
-                        <button type="submit" value="Login" class="btn btn-primary btn-login w-100">
+                        <button type="submit" value="Login" class="btn btn-primary py-2 btn-login w-100">
 
                           <span class="loading d-none">
                             <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
@@ -365,21 +368,21 @@
                           </span>
 
                           <span class="button-text">
-                            Login <i class="la la-arrow-right float-end ms-2"></i>
+                            Login <i class="la la-arrow-right ms-2"></i>
                           </span>
 
                         </button>
                         <div class="my-2"></div>
-                        <a href="/user/reset" data-v-url="user/reset/index" class="my-2">Forgotten Password</a>
+                        <a href="/user/reset" data-v-url="user/reset/index" class="my-2">Forgot your password?</a>
 
                         <div class="my-2"></div>
                         <!--
-		<a href="#">
+		<a>
 			<span class="btn btn-secondary btn-sm">
 				  <i class="lab la-google la-lg"></i>
 			</span>
 		</a>
-		<a href="#">
+		<a>
 			<span class="btn btn-secondary btn-sm">
 			  <i class="lab la-facebook la-lg"></i>
 			</span>
@@ -467,6 +470,8 @@
               </div>
 
             </li>
+
+
             <li class="nav-toggle">
               <!-- Cart Area -->
               <div class="dropdown nav-item mini-cart" data-v-component-cart>
@@ -490,7 +495,7 @@
                           <tr data-v-cart-product>
                             <td class="text-center">
                               <a href="#40" data-v-cart-product-url>
-                                <img src="img/demo/product.jpg" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                                <img src="img/demo/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                               </a>
                             </td>
                             <td class="text-start">
@@ -505,15 +510,15 @@
                               <div class="option" data-v-if="product.option">
                                 <div class="" data-v-product-option>
                                   <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
-                                  <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
+                                  <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
                                 </div>
                                 <div class="" data-v-product-option>
                                   <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
-                                  <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
+                                  <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
                                 </div>
                                 <div class="" data-v-product-option>
                                   <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
-                                  <span data-v-if="value.price">(<span data-v-product-option-price></span>)</span>
+                                  <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
                                 </div>
                               </div>
 
@@ -531,7 +536,7 @@
                           <tr data-v-cart-product>
                             <td class="text-center">
                               <a href="#40" data-v-cart-product-url>
-                                <img src="img/demo/product.jpg" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                                <img src="img/demo/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                               </a>
                             </td>
                             <td class="text-start">
@@ -615,7 +620,7 @@
 
                     <div class="row mt-2 g-2 px-3 pb-2" data-v-if="cart.total_items">
                       <div class="col-6">
-                        <a href="" class="btn btn-light btn-sm border w-100" data-v-url="cart/cart/index">
+                        <a href="" class="btn btn-light btn-sm border w-100" data-v-url="cart/cart/index" data-url>
                           <i class="la la-shopping-cart la-lg"></i>
                           <span>View cart</span>
                         </a>
@@ -630,18 +635,25 @@
 
 
                   </div>
+
+
+
                 </div>
 
               </div>
 
             </li>
+
           </ul>
 
-          <button class="btn btn-outline-secondary border-0" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
+
+
+          <button class="btn btn-outline-secondary btn-sm border-0" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
             <div class="la-flip-horizontal">
               <i class="la la-search la-lg" aria-hidden="true"></i>
             </div>
           </button>
+
 
           <!--
 	<div class="search-area toggle-hover">
@@ -672,15 +684,15 @@
 
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-9">
 
           <div class="row">
 
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-8 col-xl-7 mx-auto">
 
-              <div class="card  card-default my-4">
+              <div class="card card-default my-4">
 
-                <div class="card-header bg-body p-5 pb-2">
+                <div class="card-header bg-body">
                   <h1 class="mb-1 h2 fw-bold">Sign up</h1>
                   <p class="text-muted">Welcome! Enter your data to create an account.</p>
 
@@ -747,64 +759,68 @@
                 </div>
 
 
-                <div class="card-body p-5">
+                <div class="card-body">
 
 
-                  <form action="" method="post" enctype="multipart/form-data" data-v-url="user/index/signup" id="signup-form">
+                  <form action="" method="post" enctype="multipart/form-data" id="signup-form">
                     <input type="hidden" name="csrf" data-v-csrf>
 
                     <!--	
 									<div class="mb-3 input-group">
-										<span class="input-group-text"> <i class="la la-user"></i> </span>
+										<span class="input-group-text bg-body"> <i class="la la-user"></i> </span>
 										<input name="login" class="form-control border-start-0" placeholder="Username" type="text" required>
 										
 									</div> 
 									-->
 
-
+                    <label class="form-label" for="username">Username</label>
                     <div class="mb-3 input-group">
-                      <span class="input-group-text">
+                      <span class="input-group-text bg-body">
                         <i class="la la-user"></i>
                       </span>
-                      <input name="first_name" class="form-control border-start-0" placeholder="First Name" type="text" required>
+                      <input name="username" id="username" class="form-control border-start-0 border-start-0" placeholder="Username" type="text" required>
                     </div>
+                    <!--
+									<label class="form-label" for="first-name">First name</label>
+									<div class="mb-3 input-group">
+										<span class="input-group-text bg-body"> <i class="la la-user"></i> </span>
+										<input name="first_name" id="first-name" class="form-control border-start-0 border-start-0" placeholder="First Name" type="text" required>
+									</div>
 
+									<label class="form-label" for="last-name">Last name</label>
+									<div class="mb-3 input-group">
+										<span class="input-group-text bg-body"> <i class="la la-user"></i> </span>
+										<input name="last_name" id="last-name" class="form-control border-start-0 border-start-0" placeholder="Last Name" type="text" required>
+									</div>
+-->
+                    <label class="form-label" for="email">Email address</label>
                     <div class="mb-3 input-group">
-                      <span class="input-group-text">
-                        <i class="la la-user"></i>
-                      </span>
-                      <input name="last_name" class="form-control border-start-0" placeholder="Last Name" type="text" required>
-                    </div>
-
-                    <div class="mb-3 input-group">
-                      <span class="input-group-text">
+                      <span class="input-group-text bg-body">
                         <i class="la la-envelope"></i>
                       </span>
-                      <input name="email" class="form-control border-start-0" placeholder="Email address" type="email" required>
+                      <input name="email" id="email" class="form-control border-start-0 border-start-0" placeholder="Email address" type="email" required>
                     </div>
 
+                    <label class="form-label" for="password">Password</label>
                     <div class="mb-3 input-group">
-                      <span class="input-group-text">
+                      <span class="input-group-text bg-body">
                         <i class="la la-lock"></i>
                       </span>
-                      <input type="password" minlength="6" autocorrect="off" class="form-control border-start-0" placeholder="Password" id="password" name="password" autocomplete="new-password" value="" aria-label="Password" required>
-                      <div class="input-group-append">
-                        <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'password')">
-                          <i class="la la-eye-slash"></i>
-                        </button>
-                      </div>
+                      <input type="password" minlength="6" autocorrect="off" class="form-control border-start-0 border-start-0" placeholder="Password" id="password" name="password" autocomplete="new-password" value="" aria-label="Password" required>
+                      <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'password')">
+                        <i class="la la-eye-slash"></i>
+                      </button>
                     </div>
 
+                    <label class="form-label" for="new-password">Repeat password</label>
                     <div class="mb-3 input-group">
-                      <span class="input-group-text">
+                      <span class="input-group-text bg-body">
                         <i class="la la-lock"></i>
                       </span>
-                      <input type="password" minlength="6" autocorrect="off" autocomplete="new-password" class="form-control border-start-0" placeholder="Repeat password" id="confirm_password" name="confirm_password" value="" aria-label="Repeat Password" required>
-                      <div class="input-group-append">
-                        <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'confirm_password')">
-                          <i class="la la-eye-slash"></i>
-                        </button>
-                      </div>
+                      <input type="password" minlength="6" autocorrect="off" autocomplete="new-password" class="form-control border-start-0 border-start-0" placeholder="Repeat password" id="confirm_password" name="confirm_password" value="" aria-label="Repeat Password" required>
+                      <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'confirm_password')">
+                        <i class="la la-eye-slash"></i>
+                      </button>
                     </div>
 
                     <!-- if these hidden inputs are filled then ignore, robots -->
@@ -827,7 +843,7 @@
                     </div>
 
                     <div class="mb-3">
-                      <button type="submit" class="btn btn-primary w-100 btn-signup">Create Account</button>
+                      <button type="submit" class="btn btn-primary w-100 btn-signup btn-lg my-3">Create Account</button>
                     </div>
 
                     <div class="text-center">Have an account? <a href="" data-v-url="user/login/index">Log In</a>
@@ -845,10 +861,11 @@
     </div>
 
   </main>
-  <footer class="footer-1" title="footer-1" data-v-save-global="index.html,.footer-1">
+  <footer class="footer-3 bg-dark text-white" title="footer-3" data-v-save-global="index.html,.footer-3" data-bs-theme="dark">
     <div class="container" data-v-component-menu="footer" data-v-slug="main-footer">
 
       <div class="row" data-v-menu-items>
+
 
         <div class="col-md">
 
@@ -942,7 +959,7 @@
       <!--
 		<div class="row justify-content-end">
 			<div class="col-md-3 text-muted text-small mt-5">
-				&copy; <span data-v-year>2023</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
+				&copy; <span data-v-year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
 			</div>
 		</div>
 		-->
@@ -953,11 +970,11 @@
       <div class="container">
         <div class="d-flex flex-column flex-md-row">
           <div class="text-muted flex-grow-1">
-            <a class="btn-link text-muted" href="content/page.html">Terms and conditions</a> |
-            <a class="btn-link text-muted" href="content/page.html">Privacy Policy</a>
+            <a class="btn-link text-muted" href="/page/terms-conditions">Terms and conditions</a> |
+            <a class="btn-link text-muted" href="/page/privacy-policy">Privacy Policy</a>
           </div>
           <div class="text-muted">
-            &copy; <span data-v-year>2023</span>
+            &copy; <span data-v-year>2025</span>
             <span data-v-global-site.description.title>Vvveb</span>. <span>Powered by</span>
             <a href="https://vvveb.com" class="btn-link text-muted" target="_blank">Vvveb</a>
           </div>
@@ -986,22 +1003,30 @@
   <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
-        <div class="modal-body">
+        <div class="modal-body" style="--bs-modal-padding: 0.7rem;">
 
-          <form>
+          <form action="/search" method="get">
             <input type="hidden" name="route" value="search">
-            <div class="input-group">
-              <input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
-              <button class="btn btn-outline-primary border" type="submit" title="Search">
-                <div class="la-flip-horizontal">
-                  <i class="la la-search la-lg" aria-hidden="true"></i>
-                </div>
-              </button>
+            <div class="d-flex">
+              <div class="input-group">
+                <input type="search" name="search" class="form-control form-control-lg border-primary border-2" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
+                <button class="btn btn-outline-primary border-2 border-start-0" type="submit" title="Search">
+                  <div class="la-flip-horizontal">
+                    <i class="la la-search la-lg" aria-hidden="true"></i>
+                  </div>
+                </button>
+              </div>
+              <button type="button" class="btn-close small ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="loading d-none d-flex justify-content-center m-5">
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
             </div>
           </form>
 
           <div class="search-results">
-
           </div>
 
         </div>
@@ -1009,14 +1034,15 @@
     </div>
   </div>
 
+  <div id="page-loading-status" class="progress progress-bar"></div>
 
   <!-- Vvveb Common Js -->
-  <script id="popper-js" src="../../js/popper.min.js"></script>
-  <!-- <script src="../../js/bootstrap.min.js"></script> -->
-  <!-- <script src="../../js/bootstrap.bundle.min.js"></script> -->
+  <script id="popper-js" src="js/popper.min.js"></script>
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
   <script id="bootstrap-js" src="js/bootstrap.min.js"></script>
   <!-- Vvveb Ajax Common Js -->
-  <script id="app-js" src="../../js/app.js"></script>
+  <script id="app-js" src="/js/app.js"></script>
 
   <!-- Animation -->
 
@@ -1031,10 +1057,18 @@
   </noscript>
 
   <script src="js/aos.js"></script>
-  <script src="js/theme.js"></script>
-
   <script>
 	AOS.init();
+</script>
+  <script src="/js/app/cart.js"></script>
+
+  <link id="glightbox-css" rel="stylesheet" href="/js/glightbox/css/glightbox.css">
+  <script id="glightbox-js" src="/js/glightbox/js/glightbox.min.js"></script>
+
+  <script src="/js/app/theme.js"></script>
+
+  <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/public\/*","\/themes\/*","\/plugins\/*","\/cart\/*","\/checkout\/*","\/user\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
 
 

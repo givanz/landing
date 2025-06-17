@@ -6,26 +6,45 @@
 
 	<main id="site-content" role="main">
 
-        <div class="container mb-2">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8">
-					
-					<div class="card card-default">
-						<div class="card-body">
-							<div class="text-center">
-							  
-							  <h2 class="text-center"><i class="la la-lock"></i> <span>Reset password</span></h2>
-							  <p>Enter the new password for your account</p>
-								<div class="card-body">
-								
-								  @@include('../../_includes/notifications.html')
-								  
-								  <form method="post" role="form" id="reset" class="fade-in-effect" enctype="multipart/form-data" action="" data-v-url="user/reset">
+	<div class="container mb-2">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-8">
+										  
+			<div class="row">
+			
+				<div class="col-lg-8 mx-auto">
+			
+					<div class="card  card-default my-4">
 
-									<div class="mb-4">
-										<label>New password</label>
-										<input type="password" class="form-control" name="password" id="password" autocomplete="new-password" required/>
+						<div class="card-header bg-body p-5 pb-2">
+							<h1 class="mb-1 h2 fw-bold"><i class="la la-lock"></i> <span>Reset password</span></h1>
+							<p class="text-muted">Enter the new password for your account</p>
+
+							@@include('../../_includes/notifications.html')
+						</div>
+
+							
+					  <div class="card-body p-5">
+	  
+								  <form method="post" role="form" id="reset" class="fade-in-effect" enctype="multipart/form-data" action="">
+
+
+
+									<div class="mb-3 input-group">
+										<span class="input-group-text"> <i class="la la-lock"></i> </span>
+										  <input type="password" minlength="6" autocorrect="off" class="form-control border-start-0" placeholder="Password"  id="password" name="password" autocomplete="new-password" value="" aria-label="Password" required>
+										  <div class="input-group-append">
+											<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'password')"><i class="la la-eye-slash"></i></button>
+										  </div>
 									</div>
+									
+									<div class="mb-3 input-group">
+										<span class="input-group-text"> <i class="la la-lock"></i> </span>
+										  <input type="password" minlength="6" autocorrect="off" autocomplete="new-password" class="form-control border-start-0" placeholder="Repeat password"  id="confirm_password" name="confirm_password" value="" aria-label="Repeat Password" required>
+										  <div class="input-group-append">
+											<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'confirm_password')"><i class="la la-eye-slash"></i></button>
+										  </div>
+									</div>          
 									
 									
 									<div class="mb-4 mt-4">
@@ -38,12 +57,12 @@
 								  </form>
 								  
 								</div>
-							</div>
 						</div>
-					</div>
-                </div>
+				</div>
+            </div>
             </div>
         </div>
+	</div>
 	</main>
 
 	@@include('../../_includes/footer.html')

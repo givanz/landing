@@ -1,0 +1,397 @@
+<div class="product-reviews mt-4" data-v-component-reviews>
+		<h4>Reviews</h4>
+
+	<div data-v-if="count > 0">		
+		<div class="row border-top border-bottom py-4">
+		<!--
+			<div class="col-sm-2">
+				<div class="rating-block text-center">
+					<h2 class="text-muted mb-0" data-v-reviews-rating>4.3</h2>
+					<div class="fs-3">
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 1"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 2"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 3"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 4"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 5"></i>
+					</div>
+					
+					<h6 class=""><span data-v-reviews-count>15</span> reviews</h6>
+				</div>
+			</div>
+			-->
+			<div class="col-sm-6">
+							
+				<div class="d-flex">
+				  <div class="text-center">
+					<span class="display-4 fw-semibold" data-v-reviews-rating>3.1</span><br>
+					<div class="fs-3">
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 1"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 2"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 3"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 4"></i>
+						<i class="la la-star" data-v-class-if-text-warning="product_review.rating >= 5"></i>
+					</div>
+					<span class="text-black-50"><span data-v-reviews-count>15</span> reviews</span>
+				  </div>
+				  <div class="flex-grow-1">
+					<div class="row align-items-center">
+					  <div class="col-4 text-end text-secondary">
+						<i class="la la-star"></i><i class="la la-star"></i><i class="la la-star"></i><i class="la la-star"></i><i class="la la-star"></i>
+						<span class="text-muted">(<span class="" data-v-summary-five></span>)</span>
+					  </div>
+					  <div class="col-8">
+						<div class="progress" style="height: 2px;">
+						  <div class="progress-bar" role="progressbar" data-v-summary-five-width aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					  </div>
+					</div>
+					<div class="row align-items-center">
+					  <div class="col-4 text-end text-secondary">
+						<i class="la la-star"></i><i class="la la-star"></i><i class="la la-star"></i><i class="la la-star"></i>
+						<span class="text-muted">(<span class="" data-v-summary-four></span>)</span>
+					  </div>
+					  <div class="col-8">
+						<div class="progress" style="height: 2px;">
+						  <div class="progress-bar" role="progressbar" data-v-summary-four-width aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					  </div>
+					</div>
+					<div class="row align-items-center">
+					  <div class="col-4 text-end text-secondary">
+						<i class="la la-star"></i><i class="la la-star"></i><i class="la la-star"></i>
+						<span class="text-muted">(<span class="" data-v-summary-three></span>)</span>
+					  </div>
+					  <div class="col-8">
+						<div class="progress" style="height: 2px;">
+						  <div class="progress-bar" role="progressbar"  data-v-summary-three-width aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					  </div>
+					</div>
+					<div class="row align-items-center">
+					  <div class="col-4 text-end text-secondary">
+						<i class="la la-star"></i><i class="la la-star"></i>
+						<span class="text-muted">(<span class="" data-v-summary-two></span>)</span>
+					  </div>
+					  <div class="col-8">
+						<div class="progress" style="height: 2px;">
+						  <div class="progress-bar" role="progressbar" data-v-summary-two-width aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					  </div>
+					</div>
+					<div class="row align-items-center">
+					  <div class="col-4 text-end text-secondary">
+						<i class="la la-star"></i>
+						<span class="text-muted">(<span class="" data-v-summary-one></span>)</span>
+					  </div>
+					  <div class="col-8">
+						<div class="progress" style="height: 2px;">
+						  <div class="progress-bar" role="progressbar" data-v-summary-one-width aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				 </div>
+			
+			</div>			
+			<div class="col" data-v-if="product_review.buyers > 0">
+				<div class="rating-block text-center">
+					<i class="la la-check-circle text-success fs-1"></i>
+					<div class=""><span data-v-reviews-buyers>5</span> reviews from buyers</div>
+				</div>
+			</div>
+			<div class="col" data-v-if="product_review.recommendations > 0">
+				<div class="rating-block text-center">
+					<i class="la la-thumbs-up text-primary fs-1"></i>
+					<div class=""><span data-v-reviews-recommendations>100</span>% recommendations</div>
+				</div>
+			</div>
+		</div>			
+		
+		
+		<div class="border-bottom py-4">			
+			<h6>User contributed images</h6>
+			
+			<div class="">
+				  <div class="d-inline-block" data-v-image>
+					<a href="/product/product-fifteen" title="Product 15" data-toggle="lightbox" data-gallery="review-gallery"  data-v-image-src>
+					  <img src="/image-cache/product/5-1-150x0.webp" alt="" class="img-thumbnail m-1" loading="lazy" data-v-thumb-src>
+					  
+					</a>
+				  </div>
+				  <div class="d-inline-block" data-v-image>
+					<a href="/product/product-fifteen" title="Product 15" data-toggle="lightbox" data-gallery="review-gallery" data-v-image-src>
+					  <img src="/image-cache/product/4-1-150x0.webp" alt="" class="img-thumbnail m-1" loading="lazy" data-v-thumb-src>
+					  
+					</a>
+				  </div>
+			</div>	
+		</div>			
+
+		<ol class="review-list list-unstyled my-3">
+			<li class="review mb-4" data-v-review>
+
+					<div class="review-wrap d-flex ">
+
+						<figure class="author-avatar me-2">
+							<img src="img/sections/team/1.webp" alt="user" width="60" data-v-review-avatar_url loading="lazy" data-v-if="review.avatar">
+						</figure>
+
+						<div class="review-author">
+
+							<div class="review-author">
+								<a rel="external nofollow ugc" data-v-if="review.url"><span data-v-review-author>Maria Williams</span></a>
+								<span data-v-review-author data-v-if-not="review.url">Maria Williams</span>
+							</div>
+							
+							<div class="d-inline-block">
+								<small class="text-secondary" data-v-if="product.rating"> 
+									<i class="la la-star" data-v-class-if-text-warning="review.rating >= 1"></i>
+									<i class="la la-star" data-v-class-if-text-warning="review.rating >= 2"></i>
+									<i class="la la-star" data-v-class-if-text-warning="review.rating >= 3"></i>
+									<i class="la la-star" data-v-class-if-text-warning="review.rating >= 4"></i>
+									<i class="la la-star" data-v-class-if-text-warning="review.rating >= 5"></i>
+									<!-- <i class="la la-star-half"></i> -->
+								</small>
+							</div>
+
+							<div class="review-meta text-small text-muted d-inline-block">
+								<span data-v-review-created_at data-filter-friendly_date>Jan 29, 2018</span>
+							</div>
+
+						</div>
+
+					</div>
+
+	
+					<div class="my-2" data-v-review-content>
+						<p>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
+					</div>
+
+					<div class="alert alert-light my-2 small" data-v-if="review.status = 0">
+						<div>Your review is awaiting moderation.</div>
+						<div>This is a preview, your review will be visible after it has been approved.</div>
+					</div>
+					
+					<div>
+					  <div class="user-image" data-v-user-image>
+						<a href="/product/product-fifteen" title="Product 15"  data-toggle="lightbox" data-gallery="user-gallery" data-v-image-src>
+						  <img src="/image-cache/product/5-1-150x0.webp" alt="" class="img-thumbnail m-1" loading="lazy" data-v-thumb-src>
+						  
+						</a>
+					  </div>
+					  <div class="user-image" data-v-user-image>
+						<a href="/product/product-fifteen" title="Product 15"  data-toggle="lightbox" data-gallery="user-gallery" data-v-image-src">
+						  <img src="/image-cache/product/4-1-150x0.webp" alt="" class="img-thumbnail m-1" loading="lazy" data-v-thumb-src>
+						  
+						</a>
+					  </div>
+					</div>
+
+					<div class="reply">
+						<a href="#review-form" class="reply-btn" data-review_id="{$review.review_id}" data-review_author="{$review.author}" data-v-vvveb-action="replyTo">Reply <i class="la la-reply"></i></a>
+					</div>
+
+			</li>
+			<li class="review mb-4 level-2" data-v-review>
+
+					<div class="review-wrap d-flex ">
+
+						<figure class="author-avatar me-2">
+							<img src="http://place-hold.it/60x60" alt="user" width="60" data-v-review-avatar_url loading="lazy" data-v-if="review.avatar">
+						</figure>
+
+						<div class="review-author">
+
+							<div class="review-author">
+								<span data-v-review-author data-v-if-not="review.url">John doe</span>
+							</div>
+
+							<div class="review-meta text-small text-muted">
+								<span data-v-review-created_at data-filter-friendly_date>Jan 29, 2018</span>
+							</div>
+
+						</div>
+
+					</div>
+
+	
+					<div class="my-2" data-v-review-content>
+						<p>This is a reply review.</p>
+					</div>
+
+					<div class="alert alert-light my-2 small" data-v-if="review.status = 0">
+						<div>Your review is awaiting moderation.</div>
+						<div>This is a preview, your review will be visible after it has been approved.</div>
+					</div>
+
+					<div class="reply">
+						<a href="#review-form" class="reply-btn" data-review_id="{$review.review_id}" data-review_author="{$review.author}" data-v-vvveb-action="replyTo">Reply <i class="la la-reply"></i></a>
+					</div>
+
+			</li>
+			<li class="review mb-4" data-v-review>
+
+					<div class="review-wrap d-flex ">
+
+						<figure class="author-avatar me-2">
+							<img src="img/sections/team/1.webp" alt="user" width="60" data-v-review-avatar_url loading="lazy" data-v-if="review.avatar">
+						</figure>
+
+						<div class="review-author">
+
+							<div class="review-author">
+								<a rel="external nofollow ugc" data-v-if="review.url"><span data-v-review-author>Maria Williams</span></a>
+								<span data-v-review-author data-v-if-not="review.url">Maria Williams</span>
+							</div>
+
+							<div class="review-meta text-small text-muted">
+								<span data-v-review-created_at data-filter-friendly_date>Jan 29, 2018</span>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div data-v-review-content>
+						<p>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
+					</div>
+
+					<div class="alert alert-light my-2 small" data-v-if="review.status = 0">
+						<div>Your review is awaiting moderation.</div>
+						<div>This is a preview, your review will be visible after it has been approved.</div>
+					</div>
+
+					<div class="reply">
+						<a href="#review-form" class="reply-btn" data-review_id="{$review.review_id}" data-review_author="{$review.author}" data-v-vvveb-action="replyTo">Reply <i class="la la-reply"></i></a>
+					</div>
+
+			</li>
+		</ol>
+
+	</div>
+	
+	<div data-v-if="count = 0">
+		<div class=" p-4 mb-4 bg-body-tertiary border">
+			<h6>Be the first to write a review!</h6>
+		</div>		
+	</div>		
+	
+	@@include('../_includes/notifications.html')
+
+   <button data-bs-toggle="collapse" href="#reviews-form" role="button" aria-expanded="false" aria-controls="reviews-form" class="btn btn-light btn-sm border"><span>Leave review</span><i class="la la-angle-down ms-2"></i></button>
+	
+   <div class="reviews-form collapse mt-4" id="reviews-form">
+
+
+		<h5>Leave a review</h5>
+		<span class="replyto" style="display:none"><h3>Reply to <b data-review-author>author</b></h3>
+			<a href="#review-form" class="reply-btn d-inline-block" data-review_id="0" data-v-vvveb-action="replyTo">
+			Cancel review 
+			<i class="la la-window-close"></i></a>
+		</span>
+		
+		
+		<div class="loggedin mb-3" data-v-if="this.global.user_id">
+			<!--
+			<a href="#review-form" class="reply-btn d-inline-block" data-review_id="0" data-v-vvveb-action="replyTo">
+			Log out
+			<i class="la la-window-close"></i></a>
+			-->
+			
+			<form action method="post" enctype="multipart/form-data" data-v-url="user/login/index" data-selector=".product-reviews">
+
+				<span>Logged in as <b data-v-global-user.display_name>author</b></span>
+
+				<input type="hidden" name="logout">
+			
+				<button type="submit" value="logout" class="btn link-primary btn-submit">
+					
+					<span class="loading d-none">
+						<span class="spinner-border spinner-border-sm align-middle" role="status">
+						</span>
+						<span>Loading ...</span>...
+					</span>
+
+					<span class="button-text">
+						Logout <i class="la la-sign-out-alt"></i></a>
+					</span>
+				
+				</button>	
+			</form>
+			
+		</div>
+
+		<form id="review-form" method="post" action="" data-v-vvveb-action="addReview" data-v-vvveb-on="submit">
+			
+			<input type="hidden" name="product_id" data-v-product-product_id>
+			<input type="hidden" name="slug" data-v-product-slug>
+			<input type="hidden" name="parent_id" value="0">
+			<input type="hidden" name="csrf" data-v-csrf>
+			
+			   <!-- antibot do not fill -->	
+			  <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
+			
+			
+			  <div data-v-if-not="this.global.user_id">	
+				  <div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Name</label>
+					<input type="text" placeholder="Name" name="author" class="form-control" required>
+				  </div>
+				  <div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">Email address</label>
+					<input type="email" placeholder="Email" name="email" class="form-control" required>
+				  </div>
+			  </div>
+
+			  <div class="mb-3">
+					<input type="radio" name="rating" value="1" id="onestar" class="form-check-input btn-check" required>
+					<label class="form-check-label btn btn-outline-secondary btn-sm border-secondary-subtle" for="onestar">
+						<i class="la la-lg la-star text-warning"></i> 
+						1 <span>Star</span>
+					</label>
+					<input type="radio" name="rating" value="2" id="twostars" class="form-check-input btn-check" required>
+					<label class="form-check-label btn btn-outline-secondary btn-sm border-secondary-subtle" for="twostars">
+						<i class="la la-lg la-star text-warning"></i> 
+						2 <span>Stars</span>
+					</label>
+					<input type="radio" name="rating" value="3" id="threestars" class="form-check-input btn-check" required>
+					<label class="form-check-label btn btn-outline-secondary btn-sm border-secondary-subtle" for="threestars">
+						<i class="la la-lg la-star text-warning"></i> 
+						3 <span>Stars</span>
+					</label>
+					<input type="radio" name="rating" value="4" id="fourstars" class="form-check-input btn-check" required>
+					<label class="form-check-label btn btn-outline-secondary btn-sm border-secondary-subtle" for="fourstars">
+						<i class="la la-lg la-star text-warning"></i> 
+						4 <span>Stars</span>
+					</label>
+					<input type="radio" name="rating" value="5" id="fivestars" class="form-check-input btn-check" checked required>
+					<label class="form-check-label btn btn-outline-secondary btn-sm border-secondary-subtle" for="fivestars">
+						<i class="la la-lg la-star text-warning"></i> 
+						5 <span>Stars</span>
+					</label>
+			  </div>
+			  
+			  <div class="mb-3">
+				<textarea name="content" rows="5" cols="4" placeholder="Enter product review ..." class="form-control" required></textarea>
+			  </div>
+
+			<!-- if these hidden inputs are filled then ignore robots -->
+			 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+			 
+			 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">				  
+			  
+			  <button type="submit" value="review" class="btn btn-primary btn-submit">
+			  <span class="loading d-none">
+					<span class="spinner-border spinner-border-sm align-middle" role="status"> </span>
+                        <span>Posting</span>...
+                    </span>
+
+                    <span class="button-text">
+                        <span>Post review</span><i class="la la-long-arrow-alt-right ms-1"></i>
+                    </span>
+			  </button>
+			
+		</form>
+	
+	</div>
+</div>

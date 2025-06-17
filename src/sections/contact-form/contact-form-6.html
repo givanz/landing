@@ -10,7 +10,7 @@
   <div class="container">
 	<div class="row my-5">
 	  <div class="col-12 col-md-6 col-lg-5">
-		<h2>Contact Us</h2>
+		<h2 class="display-6 mb-1 fw-bold mb-4">Contact Us</h2>
 		<p class="lead">
 		  Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.
 		</p>
@@ -21,7 +21,7 @@
 		
 		<div data-v-component-site>
 			<p class="mt-5">
-			  <span><i class="la la-lg la-envelope opacity-50"></i> Email:</span>
+			  <b><i class="la la-lg la-envelope opacity-50"></i> Email:</b>
 			  <span data-v-if="site.contact-email">
 				<a href="mailto:contact@mysite.com" data-v-site-contact-email>
 					<span data-v-site-contact-email>contact@mysite.com</span>
@@ -29,7 +29,7 @@
 			  </span>
 			</p>
 			<p class="">
-			  <span><i class="la la-lg la-phone opacity-50"></i> Phone:</span> 
+			  <b><i class="la la-lg la-phone opacity-50"></i> Phone:</b> 
 			  <a href="tel:5511112377" data-v-site-description-phone-number>
 				<span data-v-site-description-phone-number>+55 (111) 123 777</span>
 			  </a>
@@ -40,7 +40,7 @@
 	  <div class="col-12 col-md-6 ms-auto" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-home">
 	  
 		@@include('../../_includes/notifications.html')
-	  
+		<div class="border rounded-3 p-4 border-opacity-25 border-light-subtle">
 		<form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
   		  <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
   		  <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>	
@@ -97,6 +97,7 @@
 			</div>
 		  </div>
 		</form>
+		</div>
 	  </div>
 	</div>
   </div>

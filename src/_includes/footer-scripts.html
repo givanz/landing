@@ -15,22 +15,30 @@
 <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
-      <div class="modal-body">
+      <div class="modal-body" style="--bs-modal-padding: 0.7rem;">
         
-        <form >
+        <form action="/search" method="get"> 
 		  <input type="hidden" name="route" value="search">
-		  <div class="input-group">
-			<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
-			<button class="btn btn-outline-primary border" type="submit" title="Search">
-			  <div class="la-flip-horizontal">
-				<i class="la la-search la-lg" aria-hidden="true"></i>
+		  <div class="d-flex">
+			  <div class="input-group">
+				<input type="search" name="search" class="form-control form-control-lg border-primary border-2" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
+				<button class="btn btn-outline-primary border-2 border-start-0" type="submit" title="Search">
+				  <div class="la-flip-horizontal">
+					<i class="la la-search la-lg" aria-hidden="true"></i>
+				  </div>
+				</button>
 			  </div>
-			</button>
+			<button type="button" class="btn-close small ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
 		  </div>
+
+			<div class="loading d-none d-flex justify-content-center m-5">
+			  <div class="spinner-border" role="status">
+				<span class="visually-hidden">Loading...</span>
+			  </div>
+			</div>
 		</form>
 		
 		<div class="search-results">
-			
 		</div>
         
       </div>
@@ -38,14 +46,15 @@
   </div>
 </div>
 
+<div id="page-loading-status" class="progress progress-bar"></div>
 
 <!-- Vvveb Common Js -->
-<script id="popper-js" src="../../js/popper.min.js"></script>
-<!-- <script src="../../js/bootstrap.min.js"></script> -->
-<!-- <script src="../../js/bootstrap.bundle.min.js"></script> -->
+<script id="popper-js" src="js/popper.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<!-- <script src="js/bootstrap.bundle.min.js"></script> -->
 <script id="bootstrap-js" src="js/bootstrap.min.js"></script>
 <!-- Vvveb Ajax Common Js -->
-<script id="app-js" src="../../js/app.js"></script>
+<script id="app-js" src="/js/app.js"></script>
 
 <!-- Animation -->
 
@@ -60,8 +69,16 @@
 </noscript>
 
 <script src="js/aos.js"></script>
-<script src="js/theme.js"></script>
-
 <script>
 	AOS.init();
+</script>
+<script src="/js/app/cart.js"></script>
+
+<link id="glightbox-css" rel="stylesheet" href="/js/glightbox/css/glightbox.css">
+<script id="glightbox-js" src="/js/glightbox/js/glightbox.min.js"></script>
+
+<script src="/js/app/theme.js"></script>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/public\/*","\/themes\/*","\/plugins\/*","\/cart\/*","\/checkout\/*","\/user\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>

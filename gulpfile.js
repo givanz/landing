@@ -33,10 +33,11 @@ const fs = require('fs')
 const path = require('path');
 let baseHref = '';
 let blockPrefix = "landing";
+let themeName = "landing";
 
 //get command line parameters after some specified parameter
 function parameters() {
-	return process.argv.filter(a => a[0] == '-' ).map(a => a.slice(1));
+	return process.argv.slice(3);
 }
 
 const touch = () => through2.obj( function( file, enc, cb ) {
@@ -45,6 +46,21 @@ const touch = () => through2.obj( function( file, enc, cb ) {
     }
     cb( null, file );
 });
+
+
+let dir = process.env.npm_config_path;
+if (dir) {
+	console.log('Starting directory: ' + process.cwd());
+	try {
+	  process.chdir(dir);
+	  console.log('New directory: ' + process.cwd());
+	}
+	catch (err) {
+	  console.log('chdir: ' + err);
+	}
+}
+
+themeName = path.basename(process.cwd());
 
 gulp.task('fileinclude', function() {
   return gulp.src(['./src/*.html', './src/**/*.html', '!**/-*/**', '!**/_*/**'])
@@ -127,7 +143,7 @@ async function screenshots(type = "sections", dirs = []) {
 	
 	for (i in sections) {
 		section = sections[i];
-		screenshot = section.replace(sectionsDir, screenshotDir).replace('.html', '.png');
+		screenshot = section.replace(sectionsDir, screenshotDir).replace('.html', '.webp');
 		tempFiles.push(screenshot);
 		sectionScreenshot = section.replace('.html', '-screenshot.html');;
 		tempFiles.push(sectionScreenshot);
@@ -168,14 +184,14 @@ async function screenshots(type = "sections", dirs = []) {
 		}, baseHref);
 		*/
 		
-		const element = await page.$$("body > div, body > section, body > header, body > footer");
+		const element = await page.$$("body > div, body > section, body > header, body > footer, body > *");
 		//await page.screenshot({ path: screenshot, fullPage: false, type: 'png' });
-		await element[0].screenshot({ path: screenshot, type: 'png' });
+		await element[0].screenshot({ path: screenshot, type: 'webp' });
 		
 		gulp.src(screenshot)
 		.pipe(imageResize({
 		  width : 480,
-		  format: "jpeg",
+		  format: "webp",
 		  quality:0,
 		}))
 		.pipe(rename(function (path) { path.basename += "-thumb"; }))
@@ -206,6 +222,7 @@ async function screenshots(type = "sections", dirs = []) {
 			})
 	});
 
+	return true;
 }
 
 let templates = {
@@ -266,7 +283,14 @@ function sections(type = "section", dirs = []) {
 	//sort sections
 	dir.sort((a, b) => sectionsSortOrder.indexOf(b) - sectionsSortOrder.indexOf(a));
 	
-	//dir = [current_section];
+	//set theme sections first if available
+	const index = dir.indexOf(themeName);
+	if (index > -1) {
+	  dir.splice(index, 1);
+	  dir.unshift(themeName);
+	  
+	}	
+
 	for (i in dir) {
 	  let fileName =  dir[i];		
 	  let filePath = `${sectionsDir}/${fileName}`;
@@ -287,7 +311,7 @@ function sections(type = "section", dirs = []) {
 			name = sectionFile.replace(".html","");
 			id = `${group}/${name}`;
 			name = prettify(name);
-			image = `screenshots/${type}s/${group}/` + sectionFile.replace(".html", "-thumb.jpeg");
+			image = `screenshots/${type}s/${group}/` + sectionFile.replace(".html", "-thumb.webp");
 			html = fs.readFileSync(`${filePath}/${sectionFile}`,'utf8');
 			sections.push(id);
 			
@@ -312,12 +336,16 @@ gulp.task('connect', async function (done) {
     });
 });
 
+gulp.task('disconnect', async function (done) {
+    await connect.serverClose();
+});
+
 gulp.task('take-screenshots',  async function (done) {
-	 await screenshots('sections');
+	 return await screenshots('sections');
 });
 
 gulp.task('take-screenshots-blocks',  async function (done) {
-	 await screenshots("blocks");
+	 return await screenshots("blocks");
 });
 
 gulp.task('sections', async function () {
@@ -331,7 +359,7 @@ gulp.task('blocks', async function () {
 
 // Default Task
 gulp.task('default', gulp.series('fileinclude', 'sass'));
-gulp.task('screenshots', gulp.series('connect', 'take-screenshots'));
-gulp.task('screenshots-blocks', gulp.series('connect', 'take-screenshots-blocks'));
+gulp.task('screenshots', gulp.series('connect', 'take-screenshots', 'disconnect'));
+gulp.task('screenshots-blocks', gulp.series('connect', 'take-screenshots-blocks', 'disconnect'));
 gulp.task('sections', gulp.series('sections'));
 gulp.task('blocks', gulp.series('blocks'));

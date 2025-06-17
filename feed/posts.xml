@@ -11,7 +11,7 @@
 	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
 >
 
-<channel data-v-component-posts="feed" data-v-limit="50" data-v-direction="desc" data-v-order_by="updated_at">
+<channel data-v-component-posts="feed" data-v-limit="50" data-v-type="post" data-v-direction="desc" data-v-order_by="updated_at">
 	<title>News Vvveb</title>
 	<link>https://vvveb.com/feed/posts</link>
 	<description>The latest news about Vvveb</description>

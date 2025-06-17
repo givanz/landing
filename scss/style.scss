@@ -2,6 +2,7 @@
 
 //$card-border-color:rgba(var(--bs-body-color-rgb), 0.1);
 //$card-box-shadow: null;
+/*
 $headings-line-height: 1.4;
 $line-height-base: 1.7;
 $border-radius: 0.25rem;
@@ -17,6 +18,21 @@ $btn-padding-x: 1rem;
 $btn-font-weight:500;
 $btn-font-size: 15px;
 $btn-disabled-opacity: 0.35;
+*/
+
+//$pagination-border-color: transparent;
+//$pagination-active-border-color: transparent;
+//$pagination-active-bg: var(--bs-primary-bg-subtle);
+//$pagination-active-color: var(--bs-link-color);
+
+$input-btn-font-size:0.875rem;
+
+.page-item {
+	margin:0 0.2rem;
+}
+
+$enable-grid-classes: true;
+$enable-cssgrid: false;
 
 @import "bootstrap/bootstrap";
 @import "sections/sections";
@@ -29,6 +45,7 @@ $btn-disabled-opacity: 0.35;
 @import "product-page";
 @import "post-style";
 @import "cart";
+@import "menutree";
 
 
 :root, [data-bs-theme="light"] {
@@ -37,4 +54,31 @@ $btn-disabled-opacity: 0.35;
 
 [data-bs-theme="dark"] {
 	--light-bg-rgb:44,45,48;
+}
+
+.btn {
+    --bs-border-radius: 0.25rem;
+    --bs-btn-font-weight: 500;
+}
+
+.nav-item.dropdown {
+	.dropdown-menu {
+		margin-top: -1.5rem;
+	}
+}
+
+.sidebar-sticky {
+	background-color: var(--bs-tertiary-bg);
+	padding: 1rem;
+}
+
+.inner-page-hero {
+    background-color: rgba(var(--bs-body-color-rgb),.01);
+    border-bottom: 1px solid rgba(var(--bs-body-color-rgb),.05);
+}
+
+
+.post h1 {
+	@extend .display-4;
+	font-weight: 600;
 }

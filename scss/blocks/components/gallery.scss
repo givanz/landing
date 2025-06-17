@@ -13,7 +13,7 @@
 	
 	&.has-shadow {
 		.item img {
-			box-shadow: 2px 2px 4px 0 #ccc;
+			box-shadow: 2px 2px 4px 0 rgba(var(--bs-body-color-rgb), 0.25);
 		}
 	}
 	

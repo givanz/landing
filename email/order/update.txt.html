@@ -1,0 +1,122 @@
+<html>
+
+<body>
+  <div data-v-component-site>
+    <div>
+      <div data-v-component-order data-v-order_id="url" data-v-customer_order_id="url">
+
+
+        <h1>Hi <span data-v-order-first_name>John</span>
+          <span data-v-order-last_name>Doe</span>,
+        </h1>
+        <br>
+
+        <p>Your order <b data-v-order-customer_order_id>777</b> is now <b data-v-order-order_status>777</b>.</p>
+        <p data-v-message></p>
+
+        <br>
+
+
+        <h3>Order information</h3>
+
+        <p> ================================= </p>
+        <br>
+
+
+        <div data-v-cart>
+
+          -----------------------------------------------------------
+          <br>
+
+          <div data-v-order-product>
+
+            -----------------------------------------------------------
+            |<span data-v-order-product-name>Product name</span>|
+            <span>
+              x <span data-v-order-product-quantity>1</span>
+            </span>
+            |<span data-v-order-product-total>$100</span>|
+            <br>
+            -----------------------------------------------------------
+            <br>
+          </div>
+
+
+        </div>
+
+
+        <div data-v-order-totals-totals>
+          <div data-v-order-totals-total>
+            -----------------------------------------------------------
+            <br>
+            <small data-v-order-total-title>Sub-Total</small>:|
+            <span data-v-order-total-value_formatted>$101.00</span>|
+            <span data-v-order-total-text data-v-if="total.text">$101.00</span>
+            <br>
+            -----------------------------------------------------------
+          </div>
+        </div>
+
+        <br />
+        <span>Total:</span>|
+        <span data-v-order-total_formatted>$300</span>|
+        <br>
+
+        <h3>Customer information</h3>
+
+        <p> ================================= </p>
+
+        <p>Shipping address</p>
+        <p> -------------------------------- </p>
+
+        <span data-v-order-shipping_first_name>First name</span>
+        <span data-v-order-shipping_last_name>Last name</span>
+        <span data-v-order-shipping_address_1>Address 1</span>
+        <span data-v-order-shipping_address_2>Address 2</span>
+        <span data-v-order-shipping_city>City</span>
+        <span data-v-order-shipping_post_code>City</span>
+        <span data-v-order-shipping_country>Country</span>
+        <span data-v-order-shipping_region>region</span>
+
+        <p> -------------------------------- </p>
+        <p>Billing address</p>
+        <p> -------------------------------- </p>
+        <span data-v-order-billing_first_name>First name</span>
+        <span data-v-order-billing_last_name>Last name</span>
+        <span data-v-order-billing_address_1>Address 1</span>
+        <span data-v-order-billing_address_2>Address 2</span>
+        <span data-v-order-billing_city>City</span>
+        <span data-v-order-billing_post_code>City</span>
+        <span data-v-order-billing_country>Country</span>
+        <span data-v-order-billing_region>region</span>
+
+        <br>
+
+        <p> ---------------------------------------------------------------- </p>
+        <p class="f-fallback">Shipping method</p>:
+        <p data-v-order-shipping_title>Courier name</p>
+
+        <p> ---------------------------------------------------------------- </p>
+        <p class="f-fallback">Billing method</p>:
+        <p data-v-order-payment_title>Transfer method</p>
+        <p> ---------------------------------------------------------------- </p>
+
+        <br>
+        <br>
+
+        <p>If you have any questions about this order, simply reply to this email or contact us on <a data-v-site-contact-email>
+            <span data-v-site-contact-email>support team</span>
+          </a> for help.</p>
+        <p>Cheers,
+          <br>The <span data-v-site-description-title>Vvveb</span> team
+        </p>
+
+
+        <br>
+        <span data-v-site-address>Address</span>
+        <!-- <span data-v-site-description-phone-number>+55 (111) 123 777</span> -->
+      </div>
+    </div>
+  </div>
+</body>
+<html>

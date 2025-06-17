@@ -1,13 +1,8 @@
 .features-1 {
-	//color: #8d97ad;
-	font-weight: 300;
-	.badge {
-		font-weight: 500;
-		line-height: 14px;
+	.max-box {
+		margin:auto;
 	}
-	.badge-info {
-		//background: #188ef4;
-	}
+
 	.wrap {
 		.max-box {
 			max-width: 580px;
@@ -23,7 +18,4 @@
 		}
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		//color: #3e4555;
-	}
 }

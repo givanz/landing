@@ -1,6 +1,6 @@
 Vvveb.Blocks.add("contact-form/contact-form-1", {
     name: "Contact form 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/blocks/contact-form/contact-form-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/blocks/contact-form/contact-form-1-thumb.webp",
     html: `<div data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-form-1">
 
   <div class="notifications" data-v-notifications>
@@ -113,7 +113,7 @@ Vvveb.Blocks.add("contact-form/contact-form-1", {
 </div>`
 });Vvveb.Blocks.add("contact-form/contact-form-appointment", {
     name: "Contact form appointment",
-    image: Vvveb.themeBaseUrl + "/screenshots/blocks/contact-form/contact-form-appointment-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/blocks/contact-form/contact-form-appointment-thumb.webp",
     html: `<div data-v-component-plugin-contact-form-form data-v-storage="database" data-v-confirm-email="true" data-v-name="contact-form-appointment">
 
   <div class="notifications" data-v-notifications>
@@ -227,7 +227,7 @@ Vvveb.Blocks.add("contact-form/contact-form-1", {
 </div>`
 });Vvveb.Blocks.add("contact-form/contact-form-reservation", {
     name: "Contact form reservation",
-    image: Vvveb.themeBaseUrl + "/screenshots/blocks/contact-form/contact-form-reservation-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/blocks/contact-form/contact-form-reservation-thumb.webp",
     html: `<div data-v-component-plugin-contact-form-form data-v-storage="database" data-v-confirm-email="true" data-v-name="contact-form-appointment">
 
   <div class="notifications" data-v-notifications>
@@ -349,30 +349,30 @@ Vvveb.Blocks.add("contact-form/contact-form-1", {
 	Vvveb.BlocksGroup['Contact form'] = ["contact-form/contact-form-1","contact-form/contact-form-appointment","contact-form/contact-form-reservation"];
 Vvveb.Blocks.add("post/post-1", {
     name: "Post 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/blocks/post/post-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/blocks/post/post-1-thumb.webp",
     html: `<div data-v-component-post>
   <div class="mb-2">
 
     <article class="card ">
       <div class="card-img-top" data-v-if="post.image">
-        <img src="img/demo/video-1.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+        <img src="img/demo/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
       </div>
       <!-- Post Title -->
-      <div class="card-body">
-        <div class="post-title card-title">
-          <a href="#" data-v-post-url>
+      <a data-v-post-url>
+        <div class="card-body p-4">
+          <div class="post-title card-title">
             <h3 data-v-post-name>
               Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada
             </h3>
-          </a>
+          </div>
+          <!-- Hover Content -->
+          <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
+          <button title="{$post.name}" role="button" class="btn btn-link px-0">
+            <span>Read more</span>
+            <i class="la la-angle-right"></i>
+          </button>
         </div>
-        <!-- Hover Content -->
-        <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-        <a href="#" title="Read more" role="button" data-v-post-url>
-          <span>Read more</span>
-          <i class="la la-angle-right"></i>
-        </a>
-      </div>
+      </a>
     </article>
 
 
@@ -380,7 +380,7 @@ Vvveb.Blocks.add("post/post-1", {
 </div>`
 });Vvveb.Blocks.add("post/posts-1", {
     name: "Posts 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/blocks/post/posts-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/blocks/post/posts-1-thumb.webp",
     html: `<div class="container" data-v-component-posts="posts-1" data-v-limit="3" data-v-image_size="medium">
   <div class="row">
 
@@ -390,24 +390,24 @@ Vvveb.Blocks.add("post/post-1", {
 
       <article class="card h-100 shadow-sm">
         <div class="card-img-top" data-v-if="post.image">
-          <img src="img/demo/video-1.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+          <img src="img/demo/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
         </div>
         <!-- Post Title -->
-        <div class="card-body">
-          <div class="post-title card-title">
-            <a href="#" data-v-post-url>
+        <a data-v-post-url>
+          <div class="card-body p-4">
+            <div class="post-title card-title">
               <h3 data-v-post-name>
                 Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada
               </h3>
-            </a>
+            </div>
+            <!-- Hover Content -->
+            <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
+            <button title="{$post.name}" role="button" class="btn btn-link px-0">
+              <span>Read more</span>
+              <i class="la la-angle-right"></i>
+            </button>
           </div>
-          <!-- Hover Content -->
-          <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-          <a href="#" title="Read more" role="button" data-v-post-url>
-            <span>Read more</span>
-            <i class="la la-angle-right"></i>
-          </a>
-        </div>
+        </a>
       </article>
 
 
@@ -419,24 +419,24 @@ Vvveb.Blocks.add("post/post-1", {
 
       <article class="card h-100 shadow-sm">
         <div class="card-img-top" data-v-if="post.image">
-          <img src="img/demo/video-1.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+          <img src="img/demo/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
         </div>
         <!-- Post Title -->
-        <div class="card-body">
-          <div class="post-title card-title">
-            <a href="#" data-v-post-url>
+        <a data-v-post-url>
+          <div class="card-body p-4">
+            <div class="post-title card-title">
               <h3 data-v-post-name>
                 Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada
               </h3>
-            </a>
+            </div>
+            <!-- Hover Content -->
+            <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
+            <button title="{$post.name}" role="button" class="btn btn-link px-0">
+              <span>Read more</span>
+              <i class="la la-angle-right"></i>
+            </button>
           </div>
-          <!-- Hover Content -->
-          <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-          <a href="#" title="Read more" role="button" data-v-post-url>
-            <span>Read more</span>
-            <i class="la la-angle-right"></i>
-          </a>
-        </div>
+        </a>
       </article>
 
 
@@ -448,24 +448,24 @@ Vvveb.Blocks.add("post/post-1", {
 
       <article class="card h-100 shadow-sm">
         <div class="card-img-top" data-v-if="post.image">
-          <img src="img/demo/video-1.jpg" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+          <img src="img/demo/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
         </div>
         <!-- Post Title -->
-        <div class="card-body">
-          <div class="post-title card-title">
-            <a href="#" data-v-post-url>
+        <a data-v-post-url>
+          <div class="card-body p-4">
+            <div class="post-title card-title">
               <h3 data-v-post-name>
                 Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada
               </h3>
-            </a>
+            </div>
+            <!-- Hover Content -->
+            <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
+            <button title="{$post.name}" role="button" class="btn btn-link px-0">
+              <span>Read more</span>
+              <i class="la la-angle-right"></i>
+            </button>
           </div>
-          <!-- Hover Content -->
-          <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-          <a href="#" title="Read more" role="button" data-v-post-url>
-            <span>Read more</span>
-            <i class="la la-angle-right"></i>
-          </a>
-        </div>
+        </a>
       </article>
 
 
@@ -479,7 +479,7 @@ Vvveb.Blocks.add("post/post-1", {
 	Vvveb.BlocksGroup['Post'] = ["post/post-1","post/posts-1"];
 Vvveb.Blocks.add("product/product-1", {
     name: "Product 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/blocks/product/product-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/blocks/product/product-1-thumb.webp",
     html: `<div data-v-component-product>
   <div class="mb-3">
 
@@ -489,10 +489,10 @@ Vvveb.Blocks.add("product/product-1", {
       <div class="product-image">
         <a href="product/product.html" data-v-product-url>
 
-          <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+          <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
 
           <!-- Hover Thumb -->
-          <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+          <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
         </a>
 
         <!-- Favourite -->
@@ -517,22 +517,32 @@ Vvveb.Blocks.add("product/product-1", {
           <span data-v-product-name>Product 8</span>
         </a>
 
-        <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+        <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
         <!-- Hover Content -->
-        <div class="hover-content" data-v-if="_product.price > 0">
+        <div class="hover-content" data-v-if="prod.price > 0">
           <!-- Add to Cart -->
           <div class="add-to-cart-btn">
             <input type="hidden" name="product_id" value="" data-v-product-product_id />
-            <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+            <a href="javascript:void();" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+              <span class="button-text">
+                Out of stock
+              </span>
+            </a>
+
+            <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
               <span class="loading d-none">
                 <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                <span>Add to cart</span>...
+                <span>Add to cart</span>
               </span>
 
               <span class="button-text">
-                Add to cart
+                <i class="la la-lg la-shopping-bag"></i>
+                <span>Add to cart</span>
               </span>
+
             </a>
           </div>
         </div>
@@ -544,7 +554,7 @@ Vvveb.Blocks.add("product/product-1", {
 </div>`
 });Vvveb.Blocks.add("product/products-1", {
     name: "Products 1",
-    image: Vvveb.themeBaseUrl + "/screenshots/blocks/product/products-1-thumb.jpeg",
+    image: Vvveb.themeBaseUrl + "/screenshots/blocks/product/products-1-thumb.webp",
     html: `<div class="container" data-v-component-products="popular" data-v-limit="8" data-v-image_size="medium">
   <div class="row">
 
@@ -558,10 +568,10 @@ Vvveb.Blocks.add("product/product-1", {
         <div class="product-image">
           <a href="product/product.html" data-v-product-url>
 
-            <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+            <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
 
             <!-- Hover Thumb -->
-            <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+            <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
           </a>
 
           <!-- Favourite -->
@@ -586,22 +596,32 @@ Vvveb.Blocks.add("product/product-1", {
             <span data-v-product-name>Product 8</span>
           </a>
 
-          <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+          <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
           <!-- Hover Content -->
-          <div class="hover-content" data-v-if="_product.price > 0">
+          <div class="hover-content" data-v-if="prod.price > 0">
             <!-- Add to Cart -->
             <div class="add-to-cart-btn">
               <input type="hidden" name="product_id" value="" data-v-product-product_id />
-              <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+              <a href="javascript:void();" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                <span class="button-text">
+                  Out of stock
+                </span>
+              </a>
+
+              <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                 <span class="loading d-none">
                   <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                  <span>Add to cart</span>...
+                  <span>Add to cart</span>
                 </span>
 
                 <span class="button-text">
-                  Add to cart
+                  <i class="la la-lg la-shopping-bag"></i>
+                  <span>Add to cart</span>
                 </span>
+
               </a>
             </div>
           </div>
@@ -621,10 +641,10 @@ Vvveb.Blocks.add("product/product-1", {
         <div class="product-image">
           <a href="product/product.html" data-v-product-url>
 
-            <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+            <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
 
             <!-- Hover Thumb -->
-            <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+            <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
           </a>
 
           <!-- Favourite -->
@@ -649,22 +669,32 @@ Vvveb.Blocks.add("product/product-1", {
             <span data-v-product-name>Product 8</span>
           </a>
 
-          <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+          <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
           <!-- Hover Content -->
-          <div class="hover-content" data-v-if="_product.price > 0">
+          <div class="hover-content" data-v-if="prod.price > 0">
             <!-- Add to Cart -->
             <div class="add-to-cart-btn">
               <input type="hidden" name="product_id" value="" data-v-product-product_id />
-              <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+              <a href="javascript:void();" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                <span class="button-text">
+                  Out of stock
+                </span>
+              </a>
+
+              <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                 <span class="loading d-none">
                   <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                  <span>Add to cart</span>...
+                  <span>Add to cart</span>
                 </span>
 
                 <span class="button-text">
-                  Add to cart
+                  <i class="la la-lg la-shopping-bag"></i>
+                  <span>Add to cart</span>
                 </span>
+
               </a>
             </div>
           </div>
@@ -684,10 +714,10 @@ Vvveb.Blocks.add("product/product-1", {
         <div class="product-image">
           <a href="product/product.html" data-v-product-url>
 
-            <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+            <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
 
             <!-- Hover Thumb -->
-            <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+            <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
           </a>
 
           <!-- Favourite -->
@@ -712,22 +742,32 @@ Vvveb.Blocks.add("product/product-1", {
             <span data-v-product-name>Product 8</span>
           </a>
 
-          <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+          <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
           <!-- Hover Content -->
-          <div class="hover-content" data-v-if="_product.price > 0">
+          <div class="hover-content" data-v-if="prod.price > 0">
             <!-- Add to Cart -->
             <div class="add-to-cart-btn">
               <input type="hidden" name="product_id" value="" data-v-product-product_id />
-              <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+              <a href="javascript:void();" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                <span class="button-text">
+                  Out of stock
+                </span>
+              </a>
+
+              <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                 <span class="loading d-none">
                   <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                  <span>Add to cart</span>...
+                  <span>Add to cart</span>
                 </span>
 
                 <span class="button-text">
-                  Add to cart
+                  <i class="la la-lg la-shopping-bag"></i>
+                  <span>Add to cart</span>
                 </span>
+
               </a>
             </div>
           </div>
@@ -747,10 +787,10 @@ Vvveb.Blocks.add("product/product-1", {
         <div class="product-image">
           <a href="product/product.html" data-v-product-url>
 
-            <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+            <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
 
             <!-- Hover Thumb -->
-            <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+            <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
           </a>
 
           <!-- Favourite -->
@@ -775,22 +815,32 @@ Vvveb.Blocks.add("product/product-1", {
             <span data-v-product-name>Product 8</span>
           </a>
 
-          <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+          <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
           <!-- Hover Content -->
-          <div class="hover-content" data-v-if="_product.price > 0">
+          <div class="hover-content" data-v-if="prod.price > 0">
             <!-- Add to Cart -->
             <div class="add-to-cart-btn">
               <input type="hidden" name="product_id" value="" data-v-product-product_id />
-              <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+              <a href="javascript:void();" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                <span class="button-text">
+                  Out of stock
+                </span>
+              </a>
+
+              <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                 <span class="loading d-none">
                   <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                  <span>Add to cart</span>...
+                  <span>Add to cart</span>
                 </span>
 
                 <span class="button-text">
-                  Add to cart
+                  <i class="la la-lg la-shopping-bag"></i>
+                  <span>Add to cart</span>
                 </span>
+
               </a>
             </div>
           </div>
@@ -810,10 +860,10 @@ Vvveb.Blocks.add("product/product-1", {
         <div class="product-image">
           <a href="product/product.html" data-v-product-url>
 
-            <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+            <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
 
             <!-- Hover Thumb -->
-            <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+            <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
           </a>
 
           <!-- Favourite -->
@@ -838,22 +888,32 @@ Vvveb.Blocks.add("product/product-1", {
             <span data-v-product-name>Product 8</span>
           </a>
 
-          <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+          <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
           <!-- Hover Content -->
-          <div class="hover-content" data-v-if="_product.price > 0">
+          <div class="hover-content" data-v-if="prod.price > 0">
             <!-- Add to Cart -->
             <div class="add-to-cart-btn">
               <input type="hidden" name="product_id" value="" data-v-product-product_id />
-              <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+              <a href="javascript:void();" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                <span class="button-text">
+                  Out of stock
+                </span>
+              </a>
+
+              <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                 <span class="loading d-none">
                   <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                  <span>Add to cart</span>...
+                  <span>Add to cart</span>
                 </span>
 
                 <span class="button-text">
-                  Add to cart
+                  <i class="la la-lg la-shopping-bag"></i>
+                  <span>Add to cart</span>
                 </span>
+
               </a>
             </div>
           </div>
@@ -873,10 +933,10 @@ Vvveb.Blocks.add("product/product-1", {
         <div class="product-image">
           <a href="product/product.html" data-v-product-url>
 
-            <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+            <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
 
             <!-- Hover Thumb -->
-            <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+            <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
           </a>
 
           <!-- Favourite -->
@@ -901,22 +961,32 @@ Vvveb.Blocks.add("product/product-1", {
             <span data-v-product-name>Product 8</span>
           </a>
 
-          <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+          <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
           <!-- Hover Content -->
-          <div class="hover-content" data-v-if="_product.price > 0">
+          <div class="hover-content" data-v-if="prod.price > 0">
             <!-- Add to Cart -->
             <div class="add-to-cart-btn">
               <input type="hidden" name="product_id" value="" data-v-product-product_id />
-              <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+              <a href="javascript:void();" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                <span class="button-text">
+                  Out of stock
+                </span>
+              </a>
+
+              <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                 <span class="loading d-none">
                   <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                  <span>Add to cart</span>...
+                  <span>Add to cart</span>
                 </span>
 
                 <span class="button-text">
-                  Add to cart
+                  <i class="la la-lg la-shopping-bag"></i>
+                  <span>Add to cart</span>
                 </span>
+
               </a>
             </div>
           </div>
@@ -936,10 +1006,10 @@ Vvveb.Blocks.add("product/product-1", {
         <div class="product-image">
           <a href="product/product.html" data-v-product-url>
 
-            <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+            <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
 
             <!-- Hover Thumb -->
-            <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+            <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
           </a>
 
           <!-- Favourite -->
@@ -964,22 +1034,32 @@ Vvveb.Blocks.add("product/product-1", {
             <span data-v-product-name>Product 8</span>
           </a>
 
-          <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+          <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
           <!-- Hover Content -->
-          <div class="hover-content" data-v-if="_product.price > 0">
+          <div class="hover-content" data-v-if="prod.price > 0">
             <!-- Add to Cart -->
             <div class="add-to-cart-btn">
               <input type="hidden" name="product_id" value="" data-v-product-product_id />
-              <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+              <a href="javascript:void();" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                <span class="button-text">
+                  Out of stock
+                </span>
+              </a>
+
+              <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                 <span class="loading d-none">
                   <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                  <span>Add to cart</span>...
+                  <span>Add to cart</span>
                 </span>
 
                 <span class="button-text">
-                  Add to cart
+                  <i class="la la-lg la-shopping-bag"></i>
+                  <span>Add to cart</span>
                 </span>
+
               </a>
             </div>
           </div>
@@ -999,10 +1079,10 @@ Vvveb.Blocks.add("product/product-1", {
         <div class="product-image">
           <a href="product/product.html" data-v-product-url>
 
-            <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+            <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
 
             <!-- Hover Thumb -->
-            <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+            <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
           </a>
 
           <!-- Favourite -->
@@ -1027,22 +1107,32 @@ Vvveb.Blocks.add("product/product-1", {
             <span data-v-product-name>Product 8</span>
           </a>
 
-          <p class="product-price" data-v-if="_product.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+          <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
 
           <!-- Hover Content -->
-          <div class="hover-content" data-v-if="_product.price > 0">
+          <div class="hover-content" data-v-if="prod.price > 0">
             <!-- Add to Cart -->
             <div class="add-to-cart-btn">
               <input type="hidden" name="product_id" value="" data-v-product-product_id />
-              <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+              <a href="javascript:void();" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                <span class="button-text">
+                  Out of stock
+                </span>
+              </a>
+
+              <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                 <span class="loading d-none">
                   <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                  <span>Add to cart</span>...
+                  <span>Add to cart</span>
                 </span>
 
                 <span class="button-text">
-                  Add to cart
+                  <i class="la la-lg la-shopping-bag"></i>
+                  <span>Add to cart</span>
                 </span>
+
               </a>
             </div>
           </div>
@@ -1057,6 +1147,6 @@ Vvveb.Blocks.add("product/product-1", {
   </div>
 </div>`
 });
-	Vvveb.BlocksGroup['Product'] = ["product/product-1"];
+	Vvveb.BlocksGroup['Product'] = ["product/product-1","product/products-1"];
 
 	Vvveb.BlocksGroup['Reusable'] = [""];

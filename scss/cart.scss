@@ -79,6 +79,7 @@
 			appearance: none; 
 			-moz-appearance: textfield;
 			box-shadow:none;
+			background:transparent;
 		 
 			 &:focus {
 				outline: none;
@@ -97,7 +98,7 @@
 			font-weight:bold;
 			
 			&:hover {
-				background:var(--bs-light-bg-subtle);
+				background:var(--bs-light);
 				color:var(--bs-link-color);
 			}
 

@@ -8,14 +8,17 @@
 
   <!-- Page Content -->
   <div class="container">
-	<div class="mb-4">@@include('../_includes/breadcrumb.html')</div>
+	<div class="m-4">@@include('../_includes/breadcrumb.html')</div>
 
     <div class="row">
 
       <!-- Blog Entries Column -->
-      <div class="col-md-7 col-lg-8 col-xl-9" data-v-component-posts="popular" data-v-page="url" data-v-limit="4" data-v-tags="5" data-v-categories="3" data-v-image_size="large">
+      <div class="col-md-7 col-lg-8 col-xl-9" data-v-component-posts="latest" data-v-page="url" data-v-limit="4" data-v-tags="5" data-v-categories="3" data-v-image_size="large">
+		<div class="row">
 
-		@@include('../_includes/blog-post.html', {"class": " post-archive-item post"})
+			@@include('../_includes/blog-post-excerpt.html', {"class": " post-archive-item post col-md-6"})
+
+		</div>
 		
 		<!-- 
 		<div data-v-if="posts.count < 1">
@@ -40,8 +43,6 @@
 @@include('../_includes/footer.html')
 
 @@include('../_includes/footer-scripts.html')
-
-<script id="filter-js" src="../../js/filter.js"></script>
 
 </body>
 

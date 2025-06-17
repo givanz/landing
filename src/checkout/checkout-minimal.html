@@ -1,0 +1,117 @@
+@@include('../_includes/html-head.html', {"title": "Checkout", "path":"../"})
+
+<body class="checkout-page">
+
+<main id="site-content" role="main">
+<!-- Page Content -->
+<div class="container">
+
+@@include('../_includes/notifications.html')
+	
+<div data-if-not="order.id_order">
+
+	@@include('_checkout-login.html')
+	
+	<form id="checkout-form" action method="post" enctype="multipart/form-data">
+	 <div class="container">
+		<div class="row">
+
+			<div class="col-12 col-md-7">
+				<div class="card" style="--bs-card-spacer-y: 1.5rem; --bs-card-spacer-x: 1.5rem; ">
+					<div class="card-body">
+						<div class="row" data-v-if-not="this.global.user_id">
+
+						  <div class="mb-3 col-6">
+								<label class="col-form-label" for="first_name">First Name <span class="text-danger text-small">*</span></label>
+								<input type="text" class="form-control" id="first_name" name="first_name" value="" minlength="3" autocomplete="given-name" required>
+							</div>
+							<div class="mb-3 col-6">
+								<label class="col-form-label" for="last_name">Last Name <span class="text-danger text-small">*</span></label>
+								<input type="text" class="form-control" id="last_name" name="last_name" value="" minlength="3" autocomplete="family-name" required>
+							</div>
+							<div class="col-6 mb-3">
+								<label class="col-form-label" for="email">Email Address <span class="text-danger text-small">*</span></label>
+								<input type="email" class="form-control" id="email" name="email" value="" autocomplete="email" required>
+							</div>                            
+							<div class="col-6 mb-3">
+								<label class="col-form-label" for="phone_number">Phone No <span class="text-danger text-small">*</span></label>
+								<input type="text" class="form-control" id="phone_number" name="phone_number" min="0" placeholder="Phone number" minlength="3" maxlength="32" value="" autocomplete="tel" required>
+							</div>
+							
+							<!--
+							<div class="mb-3 col-12 mb-3">
+								<label class="col-form-label" for="company">Company Name</label>
+								<input type="text" class="form-control" id="company" name="company" value="">
+							</div>
+							-->
+							
+							@@include('_register_account.html')
+							
+						</div>
+
+						<div class="row" data-v-if="this.global.user_id">
+							<div class="col mb-3" data-v-if-not="this.global.user.phone_number">
+								<label class="col-form-label" for="phone_number">Phone No <span class="text-danger text-small">*</span></label>
+								<input type="text" class="form-control" id="phone_number" name="phone_number" min="0" placeholder="Phone number" minlength="3" maxlength="32" value="" autocomplete="tel" required>
+							</div>
+						</div>
+							
+
+						@@include('_billing_address.html')
+
+						@@include('_shipping_address.html')
+						
+						<div class="mb-3">
+							<div class="form-check mb-1">
+								<input type="checkbox" class="form-check-input" id="terms" name="terms"  value="true" required>
+								<label class="form-check-label" for="terms"></span>I agree to</span><a href="page/terms-conditions" target="_blank" data-v-url="content/page/index" data-v-url-params='{"slug":"terms-conditions"}'>Terms and conditions</a></label>
+							</div>
+							<div class="form-check mb-1">
+								<input type="checkbox" class="form-check-input" id="newsletter" name="newsletter" value="true">
+								<label class="form-check-label" for="newsletter">Subscribe to our newsletter</label>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-5 ms-lg-auto">
+				<div class="card">
+					<div class="card-body">
+						
+						@@include('./_checkout-cart-summary.html')
+						
+						@@include('./_shipping.html')
+
+						@@include('./_payment.html')
+
+						<div class="mb-3">
+							<label for="notes">Order Notes</label>
+							<textarea name="notes" id="notes" cols="30" rows="3" class="form-control" placeholder=""></textarea>
+						</div>
+
+						<button type="submit" href="" class="btn btn-primary my-2 w-100" data-v-url="checkout/checkout/confirm">
+							Place order <i class="la la-arrow-right"></i>
+						</button>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</form>
+</div>
+
+</div>
+</main>
+
+@@include('../_includes/footer.html')   
+ 
+@@include('../_includes/footer-scripts.html')   
+<script>
+let regionsUrl = '{ $this->regionsUrl }';
+</script>
+<script data-no-minify src="/js/app/checkout.js"></script>
+
+</body>
+</html>

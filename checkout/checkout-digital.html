@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+
+  <base href="../">
+
+  <title>Checkout</title>
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <link rel="canonical" href="">
+
+  <link id="landing-css" href="css/style.bundle.css" rel="stylesheet" media="screen">
+  <link id="fonts-css" href="css/fonts.css" rel="stylesheet" media="screen">
+  <link id="vvvebjs-css" href="css/custom.css" rel="stylesheet" media="screen">
+
+
+
+
+
+
+
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/feed/index">
+  <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/posts" />
+  <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
+  <link rel="alternate" type="application/rss+xml" title="Products" href="/feed/products" />
+
+  <link rel="icon" type="image/x-icon" href="media/favicon.ico" data-v-global-site.favicon>
+
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <link rel="alternate" hreflang="" href="" />
+</head>
+
+
+<body class="checkout-page">
+
+  <nav class="navigation-1 clearfix" data-v-save-global="blank.html,.navigation-1">
+
+    <div id="top" class="top-nav clearfix">
+      <div class="container">
+        <div class="d-flex justify-content-between  flex-md-row d-flex flex-column flex-md-row">
+          <div class="nav">
+            <ul class="list-inline" data-v-component-site>
+              <li class="list-inline-item" data-v-if="site.description.phone-number">
+                <a href="tel:5511112377" class="p-2 p-md-0" title="Phone" data-v-site-description-phone-number>
+                  <i class="la la-phone"></i>
+                  <span class=" text-muted" data-v-site-description-phone-number>+55 (111) 123 777</span>
+                </a>
+              </li>
+              <li class="list-inline-item" data-v-if="site.contact-email">
+                <a href="mailto:contact@mysite.com" class="p-2 p-md-0" title="Email" data-v-site-contact-email>
+                  <i class="la la-envelope"></i>
+                  <span class=" text-muted" data-v-site-contact-email>contact@mysite.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav">
+            <ul class="list-inline">
+              <!--
+					<li class="list-inline-item"><a id="wishlist-total" title="Wish List (0)"><i class="la la-heart"></i> <span class="">Favorites</span></a></li>
+					<li class="list-inline-item"><a title="Checkout"><i class="la la-share"></i> <span class="">Checkout</span></a></li>
+					<li class="list-inline-item">
+						<div class="dropdown">
+							<a href="" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"><i class="la la-user"></i> <span class="">My Account</span></i></a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a class="dropdown-item">Register</a></li>
+								<li><a class="dropdown-item">Login</a></li>
+							</ul>
+						</div>
+					</li>
+					-->
+              <li class="list-inline-item">
+                <div data-v-component-currency>
+                  <form method="post" enctype="multipart/form-data" id="form-currency">
+
+                    <a class="dropdown-toggle p-2 p-md-0" data-bs-toggle="dropdown" role="button" title="Currency " aria-expanded="false">
+                      <!-- <i class="la la-dollar-sign me-1"></i> -->
+                      <span class="" data-v-currency-info-name>USD</span>
+                    </a>
+
+
+                    <div class="dropdown-menu dropdown-menu-end">
+
+                      <div data-v-currency>
+                        <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
+                          <span data-v-currency-sign_start>€</span>
+                          <span data-v-currency-sign_end>€</span>
+                          <span class="ms-1" data-v-currency-name>Euro</span>
+                        </button>
+                      </div>
+
+                      <div data-v-currency>
+                        <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
+                          <span data-v-currency-sign_start>£</span>
+                          <span data-v-currency-sign_end>£</span>
+                          <span class="ms-1" data-v-currency-name>Pound Sterling</span>
+                        </button>
+                      </div>
+
+                      <div data-v-currency>
+                        <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+                          <span data-v-currency-sign_start>$</span>
+                          <span data-v-currency-sign_end>$</span>
+                          <span class="ms-1" data-v-currency-name>US Dollar</span>
+                        </button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <div data-v-component-language>
+                  <form method="post" enctype="multipart/form-data" id="form-language">
+
+                    <a class="dropdown-toggle p-2 p-md-0" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
+                      <!-- <i class="la la-flag me-1"></i> -->
+                      <!-- 
+									<img src="" data-v-language-info-img>
+									-->
+                      <span class="" data-v-language-info-name>English</span>
+                    </a>
+
+
+                    <div class="dropdown-menu dropdown-menu-end">
+
+                      <div data-v-language>
+                        <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+                          <!-- <i class="la la-flag la-lg me-2"></i> -->
+                          <img src="" loading="lazy" class="me-1" data-v-language-img>
+
+                          <!-- <a href="" data-v-language-url> -->
+                          <span data-v-language-name>English</span>
+                          <!-- </a> -->
+                        </button>
+                      </div>
+
+                      <div data-v-language>
+                        <button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
+                          <!-- <i class="la la-flag la-lg me-2"></i> -->
+                          <img src="" loading="lazy" class="me-1" data-v-language-img>
+                          <!-- <a href="" data-v-language-url>  -->
+                          <span data-v-language-name>Romanian</span>
+                          <!-- </a>  -->
+                        </button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li class="list-inline-item">
+
+                <a id="color-theme-switch" class="p-2 p-md-0" role="button" title="Switch sidebar color theme">
+                  <i class="la la-sun la-lg"></i>
+                </a>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar navbar-expand-md">
+
+      <div class="container">
+        <div data-v-component-site>
+          <!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"www.*.*"}'><span class="visually-hidden">Logo</span> -->
+          <a class="navbar-brand" href="/" data-v-site-url'>
+            <span class="visually-hidden">Logo</span>
+            <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
+            <img src="img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
+            <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+            <img src="img/logo-white.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+          </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
+          <ul class="navbar-nav ms-auto" data-v-menu-items>
+            <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
+
+              <a class="nav-link dropdown-toggle" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
+                <span data-v-menu-item-name data-v-if-not="category.type = 'text' && category.name"></span>
+                <span data-v-if="category.content" data-v-menu-item-content>
+                  <p>
+                    <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
+                  </p>
+                </span>
+              </a>
+
+              <div class="dropdown-menu" data-v-menu-item-recursive>
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                  <a class="dropdown-item" data-v-class-if-active="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
+                    <span data-v-if="category.content" data-v-menu-item-content>
+                      <div class="row">
+                        <div class="col-6 align-self-center">
+                          <img src="img/demo/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                        </div>
+                        <div class="col-6">
+                          <h4>Features</h4>
+                          <p class="text-muted">Just a few mentions, but there is more</p>
+                          <ul class="list-unstyled">
+                            <li class="text-primary">Page builder</li>
+                            <li class="text-primary">Mega menu</li>
+                            <li class="text-primary">Multi language</li>
+                            <li class="text-primary">Advanced SEO</li>
+                            <li class="text-primary">Ecommerce</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </div>
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
+                    <span data-v-menu-item-content></span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown" data-v-menu-item>
+              <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-v-menu-item-url>
+                <span data-v-menu-item-name>Blog</span>
+              </a>
+
+              <div class="dropdown-menu" data-v-menu-item-recursive>
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'">User Documentation</span>
+                    <span data-v-menu-item-content></span>
+                  </a>
+                </div>
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
+                    <span data-v-menu-item-content></span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item" data-v-menu-item>
+              <a class="nav-link" href="https://www.vvveb.com/page/contact" data-v-menu-item-url>
+                <span data-v-menu-item-name>Contact</span>
+              </a>
+            </li>
+            <li class="nav-item" data-v-menu-item>
+              <a class="nav-link" href="https://www.vvveb.com" data-v-menu-item-url>
+                <span data-v-menu-item-name>About us</span>
+              </a>
+            </li>
+
+            <li class="nav-toggle">
+              <!-- User Login Info -->
+              <div class="dropdown nav-item">
+                <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
+                  <!-- <img src="img/user.svg" loading="lazy" width="20" alt> -->
+                  <i class="la la-lg la-user"></i>
+                  <span class="visually-hidden">User</span>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-end login-box user-box" aria-labelledby="user-dropdown">
+
+                  <div data-v-component-user>
+
+                    <div class="notifications" data-v-notifications>
+
+                      <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="login">
+
+                        <div class="icon align-middle me-2">
+                          <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                        </div>
+
+                        <div class="flex-grow-1 align-self-center text-small">
+                          <div>
+                            <div data-v-notification-text>
+                              This is a placeholder for a notification message.
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">
+                            <!-- <i class="la la-times"></i> -->
+                          </span>
+                        </button>
+                      </div>
+
+                      <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="login">
+
+                        <div class="icon align-middle me-2">
+                          <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+                        </div>
+
+                        <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+                          This is a placeholder for a success message.
+                        </div>
+
+                        <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">
+                            <!-- <i class="la la-times"></i> -->
+                          </span>
+                        </button>
+                      </div>
+
+                      <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="login">
+
+                        <div class="icon align-middle me-2">
+                          <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+                        </div>
+
+                        <div class="flex-grow-1 align-self-center" data-v-notification-text>
+                          This is a placeholder for a info message.
+                        </div>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">
+                            <!-- <i class="la la-times"></i> -->
+                          </span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                    <form action method="post" enctype="multipart/form-data" data-v-url="user/login/index" data-v-vvveb-action="login" data-v-vvveb-on="submit" class="login-form">
+
+                      <input type="hidden" name="csrf" data-v-csrf>
+
+                      <div class="login-form" data-v-if-not="component.user_id">
+
+                        <div class="mb-3">
+                          <label class="form-label" for="input-email">E-Mail Address</label>
+                          <input type="email" name="email" value placeholder="E-Mail Address" id="user-email" class="form-control" data-v-user-email required>
+                        </div>
+
+                        <div class="mb-3">
+                          <label class="form-label" for="input-password">Password</label>
+
+                          <div class="input-group">
+                            <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password" id="user-password" name="password" value="" aria-label="Password" required>
+                            <button class="btn btn-sm px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'user-password')">
+                              <i class="la la-eye-slash"></i>
+                            </button>
+                          </div>
+                        </div>
+
+                        <button type="submit" value="Login" class="btn btn-primary py-2 btn-login w-100">
+
+                          <span class="loading d-none">
+                            <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                            </span>
+                            <span>Authenticating</span>...
+                          </span>
+
+                          <span class="button-text">
+                            Login <i class="la la-arrow-right ms-2"></i>
+                          </span>
+
+                        </button>
+                        <div class="my-2"></div>
+                        <a href="/user/reset" data-v-url="user/reset/index" class="my-2">Forgot your password?</a>
+
+                        <div class="my-2"></div>
+                        <!--
+		<a>
+			<span class="btn btn-secondary btn-sm">
+				  <i class="lab la-google la-lg"></i>
+			</span>
+		</a>
+		<a>
+			<span class="btn btn-secondary btn-sm">
+			  <i class="lab la-facebook la-lg"></i>
+			</span>
+		</a> -->
+                        <hr>
+                        <span>Don’t have an account?</span>
+                        <br>
+                        <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
+                        <span class="text-body-tertiary">|</span>
+                        <a href="/user/login" data-v-url="user/login/index">Login</a>
+
+                      </div>
+
+
+                      <div class="user-form" data-v-if="component.user_id">
+                        <div class="text-center">Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
+                          <b data-v-user-last_name data-filter-capitalize>Doe</b>
+                        </div>
+
+                        <div class="dropdown-divider opacity-50 my-3"></div>
+
+                        <ul class="m-3 list-unstyled">
+                          <li>
+                            <a href="user" data-v-url="user/index">
+                              <i class="la la-user la-lg text-muted m-1"></i>
+                              <span>My account</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="user/comments" data-v-url="user/comments/index">
+                              <i class="la la-comment la-lg text-muted m-1"></i>
+                              <span>Comments</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="user/orders" data-v-url="user/orders/index">
+                              <i class="la la-shopping-bag la-lg text-muted m-1"></i>
+                              <span>Orders</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="user/downloads" data-v-url="user/downloads/index">
+                              <i class="la la-hand-holding-heart la-lg text-muted m-1"></i>
+                              <span>Downloads</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="user/wishlist" data-v-url="user/wishlist/index">
+                              <i class="la la-download la-lg text-muted m-1"></i>
+                              <span>Wishlist</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="user/profile" data-v-url="user/profile/index">
+                              <i class="la la-cogs la-lg text-muted m-1"></i>
+                              <span>Profile</span>
+                            </a>
+                          </li>
+                        </ul>
+
+
+                        <input type="hidden" name="logout">
+
+                        <button type="submit" value="logout" class="btn btn-sm btn-primary w-100">
+
+                          <span class="loading d-none">
+                            <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                            </span>
+                            <span>Loading ...</span>...
+                          </span>
+
+                          <span class="button-text">
+                            <i class="la la-sign-out-alt la-lg m-1"></i>
+                            <span>Log out</span>
+                            </a>
+                          </span>
+
+                        </button>
+                      </div>
+                    </form>
+
+
+                  </div>
+                </div>
+              </div>
+
+            </li>
+
+
+            <li class="nav-toggle">
+              <!-- Cart Area -->
+              <div class="dropdown nav-item mini-cart" data-v-component-cart>
+
+                <a class="dropdown-toggle cart-info nav-link " href role="button" id="cart-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="cart/cart/index">
+                  <!-- <img src="img/bag.svg" width="20" alt> -->
+                  <i class="la la-lg la-shopping-bag"></i>
+                  <span class="visually-hidden">Cart</span>
+                  <strong class="text-top text-bold" data-v-total_items data-v-if="cart.total_items > 0"></strong>
+                </a>
+
+
+                <div class="dropdown-menu dropdown-menu-end cart-box" aria-labelledby="cart-dropdown">
+
+                  <div>
+                    <div class="table-responsive">
+                      <table class="table cart-table align-middle mb-0">
+                        <tbody>
+
+
+                          <tr data-v-cart-product>
+                            <td class="text-center">
+                              <a href="#40" data-v-cart-product-url>
+                                <img src="img/demo/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                              </a>
+                            </td>
+                            <td class="text-start">
+                              <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
+                                Product name
+                              </a>
+
+                              <span data-v-cart-product-quantity>1</span>
+                              <i class="la la-times text-muted"></i>
+                              <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+                              <div class="option" data-v-if="product.option">
+                                <div class="" data-v-product-option>
+                                  <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                                  <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
+                                </div>
+                                <div class="" data-v-product-option>
+                                  <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                                  <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
+                                </div>
+                                <div class="" data-v-product-option>
+                                  <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                                  <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
+                                </div>
+                              </div>
+
+                              <div class="subscription" data-v-if="product.subscription">
+                                <span>Subscription plan</span>:
+                                <span data-v-cart-product-subscription_name>Subscription plan</span>
+                              </div>
+                            </td>
+                            <td class="text-end">
+                              <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                                <i class="la la-times"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr data-v-cart-product>
+                            <td class="text-center">
+                              <a href="#40" data-v-cart-product-url>
+                                <img src="img/demo/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                              </a>
+                            </td>
+                            <td class="text-start">
+                              <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
+                                Product name
+                              </a>
+
+                              <span data-v-cart-product-quantity>1</span>
+                              <i class="la la-times text-muted"></i>
+                              <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+
+                            </td>
+                            <td class="text-end">
+                              <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                                <i class="la la-times"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr data-v-if-not="cart.total_items">
+                            <td colspan="100">
+                              <div class="d-flex  p-2">
+                                <div class="text-center p-2 opacity-75">
+                                  <!-- <img src="img/bag.svg" width="20" alt> -->
+                                  <i class="la la-2x la-shopping-bag"></i>
+                                </div>
+                                <div class="p-2">
+                                  <strong>Empty cart</strong>
+                                  <br>
+                                  <span class="text-muted">No products added yet!</span>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+
+                      </table>
+                    </div>
+
+                    <div class="p-3 pt-0 border-top" data-v-if="cart.total_items">
+                      <div class="table-responsive mb-2" data-v-cart-totals>
+                        <table class="table mb-0 cart-table cart-total" cellspacing="0">
+                          <tfoot>
+                            <tr data-v-cart-total>
+                              <td colspan="5" class="text-end">
+                                <small data-v-cart-total-title>Sub-Total</small>:
+                              </td>
+                              <td class="text-end">
+                                <span data-v-cart-total-text data-v-if="total.text"> - </span>
+                                <span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
+                              </td>
+                            </tr>
+                            <tr data-v-cart-total>
+                              <td colspan="5" class="text-end">
+                                <small>Eco Tax (2.00):</small>
+                              </td>
+                              <td class="text-end">$2.00</td>
+                            </tr>
+                            <tr data-v-cart-total>
+                              <td colspan="5" class="text-end">
+                                <small>VAT (19%):</small>
+                              </td>
+                              <td class="text-end">$20.20</td>
+                            </tr>
+                            <tr data-v-cart-total>
+                              <td colspan="5" class="text-end">
+                                <small>Total:</small>
+                              </td>
+                              <td class="text-end">$123.20</td>
+                            </tr>
+                            <tr>
+                              <td colspan="5" class="text-end">Total:</td>
+                              <td class="text-end" data-v-grand-total_formatted>$0</td>
+                            </tr>
+                          </tfoot>
+
+                        </table>
+                      </div>
+
+                    </div>
+
+                    <div class="row mt-2 g-2 px-3 pb-2" data-v-if="cart.total_items">
+                      <div class="col-6">
+                        <a href="" class="btn btn-light btn-sm border w-100" data-v-url="cart/cart/index" data-url>
+                          <i class="la la-shopping-cart la-lg"></i>
+                          <span>View cart</span>
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="" class="btn btn-primary btn-sm w-100" data-v-url="checkout/checkout/index">
+                          <span>Checkout</span>
+                          <i class="la la-arrow-right la-lg"></i>
+                        </a>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+
+
+                </div>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+
+
+          <button class="btn btn-outline-secondary btn-sm border-0" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <div class="la-flip-horizontal">
+              <i class="la la-search la-lg" aria-hidden="true"></i>
+            </div>
+          </button>
+
+
+          <!--
+	<div class="search-area toggle-hover">
+		<form action="/search" method="get" data-v-action="/search">
+			<input type="hidden" name="route" value="search">
+			<div class="input-group">
+				<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
+				<button class="btn border-0" type="submit" title="Search">
+					<div class="la-flip-horizontal">
+						<i class="la la-search la-lg" aria-hidden="true"></i>
+					</div>
+				</button>
+			</div>			  
+		</form>
+	</div>
+-->
+        </div>
+
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <main id="site-content" role="main">
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="notifications" data-v-notifications>
+
+        <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error>
+
+          <div class="icon align-middle me-2">
+            <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+          </div>
+
+          <div class="flex-grow-1 align-self-center text-small">
+            <div>
+              <div data-v-notification-text>
+                This is a placeholder for a notification message.
+              </div>
+            </div>
+          </div>
+
+
+          <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">
+              <!-- <i class="la la-times"></i> -->
+            </span>
+          </button>
+        </div>
+
+        <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success>
+
+          <div class="icon align-middle me-2">
+            <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+          </div>
+
+          <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+            This is a placeholder for a success message.
+          </div>
+
+          <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">
+              <!-- <i class="la la-times"></i> -->
+            </span>
+          </button>
+        </div>
+
+        <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info>
+
+          <div class="icon align-middle me-2">
+            <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+          </div>
+
+          <div class="flex-grow-1 align-self-center" data-v-notification-text>
+            This is a placeholder for a info message.
+          </div>
+
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">
+              <!-- <i class="la la-times"></i> -->
+            </span>
+          </button>
+        </div>
+
+      </div>
+
+      <div data-if-not="order.id_order">
+
+        <div class="container" data-v-if-not="this.global.user_id">
+
+          <div class="form-check mb-1 form-control-lg">
+            <input class="form-check-input" type="checkbox" value="" id="login-form-check" onclick="toggleLoginForm()">
+            <label class="form-check-label text-small" for="login-form-check">
+              I already have an account
+            </label>
+          </div>
+
+          <div id="checkout-login-container" class="col-md-6" style="display:none">
+            <div data-v-component-user id="checkout-login-form" class="card p-4 mb-2">
+
+              <form action method="post" enctype="multipart/form-data">
+
+                <input type="hidden" name="csrf" data-v-csrf>
+
+                <div class="login-form col-12 mx-auto" data-v-if-not="component.user_id">
+
+                  <div class="row mb-3">
+                    <label class="col-4 col-form-label" for="input-email">E-Mail Address</label>
+                    <div class="col-8">
+                      <input type="email" name="email" value placeholder="E-Mail Address" id="input-email" class="form-control" autocomplete="email" required>
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <label class="col-4 col-form-label" for="login-password">Password</label>
+                    <div class="col-8">
+
+                      <div class="input-group">
+                        <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password" id="login-password" name="password" value="" aria-label="Password" required>
+                        <div class="input-group-append">
+                          <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this,'login-password')">
+                            <i class="la la-eye-slash"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-end">
+                    <a href="#recover" target="_blank" data-v-url="user/reset/index" class="text-muted me-3">Forgot your password?</a>
+
+                    <button type="submit" name="login" value="Login" class="btn btn-primary">
+
+                      <span class="loading d-none">
+                        <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                        </span>
+                        <span>Authenticating</span>...
+                      </span>
+
+                      <span class="button-text">
+                        <span>Login</span>
+                        <i class="la la-arrow-right float-end ms-2"></i>
+                      </span>
+
+                    </button>
+
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+
+        <form id="checkout-form" action method="post" enctype="multipart/form-data">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-12 col-md-7">
+                <div class="card" style="--bs-card-spacer-y: 1.5rem; --bs-card-spacer-x: 1.5rem; ">
+                  <div class="card-body">
+                    <div class="row" data-v-if-not="this.global.user_id">
+
+                      <div class="mb-3 col-6">
+                        <label class="col-form-label" for="first_name">First Name <span class="text-danger text-small">*</span>
+                        </label>
+                        <input type="text" class="form-control" id="first_name" name="first_name" value="" minlength="3" autocomplete="given-name" required>
+                      </div>
+                      <div class="mb-3 col-6">
+                        <label class="col-form-label" for="last_name">Last Name <span class="text-danger text-small">*</span>
+                        </label>
+                        <input type="text" class="form-control" id="last_name" name="last_name" value="" minlength="3" autocomplete="family-name" required>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <label class="col-form-label" for="email">Email Address <span class="text-danger text-small">*</span>
+                        </label>
+                        <input type="email" class="form-control" id="email" name="email" value="" autocomplete="email" required>
+                      </div>
+                      <!--                    
+							<div class="col-6 mb-3">
+								<label class="col-form-label" for="phone_number">Phone No <span class="text-danger text-small">*</span></label>
+								<input type="text" class="form-control" id="phone_number" name="phone_number" min="0" placeholder="Phone number" minlength="3" maxlength="32" value="" autocomplete="tel" required>
+							</div>
+							-->
+                      <!--
+							<div class="mb-3 col-12 mb-3">
+								<label class="col-form-label" for="company">Company Name</label>
+								<input type="text" class="form-control" id="company" name="company" value="">
+							</div>
+							-->
+
+                      <div class="mb-3">
+                        <div class="" data-v-if-not="this.global.user_id">
+                          <div class="form-check form-check-inline">
+                            <label class="form-check-label" for="register-account-check">
+                              <input class="form-check-input" type="radio" value="true" id="register-account-check" name="register" checked onclick="toggleRegister(this)">
+                              <span>Register account</span>
+                            </label>
+                          </div>
+
+                          <div class="form-check form-check-inline">
+                            <label class="form-check-label" for="guest-check">
+                              <input class="form-check-input" type="radio" value="false" id="guest-check" name="register" onclick="toggleRegister(this)">
+                              <span>Guest checkout</span>
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="row mb-3 register-account" id="register-account" data-v-if-not="this.global.user_id">
+                          <label class="col-form-label" for="register-password">Password</label>
+
+                          <div class="input-group">
+                            <input type="password" minlength="6" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password" id="register-password" name="password" value="" aria-label="Password" autocomplete="new-password" required>
+                            <div class="input-group-append">
+                              <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this,'register-password')">
+                                <i class="la la-eye-slash"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                    <!--
+						<div class="row" data-v-if="this.global.user_id">
+							<div class="col mb-3" data-v-if-not="this.global.user.phone_number">
+								<label class="col-form-label" for="phone_number">Phone No <span class="text-danger text-small">*</span></label>
+								<input type="text" class="form-control" id="phone_number" name="phone_number" min="0" placeholder="Phone number" minlength="3" maxlength="32" value="" autocomplete="tel" required>
+							</div>
+						</div>
+						-->
+
+                    <div class="row" data-v-component-user-address>
+                      <div class="mb-2 col-6" data-v-class-if-col-12="count <= 1" data-v-user_address>
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="form-check form-control-lg">
+                              <input class="form-check-input" type="radio" value="" name="billing_address_id" data-v-user_address-label-id data-v-user_address-user_address_id>
+                              <label class="form-check-label text-small" role="button" for="billing_address_id" data-v-user_address-label-for>
+
+                                <span data-v-user_address-first_name>First name</span>
+                                <span data-v-user_address-last_name>Last name</span>
+                                <div data-v-user_address-company>Company</div>
+                                <span data-v-user_address-address_1>Address 1</span>
+                                <span data-v-user_address-address_2>Address 2</span>
+                                <span data-v-user_address-city>Bucharest</span>
+                                <span data-v-user_address-post_code>9800</span>
+
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="form-check mx-3 mb-4 form-control-lg" data-v-if="count > 0">
+                        <input class="form-check-input" type="radio" value="0" name="billing_address_id" id="billing_address_new">
+                        <label class="form-check-label text-small" role="button" for="billing_address_new">
+                          I want to use a new billing address
+                        </label>
+                      </div>
+
+                      <div class="billing_address address">
+                        <h5>Billing Address</h5>
+
+                        <div class="row">
+                          <!--
+			<div class="mb-3 col-6">
+				<label class="col-form-label" for="billing_first_name">First Name <span class="text-danger text-small">*</span></label>
+				<input type="text" class="form-control" id="billing_first_name" name="billing_address[first_name]" value="" minlength="3" autocomplete="given-name" required>
+			</div>
+			<div class="mb-3 col-6">
+				<label class="col-form-label" for="billing_last_name">Last Name <span class="text-danger text-small">*</span></label>
+				<input type="text" class="form-control" id="billing_last_name" name="billing_address[last_name]" value="" minlength="3" autocomplete="family-name" required>
+			</div>
+			-->
+                          <div class="mb-3 col-12 mb-3">
+                            <label class="col-form-label" for="billing_company">Company Name</label>
+                            <input type="text" class="form-control" id="billing_company" name="billing_address[company]" value="" autocomplete="organization">
+                          </div>
+
+                          <div class="col-6 mb-3">
+                            <label class="col-form-label" for="country">Country <span class="text-danger text-small">*</span>
+                            </label>
+                            <select class="form-select" id="billing_country_id" name="billing_address[country_id]" autocomplete="billing country-name" data-v-countries required readonly>
+                              <option value="" data-v-option>
+                                Country 1
+                              </option>
+                              <option value="" data-v-option>
+                                Country 2
+                              </option>
+                            </select>
+                          </div>
+                          <div class="col-6 mb-3">
+                            <label class="col-form-label" for="country">Region <span class="text-danger text-small">*</span>
+                            </label>
+                            <select class="form-select" id="billing_region_id" name="billing_address[region_id]" autocomplete="billing address-level1" data-v-regions required readonly>
+                              <option value="1" data-v-option></option>
+                              <option value="2" data-v-option></option>
+                              <option value="3" data-v-option></option>
+                            </select>
+                          </div>
+                          <div class="col-12 mb-3">
+                            <label class="col-form-label" for="street_address">Address <span class="text-danger text-small">*</span>
+                            </label>
+                            <input type="text" class="form-control mb-3" id="billing_address_1" name="billing_address[address_1]" autocomplete="billing street-address" value="" placeholder="Street address" minlength="5" autocomplete="shipping street-address" required>
+                            <input type="text" class="form-control" id="billing_address_2" name="billing_address[address_2]" placeholder="Apartment, suite, unit etc. (optional)" minlength="3" value="" autocomplete="billing address-line1" required>
+                          </div>
+                          <div class="col-6 mb-3">
+                            <label class="col-form-label" for="post_code">Postcode <span class="text-danger text-small">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="billing_post_code" name="billing_address[post_code]" autocomplete="billing postal-code" minlength="3" maxlength="10" autocomplete="billing postal-code" value="" required>
+                          </div>
+                          <div class="col-6 mb-3">
+                            <label class="col-form-label" for="city">Town/City <span class="text-danger text-small">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="billing_city" name="billing_address[city]" minlength="3" value="" autocomplete="billing address-level2" required>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+                    <div class="mb-3">
+                      <div class="form-check mb-1">
+                        <input type="checkbox" class="form-check-input" id="terms" name="terms" value="true" required>
+                        <label class="form-check-label" for="terms">
+                          </span>I agree to</span>
+                          <a href="page/terms-conditions" target="_blank" data-v-url="content/page/index" data-v-url-params='{"slug":"terms-conditions"}'>Terms and conditions</a>
+                        </label>
+                      </div>
+                      <div class="form-check mb-1">
+                        <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter" value="true">
+                        <label class="form-check-label" for="newsletter">Subscribe to our newsletter</label>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-5 ms-lg-auto">
+                <div class="card">
+                  <div class="card-body">
+
+                    <div class="cart-summary" data-v-component-cart>
+                      <div class="table-responsive mb-3">
+                        <table class="table cart-table align-middle border-bottom mb-0">
+                          <tbody>
+
+                            <tr data-v-cart-product>
+                              <td class="text-center">
+                                <a href="#40" data-v-cart-product-url>
+                                  <img src="img/demo/product.webp" alt="Product name" loading="lazy" class="img-rounded" data-v-cart-product-image width=50>
+                                </a>
+                              </td>
+                              <td class="">
+                                <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
+                                  Product name
+                                </a>
+
+                                <div class="option" data-v-if="product.option">
+                                  <div class="" data-v-product-option>
+                                    <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                                  </div>
+                                  <div class="" data-v-product-option>
+                                    <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                                  </div>
+                                  <div class="" data-v-product-option>
+                                    <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                                  </div>
+                                </div>
+
+                                <div class="subscription" data-v-if="product.subscription">
+                                  <span>Subscription plan</span>:
+                                  <span data-v-cart-product-subscription_name>Subscription plan</span>
+                                </div>
+                              </td>
+                              <td class="text-end">
+                                <span class="text-small">
+                                  <span data-v-cart-product-quantity>1</span>
+                                  <span class="text-muted">x</span>
+                                  <span data-v-cart-product-price_tax_formatted>$123.20</span>
+                                </span>
+                              </td>
+
+                            </tr>
+                            <tr data-v-cart-product>
+                              <td class="text-center">
+                                <a href="#40" data-v-cart-product-url>
+                                  <img src="img/demo/product.webp" alt="Product name" loading="lazy" class="img-rounded" data-v-cart-product-image width=50>
+                                </a>
+                              </td>
+                              <td class="">
+                                <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
+                                  Product name
+                                </a>
+                              </td>
+                              <td class="text-end">
+                                <span class="text-small">
+                                  <span data-v-cart-product-quantity>1</span>
+                                  <span class="text-muted">x</span>
+                                  <span data-v-cart-product-price_tax_formatted>$123.20</span>
+                                </span>
+                              </td>
+
+                            </tr>
+                            <!-- 
+					<tr data-v-if-not="cart.total_items">
+							<td colspan="1">
+								<div class="d-flex  p-2">
+									<div class="text-center p-2 opacity-75">
+										<i class="la la-2x la-shopping-bag"></i>
+									</div>
+									<div class="p-2">
+										<strong>Empty cart</strong><br>
+										<span class="text-muted">No products added yet!</span>
+									</div>
+								</div>
+							</td>
+					</tr>
+					-->
+                          </tbody>
+
+                        </table>
+                      </div>
+
+                      <div class="p-3 pt-0" data-v-if="cart.total_items">
+
+                        <details>
+                          <summary class="text-end">
+                            <span>Total:</span>
+                            <span class="fw-semibold" data-v-grand-total_formatted>$0</span>
+                          </summary>
+
+                          <div class="table-responsive mb-2" data-v-cart-totals>
+                            <table class="table mb-0 cart-table cart-total" cellspacing="0">
+                              <tfoot>
+                                <tr data-v-cart-total>
+                                  <td colspan="5" class="text-end">
+                                    <small data-v-cart-total-title>Sub-Total</small>:
+                                  </td>
+                                  <td class="text-end">
+                                    <span data-v-cart-total-text data-v-if="total.text"> - </span>
+                                    <span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
+                                  </td>
+                                </tr>
+                                <tr data-v-cart-total>
+                                  <td colspan="5" class="text-end">
+                                    <small>Eco Tax (2.00):</small>
+                                  </td>
+                                  <td class="text-end">$2.00</td>
+                                </tr>
+                                <tr data-v-cart-total>
+                                  <td colspan="5" class="text-end">
+                                    <small>VAT (19%):</small>
+                                  </td>
+                                  <td class="text-end">$20.20</td>
+                                </tr>
+                                <tr data-v-cart-total>
+                                  <td colspan="5" class="text-end">
+                                    <small>Total:</small>
+                                  </td>
+                                  <td class="text-end">$123.20</td>
+                                </tr>
+                                <tr>
+                                  <td colspan="5" class="text-end">Total:</td>
+                                  <td class="text-end" data-v-grand-total_formatted>$0</td>
+                                </tr>
+                              </tfoot>
+
+                            </table>
+                          </div>
+                        </details>
+
+
+                      </div>
+
+                      <div class="list-group mb-3" data-v-cart-coupons>
+                        <div class="list-group-item" data-v-cart-coupon>
+                          <div class="small" data-v-cart-coupon-name>-10% Discount</div>
+                          <span class="badge bg-success-subtle text-body me-2 code" data-v-cart-coupon-code>discount10</span>
+                          <button class="btn btn-remove btn-sm btn-remove-coupon float-end" name="removeCoupon">
+                            <i class="la la-lg la-times-circle"></i>
+                          </button>
+                        </div>
+                        <div class="list-group-item" data-v-cart-coupon>
+                          <div class="small" data-v-cart-coupon-name>Free shipping</div>
+                          <span class="badge bg-success-subtle text-body me-2 code" data-v-cart-coupon-code>freeship</span>
+                          <button class="btn btn-remove btn-sm btn-remove-coupon float-end" name="removeCoupon">
+                            <i class="la la-lg la-times-circle"></i>
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="notifications" data-v-notifications>
+
+                        <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="coupon">
+
+                          <div class="icon align-middle me-2">
+                            <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                          </div>
+
+                          <div class="flex-grow-1 align-self-center text-small">
+                            <div>
+                              <div data-v-notification-text>
+                                This is a placeholder for a notification message.
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">
+                              <!-- <i class="la la-times"></i> -->
+                            </span>
+                          </button>
+                        </div>
+
+                        <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="coupon">
+
+                          <div class="icon align-middle me-2">
+                            <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+                          </div>
+
+                          <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+                            This is a placeholder for a success message.
+                          </div>
+
+                          <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">
+                              <!-- <i class="la la-times"></i> -->
+                            </span>
+                          </button>
+                        </div>
+
+                        <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="coupon">
+
+                          <div class="icon align-middle me-2">
+                            <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+                          </div>
+
+                          <div class="flex-grow-1 align-self-center" data-v-notification-text>
+                            This is a placeholder for a info message.
+                          </div>
+
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">
+                              <!-- <i class="la la-times"></i> -->
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+
+                      <div class="input-group mb-3">
+                        <input type="text" name="coupon" class="form-control" id="coupon_code" placeholder="Coupon Code" aria-label="Coupon Code">
+                        <button class="btn btn-outline-primary btn-sm btn-coupon px-4" type="button">
+
+                          <span class="loading d-none">
+                            <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                            </span>
+                            <span>Applying </span>...
+                          </span>
+
+                          <span class="button-text">
+                            Apply <i class="la la-arrow-right float-end ms-2"></i>
+                          </span>
+
+                        </button>
+                      </div>
+                    </div>
+
+
+                    <div data-v-checkout="true" data-v-component-checkout-payment>
+                      <div data-v-if="this.hasPayment">
+                        <h6>Payment</h6>
+                        <div name="accordion" role="tablist" class="accordion mb-3">
+
+                          <div class="accordion-item" data-v-payment>
+                            <div class="accordion-header" role="tab">
+                              <label class="form-check-label accordion-button collapsed" aria-expanded="false" role="button">
+                                <input class="form-check-input me-2" type="radio" name="payment_method" value="default" data-v-payment-key required>
+                                <span data-v-payment-title>Default payment</span>
+                              </label>
+                            </div>
+
+                            <div class="collapse" role="tabpanel">
+                              <div class="accordion-body">
+                                <div data-v-payment-description>Credit card description</div>
+                                <div data-v-payment-render></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item" data-v-payment>
+                            <div class="accordion-header" role="tab">
+                              <label class="form-check-label accordion-button collapsed" aria-expanded="false" role="button">
+                                <input class="form-check-input me-2" type="radio" name="payment_method" value="default" data-v-payment-key required>
+                                <span data-v-payment-title>Credit card payment</span>
+                              </label>
+                            </div>
+
+                            <div class="collapse" role="tabpanel">
+                              <div class="accordion-body">
+                                <div data-v-payment-description>Credit card description</div>
+                                <div data-v-payment-render></div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="alert alert-warning d-flex alert-dismissable" role="alert" data-v-if="count < 1">
+                            <div class="icon align-middle me-2">
+                              <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                            </div>
+                            <div class="flex-grow-1 align-self-center text-small">
+                              No payment methods enabled!
+                            </div>
+
+                            <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">
+                                <!-- <i class="la la-times"></i> -->
+                              </span>
+                            </button>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                      <label for="notes">Order Notes</label>
+                      <textarea name="notes" id="notes" cols="30" rows="3" class="form-control" placeholder=""></textarea>
+                    </div>
+
+                    <button type="submit" href="" class="btn btn-primary my-2 w-100" data-v-url="checkout/checkout/confirm">
+                      Place order <i class="la la-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+
+    <footer class="footer-3 bg-dark text-white" title="footer-3" data-v-save-global="index.html,.footer-3" data-bs-theme="dark">
+      <div class="container" data-v-component-menu="footer" data-v-slug="main-footer">
+
+        <div class="row" data-v-menu-items>
+
+
+          <div class="col-md">
+
+            <div data-v-component-site>
+              <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+              <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
+            </div>
+
+          </div>
+
+
+          <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
+            <div class="h6" data-v-menu-item-name>Vvveb</div>
+            <nav data-v-menu-item-recursive>
+              <div data-v-menu-item data-v-if="category.children == 0">
+                <a href="https://themes.vvveb.com/" data-v-menu-item-url>
+                  <span data-v-menu-item-name>Themes</span>
+                </a>
+              </div>
+              <div data-v-menu-item data-v-if="category.children == 0">
+                <a href="https://plugins.vvveb.com/" data-v-menu-item-url>
+                  <span data-v-menu-item-name>Plugins</span>
+                </a>
+              </div>
+              <div data-v-menu-item data-v-if="category.children == 0">
+                <a href="content/index.html" data-v-menu-item-url>
+                  <span data-v-menu-item-name>Blog</span>
+                </a>
+              </div>
+              <div data-v-menu-item data-v-if="category.children == 0">
+                <a href="product/index.html" data-v-menu-item-url>
+                  <span data-v-menu-item-name>Shop</span>
+                </a>
+              </div>
+            </nav>
+          </div>
+
+          <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
+            <div class="h6" data-v-menu-item-name>Resources</div>
+            <nav data-v-menu-item-recursive>
+              <div data-v-menu-item data-v-if="category.children == 0">
+                <a href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <span data-v-menu-item-name>User documentation</span>
+                </a>
+              </div>
+              <div data-v-menu-item data-v-if="category.children == 0">
+                <a href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <span data-v-menu-item-name>Developer documentation</span>
+                </a>
+              </div>
+              <div data-v-menu-item data-v-if="category.children == 0">
+                <a href="pricing.html" data-v-menu-item-url>
+                  <span data-v-menu-item-name>Pricing</span>
+                </a>
+              </div>
+              <div data-v-menu-item data-v-if="category.children == 0">
+                <a href="services.html" data-v-menu-item-url>
+                  <span data-v-menu-item-name>Services</span>
+                </a>
+              </div>
+            </nav>
+          </div>
+
+          <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
+            <div class="h6" data-v-menu-item-name>Contact</div>
+            <nav data-v-menu-item-recursive>
+              <div data-v-menu-item data-v-if="category.children == 0">
+                <a href="" href="contact.html">Contact us</a>
+                <a href="" href="portfolio.html">Portfolio</a>
+                <a href="" href="about.html">About us</a>
+                <a href="" href="user/return-form.html">Return form</a>
+              </div>
+            </nav>
+          </div>
+
+          <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
+            <div class="h6" data-v-menu-item-name>My account</div>
+            <nav data-v-menu-item-recursive>
+              <div data-v-menu-item data-v-if="category.children == 0">
+                <a href="" href="user/order-tracking.html">Order tracking</a>
+                <a href="" href="user/wishlist.html">Wishlist</a>
+                <a href="" href="user/orders.html">Orders</a>
+                <a href="" href="cart/compare.html">Compare</a>
+              </div>
+            </nav>
+          </div>
+
+
+
+        </div>
+        <!--
+		<div class="row justify-content-end">
+			<div class="col-md-3 text-muted text-small mt-5">
+				&copy; <span data-v-year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
+			</div>
+		</div>
+		-->
+
+      </div>
+
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="d-flex flex-column flex-md-row">
+            <div class="text-muted flex-grow-1">
+              <a class="btn-link text-muted" href="/page/terms-conditions">Terms and conditions</a> |
+              <a class="btn-link text-muted" href="/page/privacy-policy">Privacy Policy</a>
+            </div>
+            <div class="text-muted">
+              &copy; <span data-v-year>2025</span>
+              <span data-v-global-site.description.title>Vvveb</span>. <span>Powered by</span>
+              <a href="https://vvveb.com" class="btn-link text-muted" target="_blank">Vvveb</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+
+
+    <div class="bg-image"></div>
+
+    <div class="alert alert-light alert-dismissible fade alert-top" role="alert" style="display:none">
+      <div class="container">
+
+        <div class="message">
+          Product was added to cart.
+        </div>
+
+
+        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </div>
+
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body" style="--bs-modal-padding: 0.7rem;">
+
+            <form action="/search" method="get">
+              <input type="hidden" name="route" value="search">
+              <div class="d-flex">
+                <div class="input-group">
+                  <input type="search" name="search" class="form-control form-control-lg border-primary border-2" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
+                  <button class="btn btn-outline-primary border-2 border-start-0" type="submit" title="Search">
+                    <div class="la-flip-horizontal">
+                      <i class="la la-search la-lg" aria-hidden="true"></i>
+                    </div>
+                  </button>
+                </div>
+                <button type="button" class="btn-close small ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="loading d-none d-flex justify-content-center m-5">
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+            </form>
+
+            <div class="search-results">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-loading-status" class="progress progress-bar"></div>
+
+    <!-- Vvveb Common Js -->
+    <script id="popper-js" src="js/popper.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script id="bootstrap-js" src="js/bootstrap.min.js"></script>
+    <!-- Vvveb Ajax Common Js -->
+    <script id="app-js" src="/js/app.js"></script>
+
+    <!-- Animation -->
+
+    <link rel="stylesheet" href="js/aos.css">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+          opacity: 1 !important;
+          transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+
+    <script src="js/aos.js"></script>
+    <script>
+	AOS.init();
+</script>
+    <script src="/js/app/cart.js"></script>
+
+    <link id="glightbox-css" rel="stylesheet" href="/js/glightbox/css/glightbox.css">
+    <script id="glightbox-js" src="/js/glightbox/js/glightbox.min.js"></script>
+
+    <script src="/js/app/theme.js"></script>
+
+    <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/public\/*","\/themes\/*","\/plugins\/*","\/cart\/*","\/checkout\/*","\/user\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+    <script>
+let regionsUrl = '{ $this->regionsUrl }';
+</script>
+    <script data-no-minify src="/js/app/checkout.js"></script>
+
+</body>
+
+</html>

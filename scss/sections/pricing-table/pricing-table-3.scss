@@ -18,7 +18,7 @@
 		}
 		.number {
 			font-size: 60px;
-			font-weight: 600;
+			font-weight: 700;
 		}
 	}
 	.excerpt {
@@ -39,8 +39,14 @@
 			list-style: none;
 			padding-top: 10px;
 			padding-bottom: 10px;
+			border-bottom: 1px solid rgba(var(--bs-body-color-rgb), 0.1);
+			    
+			&:last-child {
+				border:none;
+			}
+			
 			&:nth-child(odd) {
-				background: rgba(var(--bs-body-color-rgb), 0.05);
+				//background: rgba(var(--bs-body-color-rgb), 0.05);
 			}
 			span.fa {
 				//color: $color_4;

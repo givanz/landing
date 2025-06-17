@@ -15,7 +15,7 @@
       <!-- Blog Entries Column -->
       <div class="col-md-7 col-lg-8 col-xl-9" >
 
-		<div class="breadcumb_area bg-img" style="background-image: url(img/bg-img/breadcumb.jpg);">
+		<div class="breadcumb_area bg-img" style="background-image: url(img/bg-img/breadcumb.webp);">
 			<div class="container">
 				
 				
@@ -39,32 +39,31 @@
 			<nav>
 			  <div class="nav nav-tabs" id="nav-search" role="tablist">
 				
-				<div data-v-if="this.type == '' || this.type == 'product'">
-					<button class="nav-link" id="nav-products-tab" 
-						data-bs-toggle="tab" data-bs-target="#nav-products" 
-						type="button" role="tab" aria-controls="nav-products" 
-						aria-selected="true" 
-						data-v-if="products.count > 0" 
-						>
-							<span>Products</span>
-							<span class="badge bg-body-tertiary border text-body" data-v-products-count>0</span>
-					</button>
-				</div>
+				<button class="nav-link" id="nav-products-tab" 
+					data-bs-toggle="tab" data-bs-target="#nav-products" 
+					type="button" role="tab" aria-controls="nav-products" 
+					aria-selected="true" 
+					data-v-if="this.type == 'product' || products.count > 0"
+					>
+						<span>Products</span>
+						<span class="badge bg-body-tertiary border text-body" data-v-products-count>0</span>
+				</button>
 				
-				<div data-v-if="this.type == '' || this.type == 'post'">
-					<button class="nav-link" id="nav-posts-tab" 
-						data-bs-toggle="tab" data-bs-target="#nav-posts" 
-						type="button" role="tab" aria-controls="nav-posts" 
-						aria-selected="false" data-v-if="posts.count > 0">
-							<span>Posts</span>
-							<span class="badge bg-body-tertiary border text-body" data-v-posts-count>0</span>
-					</button>
-				</div>
+				<button class="nav-link" id="nav-posts-tab" 
+					data-bs-toggle="tab" data-bs-target="#nav-posts" 
+					type="button" role="tab" aria-controls="nav-posts" 
+					aria-selected="false" 
+					data-v-if="this.type == 'post' || posts.count > 0"
+					>
+						<span>Posts</span>
+						<span class="badge bg-body-tertiary border text-body" data-v-posts-count>0</span>
+				</button>
+
 			  </div>
 			</nav>
 			<div class="tab-content" id="nav-searchContent">
-
-				<div class="tab-pane" id="nav-products" role="tabpanel" aria-labelledby="nav-products-tab" tabindex="0">
+				
+				<div class="tab-pane" id="nav-products" role="tabpanel" aria-labelledby="nav-products-tab" tabindex="0" data-v-if="this.type == 'product' || products.count > 0">
 					
 					<div class="row g-3 my-3">
 					  <div class="col-md-6 col-xl-4" data-v-product>
@@ -81,8 +80,7 @@
 					  @@include('../_includes/pagination.html', {"component": "products", "component-index":0, "parameters": {"type":"product"}})
 				</div>
 
-				
-				<div class="tab-pane" id="nav-posts" role="tabpanel" aria-labelledby="nav-posts-tab" tabindex="0">
+				<div class="tab-pane" id="nav-posts" role="tabpanel" aria-labelledby="nav-posts-tab" tabindex="0" data-v-if="this.type == '' || this.type == 'post'">
 					<div class="row g-3 my-3">
 						<div class="col-12 col-lg-4 mb-2" data-v-post>
 							@@include('../_includes/blog-list-item.html', {"class":"h-100"})
@@ -93,6 +91,8 @@
 						
 					@@include('../_includes/pagination.html', {"component": "posts", "component-index":0, "parameters": {"type":"post"}})
 				 </div>
+				 
+				 
 			 </div>
 			 
 			 
@@ -123,47 +123,58 @@
 
 
 <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
-      <div class="modal-body">
+      <div class="modal-body" style="--bs-modal-padding: 0.7rem;">
         
-        <form >
+        <form action="/search" method="get"> 
 		  <input type="hidden" name="route" value="search">
 		  <div class="input-group">
-			<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
-			<button class="btn btn-outline-primary border" type="submit" title="Search">
+			<input type="search" name="search" class="form-control form-control-lg border-primary border-2" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
+			<button class="btn btn-outline-primary border-2 border-start-0" type="submit" title="Search">
+
 			  <div class="la-flip-horizontal">
 				<i class="la la-search la-lg" aria-hidden="true"></i>
 			  </div>
 			</button>
+			<button type="button" class="btn-close small ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
 		  </div>
+
+			<div class="loading d-none d-flex justify-content-center m-5">
+			  <div class="spinner-border" role="status">
+				<span class="visually-hidden">Loading...</span>
+			  </div>
+			</div>
 		</form>
 		
 		<div class="search-results">
-			
+
 			<div data-v-component-products data-v-limit="6" data-v-search="url" data-v-search_boolean="true" data-v-page="url" data-v-type="" data-v-taxonomy_item_id="url" data-v-image_size="thumb">
 			<div data-v-component-posts  data-v-limit="6" data-v-search="url" data-v-search_boolean="true" data-v-type="" data-v-image_size="thumb">
 				
 				<div class="products mt-2" data-v-if="products.search && products.count > 0">
-					<span class="small text-muted">Products</span>
-					<div class="border">
+					<div class="small text-muted my-2">Products</div>
+					<div class="card">
 						<div class="search-item" data-v-product>
-							<a href="" data-v-product-url>
-								<img src="img/demo/product.jpg" width="48" data-v-product-image>
+							<a href="" data-bs-dismiss="modal" data-v-product-url>
+								<img src="img/demo/product.webp" width="48" data-v-product-image>
+								<svg class="me-1" height="48" width="48" data-v-if-not="prod.image">
+									<rect width="100%" height="100%" fill="#eee"></rect>
+								</svg>
 								<span data-v-product-name>Product</span>
 								<span class="p-2 small text-muted float-end " data-v-if="prod.price > 0" data-v-product-price_tax_formatted="">$256.99</span>
 							</a>
 						</div>
 						<div class="search-item" data-v-product>
 							<a href="" data-v-product-url>
-								<img src="img/demo/product.jpg" width="48" data-v-product-image>
+								<img src="img/demo/product.webp" width="48" data-v-product-image>
 								<span data-v-product-name>Product</span>
 								<span class="p-2 small text-muted float-end " data-v-if="prod.price > 0" data-v-product-price_tax_formatted="">$256.99</span>
 							</a>
 						</div>
 						<div class="search-item" data-v-product>
 							<a href="" data-v-product-url>
-								<img src="img/demo/product.jpg" width="48" data-v-product-image>
+								<img src="img/demo/product.webp" width="48" data-v-product-image>
 								<span data-v-product-name>Product</span>
 								<span class="p-2 small text-muted float-end " data-v-if="prod.price > 0" data-v-product-price_tax_formatted="">$256.99</span>
 							</a>
@@ -176,27 +187,30 @@
 				</div>
 				
 				<div class="posts mt-2" data-v-if="posts.search">
-					<span class="small text-muted">Pages</span>
-					<div class="border">
+					<div class="small text-muted my-2">Pages</div>
+					<div class="card">
 						<div class="search-item" data-v-post>
-							<a href="" data-v-post-url class="flex">
-								<img src="img/demo/video-1.jpg"  width="48"  data-v-post-image data-v-if="post.image">
+							<a href="" data-bs-dismiss="modal" data-v-post-url class="flex">
+								<img src="img/demo/video-1.webp"  width="48"  data-v-post-image data-v-if="post.image">
+								<svg class="me-1" height="48" width="48" data-v-if-not="post.image">
+									<rect width="100%" height="100%" fill="#eee"></rect>
+								</svg>
 								<span data-v-post-name>Post</span>
 							</a>
 						</div>
 						<div class="search-item" data-v-post>
 							<a href="" data-v-post-url class="flex">
-								<img src="img/demo/video-1.jpg"  width="48"  data-v-post-image data-v-if="post.image">
+								<img src="img/demo/video-1.webp"  width="48"  data-v-post-image data-v-if="post.image">
 								<span data-v-post-name>Post</span>
 							</a>
 						</div>
 						<div class="search-item" data-v-post>
 							<a href="" data-v-post-url class="flex">
-								<img src="img/demo/video-1.jpg"  width="48"  data-v-post-image data-v-if="post.image">
+								<img src="img/demo/video-1.webp"  width="48"  data-v-post-image data-v-if="post.image">
 								<span data-v-post-name>Post</span>
 							</a>
 						</div>
-						<div class="small p-1" data-v-if="posts.count <= 0">
+						<div class="p-3 alert-warning text-center" data-v-if="posts.count <= 0">
 							No posts found!
 						</div>
 					</div>
@@ -204,6 +218,8 @@
 			
 			</div>
 			</div>
+			
+
 		</div>
         
       </div>

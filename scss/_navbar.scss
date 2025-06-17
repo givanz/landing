@@ -29,6 +29,16 @@
 		p:empty {
 			display: none;
 		}
+		
+		&.w-100 {
+			left: 0;
+			margin: auto;
+		}
+		
+		&.login-box {
+			min-width:320px;
+			padding:1.5rem;
+		}
 	}
 	
 	.nav-item.dropdown {
@@ -60,7 +70,6 @@
 		*/
 		.dropdown-menu {
 			top: auto;
-			margin-top: -1rem;
 			-ms-transform: translateY(20px);
 			transform: translateY(20px);
 			opacity: 0;

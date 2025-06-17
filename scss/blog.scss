@@ -39,7 +39,11 @@ blockquote {
 
 .post { 
 	//margin-bottom:2rem;
-	border:none;
+	
+	&.card {
+	--bs-card-border-width: 0; 
+	--bs-card-border-color: transparent;
+	}
 
 	@import "post-style";
 
@@ -51,9 +55,9 @@ blockquote {
 
 	.card-footer {
 		/* padding: 0.5rem 1rem; */
-		padding:0;
-		width: 35rem;
-		margin: 0 auto;
+		//padding:0;
+		//max-width: 35rem;
+		//margin: 0 auto;
 		background:transparent;
 		border:none;
 	} 
@@ -61,6 +65,7 @@ blockquote {
 	.post-meta {
 		list-style:none;
 		text-align:center;
+		padding: 0;
 		margin-bottom:2rem;
 
 		li {
@@ -70,7 +75,7 @@ blockquote {
 			color:var(--bs-secondary-color);
 			
 			i {
-				font-size:1.4rem;
+				//font-size:1.4rem;
 			}
 			
 			a {
@@ -89,13 +94,11 @@ blockquote {
 {
        position:relative;
        max-height: 150px;
-       height: 120px;
+       height: 180px;
        overflow: hidden;
 	   //background:var(--bs-border-color);
 	   //background-color:var(--bs-light-bg-subtle);
 	   //background-color:rgba(var(--bs-body-color-rgb), 0.01);
-	   background-color:transparent;
-	   border-bottom:1px solid rgba(var(--bs-body-color-rgb), 0.07);
 	   //border-bottom:1px solid var(--bs-border-color);
 
        .title-container {
@@ -105,6 +108,7 @@ blockquote {
                display: flex;
                align-content: center;
                align-items: center;    
+               text-align:center;
                z-index:1;
                /*
                ::before
@@ -121,10 +125,16 @@ blockquote {
                */
                h1
                {
-                       width:100%;
-                       z-index:1;
-					   margin:0;
-					   font-weight:normal;
+				   width:100%;
+				   z-index:1;
+				   margin:0;
+				   font-weight:700;
+				   //font-size:3rem;
+               }
+               
+               nav {
+               --bs-link-color-rgb:var(--bs-body-color);
+				display:inline-block;
                }
        }
 
@@ -145,16 +155,18 @@ blockquote {
 
 
 .sidebar-sticky {
+	//padding: 2rem 1rem;
 
 	.card {
 		border:none;
+		--bs-card-bg:transparent;
 	}
 	
 	.card-header {
 		margin-bottom:0rem;
 		background:transparent;
 		border:none;
-		font-size:1.2rem;
+		//font-size:1.2rem;
 	}
 
 }	
@@ -172,14 +184,19 @@ blockquote {
 	
 	.card {
 		//padding:0.3rem 0;
-		
+		margin-bottom: 1rem;
+		--bs-card-cap-padding-x: 1rem;
+		--bs-card-spacer-y: 1rem;
+		--bs-card-cap-padding-y: 0;
+		--bs-card-spacer-x: 1rem;
+    		
 		.card-header {
 			//padding:0rem 1.1rem;
 		}
 		
 		.card-body {
 			//color:var(--bs-body-color);
-			padding:0rem 1rem 1rem;
+			//padding:0rem 1rem 1rem;
 		}
 	}
 }

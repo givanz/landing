@@ -10,15 +10,15 @@
 
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-9">
 										  
 					<div class="row">
 					
-						<div class="col-lg-8 mx-auto">
+						<div class="col-lg-8 col-xl-7 mx-auto">
 					
-							<div class="card  card-default my-4">
+							<div class="card card-default my-4">
 
-								<div class="card-header bg-body p-5 pb-2">
+								<div class="card-header bg-body">
 									<h1 class="mb-1 h2 fw-bold">Sign up</h1>
 									<p class="text-muted">Welcome! Enter your data to create an account.</p>
 
@@ -27,50 +27,56 @@
 								</div>								
 
 
-							  <div class="card-body p-5">
+							  <div class="card-body">
 								
 								
-								<form action="" method="post" enctype="multipart/form-data" data-v-url="user/index/signup" id="signup-form">
+								<form action="" method="post" enctype="multipart/form-data" id="signup-form">
 									<input type="hidden" name="csrf" data-v-csrf>	
 										
 									<!--	
 									<div class="mb-3 input-group">
-										<span class="input-group-text"> <i class="la la-user"></i> </span>
+										<span class="input-group-text bg-body"> <i class="la la-user"></i> </span>
 										<input name="login" class="form-control border-start-0" placeholder="Username" type="text" required>
 										
 									</div> 
 									-->
 									
-									
+									<label class="form-label" for="username">Username</label>
 									<div class="mb-3 input-group">
-										<span class="input-group-text"> <i class="la la-user"></i> </span>
-										<input name="first_name" class="form-control border-start-0" placeholder="First Name" type="text" required>
+										<span class="input-group-text bg-body"> <i class="la la-user"></i> </span>
+										<input name="username" id="username" class="form-control border-start-0 border-start-0" placeholder="Username" type="text" required>
+									</div>
+<!--
+									<label class="form-label" for="first-name">First name</label>
+									<div class="mb-3 input-group">
+										<span class="input-group-text bg-body"> <i class="la la-user"></i> </span>
+										<input name="first_name" id="first-name" class="form-control border-start-0 border-start-0" placeholder="First Name" type="text" required>
 									</div>
 
+									<label class="form-label" for="last-name">Last name</label>
 									<div class="mb-3 input-group">
-										<span class="input-group-text"> <i class="la la-user"></i> </span>
-										<input name="last_name" class="form-control border-start-0" placeholder="Last Name" type="text" required>
+										<span class="input-group-text bg-body"> <i class="la la-user"></i> </span>
+										<input name="last_name" id="last-name" class="form-control border-start-0 border-start-0" placeholder="Last Name" type="text" required>
 									</div>
-
+-->
+									<label class="form-label" for="email">Email address</label>
 									<div class="mb-3 input-group">
-										<span class="input-group-text"> <i class="la la-envelope"></i> </span>
-										<input name="email" class="form-control border-start-0" placeholder="Email address" type="email" required>
-									</div>
-									
-									<div class="mb-3 input-group">
-										<span class="input-group-text"> <i class="la la-lock"></i> </span>
-										  <input type="password" minlength="6" autocorrect="off" class="form-control border-start-0" placeholder="Password"  id="password" name="password" autocomplete="new-password" value="" aria-label="Password" required>
-										  <div class="input-group-append">
-											<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'password')"><i class="la la-eye-slash"></i></button>
-										  </div>
+										<span class="input-group-text bg-body"> <i class="la la-envelope"></i> </span>
+										<input name="email" id="email" class="form-control border-start-0 border-start-0" placeholder="Email address" type="email" required>
 									</div>
 									
+									<label class="form-label" for="password">Password</label>
 									<div class="mb-3 input-group">
-										<span class="input-group-text"> <i class="la la-lock"></i> </span>
-										  <input type="password" minlength="6" autocorrect="off" autocomplete="new-password" class="form-control border-start-0" placeholder="Repeat password"  id="confirm_password" name="confirm_password" value="" aria-label="Repeat Password" required>
-										  <div class="input-group-append">
-											<button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'confirm_password')"><i class="la la-eye-slash"></i></button>
-										  </div>
+										<span class="input-group-text bg-body"> <i class="la la-lock"></i> </span>
+										  <input type="password" minlength="6" autocorrect="off" class="form-control border-start-0 border-start-0" placeholder="Password"  id="password" name="password" autocomplete="new-password" value="" aria-label="Password" required>
+										  <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'password')"><i class="la la-eye-slash"></i></button>
+									</div>
+									
+									<label class="form-label" for="new-password">Repeat password</label>
+									<div class="mb-3 input-group">
+										<span class="input-group-text bg-body"> <i class="la la-lock"></i> </span>
+										  <input type="password" minlength="6" autocorrect="off" autocomplete="new-password" class="form-control border-start-0 border-start-0" placeholder="Repeat password"  id="confirm_password" name="confirm_password" value="" aria-label="Repeat Password" required>
+										  <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'confirm_password')"><i class="la la-eye-slash"></i></button>
 									</div>          
 
 									 <!-- if these hidden inputs are filled then ignore, robots -->
@@ -93,7 +99,7 @@
 									</div>
                             
 									<div class="mb-3">
-										<button type="submit" class="btn btn-primary w-100 btn-signup">Create Account</button>
+										<button type="submit" class="btn btn-primary w-100 btn-signup btn-lg my-3">Create Account</button>
 									</div>      
 									
 									<div class="text-center">Have an account? <a href="" data-v-url="user/login/index" >Log In</a> </div>

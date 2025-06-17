@@ -1,4 +1,4 @@
-<div id="comments" class="post-comments mt-4" data-v-component-comments>
+<div id="comments" class="post-comments mt-5" data-v-component-comments>
 		<h4 class="comments-title">Comments</h4>
 
 		<ol class="comment-list list-unstyled mb-3" data-v-if="count > 0">
@@ -7,14 +7,14 @@
 					<div class="comment-wrap d-flex ">
 
 						<figure class="author-avatar me-2">
-							<img src="img/sections/team/1.jpg" alt="user" width="60" data-v-comment-avatar loading="lazy" data-v-if="comment.avatar">
+							<img src="img/sections/team/1.webp" alt="user" width="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar">
 							<div class="empty" data-v-if-not="comment.avatar"></div>
 						</figure>
 
 						<div class="comment-author">
 
 							<div class="comment-author">
-								<a rel="external nofollow ugc" href="#" data-v-if="comment.url">
+								<a rel="external nofollow ugc" data-v-if="comment.url">
 									<span data-v-comment-author>Maria Williams</span>
 								</a>
 								<span data-v-comment-author data-v-if-not="comment.url">Maria Williams</span>
@@ -48,7 +48,7 @@
 					<div class="comment-wrap d-flex ">
 
 						<figure class="author-avatar me-2">
-							<img src="http://place-hold.it/60x60" alt="user" width="60" height="60" data-v-comment-avatar loading="lazy" data-v-if="comment.avatar">
+							<img src="http://place-hold.it/60x60" alt="user" width="60" height="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar">
 						</figure>
 
 						<div class="comment-author">
@@ -85,13 +85,13 @@
 					<div class="comment-wrap d-flex ">
 
 						<figure class="author-avatar me-2">
-							<img src="img/sections/team/1.jpg" alt="user" width="60" height="60" data-v-comment-avatar loading="lazy" data-v-if="comment.avatar">
+							<img src="img/sections/team/1.webp" alt="user" width="60" height="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar">
 						</figure>
 
 						<div class="comment-author">
 
 							<div class="comment-author">
-								<a rel="external nofollow ugc" href="#" data-v-if="comment.url"><span data-v-comment-author>Maria Williams</span></a>
+								<a rel="external nofollow ugc" data-v-if="comment.url"><span data-v-comment-author>Maria Williams</span></a>
 								<span data-v-comment-author data-v-if-not="comment.url">Maria Williams</span>
 							</div>
 
@@ -138,7 +138,7 @@
 			<i class="la la-window-close"></i></a>
 			-->
 			
-			<form action method="post" enctype="multipart/form-data" data-v-url="user/login" data-selector=".post-comments">
+			<form action method="post" enctype="multipart/form-data" data-v-url="user/login/index" data-selector=".post-comments">
 
 				<span>Logged in as <b data-v-global-user.display_name>author</b></span>
 
@@ -161,7 +161,7 @@
 			
 		</div>
 
-		<form id="comment-form" method="post" action="#" data-v-vvveb-action="addComment" data-v-vvveb-on="submit">
+		<form id="comment-form" method="post" action="" data-v-vvveb-action="addComment" data-v-vvveb-on="submit">
 			
 			<input type="hidden" name="post_id" data-v-post-post_id>
 			<input type="hidden" name="slug" data-v-post-slug>

@@ -79,6 +79,12 @@
 				right:70px;
 			}
 		}
+		
+		.badges {
+			position:absolute;
+			top:10px;
+			left:10px;
+        }		
     }
     
    
@@ -101,26 +107,29 @@
             //font-weight:600;
             //margin-bottom: 0.2rem;
         }
-        p {
+        
+        .product-price {
             margin-bottom: 0;
             font-size: 14px;
             font-weight: 600;
             //color: $dark-color;
-            span {
-                font-size: 14px;
-                font-weight: 600;
-                //color: #aaaaaa;
-                margin-right: 10px;
-                text-decoration: line-through;
-            }
         }
+
+		.old-price {
+			font-size: 14px;
+			font-weight: normal;
+			color: var(--bs-secondary);
+			margin-right: 10px;
+			text-decoration: line-through;
+			float:left;
+		}
 		
         .hover-content {
             position: absolute;
-            width: calc(100% - 40px);
+            width: 60%;
             top: -70px;
-            left: 20px;
-            right: 20px;
+            left: 20%;
+            right: 0px;
             opacity: 0;
             visibility: hidden;
             transition-duration:500ms;
@@ -131,7 +140,7 @@
     }
     .favme {
         cursor: pointer;
-        //color: #ccc;
+        //color: rgba(var(--bs-body-color-rgb), 0.25);
         &.active {
             //color: $hover-color !important;
         }
@@ -158,7 +167,134 @@
 }
 
 
+.products-sidebar {
+	.widget {
+		font-size:14px;
+		
+		strong {
+			font-size:12px;
+		}
+	} 
+} 
+
 .add-to-cart-btn {
-	//background:$bg-default;
-	background:var(--bs-primary);
 }
+
+
+/* price slider */
+.price-input {
+	width: 100%;
+	display: flex;
+	margin: 10px 0 20px;
+	justify-content: space-between;
+	
+	label {
+		display: flex;
+		align-items: center;
+		
+		span {
+			margin:0 1rem;
+		}
+		
+		input[type="number"] {
+			width:100%;
+			
+			-moz-appearance: textfield;
+			&::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+			}
+			&::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+			}
+		}
+
+	}
+	.separator {
+		width: 130px;
+		display: flex;
+		font-size: 19px;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+
+.slider {
+	height: 5px;
+	position: relative;
+	background: #ddd;
+	border-radius: 5px;
+	.progress {
+		height: 100%;
+		left: 25%;
+		right: 25%;
+		position: absolute;
+		border-radius: 5px;
+		background: var(--bs-primary);
+	}
+}
+/*
+.range-input {
+	position: relative;
+	
+	input[type="range"] {
+			position: absolute;
+			width: 100%;
+			height: 5px;
+			top: -5px;
+			background: none;
+			pointer-events: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+
+		  &:focus {
+			outline: 0;
+
+			// Pseudo-elements must be split across multiple rulesets to have an effect.
+			// No box-shadow() mixin for focus accessibility.
+			&::-webkit-slider-thumb { box-shadow: $form-range-thumb-focus-box-shadow; }
+			&::-moz-range-thumb     { box-shadow: $form-range-thumb-focus-box-shadow; }
+		  }	
+		
+		&::-webkit-slider-thumb {
+			height: 17px;
+			width: 17px;
+			border-radius: 50%;
+			background: var(--bs-primary);
+			pointer-events: auto;
+			-webkit-appearance: none;
+			box-shadow: 0 0 6px rgba(var(--bs-body-color-rgb),0.05);
+
+			appearance: none;
+			@include gradient-bg($form-range-thumb-bg);
+			border: $form-range-thumb-border;
+			@include border-radius($form-range-thumb-border-radius);
+			@include box-shadow($form-range-thumb-box-shadow);
+			@include transition($form-range-thumb-transition);
+
+			&:active {
+			  @include gradient-bg($form-range-thumb-active-bg);
+			}		
+		}
+		
+		&::-moz-range-thumb {
+			height: 17px;
+			width: 17px;
+			border: none;
+			border-radius: 50%;
+			background: var(--bs-primary);
+			pointer-events: auto;
+			-moz-appearance: none;
+			box-shadow: 0 0 6px rgba(var(--bs-body-color-rgb),0.05);
+		}
+		
+		&::-webkit-slider-runnable-track {
+			cursor: $form-range-track-cursor;
+		}
+		
+		&::-moz-range-track { 
+			cursor: $form-range-track-cursor;
+		}
+	}
+}
+*/

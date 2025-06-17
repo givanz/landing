@@ -6,7 +6,7 @@
 					<tr data-v-cart-product>
 						<td class="text-center">
 							<a href="#40" data-v-cart-product-url>
-								<img src="img/demo/product.jpg" alt="Product name" loading="lazy" class="img-rounded" data-v-cart-product-image width=50>
+								<img src="img/demo/product.webp" alt="Product name" loading="lazy" class="img-rounded" data-v-cart-product-image width=50>
 							</a>
 						</td>
 						<td class="">
@@ -43,7 +43,7 @@
 					<tr data-v-cart-product>
 						<td class="text-center">
 							<a href="#40" data-v-cart-product-url>
-								<img src="img/demo/product.jpg" alt="Product name" loading="lazy" class="img-rounded" data-v-cart-product-image width=50>
+								<img src="img/demo/product.webp" alt="Product name" loading="lazy" class="img-rounded" data-v-cart-product-image width=50>
 							</a>
 						</td>
 						<td class="">
@@ -81,36 +81,42 @@
 		  </div>
 
 		  <div class="p-3 pt-0" data-v-if="cart.total_items">
-			<div class="table-responsive mb-2" data-v-cart-totals>
-					<table class="table mb-0 cart-table cart-total" cellspacing="0">
-					  <tfoot>
-						  <tr data-v-cart-total>
-							 <td colspan="5" class="text-end"><small data-v-cart-total-title>Sub-Total</small>:</td>
-							 <td class="text-end">
-								<span data-v-cart-total-text data-v-if="total.text"> - </span>
-								<span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
-							 </td>
-						  </tr>
-						  <tr data-v-cart-total>
-							 <td colspan="5" class="text-end"><small>Eco Tax (2.00):</small></td>
-							 <td class="text-end">$2.00</td>
-						  </tr>
-						  <tr data-v-cart-total>
-							 <td colspan="5" class="text-end"><small>VAT (19%):</small></td>
-							 <td class="text-end">$20.20</td>
-						  </tr>
-						  <tr data-v-cart-total>
-							 <td colspan="5" class="text-end"><small>Total:</small></td>
-							 <td class="text-end">$123.20</td>
-						  </tr> 
-						  <tr>
-							 <td colspan="5" class="text-end">Total:</td>
-							 <td class="text-end" data-v-grand-total_formatted>$0</td>
-						  </tr>
-					   </tfoot>
 
-					</table>
-				</div>
+			<details>
+				<summary class="text-end"><span>Total:</span><span class="fw-semibold" data-v-grand-total_formatted>$0</span></summary>
+
+				<div class="table-responsive mb-2" data-v-cart-totals>
+						<table class="table mb-0 cart-table cart-total" cellspacing="0">
+						  <tfoot>
+							  <tr data-v-cart-total>
+								 <td colspan="5" class="text-end"><small data-v-cart-total-title>Sub-Total</small>:</td>
+								 <td class="text-end">
+									<span data-v-cart-total-text data-v-if="total.text"> - </span>
+									<span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
+								 </td>
+							  </tr>
+							  <tr data-v-cart-total>
+								 <td colspan="5" class="text-end"><small>Eco Tax (2.00):</small></td>
+								 <td class="text-end">$2.00</td>
+							  </tr>
+							  <tr data-v-cart-total>
+								 <td colspan="5" class="text-end"><small>VAT (19%):</small></td>
+								 <td class="text-end">$20.20</td>
+							  </tr>
+							  <tr data-v-cart-total>
+								 <td colspan="5" class="text-end"><small>Total:</small></td>
+								 <td class="text-end">$123.20</td>
+							  </tr> 
+							  <tr>
+								 <td colspan="5" class="text-end">Total:</td>
+								 <td class="text-end" data-v-grand-total_formatted>$0</td>
+							  </tr>
+						   </tfoot>
+
+						</table>
+					</div>
+			</details>
+
 
 		</div>
 		

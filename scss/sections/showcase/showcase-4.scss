@@ -37,21 +37,21 @@
 
 	h3 {
 		margin-bottom: 0rem;
-		color:var(--bs-dark);
+		color:var(--bs-body-color);
 		text-align:center;
 		line-height:1.8rem;
 		
 		a {
 			font-size:1.4rem;
 			font-weight: 600;
-			color:var(--bs-dark);
+			color:var(--bs-body-color);
 			text-decoration:none;
 		}
 	}
 	
 	a {
 		text-decoration:none;
-		color:var(--bs-dark);
+		color:var(--bs-body-color);
 		
 		&.more {
 			font-size:0.8rem;

@@ -8,14 +8,14 @@
 		 <div>
 			<div class="title-container">
 				<div class="container">
-					<h1 data-v-post-name>Contact us</h1>
-					
 					@@include('./_includes/breadcrumb.html')
+
+					<h1 data-v-post-name>Contact us</h1>
 				</div>
 			</div>
 		   
 			
-			<!-- img data-v-post-image src="img/bg-img/bg-7.jpg" alt="" -->
+			<!-- img data-v-post-image src="img/bg-img/bg-7.webp" alt="" -->
 		</div>
 	</section>
 
@@ -50,7 +50,7 @@
 
 
 					<p class="mt-5">
-					  <span><i class="la la-lg la-envelope"></i> Email:</span>
+					  <b><i class="la la-lg la-envelope"></i> Email:</b>
 					  <span>
 						<a href="mailto:contact@mysite.com">
 							<span>contact@mysite.com</span>
@@ -58,7 +58,7 @@
 					  </span>
 					</p>
 					<p class="">
-					  <span><i class="la la-lg la-phone"></i> Phone:</span> 
+					  <b><i class="la la-lg la-phone"></i> Phone:</b> 
 					  <a href="tel:5511112377">
 						<span>+55 (111) 123 777</span>
 					  </a>
@@ -77,22 +77,23 @@
 				
 				@@include('./_includes/notifications.html')
 				
+				<div class="border rounded-3 p-4 border-opacity-25 border-light-subtle">
 				<form method="post" action="" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
 				   <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
 				   <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>
 					
 				  <div class="row">
 					<div class="col">
-					  <input type="text" class="form-control" placeholder="First name" name="firstname" required>
+					  <input type="text" class="form-control" placeholder="First name" name="first_name" required>
 					</div>
 					<div class="col">
-					  <input type="text" class="form-control" placeholder="Last name" name="lastname" required>
+					  <input type="text" class="form-control" placeholder="Last name" name="last_name" required>
 					</div>
 				  </div>
 
 				  <div class="row mt-4">
 					<div class="col">
-					  <input type="email" class="form-control" placeholder="Enter email" name="email" required>
+					  <input type="email" class="form-control" placeholder="Email" name="email" required>
 					</div>
 				  </div>
 
@@ -129,9 +130,11 @@
 						<span class="button-text">
 							<span>Submit</span><i class="la la-lg la-envelope opacity-50 ms-2"></i>
 						</span>
-					</div>
+					</button>
 				  </div>
 				</form>
+				</div>
+				</div>
 			  </div>
 			</div>
 		  </div>
