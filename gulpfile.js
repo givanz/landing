@@ -48,6 +48,7 @@ const touch = () => through2.obj( function( file, enc, cb ) {
 });
 
 
+console.log( process.env.npm_config_path);
 let dir = process.env.npm_config_path;
 if (dir) {
 	console.log('Starting directory: ' + process.cwd());
@@ -90,7 +91,7 @@ var current_section = "posts";
 async function screenshots(type = "sections", dirs = []) {
 	let sectionsDir = path.resolve("./" + type);
 	let screenshotDir = path.resolve("./screenshots/" + type + "/");
-	let styleCss = path.resolve("./css/style.css");
+	let styleCss = path.resolve("./css/style.bundle.css");
 	let selector = "body > section";
 	let sections = [];
 	let baseDir = path.resolve(".");
@@ -157,7 +158,10 @@ async function screenshots(type = "sections", dirs = []) {
 		}			
 
 		let content = fs.readFileSync(section,'utf8');
-		let html = `<html><head><base href="../../"><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&amp;family=Inter:wght@400;700&amp;" rel="stylesheet"><link href="/css/style.bundle.css" rel="stylesheet"><link href="/css/screenshots.css" rel="stylesheet"></head><body>${content}</body></html>`;
+		let html = `<html data-vvvebjs-editor><head><base href="../../"><link href="/css/style.bundle.css" rel="stylesheet"><link href="/css/screenshots.css" rel="stylesheet"><style>[data-reveal], [data-section] > * {
+    opacity: 1;
+    transform: translate(0);
+}</style></head><body>${content}</body></html>`;
 		fs.writeFileSync(sectionScreenshot, html);
 		
 		//await page.setContent(html, {"waitUntil":"networkidle0"});
@@ -183,9 +187,11 @@ async function screenshots(type = "sections", dirs = []) {
 			head.append(base);
 		}, baseHref);
 		*/
+		//await page.waitForNavigation();
 		
 		const element = await page.$$("body > div, body > section, body > header, body > footer, body > *");
 		//await page.screenshot({ path: screenshot, fullPage: false, type: 'png' });
+		//console.log(element[0]);
 		await element[0].screenshot({ path: screenshot, type: 'webp' });
 		
 		gulp.src(screenshot)
@@ -221,7 +227,7 @@ async function screenshots(type = "sections", dirs = []) {
 			   });  
 			})
 	});
-
+	
 	return true;
 }
 
@@ -264,7 +270,7 @@ let sectionsSortOrder = [ "hero", "features",  "banner", "services"];
 //generate sections for VvvebJs
 function sections(type = "section", dirs = []) {
 	let sectionsDir = path.resolve(`./${type}s/`);
-	let styleCss = path.resolve("./css/style.css");
+	let styleCss = path.resolve("./css/style.bundle.css");
 	let baseDir = path.resolve(".");
 	let dir = [];
 	let sectionsJs = '';
@@ -300,7 +306,10 @@ function sections(type = "section", dirs = []) {
 		let name;
 		let id;
 		let html;
-		let sectionsHtml = '<html><head><base src="../"><link href="../css/style.bundle.css" rel="stylesheet"><link href="../css/screenshots.css" rel="stylesheet"></head><body>';
+		let sectionsHtml = `<html data-vvvebjs-editor><head><base src="../"><link href="../css/style.bundle.css" rel="stylesheet"><link href="../css/screenshots.css" rel="stylesheet"><style>[data-reveal], [data-section] > * {
+    opacity: 1;
+    transform: translate(0);
+}</style><link href="../css/screenshots.css" rel="stylesheet"></head><body>`;
 		let image = '';
 		
 		let sections = [];
@@ -332,7 +341,7 @@ function sections(type = "section", dirs = []) {
 gulp.task('connect', async function (done) {
     await connect.server({
         port: 8008,
-		//root: './',
+		root: './',
     });
 });
 

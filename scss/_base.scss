@@ -494,8 +494,9 @@ audio, video {
 }
 
 .btn-primary {
-	box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.2) 0px 0.75px 0px 0px inset, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0,  0.4) 0px 0px 0px 1px;
-	--bs-btn-border-color:rgba(var(--bs-primary-rgb), 0.5);
+	//box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.2) 0px 0.75px 0px 0px inset, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0,  0.4) 0px 0px 0px 1px;
+	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.15) 0px 0.75px 0px 0px inset, rgba(0, 0, 0, 0.15) 0px 1px 2px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+	--bs-btn-border-color:rgba(var(--bs-primary-rgb), 0.3);
 	--bs-btn-padding-x: 1.5rem;
 	font-weight:500;
 }

@@ -39,7 +39,7 @@ Vvveb.Sections.add("hero/hero-1", {
   </div>
 
   <div class="background-container">
-    <!-- <img src="img//background.svg" alt="Hero background" loading="lazy"> -->
+    <!-- <img src="demo/img//background.svg" alt="Hero background" loading="lazy"> -->
   </div>
 
 </header>`
@@ -68,7 +68,7 @@ Vvveb.Sections.add("hero/hero-1", {
           <span class="play-button">
             <i class="la la-play"></i>
           </span>
-          <img src="img/demo/video-1.webp" loading="lazy" alt="Video image" class="img-fluid">
+          <img src="demo/img/video-1.webp" loading="lazy" alt="Video image" class="img-fluid">
         </a>
       </div>
     </div>
@@ -137,7 +137,7 @@ Vvveb.Sections.add("hero/hero-1", {
 
   <div class="background-container">
 
-    <img src="img/demo/hero-3.webp" alt="Hero background">
+    <img src="demo/img/hero-3.webp" alt="Hero background">
 
   </div>
 
@@ -191,7 +191,7 @@ Vvveb.Sections.add("hero/hero-1", {
 
   <div class="background-container">
 
-    <img src="img/demo/hero-3.webp" alt="Hero background">
+    <img src="demo/img/hero-3.webp" alt="Hero background">
 
   </div>
 
@@ -207,7 +207,7 @@ Vvveb.Sections.add("hero/hero-1", {
         <h1 class="heading mb-3 display-4">The next generation website builder</h1>
         <h4 class="subheading mb-5">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h4>
 
-        <img width="350" src="img/demo/video-1.webp" class="shadow img-thumbnail">
+        <img width="350" src="demo/img/video-1.webp" class="shadow img-thumbnail">
 
         <div class="buttons">
 
@@ -243,7 +243,7 @@ Vvveb.Sections.add("hero/hero-1", {
   </div>
 
   <div class="background-container">
-    <img src="img/demo/hero-3.webp" alt="Hero background">
+    <img src="demo/img/hero-3.webp" alt="Hero background">
   </div>
 </header>`
 });Vvveb.Sections.add("hero/hero-5", {
@@ -291,7 +291,7 @@ Vvveb.Sections.add("hero/hero-1", {
   </div>
 
   <div class="background-container">
-    <img src="img/demo/hero-3.webp" alt="Hero background">
+    <img src="demo/img/hero-3.webp" alt="Hero background">
   </div>
 
 </header>`
@@ -305,7 +305,7 @@ Vvveb.Sections.add("hero/hero-1", {
       <div class="row align-items-center justify-content-center text-start">
         <div class="col-lg-7">
           <h1 class="heading mb-3 display-3 fw-bold" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
-          <h2 class="h3 col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
+          <h2 class="h3 col-lg-8" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
 
 
           <div class="buttons mt-4" data-aos="fade-up" data-aos-delay="300">
@@ -320,7 +320,7 @@ Vvveb.Sections.add("hero/hero-1", {
 
         </div>
         <div class="col-lg-5">
-          <img src="img/demo/video-1.webp" class="shadow img-thumbnail" loading="lazy">
+          <img src="demo/img/video-1.webp" class="shadow img-thumbnail" loading="lazy">
         </div>
       </div>
     </div>
@@ -346,7 +346,7 @@ Vvveb.Sections.add("hero/hero-1", {
   </div>
 
   <div class="background-container">
-    <img src="img/demo/hero-3.webp" alt="Hero background" loading="lazy">
+    <img src="demo/img/hero-3.webp" alt="Hero background" loading="lazy">
   </div>
 </header>`
 });Vvveb.Sections.add("hero/hero-7", {
@@ -358,12 +358,12 @@ Vvveb.Sections.add("hero/hero-1", {
     <div>
       <div class="row align-items-center justify-content-center text-start g-5">
         <div class="col-lg-5">
-          <img src="img/demo/video-1.webp" class="shadow img-thumbnail">
+          <img src="demo/img/video-1.webp" class="shadow img-thumbnail">
         </div>
 
         <div class="col-lg-7">
           <h1 class="heading mb-3 display-3 fw-bold" data-aos="fade-up" data-aos-delay="100">Open source CMS reinvented</h1>
-          <h2 class="h3 col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
+          <h2 class="h3 col-lg-8" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
 
 
           <div class="buttons mt-4" data-aos="fade-up" data-aos-delay="300">
@@ -401,129 +401,9 @@ Vvveb.Sections.add("hero/hero-1", {
   </div>
 
   <div class="background-container">
-    <img src="img/demo/hero-3.webp" alt="Hero background">
+    <img src="demo/img/hero-3.webp" alt="Hero background">
   </div>
 </header>`
-});Vvveb.Sections.add("hero/hero-8", {
-    name: "Hero 8",
-    image: Vvveb.themeBaseUrl + "/screenshots/sections/hero/hero-8-thumb.webp",
-    html: `<section class="hero-2 overlay">
-
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-lg-6 mb-5 ms-5" data-aos="fade-up" data-aos-delay="0">
-        <h1 class="heading text-white">The next generation website builder</h1>
-        <p class="text-white-50 mb-5">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
-        <p>
-          <a href="#" class="btn btn-white">Free Download</a>
-          <a href="#" class="btn text-white">Live Demo</a>
-        </p>
-      </div>
-      <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-        <a href="https://www.youtube.com/watch?v=3xsP3u-CVO4" class="video-wrap glightbox">
-          <span class="play-button">
-            <i class="la la-play"></i>
-          </span>
-          <img src="img/demo/video-1.jpg" alt="Video image" class="img-fluid">
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="separator bottom">
-    <svg class="pricing-divider-img" enable-background="new 0 0 300 100" height="100px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" width="300px" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
-      <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
-		c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
-      <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
-		c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
-      <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
-		H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
-      <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
-		c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
-    </svg>
-  </div>
-
-</section>`
-});Vvveb.Sections.add("hero/hero-9", {
-    name: "Hero 9",
-    image: Vvveb.themeBaseUrl + "/screenshots/sections/hero/hero-9-thumb.webp",
-    html: `<section class="hero-2 overlay">
-
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-lg-6 mb-5 ms-5" data-aos="fade-up" data-aos-delay="0">
-        <h1 class="heading text-white">The next generation website builder</h1>
-        <p class="text-white-50 mb-5">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
-        <p>
-          <a href="#" class="btn btn-white">Free Download</a>
-          <a href="#" class="btn text-white">Live Demo</a>
-        </p>
-      </div>
-      <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-        <a href="https://www.youtube.com/watch?v=3xsP3u-CVO4" class="video-wrap glightbox">
-          <span class="play-button">
-            <i class="la la-play"></i>
-          </span>
-          <img src="img/demo/video-1.jpg" alt="Video image" class="img-fluid">
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="separator bottom">
-    <svg class="pricing-divider-img" enable-background="new 0 0 300 100" height="100px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" width="300px" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
-      <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
-		c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
-      <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
-		c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
-      <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
-		H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
-      <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
-		c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
-    </svg>
-  </div>
-
-</section>`
-});Vvveb.Sections.add("hero/hero-10", {
-    name: "Hero 10",
-    image: Vvveb.themeBaseUrl + "/screenshots/sections/hero/hero-10-thumb.webp",
-    html: `<section class="hero-2 overlay">
-
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-lg-6 mb-5 ms-5" data-aos="fade-up" data-aos-delay="0">
-        <h1 class="heading text-white">The next generation website builder</h1>
-        <p class="text-white-50 mb-5">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
-        <p>
-          <a href="#" class="btn btn-white">Free Download</a>
-          <a href="#" class="btn text-white">Live Demo</a>
-        </p>
-      </div>
-      <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-        <a href="https://www.youtube.com/watch?v=3xsP3u-CVO4" class="video-wrap glightbox">
-          <span class="play-button">
-            <i class="la la-play"></i>
-          </span>
-          <img src="img/demo/video-1.jpg" alt="Video image" class="img-fluid">
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="separator bottom">
-    <svg class="pricing-divider-img" enable-background="new 0 0 300 100" height="100px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" width="300px" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
-      <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
-		c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
-      <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
-		c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
-      <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
-		H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
-      <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
-		c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
-    </svg>
-  </div>
-
-</section>`
 });Vvveb.Sections.add("hero/hero-slider", {
     name: "Hero slider",
     image: Vvveb.themeBaseUrl + "/screenshots/sections/hero/hero-slider-thumb.webp",
@@ -535,14 +415,14 @@ Vvveb.Sections.add("hero/hero-1", {
 
 
       <div class="swiper-slide">
-        <img src="img/demo/hero-3.webp" loading="lazy">
+        <img src="demo/img/hero-3.webp" loading="lazy">
         <div class="content">
           <div class="container">
             <div>
               <div class="row align-items-center justify-content-center text-start">
                 <div class="col-lg-7">
                   <h1 class="heading mb-3 display-3 fw-bold" data-aos="fade-up" data-aos-delay="100">The next generation website builder</h1>
-                  <h2 class="h3 col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
+                  <h2 class="h3 col-lg-8" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</h2>
 
 
                   <div class="buttons mt-4" data-aos="fade-up" data-aos-delay="300">
@@ -557,7 +437,7 @@ Vvveb.Sections.add("hero/hero-1", {
 
                 </div>
                 <div class="col-lg-5">
-                  <img src="img/demo/video-1.webp" class="shadow img-thumbnail" loading="lazy">
+                  <img src="demo/img/video-1.webp" class="shadow img-thumbnail" loading="lazy">
                 </div>
               </div>
             </div>
@@ -568,7 +448,7 @@ Vvveb.Sections.add("hero/hero-1", {
 
 
       <div class="swiper-slide">
-        <img src="img/demo/hero-3.webp" loading="lazy">
+        <img src="demo/img/hero-3.webp" loading="lazy">
         <div class="content">
           <div class="container">
             <div>
@@ -598,13 +478,13 @@ Vvveb.Sections.add("hero/hero-1", {
       </div>
 
       <div class="swiper-slide">
-        <img src="img/demo/hero-3.webp" loading="lazy">
+        <img src="demo/img/hero-3.webp" loading="lazy">
         <div class="content">
           <div class="container">
             <div>
               <div class="row align-items-center justify-content-center text-start g-5">
                 <div class="col-lg-5">
-                  <img src="img/demo/video-1.webp" class="shadow img-thumbnail" loading="lazy">
+                  <img src="demo/img/video-1.webp" class="shadow img-thumbnail" loading="lazy">
                 </div>
 
                 <div class="col-lg-7">
@@ -659,12 +539,12 @@ Vvveb.Sections.add("hero/hero-1", {
 
 
   <div class="background-container">
-    <img src="img/demo/hero-3.webp" alt="Hero background" loading="lazy">
+    <img src="demo/img/hero-3.webp" alt="Hero background" loading="lazy">
   </div>
 
 
-  <script id="swiper-js" src="js/libs/swiper/swiper-bundle.min.js"></script>
-  <link id="swiper-css" href="js/libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script id="swiper-js" src="/js/libs/swiper/swiper-bundle.min.js"></script>
+  <link id="swiper-css" href="/js/libs/swiper/swiper-bundle.min.css" rel="stylesheet">
   <script>
 var swiper = [];
 function initSwiper(onlyNew = false) {
@@ -697,7 +577,7 @@ initSwiper();
 
 </header>`
 });
-	Vvveb.SectionsGroup["Hero"] = ["hero/hero-1","hero/hero-2","hero/hero-3-full","hero/hero-3","hero/hero-4","hero/hero-5","hero/hero-6","hero/hero-7","hero/hero-8","hero/hero-9","hero/hero-10","hero/hero-slider"];
+	Vvveb.SectionsGroup["Hero"] = ["hero/hero-1","hero/hero-2","hero/hero-3-full","hero/hero-3","hero/hero-4","hero/hero-5","hero/hero-6","hero/hero-7","hero/hero-slider"];
 Vvveb.Sections.add("features/features-1", {
     name: "Features 1",
     image: Vvveb.themeBaseUrl + "/screenshots/sections/features/features-1-thumb.webp",
@@ -722,12 +602,12 @@ Vvveb.Sections.add("features/features-1", {
         </div>
       </div>
       <div class="col-md-6">
-        <img src="img/illustrations.co/118-macbook.svg" alt="Macbook" loading="lazy" class="img-fluid" data-aos="fade-left" />
+        <img src="demo/img/illustrations.co/118-macbook.svg" alt="Macbook" loading="lazy" class="img-fluid" data-aos="fade-left" />
       </div>
     </div>
     <div class="row g-5 wrap">
       <div class="col-md-6">
-        <img src="img/illustrations.co/day95-app-development.svg" alt="App development" loading="lazy" class="img-fluid" data-aos="fade-right" />
+        <img src="demo/img/illustrations.co/day95-app-development.svg" alt="App development" loading="lazy" class="img-fluid" data-aos="fade-right" />
       </div>
       <div class="col-md-6 align-self-center">
         <div class="max-box ms-auto" data-aos="fade-left">
@@ -753,7 +633,7 @@ Vvveb.Sections.add("features/features-1", {
 
   <div class="row no-gutters">
     <div class="col-lg-6">
-      <img alt="image" src="img/illustrations.co/day68-happy-cat.svg" alt="happy cat" loading="lazy" class="img-fluid">
+      <img alt="image" src="demo/img/illustrations.co/day68-happy-cat.svg" alt="happy cat" loading="lazy" class="img-fluid">
     </div>
 
     <div class="col-lg-6 bg-primary bg-gradient text-white d-flex">
@@ -850,7 +730,7 @@ Vvveb.Sections.add("features/features-1", {
       </div>
 
       <div class="col-lg-6">
-        <img src="img/illustrations.co/day67-dog.svg" alt="dog" loading="lazy" class="img-fluid" />
+        <img src="demo/img/illustrations.co/day67-dog.svg" alt="dog" loading="lazy" class="img-fluid" />
       </div>
 
       <div class="col-md-12 mt-3 text-center">
@@ -936,7 +816,7 @@ Vvveb.Sections.add("features/features-1", {
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 col-md-8 col-lg-6 m-md-auto ms-lg-0 me-lg-auto">
-        <img src="img/illustrations.co/day67-dog.svg" alt="dog" loading="lazy" class="img-fluid" />
+        <img src="demo/img/illustrations.co/day67-dog.svg" alt="dog" loading="lazy" class="img-fluid" />
       </div>
       <div class="col-12 col-lg-6 col-xl-5 ms-sm-auto pt-5 pt-lg-0">
         <h2>Open Source CMS Reinvented</h2>
@@ -988,7 +868,7 @@ Vvveb.Sections.add("features/features-1", {
     <div class="row text-center justify-content-center">
       <div class="col-12 col-sm-4 col-xl-3 m-md-auto">
         <div>
-          <img loading="lazy" src="img/illustrations.co/109-map-location.svg" alt="map location">
+          <img loading="lazy" src="demo/img/illustrations.co/109-map-location.svg" alt="map location">
           <h3>Drag and drop</h3>
           <p class="lead text-muted mt-4">Intuitive building with simple drag and drop for sections, components and blocks/snippets</p>
 
@@ -998,7 +878,7 @@ Vvveb.Sections.add("features/features-1", {
 
       <div class="col-12 col-sm-4 col-xl-3 m-md-auto">
         <div>
-          <img loading="lazy" src="img/illustrations.co/107-healthy.svg" alt="dumbbell">
+          <img loading="lazy" src="demo/img/illustrations.co/107-healthy.svg" alt="dumbbell">
           <h3>Live code editor</h3>
           <p class="lead text-muted mt-4">Code editor with syntax highglighting that updates in real time</p>
 
@@ -1008,7 +888,7 @@ Vvveb.Sections.add("features/features-1", {
 
       <div class="col-12 col-sm-4 col-xl-3 m-md-auto">
         <div>
-          <img loading="lazy" src="img/illustrations.co/104-dumbbell.svg" alt="dumbbell">
+          <img loading="lazy" src="demo/img/illustrations.co/104-dumbbell.svg" alt="dumbbell">
           <h3>Bootstrap 5</h3>
           <p class="lead text-muted mt-4">The html for sections blocks and components and this template are built using bootrap 5</p>
 
@@ -1031,7 +911,7 @@ Vvveb.Sections.add("features/features-1", {
     <div class="row text-center justify-content-center">
       <div class="col-12 col-md-6 col-lg-3">
         <div>
-          <img alt="map location" loading="lazy" src="img/illustrations.co/109-map-location.svg">
+          <img alt="map location" loading="lazy" src="demo/img/illustrations.co/109-map-location.svg">
           <h3>Drag and drop</h3>
           <p class="lead text-muted mt-4">Intuitive building with simple drag and drop for sections, components and blocks/snippets</p>
 
@@ -1041,7 +921,7 @@ Vvveb.Sections.add("features/features-1", {
 
       <div class="col-12 col-md-6 col-lg-3">
         <div>
-          <img alt="healthy" loading="lazy" src="img/illustrations.co/107-healthy.svg">
+          <img alt="healthy" loading="lazy" src="demo/img/illustrations.co/107-healthy.svg">
           <h3>Live code editor</h3>
           <p class="lead text-muted mt-4">Code editor with syntax highglighting that updates in real time</p>
 
@@ -1051,7 +931,7 @@ Vvveb.Sections.add("features/features-1", {
 
       <div class="col-12 col-md-6 col-lg-3">
         <div>
-          <img alt="dumbbell" loading="lazy" src="img/illustrations.co/104-dumbbell.svg">
+          <img alt="dumbbell" loading="lazy" src="demo/img/illustrations.co/104-dumbbell.svg">
           <h3>Bootstrap 5</h3>
           <p class="lead text-muted mt-4">The html for sections blocks and components and this template are built using Bootstrap 5</p>
 
@@ -1061,7 +941,7 @@ Vvveb.Sections.add("features/features-1", {
 
       <div class="col-12 col-md-6 col-lg-3">
         <div>
-          <img alt="namaste" loading="lazy" src="img/illustrations.co/126-namaste-no-hand-shake.svg">
+          <img alt="namaste" loading="lazy" src="demo/img/illustrations.co/126-namaste-no-hand-shake.svg">
           <h3>Google fonts</h3>
           <p class="lead text-muted mt-4">Use any of the hundreds fonts from google fonts for your design</p>
 
@@ -1085,7 +965,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-12 col-md-4">
         <div class="row">
           <div class="col-3">
-            <img alt="map location" loading="lazy" src="img/illustrations.co/109-map-location.svg">
+            <img alt="map location" loading="lazy" src="demo/img/illustrations.co/109-map-location.svg">
           </div>
           <div class="col-9">
             <h4>Drag and drop</h4>
@@ -1098,7 +978,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-12 col-md-4 pt-3 pt-sm-4">
         <div class="row">
           <div class="col-3">
-            <img alt="healthy" loading="lazy" src="img/illustrations.co/107-healthy.svg">
+            <img alt="healthy" loading="lazy" src="demo/img/illustrations.co/107-healthy.svg">
           </div>
           <div class="col-9">
             <h4>Live code editor</h4>
@@ -1111,7 +991,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-12 col-md-4 pt-3 pt-sm-4">
         <div class="row">
           <div class="col-3">
-            <img alt="dumbbell" loading="lazy" src="img/illustrations.co/104-dumbbell.svg">
+            <img alt="dumbbell" loading="lazy" src="demo/img/illustrations.co/104-dumbbell.svg">
           </div>
           <div class="col-9">
             <h4>Bootstrap 5</h4>
@@ -1126,7 +1006,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-12 col-md-4">
         <div class="row">
           <div class="col-3">
-            <img alt="namaste" loading="lazy" src="img/illustrations.co/126-namaste-no-hand-shake.svg">
+            <img alt="namaste" loading="lazy" src="demo/img/illustrations.co/126-namaste-no-hand-shake.svg">
           </div>
           <div class="col-9">
             <h4>Google fonts</h4>
@@ -1139,7 +1019,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-12 col-md-4 pt-3 pt-sm-4">
         <div class="row">
           <div class="col-3">
-            <img alt="map location" loading="lazy" src="img/illustrations.co/109-map-location.svg">
+            <img alt="map location" loading="lazy" src="demo/img/illustrations.co/109-map-location.svg">
           </div>
           <div class="col-9">
             <h4>Drag and drop</h4>
@@ -1152,7 +1032,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-12 col-md-4 pt-3 pt-sm-4">
         <div class="row">
           <div class="col-3">
-            <img alt="healthy" loading="lazy" src="img/illustrations.co/107-healthy.svg">
+            <img alt="healthy" loading="lazy" src="demo/img/illustrations.co/107-healthy.svg">
           </div>
           <div class="col-9">
             <h4>Bootstrap 5</h4>
@@ -1178,7 +1058,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-12 col-sm-6 col-lg-3">
         <div class="row">
           <div class="col-3">
-            <img alt="map location" loading="lazy" src="img/illustrations.co/109-map-location.svg">
+            <img alt="map location" loading="lazy" src="demo/img/illustrations.co/109-map-location.svg">
           </div>
           <div class="col-9">
             <h4>Drag and drop</h4>
@@ -1190,7 +1070,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-12 col-sm-6 col-lg-3 pt-3 pt-sm-0">
         <div class="row">
           <div class="col-3">
-            <img alt="healthy" loading="lazy" src="img/illustrations.co/107-healthy.svg">
+            <img alt="healthy" loading="lazy" src="demo/img/illustrations.co/107-healthy.svg">
           </div>
           <div class="col-9">
             <h4>Live code editor</h4>
@@ -1202,7 +1082,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-12 col-sm-6 col-lg-3 pt-3 pt-lg-0">
         <div class="row">
           <div class="col-3">
-            <img alt="dumbbell" loading="lazy" src="img/illustrations.co/104-dumbbell.svg">
+            <img alt="dumbbell" loading="lazy" src="demo/img/illustrations.co/104-dumbbell.svg">
           </div>
           <div class="col-9">
             <h4>Bootstrap 5</h4>
@@ -1214,7 +1094,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-12 col-sm-6 col-lg-3 pt-3 pt-lg-0">
         <div class="row">
           <div class="col-3">
-            <img alt="namaste" loading="lazy" src="img/illustrations.co/126-namaste-no-hand-shake.svg">
+            <img alt="namaste" loading="lazy" src="demo/img/illustrations.co/126-namaste-no-hand-shake.svg">
           </div>
           <div class="col-9">
             <h4>Google fonts</h4>
@@ -1229,7 +1109,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-12 col-sm-6 col-lg-3">
         <div class="row">
           <div class="col-3">
-            <img alt="map location" loading="lazy" src="img/illustrations.co/109-map-location.svg">
+            <img alt="map location" loading="lazy" src="demo/img/illustrations.co/109-map-location.svg">
           </div>
           <div class="col-9">
             <h4>Drag and drop</h4>
@@ -1241,7 +1121,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-12 col-sm-6 col-lg-3 pt-3 pt-sm-0">
         <div class="row">
           <div class="col-3">
-            <img alt="healthy" loading="lazy" src="img/illustrations.co/107-healthy.svg">
+            <img alt="healthy" loading="lazy" src="demo/img/illustrations.co/107-healthy.svg">
           </div>
           <div class="col-9">
             <h4>Bootstrap 5</h4>
@@ -1253,7 +1133,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-12 col-sm-6 col-lg-3 pt-3 pt-lg-0">
         <div class="row">
           <div class="col-3">
-            <img alt="map location" loading="lazy" src="img/illustrations.co/109-map-location.svg">
+            <img alt="map location" loading="lazy" src="demo/img/illustrations.co/109-map-location.svg">
 
           </div>
           <div class="col-9">
@@ -1266,7 +1146,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-12 col-sm-6 col-lg-3 pt-3 pt-lg-0">
         <div class="row">
           <div class="col-3">
-            <img alt="healthy" loading="lazy" src="img/illustrations.co/107-healthy.svg">
+            <img alt="healthy" loading="lazy" src="demo/img/illustrations.co/107-healthy.svg">
           </div>
           <div class="col-9">
             <h4>Live code editor</h4>
@@ -1285,13 +1165,13 @@ Vvveb.Sections.add("features/features-1", {
   <div class="container">
     <div class="row text-end align-items-center">
       <div class="col-12 col-md-6 m-auto">
-        <img src="img/illustrations.co/day67-dog.svg" alt="dog" loading="lazy" class="img-fluid">
+        <img src="demo/img/illustrations.co/day67-dog.svg" alt="dog" loading="lazy" class="img-fluid">
       </div>
 
       <div class="col-12 col-md-7 col-lg-5 m-auto text-start pt-5">
         <div class="row pb-lg-5">
           <div class="col-3">
-            <img src="img/illustrations.co/107-healthy.svg" alt="healthy" loading="lazy" class="img-fluid">
+            <img src="demo/img/illustrations.co/107-healthy.svg" alt="healthy" loading="lazy" class="img-fluid">
           </div>
           <div class="col-9">
             <h3>
@@ -1303,7 +1183,7 @@ Vvveb.Sections.add("features/features-1", {
 
         <div class="row pt-4 pt-md-5 pb-lg-5">
           <div class="col-3">
-            <img alt="image" src="img/illustrations.co/104-dumbbell.svg" alt="dumbbell" loading="lazy" class="img-fluid">
+            <img alt="image" src="demo/img/illustrations.co/104-dumbbell.svg" alt="dumbbell" loading="lazy" class="img-fluid">
           </div>
           <div class="col-9">
             <h3>
@@ -1316,7 +1196,7 @@ Vvveb.Sections.add("features/features-1", {
 
         <div class="row pt-4 pt-md-5">
           <div class="col-3">
-            <img alt="image" src="img/illustrations.co/109-map-location.svg" alt="map location" loading="lazy" class="img-fluid">
+            <img alt="image" src="demo/img/illustrations.co/109-map-location.svg" alt="map location" loading="lazy" class="img-fluid">
           </div>
           <div class="col-9">
             <h3>
@@ -1337,7 +1217,7 @@ Vvveb.Sections.add("features/features-1", {
     <div class="row text-center">
       <div class="col-12 col-md-8 col-lg-4">
         <div>
-          <img alt="image" src="img/illustrations.co/109-map-location.svg" alt="map location" loading="lazy" class="img-fluid">
+          <img alt="image" src="demo/img/illustrations.co/109-map-location.svg" alt="map location" loading="lazy" class="img-fluid">
           <h3>Drag and drop</h3>
           <p class="lead text-muted mt-4">Intuitive building with simple drag and drop for sections, components and blocks/snippets.</p>
 
@@ -1347,7 +1227,7 @@ Vvveb.Sections.add("features/features-1", {
 
       <div class="col-12 col-md-8 col-lg-4">
         <div>
-          <img alt="image" src="img/illustrations.co/107-healthy.svg" alt="healthy" loading="lazy" class="img-fluid">
+          <img alt="image" src="demo/img/illustrations.co/107-healthy.svg" alt="healthy" loading="lazy" class="img-fluid">
           <h3>Live code editor</h3>
           <p class="lead text-muted mt-4">Code editor with syntax highglighting that updates in real time.</p>
 
@@ -1357,7 +1237,7 @@ Vvveb.Sections.add("features/features-1", {
 
       <div class="col-12 col-md-8 col-lg-4">
         <div>
-          <img alt="image" src="img/illustrations.co/104-dumbbell.svg" alt="dumbbell" loading="lazy" class="img-fluid">
+          <img alt="image" src="demo/img/illustrations.co/104-dumbbell.svg" alt="dumbbell" loading="lazy" class="img-fluid">
           <h3>Bootstrap 5 Components</h3>
           <p class="lead text-muted mt-4">The html for sections blocks and components and this template are built using bootstrap 5.</p>
 
@@ -1391,12 +1271,12 @@ Vvveb.Sections.add("features/features-1", {
         </div>
       </div>
       <div class="col-md-6">
-        <img src="img/demo/video-1.webp" alt="Macbook" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
+        <img src="demo/img/video-1.webp" alt="Macbook" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
       </div>
     </div>
     <div class="row g-0 wrap">
       <div class="col-md-6">
-        <img src="img/demo/video-1.webp" alt="App development" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
+        <img src="demo/img/video-1.webp" alt="App development" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
       </div>
       <div class="col-md-6 align-self-center">
         <div class="max-box ms-auto" data-aos="fade-left">
@@ -1439,7 +1319,7 @@ Vvveb.Sections.add("features/features-1", {
         </div>
       </div>
       <div class="col-md-6">
-        <img src="img/demo/video-1.webp" alt="Macbook" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
+        <img src="demo/img/video-1.webp" alt="Macbook" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
       </div>
     </div>
   </div>
@@ -1451,7 +1331,7 @@ Vvveb.Sections.add("features/features-1", {
   <div class="container">
     <div class="row g-0 wrap">
       <div class="col-md-6">
-        <img src="img/demo/video-1.webp" alt="App development" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
+        <img src="demo/img/video-1.webp" alt="App development" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
       </div>
       <div class="col-md-6 align-self-center">
         <div class="max-box ms-auto" data-aos="fade-left">
@@ -1798,7 +1678,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
           <div class="row g-0">
             <div class="col-sm-6 d-none d-sm-block bg-image">
 
-              <img alt="image" src="img/illustrations.co/day68-happy-cat.svg" alt="happy cat" loading="lazy" class="img-fluid">
+              <img alt="image" src="demo/img/illustrations.co/day68-happy-cat.svg" alt="happy cat" loading="lazy" class="img-fluid">
 
             </div>
             <div class="col-sm-6 p-4">
@@ -2160,7 +2040,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
       <div class="row">
         <div class="col-lg-6">
           <div class="card-shadow">
-            <img alt="image" src="img/illustrations.co/day68-happy-cat.svg" alt="happy cat" loading="lazy" class="img-fluid">
+            <img alt="image" src="demo/img/illustrations.co/day68-happy-cat.svg" alt="happy cat" loading="lazy" class="img-fluid">
           </div>
         </div>
         <div class="col-lg-6">
@@ -2433,7 +2313,7 @@ Vvveb.Sections.add("cta/cta-1", {
 
   <div class="background-container parallax">
 
-    <img src="img/demo/hero-3.webp" alt="Hero background">
+    <img src="demo/img/hero-3.webp" alt="Hero background">
 
   </div>
 
@@ -2451,8 +2331,8 @@ Vvveb.Sections.add("footer/footer-1", {
       <div class="col-md">
 
         <div data-v-component-site>
-          <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-          <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
+          <img src="demo/img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+          <img src="demo/img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
         </div>
 
       </div>
@@ -2572,7 +2452,7 @@ Vvveb.Sections.add("footer/footer-1", {
   <div class="container py-5">
     <div class="row py-4">
       <div class="col-md">
-        <img src="img/logo.png" alt="Site logo" loading="lazy" alt="" width="180" class="mb-3">
+        <img src="demo/img/logo.png" alt="Site logo" loading="lazy" alt="" width="180" class="mb-3">
         <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
         <ul class="list-inline mt-4">
           <li class="list-inline-item">
@@ -2666,8 +2546,8 @@ Vvveb.Sections.add("footer/footer-1", {
       <div class="col-md">
 
         <div data-v-component-site>
-          <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-          <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
+          <img src="demo/img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+          <img src="demo/img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
         </div>
 
       </div>
@@ -2920,10 +2800,10 @@ Vvveb.Sections.add("navigation/navigation-1", {
         <!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"www.*.*"}'><span class="visually-hidden">Logo</span> -->
         <a class="navbar-brand" href="/" data-v-site-url'>
           <span class="visually-hidden">Logo</span>
-          <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
-          <img src="img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
-          <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-          <img src="img/logo-white.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+          <img src="demo/img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
+          <img src="demo/img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
+          <img src="demo/img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+          <img src="demo/img/logo-white.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
         </a>
       </div>
 
@@ -2951,7 +2831,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                   <span data-v-if="category.content" data-v-menu-item-content>
                     <div class="row">
                       <div class="col-6 align-self-center">
-                        <img src="img/demo/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                        <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
                       </div>
                       <div class="col-6">
                         <h4>Features</h4>
@@ -3011,7 +2891,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <!-- User Login Info -->
             <div class="dropdown nav-item">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
-                <!-- <img src="img/user.svg" loading="lazy" width="20" alt> -->
+                <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <i class="la la-lg la-user"></i>
                 <span class="visually-hidden">User</span>
               </a>
@@ -3220,7 +3100,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <div class="dropdown nav-item mini-cart" data-v-component-cart>
 
               <a class="dropdown-toggle cart-info nav-link " href role="button" id="cart-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="cart/cart/index">
-                <!-- <img src="img/bag.svg" width="20" alt> -->
+                <!-- <img src="demo/img/bag.svg" width="20" alt> -->
                 <i class="la la-lg la-shopping-bag"></i>
                 <span class="visually-hidden">Cart</span>
                 <strong class="text-top text-bold" data-v-total_items data-v-if="cart.total_items > 0"></strong>
@@ -3238,7 +3118,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <tr data-v-cart-product>
                           <td class="text-center">
                             <a href="#40" data-v-cart-product-url>
-                              <img src="img/demo/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                              <img src="demo/img/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                             </a>
                           </td>
                           <td class="text-start">
@@ -3279,7 +3159,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <tr data-v-cart-product>
                           <td class="text-center">
                             <a href="#40" data-v-cart-product-url>
-                              <img src="img/demo/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                              <img src="demo/img/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                             </a>
                           </td>
                           <td class="text-start">
@@ -3303,7 +3183,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                           <td colspan="100">
                             <div class="d-flex  p-2">
                               <div class="text-center p-2 opacity-75">
-                                <!-- <img src="img/bag.svg" width="20" alt> -->
+                                <!-- <img src="demo/img/bag.svg" width="20" alt> -->
                                 <i class="la la-2x la-shopping-bag"></i>
                               </div>
                               <div class="p-2">
@@ -3431,10 +3311,10 @@ Vvveb.Sections.add("navigation/navigation-1", {
         <!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"www.*.*"}'><span class="visually-hidden">Logo</span> -->
         <a class="navbar-brand" href="/" data-v-site-url'>
           <span class="visually-hidden">Logo</span>
-          <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
-          <img src="img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
-          <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-          <img src="img/logo-white.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+          <img src="demo/img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
+          <img src="demo/img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
+          <img src="demo/img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+          <img src="demo/img/logo-white.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
         </a>
       </div>
 
@@ -3462,7 +3342,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                   <span data-v-if="category.content" data-v-menu-item-content>
                     <div class="row">
                       <div class="col-6 align-self-center">
-                        <img src="img/demo/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                        <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
                       </div>
                       <div class="col-6">
                         <h4>Features</h4>
@@ -3522,7 +3402,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <!-- User Login Info -->
             <div class="dropdown nav-item">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
-                <!-- <img src="img/user.svg" loading="lazy" width="20" alt> -->
+                <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <i class="la la-lg la-user"></i>
                 <span class="visually-hidden">User</span>
               </a>
@@ -3731,7 +3611,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <div class="dropdown nav-item mini-cart" data-v-component-cart>
 
               <a class="dropdown-toggle cart-info nav-link " href role="button" id="cart-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="cart/cart/index">
-                <!-- <img src="img/bag.svg" width="20" alt> -->
+                <!-- <img src="demo/img/bag.svg" width="20" alt> -->
                 <i class="la la-lg la-shopping-bag"></i>
                 <span class="visually-hidden">Cart</span>
                 <strong class="text-top text-bold" data-v-total_items data-v-if="cart.total_items > 0"></strong>
@@ -3749,7 +3629,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <tr data-v-cart-product>
                           <td class="text-center">
                             <a href="#40" data-v-cart-product-url>
-                              <img src="img/demo/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                              <img src="demo/img/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                             </a>
                           </td>
                           <td class="text-start">
@@ -3790,7 +3670,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <tr data-v-cart-product>
                           <td class="text-center">
                             <a href="#40" data-v-cart-product-url>
-                              <img src="img/demo/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                              <img src="demo/img/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                             </a>
                           </td>
                           <td class="text-start">
@@ -3814,7 +3694,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                           <td colspan="100">
                             <div class="d-flex  p-2">
                               <div class="text-center p-2 opacity-75">
-                                <!-- <img src="img/bag.svg" width="20" alt> -->
+                                <!-- <img src="demo/img/bag.svg" width="20" alt> -->
                                 <i class="la la-2x la-shopping-bag"></i>
                               </div>
                               <div class="p-2">
@@ -4072,10 +3952,10 @@ Vvveb.Sections.add("navigation/navigation-1", {
         <!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"www.*.*"}'><span class="visually-hidden">Logo</span> -->
         <a class="navbar-brand" href="/" data-v-site-url'>
           <span class="visually-hidden">Logo</span>
-          <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
-          <img src="img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
-          <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-          <img src="img/logo-white.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+          <img src="demo/img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
+          <img src="demo/img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
+          <img src="demo/img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+          <img src="demo/img/logo-white.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
         </a>
       </div>
 
@@ -4104,7 +3984,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                   <span data-v-if="category.content" data-v-menu-item-content>
                     <div class="row">
                       <div class="col-6 align-self-center">
-                        <img src="img/demo/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                        <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
                       </div>
                       <div class="col-6">
                         <h4>Features</h4>
@@ -4164,7 +4044,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <!-- User Login Info -->
             <div class="dropdown nav-item">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
-                <!-- <img src="img/user.svg" loading="lazy" width="20" alt> -->
+                <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <i class="la la-lg la-user"></i>
                 <span class="visually-hidden">User</span>
               </a>
@@ -4373,7 +4253,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <div class="dropdown nav-item mini-cart" data-v-component-cart>
 
               <a class="dropdown-toggle cart-info nav-link " href role="button" id="cart-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="cart/cart/index">
-                <!-- <img src="img/bag.svg" width="20" alt> -->
+                <!-- <img src="demo/img/bag.svg" width="20" alt> -->
                 <i class="la la-lg la-shopping-bag"></i>
                 <span class="visually-hidden">Cart</span>
                 <strong class="text-top text-bold" data-v-total_items data-v-if="cart.total_items > 0"></strong>
@@ -4391,7 +4271,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <tr data-v-cart-product>
                           <td class="text-center">
                             <a href="#40" data-v-cart-product-url>
-                              <img src="img/demo/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                              <img src="demo/img/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                             </a>
                           </td>
                           <td class="text-start">
@@ -4432,7 +4312,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <tr data-v-cart-product>
                           <td class="text-center">
                             <a href="#40" data-v-cart-product-url>
-                              <img src="img/demo/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                              <img src="demo/img/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
                             </a>
                           </td>
                           <td class="text-start">
@@ -4456,7 +4336,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                           <td colspan="100">
                             <div class="d-flex  p-2">
                               <div class="text-center p-2 opacity-75">
-                                <!-- <img src="img/bag.svg" width="20" alt> -->
+                                <!-- <img src="demo/img/bag.svg" width="20" alt> -->
                                 <i class="la la-2x la-shopping-bag"></i>
                               </div>
                               <div class="p-2">
@@ -4618,10 +4498,10 @@ Vvveb.Sections.add("navigation/navigation-1", {
         <!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"www.*.*"}'><span class="visually-hidden">Logo</span> -->
         <a class="navbar-brand" href="/" data-v-site-url'>
           <span class="visually-hidden">Logo</span>
-          <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
-          <img src="img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
-          <img src="img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-          <img src="img/logo-white.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+          <img src="demo/img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
+          <img src="demo/img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
+          <img src="demo/img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+          <img src="demo/img/logo-white.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
         </a>
       </div>
 
@@ -4724,278 +4604,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
   </div>
 
 </nav>`
-});Vvveb.Sections.add("navigation/navigation-5", {
-    name: "Navigation 5",
-    image: Vvveb.themeBaseUrl + "/screenshots/sections/navigation/navigation-5-thumb.webp",
-    html: `<header class="navigation-1 clearfix">
-
-  <nav class="navbar navbar-expand-md navbar-light fixed-top">
-    <a class="navbar-brand" href="/">
-      <img src="img/logo.png">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav ms-auto">
-        <!-- li class="nav-item">
-			<a class="nav-link" href="#features">Features <span class="sr-only">(current)</span></a>
-		  </li -->
-        <li class="nav-item">
-          <a class="nav-link" href="https://themes.vvveb.com">Themes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://plugins.vvveb.com">Plugins</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki">User Documentation</a>
-            <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki">Developer Documentation</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" target="_blank" href="https://github.com/givanz/VvvebJs">Github</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <!-- li class="nav-item active">
-			<a class="nav-link" href="//vvveb.com/download.php">Download for free</a>
-		  </li -->
-      </ul>
-    </div>
-  </nav>
-
-</header>`
-});Vvveb.Sections.add("navigation/navigation-6", {
-    name: "Navigation 6",
-    image: Vvveb.themeBaseUrl + "/screenshots/sections/navigation/navigation-6-thumb.webp",
-    html: `<header class="navigation-1 clearfix">
-
-  <nav class="navbar navbar-expand-md navbar-light fixed-top">
-    <a class="navbar-brand" href="/">
-      <img src="img/logo.png">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav ms-auto">
-        <!-- li class="nav-item">
-			<a class="nav-link" href="#features">Features <span class="sr-only">(current)</span></a>
-		  </li -->
-        <li class="nav-item">
-          <a class="nav-link" href="https://themes.vvveb.com">Themes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://plugins.vvveb.com">Plugins</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki">User Documentation</a>
-            <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki">Developer Documentation</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" target="_blank" href="https://github.com/givanz/VvvebJs">Github</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <!-- li class="nav-item active">
-			<a class="nav-link" href="//vvveb.com/download.php">Download for free</a>
-		  </li -->
-      </ul>
-    </div>
-  </nav>
-
-</header>`
-});Vvveb.Sections.add("navigation/navigation-7", {
-    name: "Navigation 7",
-    image: Vvveb.themeBaseUrl + "/screenshots/sections/navigation/navigation-7-thumb.webp",
-    html: `<header class="navigation-1 clearfix">
-
-  <nav class="navbar navbar-expand-md navbar-light fixed-top">
-    <a class="navbar-brand" href="/">
-      <img src="img/logo.png">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav ms-auto">
-        <!-- li class="nav-item">
-			<a class="nav-link" href="#features">Features <span class="sr-only">(current)</span></a>
-		  </li -->
-        <li class="nav-item">
-          <a class="nav-link" href="https://themes.vvveb.com">Themes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://plugins.vvveb.com">Plugins</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki">User Documentation</a>
-            <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki">Developer Documentation</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" target="_blank" href="https://github.com/givanz/VvvebJs">Github</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <!-- li class="nav-item active">
-			<a class="nav-link" href="//vvveb.com/download.php">Download for free</a>
-		  </li -->
-      </ul>
-    </div>
-  </nav>
-
-</header>`
-});Vvveb.Sections.add("navigation/navigation-8", {
-    name: "Navigation 8",
-    image: Vvveb.themeBaseUrl + "/screenshots/sections/navigation/navigation-8-thumb.webp",
-    html: `<header class="navigation-1 clearfix">
-
-  <nav class="navbar navbar-expand-md navbar-light fixed-top">
-    <a class="navbar-brand" href="/">
-      <img src="img/logo.png">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav ms-auto">
-        <!-- li class="nav-item">
-			<a class="nav-link" href="#features">Features <span class="sr-only">(current)</span></a>
-		  </li -->
-        <li class="nav-item">
-          <a class="nav-link" href="https://themes.vvveb.com">Themes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://plugins.vvveb.com">Plugins</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki">User Documentation</a>
-            <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki">Developer Documentation</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" target="_blank" href="https://github.com/givanz/VvvebJs">Github</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <!-- li class="nav-item active">
-			<a class="nav-link" href="//vvveb.com/download.php">Download for free</a>
-		  </li -->
-      </ul>
-    </div>
-  </nav>
-
-</header>`
-});Vvveb.Sections.add("navigation/navigation-9", {
-    name: "Navigation 9",
-    image: Vvveb.themeBaseUrl + "/screenshots/sections/navigation/navigation-9-thumb.webp",
-    html: `<header class="navigation-1 clearfix">
-
-  <nav class="navbar navbar-expand-md navbar-light fixed-top">
-    <a class="navbar-brand" href="/">
-      <img src="img/logo.png">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav ms-auto">
-        <!-- li class="nav-item">
-			<a class="nav-link" href="#features">Features <span class="sr-only">(current)</span></a>
-		  </li -->
-        <li class="nav-item">
-          <a class="nav-link" href="https://themes.vvveb.com">Themes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://plugins.vvveb.com">Plugins</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki">User Documentation</a>
-            <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki">Developer Documentation</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" target="_blank" href="https://github.com/givanz/VvvebJs">Github</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <!-- li class="nav-item active">
-			<a class="nav-link" href="//vvveb.com/download.php">Download for free</a>
-		  </li -->
-      </ul>
-    </div>
-  </nav>
-
-</header>`
-});Vvveb.Sections.add("navigation/navigation-10", {
-    name: "Navigation 10",
-    image: Vvveb.themeBaseUrl + "/screenshots/sections/navigation/navigation-10-thumb.webp",
-    html: `<header class="navigation-1 clearfix">
-
-  <nav class="navbar navbar-expand-md navbar-light fixed-top">
-    <a class="navbar-brand" href="/">
-      <img src="img/logo.png">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav ms-auto">
-        <!-- li class="nav-item">
-			<a class="nav-link" href="#features">Features <span class="sr-only">(current)</span></a>
-		  </li -->
-        <li class="nav-item">
-          <a class="nav-link" href="https://themes.vvveb.com">Themes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://plugins.vvveb.com">Plugins</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki">User Documentation</a>
-            <a class="dropdown-item" target="_blank" href="https://github.com/givanz/VvvebJs/wiki">Developer Documentation</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" target="_blank" href="https://github.com/givanz/VvvebJs">Github</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <!-- li class="nav-item active">
-			<a class="nav-link" href="//vvveb.com/download.php">Download for free</a>
-		  </li -->
-      </ul>
-    </div>
-  </nav>
-
-</header>`
 });
-	Vvveb.SectionsGroup["Navigation"] = ["navigation/navigation-1","navigation/navigation-2","navigation/navigation-3","navigation/navigation-4","navigation/navigation-5","navigation/navigation-6","navigation/navigation-7","navigation/navigation-8","navigation/navigation-9","navigation/navigation-10"];
+	Vvveb.SectionsGroup["Navigation"] = ["navigation/navigation-1","navigation/navigation-2","navigation/navigation-3","navigation/navigation-4"];
 Vvveb.Sections.add("portfolio/portfolio-1", {
     name: "Portfolio 1",
     image: Vvveb.themeBaseUrl + "/screenshots/sections/portfolio/portfolio-1-thumb.webp",
@@ -5008,43 +4618,43 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
   </div>
   <div class="gallery masonry" data-component-gallery="portfolio-1">
     <div class="item" data-aos="fade-up">
-      <a href="img/demo/video-1.webp">
-        <img class="w-100" src="img/demo/video-1.webp">
+      <a href="/demo/video-1.webp">
+        <img class="img-fluid" src="demo/img/video-1.webp">
       </a>
     </div>
     <div class="item" data-aos="fade-up" data-aos-delay="100">
-      <a href="img/demo/video-1.webp">
-        <img class="w-100" src="img/demo/video-1.webp">
+      <a href="/demo/video-1.webp">
+        <img class="img-fluid" src="demo/img/video-1.webp">
       </a>
     </div>
     <div class="item" data-aos="fade-up" data-aos-delay="200">
-      <a href="img/demo/video-1.webp">
-        <img class="w-100" src="img/demo/video-1.webp">
+      <a href="/demo/video-1.webp">
+        <img class="img-fluid" src="demo/img/video-1.webp">
       </a>
     </div>
     <div class="item" data-aos="fade-up" data-aos-delay="300">
-      <a href="img/demo/video-1.webp">
-        <img class="w-100" src="img/demo/video-1.webp">
+      <a href="/demo/video-1.webp">
+        <img class="img-fluid" src="demo/img/video-1.webp">
       </a>
     </div>
     <div class="item" data-aos="fade-up" data-aos-delay="400">
-      <a href="img/demo/video-1.webp">
-        <img class="w-100" src="img/demo/video-1.webp">
+      <a href="/demo/video-1.webp">
+        <img class="img-fluid" src="demo/img/video-1.webp">
       </a>
     </div>
     <div class="item" data-aos="fade-up" data-aos-delay="500">
-      <a href="img/demo/video-1.webp">
-        <img class="w-100" src="img/demo/video-1.webp">
+      <a href="/demo/video-1.webp">
+        <img class="img-fluid" src="demo/img/video-1.webp">
       </a>
     </div>
     <div class="item" data-aos="fade-up" data-aos-delay="600">
-      <a href="img/demo/video-1.webp">
-        <img class="w-100" src="img/demo/video-1.webp">
+      <a href="/demo/video-1.webp">
+        <img class="img-fluid" src="demo/img/video-1.webp">
       </a>
     </div>
     <div class="item" data-aos="fade-up" data-aos-delay="700">
-      <a href="img/demo/video-1.webp">
-        <img class="w-100" src="img/demo/video-1.webp">
+      <a href="/demo/video-1.webp">
+        <img class="img-fluid" src="demo/img/video-1.webp">
       </a>
     </div>
   </div>
@@ -5062,33 +4672,33 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
     </div>
     <div class="gallery masonry has-shadow" data-component-gallery="portfolio-1">
       <div class="item" data-aos="fade-up">
-        <a href="img/demo/video-1.webp">
-          <img src="img/demo/video-1.webp">
+        <a href="/demo/video-1.webp">
+          <img class="img-fluid" src="demo/img/video-1.webp">
         </a>
       </div>
       <div class="item" data-aos="fade-up" data-aos-delay="100">
-        <a href="img/demo/video-1.webp">
-          <img src="img/demo/video-1.webp">
+        <a href="/demo/video-1.webp">
+          <img class="img-fluid" src="demo/img/video-1.webp">
         </a>
       </div>
       <div class="item" data-aos="fade-up" data-aos-delay="200">
-        <a href="img/demo/video-1.webp">
-          <img src="img/demo/video-1.webp">
+        <a href="/demo/video-1.webp">
+          <img class="img-fluid" src="demo/img/video-1.webp">
         </a>
       </div>
       <div class="item" data-aos="fade-up" data-aos-delay="300">
-        <a href="img/demo/video-1.webp">
-          <img src="img/demo/video-1.webp">
+        <a href="/demo/video-1.webp">
+          <img class="img-fluid" src="demo/img/video-1.webp">
         </a>
       </div>
       <div class="item" data-aos="fade-up" data-aos-delay="400">
-        <a href="img/demo/video-1.webp">
-          <img src="img/demo/video-1.webp">
+        <a href="/demo/video-1.webp">
+          <img class="img-fluid" src="demo/img/video-1.webp">
         </a>
       </div>
       <div class="item" data-aos="fade-up" data-aos-delay="500">
-        <a href="img/demo/video-1.webp">
-          <img src="img/demo/video-1.webp">
+        <a href="/demo/video-1.webp">
+          <img class="img-fluid" src="demo/img/video-1.webp">
         </a>
       </div>
     </div>
@@ -5122,7 +4732,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
         <article class="card h-100 shadow-sm">
           <div class="card-img-top" data-v-if="post.image">
-            <img src="img/demo/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+            <img src="demo/img/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
           </div>
           <!-- Post Title -->
           <a data-v-post-url>
@@ -5151,7 +4761,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
         <article class="card h-100 shadow-sm">
           <div class="card-img-top" data-v-if="post.image">
-            <img src="img/demo/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+            <img src="demo/img/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
           </div>
           <!-- Post Title -->
           <a data-v-post-url>
@@ -5180,7 +4790,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
         <article class="card h-100 shadow-sm">
           <div class="card-img-top" data-v-if="post.image">
-            <img src="img/demo/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+            <img src="demo/img/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
           </div>
           <!-- Post Title -->
           <a data-v-post-url>
@@ -5234,7 +4844,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="day67-dog" src="img/illustrations.co/day67-dog.svg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="day67-dog" src="demo/img/illustrations.co/day67-dog.svg" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -5247,7 +4857,7 @@ Vvveb.Sections.add("posts/posts-1", {
                 </div>
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="day22-owl" src="img/illustrations.co/day22-owl.svg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="day22-owl" src="demo/img/illustrations.co/day22-owl.svg" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -5259,7 +4869,7 @@ Vvveb.Sections.add("posts/posts-1", {
                 </div>
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="day68-happy-cat" src="img/illustrations.co/day68-happy-cat.svg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="day68-happy-cat" src="demo/img/illustrations.co/day68-happy-cat.svg" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -5277,7 +4887,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="day79-coffee" src="img/illustrations.co/day79-coffee.svg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="day79-coffee" src="demo/img/illustrations.co/day79-coffee.svg" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -5290,7 +4900,7 @@ Vvveb.Sections.add("posts/posts-1", {
                 </div>
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="109-map-location" src="img/illustrations.co/109-map-location.svg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="109-map-location" src="demo/img/illustrations.co/109-map-location.svg" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -5302,7 +4912,7 @@ Vvveb.Sections.add("posts/posts-1", {
                 </div>
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="107-healthy" src="img/illustrations.co/107-healthy.svg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="107-healthy" src="demo/img/illustrations.co/107-healthy.svg" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -5320,7 +4930,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="126-namaste-no-hand-shake" src="img/illustrations.co/126-namaste-no-hand-shake.svg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="126-namaste-no-hand-shake" src="demo/img/illustrations.co/126-namaste-no-hand-shake.svg" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -5333,7 +4943,7 @@ Vvveb.Sections.add("posts/posts-1", {
                 </div>
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="104-dumbbell" src="img/illustrations.co/104-dumbbell.svg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="104-dumbbell" src="demo/img/illustrations.co/104-dumbbell.svg" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -5345,7 +4955,7 @@ Vvveb.Sections.add("posts/posts-1", {
                 </div>
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="day50-pirahna" src="img/illustrations.co/day50-pirahna.svg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="day50-pirahna" src="demo/img/illustrations.co/day50-pirahna.svg" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -5381,7 +4991,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
       <div class="col-md-4" data-v-post>
         <div class="card position-relative shadow border-0 mb-4" data-bs-theme="dark">
-          <img class="card-img" src="img/demo/product.webp" loading="lazy" alt="product" data-v-post-image>
+          <img class="card-img" src="demo/img/product.webp" loading="lazy" alt="product" data-v-post-image>
           <div class="card-img-overlay overflow-hidden">
             <div class="d-flex align-items-center">
               <span class="badge bg-primary text-white px-3 py-1 font-weight-normal">New</span>
@@ -5400,7 +5010,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
       <div class="col-md-4" data-v-post>
         <div class="card position-relative shadow border-0 mb-4" data-bs-theme="dark">
-          <img class="card-img" src="img/demo/product.webp" loading="lazy" alt="product" data-v-post-image>
+          <img class="card-img" src="demo/img/product.webp" loading="lazy" alt="product" data-v-post-image>
           <div class="card-img-overlay overflow-hidden">
             <div class="d-flex align-items-center">
               <span class="badge bg-primary text-white px-3 py-1 font-weight-normal">New</span>
@@ -5419,7 +5029,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
       <div class="col-md-4" data-v-post>
         <div class="card position-relative shadow border-0 mb-4" data-bs-theme="dark">
-          <img class="card-img" src="img/demo/product.webp" loading="lazy" alt="product" data-v-post-image>
+          <img class="card-img" src="demo/img/product.webp" loading="lazy" alt="product" data-v-post-image>
           <div class="card-img-overlay overflow-hidden">
             <div class="d-flex align-items-center">
               <span class="badge bg-primary text-white px-3 py-1 font-weight-normal">New</span>
@@ -5455,7 +5065,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col-md-4">
         <div class="price-col shadow-sm border rounded-3" data-aos="fade-up">
           <div class="img">
-            <img src="img/illustrations.co/104-dumbbell.svg" alt="104-dumbbell" loading="lazy" class="img-fluid" />
+            <img src="demo/img/illustrations.co/104-dumbbell.svg" alt="104-dumbbell" loading="lazy" class="img-fluid" />
           </div>
           <div class="text-center p-4">
             <span class="excerpt d-block">Personal</span>
@@ -5488,7 +5098,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col-md-4">
         <div class="price-col shadow-sm border rounded-3" data-aos="fade-up" data-aos-delay="200">
           <div class="img">
-            <img src="img/illustrations.co/107-healthy.svg" alt="107-healthy" loading="lazy" class="img-fluid" />
+            <img src="demo/img/illustrations.co/107-healthy.svg" alt="107-healthy" loading="lazy" class="img-fluid" />
           </div>
           <div class="text-center p-4">
             <span class="excerpt d-block">Business</span>
@@ -5521,7 +5131,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col-md-4">
         <div class="price-col shadow-sm border rounded-3" data-aos="fade-up" data-aos-delay="400">
           <div class="img">
-            <img src="img/illustrations.co/126-namaste-no-hand-shake.svg" alt="126-namaste-no-hand-shake" loading="lazy" class="img-fluid" />
+            <img src="demo/img/illustrations.co/126-namaste-no-hand-shake.svg" alt="126-namaste-no-hand-shake" loading="lazy" class="img-fluid" />
           </div>
           <div class="text-center p-4">
             <span class="excerpt d-block">Ultimate</span>
@@ -5585,11 +5195,11 @@ Vvveb.Sections.add("products/products-1", {
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-              <img src="media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
 
 
@@ -5673,11 +5283,11 @@ Vvveb.Sections.add("products/products-1", {
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-              <img src="media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
 
 
@@ -5761,11 +5371,11 @@ Vvveb.Sections.add("products/products-1", {
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-              <img src="media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
 
 
@@ -5849,11 +5459,11 @@ Vvveb.Sections.add("products/products-1", {
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-              <img src="media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
 
 
@@ -5937,11 +5547,11 @@ Vvveb.Sections.add("products/products-1", {
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-              <img src="media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
 
 
@@ -6025,11 +5635,11 @@ Vvveb.Sections.add("products/products-1", {
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-              <img src="media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
 
 
@@ -6113,11 +5723,11 @@ Vvveb.Sections.add("products/products-1", {
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-              <img src="media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
 
 
@@ -6201,11 +5811,11 @@ Vvveb.Sections.add("products/products-1", {
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-              <img src="media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
 
 
@@ -6301,7 +5911,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
         </a>
       </div>
       <div class="col-md-6 col-sm-12 col-img">
-        <img class="img-fluid" loading="lazy" src="img/illustrations.co/126-namaste-no-hand-shake.svg" alt="namaste">
+        <img class="img-fluid" loading="lazy" src="demo/img/illustrations.co/126-namaste-no-hand-shake.svg" alt="namaste">
       </div>
     </div>
   </div>
@@ -6313,7 +5923,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
   <div class="container">
     <div class="row align-items-center w-100">
       <div class="col-md-6 col-sm-12 col-img">
-        <img class="img-fluid" src="img/illustrations.co/107-healthy.svg" alt="healthy">
+        <img class="img-fluid" src="demo/img/illustrations.co/107-healthy.svg" alt="healthy">
       </div>
       <div class="col-md-6 col-sm-12">
         <h3>Drag and drop builder</h3>
@@ -6861,7 +6471,7 @@ Vvveb.Sections.add("team/team-1", {
 
         <div class="row">
           <div class="col-md-12">
-            <img alt="image" loading="lazy" src="img/sections/team/1.webp" class="img-fluid p-4 rounded-circle">
+            <img alt="image" loading="lazy" src="demo/img/sections/team/1.webp" class="img-fluid p-4 rounded-circle">
           </div>
           <div class="col-md-12 text-center">
             <div class="pt-2">
@@ -6908,7 +6518,7 @@ Vvveb.Sections.add("team/team-1", {
 
         <div class="row">
           <div class="col-md-12">
-            <img alt="image" loading="lazy" src="img/sections/team/2.webp" class="img-fluid p-4 rounded-circle">
+            <img alt="image" loading="lazy" src="demo/img/sections/team/2.webp" class="img-fluid p-4 rounded-circle">
           </div>
           <div class="col-md-12 text-center">
             <div class="pt-2">
@@ -6955,7 +6565,7 @@ Vvveb.Sections.add("team/team-1", {
 
         <div class="row">
           <div class="col-md-12">
-            <img alt="image" loading="lazy" src="img/sections/team/3.webp" class="img-fluid p-4 rounded-circle">
+            <img alt="image" loading="lazy" src="demo/img/sections/team/3.webp" class="img-fluid p-4 rounded-circle">
           </div>
           <div class="col-md-12 text-center">
             <div class="pt-2">
@@ -7002,7 +6612,7 @@ Vvveb.Sections.add("team/team-1", {
 
         <div class="row">
           <div class="col-md-12">
-            <img alt="image" loading="lazy" src="img/sections/team/4.webp" class="img-fluid p-4 rounded-circle">
+            <img alt="image" loading="lazy" src="demo/img/sections/team/4.webp" class="img-fluid p-4 rounded-circle">
           </div>
           <div class="col-md-12 text-center">
             <div class="pt-2">
@@ -7062,7 +6672,7 @@ Vvveb.Sections.add("team/team-1", {
         <div class="card-content">
           <div class="card-body p-0">
             <div class="profile">
-              <img src="img/sections/team/1.webp" loading="lazy" alt="team">
+              <img src="demo/img/sections/team/1.webp" loading="lazy" alt="team">
             </div>
             <div class="card-title mt-4">
               <h4>Jane Doe</h4>
@@ -7106,7 +6716,7 @@ Vvveb.Sections.add("team/team-1", {
         <div class="card-content">
           <div class="card-body p-0">
             <div class="profile">
-              <img src="img/sections/team/2.webp" loading="lazy" alt="team">
+              <img src="demo/img/sections/team/2.webp" loading="lazy" alt="team">
             </div>
             <div class="card-title mt-4">
               <h4>John Doe</h4>
@@ -7150,7 +6760,7 @@ Vvveb.Sections.add("team/team-1", {
         <div class="card-content">
           <div class="card-body p-0">
             <div class="profile">
-              <img src="img/sections/team/3.webp" loading="lazy" alt="team">
+              <img src="demo/img/sections/team/3.webp" loading="lazy" alt="team">
             </div>
             <div class="card-title mt-4">
               <h4>Jane Doe</h4>
@@ -7209,7 +6819,7 @@ Vvveb.Sections.add("team/team-1", {
 
         <div class="row no-gutters">
           <div class="col-md-12 pro-pic">
-            <img alt="image" src="img/sections/team/1.webp" class="img-fluid p-4" loading="lazy">
+            <img alt="image" src="demo/img/sections/team/1.webp" class="img-fluid p-4" loading="lazy">
 
             <ul class="mb-0 list-inline mt-3 px-4">
               <li class="list-inline-item">
@@ -7253,7 +6863,7 @@ Vvveb.Sections.add("team/team-1", {
 
         <div class="row no-gutters">
           <div class="col-md-12 pro-pic">
-            <img alt="image" src="img/sections/team/2.webp" class="img-fluid p-4" loading="lazy">
+            <img alt="image" src="demo/img/sections/team/2.webp" class="img-fluid p-4" loading="lazy">
 
             <ul class="mb-0 list-inline mt-3 px-4">
               <li class="list-inline-item">
@@ -7297,7 +6907,7 @@ Vvveb.Sections.add("team/team-1", {
 
         <div class="row no-gutters">
           <div class="col-md-12 pro-pic">
-            <img alt="image" src="img/sections/team/3.webp" class="img-fluid p-4" loading="lazy">
+            <img alt="image" src="demo/img/sections/team/3.webp" class="img-fluid p-4" loading="lazy">
 
             <ul class="mb-0 list-inline mt-3 px-4">
               <li class="list-inline-item">
@@ -7341,7 +6951,7 @@ Vvveb.Sections.add("team/team-1", {
 
         <div class="row no-gutters">
           <div class="col-md-12 pro-pic">
-            <img alt="image" src="img/sections/team/4.webp" class="img-fluid p-4" loading="lazy">
+            <img alt="image" src="demo/img/sections/team/4.webp" class="img-fluid p-4" loading="lazy">
 
             <ul class="mb-0 list-inline mt-3 px-4">
               <li class="list-inline-item">
@@ -7400,7 +7010,7 @@ Vvveb.Sections.add("team/team-1", {
 
         <div class="row">
           <div class="col-md-12">
-            <img alt="image" src="img/sections/team/1.webp" class="img-fluid p-4" loading="lazy">
+            <img alt="image" src="demo/img/sections/team/1.webp" class="img-fluid p-4" loading="lazy">
           </div>
           <div class="col-md-12">
             <div class="px-4">
@@ -7443,7 +7053,7 @@ Vvveb.Sections.add("team/team-1", {
 
         <div class="row">
           <div class="col-md-12 pro-pic">
-            <img alt="image" src="img/sections/team/2.webp" class="img-fluid p-4" loading="lazy">
+            <img alt="image" src="demo/img/sections/team/2.webp" class="img-fluid p-4" loading="lazy">
           </div>
           <div class="col-md-12">
             <div class="px-4">
@@ -7486,7 +7096,7 @@ Vvveb.Sections.add("team/team-1", {
 
         <div class="row">
           <div class="col-md-12 pro-pic">
-            <img alt="image" src="img/sections/team/3.webp" class="img-fluid p-4" loading="lazy">
+            <img alt="image" src="demo/img/sections/team/3.webp" class="img-fluid p-4" loading="lazy">
           </div>
           <div class="col-md-12">
             <div class="px-4">
@@ -7546,7 +7156,7 @@ Vvveb.Sections.add("team/team-1", {
           <div class="row no-gutters">
             <div class="col-md-5">
 
-              <img alt="image" src="img/sections/team/1.webp" class="img-fluid" loading="lazy">
+              <img alt="image" src="demo/img/sections/team/1.webp" class="img-fluid" loading="lazy">
 
             </div>
             <div class="col-md-7">
@@ -7592,7 +7202,7 @@ Vvveb.Sections.add("team/team-1", {
           <div class="row no-gutters">
             <div class="col-md-5">
 
-              <img alt="image" src="img/sections/team/2.webp" class="img-fluid" loading="lazy">
+              <img alt="image" src="demo/img/sections/team/2.webp" class="img-fluid" loading="lazy">
 
             </div>
             <div class="col-md-7">
@@ -7641,7 +7251,7 @@ Vvveb.Sections.add("team/team-1", {
           <div class="row no-gutters">
             <div class="col-md-5">
 
-              <img alt="image" src="img/sections/team/3.webp" class="img-fluid" loading="lazy">
+              <img alt="image" src="demo/img/sections/team/3.webp" class="img-fluid" loading="lazy">
             </div>
             <div class="col-md-7">
               <div class="p-4">
@@ -7686,7 +7296,7 @@ Vvveb.Sections.add("team/team-1", {
           <div class="row no-gutters">
             <div class="col-md-5">
 
-              <img alt="image" src="img/sections/team/4.webp" class="img-fluid" loading="lazy">
+              <img alt="image" src="demo/img/sections/team/4.webp" class="img-fluid" loading="lazy">
 
             </div>
             <div class="col-md-7">
@@ -7740,7 +7350,7 @@ Vvveb.Sections.add("team/team-1", {
       <div class="col-xl-3 col-sm-6 mb-5">
         <div class="bg-white rounded shadow-sm py-5 px-4">
 
-          <img src="img/sections/team/1.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" loading="lazy">
+          <img src="demo/img/sections/team/1.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" loading="lazy">
 
           <h5>John Doe</h5>
           <span class="small text-uppercase text-muted">CEO - Founder</span>
@@ -7776,7 +7386,7 @@ Vvveb.Sections.add("team/team-1", {
       <div class="col-xl-3 col-sm-6 mb-5">
         <div class="bg-white rounded shadow-sm py-5 px-4">
 
-          <img src="img/sections/team/2.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" loading="lazy">
+          <img src="demo/img/sections/team/2.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" loading="lazy">
 
           <h5>Jane Doe</h5>
           <span class="small text-uppercase text-muted">CTO - Co-Founder</span>
@@ -7813,7 +7423,7 @@ Vvveb.Sections.add("team/team-1", {
       <div class="col-xl-3 col-sm-6 mb-5">
         <div class="bg-white rounded shadow-sm py-5 px-4">
 
-          <img src="img/sections/team/3.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" loading="lazy">
+          <img src="demo/img/sections/team/3.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" loading="lazy">
 
           <h5>John Doe</h5>
           <span class="small text-uppercase text-muted">CMO - Operations</span>
@@ -7850,7 +7460,7 @@ Vvveb.Sections.add("team/team-1", {
       <div class="col-xl-3 col-sm-6 mb-5">
         <div class="bg-white rounded shadow-sm py-5 px-4">
 
-          <img src="img/sections/team/4.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" loading="lazy">
+          <img src="demo/img/sections/team/4.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" loading="lazy">
 
           <h5>Jane Doe</h5>
           <span class="small text-uppercase text-muted">CCO - Financial</span>
@@ -7913,7 +7523,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
 
           <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
 
-          <img src="img/sections/team/1.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow border rounded-3" loading="lazy">
+          <img src="demo/img/sections/team/1.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow border rounded-3" loading="lazy">
 
           <h3 class="mb-0">John Doe</h3>
           <span class="small text-uppercase text-muted">Company Inc.</span>
@@ -7932,7 +7542,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
 
 
           <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
-          <img src="img/sections/team/2.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow border rounded-3" loading="lazy">
+          <img src="demo/img/sections/team/2.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow border rounded-3" loading="lazy">
 
           <h3 class="mb-0">Jane Doe</h3>
           <span class="small text-uppercase text-muted">Company Inc.</span>
@@ -7952,7 +7562,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
 
           <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
 
-          <img src="img/sections/team/3.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow border rounded-3" loading="lazy">
+          <img src="demo/img/sections/team/3.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow border rounded-3" loading="lazy">
 
           <h3 class="mb-0">John Doe</h3>
           <span class="small text-uppercase text-muted">Company Inc.</span>
@@ -7972,7 +7582,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
 
           <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
 
-          <img src="img/sections/team/4.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow border rounded-3" loading="lazy">
+          <img src="demo/img/sections/team/4.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow border rounded-3" loading="lazy">
 
           <h3 class="mb-0">Jane Doe</h3>
           <span class="small text-uppercase text-muted">Company Inc.</span>
@@ -8009,7 +7619,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
               <p class="text-muted"> I really enjoyed working with them, they are Group of Professionals and they know what they're Doing</p>
             </div>
 
-            <img alt="image" src="img/sections/team/1.webp" class="img-fluid p-4 rounded-circle" loading="lazy">
+            <img alt="image" src="demo/img/sections/team/1.webp" class="img-fluid p-4 rounded-circle" loading="lazy">
           </div>
           <div class="col-md-12 text-center">
             <div class="pt-2">
@@ -8039,7 +7649,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
               <p class="text-muted"> I really enjoyed working with them, they are Group of Professionals and they know what they're Doing</p>
             </div>
 
-            <img alt="image" src="img/sections/team/2.webp" class="img-fluid p-4 rounded-circle" loading="lazy">
+            <img alt="image" src="demo/img/sections/team/2.webp" class="img-fluid p-4 rounded-circle" loading="lazy">
           </div>
           <div class="col-md-12 text-center">
             <div class="pt-2">
@@ -8068,7 +7678,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
               <p class="text-muted"> I really enjoyed working with them, they are Group of Professionals and they know what they're Doing</p>
             </div>
 
-            <img alt="image" src="img/sections/team/3.webp" class="img-fluid p-4 rounded-circle" loading="lazy">
+            <img alt="image" src="demo/img/sections/team/3.webp" class="img-fluid p-4 rounded-circle" loading="lazy">
           </div>
           <div class="col-md-12 text-center">
             <div class="pt-2">
@@ -8096,7 +7706,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
               <p class="text-muted"> I really enjoyed working with them, they are Group of Professionals and they know what they're Doing</p>
             </div>
 
-            <img alt="image" src="img/sections/team/4.webp" class="img-fluid p-4 rounded-circle" loading="lazy">
+            <img alt="image" src="demo/img/sections/team/4.webp" class="img-fluid p-4 rounded-circle" loading="lazy">
           </div>
           <div class="col-md-12 text-center">
             <div class="pt-2">
@@ -8141,7 +7751,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
             </div>
 
             <div class="profile">
-              <img src="img/sections/team/1.webp" loading="lazy" alt="team">
+              <img src="demo/img/sections/team/1.webp" loading="lazy" alt="team">
             </div>
             <div class="card-title mt-4">
               <h4>Jane Doe</h4>
@@ -8165,7 +7775,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
             </div>
 
             <div class="profile">
-              <img src="img/sections/team/2.webp" loading="lazy" alt="team">
+              <img src="demo/img/sections/team/2.webp" loading="lazy" alt="team">
             </div>
             <div class="card-title mt-4">
               <h4>John Doe</h4>
@@ -8189,7 +7799,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
             </div>
 
             <div class="profile">
-              <img src="img/sections/team/3.webp" loading="lazy" alt="team">
+              <img src="demo/img/sections/team/3.webp" loading="lazy" alt="team">
             </div>
             <div class="card-title mt-4">
               <h4>Jane Doe</h4>

@@ -9405,7 +9405,8 @@ body > section, body > footer, body > header {
     z-index: -2;
     width: 100%;
     height: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    visibility: visible; }
     body > section .background-container img, body > section .background-container video, body > section .overlay img, body > section .overlay video, body > footer .background-container img, body > footer .background-container video, body > footer .overlay img, body > footer .overlay video, body > header .background-container img, body > header .background-container video, body > header .overlay img, body > header .overlay video {
       width: auto;
       height: auto;
@@ -9854,8 +9855,8 @@ audio, video {
   border-radius: 3px; }
 
 .btn-primary {
-  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.2) 0px 0.75px 0px 0px inset, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0.4) 0px 0px 0px 1px;
-  --bs-btn-border-color:rgba(var(--bs-primary-rgb), 0.5);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.15) 0px 0.75px 0px 0px inset, rgba(0, 0, 0, 0.15) 0px 1px 2px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+  --bs-btn-border-color:rgba(var(--bs-primary-rgb), 0.3);
   --bs-btn-padding-x: 1.5rem;
   font-weight: 500; }
 
@@ -15578,43 +15579,59 @@ ul.tags {
     font-size: 12px; }
 
 /* price slider */
+/*
 .price-input {
-  width: 100%;
-  display: flex;
-  margin: 10px 0 20px;
-  justify-content: space-between; }
-  .price-input label {
-    display: flex;
-    align-items: center; }
-    .price-input label span {
-      margin: 0 1rem; }
-    .price-input label input[type="number"] {
-      width: 100%;
-      -moz-appearance: textfield; }
-      .price-input label input[type="number"]::-webkit-outer-spin-button {
-        -webkit-appearance: none; }
-      .price-input label input[type="number"]::-webkit-inner-spin-button {
-        -webkit-appearance: none; }
-  .price-input .separator {
-    width: 130px;
-    display: flex;
-    font-size: 19px;
-    align-items: center;
-    justify-content: center; }
+	width: 100%;
+	display: flex;
+	margin: 10px 0 20px;
+	justify-content: space-between;
+	
+	label {
+		display: flex;
+		align-items: center;
+		
+		span {
+			margin:0 1rem;
+		}
+		
+		input[type="number"] {
+			width:100%;
+			
+			-moz-appearance: textfield;
+			&::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+			}
+			&::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+			}
+		}
+
+	}
+	.separator {
+		width: 130px;
+		display: flex;
+		font-size: 19px;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
 
 .slider {
-  height: 5px;
-  position: relative;
-  background: #ddd;
-  border-radius: 5px; }
-  .slider .progress {
-    height: 100%;
-    left: 25%;
-    right: 25%;
-    position: absolute;
-    border-radius: 5px;
-    background: var(--bs-primary); }
-
+	height: 5px;
+	position: relative;
+	background: #ddd;
+	border-radius: 5px;
+	.progress {
+		height: 100%;
+		left: 25%;
+		right: 25%;
+		position: absolute;
+		border-radius: 5px;
+		background: var(--bs-primary);
+	}
+}
+*/
 /*
 .range-input {
 	position: relative;

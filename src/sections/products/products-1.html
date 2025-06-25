@@ -1,9 +1,9 @@
-<section class="products-1" aria-label="latest-products-1">
+<section class="products-1" aria-label="products-1">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
 				<div class="section-heading text-center">
-					<h2 class="text-center display-6 mb-1 fw-bold">Popular Products</h2>
+					<h2 class="text-center display-6 mb-1 fw-bold">Latest Products</h2>
 					<p class="lead text-center text-muted mb-4">Best quality at the lowest price.</p>
 				</div>
 			</div>
@@ -12,15 +12,16 @@
 
 
 	<div class="container" 
-		data-v-component-products="popular" 
+		data-v-component-products="latest" 
 		data-v-limit="8" 
+		data-v-variant_price="true"
 		data-v-image_size="medium"
 	>
 		<div class="row">
 			
 				@@for (var i = 0; i < 8; i++) {
 			 
-				<div class="col-md-3" data-v-product>
+				<div class="col-md-3" data-aos="fade-up" data-aos-delay="` + i + `00" data-v-product>
 				
 					@@include('../../_includes/product-list-item.html')
 				
