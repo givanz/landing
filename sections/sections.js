@@ -543,8 +543,8 @@ Vvveb.Sections.add("hero/hero-1", {
   </div>
 
 
-  <script id="swiper-js" src="`+Vvveb.themeBaseUrl+`/js/libs/swiper/swiper-bundle.min.js"></script>
-  <link id="swiper-css" href="/js/libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script id="swiper-js" src="`+Vvveb.themeBaseUrl+`../../libs/swiper/swiper-bundle.min.js"></script>
+  <link id="swiper-css" href="`+Vvveb.themeBaseUrl+`../../libs/swiper/swiper-bundle.min.css" rel="stylesheet">
   <script>
 var swiper = [];
 function initSwiper(onlyNew = false) {
