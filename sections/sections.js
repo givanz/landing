@@ -1517,7 +1517,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
     image: Vvveb.themeBaseUrl + "/screenshots/sections/contact-form/contact-form-2-thumb.webp",
     html: `<section class="contact-form-11 pt-0" aria-label="contact-form-11">
   <div class="container-fluid p-0 pb-5">
-    <iframe loading="lazy" class="map" title="map" src="`+Vvveb.themeBaseUrl+`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" style="border:0" allowfullscreen="" width="100%" height="300" frameborder="0"></iframe>
+    <iframe loading="lazy" class="map" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" style="border:0" allowfullscreen="" width="100%" height="300" frameborder="0"></iframe>
   </div>
   <div class="container">
     <div class="row pt-5">
@@ -1611,7 +1611,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
   </div>
 
   <div class="container-fluid p-0">
-    <iframe loading="lazy" class="map" title="map" src="`+Vvveb.themeBaseUrl+`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" style="border:0" allowfullscreen="" width="100%" height="300" frameborder="0"></iframe>
+    <iframe loading="lazy" class="map" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" style="border:0" allowfullscreen="" width="100%" height="300" frameborder="0"></iframe>
   </div>
 </section>`
 });Vvveb.Sections.add("contact-form/contact-form-4", {
@@ -1654,7 +1654,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
       </div>
 
       <div class="col-12 col-md-8 col-lg pt-5 m-auto pt-lg-0">
-        <iframe loading="lazy" class="mb-4" title="map" src="`+Vvveb.themeBaseUrl+`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" style="border:0" allowfullscreen="" width="100%" height="200" frameborder="0"></iframe>
+        <iframe loading="lazy" class="mb-4" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" style="border:0" allowfullscreen="" width="100%" height="200" frameborder="0"></iframe>
 
         <p>
           <strong>Showroom</strong>
@@ -1732,7 +1732,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
   <div class="container-fluid g-0">
 
     <div style="height:300px" data-component-maps>
-      <iframe loading="lazy" frameborder="0" title="map" src="`+Vvveb.themeBaseUrl+`https://maps.google.com/maps?q=Bucharest&z=15&t=q&key=&output=embed" width="100%" height="100%" style="width:100%;height:100%;left:0px">
+      <iframe loading="lazy" frameborder="0" title="map" src="https://maps.google.com/maps?q=Bucharest&z=15&t=q&key=&output=embed" width="100%" height="100%" style="width:100%;height:100%;left:0px">
       </iframe>
     </div>
 
@@ -1909,7 +1909,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
 
     <div class="row pt-4">
       <div class="col-12 col-md-6">
-        <iframe loading="lazy" class="map" title="map" src="`+Vvveb.themeBaseUrl+`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" style="border:0" allowfullscreen="" width="100%" height="300" frameborder="0"></iframe>
+        <iframe loading="lazy" class="map" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" style="border:0" allowfullscreen="" width="100%" height="300" frameborder="0"></iframe>
       </div>
 
       <div class="col-12 col-md-6 pt-5">
@@ -1945,7 +1945,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
     image: Vvveb.themeBaseUrl + "/screenshots/sections/contact-form/contact-form-8-thumb.webp",
     html: `<section class="contact-form-8 pt-0" aria-label="contact-form-8">
   <div class="container-fluid p-0 pb-3">
-    <iframe loading="lazy" class="map" title="map" src="`+Vvveb.themeBaseUrl+`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" style="border:0" allowfullscreen="" width="100%" height="300" frameborder="0"></iframe>
+    <iframe loading="lazy" class="map" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" style="border:0" allowfullscreen="" width="100%" height="300" frameborder="0"></iframe>
   </div>
   <div class="container">
     <div class="row text-center justify-content-center pt-5">
@@ -6370,7 +6370,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
   <div class="container">
     <div class="row align-items-center justify-content-center">
       <div class="col-12 col-md-6   mt-4 mt-md-0 order-md-1 order-2">
-        <img alt="image" loading="lazy" class="img-fluid" src="`+Vvveb.themeBaseUrl+`http://via.placeholder.com/650x450/5fa9f8/fff">
+        <img alt="image" loading="lazy" class="img-fluid" src="http://via.placeholder.com/650x450/5fa9f8/fff">
       </div>
       <div class="col-12 col-md-4 order-1 order-md-2">
         <h2>Nice Heading</h2>
@@ -6384,12 +6384,12 @@ Vvveb.Sections.add("showcase/showcase-1", {
 
       </div>
       <div class="col-12 col-md-6   mt-4 mt-md-0">
-        <img alt="image" loading="lazy" class="img-fluid" src="`+Vvveb.themeBaseUrl+`http://via.placeholder.com/650x450/5fa9f8/fff">
+        <img alt="image" loading="lazy" class="img-fluid" src="http://via.placeholder.com/650x450/5fa9f8/fff">
       </div>
     </div>
     <div class="row align-items-center justify-content-center">
       <div class="col-12 col-md-6   mt-4 mt-md-0 order-md-1 order-2">
-        <img alt="image" loading="lazy" class="img-fluid" src="`+Vvveb.themeBaseUrl+`http://via.placeholder.com/650x450/5fa9f8/fff">
+        <img alt="image" loading="lazy" class="img-fluid" src="http://via.placeholder.com/650x450/5fa9f8/fff">
       </div>
       <div class="col-12 col-md-4 order-1 order-md-2">
         <h2>Nice Heading</h2>
