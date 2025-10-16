@@ -39,7 +39,7 @@ Vvveb.Sections.add("hero/hero-1", {
   </div>
 
   <div class="background-container">
-    <!-- <img src="${Vvveb.themeBaseUrl}demo/img//background.svg" alt="Hero background" loading="lazy"> -->
+    <!-- <img src="${Vvveb.themeBaseUrl}demo/img/background.svg" alt="Hero background" loading="lazy"> -->
   </div>
 
 </header>`
