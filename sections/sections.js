@@ -404,7 +404,9 @@ Vvveb.Sections.add("hero/hero-1", {
     <img src="demo/img/hero-3.webp" alt="Hero background">
   </div>
 </header>`
-});Vvveb.Sections.add("hero/hero-slider", {
+});
+//changes to the shared html of each slide should also be mirrored in the add slide button inject in components-elements.js element.swiper.appendSlide
+Vvveb.Sections.add("hero/hero-slider", {
     name: "Hero slider",
     image: Vvveb.themeBaseUrl + "/screenshots/sections/hero/hero-slider-thumb.webp",
     html: `<header class="hero-slider" aria-label="hero-slider">
