@@ -1,0 +1,85 @@
+@@include('../_includes/html-head.html', {"title": "Landing - Product listing", "path":"../"})
+
+<body>
+	
+	@@include('../_includes/header.html')
+	
+	
+	<main id="site-content" role="main">
+      <div class="container mt-5">
+
+      </div>
+      <div class="container">
+        <div class="row g-5 justify-content-between">
+		
+         <div class="col-md-3 col-xl-3 products-sidebar" data-v-save-global="product/index.html,.products-sidebar">
+			@@include('_sidebar.html')
+		 </div>
+		  
+          <div class="col-md-9 col-xl-9 content-body">
+
+			<div class="row g-3 g-md-5 align-items-end">
+			  <div class="col-md-6">
+				<h1 class="mb-2" data-v-category-name>Category name</h1>
+				
+				@@include('../_includes/breadcrumb.html')
+				
+				<img class="img-thumbnail mb-3" width="200" src="" data-v-if="this.category.image" data-v-category-image_url>
+				
+				@@include('../_includes/fields.html', {"type": "taxonomy_item", "subtype":"categories"})
+				
+			  </div>
+			  <div class="col-md-6 text-md-end">
+				<ul class="list-inline">
+				  <li class="list-inline-item">
+					<div class="dropdown">
+					  <a class="btn btn-light btn-sm" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+						Price high to low <i class="la la-arrow-down"></i>
+					  </a>
+
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<li><a class="dropdown-item"><i class="la la-arrow-up"></i> <span>Price high to low</span></a></li>
+						<li><a class="dropdown-item"><i class="la la-arrow-down"></i> <span>Price low to high</span></a></li>
+						<li><a class="dropdown-item"><i class="la la-chart-line"></i> <span>Popularity</span></a></li>
+						<li><a class="dropdown-item"><i class="la la-tags"></i> <span>Sales</span></a></li>
+					  </ul>
+					</div>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+			<div class="row" data-v-component-products="index" data-v-limit="6" data-v-order_by="url" data-v-direction="url" data-v-page="url" data-v-taxonomy_item_id="url" data-v-image_size="medium" data-v-filter="url">
+              <div class="col-md-6 col-xl-4" data-v-product>
+                <div class="product">
+				
+					@@include('../_includes/product-list-item.html')
+				
+				</div>
+                </div> 
+				
+				<div data-v-if="index < 1">
+					<h4 class="text-center py-4">No products to display!</h4>
+				</div>
+           		            		
+			 </div>
+            
+				<div class="mt-4 py-2">
+				
+					@@include('../_includes/pagination.html', {"component": "products", "component-index":0, "query_string":true})
+			
+				</div>
+			</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+   
+@@include('../_includes/footer.html')   
+ 
+@@include('../_includes/footer-scripts.html')    
+
+<script id="filter-js" data-no-minify src="/js/app/filter.js"></script>
+  	
+</body>
+</html>

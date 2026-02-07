@@ -5,8 +5,8 @@
 		<div class="container">
 
 				<div data-v-component-site>	
-					<!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"www.*.*"}'><span class="visually-hidden">Logo</span> -->
-					<a class="navbar-brand" href="/" data-v-site-url'><span class="visually-hidden">Logo</span>
+					<!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"*.*.*"}'><span class="visually-hidden">Logo</span> -->
+					<a class="navbar-brand" href="/" data-v-site-url><span class="visually-hidden">Logo</span>
 					   <img src="demo/img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
 					   <img src="demo/img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
 					   <img src="demo/img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
@@ -17,6 +17,7 @@
 			   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
 				 <span class="navbar-toggler-icon"></span>
 			  </button>
+
 
 			  <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
 				<ul class="navbar-nav ms-auto" data-v-menu-items>
@@ -44,13 +45,38 @@
 				  <li class="nav-item" data-v-menu-item>
 					<a class="nav-link" href="https://www.vvveb.com"  data-v-menu-item-url><span data-v-menu-item-name>About us</span></a>
 				  </li> 
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/" role="button">Demo</a>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/">Page builder</a>
+						  <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin">Admin dashboard</a>
+						  <a class="dropdown-item" target="_blank" href="//demo.vvveb.com">Frontend</a>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" target="_blank" href="https://vercel-vvveb-commerce.vercel.app/">Next.js Frontend GraphQL</a>
+						</div>
+					</li>		
+					
+							  
+				  <li class="nav-toggle">
+					@@include('../../_includes/user-dropdown.html')
+				  </li>
+				  
+				  <li class="nav-toggle">
+					<button class="btn btn-outline-secondary btn-sm border-0" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
+						<div class="la-flip-horizontal">
+							<i class="la la-search la-lg" aria-hidden="true"></i>
+						</div>
+					</button>				
+				  </li>
+							  
 				  <li class="nav-item">
 						<a id="color-theme-switch" class="nav-link" role="button" title="Switch sidebar color theme">
 							<i class="la la-sun"></i>
 						</a>
 				  </li>
-
 				</ul>
+			  </div>
+				
 <!--				
 				<div class="search-area toggle-hover">
 					<form action="/search" method="get" data-v-action="/search">
@@ -66,7 +92,7 @@
 					</form>
 				</div>
 -->							
-			  </div>
+<!--	  </div> -->
 		  <!--
 		  <div class="collapse navbar-collapse" id="navbar">
 			<ul class="navbar-nav ms-auto">

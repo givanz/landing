@@ -1,7 +1,7 @@
 @media screen and (min-width: 767px) {
 	.navigation-3 {
 		.sticky {
-			background:rgba(var(--bs-body-bg-rgb), 0.1);
+			background:rgba(var(--bs-body-bg-rgb), 0.8);
 			
 			&:after {
 				content: '';
@@ -48,7 +48,7 @@
 					font-size: 15px;
 					//font-weight: 500;
 					padding: 2.1rem 1rem 2.1rem;
-					text-transform:none;
+					//text-transform:none;
 					//color: var(--bs-navbar-active-color);
 
 					&:hover {
@@ -58,7 +58,12 @@
 					}
 				}	
 				
-
+				.nav-toggle {
+					a.nav-link {
+						padding: 2.1rem 0.5rem 2.1rem;
+					}
+				}
+				
 				nav.navbar-expand-md {
 					a.nav-link {
 						display: flex;

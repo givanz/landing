@@ -1,4 +1,5 @@
 $bg-body-secondary-gray: #f1f3f7 !default;
+$max-width: 40rem !default;
 
 @mixin quotes {
 		&:before,  &:after {
@@ -46,6 +47,10 @@ blockquote {
 	}
 
 	@import "post-style";
+	
+	[data-v-post-image].narrow {
+		max-width: $max-width;
+	}
 
 	.card-header {
 		margin-bottom:0rem;
@@ -67,6 +72,7 @@ blockquote {
 		text-align:center;
 		padding: 0;
 		margin-bottom:2rem;
+		font-size:14px;
 
 		li {
 			margin-right: 1rem;
@@ -229,11 +235,11 @@ ul.tags {
 	a {
 		border:1px solid rgba(var(--bs-body-color-rgb), 0.035);
 		background-color:rgba(var(--bs-body-color-rgb), 0.025);
-		padding:0.1rem 0.3rem;
+		padding:0rem 0.5rem;
 		margin:0.1rem;
 		display:inline-block;
 		border-radius:2px;
-		font-size:90%;
+		font-size:85%;
 	}
 }
 

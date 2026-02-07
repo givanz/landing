@@ -2,7 +2,9 @@
 <div class="dropdown nav-item">
 		<a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
 			<!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
-			<i class="la la-lg la-user"></i><span class="visually-hidden">User</span>
+			<!-- <i class="la la-lg la-user"></i> -->
+			@@include('user-icon.html', {"width": "20px"})
+			<span class="visually-hidden">User</span>
 		</a>
 
 		<div class="dropdown-menu dropdown-menu-end login-box user-box" aria-labelledby="user-dropdown">

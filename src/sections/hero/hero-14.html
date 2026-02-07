@@ -1,0 +1,115 @@
+<header class="hero-14 py-5" aria-label="hero-14">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="pe-lg-3">
+                        <h1 class="display-3 fw-bold mb-2 mb-md-3">The next generation <span class="text-primary">website builder</span></h1>
+                        <p class="lead mb-4">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <div class="text-primary">
+                                        <svg class="bi bi-chat-right-fill" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 0a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"></path></svg>
+                                    </div>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-0">24/7</h6>
+                                    <p>Customer Support</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex">
+                                <div class="text-primary">
+                                    <svg class="bi bi-shield-fill-check" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z" fill-rule="evenodd"></path></svg>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-0">99.99%</h6>
+                                    <p>Uptime Guarantee</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-5">
+                        <div class="card shadow-lg border border-primary text-white text-left h-100">
+                            <div class="card-body bg-primary p-4 p-xl-5">
+                                <h2 class="pb-3 text-center">Start Today!</h2>
+								<form action="/user/signup"  method="post" enctype="multipart/form-data" id="signup-form">
+									<input type="hidden" name="csrf" data-v-csrf>	
+
+
+									<label class="form-label" for="username">Username</label>
+									<div class="mb-3 input-group">
+										<span class="input-group-text bg-body pe-1"> <i class="la la-user"></i> </span>
+										<input name="username" id="username" class="form-control form-control-lg border-start-0 border-start-0" placeholder="Username" type="text" required>
+									</div>
+<!--
+									<label class="form-label" for="first-name">First name</label>
+									<div class="mb-3 input-group">
+										<span class="input-group-text bg-body pe-1"> <i class="la la-user"></i> </span>
+										<input name="first_name" id="first-name" class="form-control form-control-lg border-start-0 border-start-0" placeholder="First Name" type="text" required>
+									</div>
+
+									<label class="form-label" for="last-name">Last name</label>
+									<div class="mb-3 input-group">
+										<span class="input-group-text bg-body pe-1"> <i class="la la-user"></i> </span>
+										<input name="last_name" id="last-name" class="form-control form-control-lg border-start-0 border-start-0" placeholder="Last Name" type="text" required>
+									</div>
+-->
+									<label class="form-label" for="email">Email address</label>
+									<div class="mb-3 input-group">
+										<span class="input-group-text bg-body pe-1"> <i class="la la-envelope"></i> </span>
+										<input name="email" id="email" class="form-control form-control-lg border-start-0 border-start-0" placeholder="Email address" type="email" required>
+									</div>
+									
+									<label class="form-label" for="password">Password</label>
+									<div class="mb-3 input-group">
+										<span class="input-group-text bg-body pe-1"> <i class="la la-lock"></i> </span>
+										  <input type="password" minlength="6" autocorrect="off" class="form-control form-control-lg border-start-0 border-start-0" placeholder="Password"  id="password" name="password" autocomplete="new-password" value="" aria-label="Password" required>
+										  <button class="btn px-3 border border-start-0 bg-body" type="button" onclick="togglePasswordInput(this, 'password')"><i class="la la-eye-slash"></i></button>
+									</div>
+									
+									<label class="form-label" for="new-password">Repeat password</label>
+									<div class="mb-3 input-group">
+										<span class="input-group-text bg-body pe-1"> <i class="la la-lock"></i> </span>
+										  <input type="password" minlength="6" autocorrect="off" autocomplete="new-password" class="form-control form-control-lg border-start-0 border-start-0" placeholder="Repeat password"  id="confirm_password" name="confirm_password" value="" aria-label="Repeat Password" required>
+										  <button class="btn px-3 border border-start-0 bg-body" type="button" onclick="togglePasswordInput(this, 'confirm_password')"><i class="la la-eye-slash"></i></button>
+									</div>          
+
+									 <!-- if these hidden inputs are filled then ignore, robots -->
+
+									 <input type="text" class="form-control d-none" placeholder="Contact form" name="contact-form" >	
+									 
+									 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+									 
+									 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">	
+
+
+									<div class="mb-3">
+									  <div class="form-check mb-1">
+										<input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+										<label class="form-check-label" for="terms">
+										  </span>I agree to</span>
+										  <a href="page/terms-conditions" target="_blank" data-v-url="content/page/index" data-v-url-params='{"slug":"terms-conditions"}'>Terms and conditions</a>
+										</label>
+									  </div>
+									</div>
+                            
+									<div class="mb-3">
+										<button type="submit" class="btn btn-dark btn-signup btn-lg my-3">Get started</button>
+									</div>      
+									
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

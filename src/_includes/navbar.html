@@ -1,0 +1,188 @@
+	<ul class="navbar-nav ms-auto" data-v-menu-items>
+	  <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
+		
+		<a class="nav-link dropdown-toggle" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active"  aria-expanded="false" data-v-menu-item-url>
+			<span data-v-menu-item-name data-v-if-not="category.type = 'text' && category.name"></span>
+			<span data-v-menu-item-content data-v-if="category.content">
+				<img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
+			</span>
+		</a>
+		
+		<div class="dropdown-menu" data-v-menu-item-recursive>
+		  <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+			<a class="dropdown-item" data-v-class-if-active="category.active && category.type != 'text'"  href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+				<span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
+				<span data-v-menu-item-content data-v-if="category.content">
+					<div class="row">
+						<div class="col-6 align-self-center"><img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid"></div>
+						<div class="col-6">
+							<h4>Features</h4>
+							<p class="text-muted">Just a few mentions, but there is more</p>
+							<ul class="list-unstyled">
+								<li class="text-primary">Page builder</li>
+								<li class="text-primary">Mega menu</li>
+								<li class="text-primary">Multi language</li>
+								<li class="text-primary">Advanced SEO</li>
+								<li class="text-primary">Ecommerce</li>
+							</ul>
+						</div>
+					</div>
+				</span>
+			</a>
+		  </div> 
+		  <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+			<a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active"  data-v-menu-item-url>
+				<span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
+				<span data-v-menu-item-content></span>
+			</a>
+		  </div> 
+		</div>
+	  </li>
+	  <li class="nav-item dropdown" data-v-menu-item>
+		<a class="nav-link dropdown-toggle" href="https://blog.vvveb.com"  data-v-menu-item-url><span data-v-menu-item-name>Blog</span></a>
+		
+			<div class="dropdown-menu" data-v-menu-item-recursive>
+			  <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+				<a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+					<span data-v-menu-item-name data-v-if-not="category.type = 'text'">User Documentation</span>
+					<span data-v-menu-item-content></span>
+				</a>
+			  </div> 
+			  <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+				<a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+					<span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
+					<span data-v-menu-item-content></span>
+				</a>
+			  </div> 
+			</div>
+	  </li>
+	  <li class="nav-item" data-v-menu-item>
+		<a class="nav-link" href="https://www.vvveb.com/page/contact"  data-v-menu-item-url><span data-v-menu-item-name>Contact</span></a>
+	  </li>
+	  <li class="nav-item" data-v-menu-item>
+		<a class="nav-link" href="https://www.vvveb.com"  data-v-menu-item-url><span data-v-menu-item-name>About us</span></a>
+	  </li>
+	  @@if (typeof nouser == "undefined" || !nouser)  {
+	  <li class="nav-toggle">
+		@@include('user-dropdown.html')
+	  </li>
+	  }
+	  @@if (typeof nocart == "undefined" || !nocart)  {
+	  <li class="nav-toggle">
+		@@include('cart-offcanvas.html')
+	  </li>
+	  }
+	<li class="nav-toggle">
+	<div class="dropdown nav-item" data-v-component-language>
+	<div data-v-component-currency>
+			<form method="post" enctype="multipart/form-data" id="form-language">
+
+				<a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button"  title="Language"  aria-expanded="false">
+					<!-- <img src="" data-v-language-info-img> -->
+					<span class="" data-v-language-info-slug>English</span>
+				</a>
+			
+				
+				<div class="dropdown-menu">
+					
+					<div data-v-language>
+						<button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+							<img src="" loading="lazy" class="me-1" data-v-language-img>
+							<span data-v-language-name>English</span>
+						</button>
+					</div>
+				
+					<li><hr class="dropdown-divider"></li>
+					
+					<div data-v-currency>
+					  <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+						<span data-v-currency-sign_start>$</span>
+						<span data-v-currency-sign_end>$</span>
+						<span class="ms-1" data-v-currency-name>US Dollar</span>
+					  </button>
+					</div>
+					
+					
+				</div>
+			</form>
+		</div>					
+	</div>					
+	</li>	
+	<li class="nav-item">		
+		<a id="color-theme-switch" class="nav-link px-1" role="button" title="Switch sidebar color theme">
+			<i class="la la-sun"></i>
+		</a>
+	</li>	
+	<!--
+	<li class="nav-toggle">
+	<div class="dropdown nav-item" data-v-component-language>
+			<form method="post" enctype="multipart/form-data" id="form-language">
+
+				<a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button"  title="Language"  aria-expanded="false">
+					<img src="" data-v-language-info-img>
+					<span class="" data-v-language-info-slug>English</span>
+				</a>
+			
+				
+				<div class="dropdown-menu">
+					
+					<div data-v-language>
+						<button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+							<img src="" loading="lazy" class="me-1" data-v-language-img>
+							<span data-v-language-name>English</span>
+						</button>
+					</div>
+					
+					<div data-v-language>
+						<button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
+							<img src="" loading="lazy" class="me-1" data-v-language-img>
+							<span data-v-language-name>Romanian</span>
+						</button>
+					</div>
+					
+				</div>
+			</form>
+		</div>					
+	</li>	
+	<li class="nav-toggle">
+	<div class="dropdown nav-item" data-v-component-currency>
+		<form method="post" enctype="multipart/form-data" id="form-currency">
+
+			<a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button" title="Currency" aria-expanded="false">
+				<span class="" data-v-currency-info-sign_start>$</span>
+				<span class="" data-v-currency-info-sign_end>$</span>
+			</a>
+		
+			
+			<div class="dropdown-menu">
+				
+				<div data-v-currency>
+				  <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
+					<span data-v-currency-sign_start>€</span>
+					<span data-v-currency-sign_end>€</span>
+					<span class="ms-1" data-v-currency-name>Euro</span>
+				  </button>
+				</div>
+
+				<div data-v-currency>
+				  <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
+					<span data-v-currency-sign_start>£</span>
+					<span data-v-currency-sign_end>£</span>
+					<span class="ms-1" data-v-currency-name>Pound Sterling</span>
+				  </button>
+				</div>
+
+				<div data-v-currency>
+				  <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+					<span data-v-currency-sign_start>$</span>
+					<span data-v-currency-sign_end>$</span>
+					<span class="ms-1" data-v-currency-name>US Dollar</span>
+				  </button>
+				</div>
+				
+			</div>
+		</form>
+	</div>		                    
+	</li>		  
+	-->
+	</ul>

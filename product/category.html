@@ -27,8 +27,9 @@
 
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/feed/index">
   <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/posts" />
-  <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
+  <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/pages" />
   <link rel="alternate" type="application/rss+xml" title="Products" href="/feed/products" />
+  <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
 
   <link rel="icon" type="image/x-icon" href="media/favicon.ico" data-v-global-site.favicon>
 
@@ -41,140 +42,12 @@
 <body>
 
   <nav class="navigation-1 clearfix" data-v-save-global="blank.html,.navigation-1">
-
-    <div id="top" class="top-nav clearfix">
-      <div class="container">
-        <div class="d-flex justify-content-between  flex-md-row d-flex flex-column flex-md-row">
-          <div class="nav">
-            <ul class="list-inline" data-v-component-site>
-              <li class="list-inline-item" data-v-if="site.description.phone-number">
-                <a href="tel:5511112377" class="p-2 p-md-0" title="Phone" data-v-site-description-phone-number>
-                  <i class="la la-phone"></i>
-                  <span class=" text-muted" data-v-site-description-phone-number>+55 (111) 123 777</span>
-                </a>
-              </li>
-              <li class="list-inline-item" data-v-if="site.contact-email">
-                <a href="mailto:contact@mysite.com" class="p-2 p-md-0" title="Email" data-v-site-contact-email>
-                  <i class="la la-envelope"></i>
-                  <span class=" text-muted" data-v-site-contact-email>contact@mysite.com</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="nav">
-            <ul class="list-inline">
-              <!--
-					<li class="list-inline-item"><a id="wishlist-total" title="Wish List (0)"><i class="la la-heart"></i> <span class="">Favorites</span></a></li>
-					<li class="list-inline-item"><a title="Checkout"><i class="la la-share"></i> <span class="">Checkout</span></a></li>
-					<li class="list-inline-item">
-						<div class="dropdown">
-							<a href="" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"><i class="la la-user"></i> <span class="">My Account</span></i></a>
-							<ul class="dropdown-menu dropdown-menu-right">
-								<li><a class="dropdown-item">Register</a></li>
-								<li><a class="dropdown-item">Login</a></li>
-							</ul>
-						</div>
-					</li>
-					-->
-              <li class="list-inline-item">
-                <div data-v-component-currency>
-                  <form method="post" enctype="multipart/form-data" id="form-currency">
-
-                    <a class="dropdown-toggle p-2 p-md-0" data-bs-toggle="dropdown" role="button" title="Currency " aria-expanded="false">
-                      <!-- <i class="la la-dollar-sign me-1"></i> -->
-                      <span class="" data-v-currency-info-name>USD</span>
-                    </a>
-
-
-                    <div class="dropdown-menu dropdown-menu-end">
-
-                      <div data-v-currency>
-                        <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
-                          <span data-v-currency-sign_start>€</span>
-                          <span data-v-currency-sign_end>€</span>
-                          <span class="ms-1" data-v-currency-name>Euro</span>
-                        </button>
-                      </div>
-
-                      <div data-v-currency>
-                        <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
-                          <span data-v-currency-sign_start>£</span>
-                          <span data-v-currency-sign_end>£</span>
-                          <span class="ms-1" data-v-currency-name>Pound Sterling</span>
-                        </button>
-                      </div>
-
-                      <div data-v-currency>
-                        <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
-                          <span data-v-currency-sign_start>$</span>
-                          <span data-v-currency-sign_end>$</span>
-                          <span class="ms-1" data-v-currency-name>US Dollar</span>
-                        </button>
-                      </div>
-
-                    </div>
-                  </form>
-                </div>
-              </li>
-              <li class="list-inline-item">
-                <div data-v-component-language>
-                  <form method="post" enctype="multipart/form-data" id="form-language">
-
-                    <a class="dropdown-toggle p-2 p-md-0" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
-                      <!-- <i class="la la-flag me-1"></i> -->
-                      <!-- 
-									<img src="" data-v-language-info-img>
-									-->
-                      <span class="" data-v-language-info-name>English</span>
-                    </a>
-
-
-                    <div class="dropdown-menu dropdown-menu-end">
-
-                      <div data-v-language>
-                        <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
-                          <!-- <i class="la la-flag la-lg me-2"></i> -->
-                          <img src="" loading="lazy" class="me-1" data-v-language-img>
-
-                          <!-- <a href="" data-v-language-url> -->
-                          <span data-v-language-name>English</span>
-                          <!-- </a> -->
-                        </button>
-                      </div>
-
-                      <div data-v-language>
-                        <button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
-                          <!-- <i class="la la-flag la-lg me-2"></i> -->
-                          <img src="" loading="lazy" class="me-1" data-v-language-img>
-                          <!-- <a href="" data-v-language-url>  -->
-                          <span data-v-language-name>Romanian</span>
-                          <!-- </a>  -->
-                        </button>
-                      </div>
-
-                    </div>
-                  </form>
-                </div>
-              </li>
-              <li class="list-inline-item">
-
-                <a id="color-theme-switch" class="p-2 p-md-0" role="button" title="Switch sidebar color theme">
-                  <i class="la la-sun la-lg"></i>
-                </a>
-
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="navbar navbar-expand-md">
 
       <div class="container">
         <div data-v-component-site>
-          <!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"www.*.*"}'><span class="visually-hidden">Logo</span> -->
-          <a class="navbar-brand" href="/" data-v-site-url'>
+          <!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"*.*.*"}'><span class="visually-hidden">Logo</span> -->
+          <a class="navbar-brand" href="/" data-v-site-url>
             <span class="visually-hidden">Logo</span>
             <img src="demo/img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
             <img src="demo/img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
@@ -193,10 +66,8 @@
 
               <a class="nav-link dropdown-toggle" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
                 <span data-v-menu-item-name data-v-if-not="category.type = 'text' && category.name"></span>
-                <span data-v-if="category.content" data-v-menu-item-content>
-                  <p>
-                    <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
-                  </p>
+                <span data-v-menu-item-content data-v-if="category.content">
+                  <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
                 </span>
               </a>
 
@@ -204,7 +75,7 @@
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                   <a class="dropdown-item" data-v-class-if-active="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
-                    <span data-v-if="category.content" data-v-menu-item-content>
+                    <span data-v-menu-item-content data-v-if="category.content">
                       <div class="row">
                         <div class="col-6 align-self-center">
                           <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
@@ -268,7 +139,11 @@
               <div class="dropdown nav-item">
                 <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                   <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
-                  <i class="la la-lg la-user"></i>
+                  <!-- <i class="la la-lg la-user"></i> -->
+                  <svg width="20px" viewBox="0 0 24 24" fill="none">
+                    <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+
                   <span class="visually-hidden">User</span>
                 </a>
 
@@ -343,15 +218,15 @@
                       <div class="login-form" data-v-if-not="component.user_id">
 
                         <div class="mb-3">
-                          <label class="form-label" for="input-email">E-Mail Address</label>
-                          <input type="email" name="email" value placeholder="E-Mail Address" id="user-email" class="form-control" data-v-user-email required>
+                          <input type="email" name="email" value placeholder=" " id="user-email" class="form-control label-over" data-v-user-email required>
+                          <label class="form-label" for="user-email">E-Mail Address</label>
                         </div>
 
                         <div class="mb-3">
-                          <label class="form-label" for="input-password">Password</label>
 
                           <div class="input-group">
-                            <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password" id="user-password" name="password" value="" aria-label="Password" required>
+                            <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control label-over" placeholder=" " id="user-password" name="password" value="" aria-label="Password" required>
+                            <label class="form-label" for="user-password">Password</label>
                             <button class="btn btn-sm px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'user-password')">
                               <i class="la la-eye-slash"></i>
                             </button>
@@ -386,7 +261,7 @@
 			  <i class="lab la-facebook la-lg"></i>
 			</span>
 		</a> -->
-                        <hr>
+                        <hr class="text-secondary">
                         <span>Don’t have an account?</span>
                         <br>
                         <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
@@ -397,8 +272,10 @@
 
 
                       <div class="user-form" data-v-if="component.user_id">
-                        <div class="text-center">Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
+                        <div class="text-center" data-v-if="user.first_name">Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
                           <b data-v-user-last_name data-filter-capitalize>Doe</b>
+                        </div>
+                        <div class="text-center" data-v-if-not="user.first_name">Welcome <b data-v-user-username>johndoe</b>
                         </div>
 
                         <div class="dropdown-divider opacity-50 my-3"></div>
@@ -475,186 +352,150 @@
               <!-- Cart Area -->
               <div class="dropdown nav-item mini-cart" data-v-component-cart>
 
-                <a class="dropdown-toggle cart-info nav-link " href role="button" id="cart-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="cart/cart/index">
+                <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
                   <!-- <img src="demo/img/bag.svg" width="20" alt> -->
-                  <i class="la la-lg la-shopping-bag"></i>
-                  <span class="visually-hidden">Cart</span>
-                  <strong class="text-top text-bold" data-v-total_items data-v-if="cart.total_items > 0"></strong>
+                  <!--
+		<i class="la la-lg la-shopping-bag"></i><span class="visually-hidden">Cart</span>
+		-->
+                  <svg width="20px" viewBox="0 0 24 24" fill="none">
+                    <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+
+                  <strong class="badge bg-primary" data-v-total_items data-v-if="cart.total_items > 0"></strong>
                 </a>
 
-
-                <div class="dropdown-menu dropdown-menu-end cart-box" aria-labelledby="cart-dropdown">
-
-                  <div>
-                    <div class="table-responsive">
-                      <table class="table cart-table align-middle mb-0">
-                        <tbody>
-
-
-                          <tr data-v-cart-product>
-                            <td class="text-center">
-                              <a href="#40" data-v-cart-product-url>
-                                <img src="demo/img/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
-                              </a>
-                            </td>
-                            <td class="text-start">
-                              <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                Product name
-                              </a>
-
-                              <span data-v-cart-product-quantity>1</span>
-                              <i class="la la-times text-muted"></i>
-                              <span data-v-cart-product-price_tax_formatted>$123.20</span>
-
-                              <div class="option" data-v-if="product.option">
-                                <div class="" data-v-product-option>
-                                  <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
-                                  <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
-                                </div>
-                                <div class="" data-v-product-option>
-                                  <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
-                                  <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
-                                </div>
-                                <div class="" data-v-product-option>
-                                  <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
-                                  <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
-                                </div>
-                              </div>
-
-                              <div class="subscription" data-v-if="product.subscription">
-                                <span>Subscription plan</span>:
-                                <span data-v-cart-product-subscription_name>Subscription plan</span>
-                              </div>
-                            </td>
-                            <td class="text-end">
-                              <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
-                                <i class="la la-times"></i>
-                              </a>
-                            </td>
-                          </tr>
-                          <tr data-v-cart-product>
-                            <td class="text-center">
-                              <a href="#40" data-v-cart-product-url>
-                                <img src="demo/img/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
-                              </a>
-                            </td>
-                            <td class="text-start">
-                              <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                Product name
-                              </a>
-
-                              <span data-v-cart-product-quantity>1</span>
-                              <i class="la la-times text-muted"></i>
-                              <span data-v-cart-product-price_tax_formatted>$123.20</span>
-
-
-                            </td>
-                            <td class="text-end">
-                              <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
-                                <i class="la la-times"></i>
-                              </a>
-                            </td>
-                          </tr>
-                          <tr data-v-if-not="cart.total_items">
-                            <td colspan="100">
-                              <div class="d-flex  p-2">
-                                <div class="text-center p-2 opacity-75">
-                                  <!-- <img src="demo/img/bag.svg" width="20" alt> -->
-                                  <i class="la la-2x la-shopping-bag"></i>
-                                </div>
-                                <div class="p-2">
-                                  <strong>Empty cart</strong>
-                                  <br>
-                                  <span class="text-muted">No products added yet!</span>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-
-                      </table>
-                    </div>
-
-                    <div class="p-3 pt-0 border-top" data-v-if="cart.total_items">
-                      <div class="table-responsive mb-2" data-v-cart-totals>
-                        <table class="table mb-0 cart-table cart-total" cellspacing="0">
-                          <tfoot>
-                            <tr data-v-cart-total>
-                              <td colspan="5" class="text-end">
-                                <small data-v-cart-total-title>Sub-Total</small>:
-                              </td>
-                              <td class="text-end">
-                                <span data-v-cart-total-text data-v-if="total.text"> - </span>
-                                <span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
-                              </td>
-                            </tr>
-                            <tr data-v-cart-total>
-                              <td colspan="5" class="text-end">
-                                <small>Eco Tax (2.00):</small>
-                              </td>
-                              <td class="text-end">$2.00</td>
-                            </tr>
-                            <tr data-v-cart-total>
-                              <td colspan="5" class="text-end">
-                                <small>VAT (19%):</small>
-                              </td>
-                              <td class="text-end">$20.20</td>
-                            </tr>
-                            <tr data-v-cart-total>
-                              <td colspan="5" class="text-end">
-                                <small>Total:</small>
-                              </td>
-                              <td class="text-end">$123.20</td>
-                            </tr>
-                            <tr>
-                              <td colspan="5" class="text-end">Total:</td>
-                              <td class="text-end" data-v-grand-total_formatted>$0</td>
-                            </tr>
-                          </tfoot>
-
-                        </table>
-                      </div>
-
-                    </div>
-
-                    <div class="row mt-2 g-2 px-3 pb-2" data-v-if="cart.total_items">
-                      <div class="col-6">
-                        <a href="" class="btn btn-light btn-sm border w-100" data-v-url="cart/cart/index" data-url>
-                          <i class="la la-shopping-cart la-lg"></i>
-                          <span>View cart</span>
-                        </a>
-                      </div>
-                      <div class="col-6">
-                        <a href="" class="btn btn-primary btn-sm w-100" data-v-url="checkout/checkout/index">
-                          <span>Checkout</span>
-                          <i class="la la-arrow-right la-lg"></i>
-                        </a>
-                      </div>
-                    </div>
-
-
-                  </div>
-
-
-
-                </div>
 
               </div>
 
             </li>
 
-          </ul>
+            <li class="nav-toggle">
+              <div class="dropdown nav-item" data-v-component-language>
+                <div data-v-component-currency>
+                  <form method="post" enctype="multipart/form-data" id="form-language">
+
+                    <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
+                      <!-- <img src="" data-v-language-info-img> -->
+                      <span class="" data-v-language-info-slug>English</span>
+                    </a>
 
 
+                    <div class="dropdown-menu">
 
-          <button class="btn btn-outline-secondary btn-sm border-0" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
-            <div class="la-flip-horizontal">
-              <i class="la la-search la-lg" aria-hidden="true"></i>
+                      <div data-v-language>
+                        <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+                          <img src="" loading="lazy" class="me-1" data-v-language-img>
+                          <span data-v-language-name>English</span>
+                        </button>
+                      </div>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <div data-v-currency>
+              <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+                <span data-v-currency-sign_start>$</span>
+                <span data-v-currency-sign_end>$</span>
+                <span class="ms-1" data-v-currency-name>US Dollar</span>
+              </button>
             </div>
-          </button>
 
 
-          <!--
+        </div>
+        </form>
+      </div>
+    </div>
+    </li>
+    <li class="nav-item">
+      <a id="color-theme-switch" class="nav-link px-1" role="button" title="Switch sidebar color theme">
+        <i class="la la-sun"></i>
+      </a>
+    </li>
+    <!--
+	<li class="nav-toggle">
+	<div class="dropdown nav-item" data-v-component-language>
+			<form method="post" enctype="multipart/form-data" id="form-language">
+
+				<a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button"  title="Language"  aria-expanded="false">
+					<img src="" data-v-language-info-img>
+					<span class="" data-v-language-info-slug>English</span>
+				</a>
+			
+				
+				<div class="dropdown-menu">
+					
+					<div data-v-language>
+						<button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+							<img src="" loading="lazy" class="me-1" data-v-language-img>
+							<span data-v-language-name>English</span>
+						</button>
+					</div>
+					
+					<div data-v-language>
+						<button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
+							<img src="" loading="lazy" class="me-1" data-v-language-img>
+							<span data-v-language-name>Romanian</span>
+						</button>
+					</div>
+					
+				</div>
+			</form>
+		</div>					
+	</li>	
+	<li class="nav-toggle">
+	<div class="dropdown nav-item" data-v-component-currency>
+		<form method="post" enctype="multipart/form-data" id="form-currency">
+
+			<a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button" title="Currency" aria-expanded="false">
+				<span class="" data-v-currency-info-sign_start>$</span>
+				<span class="" data-v-currency-info-sign_end>$</span>
+			</a>
+		
+			
+			<div class="dropdown-menu">
+				
+				<div data-v-currency>
+				  <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
+					<span data-v-currency-sign_start>€</span>
+					<span data-v-currency-sign_end>€</span>
+					<span class="ms-1" data-v-currency-name>Euro</span>
+				  </button>
+				</div>
+
+				<div data-v-currency>
+				  <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
+					<span data-v-currency-sign_start>£</span>
+					<span data-v-currency-sign_end>£</span>
+					<span class="ms-1" data-v-currency-name>Pound Sterling</span>
+				  </button>
+				</div>
+
+				<div data-v-currency>
+				  <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+					<span data-v-currency-sign_start>$</span>
+					<span data-v-currency-sign_end>$</span>
+					<span class="ms-1" data-v-currency-name>US Dollar</span>
+				  </button>
+				</div>
+				
+			</div>
+		</form>
+	</div>		                    
+	</li>		  
+	-->
+    </ul>
+
+
+
+    <button class="btn btn-outline-secondary btn-sm border-0 shadow-none" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
+      <div class="la-flip-horizontal">
+        <i class="la la-search la-lg" aria-hidden="true"></i>
+      </div>
+    </button>
+
+
+    <!--
 	<div class="search-area toggle-hover">
 		<form action="/search" method="get" data-v-action="/search">
 			<input type="hidden" name="route" value="search">
@@ -669,10 +510,10 @@
 		</form>
 	</div>
 -->
-        </div>
+    </div>
 
 
-      </div>
+    </div>
     </div>
   </nav>
 
@@ -688,7 +529,7 @@
 
         <div class="col-md-3 col-xl-3 products-sidebar" data-v-save-global="product/index.html,.products-sidebar">
           <!-- Categories Widget -->
-          <div class="card border border-opacity-10" data-v-component-product-categories="sidebar" data-v-type="categories" data-v-limit="1000" data-v-post_type="product">
+          <div class="card border-secondary border-opacity-10" data-v-component-product-categories="sidebar" data-v-type="categories" data-v-limit="1000" data-v-post_type="product">
             <div class="card-body menutree">
               <h6 class="card-title text-muted">Categories</h6>
               <div class="card-body p-0 menu-content collapse show">
@@ -719,7 +560,7 @@
           </div>
 
           <!-- Manufacturers Widget -->
-          <div class="card border bg-opacity-10 filters mt-2">
+          <div class="card border-secondary border-opacity-10 filters mt-3">
             <div class="card-body">
               <h6 class="card-title text-muted">Brands</h6>
               <ul class="list-unstyled" data-v-component-product-manufacturers="sidebar" data-v-filter="url">
@@ -752,7 +593,7 @@
           </div>
 
           <!-- Vendors Widget -->
-          <div class="card border bg-opacity-10 filters mt-2">
+          <div class="card border-secondary border-opacity-10 filters mt-3">
             <div class="card-body">
               <h6 class="card-title text-muted">Vendors</h6>
               <ul class="list-unstyled" data-v-component-product-vendors="sidebar" data-v-filter="url">
@@ -783,332 +624,292 @@
               </ul>
             </div>
           </div>
+
+          <!-- Attributes Widget -->
           <!--
-<div data-v-component-product-filters>
-</div>
-
-<div class="card border bg-opacity-10 filters mt-2">
-  <h6 class="card-title text-muted">Color</h6>
-  <ul class="list-unstyled">
-    <li>
-      <div class="form-check form-check-color">
-        <input class="form-check-input" type="checkbox" value="" id="color-1">
-        <label class="form-check-label" for="color-1">
-          <span class="bg-red"></span> Red </label>
-      </div>
-    </li>
-    <li class="mt-1">
-      <div class="form-check form-check-color">
-        <input class="form-check-input" type="checkbox" value="" id="color-2">
-        <label class="form-check-label" for="color-2">
-          <span class="bg-blue"></span> Blue </label>
-      </div>
-    </li>
-    <li class="mt-1">
-      <div class="form-check form-check-color">
-        <input class="form-check-input" type="checkbox" value="" id="color-3">
-        <label class="form-check-label" for="color-3">
-          <span class="bg-green"></span> Green </label>
-      </div>
-    </li>
-    <li class="mt-1">
-      <div class="form-check form-check-color">
-        <input class="form-check-input" type="checkbox" value="" id="color-4">
-        <label class="form-check-label" for="color-4">
-          <span class="bg-yellow"></span> Yellow </label>
-      </div>
-    </li>
+<div class="card border-secondary border-opacity-10 filters mt-2">
+<div class="card-body">
+  <h6 class="card-title text-muted">Attributes</h6>
+  <div class="list-unstyled" data-v-component-product-attributes="sidebar" data-v-filter="url">
+  <ul class="list-unstyled" data-v-attributes>
+	<li data-v-attribute>
+	  <div class="form-check form-check-minimal">
+		<label class="form-check-label">
+		  <input class="form-check-input" type="checkbox" name="vendor_id[]" value="" data-v-attribute-attribute_id>
+		  <span data-v-attribute-name>Mango</span>
+		</label>
+	  </div>
+	</li>
+	<li data-v-attribute>
+	  <div class="form-check form-check-minimal">
+		<input class="form-check-input" type="checkbox" name="vendor_id[]" value="" data-v-attribute-attribute_id>
+		<label class="form-check-label" for="brand-2">
+		  <span data-v-attribute-name>Assos</span>
+		</label>
+	  </div>
+	</li>
+	<li data-v-attribute>
+	  <div class="form-check form-check-minimal">
+		<label class="form-check-label" for="brand-3">
+		  <input class="form-check-input" type="checkbox" name="vendor_id[]" value="" data-v-attribute-attribute_id>
+		  <span data-v-attribute-name>Brand name</span>
+		</label>
+	  </div>
+	</li>
   </ul>
 </div>
-
-<div class="card border bg-opacity-10 filters mt-2">
-  <h6 class="card-title text-muted">Size</h6>
-  <ul class="list-unstyled">
-    <li>
-      <label class="form-check form-check-color">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" class="form-check-input" value="46">
-        <span>Small <strong>(1)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="47">
-        <span>Medium <strong>(1)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="48">
-        <span>Large <strong>(1)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="61">
-        <span>XS <strong>(11)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="62">
-        <span>S <strong>(15)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="63">
-        <span>M <strong>(12)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="64">
-        <span>L <strong>(6)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="65">
-        <span>XL <strong>(10)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="66">
-        <span>XXL <strong>(6)</strong>
-        </span>
-      </label>
-    </li>
-  </ul>
 </div>
-
-<div class="card border bg-opacity-10 filters mt-2">
-  <h6 class="card-title text-muted">Color</h6>
-  <ul class="list-unstyled">
-    <label class="form-check">
-      <input name="filter_option[]" type="checkbox" class="form-check-input" value="49">
-      <img src="http://anne.nicolethemes.com/image/cache/catalog/colors/blue-20x20.gif" alt="">
-      <span>Blue <strong>(3)</strong>
-      </span>
-    </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="50">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/colors/gold-20x20.gif" alt="">
-        <span>Gold <strong>(3)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="51">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/colors/green-20x20.gif" alt="">
-        <span>Green <strong>(3)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="52">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/colors/hotpink-20x20.gif" alt="">
-        <span>Hot pink <strong>(5)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="53">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/colors/lemon-20x20.gif" alt="">
-        <span>Lemon <strong>(4)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="54">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/colors/lime-20x20.gif" alt="">
-        <span>Lime <strong>(3)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="55">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/colors/navy-20x20.gif" alt="">
-        <span>Navy <strong>(9)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="56">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/colors/orange-20x20.gif" alt="">
-        <span>Orange <strong>(1)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="57">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/colors/red-20x20.gif" alt="">
-        <span>Red <strong>(5)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="58">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/colors/slate-20x20.gif" alt="">
-        <span>Slate <strong>(5)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="59">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/colors/teal-20x20.gif" alt="">
-        <span>Teal <strong>(2)</strong>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" value="60">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/colors/vanilla-20x20.gif" alt="">
-        <span>Vanilla <strong>(2)</strong>
-        </span>
-      </label>
-    </li>
-  </ul>
-</div>
-
-<div class="card border bg-opacity-10 filters mt-2">
-  <h6 class="card-title text-muted">Manufacturer</h6>
-  <ul class="list-unstyled">
-    <li>
-      <label class="form-check">
-        <input name="filter_manufacturer[]" type="checkbox" value="6">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/demo/palm_logo-he-100x30.webp" alt="">
-        <span>Palm</span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_manufacturer[]" type="checkbox" value="7">
-        <span>Hewlett-Packard</span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_manufacturer[]" type="checkbox" value="8">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/demo/apple_logo-he-100x30.webp" alt="">
-        <span>Apple</span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_manufacturer[]" type="checkbox" value="9">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/demo/canon_logo-he-100x30.webp" alt="">
-        <span>Canon</span>
-      </label>
-    </li>
-    <li>
-      <label class="form-check">
-        <input name="filter_manufacturer[]" type="checkbox" value="10">
-        <img src="http://anne.nicolethemes.com/image/cache/catalog/demo/sony_logo-he-100x30.webp" alt="">
-        <span>Sony</span>
-      </label>
-    </li>
-  </ul>
-</div>
-
-<div class="card border bg-opacity-10 filters mt-2">
-  <h6 class="card-title text-muted">Price</h6>
-  <div class="list-group-item">
-    <div id="option-groupSize">
-      <label class="form-check form-check-color">
-        <input name="filter_option[]" type="checkbox" class="form-check-input" class="form-check-input" value="46">
-        <span>Small <small>(1)</small>
-        </span>
-      </label>
-    </div>
-  </div>
-  <div class="list-group-item pb-4">
-    <div class="price-input">
-      <label>
-        <span>Min</span>
-        <input type="number" class="input-min form-control" value="2500">
-      </label>
-      <label>
-        <span>Max</span>
-        <input type="number" class="input-max form-control" value="7500">
-      </label>
-    </div>
-    <div class="slider">
-      <div class="progress"></div>
-    </div>
-    <div class="range-input">
-      <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-      <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-    </div>
-  </div>
 </div>
 -->
-          <script>
-/*
-	//add active to current menu item in navigation list and open parent categories
-	var pathname = window.location.pathname;
-	var current_url = pathname.replace(/\/\d+$/, '');//remove pagination
-	
-	document.querySelectorAll('.menutree a').forEach(function(el) {
-			let url = el.getAttribute('href');
-	
-			// Add .active on menu if it is current page
-			if(url == current_url) {
-				 let parent = el;
-				 while ((parent = parent.parentNode) && parent !== document) {
-					if (parent.matches('li')) {
-						parent.classList.add("active");
-						parent.querySelector(':scope > input[type="checkbox"]')?.setAttribute("checked", true);
-					}
-				  }
-				  return;
-				//('.menutree a[href="' + current_url +'"]').parents('li').addClass('active').find('> input[type="checkbox"]').attr("checked", true);
-			}
-	});
-	
-	document.addEventListener('click', (event) => {
-	  let el = event.target.closest('.menutree a');
-	  if (el) {
-			document.querySelectorAll('.menutree .active').forEach(function(el) {el.classList.remove("active")});
-			let parent = el;
-			 while ((parent = parent.parentNode) && parent !== document) {
-				 if (parent.matches('li')) {
-					parent.classList.add("active");
-					//parent.querySelector(':scope > input[type="checkbox"]')?.setAttribute("checked", true);
-				}
-			 }
-	  }
-	});
-*/	
-	/*
-	.click(function(e) {
-		$('.menutree .active').removeClass("active");
-		$(this).parents('li').addClass("active");
-	});
-	*/	
+          <!--
+<div data-v-component-product-filters>
 
-</script>
+	<div class="card border-secondary border-opacity-10 filters mt-2">
+	<div class="card-body">	
+	  <h6 class="card-title text-muted">Color</h6>
+	  <ul class="list-unstyled">
+		<li>
+		  <div class="form-check form-check-color">
+			<input class="form-check-input" type="checkbox" value="" id="color-1">
+			<label class="form-check-label" for="color-1">
+			  <span class="bg-red"></span> Red </label>
+		  </div>
+		</li>
+		<li class="mt-1">
+		  <div class="form-check form-check-color">
+			<input class="form-check-input" type="checkbox" value="" id="color-2">
+			<label class="form-check-label" for="color-2">
+			  <span class="bg-blue"></span> Blue </label>
+		  </div>
+		</li>
+		<li class="mt-1">
+		  <div class="form-check form-check-color">
+			<input class="form-check-input" type="checkbox" value="" id="color-3">
+			<label class="form-check-label" for="color-3">
+			  <span class="bg-green"></span> Green </label>
+		  </div>
+		</li>
+		<li class="mt-1">
+		  <div class="form-check form-check-color">
+			<input class="form-check-input" type="checkbox" value="" id="color-4">
+			<label class="form-check-label" for="color-4">
+			  <span class="bg-yellow"></span> Yellow </label>
+		  </div>
+		</li>
+	  </ul>
+	</div>
+	</div>
 
+	<div class="card border-secondary border-opacity-10 filters mt-2">
+	<div class="card-body">
+	  <h6 class="card-title text-muted">Size</h6>
+	  <ul class="list-unstyled">
+		<li>
+		  <label class="form-check form-check-color">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" class="form-check-input" value="46">
+			<span>Small <strong>(1)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="47">
+			<span>Medium <strong>(1)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="48">
+			<span>Large <strong>(1)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="61">
+			<span>XS <strong>(11)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="62">
+			<span>S <strong>(15)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="63">
+			<span>M <strong>(12)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="64">
+			<span>L <strong>(6)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="65">
+			<span>XL <strong>(10)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="66">
+			<span>XXL <strong>(6)</strong>
+			</span>
+		  </label>
+		</li>
+	  </ul>
+	</div>
+	</div>
+
+	<div class="card border-secondary border-opacity-10 filters mt-2">
+	<div class="card-body">	
+	  <h6 class="card-title text-muted">Color</h6>
+	  <ul class="list-unstyled">
+		<label class="form-check">
+		  <input name="filter_option[]" type="checkbox" class="form-check-input" value="49">
+		  <img src="http://anne.nicolethemes.com/image/cache/catalog/colors/blue-20x20.gif" alt="">
+		  <span>Blue <strong>(3)</strong>
+		  </span>
+		</label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="50">
+			<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/gold-20x20.gif" alt="">
+			<span>Gold <strong>(3)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="51">
+			<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/green-20x20.gif" alt="">
+			<span>Green <strong>(3)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="52">
+			<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/hotpink-20x20.gif" alt="">
+			<span>Hot pink <strong>(5)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="53">
+			<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/lemon-20x20.gif" alt="">
+			<span>Lemon <strong>(4)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="54">
+			<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/lime-20x20.gif" alt="">
+			<span>Lime <strong>(3)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="55">
+			<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/navy-20x20.gif" alt="">
+			<span>Navy <strong>(9)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="56">
+			<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/orange-20x20.gif" alt="">
+			<span>Orange <strong>(1)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="57">
+			<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/red-20x20.gif" alt="">
+			<span>Red <strong>(5)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="58">
+			<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/slate-20x20.gif" alt="">
+			<span>Slate <strong>(5)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="59">
+			<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/teal-20x20.gif" alt="">
+			<span>Teal <strong>(2)</strong>
+			</span>
+		  </label>
+		</li>
+		<li>
+		  <label class="form-check">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" value="60">
+			<img src="http://anne.nicolethemes.com/image/cache/catalog/colors/vanilla-20x20.gif" alt="">
+			<span>Vanilla <strong>(2)</strong>
+			</span>
+		  </label>
+		</li>
+	  </ul>
+	</div>
+	</div>
+
+	<div class="card border-secondary border-opacity-10 filters mt-2">
+	<div class="card-body">	
+	  <h6 class="card-title text-muted">Price</h6>
+	  <div class="list-group-item">
+		<div id="option-groupSize">
+		  <label class="form-check form-check-color">
+			<input name="filter_option[]" type="checkbox" class="form-check-input" class="form-check-input" value="46">
+			<span>Small <small>(1)</small>
+			</span>
+		  </label>
+		</div>
+	  </div>
+	  <div class="list-group-item pb-4">
+		<div class="price-input">
+		  <label>
+			<span>Min</span>
+			<input type="number" class="input-min form-control" value="2500">
+		  </label>
+		  <label>
+			<span>Max</span>
+			<input type="number" class="input-max form-control" value="7500">
+		  </label>
+		</div>
+		<div class="slider">
+		  <div class="progress"></div>
+		</div>
+		<div class="range-input">
+		  <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+		  <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+		</div>
+	  </div>
+	</div>
+	</div>
+
+</div>
+-->
         </div>
 
         <div class="col-md-9 col-xl-9 content-body">
@@ -1116,6 +917,15 @@
           <div class="row g-3 g-md-5 align-items-end">
             <div class="col-md-6">
               <h1 class="mb-2" data-v-category-name>Category name</h1>
+
+              <div class="row">
+                <div class="col" data-v-if="this.category.image">
+                  <img class="img-fluid rounded-2 mb-3" src="demo/img/hero-3.webp" width="200" src="" loading="lazy" alt="Card image cap" data-aos="zoom-in-up" data-aos-duration="200" data-v-category-image_url>
+                </div>
+                <div class="col">
+                  <div class="mb-3" data-v-category-content>Category description</div>
+                </div>
+              </div>
 
               <nav aria-label="breadcrumb" class="text-muted text-small" data-v-component-breadcrumb>
                 <ol class="breadcrumb">
@@ -1136,6 +946,42 @@
                   </li>
                 </ol>
               </nav>
+
+              <div data-v-component-fields data-v-type="taxonomy_item" data-v-subtype="categories">
+
+                <div class="list-unstyled" data-v-fields>
+
+                  <div data-v-field>
+
+                    <div data-v-type-google_map>
+
+                      <iframe data-v-if="field.value" frameborder="0" src="https://maps.google.com/maps?q={$field.value.address}&amp;z={$field.value.zoom}&center={$field.value.lat},{$field.value.long}&amp;t=q&amp;key=&amp;output=embed" width="100%" height="100%" style="width:100%;height:100%;left:0px"></iframe>
+                      <iframe data-v-if="field.lat && field.long && !field.value" frameborder="0" src="https://maps.google.com/maps?center={$field.value.lat},{$field.value.long}&amp;z={$field.value.zoom}&amp;t=q&amp;key=&amp;output=embed" width="100%" height="100%" style="width:100%;height:100%;left:0px"></iframe>
+
+                    </div>
+
+
+                    <div data-v-type-default>
+                      <span class="fw-bold" data-v-field-name></span>
+
+                      <span data-v-if-not="is_array" data-v-field-value></span>
+
+                      <div data-v-subfields>
+
+                        <li data-v-subfields-field>
+                          <span class="fw-bold" data-v-subfields-field-name></span>
+                          <span data-v-subfields-field-value></span>
+                        </li>
+                      </div><!-- /subfields -->
+                    </div><!-- /default -->
+
+                  </div><!-- /field -->
+
+                </div><!-- /fields -->
+
+              </div><!-- /component -->
+
+
 
             </div>
             <div class="col-md-6 text-md-end">
@@ -1177,7 +1023,7 @@
               </ul>
             </div>
           </div>
-          <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-order_by="url" data-v-direction="url" data-v-page="url" data-v-taxonomy_item_id="url" data-v-image_size="medium" data-v-filter="url">
+          <div class="row" data-v-component-products="index" data-v-limit="6" data-v-order_by="url" data-v-direction="url" data-v-page="url" data-v-taxonomy_item_id="url" data-v-image_size="medium" data-v-filter="url">
             <div class="col-md-6 col-xl-4" data-v-product>
               <div class="product">
 
@@ -1188,7 +1034,7 @@
                     <a href="product/product.html" data-v-product-url>
 
                       <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-                      <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+                      <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                       <!-- Hover Thumb -->
                       <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
@@ -1277,7 +1123,7 @@
             <div data-pagination data-v-parent-component="products" data-v-parent-index="0" data-v-query-string="true" data-v-parameters='{}'>
 
               <nav data-v-if="pagecount > 1">
-                <ul class="pagination pagination-sm justify-content-end pt-2 mt-2" style="border-top: 1px solid var(--bs-border-color);">
+                <ul class="pagination pagination-sm justify-content-center">
 
                   <!--
 			<li class="page-item pager-first" data-first>
@@ -1444,7 +1290,7 @@
       <!--
 		<div class="row justify-content-end">
 			<div class="col-md-3 text-muted text-small mt-5">
-				&copy; <span data-v-year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
+				&copy; <span data-v-global-current_year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
 			</div>
 		</div>
 		-->
@@ -1459,7 +1305,7 @@
             <a class="btn-link text-muted" href="/page/privacy-policy">Privacy Policy</a>
           </div>
           <div class="text-muted">
-            &copy; <span data-v-year>2025</span>
+            &copy; <span data-v-global-current_year>2025</span>
             <span data-v-global-site.description.title>Vvveb</span>. <span>Powered by</span>
             <a href="https://vvveb.com" class="btn-link text-muted" target="_blank">Vvveb</a>
           </div>
@@ -1487,21 +1333,20 @@
 
   <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-body" style="--bs-modal-padding: 0.7rem;">
+      <div class="modal-content shadow">
+        <div class="modal-body p-0">
 
           <form action="/search" method="get">
-            <input type="hidden" name="route" value="search">
+            <input type="hidden" name="route" value="search" />
             <div class="d-flex">
               <div class="input-group">
-                <input type="search" name="search" class="form-control form-control-lg border-primary border-2" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
-                <button class="btn btn-outline-primary border-2 border-start-0" type="submit" title="Search">
+                <input type="search" name="search" class="form-control border-0 p-3 px-4" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup" />
+                <button class="btn btn-outline-primary border-0" type="submit" title="Search">
                   <div class="la-flip-horizontal">
                     <i class="la la-search la-lg" aria-hidden="true"></i>
                   </div>
                 </button>
               </div>
-              <button type="button" class="btn-close small ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="loading d-none d-flex justify-content-center m-5">
@@ -1516,8 +1361,171 @@
 
         </div>
       </div>
+      <button type="button" class="btn-close btn-close-white small" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
+
   </div>
+
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cart-offcanvas" aria-labelledby="cart-offcanvas">
+
+    <div class="offcanvas-header pb-0">
+      <h5 class="offcanvas-title"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column pt-2" data-v-component-cart>
+
+      <div class="table-responsive flex-grow-1">
+        <table class="table cart-table align-middle mb-0">
+          <tbody>
+
+
+            <tr data-v-cart-product>
+              <td class="text-center">
+                <a href="#40" data-v-cart-product-url>
+                  <img src="demo/img/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                </a>
+              </td>
+              <td class="text-start small">
+                <a href="#40" class="d-block" data-v-cart-product-url>
+                  <span data-v-cart-product-name>Product name</span>
+                </a>
+
+                <span data-v-cart-product-quantity>1</span>
+                <i class="la la-times text-muted"></i>
+                <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+                <div class="option" data-v-if="product.option">
+                  <div class="" data-v-product-option>
+                    <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                    <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
+                  </div>
+                  <div class="" data-v-product-option>
+                    <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                    <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
+                  </div>
+                  <div class="" data-v-product-option>
+                    <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                    <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
+                  </div>
+                </div>
+
+                <div class="subscription" data-v-if="product.subscription">
+                  <span>Subscription plan</span>:
+                  <span data-v-cart-product-subscription_name>Subscription plan</span>
+                </div>
+              </td>
+              <td class="text-end">
+                <a class="btn btn-remove btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                  <i class="la la-times-circle la-lg"></i>
+                </a>
+              </td>
+            </tr>
+            <tr data-v-cart-product>
+              <td class="text-center">
+                <a href="#40" data-v-cart-product-url>
+                  <img src="demo/img/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                </a>
+              </td>
+              <td class="text-start">
+                <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
+                  Product name
+                </a>
+
+                <span data-v-cart-product-quantity>1</span>
+                <i class="la la-times text-muted"></i>
+                <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+
+              </td>
+              <td class="text-end">
+                <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                  <i class="la la-times"></i>
+                </a>
+              </td>
+            </tr>
+            <tr data-v-if-not="cart.total_items">
+              <td colspan="100">
+                <div class="d-flex  p-2">
+                  <div class="text-center p-2 opacity-75">
+                    <!-- <img src="demo/img/bag.svg" width="20" alt> -->
+                    <i class="la la-2x la-shopping-bag"></i>
+                  </div>
+                  <div class="p-2">
+                    <strong>Empty cart</strong>
+                    <br>
+                    <span class="text-muted">No products added yet!</span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+
+      <div class="p-3 pt-0 border-top" data-v-if="cart.total_items">
+        <div class="table-responsive mb-2" data-v-cart-totals>
+          <table class="table mb-0 cart-table cart-total" cellspacing="0">
+            <tfoot>
+              <tr data-v-cart-total>
+                <td colspan="5" class="text-end">
+                  <small data-v-cart-total-title>Sub-Total</small>:
+                </td>
+                <td class="text-end">
+                  <span data-v-cart-total-text data-v-if="total.text"> - </span>
+                  <span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
+                </td>
+              </tr>
+              <tr data-v-cart-total>
+                <td colspan="5" class="text-end">
+                  <small>Eco Tax (2.00):</small>
+                </td>
+                <td class="text-end">$2.00</td>
+              </tr>
+              <tr data-v-cart-total>
+                <td colspan="5" class="text-end">
+                  <small>VAT (19%):</small>
+                </td>
+                <td class="text-end">$20.20</td>
+              </tr>
+              <tr data-v-cart-total>
+                <td colspan="5" class="text-end">
+                  <small>Total:</small>
+                </td>
+                <td class="text-end">$123.20</td>
+              </tr>
+              <tr>
+                <td colspan="5" class="text-end">Total:</td>
+                <td class="text-end" data-v-grand-total_formatted>$0</td>
+              </tr>
+            </tfoot>
+
+          </table>
+        </div>
+
+      </div>
+
+      <div class="row mt-2 g-2 px-3 pb-2" data-v-if="cart.total_items">
+        <div class="col-6">
+          <a href="" class="btn btn-light btn-sm border w-100" data-v-url="cart/cart/index" data-url>
+            <i class="la la-shopping-cart la-lg"></i>
+            <span>View cart</span>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="" class="btn btn-primary btn-sm w-100" data-v-url="checkout/checkout/index">
+            <span>Checkout</span>
+            <i class="la la-arrow-right la-lg"></i>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
 
   <div id="page-loading-status" class="progress progress-bar"></div>
 
@@ -1531,7 +1539,7 @@
 
   <!-- Animation -->
 
-  <link rel="stylesheet" href="js/aos.css">
+  <link rel="stylesheet" href="js/aos.css" />
   <noscript>
     <style type="text/css">
       [data-aos] {
@@ -1545,12 +1553,13 @@
   <script>
 	AOS.init();
 </script>
-  <script src="/js/app/cart.js"></script>
 
-  <link id="glightbox-css" rel="stylesheet" href="/js/libs/glightbox/glightbox.css">
+  <script id="cart-js" src="/js/app/cart.js"></script>
+
+  <link id="glightbox-css" rel="stylesheet" href="/js/libs/glightbox/glightbox.css" />
   <script id="glightbox-js" src="/js/libs/glightbox/glightbox.min.js"></script>
 
-  <script src="/js/app/theme.js"></script>
+  <script id="theme-js" src="/js/app/theme.js"></script>
 
   <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/public\/*","\/themes\/*","\/plugins\/*","\/cart\/*","\/checkout\/*","\/user\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}

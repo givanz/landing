@@ -1,4 +1,4 @@
-<section class="contact-form-9" title="contact-form-9">
+<section class="contact-form-9" aria-label="contact-form-9">
   <div class="container py-5 my-5">
     <div class="row py-5">
       <div class="col py-5">
@@ -10,9 +10,75 @@
             </div>
           </div>
 
-          <div class="row justify-content-center pt-4">
+          <div class="row justify-content-center pt-4" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-home">
+
+            <div class="notifications" data-v-notifications>
+
+              <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="contact-us-home">
+
+                <div class="icon align-middle me-2">
+                  <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                </div>
+
+                <div class="flex-grow-1 align-self-center text-small">
+                  <div>
+                    <div data-v-notification-text>
+                      This is a placeholder for a notification message.
+                    </div>
+                  </div>
+                </div>
+
+
+                <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">
+                    <!-- <i class="la la-times"></i> -->
+                  </span>
+                </button>
+              </div>
+
+              <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="contact-us-home">
+
+                <div class="icon align-middle me-2">
+                  <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+                </div>
+
+                <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+                  This is a placeholder for a success message.
+                </div>
+
+                <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">
+                    <!-- <i class="la la-times"></i> -->
+                  </span>
+                </button>
+              </div>
+
+              <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="contact-us-home">
+
+                <div class="icon align-middle me-2">
+                  <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+                </div>
+
+                <div class="flex-grow-1 align-self-center" data-v-notification-text>
+                  This is a placeholder for a info message.
+                </div>
+
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">
+                    <!-- <i class="la la-times"></i> -->
+                  </span>
+                </button>
+              </div>
+
+            </div>
+
             <div class="col-12 col-md-8">
-              <form>
+              <form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
+                <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">
+                <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>
+                <input type="hidden" class="form-control" name="form-name" value="contact-us-home">
+
+
                 <div class="row">
                   <div class="col-12 col-md">
                     <input type="text" class="form-control" placeholder="Name">
@@ -33,6 +99,16 @@
                     <textarea class="form-control" name="message" rows="3" placeholder="How can we help?"></textarea>
                   </div>
                 </div>
+
+                <!-- if these hidden inputs are filled then ignore, robots -->
+
+                <input type="text" class="form-control d-none" placeholder="Contact form" name="contact-form">
+
+                <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty">
+
+                <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">
+
+
                 <div class="row mt-4">
                   <div class="col text-center">
                     <button type="submit" class="btn btn-primary">Send</button>

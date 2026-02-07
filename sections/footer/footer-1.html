@@ -1,20 +1,20 @@
-<footer class="footer-1" title="footer-1">
+<footer class="footer-1" title="footer-1" data-v-save-global="index.html,.footer-1">
   <div class="container" data-v-component-menu="footer" data-v-slug="main-footer">
 
     <div class="row" data-v-menu-items>
 
-      <div class="col-md-3">
+      <div class="col-md">
 
         <div data-v-component-site>
-          <img src="img/logo-white.png" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-          <img src="img/logo.png" loading="lazy" class="logo-default" data-v-site-logo>
+          <img src="demo/img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+          <img src="demo/img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
         </div>
 
       </div>
 
 
-      <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
-        <h6 data-v-menu-item-name>Vvveb</h6>
+      <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
+        <div class="h6" data-v-menu-item-name>Vvveb</div>
         <nav data-v-menu-item-recursive>
           <div data-v-menu-item data-v-if="category.children == 0">
             <a href="https://themes.vvveb.com/" data-v-menu-item-url>
@@ -26,11 +26,21 @@
               <span data-v-menu-item-name>Plugins</span>
             </a>
           </div>
+          <div data-v-menu-item data-v-if="category.children == 0">
+            <a href="content/index.html" data-v-menu-item-url>
+              <span data-v-menu-item-name>Blog</span>
+            </a>
+          </div>
+          <div data-v-menu-item data-v-if="category.children == 0">
+            <a href="product/index.html" data-v-menu-item-url>
+              <span data-v-menu-item-name>Shop</span>
+            </a>
+          </div>
         </nav>
       </div>
 
-      <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
-        <h6 data-v-menu-item-name>Resources</h6>
+      <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
+        <div class="h6" data-v-menu-item-name>Resources</div>
         <nav data-v-menu-item-recursive>
           <div data-v-menu-item data-v-if="category.children == 0">
             <a href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
@@ -42,14 +52,39 @@
               <span data-v-menu-item-name>Developer documentation</span>
             </a>
           </div>
+          <div data-v-menu-item data-v-if="category.children == 0">
+            <a href="pricing.html" data-v-menu-item-url>
+              <span data-v-menu-item-name>Pricing</span>
+            </a>
+          </div>
+          <div data-v-menu-item data-v-if="category.children == 0">
+            <a href="services.html" data-v-menu-item-url>
+              <span data-v-menu-item-name>Services</span>
+            </a>
+          </div>
         </nav>
       </div>
 
-      <div class="col-md-3" data-v-menu-item data-v-if="category.children > 0">
-        <h6 data-v-menu-item-name>Contact</h6>
+      <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
+        <div class="h6" data-v-menu-item-name>Contact</div>
         <nav data-v-menu-item-recursive>
           <div data-v-menu-item data-v-if="category.children == 0">
-            <a href="" target="contact.html">Contact</a>
+            <a href="" href="contact.html">Contact us</a>
+            <a href="" href="portfolio.html">Portfolio</a>
+            <a href="" href="about.html">About us</a>
+            <a href="" href="user/return-form.html">Return form</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="col-md" data-v-menu-item data-v-if="category.children > 0">
+        <div class="h6" data-v-menu-item-name>My account</div>
+        <nav data-v-menu-item-recursive>
+          <div data-v-menu-item data-v-if="category.children == 0">
+            <a href="" href="user/order-tracking.html">Order tracking</a>
+            <a href="" href="user/wishlist.html">Wishlist</a>
+            <a href="" href="user/orders.html">Orders</a>
+            <a href="" href="cart/compare.html">Compare</a>
           </div>
         </nav>
       </div>
@@ -60,7 +95,7 @@
     <!--
 		<div class="row justify-content-end">
 			<div class="col-md-3 text-muted text-small mt-5">
-				&copy; <span data-v-year>2023</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
+				&copy; <span data-v-global-current_year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
 			</div>
 		</div>
 		-->
@@ -71,12 +106,12 @@
     <div class="container">
       <div class="d-flex flex-column flex-md-row">
         <div class="text-muted flex-grow-1">
-          <a class="btn-link text-muted" href="/page/terms-conditions" target="_blank">Terms and conditions</a> |
-          <a class="btn-link text-muted" href="/page/privacy-policy" target="_blank">Privacy Policy</a>
+          <a class="btn-link text-muted" href="/page/terms-conditions">Terms and conditions</a> |
+          <a class="btn-link text-muted" href="/page/privacy-policy">Privacy Policy</a>
         </div>
         <div class="text-muted">
-          &copy; <span data-v-year>2023</span>
-          <span data-v-global-site-title>Vvveb</span>. <span>Powered by</span>
+          &copy; <span data-v-global-current_year>2025</span>
+          <span data-v-global-site.description.title>Vvveb</span>. <span>Powered by</span>
           <a href="https://vvveb.com" class="btn-link text-muted" target="_blank">Vvveb</a>
         </div>
       </div>

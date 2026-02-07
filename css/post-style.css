@@ -28,7 +28,7 @@ a.post-title {
 	}
 	*/ }
   .post-content > p, .post-content > h1, .post-content > h2, .post-content > h3, .post-content > h4, .post-content > h5, .post-content > h6, .post-content > blockquote, .post-content > span, .post-content > ul, .post-content pre, .post-content > ol, .post-content > details {
-    max-width: 35rem;
+    max-width: 40rem;
     margin-left: auto;
     margin-right: auto; }
   .post-content blockquote {
@@ -106,6 +106,6 @@ figure.align-center {
   display: table; }
 
 .tags, .comments-form, .post-comments {
-  max-width: 35rem;
+  max-width: 40rem;
   margin-left: auto;
   margin-right: auto; }

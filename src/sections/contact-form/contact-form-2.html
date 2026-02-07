@@ -4,8 +4,16 @@
   </div>
   <div class="container">
 	<div class="row pt-5">
-	  <div class="col-12">
-		<form>
+	  <div class="col-12" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-home">
+	  
+		@@include('../../_includes/notifications.html', {type:"contact-us-home"})
+		
+		<form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
+		  <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
+		  <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>	
+		  <input type="hidden" class="form-control" name="form-name" value="contact-us-home">
+		  
+
 		  <div class="row">
 			<div class="col-12 col-md">
 			  <label>First Name</label>
@@ -36,6 +44,15 @@
 			  <textarea class="form-control" name="message" rows="3"></textarea>
 			</div>
 		  </div>
+		  
+		<!-- if these hidden inputs are filled then ignore, robots -->
+
+		 <input type="text" class="form-control d-none" placeholder="Contact form" name="contact-form" >	
+		 
+		 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+		 
+		 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">	
+		 		  
 		  <div class="row mt-4 text-center">
 			<div class="col">
 			  <button type="submit" class="btn btn-primary">Submit</button>

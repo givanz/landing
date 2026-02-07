@@ -1,21 +1,22 @@
-<section class="products-1" title="latest-products-1">
+<section class="products-1" aria-label="products-1">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="section-heading text-center">
-          <h2>Popular Products</h2>
+          <h2 class="text-center display-6 mb-1 fw-bold">Latest Products</h2>
+          <p class="lead text-center text-muted mb-4">Best quality at the lowest price.</p>
         </div>
       </div>
     </div>
   </div>
 
 
-  <div class="container" data-v-component-products="popular" data-v-limit="8" data-v-image_size="medium">
+  <div class="container" data-v-component-products="latest" data-v-limit="8" data-v-variant_price="true" data-v-image_size="medium">
     <div class="row">
 
 
 
-      <div class="col-md-3" data-v-product>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
@@ -23,11 +24,13 @@
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
+
 
             <!-- Favourite -->
             <div class="product-favourite">
@@ -42,34 +45,57 @@
                 <span></span>
               </a>
             </div>
+
+            <div class="badges">
+              <span class="badge text-bg-secondary" data-v-if="prod.old_price > 0">Sale</span>
+            </div>
           </div>
 
           <!-- Product Description -->
           <div class="product-content">
 
-            <a href="product/product.html" data-v-product-url>
-              <h6 data-v-product-name>Product 8</h6>
+            <a href="product/product.html" class="text-body" data-v-product-url>
+              <span data-v-product-name>Product 8</span>
             </a>
 
-            <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
+            <p data-v-if="prod.min_price > 0">
+              <span class="text-muted small">From</span>
+              <span class="product-price" data-v-product-min_price_tax_formatted>100.0000</span>
+            </p>
+
+            <div data-v-if-not="prod.min_price">
+              <p class="product-price old-price" data-v-if="prod.old_price > 0" data-v-product-old_price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+            </div>
 
             <!-- Hover Content -->
-            <div class="hover-content">
+            <div class="hover-content" data-v-if="prod.price > 0 && !prod.has_variants">
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                <a href="#" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                  <span class="button-text">
+                    Out of stock
+                  </span>
+                </a>
+
+                <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                    <span>Add to cart</span>...
+                    <span>Add to cart</span>
                   </span>
 
                   <span class="button-text">
-                    Add to cart
+                    <i class="la la-lg la-shopping-bag"></i>
+                    <span>Add to cart</span>
                   </span>
+
                 </a>
               </div>
             </div>
+
           </div>
         </article>
 
@@ -78,7 +104,7 @@
 
 
 
-      <div class="col-md-3" data-v-product>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
@@ -86,11 +112,13 @@
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
+
 
             <!-- Favourite -->
             <div class="product-favourite">
@@ -105,34 +133,57 @@
                 <span></span>
               </a>
             </div>
+
+            <div class="badges">
+              <span class="badge text-bg-secondary" data-v-if="prod.old_price > 0">Sale</span>
+            </div>
           </div>
 
           <!-- Product Description -->
           <div class="product-content">
 
-            <a href="product/product.html" data-v-product-url>
-              <h6 data-v-product-name>Product 8</h6>
+            <a href="product/product.html" class="text-body" data-v-product-url>
+              <span data-v-product-name>Product 8</span>
             </a>
 
-            <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
+            <p data-v-if="prod.min_price > 0">
+              <span class="text-muted small">From</span>
+              <span class="product-price" data-v-product-min_price_tax_formatted>100.0000</span>
+            </p>
+
+            <div data-v-if-not="prod.min_price">
+              <p class="product-price old-price" data-v-if="prod.old_price > 0" data-v-product-old_price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+            </div>
 
             <!-- Hover Content -->
-            <div class="hover-content">
+            <div class="hover-content" data-v-if="prod.price > 0 && !prod.has_variants">
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                <a href="#" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                  <span class="button-text">
+                    Out of stock
+                  </span>
+                </a>
+
+                <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                    <span>Add to cart</span>...
+                    <span>Add to cart</span>
                   </span>
 
                   <span class="button-text">
-                    Add to cart
+                    <i class="la la-lg la-shopping-bag"></i>
+                    <span>Add to cart</span>
                   </span>
+
                 </a>
               </div>
             </div>
+
           </div>
         </article>
 
@@ -141,7 +192,7 @@
 
 
 
-      <div class="col-md-3" data-v-product>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
@@ -149,11 +200,13 @@
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
+
 
             <!-- Favourite -->
             <div class="product-favourite">
@@ -168,34 +221,57 @@
                 <span></span>
               </a>
             </div>
+
+            <div class="badges">
+              <span class="badge text-bg-secondary" data-v-if="prod.old_price > 0">Sale</span>
+            </div>
           </div>
 
           <!-- Product Description -->
           <div class="product-content">
 
-            <a href="product/product.html" data-v-product-url>
-              <h6 data-v-product-name>Product 8</h6>
+            <a href="product/product.html" class="text-body" data-v-product-url>
+              <span data-v-product-name>Product 8</span>
             </a>
 
-            <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
+            <p data-v-if="prod.min_price > 0">
+              <span class="text-muted small">From</span>
+              <span class="product-price" data-v-product-min_price_tax_formatted>100.0000</span>
+            </p>
+
+            <div data-v-if-not="prod.min_price">
+              <p class="product-price old-price" data-v-if="prod.old_price > 0" data-v-product-old_price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+            </div>
 
             <!-- Hover Content -->
-            <div class="hover-content">
+            <div class="hover-content" data-v-if="prod.price > 0 && !prod.has_variants">
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                <a href="#" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                  <span class="button-text">
+                    Out of stock
+                  </span>
+                </a>
+
+                <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                    <span>Add to cart</span>...
+                    <span>Add to cart</span>
                   </span>
 
                   <span class="button-text">
-                    Add to cart
+                    <i class="la la-lg la-shopping-bag"></i>
+                    <span>Add to cart</span>
                   </span>
+
                 </a>
               </div>
             </div>
+
           </div>
         </article>
 
@@ -204,7 +280,7 @@
 
 
 
-      <div class="col-md-3" data-v-product>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
@@ -212,11 +288,13 @@
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
+
 
             <!-- Favourite -->
             <div class="product-favourite">
@@ -231,34 +309,57 @@
                 <span></span>
               </a>
             </div>
+
+            <div class="badges">
+              <span class="badge text-bg-secondary" data-v-if="prod.old_price > 0">Sale</span>
+            </div>
           </div>
 
           <!-- Product Description -->
           <div class="product-content">
 
-            <a href="product/product.html" data-v-product-url>
-              <h6 data-v-product-name>Product 8</h6>
+            <a href="product/product.html" class="text-body" data-v-product-url>
+              <span data-v-product-name>Product 8</span>
             </a>
 
-            <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
+            <p data-v-if="prod.min_price > 0">
+              <span class="text-muted small">From</span>
+              <span class="product-price" data-v-product-min_price_tax_formatted>100.0000</span>
+            </p>
+
+            <div data-v-if-not="prod.min_price">
+              <p class="product-price old-price" data-v-if="prod.old_price > 0" data-v-product-old_price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+            </div>
 
             <!-- Hover Content -->
-            <div class="hover-content">
+            <div class="hover-content" data-v-if="prod.price > 0 && !prod.has_variants">
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                <a href="#" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                  <span class="button-text">
+                    Out of stock
+                  </span>
+                </a>
+
+                <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                    <span>Add to cart</span>...
+                    <span>Add to cart</span>
                   </span>
 
                   <span class="button-text">
-                    Add to cart
+                    <i class="la la-lg la-shopping-bag"></i>
+                    <span>Add to cart</span>
                   </span>
+
                 </a>
               </div>
             </div>
+
           </div>
         </article>
 
@@ -267,7 +368,7 @@
 
 
 
-      <div class="col-md-3" data-v-product>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
@@ -275,11 +376,13 @@
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
+
 
             <!-- Favourite -->
             <div class="product-favourite">
@@ -294,34 +397,57 @@
                 <span></span>
               </a>
             </div>
+
+            <div class="badges">
+              <span class="badge text-bg-secondary" data-v-if="prod.old_price > 0">Sale</span>
+            </div>
           </div>
 
           <!-- Product Description -->
           <div class="product-content">
 
-            <a href="product/product.html" data-v-product-url>
-              <h6 data-v-product-name>Product 8</h6>
+            <a href="product/product.html" class="text-body" data-v-product-url>
+              <span data-v-product-name>Product 8</span>
             </a>
 
-            <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
+            <p data-v-if="prod.min_price > 0">
+              <span class="text-muted small">From</span>
+              <span class="product-price" data-v-product-min_price_tax_formatted>100.0000</span>
+            </p>
+
+            <div data-v-if-not="prod.min_price">
+              <p class="product-price old-price" data-v-if="prod.old_price > 0" data-v-product-old_price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+            </div>
 
             <!-- Hover Content -->
-            <div class="hover-content">
+            <div class="hover-content" data-v-if="prod.price > 0 && !prod.has_variants">
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                <a href="#" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                  <span class="button-text">
+                    Out of stock
+                  </span>
+                </a>
+
+                <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                    <span>Add to cart</span>...
+                    <span>Add to cart</span>
                   </span>
 
                   <span class="button-text">
-                    Add to cart
+                    <i class="la la-lg la-shopping-bag"></i>
+                    <span>Add to cart</span>
                   </span>
+
                 </a>
               </div>
             </div>
+
           </div>
         </article>
 
@@ -330,7 +456,7 @@
 
 
 
-      <div class="col-md-3" data-v-product>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
@@ -338,11 +464,13 @@
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
+
 
             <!-- Favourite -->
             <div class="product-favourite">
@@ -357,34 +485,57 @@
                 <span></span>
               </a>
             </div>
+
+            <div class="badges">
+              <span class="badge text-bg-secondary" data-v-if="prod.old_price > 0">Sale</span>
+            </div>
           </div>
 
           <!-- Product Description -->
           <div class="product-content">
 
-            <a href="product/product.html" data-v-product-url>
-              <h6 data-v-product-name>Product 8</h6>
+            <a href="product/product.html" class="text-body" data-v-product-url>
+              <span data-v-product-name>Product 8</span>
             </a>
 
-            <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
+            <p data-v-if="prod.min_price > 0">
+              <span class="text-muted small">From</span>
+              <span class="product-price" data-v-product-min_price_tax_formatted>100.0000</span>
+            </p>
+
+            <div data-v-if-not="prod.min_price">
+              <p class="product-price old-price" data-v-if="prod.old_price > 0" data-v-product-old_price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+            </div>
 
             <!-- Hover Content -->
-            <div class="hover-content">
+            <div class="hover-content" data-v-if="prod.price > 0 && !prod.has_variants">
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                <a href="#" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                  <span class="button-text">
+                    Out of stock
+                  </span>
+                </a>
+
+                <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                    <span>Add to cart</span>...
+                    <span>Add to cart</span>
                   </span>
 
                   <span class="button-text">
-                    Add to cart
+                    <i class="la la-lg la-shopping-bag"></i>
+                    <span>Add to cart</span>
                   </span>
+
                 </a>
               </div>
             </div>
+
           </div>
         </article>
 
@@ -393,7 +544,7 @@
 
 
 
-      <div class="col-md-3" data-v-product>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
@@ -401,11 +552,13 @@
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
+
 
             <!-- Favourite -->
             <div class="product-favourite">
@@ -420,34 +573,57 @@
                 <span></span>
               </a>
             </div>
+
+            <div class="badges">
+              <span class="badge text-bg-secondary" data-v-if="prod.old_price > 0">Sale</span>
+            </div>
           </div>
 
           <!-- Product Description -->
           <div class="product-content">
 
-            <a href="product/product.html" data-v-product-url>
-              <h6 data-v-product-name>Product 8</h6>
+            <a href="product/product.html" class="text-body" data-v-product-url>
+              <span data-v-product-name>Product 8</span>
             </a>
 
-            <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
+            <p data-v-if="prod.min_price > 0">
+              <span class="text-muted small">From</span>
+              <span class="product-price" data-v-product-min_price_tax_formatted>100.0000</span>
+            </p>
+
+            <div data-v-if-not="prod.min_price">
+              <p class="product-price old-price" data-v-if="prod.old_price > 0" data-v-product-old_price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+            </div>
 
             <!-- Hover Content -->
-            <div class="hover-content">
+            <div class="hover-content" data-v-if="prod.price > 0 && !prod.has_variants">
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                <a href="#" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                  <span class="button-text">
+                    Out of stock
+                  </span>
+                </a>
+
+                <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                    <span>Add to cart</span>...
+                    <span>Add to cart</span>
                   </span>
 
                   <span class="button-text">
-                    Add to cart
+                    <i class="la la-lg la-shopping-bag"></i>
+                    <span>Add to cart</span>
                   </span>
+
                 </a>
               </div>
             </div>
+
           </div>
         </article>
 
@@ -456,7 +632,7 @@
 
 
 
-      <div class="col-md-3" data-v-product>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
@@ -464,11 +640,13 @@
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
-              <img src="img/demo/product.jpg" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-product-image />
+              <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+              <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
               <!-- Hover Thumb -->
-              <img class="hover-img" src="img/demo/product-2.jpg" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+              <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
             </a>
+
 
             <!-- Favourite -->
             <div class="product-favourite">
@@ -483,34 +661,57 @@
                 <span></span>
               </a>
             </div>
+
+            <div class="badges">
+              <span class="badge text-bg-secondary" data-v-if="prod.old_price > 0">Sale</span>
+            </div>
           </div>
 
           <!-- Product Description -->
           <div class="product-content">
 
-            <a href="product/product.html" data-v-product-url>
-              <h6 data-v-product-name>Product 8</h6>
+            <a href="product/product.html" class="text-body" data-v-product-url>
+              <span data-v-product-name>Product 8</span>
             </a>
 
-            <p class="product-price" data-v-product-price_tax_formatted>100.0000</p>
+            <p data-v-if="prod.min_price > 0">
+              <span class="text-muted small">From</span>
+              <span class="product-price" data-v-product-min_price_tax_formatted>100.0000</span>
+            </p>
+
+            <div data-v-if-not="prod.min_price">
+              <p class="product-price old-price" data-v-if="prod.old_price > 0" data-v-product-old_price_tax_formatted>100.0000</p>
+              <p class="product-price" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>100.0000</p>
+            </div>
 
             <!-- Hover Content -->
-            <div class="hover-content">
+            <div class="hover-content" data-v-if="prod.price > 0 && !prod.has_variants">
               <!-- Add to Cart -->
               <div class="add-to-cart-btn">
                 <input type="hidden" name="product_id" value="" data-v-product-product_id />
-                <a href="" class="btn btn-primary w-100" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
+                <a href="#" class="btn btn-secondary btn-sm w-100 disabled" data-v-if="prod.stock_quantity < 1">
+                  <span class="button-text">
+                    Out of stock
+                  </span>
+                </a>
+
+                <a href="" class="btn btn-primary btn-sm w-100" data-v-if="prod.stock_quantity > 0" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">
+
                   <span class="loading d-none">
                     <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true"> </span>
-                    <span>Add to cart</span>...
+                    <span>Add to cart</span>
                   </span>
 
                   <span class="button-text">
-                    Add to cart
+                    <i class="la la-lg la-shopping-bag"></i>
+                    <span>Add to cart</span>
                   </span>
+
                 </a>
               </div>
             </div>
+
           </div>
         </article>
 

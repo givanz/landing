@@ -143,7 +143,7 @@
 }
 
 
-.navbar .navbar-nav a.nav-link, .navbar .navbar-nav a.nav-link span:last-child {
+.navbar-main .navbar-nav a.nav-link, .navbar .navbar-nav a.nav-link span:last-child {
 	display:inline-block;
     white-space: nowrap;	
 }
@@ -152,7 +152,7 @@
 	margin-bottom:0;
 }
 
-.navbar.sticky {
+.navbar-main.sticky {
 	transition:0.5s background;
 	background-color:rgba(var(--bs-body-bg-rgb), 0.9);
 	//box-shadow:0 0 5px 2px rgba(var(--bs-body-color-rgb), 0.05);
@@ -168,7 +168,7 @@
 	}
 }
 
-.navbar {
+.navbar-main {
 	.navbar-collapse {
 		position:relative;
 	}

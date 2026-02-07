@@ -33,8 +33,8 @@
 
 
 	<div>
-		<div data-v-component-products data-v-limit="6" data-v-search="url" data-v-page="url" data-v-type="" data-v-taxonomy_item_id="url" data-v-image_size="medium">
-		<div data-v-component-posts  data-v-limit="6" data-v-search="url" data-v-type="">
+		<div data-v-component-products data-v-limit="6" data-v-search="url" data-v-page="url" data-v-type="" data-v-taxonomy_item_id="url" data-v-image_size="medium" data-v-site_id="0">
+		<div data-v-component-posts  data-v-limit="6" data-v-search="url" data-v-type="" data-v-site_id="0">
 
 			<nav>
 			  <div class="nav nav-tabs" id="nav-search" role="tablist">
@@ -124,20 +124,20 @@
 
 <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-body" style="--bs-modal-padding: 0.7rem;">
+    <div class="modal-content shadow">
+      <div class="modal-body p-0">
         
         <form action="/search" method="get"> 
-		  <input type="hidden" name="route" value="search">
-		  <div class="input-group">
-			<input type="search" name="search" class="form-control form-control-lg border-primary border-2" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
-			<button class="btn btn-outline-primary border-2 border-start-0" type="submit" title="Search">
-
-			  <div class="la-flip-horizontal">
-				<i class="la la-search la-lg" aria-hidden="true"></i>
+		  <input type="hidden" name="route" value="search"/>
+		  <div class="d-flex">
+			  <div class="input-group">
+				<input type="search" name="search" class="form-control border-0 p-3 px-4" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup"/>
+				<button class="btn btn-outline-primary border-0" type="submit" title="Search">
+				  <div class="la-flip-horizontal">
+					<i class="la la-search la-lg" aria-hidden="true"></i>
+				  </div>
+				</button>
 			  </div>
-			</button>
-			<button type="button" class="btn-close small ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
 		  </div>
 
 			<div class="loading d-none d-flex justify-content-center m-5">
@@ -188,7 +188,7 @@
 				
 				<div class="posts mt-2" data-v-if="posts.search">
 					<div class="small text-muted my-2">Pages</div>
-					<div class="card">
+					<div class="card border-0">
 						<div class="search-item" data-v-post>
 							<a href="" data-bs-dismiss="modal" data-v-post-url class="flex">
 								<img src="demo/img/video-1.webp"  width="48"  data-v-post-image data-v-if="post.image">
@@ -210,7 +210,7 @@
 								<span data-v-post-name>Post</span>
 							</a>
 						</div>
-						<div class="p-3 alert-warning text-center" data-v-if="posts.count <= 0">
+						<div class="p-3" data-v-if="posts.count <= 0">
 							No posts found!
 						</div>
 					</div>
@@ -224,7 +224,9 @@
         
       </div>
     </div>
+    <button type="button" class="btn-close btn-close-white small" data-bs-dismiss="modal" aria-label="Close"></button>
   </div>
+
 </div>
 
 @@include('../_includes/footer-scripts.html')

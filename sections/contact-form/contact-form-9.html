@@ -1,16 +1,81 @@
-<section class="contact-form-3 py-5" title="contact-form-3">
+<section class="contact-form-3 py-5" aria-label="contact-form-3">
   <div class="row no-gutters">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <div class="card-shadow">
-            <img alt="image" src="img/illustrations.co/day68-happy-cat.svg" loading="lazy" class="img-fluid">
+            <img alt="image" src="demo/img/team-1.jpg" alt="happy cat" loading="lazy" class="img-fluid">
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="contact-box ms-3">
+          <div class="contact-box ms-3" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-home">
+
+            <div class="notifications" data-v-notifications>
+
+              <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="contact-us-home">
+
+                <div class="icon align-middle me-2">
+                  <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                </div>
+
+                <div class="flex-grow-1 align-self-center text-small">
+                  <div>
+                    <div data-v-notification-text>
+                      This is a placeholder for a notification message.
+                    </div>
+                  </div>
+                </div>
+
+
+                <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">
+                    <!-- <i class="la la-times"></i> -->
+                  </span>
+                </button>
+              </div>
+
+              <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="contact-us-home">
+
+                <div class="icon align-middle me-2">
+                  <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+                </div>
+
+                <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+                  This is a placeholder for a success message.
+                </div>
+
+                <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">
+                    <!-- <i class="la la-times"></i> -->
+                  </span>
+                </button>
+              </div>
+
+              <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="contact-us-home">
+
+                <div class="icon align-middle me-2">
+                  <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+                </div>
+
+                <div class="flex-grow-1 align-self-center" data-v-notification-text>
+                  This is a placeholder for a info message.
+                </div>
+
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">
+                    <!-- <i class="la la-times"></i> -->
+                  </span>
+                </button>
+              </div>
+
+            </div>
+
             <h1 class=" mt-2">Quick Contact</h1>
-            <form class="mt-4">
+            <form class="mt-4" action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
+              <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">
+              <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>
+              <input type="hidden" class="form-control" name="form-name" value="contact-us-home">
+
               <div class="row">
                 <div class="col-lg-12">
                   <div class="form-group mt-2">
@@ -32,6 +97,16 @@
                     <textarea class="form-control" rows="3" placeholder="message"></textarea>
                   </div>
                 </div>
+
+
+                <!-- if these hidden inputs are filled then ignore, robots -->
+
+                <input type="text" class="form-control d-none" placeholder="Contact form" name="contact-form">
+
+                <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty">
+
+                <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">
+
                 <div class="col-lg-12">
                   <button type="submit" class="btn btn-success mt-3 text-white border-0 px-3 py-2">
                     <span> Submit</span>

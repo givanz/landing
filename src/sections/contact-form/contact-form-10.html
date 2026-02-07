@@ -31,11 +31,13 @@
 
 	  <div class="col-12 col-md-6 ms-auto" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-home">
 	  
-		@@include('../../_includes/notifications.html')
+		@@include('../../_includes/notifications.html', {type:"contact-us-home"})
+		
 		<div class="border rounded-3 p-4 border-opacity-25 border-light-subtle">
 		<form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
   		  <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
   		  <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>	
+  		  <input type="hidden" class="form-control" name="form-name" value="contact-us-home">
 		
 		  <div class="row">
 			<div class="col">

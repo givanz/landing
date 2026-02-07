@@ -1,0 +1,46 @@
+<div data-v-component-admin data-v-admin_id="url" class="profile">
+	<div data-v-if="admin">
+		<div class="profile-header" data-v-if="admin">
+			<div class="cover">
+				<img src="" data-v-admin-cover_url>
+			</div>
+			<div class="avatar">
+				<img data-v-admin-avatar_url class="rounded-circle avatar" alt="Profile Picture">
+			</div>
+		</div>
+		<div class="px-3 m-3 me-5 d-flex justify-content-between">
+			<div>
+				<h1 class="h3 m-0" data-v-admin-display_name>User</h1>
+			</div>
+			
+				<div class="social-links d-inline-block">
+					<!--
+					<ul class="list-unstyled list-inline m-0">
+						<li><a href="https://facebook.com"><i class="la la-facebook"></i><span>Facebook</span></a></li>
+						<li><a href="https://linkedin.com"><i class="la la-facebook"></i><span>Linkedin</span></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+					-->
+				</div>
+			</div>
+			
+			
+		<div class="px-3 m-3 me-5 d-flex">			
+			<div>
+				<div class="text-muted" >@<span data-v-admin-username>username</span></div>
+				<div>
+					<a class="d-block" data-v-admin-website href="https://facebook.com"><span data-v-admin-website>Facebook</span></a>
+					<a class="d-block text-body small" href="mailto:{$admin.public_email}"><span data-v-admin-public_email>admin@vvveb.com</span></a>
+					<a class="d-block text-body small" href="tel:{$admin.phone_number}"><span data-v-admin-phone_number>123456</span></a>
+				</div>
+			</div>
+			
+			<div class="ms-5">
+				<div data-v-admin-bio>My bio</div>
+			</div>
+		</div>
+		
+		
+	</div>
+</div>

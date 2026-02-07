@@ -1,5 +1,5 @@
-<section class="contact-form-12 py-0" title="contact-form-12">
-  <div class="container py-5" style="background-image: url(img/sections/contct-form-12.jpg);">
+<section class="contact-form-12 py-0" aria-label="contact-form-12">
+  <div class="container py-5">
     <div class="row text-center justify-content-center">
       <div class="col-12 col-md-8 col-lg-7">
         <h1>Contact Us</h1>
@@ -9,8 +9,74 @@
     <div class="row-50">
     </div>
     <div class="row justify-content-center">
-      <div class="col-12 col-md-8 col-lg-7">
-        <form>
+      <div class="col-12 col-md-8 col-lg-7" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-home">
+
+        <div class="notifications" data-v-notifications>
+
+          <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="contact-us-home">
+
+            <div class="icon align-middle me-2">
+              <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+            </div>
+
+            <div class="flex-grow-1 align-self-center text-small">
+              <div>
+                <div data-v-notification-text>
+                  This is a placeholder for a notification message.
+                </div>
+              </div>
+            </div>
+
+
+            <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <!-- <i class="la la-times"></i> -->
+              </span>
+            </button>
+          </div>
+
+          <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="contact-us-home">
+
+            <div class="icon align-middle me-2">
+              <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+            </div>
+
+            <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+              This is a placeholder for a success message.
+            </div>
+
+            <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <!-- <i class="la la-times"></i> -->
+              </span>
+            </button>
+          </div>
+
+          <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="contact-us-home">
+
+            <div class="icon align-middle me-2">
+              <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+            </div>
+
+            <div class="flex-grow-1 align-self-center" data-v-notification-text>
+              This is a placeholder for a info message.
+            </div>
+
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <!-- <i class="la la-times"></i> -->
+              </span>
+            </button>
+          </div>
+
+        </div>
+
+        <form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
+          <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">
+          <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>
+          <input type="hidden" class="form-control" name="form-name" value="contact-us-home">
+
+
           <div class="row">
             <div class="col">
               <label>Your Email Address</label>
@@ -31,6 +97,15 @@
               <textarea class="form-control" name="message" rows="3"></textarea>
             </div>
           </div>
+
+          <!-- if these hidden inputs are filled then ignore, robots -->
+
+          <input type="text" class="form-control d-none" placeholder="Contact form" name="contact-form">
+
+          <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty">
+
+          <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">
+
           <div class="row mt-4">
             <div class="col text-end">
               <button type="submit" class="btn btn-dark">Send</button>
@@ -43,6 +118,6 @@
   </div>
 
   <div class="container-fluid p-0">
-    <iframe loading="lazy" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" style="border:0" allowfullscreen="" width="100%" height="300" frameborder="0"></iframe>
+    <iframe loading="lazy" class="map" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444388087937!2d26.101253041406952!3d44.43635311654287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4770adb5b7%3A0x58147f39579fe6fa!2zR3J1cHVsIFN0YXR1YXIgIkPEg3J1yJthIEN1IFBhaWHIm2Ui!5e0!3m2!1sen!2sro!4v1507381157656" style="border:0" allowfullscreen="" width="100%" height="300" frameborder="0"></iframe>
   </div>
 </section>

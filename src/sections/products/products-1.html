@@ -21,7 +21,7 @@
 			
 				@@for (var i = 0; i < 8; i++) {
 			 
-				<div class="col-md-3" data-aos="fade-up" data-aos-delay="` + i + `00" data-v-product>
+				<div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 				
 					@@include('../../_includes/product-list-item.html')
 				

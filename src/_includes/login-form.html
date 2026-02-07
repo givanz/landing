@@ -5,15 +5,15 @@
 	<div class="login-form" data-v-if-not="component.user_id">
 		
 		<div class="mb-3">
-			<label class="form-label" for="input-email">E-Mail Address</label>
-			<input type="email" name="email" value placeholder="E-Mail Address" id="user-email" class="form-control" data-v-user-email required>
+			<input type="email" name="email" value placeholder=" " id="user-email" class="form-control label-over" data-v-user-email required>
+			<label class="form-label" for="user-email">E-Mail Address</label>
 		</div>
 		
 		<div class="mb-3">
-			<label class="form-label" for="input-password">Password</label>
 			
 			<div class="input-group">
-			  <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password"  id="user-password" name="password"  value="" aria-label="Password" required>
+			  <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control label-over" placeholder=" "  id="user-password" name="password"  value="" aria-label="Password" required>
+			  <label class="form-label" for="user-password">Password</label>
 			  <button class="btn btn-sm px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'user-password')"><i class="la la-eye-slash"></i></button>
 			</div>
 		</div>
@@ -46,7 +46,7 @@
 			  <i class="lab la-facebook la-lg"></i>
 			</span>
 		</a> -->
-		<hr>
+		<hr class="text-secondary">
 		<span>Don’t have an account?</span><br>
 		<a href="/user/signup" data-v-url="user/signup/index">Register Account</a> <span class="text-body-tertiary">|</span> <a href="/user/login" data-v-url="user/login/index">Login</a>						
 					
@@ -54,7 +54,8 @@
 	
 	
 	<div class="user-form" data-v-if="component.user_id">
-		  <div class="text-center">Welcome <b data-v-user-first_name data-filter-capitalize>John</b> <b data-v-user-last_name data-filter-capitalize>Doe</b></div>
+		  <div class="text-center" data-v-if="user.first_name">Welcome <b data-v-user-first_name data-filter-capitalize>John</b> <b data-v-user-last_name data-filter-capitalize>Doe</b></div>
+		  <div class="text-center" data-v-if-not="user.first_name">Welcome <b data-v-user-username>johndoe</b></div>
 		  
 		  <div class="dropdown-divider opacity-50 my-3"></div>
 

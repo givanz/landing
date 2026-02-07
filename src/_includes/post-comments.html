@@ -7,8 +7,8 @@
 					<div class="comment-wrap d-flex ">
 
 						<figure class="author-avatar me-2">
-							<img src="demo/img/sections/team/1.webp" alt="user" width="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar">
-							<div class="empty" data-v-if-not="comment.avatar"></div>
+							<img src="demo/img/sections/team/1.webp" alt="user" width="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
+							<div class="empty" data-v-if-not="comment.avatar_url"></div>
 						</figure>
 
 						<div class="comment-author">
@@ -48,7 +48,8 @@
 					<div class="comment-wrap d-flex ">
 
 						<figure class="author-avatar me-2">
-							<img src="http://place-hold.it/60x60" alt="user" width="60" height="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar">
+							<img src="demo/img/sections/team/1.webp" alt="user" width="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
+							<div class="empty" data-v-if-not="comment.avatar_url"></div>
 						</figure>
 
 						<div class="comment-author">
@@ -85,7 +86,8 @@
 					<div class="comment-wrap d-flex ">
 
 						<figure class="author-avatar me-2">
-							<img src="demo/img/sections/team/1.webp" alt="user" width="60" height="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar">
+							<img src="demo/img/sections/team/1.webp" alt="user" width="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
+							<div class="empty" data-v-if-not="comment.avatar_url"></div>
 						</figure>
 
 						<div class="comment-author">
@@ -119,11 +121,12 @@
 			</li>
 		</ol>
 	
-   <div class="comments-form">
+   <div class="comments-form" data-v-if="this.default_comment_status">
 
 	@@include('notifications.html')
 
 		<h5>Leave a reply</h5>
+		
 		<div class="replyto" style="display:none"><h3>Reply to <b data-comment-author>author</b></h3>
 			<a href="#comment-form" class="reply-btn d-inline-block" data-comment_id="0" data-v-vvveb-action="replyTo">
 			Cancel reply 
@@ -161,7 +164,25 @@
 			
 		</div>
 
-		<form id="comment-form" method="post" action="" data-v-vvveb-action="addComment" data-v-vvveb-on="submit">
+
+		<div class="alert alert-warning d-flex alert-dismissable my-3" role="alert" data-v-if-not="this.anonymous_comments">
+
+			<div class="icon align-middle me-2">
+				<i class="align-middle la la-lg lh-1 la-user"></i>
+			</div>
+
+			<div class="flex-grow-1 align-self-center text-small" >
+				<div>
+					<div data-v-notification-text>
+						<span><a href="" data-v-url="user/login/index">Login</a> first to post comments</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		
+		<form id="comment-form" method="post" action="" data-v-vvveb-action="addComment" data-v-vvveb-on="submit" data-v-if="this.global.user_id || this.anonymous_comments">
 			
 			<input type="hidden" name="post_id" data-v-post-post_id>
 			<input type="hidden" name="slug" data-v-post-slug>
@@ -188,6 +209,7 @@
 			  </div>
 
 			<!-- if these hidden inputs are filled then ignore robots -->
+			
 			 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
 			 
 			 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">				  
@@ -205,4 +227,21 @@
 			
 		</form>
 	</div>
+
+	<div class="alert alert-light d-flex alert-dismissable my-3" role="alert" data-v-if-not="this.default_comment_status">
+
+		<div class="icon align-middle me-2">
+			<i class="align-middle la la-lg lh-1 la-comments"></i>
+		</div>
+
+		<div class="flex-grow-1 align-self-center text-small" >
+			<div>
+				<div data-v-notification-text>
+					<span>Comments are closed</span>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
 </div>

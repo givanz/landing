@@ -1,4 +1,4 @@
-<article class="card @@class">
+<article class="card post @@class">
 	<div class="card-img-top" data-v-if="post.image">
 		<img src="demo/img/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
 	</div>
@@ -6,11 +6,49 @@
 	<a data-v-post-url>
 		<div class="card-body p-4">
 				<div class="post-title card-title">
-						<h3 class="h4 mb-3" data-v-post-name>
+						<h3 class="h4" data-v-post-name>
 								Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada
 						</h3>
 				</div>
-				<!-- Hover Content -->
+				
+				
+				<ul class="post-meta text-start mb-3 small">
+
+					<li class="post-author meta-wrapper">
+							<span class="meta-icon">
+								<span class="screen-reader-text">Post author</span>
+									<i class="la la-user"></i>
+								</span>
+							<span class="meta-text">
+								By <a href="content/post.html" data-v-post-author-url><span data-v-post-display_name>admin</span></a>
+							</span>
+						</li>
+						
+						<li class="post-date meta-wrapper">
+							<span class="meta-icon">
+								<span class="screen-reader-text">Post date</span>
+
+									<i class="la la-calendar"></i>
+								</span>
+							<span class="meta-text">
+								<a href="content/post.html" data-v-post-url>
+									<!-- <span data-v-post-created_at data-filter-friendly_date>December 31, 2020</span> -->
+									<span data-v-post-created_at_formatted>December 31, 2020</span>
+								</a>
+							</span>
+						</li>
+						<!--
+						<li class="post-comment-link meta-wrapper">
+							<span class="meta-icon">
+								<i class="la la-comment"></i>
+							</span>
+							<span class="meta-text">
+								<a href="#comments" data-v-post-comments-url><span data-v-post-comment_text>0 Comments</span></a>
+							</span>
+						</li>
+						-->
+				</ul>
+				
 				<p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
 				<button title="{$post.name}" role="button" class="btn btn-link px-0"><span>Read more</span> <i class="la la-angle-right"></i></button>
 		</div>

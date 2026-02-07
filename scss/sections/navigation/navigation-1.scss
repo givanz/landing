@@ -10,6 +10,7 @@
 		
 	    -webkit-box-shadow: 0 4px 10px rgba(var(--bs-body-color-rgb),0.07),inset 0 -1px 0 rgba(var(--bs-body-color-rgb),0.07);
 		box-shadow: 0 4px 40px rgba(var(--bs-body-color-rgb),0.07),inset 0 -1px 0 rgba(var(--bs-body-color-rgb),0.07);
+		box-shadow: 0 3px 14px rgba(var(--bs-body-color-rgb), 0.07);
 		
 		/*
 		&:after {
@@ -50,7 +51,7 @@
 					font-size: 15px;
 					//font-weight: 500;
 					padding: 2.1rem 1rem 2.1rem;
-					text-transform:none;
+					//text-transform:none;
 					//color: var(--bs-navbar-active-color);
 					/*
 					&.active {
@@ -74,6 +75,12 @@
 					}
 				}			
 				
+				.nav-toggle {
+					a.nav-link {
+						padding: 2.1rem 0.5rem 2.1rem;
+					}
+				}
+								
 				nav.navbar-expand-md {
 					a.nav-link {
 						display: flex;

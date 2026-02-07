@@ -8,6 +8,8 @@
 	 <div>
 		<div class="title-container">
 			<div class="container">
+				@@include('../_includes/breadcrumb.html')
+				
 				<h1 data-v-category-name>Category</h1>
 			</div>
 		</div>
@@ -22,12 +24,18 @@
   <!-- Page Content -->
   <div class="container">
 
+	@@include('../_includes/fields.html', {"type": "taxonomy_item", "subtype":"categories"})
+	
     <div class="row">
 
       <!-- Blog Entries Column -->
       <div class="col-md-7 col-lg-8 col-xl-9" data-v-component-posts="tag" data-v-page="url" data-v-limit="4" data-v-taxonomy_item_slug="url.slug" data-v-image_size="large">
 
-		@@include('../_includes/blog-post.html', {"class": " post-archive-item post"})
+		<div class="row">
+			
+			@@include('../_includes/blog-post-excerpt.html', {"class": " post-archive-item post col-md-6"})
+			
+		</div>
 		
 		@@include('../_includes/pagination.html', {"component": "posts", "component-index":0})
 

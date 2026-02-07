@@ -24,7 +24,10 @@
 									<i class="la la-calendar"></i>
 								</span>
 							<span class="meta-text">
-									<a data-v-post-url><span data-v-post-created_at data-filter-friendly_date >December 31, 2020</span></a>
+									<a data-v-post-url>
+									<span data-v-post-created_at data-filter-friendly_date>December 31, 2020</span>
+									<span data-v-post-created_at_formatted>December 31, 2020</span>
+									</a>
 							</span>
 						</li>
 							<li class="post-comment-link meta-wrapper">
@@ -43,7 +46,7 @@
 </div>
   <div class="card-body mb-3">
 	
-	<div class="card-text  post-content" data-v-post-content>
+	<div class="card-text post-content" data-v-post-content>
 			<p>
 				Begin each day by telling yourself:
 			</p> 
@@ -60,7 +63,7 @@
 			</p>
 				
 			<p>
-				<img class="img-fluid" loading="lazy" src="http://place-hold.it/1200x300">
+				<img class="img-fluid" loading="lazy" src="https://placeholdit.com/1200x300">
 			</p>
 			
 			<p>
@@ -72,7 +75,7 @@
 			</p>
 			
 			<div>
-				<img class="img-fluid align-center" loading="lazy" src="http://place-hold.it/1200x300">
+				<img class="img-fluid align-center" loading="lazy" src="https://placeholdit.com/1200x300">
 			</div>
 
 			<p>
@@ -80,7 +83,7 @@
 			</p>
 			
 			<p>
-				<img class="img-fluid align-right" loading="lazy" src="http://place-hold.it/150x150">
+				<img class="img-fluid align-right" loading="lazy" src="https://placeholdit.com/150x150">
 			</p>
 			
 			<p>
@@ -91,7 +94,7 @@
 			</p>
 
 			<p>
-				<img class="img-fluid align-left" loading="lazy" src="http://place-hold.it/150x150">
+				<img class="img-fluid align-left" loading="lazy" src="https://placeholdit.com/150x150">
 			</p>
 			
 			<p>
@@ -102,6 +105,10 @@
 			</p>
 		
 	</div>
+	
+	@@include('../_includes/fields.html', {"type": "post", "subtype": "post"})
+	
+	@@include('../_includes/post-password.html')
 	
   </div>
  
@@ -125,6 +132,7 @@
 			</ul>
 	  </div>
 	</div>	
+	
 	
 	@@include('../_includes/author-box.html')
 	

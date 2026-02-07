@@ -36,8 +36,9 @@
 
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/feed/index">
   <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/posts" />
-  <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
+  <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed/pages" />
   <link rel="alternate" type="application/rss+xml" title="Products" href="/feed/products" />
+  <link rel="alternate" type="application/rss+xml" title="Comments Feed" href="/feed/comments" />
 
   <link rel="icon" type="image/x-icon" href="media/favicon.ico" data-v-global-site.favicon>
 
@@ -49,140 +50,12 @@
 
 <body class="home">
   <nav class="navigation-1 clearfix" data-v-save-global="blank.html,.navigation-1">
-
-    <div id="top" class="top-nav clearfix">
-      <div class="container">
-        <div class="d-flex justify-content-between  flex-md-row d-flex flex-column flex-md-row">
-          <div class="nav">
-            <ul class="list-inline" data-v-component-site>
-              <li class="list-inline-item" data-v-if="site.description.phone-number">
-                <a href="tel:5511112377" class="p-2 p-md-0" title="Phone" data-v-site-description-phone-number>
-                  <i class="la la-phone"></i>
-                  <span class=" text-muted" data-v-site-description-phone-number>+55 (111) 123 777</span>
-                </a>
-              </li>
-              <li class="list-inline-item" data-v-if="site.contact-email">
-                <a href="mailto:contact@mysite.com" class="p-2 p-md-0" title="Email" data-v-site-contact-email>
-                  <i class="la la-envelope"></i>
-                  <span class=" text-muted" data-v-site-contact-email>contact@mysite.com</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="nav">
-            <ul class="list-inline">
-              <!--
-					<li class="list-inline-item"><a id="wishlist-total" title="Wish List (0)"><i class="la la-heart"></i> <span class="">Favorites</span></a></li>
-					<li class="list-inline-item"><a title="Checkout"><i class="la la-share"></i> <span class="">Checkout</span></a></li>
-					<li class="list-inline-item">
-						<div class="dropdown">
-							<a href="" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"><i class="la la-user"></i> <span class="">My Account</span></i></a>
-							<ul class="dropdown-menu dropdown-menu-right">
-								<li><a class="dropdown-item">Register</a></li>
-								<li><a class="dropdown-item">Login</a></li>
-							</ul>
-						</div>
-					</li>
-					-->
-              <li class="list-inline-item">
-                <div data-v-component-currency>
-                  <form method="post" enctype="multipart/form-data" id="form-currency">
-
-                    <a class="dropdown-toggle p-2 p-md-0" data-bs-toggle="dropdown" role="button" title="Currency " aria-expanded="false">
-                      <!-- <i class="la la-dollar-sign me-1"></i> -->
-                      <span class="" data-v-currency-info-name>USD</span>
-                    </a>
-
-
-                    <div class="dropdown-menu dropdown-menu-end">
-
-                      <div data-v-currency>
-                        <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
-                          <span data-v-currency-sign_start>€</span>
-                          <span data-v-currency-sign_end>€</span>
-                          <span class="ms-1" data-v-currency-name>Euro</span>
-                        </button>
-                      </div>
-
-                      <div data-v-currency>
-                        <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
-                          <span data-v-currency-sign_start>£</span>
-                          <span data-v-currency-sign_end>£</span>
-                          <span class="ms-1" data-v-currency-name>Pound Sterling</span>
-                        </button>
-                      </div>
-
-                      <div data-v-currency>
-                        <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
-                          <span data-v-currency-sign_start>$</span>
-                          <span data-v-currency-sign_end>$</span>
-                          <span class="ms-1" data-v-currency-name>US Dollar</span>
-                        </button>
-                      </div>
-
-                    </div>
-                  </form>
-                </div>
-              </li>
-              <li class="list-inline-item">
-                <div data-v-component-language>
-                  <form method="post" enctype="multipart/form-data" id="form-language">
-
-                    <a class="dropdown-toggle p-2 p-md-0" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
-                      <!-- <i class="la la-flag me-1"></i> -->
-                      <!-- 
-									<img src="" data-v-language-info-img>
-									-->
-                      <span class="" data-v-language-info-name>English</span>
-                    </a>
-
-
-                    <div class="dropdown-menu dropdown-menu-end">
-
-                      <div data-v-language>
-                        <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
-                          <!-- <i class="la la-flag la-lg me-2"></i> -->
-                          <img src="" loading="lazy" class="me-1" data-v-language-img>
-
-                          <!-- <a href="" data-v-language-url> -->
-                          <span data-v-language-name>English</span>
-                          <!-- </a> -->
-                        </button>
-                      </div>
-
-                      <div data-v-language>
-                        <button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
-                          <!-- <i class="la la-flag la-lg me-2"></i> -->
-                          <img src="" loading="lazy" class="me-1" data-v-language-img>
-                          <!-- <a href="" data-v-language-url>  -->
-                          <span data-v-language-name>Romanian</span>
-                          <!-- </a>  -->
-                        </button>
-                      </div>
-
-                    </div>
-                  </form>
-                </div>
-              </li>
-              <li class="list-inline-item">
-
-                <a id="color-theme-switch" class="p-2 p-md-0" role="button" title="Switch sidebar color theme">
-                  <i class="la la-sun la-lg"></i>
-                </a>
-
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="navbar navbar-expand-md">
 
       <div class="container">
         <div data-v-component-site>
-          <!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"www.*.*"}'><span class="visually-hidden">Logo</span> -->
-          <a class="navbar-brand" href="/" data-v-site-url'>
+          <!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"*.*.*"}'><span class="visually-hidden">Logo</span> -->
+          <a class="navbar-brand" href="/" data-v-site-url>
             <span class="visually-hidden">Logo</span>
             <img src="demo/img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
             <img src="demo/img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
@@ -201,10 +74,8 @@
 
               <a class="nav-link dropdown-toggle" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
                 <span data-v-menu-item-name data-v-if-not="category.type = 'text' && category.name"></span>
-                <span data-v-if="category.content" data-v-menu-item-content>
-                  <p>
-                    <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
-                  </p>
+                <span data-v-menu-item-content data-v-if="category.content">
+                  <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
                 </span>
               </a>
 
@@ -212,7 +83,7 @@
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                   <a class="dropdown-item" data-v-class-if-active="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
-                    <span data-v-if="category.content" data-v-menu-item-content>
+                    <span data-v-menu-item-content data-v-if="category.content">
                       <div class="row">
                         <div class="col-6 align-self-center">
                           <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
@@ -276,7 +147,11 @@
               <div class="dropdown nav-item">
                 <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                   <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
-                  <i class="la la-lg la-user"></i>
+                  <!-- <i class="la la-lg la-user"></i> -->
+                  <svg width="20px" viewBox="0 0 24 24" fill="none">
+                    <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+
                   <span class="visually-hidden">User</span>
                 </a>
 
@@ -351,15 +226,15 @@
                       <div class="login-form" data-v-if-not="component.user_id">
 
                         <div class="mb-3">
-                          <label class="form-label" for="input-email">E-Mail Address</label>
-                          <input type="email" name="email" value placeholder="E-Mail Address" id="user-email" class="form-control" data-v-user-email required>
+                          <input type="email" name="email" value placeholder=" " id="user-email" class="form-control label-over" data-v-user-email required>
+                          <label class="form-label" for="user-email">E-Mail Address</label>
                         </div>
 
                         <div class="mb-3">
-                          <label class="form-label" for="input-password">Password</label>
 
                           <div class="input-group">
-                            <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control" placeholder="Password" id="user-password" name="password" value="" aria-label="Password" required>
+                            <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control label-over" placeholder=" " id="user-password" name="password" value="" aria-label="Password" required>
+                            <label class="form-label" for="user-password">Password</label>
                             <button class="btn btn-sm px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'user-password')">
                               <i class="la la-eye-slash"></i>
                             </button>
@@ -394,7 +269,7 @@
 			  <i class="lab la-facebook la-lg"></i>
 			</span>
 		</a> -->
-                        <hr>
+                        <hr class="text-secondary">
                         <span>Don’t have an account?</span>
                         <br>
                         <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
@@ -405,8 +280,10 @@
 
 
                       <div class="user-form" data-v-if="component.user_id">
-                        <div class="text-center">Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
+                        <div class="text-center" data-v-if="user.first_name">Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
                           <b data-v-user-last_name data-filter-capitalize>Doe</b>
+                        </div>
+                        <div class="text-center" data-v-if-not="user.first_name">Welcome <b data-v-user-username>johndoe</b>
                         </div>
 
                         <div class="dropdown-divider opacity-50 my-3"></div>
@@ -483,186 +360,150 @@
               <!-- Cart Area -->
               <div class="dropdown nav-item mini-cart" data-v-component-cart>
 
-                <a class="dropdown-toggle cart-info nav-link " href role="button" id="cart-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="cart/cart/index">
+                <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
                   <!-- <img src="demo/img/bag.svg" width="20" alt> -->
-                  <i class="la la-lg la-shopping-bag"></i>
-                  <span class="visually-hidden">Cart</span>
-                  <strong class="text-top text-bold" data-v-total_items data-v-if="cart.total_items > 0"></strong>
+                  <!--
+		<i class="la la-lg la-shopping-bag"></i><span class="visually-hidden">Cart</span>
+		-->
+                  <svg width="20px" viewBox="0 0 24 24" fill="none">
+                    <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+
+                  <strong class="badge bg-primary" data-v-total_items data-v-if="cart.total_items > 0"></strong>
                 </a>
 
-
-                <div class="dropdown-menu dropdown-menu-end cart-box" aria-labelledby="cart-dropdown">
-
-                  <div>
-                    <div class="table-responsive">
-                      <table class="table cart-table align-middle mb-0">
-                        <tbody>
-
-
-                          <tr data-v-cart-product>
-                            <td class="text-center">
-                              <a href="#40" data-v-cart-product-url>
-                                <img src="demo/img/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
-                              </a>
-                            </td>
-                            <td class="text-start">
-                              <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                Product name
-                              </a>
-
-                              <span data-v-cart-product-quantity>1</span>
-                              <i class="la la-times text-muted"></i>
-                              <span data-v-cart-product-price_tax_formatted>$123.20</span>
-
-                              <div class="option" data-v-if="product.option">
-                                <div class="" data-v-product-option>
-                                  <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
-                                  <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
-                                </div>
-                                <div class="" data-v-product-option>
-                                  <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
-                                  <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
-                                </div>
-                                <div class="" data-v-product-option>
-                                  <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
-                                  <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
-                                </div>
-                              </div>
-
-                              <div class="subscription" data-v-if="product.subscription">
-                                <span>Subscription plan</span>:
-                                <span data-v-cart-product-subscription_name>Subscription plan</span>
-                              </div>
-                            </td>
-                            <td class="text-end">
-                              <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
-                                <i class="la la-times"></i>
-                              </a>
-                            </td>
-                          </tr>
-                          <tr data-v-cart-product>
-                            <td class="text-center">
-                              <a href="#40" data-v-cart-product-url>
-                                <img src="demo/img/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
-                              </a>
-                            </td>
-                            <td class="text-start">
-                              <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
-                                Product name
-                              </a>
-
-                              <span data-v-cart-product-quantity>1</span>
-                              <i class="la la-times text-muted"></i>
-                              <span data-v-cart-product-price_tax_formatted>$123.20</span>
-
-
-                            </td>
-                            <td class="text-end">
-                              <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
-                                <i class="la la-times"></i>
-                              </a>
-                            </td>
-                          </tr>
-                          <tr data-v-if-not="cart.total_items">
-                            <td colspan="100">
-                              <div class="d-flex  p-2">
-                                <div class="text-center p-2 opacity-75">
-                                  <!-- <img src="demo/img/bag.svg" width="20" alt> -->
-                                  <i class="la la-2x la-shopping-bag"></i>
-                                </div>
-                                <div class="p-2">
-                                  <strong>Empty cart</strong>
-                                  <br>
-                                  <span class="text-muted">No products added yet!</span>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-
-                      </table>
-                    </div>
-
-                    <div class="p-3 pt-0 border-top" data-v-if="cart.total_items">
-                      <div class="table-responsive mb-2" data-v-cart-totals>
-                        <table class="table mb-0 cart-table cart-total" cellspacing="0">
-                          <tfoot>
-                            <tr data-v-cart-total>
-                              <td colspan="5" class="text-end">
-                                <small data-v-cart-total-title>Sub-Total</small>:
-                              </td>
-                              <td class="text-end">
-                                <span data-v-cart-total-text data-v-if="total.text"> - </span>
-                                <span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
-                              </td>
-                            </tr>
-                            <tr data-v-cart-total>
-                              <td colspan="5" class="text-end">
-                                <small>Eco Tax (2.00):</small>
-                              </td>
-                              <td class="text-end">$2.00</td>
-                            </tr>
-                            <tr data-v-cart-total>
-                              <td colspan="5" class="text-end">
-                                <small>VAT (19%):</small>
-                              </td>
-                              <td class="text-end">$20.20</td>
-                            </tr>
-                            <tr data-v-cart-total>
-                              <td colspan="5" class="text-end">
-                                <small>Total:</small>
-                              </td>
-                              <td class="text-end">$123.20</td>
-                            </tr>
-                            <tr>
-                              <td colspan="5" class="text-end">Total:</td>
-                              <td class="text-end" data-v-grand-total_formatted>$0</td>
-                            </tr>
-                          </tfoot>
-
-                        </table>
-                      </div>
-
-                    </div>
-
-                    <div class="row mt-2 g-2 px-3 pb-2" data-v-if="cart.total_items">
-                      <div class="col-6">
-                        <a href="" class="btn btn-light btn-sm border w-100" data-v-url="cart/cart/index" data-url>
-                          <i class="la la-shopping-cart la-lg"></i>
-                          <span>View cart</span>
-                        </a>
-                      </div>
-                      <div class="col-6">
-                        <a href="" class="btn btn-primary btn-sm w-100" data-v-url="checkout/checkout/index">
-                          <span>Checkout</span>
-                          <i class="la la-arrow-right la-lg"></i>
-                        </a>
-                      </div>
-                    </div>
-
-
-                  </div>
-
-
-
-                </div>
 
               </div>
 
             </li>
 
-          </ul>
+            <li class="nav-toggle">
+              <div class="dropdown nav-item" data-v-component-language>
+                <div data-v-component-currency>
+                  <form method="post" enctype="multipart/form-data" id="form-language">
+
+                    <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
+                      <!-- <img src="" data-v-language-info-img> -->
+                      <span class="" data-v-language-info-slug>English</span>
+                    </a>
 
 
+                    <div class="dropdown-menu">
 
-          <button class="btn btn-outline-secondary btn-sm border-0" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
-            <div class="la-flip-horizontal">
-              <i class="la la-search la-lg" aria-hidden="true"></i>
+                      <div data-v-language>
+                        <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+                          <img src="" loading="lazy" class="me-1" data-v-language-img>
+                          <span data-v-language-name>English</span>
+                        </button>
+                      </div>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <div data-v-currency>
+              <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+                <span data-v-currency-sign_start>$</span>
+                <span data-v-currency-sign_end>$</span>
+                <span class="ms-1" data-v-currency-name>US Dollar</span>
+              </button>
             </div>
-          </button>
 
 
-          <!--
+        </div>
+        </form>
+      </div>
+    </div>
+    </li>
+    <li class="nav-item">
+      <a id="color-theme-switch" class="nav-link px-1" role="button" title="Switch sidebar color theme">
+        <i class="la la-sun"></i>
+      </a>
+    </li>
+    <!--
+	<li class="nav-toggle">
+	<div class="dropdown nav-item" data-v-component-language>
+			<form method="post" enctype="multipart/form-data" id="form-language">
+
+				<a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button"  title="Language"  aria-expanded="false">
+					<img src="" data-v-language-info-img>
+					<span class="" data-v-language-info-slug>English</span>
+				</a>
+			
+				
+				<div class="dropdown-menu">
+					
+					<div data-v-language>
+						<button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+							<img src="" loading="lazy" class="me-1" data-v-language-img>
+							<span data-v-language-name>English</span>
+						</button>
+					</div>
+					
+					<div data-v-language>
+						<button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
+							<img src="" loading="lazy" class="me-1" data-v-language-img>
+							<span data-v-language-name>Romanian</span>
+						</button>
+					</div>
+					
+				</div>
+			</form>
+		</div>					
+	</li>	
+	<li class="nav-toggle">
+	<div class="dropdown nav-item" data-v-component-currency>
+		<form method="post" enctype="multipart/form-data" id="form-currency">
+
+			<a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button" title="Currency" aria-expanded="false">
+				<span class="" data-v-currency-info-sign_start>$</span>
+				<span class="" data-v-currency-info-sign_end>$</span>
+			</a>
+		
+			
+			<div class="dropdown-menu">
+				
+				<div data-v-currency>
+				  <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
+					<span data-v-currency-sign_start>€</span>
+					<span data-v-currency-sign_end>€</span>
+					<span class="ms-1" data-v-currency-name>Euro</span>
+				  </button>
+				</div>
+
+				<div data-v-currency>
+				  <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
+					<span data-v-currency-sign_start>£</span>
+					<span data-v-currency-sign_end>£</span>
+					<span class="ms-1" data-v-currency-name>Pound Sterling</span>
+				  </button>
+				</div>
+
+				<div data-v-currency>
+				  <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+					<span data-v-currency-sign_start>$</span>
+					<span data-v-currency-sign_end>$</span>
+					<span class="ms-1" data-v-currency-name>US Dollar</span>
+				  </button>
+				</div>
+				
+			</div>
+		</form>
+	</div>		                    
+	</li>		  
+	-->
+    </ul>
+
+
+
+    <button class="btn btn-outline-secondary btn-sm border-0 shadow-none" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
+      <div class="la-flip-horizontal">
+        <i class="la la-search la-lg" aria-hidden="true"></i>
+      </div>
+    </button>
+
+
+    <!--
 	<div class="search-area toggle-hover">
 		<form action="/search" method="get" data-v-action="/search">
 			<input type="hidden" name="route" value="search">
@@ -677,10 +518,10 @@
 		</form>
 	</div>
 -->
-        </div>
+    </div>
 
 
-      </div>
+    </div>
     </div>
   </nav>
 
@@ -691,17 +532,17 @@
       <div>
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-lg-12">
-            <h1 class="heading mb-4 display-3" data-aos="fade-up" data-aos-delay="100">Next generation website builder</h1>
+            <h1 class="heading mb-4 display-2" data-aos="fade-up" data-aos-delay="100">Next generation website builder</h1>
             <div class="col-lg-8 mx-auto">
-              <h2 class="h4 lh-base fw-normal" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h2>
+              <h2 class="h3 lh-base fw-normal" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h2>
             </div>
 
             <div class="buttons" data-aos="fade-up" data-aos-delay="300">
-              <a href="https://www.vvveb.com" class="btn btn-primary">
+              <a href="https://www.vvveb.com" class="btn btn-primary btn-lg">
                 <span>Free Download</span>
                 <span>&#9889;</span>
               </a>
-              <a href="https://demo.vvveb.com" class="btn btn-light">Live Demo</a>
+              <a href="https://demo.vvveb.com" class="btn btn-light btn-lg">Live Demo</a>
             </div>
 
 
@@ -710,16 +551,13 @@
       </div>
     </div>
 
-    <div class="separator bottom">
-
-      <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" height="100" fill="var(--bs-body-bg)" preserveAspectRatio="none">
-        <defs></defs>
-        <title>rough-edges-bottom</title>
-        <path d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)" />
-      </svg>
-
-    </div>
     <!--
+    <div class="separator bottom">
+		
+		<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" height="100" fill="var(--bs-body-bg)" preserveAspectRatio="none"><defs></defs><title>rough-edges-bottom</title><path d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)"/></svg>
+		
+    </div>   
+
    <div class="separator top">
 		
 		<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" height="200" preserveAspectRatio="none"><defs><style>.cls-1{fill:var(--bs-body-bg);}</style></defs><title>rough-edges-bottom</title><path class="cls-1" d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)"/></svg>
@@ -744,7 +582,7 @@
         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="feature" data-aos="fade-up" data-aos-delay="100">
             <div class="font-container text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="56" height="56" color="#1064ea" fill="#1064ea">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64" color="#1064ea" fill="#1064ea">
                 <polyline points="336 176 225.2 304 176 255.8" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></polyline>
                 <path d="M463.1,112.37C373.68,96.33,336.71,84.45,256,48,175.29,84.45,138.32,96.33,48.9,112.37,32.7,369.13,240.58,457.79,256,464,271.42,457.79,479.3,369.13,463.1,112.37Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></path>
               </svg>
@@ -758,7 +596,7 @@
         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="feature" data-aos="fade-up" data-aos-delay="200">
             <div class="font-container text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="56" height="56" color="#1064ea" fill="#1064ea">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="64" height="64" color="#1064ea" fill="#1064ea">
                 <path d="M419.1,337.45a3.94,3.94,0,0,0-6.1,0c-10.5,12.4-45,46.55-45,77.66,0,27,21.5,48.89,48,48.89h0c26.5,0,48-22,48-48.89C464,384,429.7,349.85,419.1,337.45Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px"></path>
                 <path d="M387,287.9,155.61,58.36a36,36,0,0,0-51,0l-5.15,5.15a36,36,0,0,0,0,51l52.89,52.89,57-57L56.33,263.2a28,28,0,0,0,.3,40l131.2,126a28.05,28.05,0,0,0,38.9-.1c37.8-36.6,118.3-114.5,126.7-122.9,5.8-5.8,18.2-7.1,28.7-7.1h.3A6.53,6.53,0,0,0,387,287.9Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px"></path>
               </svg>
@@ -772,7 +610,7 @@
         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="feature" data-aos="fade-up" data-aos-delay="300">
             <div class="font-container text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" width="56" height="56" color="#1064ea" fill="#1064ea" stroke-width="28">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" width="64" height="64" color="#1064ea" fill="#1064ea" stroke-width="28">
                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill-rule="evenodd" d="M80,176a16,16,0,0,0-16,16V408c0,30.24,25.76,56,56,56H392c30.24,0,56-24.51,56-54.75V192a16,16,0,0,0-16-16Z"></path>
                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill-rule="evenodd" d="M160,176V144a96,96,0,0,1,96-96h0a96,96,0,0,1,96,96v32"></path>
               </svg>
@@ -786,7 +624,7 @@
         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="feature" data-aos="fade-up" data-aos-delay="400">
             <div class="font-container text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="56" height="56" color="#1064ea" fill="#1064ea">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64" color="#1064ea" fill="#1064ea">
                 <path d="M80,464V68.14a8,8,0,0,1,4-6.9C91.81,56.66,112.92,48,160,48c64,0,145,48,192,48a199.53,199.53,0,0,0,77.23-15.77A2,2,0,0,1,432,82.08V301.44a4,4,0,0,1-2.39,3.65C421.37,308.7,392.33,320,352,320c-48,0-128-32-192-32s-80,16-80,16" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"></path>
               </svg>
             </div>
@@ -801,15 +639,15 @@
   </section>
 
 
-  <section class="features-1 bg-alternate" aria-label="features-1">
+  <section class="features-1 bg-alternate my-5" aria-label="features-1">
     <div class="container">
-      <div class="row g-5 wrap">
+      <div class="row wrap">
         <div class="col-md-6 align-self-center">
           <div class="max-box" data-aos="fade-right">
             <!--
                     <span class="badge  bg-success rounded-pill px-3">new</span>
                     -->
-            <h2 class="display-6 fw-semibold">Real time code editor</h2>
+            <h2 class="display-5 fw-bold">Real time code editor</h2>
             <div class="mt-4">
               <p class="lead">Code editor with syntax highglighting that updates in real time.</p>
               <p class="lead">Use any of the hundreds fonts from google fonts for your design.</p>
@@ -822,17 +660,17 @@
           </div>
         </div>
         <div class="col-md-6">
-          <img src="demo/img/illustrations.co/118-macbook.svg" alt="Macbook" loading="lazy" class="img-fluid" data-aos="fade-left" />
+          <img src="demo/img/team-1.jpg" alt="Macbook" loading="lazy" class="img-fluid shadow" data-aos="fade-left" />
         </div>
       </div>
-      <div class="row g-5 wrap">
+      <div class="row g-5 wrap mt-2">
         <div class="col-md-6">
-          <img src="demo/img/illustrations.co/day95-app-development.svg" alt="App development" loading="lazy" class="img-fluid" data-aos="fade-right" />
+          <img src="demo/img/team-2.jpg" alt="App development" loading="lazy" class="img-fluid shadow" data-aos="fade-right" />
         </div>
         <div class="col-md-6 align-self-center">
           <div class="max-box ms-auto" data-aos="fade-left">
             <!-- <span class="badge  bg-success rounded-pill px-3">on sale</span> -->
-            <h2 class="display-6 fw-semibold">Drag and drop page builder</h2>
+            <h2 class="display-5 fw-bold">Drag and drop page builder</h2>
             <div class="mt-4">
               <p class="lead">Intuitive building with simple drag and drop for sections, components and blocks.</p>
               <p class="lead">The html for sections blocks and components and this template are built using Bootstrap.</p>
@@ -866,7 +704,7 @@
 
 
 
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="000" data-v-product>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
           <article class="single-product-wrapper">
             <!-- Product Image -->
@@ -875,7 +713,7 @@
               <a href="product/product.html" data-v-product-url>
 
                 <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-                <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+                <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
                 <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
@@ -954,7 +792,7 @@
 
 
 
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100" data-v-product>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
           <article class="single-product-wrapper">
             <!-- Product Image -->
@@ -963,7 +801,7 @@
               <a href="product/product.html" data-v-product-url>
 
                 <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-                <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+                <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
                 <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
@@ -1042,7 +880,7 @@
 
 
 
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200" data-v-product>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
           <article class="single-product-wrapper">
             <!-- Product Image -->
@@ -1051,7 +889,7 @@
               <a href="product/product.html" data-v-product-url>
 
                 <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-                <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+                <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
                 <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
@@ -1130,7 +968,7 @@
 
 
 
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300" data-v-product>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
           <article class="single-product-wrapper">
             <!-- Product Image -->
@@ -1139,7 +977,7 @@
               <a href="product/product.html" data-v-product-url>
 
                 <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-                <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+                <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
                 <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
@@ -1218,7 +1056,7 @@
 
 
 
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400" data-v-product>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
           <article class="single-product-wrapper">
             <!-- Product Image -->
@@ -1227,7 +1065,7 @@
               <a href="product/product.html" data-v-product-url>
 
                 <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-                <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+                <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
                 <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
@@ -1306,7 +1144,7 @@
 
 
 
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="500" data-v-product>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
           <article class="single-product-wrapper">
             <!-- Product Image -->
@@ -1315,7 +1153,7 @@
               <a href="product/product.html" data-v-product-url>
 
                 <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-                <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+                <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
                 <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
@@ -1394,7 +1232,7 @@
 
 
 
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="600" data-v-product>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
           <article class="single-product-wrapper">
             <!-- Product Image -->
@@ -1403,7 +1241,7 @@
               <a href="product/product.html" data-v-product-url>
 
                 <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-                <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+                <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
                 <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
@@ -1482,7 +1320,7 @@
 
 
 
-        <div class="col-md-3" data-aos="fade-up" data-aos-delay="700" data-v-product>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-product>
 
           <article class="single-product-wrapper">
             <!-- Product Image -->
@@ -1491,7 +1329,7 @@
               <a href="product/product.html" data-v-product-url>
 
                 <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
-                <img src="demo/img/video-1.webp" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
+                <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
                 <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
@@ -1598,9 +1436,9 @@
 
             <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
 
-            <img src="demo/img/sections/team/1.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow border rounded-3" loading="lazy">
+            <img src="demo/img/sections/team/1.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 shadow border rounded-3" loading="lazy">
 
-            <h3 class="mb-0">John Doe</h3>
+            <h3>John Doe</h3>
             <span class="small text-uppercase text-muted">Company Inc.</span>
           </div>
         </div>
@@ -1617,9 +1455,9 @@
 
 
             <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
-            <img src="demo/img/sections/team/2.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow border rounded-3" loading="lazy">
+            <img src="demo/img/sections/team/2.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 shadow border rounded-3" loading="lazy">
 
-            <h3 class="mb-0">Jane Doe</h3>
+            <h3>Jane Doe</h3>
             <span class="small text-uppercase text-muted">Company Inc.</span>
           </div>
         </div>
@@ -1637,9 +1475,9 @@
 
             <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
 
-            <img src="demo/img/sections/team/3.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow border rounded-3" loading="lazy">
+            <img src="demo/img/sections/team/3.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 shadow border rounded-3" loading="lazy">
 
-            <h3 class="mb-0">John Doe</h3>
+            <h3>John Doe</h3>
             <span class="small text-uppercase text-muted">Company Inc.</span>
           </div>
         </div>
@@ -1657,9 +1495,9 @@
 
             <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
 
-            <img src="demo/img/sections/team/4.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow border rounded-3" loading="lazy">
+            <img src="demo/img/sections/team/4.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 shadow border rounded-3" loading="lazy">
 
-            <h3 class="mb-0">Jane Doe</h3>
+            <h3>Jane Doe</h3>
             <span class="small text-uppercase text-muted">Company Inc.</span>
           </div>
         </div>
@@ -1668,7 +1506,7 @@
   </section>
 
 
-  <section class="pricing-table-3" aria-label="pricing-table-3">
+  <section class="pricing-table-3 my-3" aria-label="pricing-table-3">
     <div class="container">
       <div class="row justify-content-center pb-2">
         <div class="col-md-7 heading-section text-center">
@@ -1678,13 +1516,13 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <div class="price-col shadow-sm border rounded-3" data-aos="fade-up">
-            <div class="img">
-              <img src="demo/img/illustrations.co/104-dumbbell.svg" alt="104-dumbbell" loading="lazy" class="img-fluid" />
-            </div>
-            <div class="text-center p-4">
+          <div class="price my-5-col shadow-sm border rounded-3" data-aos="fade-up">
+            <!--
+                    <div class="img"><img src="demo/img/illustrations.co/104-dumbbell.svg" alt="104-dumbbell" loading="lazy" class="img-fluid" /></div>
+                    -->
+            <div class="text-center p-5">
               <span class="excerpt d-block">Personal</span>
-              <span class="price">
+              <span class="price my-5">
                 <sup>$</sup>
                 <span class="number">49</span>
                 <sub>/mos</sub>
@@ -1711,13 +1549,13 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="price-col shadow-sm border rounded-3" data-aos="fade-up" data-aos-delay="200">
-            <div class="img">
-              <img src="demo/img/illustrations.co/107-healthy.svg" alt="107-healthy" loading="lazy" class="img-fluid" />
-            </div>
-            <div class="text-center p-4">
+          <div class="price my-5-col shadow-sm border rounded-3" data-aos="fade-up" data-aos-delay="200">
+            <!--
+                    <div class="img"><img src="demo/img/illustrations.co/107-healthy.svg" alt="107-healthy" loading="lazy" class="img-fluid" /></div>
+                    -->
+            <div class="text-center p-5">
               <span class="excerpt d-block">Business</span>
-              <span class="price">
+              <span class="price my-5">
                 <sup>$</sup>
                 <span class="number">79</span>
                 <sub>/mos</sub>
@@ -1744,13 +1582,13 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="price-col shadow-sm border rounded-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="img">
-              <img src="demo/img/illustrations.co/126-namaste-no-hand-shake.svg" alt="126-namaste-no-hand-shake" loading="lazy" class="img-fluid" />
-            </div>
-            <div class="text-center p-4">
+          <div class="price my-5-col shadow-sm border rounded-3" data-aos="fade-up" data-aos-delay="400">
+            <!--
+                    <div class="img"><img src="demo/img/illustrations.co/126-namaste-no-hand-shake.svg" alt="126-namaste-no-hand-shake" loading="lazy" class="img-fluid" /></div>
+                    -->
+            <div class="text-center p-5">
               <span class="excerpt d-block">Ultimate</span>
-              <span class="price">
+              <span class="price my-5">
                 <sup>$</sup>
                 <span class="number">109</span>
                 <sub>/mos</sub>
@@ -1795,98 +1633,220 @@
 
 
 
-    <div class="container" data-v-component-posts="posts-1" data-v-limit="3" data-v-image_size="medium">
-      <div class="row">
+    <div class="container">
+      <div data-v-component-posts="posts-1" data-v-limit="3" data-v-image_size="medium">
+        <div class="row">
 
 
 
-        <div class="col-12 col-lg-4 mb-2" data-aos="fade-up" data-aos-delay="000" data-v-post>
+          <div class="col-12 col-lg-4 mb-2" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
 
-          <article class="card h-100 shadow-sm">
-            <div class="card-img-top" data-v-if="post.image">
-              <img src="demo/img/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
-            </div>
-            <!-- Post Title -->
-            <a data-v-post-url>
-              <div class="card-body p-4">
-                <div class="post-title card-title">
-                  <h3 class="h4 mb-3" data-v-post-name>
-                    Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada
-                  </h3>
-                </div>
-                <!-- Hover Content -->
-                <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                <button title="{$post.name}" role="button" class="btn btn-link px-0">
-                  <span>Read more</span>
-                  <i class="la la-angle-right"></i>
-                </button>
+            <article class="card post h-100 shadow-sm border">
+              <div class="card-img-top" data-v-if="post.image">
+                <img src="demo/img/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
               </div>
-            </a>
-          </article>
+              <!-- Post Title -->
+              <a data-v-post-url>
+                <div class="card-body p-4">
+                  <div class="post-title card-title">
+                    <h3 class="h4" data-v-post-name>
+                      Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada
+                    </h3>
+                  </div>
+
+
+                  <ul class="post-meta text-start mb-3 small">
+
+                    <li class="post-author meta-wrapper">
+                      <span class="meta-icon">
+                        <span class="screen-reader-text">Post author</span>
+                        <i class="la la-user"></i>
+                      </span>
+                      <span class="meta-text">
+                        By <a href="content/post.html" data-v-post-author-url>
+                          <span data-v-post-display_name>admin</span>
+                        </a>
+                      </span>
+                    </li>
+
+                    <li class="post-date meta-wrapper">
+                      <span class="meta-icon">
+                        <span class="screen-reader-text">Post date</span>
+
+                        <i class="la la-calendar"></i>
+                      </span>
+                      <span class="meta-text">
+                        <a href="content/post.html" data-v-post-url>
+                          <!-- <span data-v-post-created_at data-filter-friendly_date>December 31, 2020</span> -->
+                          <span data-v-post-created_at_formatted>December 31, 2020</span>
+                        </a>
+                      </span>
+                    </li>
+                    <!--
+						<li class="post-comment-link meta-wrapper">
+							<span class="meta-icon">
+								<i class="la la-comment"></i>
+							</span>
+							<span class="meta-text">
+								<a href="#comments" data-v-post-comments-url><span data-v-post-comment_text>0 Comments</span></a>
+							</span>
+						</li>
+						-->
+                  </ul>
+
+                  <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
+                  <button title="{$post.name}" role="button" class="btn btn-link px-0">
+                    <span>Read more</span>
+                    <i class="la la-angle-right"></i>
+                  </button>
+                </div>
+              </a>
+            </article>
+
+
+          </div>
+
+
+
+          <div class="col-12 col-lg-4 mb-2" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
+
+            <article class="card post h-100 shadow-sm border">
+              <div class="card-img-top" data-v-if="post.image">
+                <img src="demo/img/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+              </div>
+              <!-- Post Title -->
+              <a data-v-post-url>
+                <div class="card-body p-4">
+                  <div class="post-title card-title">
+                    <h3 class="h4" data-v-post-name>
+                      Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada
+                    </h3>
+                  </div>
+
+
+                  <ul class="post-meta text-start mb-3 small">
+
+                    <li class="post-author meta-wrapper">
+                      <span class="meta-icon">
+                        <span class="screen-reader-text">Post author</span>
+                        <i class="la la-user"></i>
+                      </span>
+                      <span class="meta-text">
+                        By <a href="content/post.html" data-v-post-author-url>
+                          <span data-v-post-display_name>admin</span>
+                        </a>
+                      </span>
+                    </li>
+
+                    <li class="post-date meta-wrapper">
+                      <span class="meta-icon">
+                        <span class="screen-reader-text">Post date</span>
+
+                        <i class="la la-calendar"></i>
+                      </span>
+                      <span class="meta-text">
+                        <a href="content/post.html" data-v-post-url>
+                          <!-- <span data-v-post-created_at data-filter-friendly_date>December 31, 2020</span> -->
+                          <span data-v-post-created_at_formatted>December 31, 2020</span>
+                        </a>
+                      </span>
+                    </li>
+                    <!--
+						<li class="post-comment-link meta-wrapper">
+							<span class="meta-icon">
+								<i class="la la-comment"></i>
+							</span>
+							<span class="meta-text">
+								<a href="#comments" data-v-post-comments-url><span data-v-post-comment_text>0 Comments</span></a>
+							</span>
+						</li>
+						-->
+                  </ul>
+
+                  <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
+                  <button title="{$post.name}" role="button" class="btn btn-link px-0">
+                    <span>Read more</span>
+                    <i class="la la-angle-right"></i>
+                  </button>
+                </div>
+              </a>
+            </article>
+
+
+          </div>
+
+
+
+          <div class="col-12 col-lg-4 mb-2" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
+
+            <article class="card post h-100 shadow-sm border">
+              <div class="card-img-top" data-v-if="post.image">
+                <img src="demo/img/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+              </div>
+              <!-- Post Title -->
+              <a data-v-post-url>
+                <div class="card-body p-4">
+                  <div class="post-title card-title">
+                    <h3 class="h4" data-v-post-name>
+                      Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada
+                    </h3>
+                  </div>
+
+
+                  <ul class="post-meta text-start mb-3 small">
+
+                    <li class="post-author meta-wrapper">
+                      <span class="meta-icon">
+                        <span class="screen-reader-text">Post author</span>
+                        <i class="la la-user"></i>
+                      </span>
+                      <span class="meta-text">
+                        By <a href="content/post.html" data-v-post-author-url>
+                          <span data-v-post-display_name>admin</span>
+                        </a>
+                      </span>
+                    </li>
+
+                    <li class="post-date meta-wrapper">
+                      <span class="meta-icon">
+                        <span class="screen-reader-text">Post date</span>
+
+                        <i class="la la-calendar"></i>
+                      </span>
+                      <span class="meta-text">
+                        <a href="content/post.html" data-v-post-url>
+                          <!-- <span data-v-post-created_at data-filter-friendly_date>December 31, 2020</span> -->
+                          <span data-v-post-created_at_formatted>December 31, 2020</span>
+                        </a>
+                      </span>
+                    </li>
+                    <!--
+						<li class="post-comment-link meta-wrapper">
+							<span class="meta-icon">
+								<i class="la la-comment"></i>
+							</span>
+							<span class="meta-text">
+								<a href="#comments" data-v-post-comments-url><span data-v-post-comment_text>0 Comments</span></a>
+							</span>
+						</li>
+						-->
+                  </ul>
+
+                  <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
+                  <button title="{$post.name}" role="button" class="btn btn-link px-0">
+                    <span>Read more</span>
+                    <i class="la la-angle-right"></i>
+                  </button>
+                </div>
+              </a>
+            </article>
+
+
+          </div>
+
 
 
         </div>
-
-
-
-        <div class="col-12 col-lg-4 mb-2" data-aos="fade-up" data-aos-delay="100" data-v-post>
-
-          <article class="card h-100 shadow-sm">
-            <div class="card-img-top" data-v-if="post.image">
-              <img src="demo/img/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
-            </div>
-            <!-- Post Title -->
-            <a data-v-post-url>
-              <div class="card-body p-4">
-                <div class="post-title card-title">
-                  <h3 class="h4 mb-3" data-v-post-name>
-                    Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada
-                  </h3>
-                </div>
-                <!-- Hover Content -->
-                <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                <button title="{$post.name}" role="button" class="btn btn-link px-0">
-                  <span>Read more</span>
-                  <i class="la la-angle-right"></i>
-                </button>
-              </div>
-            </a>
-          </article>
-
-
-        </div>
-
-
-
-        <div class="col-12 col-lg-4 mb-2" data-aos="fade-up" data-aos-delay="200" data-v-post>
-
-          <article class="card h-100 shadow-sm">
-            <div class="card-img-top" data-v-if="post.image">
-              <img src="demo/img/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
-            </div>
-            <!-- Post Title -->
-            <a data-v-post-url>
-              <div class="card-body p-4">
-                <div class="post-title card-title">
-                  <h3 class="h4 mb-3" data-v-post-name>
-                    Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada
-                  </h3>
-                </div>
-                <!-- Hover Content -->
-                <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                <button title="{$post.name}" role="button" class="btn btn-link px-0">
-                  <span>Read more</span>
-                  <i class="la la-angle-right"></i>
-                </button>
-              </div>
-            </a>
-          </article>
-
-
-        </div>
-
-
-
       </div>
     </div>
   </section>
@@ -2159,7 +2119,7 @@
       <!--
 		<div class="row justify-content-end">
 			<div class="col-md-3 text-muted text-small mt-5">
-				&copy; <span data-v-year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
+				&copy; <span data-v-global-current_year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
 			</div>
 		</div>
 		-->
@@ -2174,7 +2134,7 @@
             <a class="btn-link text-muted" href="/page/privacy-policy">Privacy Policy</a>
           </div>
           <div class="text-muted">
-            &copy; <span data-v-year>2025</span>
+            &copy; <span data-v-global-current_year>2025</span>
             <span data-v-global-site.description.title>Vvveb</span>. <span>Powered by</span>
             <a href="https://vvveb.com" class="btn-link text-muted" target="_blank">Vvveb</a>
           </div>
@@ -2202,21 +2162,20 @@
 
   <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-body" style="--bs-modal-padding: 0.7rem;">
+      <div class="modal-content shadow">
+        <div class="modal-body p-0">
 
           <form action="/search" method="get">
-            <input type="hidden" name="route" value="search">
+            <input type="hidden" name="route" value="search" />
             <div class="d-flex">
               <div class="input-group">
-                <input type="search" name="search" class="form-control form-control-lg border-primary border-2" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
-                <button class="btn btn-outline-primary border-2 border-start-0" type="submit" title="Search">
+                <input type="search" name="search" class="form-control border-0 p-3 px-4" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup" />
+                <button class="btn btn-outline-primary border-0" type="submit" title="Search">
                   <div class="la-flip-horizontal">
                     <i class="la la-search la-lg" aria-hidden="true"></i>
                   </div>
                 </button>
               </div>
-              <button type="button" class="btn-close small ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="loading d-none d-flex justify-content-center m-5">
@@ -2231,8 +2190,171 @@
 
         </div>
       </div>
+      <button type="button" class="btn-close btn-close-white small" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
+
   </div>
+
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cart-offcanvas" aria-labelledby="cart-offcanvas">
+
+    <div class="offcanvas-header pb-0">
+      <h5 class="offcanvas-title"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column pt-2" data-v-component-cart>
+
+      <div class="table-responsive flex-grow-1">
+        <table class="table cart-table align-middle mb-0">
+          <tbody>
+
+
+            <tr data-v-cart-product>
+              <td class="text-center">
+                <a href="#40" data-v-cart-product-url>
+                  <img src="demo/img/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                </a>
+              </td>
+              <td class="text-start small">
+                <a href="#40" class="d-block" data-v-cart-product-url>
+                  <span data-v-cart-product-name>Product name</span>
+                </a>
+
+                <span data-v-cart-product-quantity>1</span>
+                <i class="la la-times text-muted"></i>
+                <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+                <div class="option" data-v-if="product.option">
+                  <div class="" data-v-product-option>
+                    <span data-v-product-option-option>Color</span>: <span data-v-product-option-name>Red</span>
+                    <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
+                  </div>
+                  <div class="" data-v-product-option>
+                    <span data-v-product-option-option>Size</span>: <span data-v-product-option-name>XL</span>
+                    <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
+                  </div>
+                  <div class="" data-v-product-option>
+                    <span data-v-product-option-option>Material</span>: <span data-v-product-option-name>Wool</span>
+                    <span data-v-if="value.price > 0">(<span data-v-product-option-price></span>)</span>
+                  </div>
+                </div>
+
+                <div class="subscription" data-v-if="product.subscription">
+                  <span>Subscription plan</span>:
+                  <span data-v-cart-product-subscription_name>Subscription plan</span>
+                </div>
+              </td>
+              <td class="text-end">
+                <a class="btn btn-remove btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                  <i class="la la-times-circle la-lg"></i>
+                </a>
+              </td>
+            </tr>
+            <tr data-v-cart-product>
+              <td class="text-center">
+                <a href="#40" data-v-cart-product-url>
+                  <img src="demo/img/product.webp" alt="Product name" class="img-rounded" loading="lazy" data-v-cart-product-image width=50>
+                </a>
+              </td>
+              <td class="text-start">
+                <a href="#40" class="d-block" data-v-cart-product-url data-v-cart-product-name>
+                  Product name
+                </a>
+
+                <span data-v-cart-product-quantity>1</span>
+                <i class="la la-times text-muted"></i>
+                <span data-v-cart-product-price_tax_formatted>$123.20</span>
+
+
+              </td>
+              <td class="text-end">
+                <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                  <i class="la la-times"></i>
+                </a>
+              </td>
+            </tr>
+            <tr data-v-if-not="cart.total_items">
+              <td colspan="100">
+                <div class="d-flex  p-2">
+                  <div class="text-center p-2 opacity-75">
+                    <!-- <img src="demo/img/bag.svg" width="20" alt> -->
+                    <i class="la la-2x la-shopping-bag"></i>
+                  </div>
+                  <div class="p-2">
+                    <strong>Empty cart</strong>
+                    <br>
+                    <span class="text-muted">No products added yet!</span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+
+      <div class="p-3 pt-0 border-top" data-v-if="cart.total_items">
+        <div class="table-responsive mb-2" data-v-cart-totals>
+          <table class="table mb-0 cart-table cart-total" cellspacing="0">
+            <tfoot>
+              <tr data-v-cart-total>
+                <td colspan="5" class="text-end">
+                  <small data-v-cart-total-title>Sub-Total</small>:
+                </td>
+                <td class="text-end">
+                  <span data-v-cart-total-text data-v-if="total.text"> - </span>
+                  <span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
+                </td>
+              </tr>
+              <tr data-v-cart-total>
+                <td colspan="5" class="text-end">
+                  <small>Eco Tax (2.00):</small>
+                </td>
+                <td class="text-end">$2.00</td>
+              </tr>
+              <tr data-v-cart-total>
+                <td colspan="5" class="text-end">
+                  <small>VAT (19%):</small>
+                </td>
+                <td class="text-end">$20.20</td>
+              </tr>
+              <tr data-v-cart-total>
+                <td colspan="5" class="text-end">
+                  <small>Total:</small>
+                </td>
+                <td class="text-end">$123.20</td>
+              </tr>
+              <tr>
+                <td colspan="5" class="text-end">Total:</td>
+                <td class="text-end" data-v-grand-total_formatted>$0</td>
+              </tr>
+            </tfoot>
+
+          </table>
+        </div>
+
+      </div>
+
+      <div class="row mt-2 g-2 px-3 pb-2" data-v-if="cart.total_items">
+        <div class="col-6">
+          <a href="" class="btn btn-light btn-sm border w-100" data-v-url="cart/cart/index" data-url>
+            <i class="la la-shopping-cart la-lg"></i>
+            <span>View cart</span>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="" class="btn btn-primary btn-sm w-100" data-v-url="checkout/checkout/index">
+            <span>Checkout</span>
+            <i class="la la-arrow-right la-lg"></i>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
 
   <div id="page-loading-status" class="progress progress-bar"></div>
 
@@ -2246,7 +2368,7 @@
 
   <!-- Animation -->
 
-  <link rel="stylesheet" href="js/aos.css">
+  <link rel="stylesheet" href="js/aos.css" />
   <noscript>
     <style type="text/css">
       [data-aos] {
@@ -2260,12 +2382,13 @@
   <script>
 	AOS.init();
 </script>
-  <script src="/js/app/cart.js"></script>
 
-  <link id="glightbox-css" rel="stylesheet" href="/js/libs/glightbox/glightbox.css">
+  <script id="cart-js" src="/js/app/cart.js"></script>
+
+  <link id="glightbox-css" rel="stylesheet" href="/js/libs/glightbox/glightbox.css" />
   <script id="glightbox-js" src="/js/libs/glightbox/glightbox.min.js"></script>
 
-  <script src="/js/app/theme.js"></script>
+  <script id="theme-js" src="/js/app/theme.js"></script>
 
   <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/public\/*","\/themes\/*","\/plugins\/*","\/cart\/*","\/checkout\/*","\/user\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}

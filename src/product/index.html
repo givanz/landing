@@ -6,10 +6,7 @@
 	
 	
 	<main id="site-content" role="main">
-      <div class="container mt-5">
-
-      </div>
-      <div class="container">
+      <div class="container mt-4">
         <div class="row justify-content-between">
 		
          <div class="col-md-3 col-xl-3 products-sidebar">
@@ -25,46 +22,56 @@
 				
 			  </div>
 			  <div class="col-md-6 text-md-end">
-				<ul class="list-inline">
-				  <li class="list-inline-item">
-					<div class="dropdown">
-					  <a class="btn btn-light btn-sm" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-						Price high to low <i class="la la-arrow-down"></i>
+					<!--
+					<select class="form-select" onchange="location.href=this.value">
+						<option value="/shop?order_by=product_id&direction=desc">Newest</option>
+						<option value="/shop?order_by=product_id&direction=asc">Oldest</option>
+					</select>
+					-->
+				  
+					<div class="dropdown mb-2" onclick="sortDropdown(event)">
+					  <a class="btn btn-outline-secondary btn-sm dropdown-toggle" role="button" id="sort-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+						<span data-v-if="(this.order_by = 'product_id' && this.direction = 'desc') || this.order_by = ''"><i class="la la-calendar"></i> <span>Newest</span></span>
+						<span data-v-if="this.order_by = 'product_id' && this.direction = 'asc'"><i class="la la-calendar"></i> <span>Oldest</span></span>
+						<span data-v-if="this.order_by = 'price' && this.direction = 'asc'"><i class="la la-arrow-up"></i> <span>Price low to high</span></span>
+						<span data-v-if="this.order_by = 'price' && this.direction = 'desc'"><i class="la la-arrow-down"></i> <span>Price high to low</span></span>
+						<span data-v-if="this.order_by = 'name' && this.direction = 'asc'"><i class="la la-sort-alpha-up"></i> <span>Name ascending</span></span>
+						<span data-v-if="this.order_by = 'name' && this.direction = 'desc'"><i class="la la-sort-alpha-up"></i> <span>Name descending</span></span>
 					  </a>
 
-					  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					  <ul class="dropdown-menu" aria-labelledby="sort-dropdown">
 						<li>
-							<a class="dropdown-item" href="/shop?order_by=name&direction=asc">
-								<i class="la la-sort-alpha-up"></i> <span>Name ascending</span>
+							<a class="dropdown-item" href="/shop?order_by=product_id&direction=desc" data-url data-v-class-if-active="this.order_by = 'product_id' && this.direction = 'desc'">
+								<i class="la la-calendar"></i> <span>Newest</span>
 							</a>
 						</li>
 						<li>
-							<a class="dropdown-item" href="/shop?order_by=name&direction=desc">
-								<i class="la la-sort-alpha-down"></i> <span>Name descending</span>
+							<a class="dropdown-item" href="/shop?order_by=product_id&direction=asc" data-url data-v-class-if-active="this.order_by = 'product_id' && this.direction = 'asc'">
+								<i class="la la-calendar"></i> <span>Oldest</span>
 							</a>
-						</li>
+						</li>				
 						<li><hr class="dropdown-divider"></li>
 						<li>
-							<a class="dropdown-item" href="/shop?order_by=price&direction=asc">
+							<a class="dropdown-item" href="/shop?order_by=price&direction=asc" data-url data-v-class-if-active="this.order_by = 'price' && this.direction = 'asc'">
 								<i class="la la-arrow-up"></i> <span>Price low to high</span>
 							</a>
 						</li>
 						<li>
-							<a class="dropdown-item" href="/shop?order_by=price&direction=desc">
+							<a class="dropdown-item" href="/shop?order_by=price&direction=desc" data-url data-v-class-if-active="this.order_by = 'price' && this.direction = 'desc'">
 								<i class="la la-arrow-down"></i> <span>Price high to low</span>
 							</a>
 						</li>
 						<li><hr class="dropdown-divider"></li>
 						<li>
-							<a class="dropdown-item" href="/shop?order_by=product_id&direction=desc">
-								<i class="la la-calendar"></i> <span>Newest</span>
+							<a class="dropdown-item" href="/shop?order_by=name&direction=asc" data-url data-v-class-if-active="this.order_by = 'name' && this.direction = 'asc'">
+								<i class="la la-sort-alpha-up"></i> <span>Name ascending</span>
 							</a>
 						</li>
 						<li>
-							<a class="dropdown-item" href="/shop?order_by=product_id&direction=asc">
-								<i class="la la-calendar"></i> <span>Oldest</span>
+							<a class="dropdown-item" href="/shop?order_by=name&direction=desc" data-url data-v-class-if-active="this.order_by = 'name' && this.direction = 'desc'">
+								<i class="la la-sort-alpha-down"></i> <span>Name descending</span>
 							</a>
-						</li>
+						</li>	
 						<!--
 						<li>
 							<a class="dropdown-item" href="/shop?order_by=views&direction=desc">
@@ -89,12 +96,10 @@
 						</li> -->
 					  </ul>
 					</div>
-				  </li>
-				</ul>
 			  </div>
 			</div>
 			
-            <div class="row g-3" data-v-component-products="index" data-v-limit="6" data-v-variant_price="true" data-v-order_by="url" data-v-direction="url" data-v-page="url" data-v-taxonomy_item_id="url" data-v-image_size="medium" data-v-filter="url">
+            <div class="row" data-v-component-products="index" data-v-limit="6" data-v-variant_price="true" data-v-order_by="url" data-v-direction="url" data-v-page="url" data-v-taxonomy_item_id="url" data-v-image_size="medium" data-v-filter="url" data-v-404="true">
               <div class="col-md-6 col-xl-4" data-v-product>
                 <div class="product">
 				
@@ -121,11 +126,22 @@
     </main>
 
    
-@@include('../_includes/footer.html')   
+@@include('../_includes/footer.html')  
+ 
+<script>
+function sortDropdown(e) {
+	let option = e.target.closest("a");
+	if (option) {
+	 let dropdown = document.getElementById("sort-dropdown");
+	 dropdown.innerHTML = option.innerHTML;
+    }
+}	
+</script>
  
 @@include('../_includes/footer-scripts.html')    
 
 <script id="filter-js" data-no-minify src="/js/app/filter.js"></script>
+
   	
 </body>
 </html>

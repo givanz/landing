@@ -14,21 +14,20 @@
 
 <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-body" style="--bs-modal-padding: 0.7rem;">
+    <div class="modal-content shadow">
+      <div class="modal-body p-0">
         
         <form action="/search" method="get"> 
-		  <input type="hidden" name="route" value="search">
+		  <input type="hidden" name="route" value="search"/>
 		  <div class="d-flex">
 			  <div class="input-group">
-				<input type="search" name="search" class="form-control form-control-lg border-primary border-2" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup">
-				<button class="btn btn-outline-primary border-2 border-start-0" type="submit" title="Search">
+				<input type="search" name="search" class="form-control border-0 p-3 px-4" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup"/>
+				<button class="btn btn-outline-primary border-0" type="submit" title="Search">
 				  <div class="la-flip-horizontal">
 					<i class="la la-search la-lg" aria-hidden="true"></i>
 				  </div>
 				</button>
 			  </div>
-			<button type="button" class="btn-close small ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
 		  </div>
 
 			<div class="loading d-none d-flex justify-content-center m-5">
@@ -43,8 +42,24 @@
         
       </div>
     </div>
+    <button type="button" class="btn-close btn-close-white small" data-bs-dismiss="modal" aria-label="Close"></button>
   </div>
+
 </div>
+
+			
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cart-offcanvas"  aria-labelledby="cart-offcanvas">					
+
+  <div class="offcanvas-header pb-0">
+    <h5 class="offcanvas-title"></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column pt-2" data-v-component-cart>
+	@@include('mini-cart.html')  
+  </div>
+  
+</div>
+	
 
 <div id="page-loading-status" class="progress progress-bar"></div>
 
@@ -58,7 +73,7 @@
 
 <!-- Animation -->
 
-<link rel="stylesheet" href="js/aos.css">	
+<link rel="stylesheet" href="js/aos.css"/>
 <noscript>
 	<style type="text/css">
 		[data-aos] {
@@ -72,12 +87,13 @@
 <script>
 	AOS.init();
 </script>
-<script src="/js/app/cart.js"></script>
 
-<link id="glightbox-css" rel="stylesheet" href="/js/libs/glightbox/glightbox.css">
+<script id="cart-js" src="/js/app/cart.js"></script>
+
+<link id="glightbox-css" rel="stylesheet" href="/js/libs/glightbox/glightbox.css"/>
 <script id="glightbox-js" src="/js/libs/glightbox/glightbox.min.js"></script>
 
-<script src="/js/app/theme.js"></script>
+<script id="theme-js" src="/js/app/theme.js"></script>
 
 <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/public\/*","\/themes\/*","\/plugins\/*","\/cart\/*","\/checkout\/*","\/user\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}

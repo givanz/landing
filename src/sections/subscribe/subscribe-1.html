@@ -1,0 +1,59 @@
+<section class="subscribe-1 text-white" aria-label="subscribe-1" data-bs-theme="dark">
+
+	<div class="container">
+		
+		<div data-v-component-plugin-newsletter-form data-v-storage="database" data-v-name="contact-us-home">
+			<div class="row h-100 d-flex justify-content-center align-items-center">
+			
+				<div class="col-md-12">
+
+					<h4 class="text-center">Stay Informed with Early Updates!</h4>
+					<p class="text-muted text-center">Subscribe to our newsletter and receive the latest updates and important news directly to your inbox.</p>
+					
+					@@include('../../_includes/notifications.html')
+
+					<form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-newsletter-form]" data-v-vvveb-on="submit">
+					  <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
+					  <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>	
+			  
+							
+					<div class="col-md-6 mx-auto mt-5">
+						<div class="search position-relative">
+							<input class="form-control rounded-5" name="email" placeholder="Your email address">
+							<button type="submit" class="btn btn-primary position-absolute  rounded-5">
+							
+								<span class="loading d-none">
+									<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+									</span>
+									<span>Submitting</span> ...
+								</span>
+
+								<span class="button-text">
+									<span>Submit</span><i class="la la-lg la-envelope opacity-50 ms-2"></i>
+								</span>
+							
+							</button>
+						</div>
+						
+						<label class="small mt-2 text-muted form-check">
+							<input type="checkbox" class="form-check-input" value="1" name="optin" required>
+							<span class="form-check-label">I agree to receive your newsletters and accept the data privacy statement.</span>
+						</label>
+					</div>
+
+					 <input type="text" class="form-control d-none" placeholder="Contact form" name="newsletter" >	
+					 
+					 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+					 
+					 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">	
+					
+					</form>
+					
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+
+</section>

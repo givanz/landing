@@ -137,9 +137,9 @@ $ucolor:unquote("--bs-" + $color);
   .btn-#{$color} {
 	color:var(--bs-white);
 	background-color:var($ucolor);
-	box-shadow:none;
+	//box-shadow:none;
 	border:none;
-  /*
+  
     @if $color == "light" {
       @include button-variant(
         $value,
@@ -160,7 +160,7 @@ $ucolor:unquote("--bs-" + $color);
       );
     } @else {
       @include button-variant($value, $value);
-    }*/
+    }
   }
 }
 

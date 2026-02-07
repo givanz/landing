@@ -1,15 +1,17 @@
-<nav class="navigation-4 clearfix">
+<nav class="navigation-4 clearfix" data-v-save-global="index.html,.navigation-4">
 
   <div class="navbar navbar-expand-md">
 
     <div class="container">
 
       <div data-v-component-site>
-        <a class="navbar-brand" href="/" data-v-url-params='{"host":"www.*.*"}'>
-          <img src="img/logo.png" loading="lazy" class="logo-default" data-v-site-logo>
-          <img src="img/logo.png" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
-          <img src="img/logo-white.png" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
-          <img src="img/logo-white.png" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+        <!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"*.*.*"}'><span class="visually-hidden">Logo</span> -->
+        <a class="navbar-brand" href="/" data-v-site-url>
+          <span class="visually-hidden">Logo</span>
+          <img src="demo/img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
+          <img src="demo/img/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky>
+          <img src="demo/img/logo-white.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+          <img src="demo/img/logo-white.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
         </a>
       </div>
 
@@ -17,11 +19,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
+
       <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
         <ul class="navbar-nav ms-auto" data-v-menu-items>
           <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
 
-            <a class="nav-link" href="javascript:void(0);" data-v-class-if-dropdown-toggle="category.children > 0" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url>
+            <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
               <span data-v-menu-item-name>Resources</span>
             </a>
 
@@ -53,20 +56,254 @@
               <span data-v-menu-item-name>About us</span>
             </a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/" role="button">Demo</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/">Page builder</a>
+              <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin">Admin dashboard</a>
+              <a class="dropdown-item" target="_blank" href="//demo.vvveb.com">Frontend</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" target="_blank" href="https://vercel-vvveb-commerce.vercel.app/">Next.js Frontend GraphQL</a>
+            </div>
+          </li>
+
+
+          <li class="nav-toggle">
+            <!-- User Login Info -->
+            <div class="dropdown nav-item">
+              <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
+                <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
+                <!-- <i class="la la-lg la-user"></i> -->
+                <svg width="20px" viewBox="0 0 24 24" fill="none">
+                  <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <span class="visually-hidden">User</span>
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-end login-box user-box" aria-labelledby="user-dropdown">
+
+                <div data-v-component-user>
+
+                  <div class="notifications" data-v-notifications>
+
+                    <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="login">
+
+                      <div class="icon align-middle me-2">
+                        <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                      </div>
+
+                      <div class="flex-grow-1 align-self-center text-small">
+                        <div>
+                          <div data-v-notification-text>
+                            This is a placeholder for a notification message.
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">
+                          <!-- <i class="la la-times"></i> -->
+                        </span>
+                      </button>
+                    </div>
+
+                    <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="login">
+
+                      <div class="icon align-middle me-2">
+                        <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+                      </div>
+
+                      <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+                        This is a placeholder for a success message.
+                      </div>
+
+                      <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">
+                          <!-- <i class="la la-times"></i> -->
+                        </span>
+                      </button>
+                    </div>
+
+                    <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="login">
+
+                      <div class="icon align-middle me-2">
+                        <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+                      </div>
+
+                      <div class="flex-grow-1 align-self-center" data-v-notification-text>
+                        This is a placeholder for a info message.
+                      </div>
+
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">
+                          <!-- <i class="la la-times"></i> -->
+                        </span>
+                      </button>
+                    </div>
+
+                  </div>
+
+                  <form action method="post" enctype="multipart/form-data" data-v-url="user/login/index" data-v-vvveb-action="login" data-v-vvveb-on="submit" class="login-form">
+
+                    <input type="hidden" name="csrf" data-v-csrf>
+
+                    <div class="login-form" data-v-if-not="component.user_id">
+
+                      <div class="mb-3">
+                        <input type="email" name="email" value placeholder=" " id="user-email" class="form-control label-over" data-v-user-email required>
+                        <label class="form-label" for="user-email">E-Mail Address</label>
+                      </div>
+
+                      <div class="mb-3">
+
+                        <div class="input-group">
+                          <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control label-over" placeholder=" " id="user-password" name="password" value="" aria-label="Password" required>
+                          <label class="form-label" for="user-password">Password</label>
+                          <button class="btn btn-sm px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'user-password')">
+                            <i class="la la-eye-slash"></i>
+                          </button>
+                        </div>
+                      </div>
+
+                      <button type="submit" value="Login" class="btn btn-primary py-2 btn-login w-100">
+
+                        <span class="loading d-none">
+                          <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                          </span>
+                          <span>Authenticating</span>...
+                        </span>
+
+                        <span class="button-text">
+                          Login <i class="la la-arrow-right ms-2"></i>
+                        </span>
+
+                      </button>
+                      <div class="my-2"></div>
+                      <a href="/user/reset" data-v-url="user/reset/index" class="my-2">Forgot your password?</a>
+
+                      <div class="my-2"></div>
+                      <!--
+		<a>
+			<span class="btn btn-secondary btn-sm">
+				  <i class="lab la-google la-lg"></i>
+			</span>
+		</a>
+		<a>
+			<span class="btn btn-secondary btn-sm">
+			  <i class="lab la-facebook la-lg"></i>
+			</span>
+		</a> -->
+                      <hr class="text-secondary">
+                      <span>Don’t have an account?</span>
+                      <br>
+                      <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
+                      <span class="text-body-tertiary">|</span>
+                      <a href="/user/login" data-v-url="user/login/index">Login</a>
+
+                    </div>
+
+
+                    <div class="user-form" data-v-if="component.user_id">
+                      <div class="text-center" data-v-if="user.first_name">Welcome <b data-v-user-first_name data-filter-capitalize>John</b>
+                        <b data-v-user-last_name data-filter-capitalize>Doe</b>
+                      </div>
+                      <div class="text-center" data-v-if-not="user.first_name">Welcome <b data-v-user-username>johndoe</b>
+                      </div>
+
+                      <div class="dropdown-divider opacity-50 my-3"></div>
+
+                      <ul class="m-3 list-unstyled">
+                        <li>
+                          <a href="user" data-v-url="user/index">
+                            <i class="la la-user la-lg text-muted m-1"></i>
+                            <span>My account</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="user/comments" data-v-url="user/comments/index">
+                            <i class="la la-comment la-lg text-muted m-1"></i>
+                            <span>Comments</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="user/orders" data-v-url="user/orders/index">
+                            <i class="la la-shopping-bag la-lg text-muted m-1"></i>
+                            <span>Orders</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="user/downloads" data-v-url="user/downloads/index">
+                            <i class="la la-hand-holding-heart la-lg text-muted m-1"></i>
+                            <span>Downloads</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="user/wishlist" data-v-url="user/wishlist/index">
+                            <i class="la la-download la-lg text-muted m-1"></i>
+                            <span>Wishlist</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="user/profile" data-v-url="user/profile/index">
+                            <i class="la la-cogs la-lg text-muted m-1"></i>
+                            <span>Profile</span>
+                          </a>
+                        </li>
+                      </ul>
+
+
+                      <input type="hidden" name="logout">
+
+                      <button type="submit" value="logout" class="btn btn-sm btn-primary w-100">
+
+                        <span class="loading d-none">
+                          <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+                          </span>
+                          <span>Loading ...</span>...
+                        </span>
+
+                        <span class="button-text">
+                          <i class="la la-sign-out-alt la-lg m-1"></i>
+                          <span>Log out</span>
+                          </a>
+                        </span>
+
+                      </button>
+                    </div>
+                  </form>
+
+
+                </div>
+              </div>
+            </div>
+
+          </li>
+
+          <li class="nav-toggle">
+            <button class="btn btn-outline-secondary btn-sm border-0" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
+              <div class="la-flip-horizontal">
+                <i class="la la-search la-lg" aria-hidden="true"></i>
+              </div>
+            </button>
+          </li>
+
           <li class="nav-item">
-            <a id="color-theme-switch" class="nav-link" href="javascript:void(0);" title="Switch sidebar color theme">
+            <a id="color-theme-switch" class="nav-link" role="button" title="Switch sidebar color theme">
               <i class="la la-sun"></i>
             </a>
           </li>
-
         </ul>
-        <!--				
+      </div>
+
+      <!--				
 				<div class="search-area toggle-hover">
 					<form action="/search" method="get" data-v-action="/search">
 						<input type="hidden" name="route" value="search">
 						<div class="input-group">
 							<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
-							<button class="btn border-0" type="submit">
+							<button class="btn border-0" type="submit" title="Search">
 								<div class="la-flip-horizontal">
 									<i class="la la-search la-lg" aria-hidden="true"></i>
 								</div>
@@ -75,7 +312,7 @@
 					</form>
 				</div>
 -->
-      </div>
+      <!--	  </div> -->
       <!--
 		  <div class="collapse navbar-collapse" id="navbar">
 			<ul class="navbar-nav ms-auto">
@@ -89,7 +326,7 @@
 				<a class="nav-link" href="https://plugins.vvveb.com">Plugins</a>
 			  </li>
 			  <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="javascript:void(0);" id="dropdown01" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+				<a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
 				<div class="dropdown-menu" aria-labelledby="dropdown01">
 				  <a class="dropdown-item" target="_blank"  href="https://github.com/givanz/VvvebJs/wiki">User Documentation</a>
 				  <a class="dropdown-item" target="_blank"  href="https://github.com/givanz/VvvebJs/wiki">Developer Documentation</a>

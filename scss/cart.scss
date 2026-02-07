@@ -48,13 +48,14 @@
 	i {
 		color:var(--bs-danger-border-subtle);
 	}
+	
+	&:before {display:none}
 	&:hover {
 		color:var(--bs-danger);
 		i {
 			visibility:visible;
 			color:var(--bs-danger);
 		}
-		
 	}
 }
 
@@ -131,4 +132,11 @@
 		max-height:250px;
 		overflow-y: auto;
 	}
+}
+
+.mini-cart .dropdown-toggle .badge {
+    padding: 0.2rem 0.3rem;
+    position: absolute;
+    right: 18px;
+    margin-top: -5px;
 }

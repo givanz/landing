@@ -1,0 +1,20 @@
+.subscribe-1, .subscribe-2 , .subscribe-3 , .subscribe-4 , .subscribe-5 {	
+	background-color: var(--bs-tertiary-bg);
+	padding:4rem 0;
+
+	.form-control{
+		height:70px;
+		background-color:inherit;
+		border-width:2px;
+	}
+
+	.form-control:focus{
+	}
+
+	.search button{
+		top:10px;
+		height:50px;
+		right:10px;
+		white-space: nowrap;
+	}
+}

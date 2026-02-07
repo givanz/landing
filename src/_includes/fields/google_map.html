@@ -1,0 +1,6 @@
+<div data-v-type-google_map>
+
+  <iframe data-v-if="field.value" frameborder="0" src="https://maps.google.com/maps?q={$field.value.address}&amp;z={$field.value.zoom}&center={$field.value.lat},{$field.value.long}&amp;t=q&amp;key=&amp;output=embed" width="100%" height="100%" style="width:100%;height:100%;left:0px"></iframe>
+  <iframe data-v-if="field.lat && field.long && !field.value" frameborder="0" src="https://maps.google.com/maps?center={$field.value.lat},{$field.value.long}&amp;z={$field.value.zoom}&amp;t=q&amp;key=&amp;output=embed" width="100%" height="100%" style="width:100%;height:100%;left:0px"></iframe>
+
+</div>

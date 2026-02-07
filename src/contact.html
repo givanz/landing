@@ -18,24 +18,99 @@
 			<!-- img data-v-post-image src="demo/img/bg-img/bg-7.webp" alt="" -->
 		</div>
 	</section>
-
-	<section class="map" style="height:300px" data-component-maps>
-		<iframe loading="lazy" frameborder="0" src="https://maps.google.com/maps?q=Bucharest&z=15&t=q&key=&output=embed" width="100%" height="100%" style="width:100%;height:100%;left:0px"></iframe>
-	</section>
 	
     <main id="site-content" data-v-component-post>
 
 		<section class="pt-0">
 		  <div class="container">
 			<div class="row mt-5">
-			  <div class="col-12 col-md-6 col-lg-5">
+			  <div class="col-12 col-md-6">
 			  
+			  
+			  <iframe loading="lazy" frameborder="0" src="https://maps.google.com/maps?q=Bucharest&z=15&t=q&key=&output=embed" width="100%" height="100%" class="rounded-4" style="width:100%;height:100%;left:0px"></iframe>
 
 				<!--	
 				<h2 data-v-post-name>Contact us</h2>
 				-->
 				
-				<div class="" data-v-post-content>
+				<!--
+				<p class="lead">
+				  <strong>Email:</strong><script>document.write(atob("PGEgaHJlZj0ibWFpbHRvOiYjMTA0OyYjMTA1OyYjMDY0OyYjMTE4OyYjMTE4OyYjMTE4OyYjMTAxOyYjMDk4OyYjMDQ2OyYjMDk5OyYjMTExOyYjMTA5OyI+JiMxMDQ7JiMxMDU7JiMwNjQ7JiMxMTg7JiMxMTg7JiMxMTg7JiMxMDE7JiMwOTg7JiMwNDY7JiMwOTk7JiMxMTE7JiMxMDk7PC9hPg=="));</script>
+				</p>
+				-->
+			  </div>
+
+			  <div class="col-12 col-md-6 ms-auto" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-page">
+				
+				@@include('./_includes/notifications.html')
+				
+				<div class="p-4">
+				<form method="post" action="" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
+				   <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
+				   <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>
+					
+				  <div class="row">
+					<div class="col">
+					  <label for="input-first-name" class="form-label">First Name</label>
+					  <input id="input-first-name" type="text" class="form-control" placeholder="First name" name="first_name" required>
+					</div>
+					<div class="col">
+					  <label for="input-last-name" class="form-label">Last Name</label>
+					  <input id="input-last-name"  type="text" class="form-control" placeholder="Last name" name="last_name" required>
+					</div>
+				  </div>
+
+				  <div class="row mt-4">
+					<div class="col">
+					  <label for="input-email" class="form-label">Email</label>
+					  <input id="input-email" type="email" class="form-control" placeholder="Email" name="email" required>
+					</div>
+				  </div>
+
+				  <div class="row mt-4">
+					<div class="col">
+				  	  <label for="input-subject" class="form-label">Subject</label>
+					  <input id="subject" type="text" class="form-control" placeholder="Subject" name="subject" required>
+					</div>
+				  </div>
+				  <div class="row mt-4">
+					<div class="col">
+				      <label for="input-message" class="form-label">Message</label>
+					  <textarea id="input-message" class="form-control" name="message" rows="5" placeholder="How can we help?" required></textarea>
+					</div>
+				  </div>
+
+
+				 <!-- if these hidden inputs are filled then ignore, robots -->
+
+				 <input type="text" class="form-control d-none" placeholder="Subject" name="contact-form" >	
+				 
+				 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+				 
+				 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">	
+				 
+				
+				  <div class="row mt-4">
+					<div class="col">
+					  <button type="submit" class="btn btn-primary">
+						<span class="loading d-none">
+							<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+							</span>
+							<span>Submitting</span> ...
+						</span>
+
+						<span class="button-text">
+							<span>Send message</span><i class="la la-lg la-envelope opacity-50 ms-2"></i>
+						</span>
+					</button>
+				  </div>
+				</form>
+				</div>
+				</div>
+			  </div>
+			</div>
+		  
+		  	<div class="mt-5" data-v-post-content>
 					<p class="lead">
 						For support questions please use the <a href="https://github.com/givanz/Vvveb/discussions">community forum</a>.
 					</p>
@@ -66,77 +141,7 @@
 					
 				</div>
 				
-				<!--
-				<p class="lead">
-				  <strong>Email:</strong><script>document.write(atob("PGEgaHJlZj0ibWFpbHRvOiYjMTA0OyYjMTA1OyYjMDY0OyYjMTE4OyYjMTE4OyYjMTE4OyYjMTAxOyYjMDk4OyYjMDQ2OyYjMDk5OyYjMTExOyYjMTA5OyI+JiMxMDQ7JiMxMDU7JiMwNjQ7JiMxMTg7JiMxMTg7JiMxMTg7JiMxMDE7JiMwOTg7JiMwNDY7JiMwOTk7JiMxMTE7JiMxMDk7PC9hPg=="));</script>
-				</p>
-				-->
-			  </div>
 
-			  <div class="col-12 col-md-6 ms-auto" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-page">
-				
-				@@include('./_includes/notifications.html')
-				
-				<div class="border rounded-3 p-4 border-opacity-25 border-light-subtle">
-				<form method="post" action="" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
-				   <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
-				   <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>
-					
-				  <div class="row">
-					<div class="col">
-					  <input type="text" class="form-control" placeholder="First name" name="first_name" required>
-					</div>
-					<div class="col">
-					  <input type="text" class="form-control" placeholder="Last name" name="last_name" required>
-					</div>
-				  </div>
-
-				  <div class="row mt-4">
-					<div class="col">
-					  <input type="email" class="form-control" placeholder="Email" name="email" required>
-					</div>
-				  </div>
-
-				  <div class="row mt-4">
-					<div class="col">
-					  <input type="text" class="form-control" placeholder="Subject" name="subject" required>
-					</div>
-				  </div>
-				  <div class="row mt-4">
-					<div class="col">
-					  <textarea class="form-control" name="message" rows="5" placeholder="How can we help?" required></textarea>
-					</div>
-				  </div>
-
-
-				 <!-- if these hidden inputs are filled then ignore, robots -->
-
-				 <input type="text" class="form-control d-none" placeholder="Subject" name="contact-form" >	
-				 
-				 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
-				 
-				 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">	
-				 
-				
-				  <div class="row mt-4">
-					<div class="col">
-					  <button type="submit" class="btn btn-primary">
-						<span class="loading d-none">
-							<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
-							</span>
-							<span>Submitting</span> ...
-						</span>
-
-						<span class="button-text">
-							<span>Submit</span><i class="la la-lg la-envelope opacity-50 ms-2"></i>
-						</span>
-					</button>
-				  </div>
-				</form>
-				</div>
-				</div>
-			  </div>
-			</div>
 		  </div>
 		</section>
 

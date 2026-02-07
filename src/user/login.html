@@ -13,7 +13,7 @@
 										  
 					<div class="row">
 					
-						<div class="col-lg-8 col-xl-7 mx-auto">
+						<div class="user-card mx-auto">
 					
 							<div class="card card-default my-4">
 
@@ -31,18 +31,18 @@
 								<form action="" method="post" enctype="multipart/form-data" id="login-form">
 									<input type="hidden" name="csrf" data-v-csrf>
 									<div class="mb-3">
-										<label class="form-label" for="input-email">E-Mail Address</label>
 										<div class="input-group">
-											<span class="input-group-text bg-body"> <i class="la la-envelope"></i> </span>
-											<input type="email" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control border-start-0" required>
+											<span class="input-group-text bg-body pe-1"> <i class="la la-envelope"></i> </span>
+											<input type="email" name="email" value="" placeholder=" " id="input-email" class="form-control label-over border-start-0" required>
+											<label class="col-form-label ms-4" for="input-email">E-Mail Address</label>
 										</div>
 									</div>
 									
 									<div class="mb-3">
-										<label class="form-label" for="input-password">Password</label>
 										<div class="input-group">
- 										  <span class="input-group-text bg-body"> <i class="la la-lock"></i> </span>
-										  <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control border-start-0" placeholder="Password"  id="password" name="password"  value="" aria-label="Password" required>
+ 										  <span class="input-group-text bg-body pe-1"> <i class="la la-lock"></i> </span>
+										  <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control label-over border-start-0" placeholder=" "  id="password" name="password"  value="" aria-label="Password" required>
+										  <label class="col-form-label ms-4" for="password">Password</label>
 										  <button class="btn px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'password')"><i class="la la-eye-slash"></i></button>
 										</div>
 										
@@ -62,7 +62,7 @@
 
 									<div class="mb-3 clearfix">
 											
-										<button type="submit" value="Login" class="btn btn-primary w-100 btn-login btn-lg my-3" ><span>Login</span><i class="la la-arrow-right ms-2"></i></button>
+										<button type="submit" value="Login" class="btn btn-primary w-100 btn-login my-3" ><span>Login</span><i class="la la-arrow-right ms-2"></i></button>
 									
 									</div>
 									
