@@ -31,6 +31,7 @@ $pagination-active-border-color: transparent;
 $pagination-active-bg: var(--bs-tertiary-bg);
 $pagination-active-color: var(--bs-body-color);
 $card-border-color: var(--bs-border-color);
+$card-bg: transparent;
 //$dropdown-link-active-color:var(--bs-body-color);
 //$dropdown-link-active-bg:var(--bs-secondary-bg);
 $dropdown-padding-y:0;
@@ -71,11 +72,6 @@ $enable-cssgrid: false;
 .btn {
     --bs-border-radius: 0.25rem;
     --bs-btn-font-weight: 500;
-}
-
-.btn-primary {
-	--btn-bg:#0030C0;
-	background-color:#0030C0;
 }
 
 .nav-item.dropdown {
@@ -137,8 +133,8 @@ h1, h2, h3, h4 {
 	//padding:0.5rem 2.1rem;
 	//padding:0.5rem 1rem;
 	//box-shadow:0 4px 4px #08080814, 0 1px 2px #08080833, inset 0 6px 12px #ffffff1f, inset 0 1px 1px #fff3;
-	//box-shadow:1px 1px 2px 1px rgba(var(--bs-body-color-rgb),0.07),1px 1px 2px 1px rgba(var(--bs-body-bg-rgb),0.15) inset;
-	//box-shadow:0 4px 4px rgba(var(--bs-body-color-rgb),0.08), 0 6px 12px rgba(var(--bs-body-color-rgb),0.012), 0 6px 12px rgba(var(--bs-body-bg-rgb),0.12) inset, 0 1px 1px rgba(var(--bs-body-bg-rgb),0.2) inset;
+	//box-shadow:1px 1px 2px 1px rgba(0, 0, 0,0.07),1px 1px 2px 1px rgba(255, 255, 255,0.15) inset;
+	//box-shadow:0 4px 4px rgba(0, 0, 0,0.08), 0 6px 12px rgba(0, 0, 0,0.012), 0 6px 12px rgba(255, 255, 255,0.12) inset, 0 1px 1px rgba(255, 255, 255,0.2) inset;
 	//border:none;
 	font-weight:500;
 	/*
@@ -160,14 +156,14 @@ h1, h2, h3, h4 {
 		}
 		
 		i {
-			//border-right:1px solid rgba(var(--bs-body-color-rgb), 0.1);
+			//border-right:1px solid rgba(0, 0, 0, 0.1);
 			background:transparent;
 		}
 	}
 	
 	&.btn-outline-secondary, &.btn-outline-success , &.btn-outline-danger {
-		//box-shadow:0px 0px 3px 1px rgba(var(--bs-body-color-rgb), 0.1), -1px 1px 2px 0px rgba(var(--bs-body-bg-rgb), 0.15) inset;
-		box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(var(--bs-body-color-rgb), 0.12) 0px 1px 2px 0px, rgba(var(--bs-body-color-rgb), 0.08) 0px 0px 0px 1px;
+		//box-shadow:0px 0px 3px 1px rgba(0, 0, 0, 0.1), -1px 1px 2px 0px rgba(255, 255, 255, 0.15) inset;
+		box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 		//--bs-btn-bg:var(--bs-body-bg);
 		border: none;
 		--bs-border-width:0;
@@ -179,7 +175,7 @@ h1, h2, h3, h4 {
 	}
 	
 	&.btn-secondary {
-		box-shadow:1px 1px 2px 1px rgba(var(--bs-body-color-rgb),0.07),-1px 1px 2px 0px rgba(var(--bs-body-bg-rgb),0.15) inset;
+		box-shadow:1px 1px 2px 1px rgba(0, 0, 0,0.07),-1px 1px 2px 0px rgba(255, 255, 255,0.15) inset;
 		//--bs-btn-bg:var(--bs-body-bg);
 		i {
 			background: transparent;
@@ -187,21 +183,20 @@ h1, h2, h3, h4 {
 	}
 
 	&.btn-primary {
-		//box-shadow:1px 1px 2px 1px rgba(var(--bs-body-color-rgb),0.07),1px 1px 2px 1px rgba(var(--bs-body-bg-rgb),0.15) inset;
+		//box-shadow:1px 1px 2px 1px rgba(0, 0, 0,0.07),1px 1px 2px 1px rgba(255, 255, 255,0.15) inset;
 		//box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.2) 0px 0.75px 0px 0px inset, rgba(var(--bs-primary-rgb), 0.4) 0px 1px 2px 0px, rgba(var(--bs-primary-rgb), 0.8) 0px 0px 0px 1px;
 		//padding:0.5rem 2.1rem;
 		//padding-left:2.1rem;
 		//padding-right:2.1rem;
 		--bs-btn-border-color: rgba(var(--bs-primary-rgb), 0.5);
 		//--bs-btn-bg: rgba(var(--bs-primary-rgb), 0.9);
-		box-shadow:0 4px 4px rgba(var(--bs-body-color-rgb),0.08), 0 6px 12px rgba(var(--bs-body-color-rgb),0.012), 0 6px 12px rgba(var(--bs-body-bg-rgb),0.12) inset, 0 1px 1px rgba(var(--bs-body-bg-rgb),0.2) inset;
-		--bs-btn-bg:#0030C0;
+		box-shadow:0 4px 4px rgba(0, 0, 0,0.08), 0 6px 12px rgba(0, 0, 0,0.012), 0 6px 12px rgba(255, 255, 255,0.12) inset, 0 1px 1px rgba(255, 255, 255,0.2) inset;
 		padding-left:1.2rem;
 		padding-right:1.2rem;
 		
 
 		i {
-			/*background: rgba(var(--bs-body-bg-rgb), 0.1);*/
+			/*background: rgba(255, 255, 255, 0.1);*/
 		}
 	}
 	
@@ -215,7 +210,7 @@ h1, h2, h3, h4 {
 
 	&:before {
 		content: ".";
-		background-image:linear-gradient(rgba(var(--bs-body-bg-rgb), 1), rgba(var(--bs-body-bg-rgb), 0));
+		background-image:linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 		position: absolute;
 		left: 0;
 		top: 0;
@@ -234,7 +229,7 @@ h1, h2, h3, h4 {
 	}
 
 	&.btn-outline-secondary:before,&.btn-outline-primary:after,&.btn-outline-secondary:before {
-		background-image: linear-gradient(rgba(var(--bs-body-color-rgb), 0), rgba(var(--bs-body-color-rgb), 1));
+		background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 		opacity: 0.03;
 	}
 
@@ -250,13 +245,9 @@ h1, h2, h3, h4 {
 }
 
 [data-v-component-language] .active::before {
-    content: " ";
-    background: var(--bs-primary);
-    width: 6px;
-    height: 6px;
+    content: "✓";
+    color: var(--bs-success);
     display: block;
     position: absolute;
-    left: 1.4rem;
-    margin-top: 0.5rem;
-    border-radius: 3px;
+    left: 1.2rem;
 }

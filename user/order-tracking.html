@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head data-v-save-global="index.html,head">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8">
 
@@ -350,7 +350,7 @@
 
             <li class="nav-toggle">
               <!-- Cart Area -->
-              <div class="dropdown nav-item mini-cart" data-v-component-cart>
+              <div class="dropdown nav-item mini-cart" data-v-component-cart="offcanvas">
 
                 <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
                   <!-- <img src="demo/img/bag.svg" width="20" alt> -->
@@ -395,9 +395,9 @@
 
             <div data-v-currency>
               <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
-                <span data-v-currency-sign_start>$</span>
-                <span data-v-currency-sign_end>$</span>
-                <span class="ms-1" data-v-currency-name>US Dollar</span>
+                <span class="small text-muted" data-v-currency-sign_start>$</span>
+                <span class="small text-muted" data-v-currency-sign_end>$</span>
+                <span data-v-currency-name>US Dollar</span>
               </button>
             </div>
 
@@ -756,7 +756,7 @@
                                         <span data-v-order-created_at data-filter-friendly_date>23/10/2019</span>
                                     </summary>
                                     <p>
-                                      <span class="badge bg-light text-muted" data-v-order-created_at>23/10/2019</span>
+                                      <span class="badge bg-body-tertiary  text-muted" data-v-order-created_at>23/10/2019</span>
                                       </span>
                                     </p>
                                   </details>
@@ -773,7 +773,7 @@
                                         <span data-v-order-payment_title>Cash On Delivery</span>
                                     </summary>
                                     <p>
-                                      <span class="badge bg-light text-muted" data-v-order-payment_method>Cash data-payment_method>Cash-text On Delivery</span>
+                                      <span class="badge bg-body-tertiary  text-muted" data-v-order-payment_method>Cash data-payment_method>Cash-text On Delivery</span>
                                       </span>
                                       <br />
                                       <span data-v-order-payment_description>Flat data-payment_description>Flat-text Shipping Rate</span>
@@ -793,7 +793,7 @@
                                     </summary>
 
                                     <p>
-                                      <span class="badge bg-light text-muted" data-v-order-shipping_method>Flat data-shipping_method>Flat-text Shipping Rate</span>
+                                      <span class="badge bg-body-tertiary  text-muted" data-v-order-shipping_method>Flat data-shipping_method>Flat-text Shipping Rate</span>
                                       </span>
                                       <br />
                                       <span data-v-order-shipping_description>Flat data-shipping_description>Flat-text Shipping Rate</span>
@@ -1200,7 +1200,7 @@
       <h5 class="offcanvas-title"></h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body d-flex flex-column pt-2" data-v-component-cart>
+    <div class="offcanvas-body d-flex flex-column pt-2" data-v-component-cart="offcanvas">
 
       <div class="table-responsive flex-grow-1">
         <table class="table cart-table align-middle mb-0">

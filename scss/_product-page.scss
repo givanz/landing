@@ -266,10 +266,17 @@ input.form-control[type=number] {
 	padding:2px;
 }
 
+#product .product-options .radio label {
+	position:relative;
+}
+
 #product .product-options .radio input
 {
     position: absolute;
 	z-index:-1;
+	width:auto;
+    margin-top: 3px;
+    margin-right: 2px;
 }
 
 #product .product-options .radio img

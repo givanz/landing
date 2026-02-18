@@ -15,6 +15,7 @@ window.addEventListener("vvveb.getHtml.before", function(event) {
 	doc.querySelectorAll("html[data-bs-theme]").forEach(e => e.removeAttribute("data-bs-theme"));
 	doc.querySelectorAll("[data-init]").forEach(e => e.removeAttribute("data-init"));
 	doc.querySelectorAll(".navbar").forEach(e => e.classList.remove("sticky"));
+	doc.querySelectorAll(".header").forEach(e => e.classList.remove("active"));
 
 	//make sure no dropdown is saved as open
 	doc.querySelectorAll(".dropdown-toggle.show,.nav-toggle.show, .dropdown-menu.show").forEach(e => e.classList.remove("show"));

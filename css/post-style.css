@@ -31,6 +31,8 @@ a.post-title {
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto; }
+  .post-content h1, .post-content h2 {
+    font-weight: 600; }
   .post-content blockquote {
     font-style: italic;
     padding-bottom: 3px;

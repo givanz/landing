@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head data-v-save-global="index.html,head">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8">
 
@@ -350,7 +350,7 @@
 
             <li class="nav-toggle">
               <!-- Cart Area -->
-              <div class="dropdown nav-item mini-cart" data-v-component-cart>
+              <div class="dropdown nav-item mini-cart" data-v-component-cart="offcanvas">
 
                 <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
                   <!-- <img src="demo/img/bag.svg" width="20" alt> -->
@@ -395,9 +395,9 @@
 
             <div data-v-currency>
               <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
-                <span data-v-currency-sign_start>$</span>
-                <span data-v-currency-sign_end>$</span>
-                <span class="ms-1" data-v-currency-name>US Dollar</span>
+                <span class="small text-muted" data-v-currency-sign_start>$</span>
+                <span class="small text-muted" data-v-currency-sign_end>$</span>
+                <span data-v-currency-name>US Dollar</span>
               </button>
             </div>
 
@@ -732,7 +732,7 @@
 			</li>
 			-->
 
-                <li class="page-item pager-prev lh-1" data-prev>
+                <li class="page-item pager-prev" data-prev>
 
                   <a class="page-link" aria-label="Previous" title="Previous page" data-page-url data-scroll="start" data-v-if="current_page > 1">
                     <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="21"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg> -->
@@ -760,7 +760,7 @@
                 </li>
 
                 <li class="page-item pager-next" data-next>
-                  <a class="page-link lh-1" aria-label="Next" title="Next page" data-page-url data-scroll="start" data-v-if="current_page < pagecount">
+                  <a class="page-link" aria-label="Next" title="Next page" data-page-url data-scroll="start" data-v-if="current_page < pagecount">
                     <!-- <span>Older Posts</span> -->
                     <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="21"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/></svg> -->
                     <span aria-hidden="true" class="la la-arrow-right la-lg"></span>
@@ -969,7 +969,7 @@
       <h5 class="offcanvas-title"></h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body d-flex flex-column pt-2" data-v-component-cart>
+    <div class="offcanvas-body d-flex flex-column pt-2" data-v-component-cart="offcanvas">
 
       <div class="table-responsive flex-grow-1">
         <table class="table cart-table align-middle mb-0">

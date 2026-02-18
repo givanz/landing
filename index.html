@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head data-v-save-global="index.html,head">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8">
 
@@ -357,7 +357,7 @@
 
             <li class="nav-toggle">
               <!-- Cart Area -->
-              <div class="dropdown nav-item mini-cart" data-v-component-cart>
+              <div class="dropdown nav-item mini-cart" data-v-component-cart="offcanvas">
 
                 <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
                   <!-- <img src="demo/img/bag.svg" width="20" alt> -->
@@ -402,9 +402,9 @@
 
             <div data-v-currency>
               <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
-                <span data-v-currency-sign_start>$</span>
-                <span data-v-currency-sign_end>$</span>
-                <span class="ms-1" data-v-currency-name>US Dollar</span>
+                <span class="small text-muted" data-v-currency-sign_start>$</span>
+                <span class="small text-muted" data-v-currency-sign_end>$</span>
+                <span data-v-currency-name>US Dollar</span>
               </button>
             </div>
 
@@ -1393,7 +1393,7 @@
       </div>
       <div class="row py-5">
         <div class="col-md-4 py-2 py-md-2">
-          <div class="bg-light mb-5 mb-md-0 p-2 p-lg-5 text-center position-relative" data-aos="fade-up">
+          <div class="bg-body-tertiary  mb-5 mb-md-0 p-2 p-lg-5 text-center position-relative" data-aos="fade-up">
             <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="demo/img/sections/team/1.webp" width="96">
             <div class="text-primary mb-md-4 mb-2 mt-5 mt-lg-4">
               <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1410,7 +1410,7 @@
           </div>
         </div>
         <div class="col-md-4 py-2 py-md-2">
-          <div class="bg-light mb-5 mb-md-0 p-2 p-lg-5 text-center position-relative" data-aos="fade-up" data-aos-delay="100">
+          <div class="bg-body-tertiary  mb-5 mb-md-0 p-2 p-lg-5 text-center position-relative" data-aos="fade-up" data-aos-delay="100">
             <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="demo/img/sections/team/2.webp" width="96">
             <div class="text-primary mb-md-4 mb-2 mt-5 mt-lg-4">
               <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1427,7 +1427,7 @@
           </div>
         </div>
         <div class="col-md-4 py-2 py-md-2">
-          <div class="bg-light mb-5 mb-md-0 p-2 p-lg-5 text-center position-relative" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-body-tertiary  mb-5 mb-md-0 p-2 p-lg-5 text-center position-relative" data-aos="fade-up" data-aos-delay="200">
             <img alt="" class="rounded-circle position-absolute translate-middle top-0" height="96" src="demo/img/sections/team/3.webp" width="96">
             <div class="text-primary mb-md-4 mb-2 mt-5 mt-lg-4">
               <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -2459,7 +2459,7 @@
       <h5 class="offcanvas-title"></h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body d-flex flex-column pt-2" data-v-component-cart>
+    <div class="offcanvas-body d-flex flex-column pt-2" data-v-component-cart="offcanvas">
 
       <div class="table-responsive flex-grow-1">
         <table class="table cart-table align-middle mb-0">
