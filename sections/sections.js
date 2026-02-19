@@ -75,7 +75,7 @@ Vvveb.Sections.add("hero/hero-1", {
           <span class="play-button">
             <i class="la la-play"></i>
           </span>
-          <img src="demo/img/team-1.jpg" loading="lazy" alt="Video image" class="img-fluid">
+          <img src="demo/img/team-1.webp" loading="lazy" alt="Video image" class="img-fluid">
         </a>
       </div>
     </div>
@@ -98,7 +98,7 @@ Vvveb.Sections.add("hero/hero-1", {
   </div>
 
   <div class="background-container">
-    <img src="demo/img/team-2.jpg">
+    <img src="demo/img/team-2.webp">
   </div>
 </header>`
 });Vvveb.Sections.add("hero/hero-3-full", {
@@ -214,7 +214,7 @@ Vvveb.Sections.add("hero/hero-1", {
         <h1 class="heading mb-3 display-4">The next generation website builder</h1>
         <h4 class="subheading mb-5">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h4>
 
-        <img width="480" src="demo/img/team-1.jpg" class="img-fluid shadow rounded-4">
+        <img width="480" src="demo/img/team-1.webp" class="img-fluid shadow rounded-4">
 
         <div class="buttons">
 
@@ -274,7 +274,7 @@ Vvveb.Sections.add("hero/hero-1", {
       <div class="col-12 col-md-6 order-sm-1 order-md-2">
 
         <div class="rounded-4 position-relative overflow-hidden">
-          <img class="img-fluid w-100 shadow" src="demo/img/team-1.jpg" alt="Team 1">
+          <img class="img-fluid w-100 shadow" src="demo/img/team-1.webp" alt="Team 1">
           <a class="position-absolute top-50 start-50 translate-middle glightbox d-flex justify-content-center align-items-center z-2" href="https://www.youtube.com/watch?v=rPbrR6b6ZYs">
             <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor" class="text-white" viewBox="0 0 16 16" lc-helper="svg-icon">
               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"></path>
@@ -332,7 +332,7 @@ Vvveb.Sections.add("hero/hero-1", {
         </div>
       </div>
       <div class="col-12 col-md-6 order-sm-1 order-md-2">
-        <img src="demo/img/team-1.jpg" class="shadow img-fluid rounded-4" loading="lazy">
+        <img src="demo/img/team-1.webp" class="shadow img-fluid rounded-4" loading="lazy">
       </div>
     </div>
   </div>
@@ -370,7 +370,7 @@ Vvveb.Sections.add("hero/hero-1", {
     <div>
       <div class="row align-items-center justify-content-center text-start g-5">
         <div class="col-lg-5">
-          <img src="demo/img/team-1.jpg" class="img-fluid shadow">
+          <img src="demo/img/team-1.webp" class="img-fluid shadow">
         </div>
 
         <div class="col-lg-7">
@@ -447,7 +447,7 @@ Vvveb.Sections.add("hero/hero-1", {
       <div class="col-lg-10 mx-auto text-center">
 
         <div class="rounded-4 position-relative overflow-hidden">
-          <img class="img-fluid w-100 shadow" src="demo/img/team-1.jpg" alt="Team 1">
+          <img class="img-fluid w-100 shadow" src="demo/img/team-1.webp" alt="Team 1">
           <a class="position-absolute top-50 start-50 translate-middle glightbox d-flex justify-content-center align-items-center z-2" href="https://www.youtube.com/watch?v=rPbrR6b6ZYs">
             <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor" class="text-white" viewBox="0 0 16 16" lc-helper="svg-icon">
               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"></path>
@@ -515,7 +515,7 @@ Vvveb.Sections.add("hero/hero-1", {
       <div class="col-lg-10 mx-auto text-center">
 
         <div class="rounded-4 position-relative overflow-hidden">
-          <img class="img-fluid w-100 shadow" src="demo/img/team-1.jpg" alt="Team 1">
+          <img class="img-fluid w-100 shadow" src="demo/img/team-1.webp" alt="Team 1">
           <a class="position-absolute top-50 start-50 translate-middle glightbox d-flex justify-content-center align-items-center z-2" href="https://www.youtube.com/watch?v=rPbrR6b6ZYs">
             <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor" class="text-white" viewBox="0 0 16 16" lc-helper="svg-icon">
               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"></path>
@@ -537,7 +537,7 @@ Vvveb.Sections.add("hero/hero-1", {
       <div class="col-md-6 col-xl-7 mb-4 mb-lg-0 " style="">
 
         <div class="rounded-4 position-relative overflow-hidden">
-          <img class="img-fluid w-100 shadow" src="demo/img/team-1.jpg" alt="Team 1">
+          <img class="img-fluid w-100 shadow" src="demo/img/team-1.webp" alt="Team 1">
           <a class="position-absolute top-50 start-50 translate-middle glightbox d-flex justify-content-center align-items-center z-2" href="https://www.youtube.com/watch?v=rPbrR6b6ZYs">
             <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor" class="text-white" viewBox="0 0 16 16" lc-helper="svg-icon">
               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"></path>
@@ -632,7 +632,7 @@ Vvveb.Sections.add("hero/hero-1", {
   <div class="container-fluid col-xxl-8">
     <div class="row flex-lg-nowrap align-items-center g-5">
       <div class="order-lg-1 w-100">
-        <img style="clip-path: polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%);" class="w-100" src="demo/img/team-1.jpg" alt="Team 1">
+        <img style="clip-path: polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%);" class="w-100" src="demo/img/team-1.webp" alt="Team 1">
       </div>
       <div class="col-lg-6 col-xl-5 text-center text-lg-start pt-lg-5 mt-xl-4">
         <div class="mb-4">
@@ -856,7 +856,7 @@ Vvveb.Sections.add("hero/hero-1", {
 
                 </div>
                 <div class="col-lg-6">
-                  <img src="demo/img/team-1.jpg" class="shadow" loading="lazy">
+                  <img src="demo/img/team-1.webp" class="shadow" loading="lazy">
                 </div>
               </div>
             </div>
@@ -900,7 +900,7 @@ Vvveb.Sections.add("hero/hero-1", {
             <div>
               <div class="row align-items-center justify-content-center text-start g-5">
                 <div class="col-lg-6">
-                  <img src="demo/img/team-2.jpg" class="shadow" loading="lazy">
+                  <img src="demo/img/team-2.webp" class="shadow" loading="lazy">
                 </div>
 
                 <div class="col-lg-6">
@@ -1016,12 +1016,12 @@ Vvveb.Sections.add("features/features-1", {
         </div>
       </div>
       <div class="col-md-6">
-        <img src="demo/img/team-1.jpg" alt="Macbook" loading="lazy" class="img-fluid shadow" data-aos="fade-left" />
+        <img src="demo/img/team-1.webp" alt="Macbook" loading="lazy" class="img-fluid shadow" data-aos="fade-left" />
       </div>
     </div>
     <div class="row g-5 wrap mt-2">
       <div class="col-md-6">
-        <img src="demo/img/team-2.jpg" alt="App development" loading="lazy" class="img-fluid shadow" data-aos="fade-right" />
+        <img src="demo/img/team-2.webp" alt="App development" loading="lazy" class="img-fluid shadow" data-aos="fade-right" />
       </div>
       <div class="col-md-6 align-self-center">
         <div class="max-box ms-auto" data-aos="fade-left">
@@ -1047,7 +1047,7 @@ Vvveb.Sections.add("features/features-1", {
 
   <div class="row no-gutters">
     <div class="col-lg-6">
-      <img alt="image" src="demo/img/team-1.jpg" alt="happy cat" loading="lazy" class="img-fluid">
+      <img alt="image" src="demo/img/team-1.webp" alt="happy cat" loading="lazy" class="img-fluid">
     </div>
 
     <div class="col-lg-6 bg-primary bg-gradient text-white d-flex">
@@ -1144,7 +1144,7 @@ Vvveb.Sections.add("features/features-1", {
       </div>
 
       <div class="col-lg-6">
-        <img src="demo/img/team-1.jpg" alt="dog" loading="lazy" class="img-fluid" />
+        <img src="demo/img/team-1.webp" alt="dog" loading="lazy" class="img-fluid" />
       </div>
 
       <div class="col-md-12 mt-3 text-center">
@@ -1230,7 +1230,7 @@ Vvveb.Sections.add("features/features-1", {
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 col-md-8 col-lg-6 m-md-auto ms-lg-0 me-lg-auto">
-        <img src="demo/img/team-1.jpg" alt="dog" loading="lazy" class="img-fluid" />
+        <img src="demo/img/team-1.webp" alt="dog" loading="lazy" class="img-fluid" />
       </div>
       <div class="col-12 col-lg-6 col-xl-5 ms-sm-auto pt-5 pt-lg-0">
         <h2>Open Source CMS Reinvented</h2>
@@ -1579,7 +1579,7 @@ Vvveb.Sections.add("features/features-1", {
   <div class="container">
     <div class="row text-end align-items-center">
       <div class="col-12 col-md-6 m-auto">
-        <img src="demo/img/team-1.jpg" alt="dog" loading="lazy" class="img-fluid">
+        <img src="demo/img/team-1.webp" alt="dog" loading="lazy" class="img-fluid">
       </div>
 
       <div class="col-12 col-md-7 col-lg-5 m-auto text-start pt-5">
@@ -1685,12 +1685,12 @@ Vvveb.Sections.add("features/features-1", {
         </div>
       </div>
       <div class="col-md-6">
-        <img src="demo/img/team-1.jpg" alt="Macbook" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
+        <img src="demo/img/team-1.webp" alt="Macbook" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
       </div>
     </div>
     <div class="row g-0 wrap">
       <div class="col-md-6">
-        <img src="demo/img/team-2.jpg" alt="App development" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
+        <img src="demo/img/team-2.webp" alt="App development" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
       </div>
       <div class="col-md-6 align-self-center">
         <div class="max-box ms-auto" data-aos="fade-left">
@@ -1733,7 +1733,7 @@ Vvveb.Sections.add("features/features-1", {
         </div>
       </div>
       <div class="col-md-6">
-        <img src="demo/img/team-1.jpg" alt="Macbook" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
+        <img src="demo/img/team-1.webp" alt="Macbook" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
       </div>
     </div>
   </div>
@@ -1745,7 +1745,7 @@ Vvveb.Sections.add("features/features-1", {
   <div class="container">
     <div class="row g-0 wrap">
       <div class="col-md-6">
-        <img src="demo/img/team-2.jpg" alt="App development" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
+        <img src="demo/img/team-2.webp" alt="App development" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
       </div>
       <div class="col-md-6 align-self-center">
         <div class="max-box ms-auto" data-aos="fade-left">
@@ -2200,7 +2200,7 @@ Vvveb.Sections.add("features/features-1", {
           <div class="position-relative">
             <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark mt-4 ms-4"> </div>
 
-            <img class="position-relative img-fluid" src="demo/img/team-1.jpg" alt="Team 1">
+            <img class="position-relative img-fluid" src="demo/img/team-1.webp" alt="Team 1">
           </div>
         </div>
       </div>
@@ -2382,7 +2382,7 @@ Vvveb.Sections.add("features/features-1", {
           </div>
           <div class="overlay z-1"></div>
           <div class="background-container z-0">
-            <img src="demo/img/team-1.jpg">
+            <img src="demo/img/team-1.webp">
           </div>
 
         </div>
@@ -2403,7 +2403,7 @@ Vvveb.Sections.add("features/features-1", {
           </div>
           <div class="overlay z-1"></div>
           <div class="background-container z-0">
-            <img src="demo/img/team-2.jpg">
+            <img src="demo/img/team-2.webp">
           </div>
         </div>
       </div>
@@ -2423,7 +2423,7 @@ Vvveb.Sections.add("features/features-1", {
           </div>
           <div class="overlay z-1"></div>
           <div class="background-container z-0">
-            <img src="demo/img/team-1.jpg">
+            <img src="demo/img/team-1.webp">
           </div>
         </div>
       </div>
@@ -2457,7 +2457,7 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-lg-10 mx-auto text-center">
 
         <div class="rounded-4 position-relative overflow-hidden">
-          <img class="img-fluid w-100 shadow" src="demo/img/team-1.jpg" alt="Team 1">
+          <img class="img-fluid w-100 shadow" src="demo/img/team-1.webp" alt="Team 1">
           <a class="position-absolute top-50 start-50 translate-middle glightbox d-flex justify-content-center align-items-center z-2" href="https://www.youtube.com/watch?v=rPbrR6b6ZYs">
             <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor" class="" viewBox="0 0 16 16" lc-helper="svg-icon">
               <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"></path>
@@ -3841,7 +3841,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
           <div class="row g-0">
             <div class="col-sm-6 d-none d-sm-block bg-image">
 
-              <img alt="image" src="demo/img/team-1.jpg" alt="happy cat" loading="lazy" class="img-fluid">
+              <img alt="image" src="demo/img/team-1.webp" alt="happy cat" loading="lazy" class="img-fluid">
 
             </div>
             <div class="col-sm-6 p-4" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-home">
@@ -4425,7 +4425,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
       <div class="row">
         <div class="col-lg-6">
           <div class="card-shadow">
-            <img alt="image" src="demo/img/team-1.jpg" alt="happy cat" loading="lazy" class="img-fluid">
+            <img alt="image" src="demo/img/team-1.webp" alt="happy cat" loading="lazy" class="img-fluid">
           </div>
         </div>
         <div class="col-lg-6">
@@ -4829,7 +4829,7 @@ Vvveb.Sections.add("counter/counter-1", {
   <div class="container">
     <div class="row gy-4 gy-lg-0 align-items-lg-center">
       <div class="col-12 col-lg-6">
-        <img class="img-fluid rounded-4" loading="lazy" src="demo/img/team-1.jpg" alt="Team 1">
+        <img class="img-fluid rounded-4" loading="lazy" src="demo/img/team-1.webp" alt="Team 1">
       </div>
       <div class="col-12 col-lg-6">
         <div class="row justify-content-xl-end">
@@ -4951,7 +4951,7 @@ Vvveb.Sections.add("cta/cta-1", {
 
   <div class="background-container parallax">
 
-    <img src="demo/img/team-1.jpg" alt="Team 1">
+    <img src="demo/img/team-1.webp" alt="Team 1">
 
   </div>
 
@@ -12305,7 +12305,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
   <div class="gallery masonry hover-effect" data-component-gallery="portfolio-1" id="gallery-RANDOM_ID">
     <div class="item">
       <figure>
-        <img class="img-fluid" src="demo/img/team-1.jpg" data-aos="fade-up">
+        <img class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up">
         <figcaption></figcaption>
         <h3 class="title d-none"></h3>
         <div class="description d-none"></div>
@@ -12313,7 +12313,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
     </div>
     <div class="item">
       <figure>
-        <img class="img-fluid" src="demo/img/team-2.jpg" data-aos="fade-up" data-aos-delay="100">
+        <img class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="100">
         <figcaption></figcaption>
         <h3 class="title d-none"></h3>
         <div class="description d-none"></div>
@@ -12321,7 +12321,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
     </div>
     <div class="item">
       <figure>
-        <img class="img-fluid" src="demo/img/team-1.jpg" data-aos="fade-up" data-aos-delay="200">
+        <img class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up" data-aos-delay="200">
         <figcaption></figcaption>
         <h3 class="title d-none"></h3>
         <div class="description d-none"></div>
@@ -12329,7 +12329,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
     </div>
     <div class="item">
       <figure>
-        <img class="img-fluid" src="demo/img/team-2.jpg" data-aos="fade-up" data-aos-delay="300">
+        <img class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="300">
         <figcaption></figcaption>
         <h3 class="title d-none"></h3>
         <div class="description d-none"></div>
@@ -12337,7 +12337,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
     </div>
     <div class="item">
       <figure>
-        <img class="img-fluid" src="demo/img/team-1.jpg" data-aos="fade-up" data-aos-delay="400">
+        <img class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up" data-aos-delay="400">
         <figcaption></figcaption>
         <h3 class="title d-none"></h3>
         <div class="description d-none"></div>
@@ -12345,7 +12345,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
     </div>
     <div class="item">
       <figure>
-        <img class="img-fluid" src="demo/img/team-2.jpg" data-aos="fade-up" data-aos-delay="500">
+        <img class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="500">
         <figcaption></figcaption>
         <h3 class="title d-none"></h3>
         <div class="description d-none"></div>
@@ -12353,7 +12353,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
     </div>
     <div class="item">
       <figure>
-        <img class="img-fluid" src="demo/img/team-1.jpg" data-aos="fade-up" data-aos-delay="600">
+        <img class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up" data-aos-delay="600">
         <figcaption></figcaption>
         <h3 class="title d-none"></h3>
         <div class="description d-none"></div>
@@ -12361,7 +12361,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
     </div>
     <div class="item">
       <figure>
-        <img class="img-fluid" src="demo/img/team-2.jpg" data-aos="fade-up" data-aos-delay="700">
+        <img class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="700">
         <figcaption></figcaption>
         <h3 class="title d-none"></h3>
         <div class="description d-none"></div>
@@ -12383,7 +12383,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
     <div class="gallery masonry has-shadow hover-effect" data-component-gallery="portfolio-1" id="gallery-RANDOM_ID">
       <div class="item">
         <figure>
-          <img class="img-fluid" src="demo/img/team-1.jpg" data-aos="fade-up">
+          <img class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up">
           <figcaption></figcaption>
           <h3 class="title d-none"></h3>
           <div class="description d-none"></div>
@@ -12391,7 +12391,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
       </div>
       <div class="item">
         <figure>
-          <img class="img-fluid" src="demo/img/team-2.jpg" data-aos="fade-up" data-aos-delay="100">
+          <img class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="100">
           <figcaption></figcaption>
           <h3 class="title d-none"></h3>
           <div class="description d-none"></div>
@@ -12399,7 +12399,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
       </div>
       <div class="item">
         <figure>
-          <img class="img-fluid" src="demo/img/team-1.jpg" data-aos="fade-up" data-aos-delay="200">
+          <img class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up" data-aos-delay="200">
           <figcaption></figcaption>
           <h3 class="title d-none"></h3>
           <div class="description d-none"></div>
@@ -12407,7 +12407,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
       </div>
       <div class="item">
         <figure>
-          <img class="img-fluid" src="demo/img/team-2.jpg" data-aos="fade-up" data-aos-delay="300">
+          <img class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="300">
           <figcaption></figcaption>
           <h3 class="title d-none"></h3>
           <div class="description d-none"></div>
@@ -12415,7 +12415,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
       </div>
       <div class="item">
         <figure>
-          <img class="img-fluid" src="demo/img/team-1.jpg" data-aos="fade-up" data-aos-delay="400">
+          <img class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up" data-aos-delay="400">
           <figcaption></figcaption>
           <h3 class="title d-none"></h3>
           <div class="description d-none"></div>
@@ -12423,7 +12423,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
       </div>
       <div class="item">
         <figure>
-          <img class="img-fluid" src="demo/img/team-2.jpg" data-aos="fade-up" data-aos-delay="500">
+          <img class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="500">
           <figcaption></figcaption>
           <h3 class="title d-none"></h3>
           <div class="description d-none"></div>
@@ -12446,7 +12446,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
     <div class="gallery masonry has-shadow hover-effect" data-component-gallery="portfolio-3" style="column-count: 2;" id="gallery-RANDOM_ID">
       <div class="item">
         <figure>
-          <img class="img-fluid" src="demo/img/team-1.jpg" data-aos="fade-up">
+          <img class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up">
           <figcaption></figcaption>
           <h3 class="title d-none"></h3>
           <div class="description d-none"></div>
@@ -12454,7 +12454,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
       </div>
       <div class="item">
         <figure>
-          <img class="img-fluid" src="demo/img/team-2.jpg" data-aos="fade-up" data-aos-delay="100">
+          <img class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="100">
           <figcaption></figcaption>
           <h3 class="title d-none"></h3>
           <div class="description d-none"></div>
@@ -12462,7 +12462,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
       </div>
       <div class="item">
         <figure>
-          <img class="img-fluid" src="demo/img/team-1.jpg" data-aos="fade-up" data-aos-delay="200">
+          <img class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up" data-aos-delay="200">
           <figcaption></figcaption>
           <h3 class="title d-none"></h3>
           <div class="description d-none"></div>
@@ -12470,7 +12470,7 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
       </div>
       <div class="item">
         <figure>
-          <img class="img-fluid" src="demo/img/team-2.jpg" data-aos="fade-up" data-aos-delay="300">
+          <img class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="300">
           <figcaption></figcaption>
           <h3 class="title d-none"></h3>
           <div class="description d-none"></div>
@@ -12741,7 +12741,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
                 <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="day67-dog" src="demo/img/team-1.jpg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="day67-dog" src="demo/img/team-1.webp" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -12754,7 +12754,7 @@ Vvveb.Sections.add("posts/posts-1", {
                 </div>
                 <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="day22-owl" src="demo/img/team-2.jpg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="day22-owl" src="demo/img/team-2.webp" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -12766,7 +12766,7 @@ Vvveb.Sections.add("posts/posts-1", {
                 </div>
                 <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="day68-happy-cat" src="demo/img/team-1.jpg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="day68-happy-cat" src="demo/img/team-1.webp" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -12784,7 +12784,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="day79-coffee" src="demo/img/team-1.jpg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="day79-coffee" src="demo/img/team-1.webp" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -12797,7 +12797,7 @@ Vvveb.Sections.add("posts/posts-1", {
                 </div>
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="109-map-location" src="demo/img/team-2.jpg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="109-map-location" src="demo/img/team-2.webp" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -12809,7 +12809,7 @@ Vvveb.Sections.add("posts/posts-1", {
                 </div>
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="107-healthy" src="demo/img/team-1.jpg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="107-healthy" src="demo/img/team-1.webp" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -12827,7 +12827,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="126-namaste-no-hand-shake" src="demo/img/team-1.jpg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="126-namaste-no-hand-shake" src="demo/img/team-1.webp" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -12840,7 +12840,7 @@ Vvveb.Sections.add("posts/posts-1", {
                 </div>
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="104-dumbbell" src="demo/img/team-2.jpg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="104-dumbbell" src="demo/img/team-2.webp" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -12852,7 +12852,7 @@ Vvveb.Sections.add("posts/posts-1", {
                 </div>
                 <div class="col-md-4 mb-3" data-v-post>
                   <div class="card">
-                    <img class="img-fluid" loading="lazy" alt="day50-pirahna" src="demo/img/team-1.jpg" data-v-post-image>
+                    <img class="img-fluid" loading="lazy" alt="day50-pirahna" src="demo/img/team-1.webp" data-v-post-image>
                     <div class="card-body">
                       <a href="content/post.html" data-v-post-url>
                         <h4 class="card-title" data-v-post-name>Interdum et malesuada</h4>
@@ -12965,7 +12965,7 @@ Vvveb.Sections.add("posts/posts-1", {
           <div data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
             <div class="card border-0" data-v-if="index = 0">
               <a href="" data-v-post-url>
-                <img alt="" class="img-fluid rounded" src="demo/img/team-1.jpg" data-v-post-image>
+                <img alt="" class="img-fluid rounded" src="demo/img/team-1.webp" data-v-post-image>
               </a>
               <div class="card-body px-0">
 
@@ -12993,7 +12993,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
               <div class="card border-0">
                 <a href="" data-v-post-url>
-                  <img alt="" class="img-fluid rounded" src="demo/img/team-1.jpg" data-v-post-image>
+                  <img alt="" class="img-fluid rounded" src="demo/img/team-1.webp" data-v-post-image>
                 </a>
                 <div class="card-body px-0">
 
@@ -13017,7 +13017,7 @@ Vvveb.Sections.add("posts/posts-1", {
             <div class="col-6" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
               <div class="card border-0">
                 <a href="">
-                  <img alt="" class="img-fluid rounded" src="demo/img/team-1.jpg" data-v-post-image>
+                  <img alt="" class="img-fluid rounded" src="demo/img/team-1.webp" data-v-post-image>
                 </a>
                 <div class="card-body px-0">
                   <a class="text-primary fw-semibold text-decoration-none" href="">Category</a>
@@ -13032,7 +13032,7 @@ Vvveb.Sections.add("posts/posts-1", {
             <div class="col-6" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
               <div class="card border-0">
                 <a href="">
-                  <img alt="" class="img-fluid rounded" src="demo/img/team-1.jpg" data-v-post-image>
+                  <img alt="" class="img-fluid rounded" src="demo/img/team-1.webp" data-v-post-image>
                 </a>
                 <div class="card-body px-0">
                   <a class="text-primary fw-semibold text-decoration-none" href="">Category</a>
@@ -13047,7 +13047,7 @@ Vvveb.Sections.add("posts/posts-1", {
             <div class="col-6" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
               <div class="card border-0">
                 <a href="">
-                  <img alt="" class="img-fluid rounded" src="demo/img/team-1.jpg" data-v-post-image>
+                  <img alt="" class="img-fluid rounded" src="demo/img/team-1.webp" data-v-post-image>
                 </a>
                 <div class="card-body px-0">
                   <a class="text-primary fw-semibold text-decoration-none" href="">Category</a>
@@ -13081,7 +13081,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
       <div class="row align-items-center gy-md-5 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
         <div class="col-md-6">
-          <img alt="" class="img-fluid rounded my-md-0 my-4" src="demo/img/team-1.jpg" data-v-post-image>
+          <img alt="" class="img-fluid rounded my-md-0 my-4" src="demo/img/team-1.webp" data-v-post-image>
         </div>
         <div class="col-md-6">
           <div data-v-categories>
@@ -13109,7 +13109,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
       <div class="row align-items-center gy-md-5 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
         <div class="col-md-6">
-          <img alt="" class="img-fluid rounded my-md-0 my-4" src="demo/img/team-1.jpg" data-v-post-image>
+          <img alt="" class="img-fluid rounded my-md-0 my-4" src="demo/img/team-1.webp" data-v-post-image>
         </div>
         <div class="col-md-6">
           <div data-v-categories>
@@ -13135,7 +13135,7 @@ Vvveb.Sections.add("posts/posts-1", {
 
       <div class="row align-items-center gy-md-5 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
         <div class="col-md-6">
-          <img alt="" class="img-fluid rounded my-md-0 my-4" src="demo/img/team-1.jpg" data-v-post-image>
+          <img alt="" class="img-fluid rounded my-md-0 my-4" src="demo/img/team-1.webp" data-v-post-image>
         </div>
         <div class="col-md-6">
           <div data-v-categories>
@@ -13179,7 +13179,7 @@ Vvveb.Sections.add("posts/posts-1", {
       <div data-v-post>
         <div class="row align-items-center gy-md-5 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="{$index}00" data-v-if="index % 2 = 0">
           <div class="col-md-6">
-            <img alt="" class="img-fluid rounded my-md-0 my-4" src="demo/img/team-1.jpg" data-v-post-image>
+            <img alt="" class="img-fluid rounded my-md-0 my-4" src="demo/img/team-1.webp" data-v-post-image>
           </div>
           <div class="col-md-6">
             <div data-v-categories>
@@ -13227,7 +13227,7 @@ Vvveb.Sections.add("posts/posts-1", {
             <a class="btn-link" href="">Read more</a>
           </div>
           <div class="col-md-6">
-            <img alt="" class="img-fluid rounded my-md-0 my-4" src="demo/img/team-1.jpg" data-v-post-image>
+            <img alt="" class="img-fluid rounded my-md-0 my-4" src="demo/img/team-1.webp" data-v-post-image>
           </div>
         </div>
       </div>
@@ -13254,7 +13254,7 @@ Vvveb.Sections.add("posts/posts-1", {
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
           <div class="card border-0">
             <a href="" data-v-post-url>
-              <img alt="" class="img-fluid rounded" src="demo/img/team-1.jpg" data-v-post-image>
+              <img alt="" class="img-fluid rounded" src="demo/img/team-1.webp" data-v-post-image>
             </a>
             <div class="card-body px-0 mb-3">
               <div data-v-categories>
@@ -13276,7 +13276,7 @@ Vvveb.Sections.add("posts/posts-1", {
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
           <div class="card border-0">
             <a href="" data-v-post-url>
-              <img alt="" class="img-fluid rounded" src="demo/img/team-1.jpg" data-v-post-image>
+              <img alt="" class="img-fluid rounded" src="demo/img/team-1.webp" data-v-post-image>
             </a>
             <div class="card-body px-0 mb-3">
               <div data-v-categories>
@@ -13298,7 +13298,7 @@ Vvveb.Sections.add("posts/posts-1", {
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
           <div class="card border-0">
             <a href="" data-v-post-url>
-              <img alt="" class="img-fluid rounded" src="demo/img/team-1.jpg" data-v-post-image>
+              <img alt="" class="img-fluid rounded" src="demo/img/team-1.webp" data-v-post-image>
             </a>
             <div class="card-body px-0 mb-3">
               <div data-v-categories>
@@ -13320,7 +13320,7 @@ Vvveb.Sections.add("posts/posts-1", {
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="{$index}00" data-v-post>
           <div class="card border-0">
             <a href="" data-v-post-url>
-              <img alt="" class="img-fluid rounded" src="demo/img/team-1.jpg" data-v-post-image>
+              <img alt="" class="img-fluid rounded" src="demo/img/team-1.webp" data-v-post-image>
             </a>
             <div class="card-body px-0 mb-3">
               <div data-v-categories>
@@ -13488,7 +13488,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
             </div>
           </div>
           <div class=" bg-primary">
-            <img style="mix-blend-mode:overlay" class="img-fluid" src="demo/img/team-1.jpg" alt="Team 2" loading="lazy">
+            <img style="mix-blend-mode:overlay" class="img-fluid" src="demo/img/team-1.webp" alt="Team 2" loading="lazy">
           </div>
         </div>
       </div>
@@ -14176,7 +14176,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col-12 col-lg-4">
         <div class="text-center rounded border shadow-sm py-5 mb-5">
           <div class="text-center">
-            <img src="demo/img/team-1.jpg" alt="Team 1" style="" loading="lazy" class="w-50 mb-2 rounded-4">
+            <img src="demo/img/team-1.webp" alt="Team 1" style="" loading="lazy" class="w-50 mb-2 rounded-4">
           </div>
           <div class="text-center">
             <div editable="rich">
@@ -14229,7 +14229,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col-12 col-lg-4" style="z-index: 5;">
         <div class="text-center mb-5 py-5 shadow bg-white shadow-lg text-dark" style="border-radius: 12px;z-index: 2;transform: scale(1.2);">
           <div class="text-center">
-            <img src="demo/img/team-2.jpg" alt="Team 2" style="" loading="lazy" class="w-50 mb-2 rounded-4">
+            <img src="demo/img/team-2.webp" alt="Team 2" style="" loading="lazy" class="w-50 mb-2 rounded-4">
           </div>
           <div class="text-center">
             <div editable="rich">
@@ -14600,7 +14600,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col">
         <div class="d-grid d-sm-flex gap-3 gap-xl-4">
           <div class="d-flex d-sm-block flex-shrink-0 col-sm-3">
-            <img class="position-relative img-fluid" src="demo/img/team-1.jpg" alt="Team 1">
+            <img class="position-relative img-fluid" src="demo/img/team-1.webp" alt="Team 1">
           </div>
           <div class="w-100">
             <div class="d-flex gap-2 align-items-baseline">
@@ -14625,7 +14625,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col">
         <div class="d-grid d-sm-flex gap-3 gap-xl-4">
           <div class="d-flex d-sm-block flex-shrink-0 col-sm-3">
-            <img class="position-relative img-fluid" src="demo/img/team-2.jpg" alt="Team 2">
+            <img class="position-relative img-fluid" src="demo/img/team-2.webp" alt="Team 2">
           </div>
           <div class="w-100">
             <div class="d-flex gap-2 align-items-baseline">
@@ -14650,7 +14650,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col">
         <div class="d-grid d-sm-flex gap-3 gap-xl-4">
           <div class="d-flex col-sm-3 d-sm-block flex-shrink-0">
-            <img class="position-relative img-fluid" src="demo/img/team-1.jpg" alt="Team 1">
+            <img class="position-relative img-fluid" src="demo/img/team-1.webp" alt="Team 1">
           </div>
           <div class="w-100">
             <div class="d-flex gap-2 align-items-baseline">
@@ -14675,7 +14675,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col">
         <div class="d-grid d-sm-flex gap-3 gap-xl-4">
           <div class="d-flex col-sm-3 d-sm-block flex-shrink-0">
-            <img class="position-relative img-fluid" src="demo/img/team-2.jpg" alt="Team 2">
+            <img class="position-relative img-fluid" src="demo/img/team-2.webp" alt="Team 2">
           </div>
           <div class="w-100">
             <div class="d-flex gap-2 align-items-baseline">
@@ -14700,7 +14700,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col">
         <div class="d-grid d-sm-flex gap-3 gap-xl-4">
           <div class="d-flex col-sm-3 d-sm-block flex-shrink-0">
-            <img class="position-relative img-fluid" src="demo/img/team-1.jpg" alt="Team 1">
+            <img class="position-relative img-fluid" src="demo/img/team-1.webp" alt="Team 1">
           </div>
           <div class="w-100">
             <div class="d-flex gap-2 align-items-baseline">
@@ -14725,7 +14725,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col">
         <div class="d-grid d-sm-flex gap-3 gap-xl-4">
           <div class="d-flex col-sm-3 d-sm-block flex-shrink-0">
-            <img class="position-relative img-fluid" src="demo/img/team-2.jpg" alt="Team 2">
+            <img class="position-relative img-fluid" src="demo/img/team-2.webp" alt="Team 2">
           </div>
           <div class="w-100">
             <div class="d-flex gap-2 align-items-baseline">
@@ -14750,7 +14750,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col">
         <div class="d-grid d-sm-flex gap-3 gap-xl-4">
           <div class="d-flex col-sm-3 d-sm-block flex-shrink-0">
-            <img class="position-relative img-fluid" src="demo/img/team-1.jpg" alt="Team 1">
+            <img class="position-relative img-fluid" src="demo/img/team-1.webp" alt="Team 1">
           </div>
           <div class="w-100">
             <div class="d-flex gap-2 align-items-baseline">
@@ -14775,7 +14775,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col">
         <div class="d-grid d-sm-flex gap-3 gap-xl-4">
           <div class="d-flex col-sm-3 d-sm-block flex-shrink-0">
-            <img class="position-relative img-fluid" src="demo/img/team-2.jpg" alt="Team 2">
+            <img class="position-relative img-fluid" src="demo/img/team-2.webp" alt="Team 2">
           </div>
           <div class="w-100">
             <div class="d-flex gap-2 align-items-baseline">
