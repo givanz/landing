@@ -981,8 +981,8 @@ function initSwiper(onlyNew = false) {
 			}
 			params[i] = param;
 		}
-		swiper.push(new Swiper(el, params))
-		//swiper.push(new Swiper(el, { ...{autoplay:{delay: 500}}, ...el.dataset}))		
+		if(params.autoplay == 'true')params.autoplay = {'delay':params.delay};
+		swiper.push(new Swiper(el, params))		
 	});
 }	
 
