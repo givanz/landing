@@ -154,10 +154,11 @@
     }
     &:hover {
         .product-image {
+			/*
 			img {
 				opacity: 0;
 				visibility: visible;
-			}
+			}*/
             
             img.hover-img {
                 opacity: 1;
@@ -244,7 +245,7 @@
 	}
 }
 */
-
+/*
 .range-input {
 	position: relative;
 	
@@ -308,3 +309,4 @@
 		}
 	}
 }
+*/

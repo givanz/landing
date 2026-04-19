@@ -105,10 +105,10 @@
               </a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/" role="button">Demo</a>
+              <a class="nav-link dropdown-toggle" href="//demo.vvveb.com/admin/index.php?module=/editor/editor&template=index.html&url=/" role="button">Demo</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/">Page builder</a>
-                <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin">Admin dashboard</a>
+                <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/index.php?module=/editor/editor&template=index.html&url=/">Page builder</a>
+                <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/index.php">Admin dashboard</a>
                 <a class="dropdown-item" target="_blank" href="//demo.vvveb.com">Frontend</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" target="_blank" href="https://vercel-vvveb-commerce.vercel.app/">Next.js Frontend GraphQL</a>
@@ -118,7 +118,7 @@
 
             <li class="nav-toggle">
               <!-- User Login Info -->
-              <div class="dropdown nav-item">
+              <div class="dropdown">
                 <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                   <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                   <!-- <i class="la la-lg la-user"></i> -->
@@ -336,7 +336,29 @@
                 </div>
               </button>
             </li>
+            <li class="nav-toggle">
+              <div class="dropdown" data-v-component-language>
+                <form method="post" enctype="multipart/form-data" id="form-language">
 
+                  <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
+                    <!-- <img src="" data-v-language-info-img> -->
+                    <span class="" data-v-language-info-slug>English</span>
+                  </a>
+
+
+                  <div class="dropdown-menu">
+
+                    <div class="dropdown-item" data-v-language>
+                      <button class="btn" type="submit" value="eng" name="language" data-v-language-code>
+                        <img src="" loading="lazy" class="me-1" data-v-language-img>
+                        <span data-v-language-name>English</span>
+                      </button>
+                    </div>
+
+                  </div>
+                </form>
+              </div>
+            </li>
             <li class="nav-item">
               <a id="color-theme-switch" class="nav-link" role="button" title="Switch sidebar color theme">
                 <i class="la la-sun"></i>
@@ -405,7 +427,7 @@
       <div class="heading">
         <h1 class="display-1">Open Source CMS Reinvented</h1>
 
-        <h2 class="fs-3 text-muted">Powerful and easy to use drag and drop website builder for blogs, websites or ecommerce stores.</h2>
+        <h2 class="fs-2 text-muted">Powerful and easy to use drag and drop website builder for blogs, websites or ecommerce stores.</h2>
 
         <div class="btns">
           <a class="btn btn-primary btn-lg btn-shadow" href="/page/download" role="button">
@@ -1023,14 +1045,15 @@
 
   <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content shadow">
+      <button type="button" class="btn-close btn-close-white small" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-content shadow border-0">
         <div class="modal-body p-0">
 
-          <form action="/search" method="get">
+          <form action="{$this.global.path}/search" method="get">
             <input type="hidden" name="route" value="search" />
             <div class="d-flex">
               <div class="input-group">
-                <input type="search" name="search" class="form-control border-0 p-3 px-4" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup" />
+                <input type="search" name="search" class="form-control border-0 p-3 px-4" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="input" data-url="{$this.global.path}/search" />
                 <button class="btn btn-outline-primary border-0" type="submit" title="Search">
                   <div class="la-flip-horizontal">
                     <i class="la la-search la-lg" aria-hidden="true"></i>
@@ -1051,7 +1074,6 @@
 
         </div>
       </div>
-      <button type="button" class="btn-close btn-close-white small" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
 
   </div>
@@ -1164,7 +1186,7 @@
                 </td>
                 <td class="text-end">
                   <span data-v-cart-total-text data-v-if="total.text"> - </span>
-                  <span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
+                  <span data-v-cart-total-value_formatted data-v-if="total.value != 0">$101.00</span>
                 </td>
               </tr>
               <tr data-v-cart-total>
@@ -1187,7 +1209,7 @@
               </tr>
               <tr>
                 <td colspan="5" class="text-end">Total:</td>
-                <td class="text-end" data-v-grand-total_formatted>$0</td>
+                <td class="text-end" data-v-cart-total_formatted>$0</td>
               </tr>
             </tfoot>
 

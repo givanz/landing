@@ -22,10 +22,17 @@
 			  <div class="col-md-6">
 				<h1 class="mb-2" data-v-category-name>Category name</h1>
 				
+				<div class="row">
+					<div class="col" data-v-if="this.category.image">
+						<img class="img-fluid rounded-2 mb-3" src="demo/img/hero-3.webp"  width="200" src="" loading="lazy" alt="Card image cap" data-aos="zoom-in-up" data-aos-duration="200" data-v-category-image_url>
+					</div>
+					<div class="col">
+						<div class="mb-3" data-v-category-content>Category description</div>
+					</div>
+				</div>
+				
 				@@include('../_includes/breadcrumb.html')
-				
-				<img class="img-thumbnail mb-3" width="200" src="" data-v-if="this.category.image" data-v-category-image_url>
-				
+								
 				@@include('../_includes/fields.html', {"type": "taxonomy_item", "subtype":"categories"})
 				
 			  </div>

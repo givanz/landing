@@ -83,7 +83,7 @@
 		  <div class="p-3 pt-0" data-v-if="cart.total_items">
 
 			<details>
-				<summary class="text-end"><span>Total:</span><span class="fw-semibold" data-v-grand-total_formatted>$0</span></summary>
+				<summary class="text-end"><span>Total:</span><span class="fw-semibold" data-v-cart-total_formatted>$0</span></summary>
 
 				<div class="table-responsive mb-2" data-v-cart-totals>
 						<table class="table mb-0 cart-table cart-total" cellspacing="0">
@@ -92,7 +92,7 @@
 								 <td colspan="5" class="text-end"><small data-v-cart-total-title>Sub-Total</small>:</td>
 								 <td class="text-end">
 									<span data-v-cart-total-text data-v-if="total.text"> - </span>
-									<span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
+									<span data-v-cart-total-value_formatted data-v-if="total.value != 0">$101.00</span>
 								 </td>
 							  </tr>
 							  <tr data-v-cart-total>
@@ -109,7 +109,7 @@
 							  </tr> 
 							  <tr>
 								 <td colspan="5" class="text-end">Total:</td>
-								 <td class="text-end" data-v-grand-total_formatted>$0</td>
+								 <td class="text-end" data-v-cart-total_formatted>$0</td>
 							  </tr>
 						   </tfoot>
 

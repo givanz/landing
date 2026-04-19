@@ -41,7 +41,7 @@
 
 <body>
 
-  <nav class="navigation-1 clearfix" data-v-save-global="blank.html,.navigation-1">
+  <nav class="navigation-1 clearfix" data-v-save-global="index.html,.navigation-1">
     <div class="navbar navbar-expand-md">
 
       <div class="container">
@@ -62,41 +62,46 @@
 
         <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
           <ul class="navbar-nav ms-auto" data-v-menu-items>
-            <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
+            <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-              <a class="nav-link dropdown-toggle" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
-                <span data-v-menu-item-name data-v-if-not="category.type = 'text' && category.name"></span>
-                <span data-v-menu-item-content data-v-if="category.content">
+              <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
+                <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                <span data-v-menu-item-name></span>
+                <span data-v-menu-item-content>
                   <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
                 </span>
               </a>
 
               <div class="dropdown-menu" data-v-menu-item-recursive>
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                  <a class="dropdown-item" data-v-class-if-active="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
-                    <span data-v-menu-item-content data-v-if="category.content">
-                      <div class="row">
-                        <div class="col-6 align-self-center">
-                          <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                  <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                    <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                    <div>
+                      <span data-v-menu-item-name></span>
+                      <span data-v-menu-item-content>
+                        <div class="row">
+                          <div class="col-6 align-self-center">
+                            <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                          </div>
+                          <div class="col-6">
+                            <h4>Features</h4>
+                            <p class="text-muted">Just a few mentions, but there is more</p>
+                            <ul class="list-unstyled">
+                              <li class="text-primary">Page builder</li>
+                              <li class="text-primary">Mega menu</li>
+                              <li class="text-primary">Multi language</li>
+                              <li class="text-primary">Advanced SEO</li>
+                              <li class="text-primary">Ecommerce</li>
+                            </ul>
+                          </div>
                         </div>
-                        <div class="col-6">
-                          <h4>Features</h4>
-                          <p class="text-muted">Just a few mentions, but there is more</p>
-                          <ul class="list-unstyled">
-                            <li class="text-primary">Page builder</li>
-                            <li class="text-primary">Mega menu</li>
-                            <li class="text-primary">Multi language</li>
-                            <li class="text-primary">Advanced SEO</li>
-                            <li class="text-primary">Ecommerce</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </span>
+                      </span>
+                    </div>
                   </a>
                 </div>
+
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-show="category.active" data-v-menu-item-url>
                     <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
                     <span data-v-menu-item-content></span>
                   </a>
@@ -104,7 +109,7 @@
               </div>
             </li>
             <li class="nav-item dropdown" data-v-menu-item>
-              <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-v-menu-item-url>
+              <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
                 <span data-v-menu-item-name>Blog</span>
               </a>
 
@@ -136,7 +141,7 @@
 
             <li class="nav-toggle">
               <!-- User Login Info -->
-              <div class="dropdown nav-item">
+              <div class="dropdown">
                 <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                   <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                   <!-- <i class="la la-lg la-user"></i> -->
@@ -350,7 +355,7 @@
 
             <li class="nav-toggle">
               <!-- Cart Area -->
-              <div class="dropdown nav-item mini-cart" data-v-component-cart="offcanvas">
+              <div class="dropdown mini-cart" data-v-component-cart="offcanvas">
 
                 <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
                   <!-- <img src="demo/img/bag.svg" width="20" alt> -->
@@ -361,7 +366,7 @@
                     <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
 
-                  <strong class="badge bg-primary" data-v-total_items data-v-if="cart.total_items > 0"></strong>
+                  <strong class="badge bg-primary" data-v-cart-total_items data-v-if="cart.total_items > 0"></strong>
                 </a>
 
 
@@ -370,7 +375,7 @@
             </li>
 
             <li class="nav-toggle">
-              <div class="dropdown nav-item" data-v-component-language>
+              <div class="dropdown" data-v-component-language>
                 <div data-v-component-currency>
                   <form method="post" enctype="multipart/form-data" id="form-language">
 
@@ -382,8 +387,8 @@
 
                     <div class="dropdown-menu">
 
-                      <div data-v-language>
-                        <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+                      <div class="dropdown-item" data-v-language>
+                        <button class="btn" type="submit" value="eng" name="language" data-v-language-code>
                           <img src="" loading="lazy" class="me-1" data-v-language-img>
                           <span data-v-language-name>English</span>
                         </button>
@@ -393,8 +398,8 @@
               <hr class="dropdown-divider">
             </li>
 
-            <div data-v-currency>
-              <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+            <div class="dropdown-item" data-v-currency>
+              <button class="btn" type="submit" value="USD" name="currency" data-v-currency-code>
                 <span class="small text-muted" data-v-currency-sign_start>$</span>
                 <span class="small text-muted" data-v-currency-sign_end>$</span>
                 <span data-v-currency-name>US Dollar</span>
@@ -636,7 +641,6 @@
 
                 <article class="single-product-wrapper">
                   <!-- Product Image -->
-                  <a href="product/product.html" data-v-product-url> </a>
                   <div class="product-image">
                     <a href="product/product.html" data-v-product-url>
 
@@ -939,14 +943,15 @@
 
   <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content shadow">
+      <button type="button" class="btn-close btn-close-white small" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-content shadow border-0">
         <div class="modal-body p-0">
 
-          <form action="/search" method="get">
+          <form action="{$this.global.path}/search" method="get">
             <input type="hidden" name="route" value="search" />
             <div class="d-flex">
               <div class="input-group">
-                <input type="search" name="search" class="form-control border-0 p-3 px-4" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup" />
+                <input type="search" name="search" class="form-control border-0 p-3 px-4" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="input" data-url="{$this.global.path}/search" />
                 <button class="btn btn-outline-primary border-0" type="submit" title="Search">
                   <div class="la-flip-horizontal">
                     <i class="la la-search la-lg" aria-hidden="true"></i>
@@ -967,7 +972,6 @@
 
         </div>
       </div>
-      <button type="button" class="btn-close btn-close-white small" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
 
   </div>
@@ -1080,7 +1084,7 @@
                 </td>
                 <td class="text-end">
                   <span data-v-cart-total-text data-v-if="total.text"> - </span>
-                  <span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
+                  <span data-v-cart-total-value_formatted data-v-if="total.value != 0">$101.00</span>
                 </td>
               </tr>
               <tr data-v-cart-total>
@@ -1103,7 +1107,7 @@
               </tr>
               <tr>
                 <td colspan="5" class="text-end">Total:</td>
-                <td class="text-end" data-v-grand-total_formatted>$0</td>
+                <td class="text-end" data-v-cart-total_formatted>$0</td>
               </tr>
             </tfoot>
 

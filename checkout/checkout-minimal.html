@@ -538,7 +538,7 @@
                         <details>
                           <summary class="text-end">
                             <span>Total:</span>
-                            <span class="fw-semibold" data-v-grand-total_formatted>$0</span>
+                            <span class="fw-semibold" data-v-cart-total_formatted>$0</span>
                           </summary>
 
                           <div class="table-responsive mb-2" data-v-cart-totals>
@@ -550,7 +550,7 @@
                                   </td>
                                   <td class="text-end">
                                     <span data-v-cart-total-text data-v-if="total.text"> - </span>
-                                    <span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
+                                    <span data-v-cart-total-value_formatted data-v-if="total.value != 0">$101.00</span>
                                   </td>
                                 </tr>
                                 <tr data-v-cart-total>
@@ -573,7 +573,7 @@
                                 </tr>
                                 <tr>
                                   <td colspan="5" class="text-end">Total:</td>
-                                  <td class="text-end" data-v-grand-total_formatted>$0</td>
+                                  <td class="text-end" data-v-cart-total_formatted>$0</td>
                                 </tr>
                               </tfoot>
 
@@ -958,14 +958,15 @@
 
   <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content shadow">
+      <button type="button" class="btn-close btn-close-white small" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-content shadow border-0">
         <div class="modal-body p-0">
 
-          <form action="/search" method="get">
+          <form action="{$this.global.path}/search" method="get">
             <input type="hidden" name="route" value="search" />
             <div class="d-flex">
               <div class="input-group">
-                <input type="search" name="search" class="form-control border-0 p-3 px-4" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="keyup" />
+                <input type="search" name="search" class="form-control border-0 p-3 px-4" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="input" data-url="{$this.global.path}/search" />
                 <button class="btn btn-outline-primary border-0" type="submit" title="Search">
                   <div class="la-flip-horizontal">
                     <i class="la la-search la-lg" aria-hidden="true"></i>
@@ -986,7 +987,6 @@
 
         </div>
       </div>
-      <button type="button" class="btn-close btn-close-white small" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
 
   </div>
@@ -1099,7 +1099,7 @@
                 </td>
                 <td class="text-end">
                   <span data-v-cart-total-text data-v-if="total.text"> - </span>
-                  <span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
+                  <span data-v-cart-total-value_formatted data-v-if="total.value != 0">$101.00</span>
                 </td>
               </tr>
               <tr data-v-cart-total>
@@ -1122,7 +1122,7 @@
               </tr>
               <tr>
                 <td colspan="5" class="text-end">Total:</td>
-                <td class="text-end" data-v-grand-total_formatted>$0</td>
+                <td class="text-end" data-v-cart-total_formatted>$0</td>
               </tr>
             </tfoot>
 

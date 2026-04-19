@@ -35,10 +35,12 @@ $card-bg: transparent;
 //$dropdown-link-active-color:var(--bs-body-color);
 //$dropdown-link-active-bg:var(--bs-secondary-bg);
 $dropdown-padding-y:0;
+$navbar-light-toggler-border-color:transparent;
 
 //$input-btn-font-size:0.875rem;
 $accordion-border-color: rgba(var(--bs-body-color-rgb), 0.1);
 $accordion-icon-width: 1rem;
+$spinner-border-width: 0.15em;
 
 .page-item {
 	margin:0 0.2rem;
@@ -74,12 +76,6 @@ $enable-cssgrid: false;
     --bs-btn-font-weight: 500;
 }
 
-.nav-item.dropdown {
-	.dropdown-menu {
-		margin-top: -1.5rem;
-	}
-}
-
 .sidebar-sticky {
 	background-color: rgba(var(--bs-body-color-rgb), 0.025);
 	border: 1px solid rgba(var(--bs-body-color-rgb), 0.04);
@@ -92,11 +88,12 @@ $enable-cssgrid: false;
     border-bottom: 1px solid rgba(var(--bs-body-color-rgb),.05);
 }
 
-
+/*
 .post h1 {
 	@extend .display-4;
 	font-weight: 600;
 }
+*/
 
 h1, h2, h3, h4 {
 	letter-spacing: -0.03em;
@@ -191,8 +188,6 @@ h1, h2, h3, h4 {
 		--bs-btn-border-color: rgba(var(--bs-primary-rgb), 0.5);
 		//--bs-btn-bg: rgba(var(--bs-primary-rgb), 0.9);
 		box-shadow:0 4px 4px rgba(0, 0, 0,0.08), 0 6px 12px rgba(0, 0, 0,0.012), 0 6px 12px rgba(255, 255, 255,0.12) inset, 0 1px 1px rgba(255, 255, 255,0.2) inset;
-		padding-left:1.2rem;
-		padding-right:1.2rem;
 		
 
 		i {
@@ -235,8 +230,9 @@ h1, h2, h3, h4 {
 
 }
 
-[data-v-component-language] .dropdown-item {
+[data-v-component-language] .dropdown-item, [data-v-component-currency] .dropdown-item {
     font-size: 14px;
+    position:relative;
 }
 
 [data-v-component-language] .active {
@@ -244,10 +240,11 @@ h1, h2, h3, h4 {
     color: var(--bs-body-color);
 }
 
-[data-v-component-language] .active::before {
+[data-v-component-language] .active::after, [data-v-component-currency] .active::after {
     content: "✓";
     color: var(--bs-success);
     display: block;
     position: absolute;
-    left: 1.2rem;
+    right: 1.2rem;
+    top: 0.8rem;
 }

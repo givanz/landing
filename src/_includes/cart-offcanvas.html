@@ -1,5 +1,5 @@
 <!-- Cart Area -->
-<div class="dropdown nav-item mini-cart" data-v-component-cart="offcanvas">
+<div class="dropdown mini-cart" data-v-component-cart="offcanvas">
 	
 	<a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
 		<!-- <img src="demo/img/bag.svg" width="20" alt> -->
@@ -7,7 +7,7 @@
 		<i class="la la-lg la-shopping-bag"></i><span class="visually-hidden">Cart</span>
 		-->
 		@@include('cart-icon.html', {"width": "20px"})
-		<strong class="badge bg-primary" data-v-total_items data-v-if="cart.total_items > 0"></strong>
+		<strong class="badge bg-primary" data-v-cart-total_items data-v-if="cart.total_items > 0"></strong>
 	</a>
 					
 	

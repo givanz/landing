@@ -7,12 +7,12 @@ Vvveb theme VvvebJs editor integration
 window.addEventListener("vvveb.getHtml.before", function(event) {
 	let doc = event.detail;
 	//remove sticky class from navbar
-	if (event.detail.defaultView.navbarSticky){
-		event.detail.defaultView.navbarSticky(false);
+	if (doc.defaultView.navbarSticky){
+		doc.defaultView.navbarSticky(false);
 	}
-	//event.detail.defaultView.scrollTo(0,0);
+	//doc.defaultView.scrollTo(0,0);
 	//set theme color scheme to auto 
-	doc.querySelectorAll("html[data-bs-theme]").forEach(e => e.removeAttribute("data-bs-theme"));
+	//doc.querySelectorAll("html[data-bs-theme]").forEach(e => e.removeAttribute("data-bs-theme"));
 	doc.querySelectorAll("[data-init]").forEach(e => e.removeAttribute("data-init"));
 	doc.querySelectorAll(".navbar").forEach(e => e.classList.remove("sticky"));
 	doc.querySelectorAll(".header").forEach(e => e.classList.remove("active"));

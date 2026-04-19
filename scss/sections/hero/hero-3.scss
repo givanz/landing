@@ -42,9 +42,9 @@
 		> div {
 			position: relative;
 			height: 100%;
-			min-height:960px;
-			min-height:calc(100vh - 200px);
-			min-height:calc(max(100vh - 200px, 1080px));
+			min-height:720px;
+			min-height:calc(100vh - 100px);
+			min-height:calc(max(100vh - 100px, 720px));
 			display: flex;
 			justify-content: center;
 			align-items: center;

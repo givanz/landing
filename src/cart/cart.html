@@ -139,8 +139,8 @@
 						 <tfooter>
 							<tr>
 							<td colspan="4" class="text-end border-top small text-muted">
-								<span data-v-cart-cart-total_items>2</span> items 
-								<span data-v-cart-cart-total_weight>2</span> <span data-v-cart-cart-weight_unit>kg</span> 
+								<span data-v-cart-total_items>2</span> items 
+								<span data-v-cart-total_weight>2</span> <span data-v-cart-weight_unit>kg</span> 
 							</td>
 							</tr>
 						 </tfooter>
@@ -185,7 +185,7 @@
 									 <td colspan="5" class="text-end"><small data-v-cart-total-title>Sub-Total</small>:</td>
 									 <td class="text-end">
 										 <span class="text-end" data-v-cart-total-text data-v-if="total.text"> - </span>
-										 <span data-v-cart-total-value_formatted data-v-if="total.value > 0">$101.00</span>
+										 <span data-v-cart-total-value_formatted data-v-if="total.value != 0">$101.00</span>
 									 </td>
 								  </tr>
 								  <tr data-v-cart-total>
@@ -202,7 +202,7 @@
 								  </tr> 
 								  <tr>
 									 <td colspan="5" class="text-end fw-semibold">Total:</td>
-									 <td class="text-end fw-semibold" data-v-cart-cart-total_formatted>$0</td>
+									 <td class="text-end fw-semibold" data-v-cart-total_formatted>$0</td>
 								  </tr>
 							   </tfoot>
 

@@ -7,7 +7,7 @@ Vvveb.Sections.add("hero/hero-1", {
     <div class="heading">
       <h1 class="display-1">Open Source CMS Reinvented</h1>
 
-      <h2 class="fs-3 text-muted">Powerful and easy to use drag and drop website builder for blogs, websites or ecommerce stores.</h2>
+      <h2 class="fs-2 text-muted">Powerful and easy to use drag and drop website builder for blogs, websites or ecommerce stores.</h2>
 
       <div class="btns">
         <a class="btn btn-primary btn-lg btn-shadow" href="/page/download" role="button">
@@ -161,17 +161,16 @@ Vvveb.Sections.add("hero/hero-1", {
     <div>
       <div class="row align-items-center justify-content-center text-center">
         <div class="col-lg-12">
-          <h1 class="heading mb-4 display-2" data-aos="fade-up" data-aos-delay="100">Next generation website builder</h1>
-          <div class="col-lg-8 mx-auto">
-            <h2 class="h3 lh-base fw-normal" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h2>
+          <h1 class="heading mb-4 display-1" data-aos="fade-up" data-aos-delay="100">Next generation website builder</h1>
+          <div class="col-lg-10 mx-auto">
+            <h2 class="display-6" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h2>
           </div>
 
           <div class="buttons" data-aos="fade-up" data-aos-delay="300">
-            <a href="https://www.vvveb.com" class="btn btn-primary btn-lg">
+            <a href="https://www.vvveb.com" class="btn btn-primary px-5 ">
               <span>Free Download</span>
-              <span>&#9889;</span>
             </a>
-            <a href="https://demo.vvveb.com" class="btn btn-light btn-lg">Live Demo</a>
+            <a href="https://demo.vvveb.com" class="btn btn-light px-5 ">Live Demo</a>
           </div>
 
 
@@ -180,13 +179,15 @@ Vvveb.Sections.add("hero/hero-1", {
     </div>
   </div>
 
-  <!--
-    <div class="separator bottom">
-		
-		<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" height="100" fill="var(--bs-body-bg)" preserveAspectRatio="none"><defs></defs><title>rough-edges-bottom</title><path d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)"/></svg>
-		
-    </div>   
 
+  <div class="separator bottom">
+
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" id="Layer_1" class="section-divider" aria-hidden="true" width="100%" height="30" fill="var(--bs-body-bg)" style="transform: rotate(180deg);">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+    </svg>
+
+  </div>
+  <!--
    <div class="separator top">
 		
 		<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" height="200" preserveAspectRatio="none"><defs><style>.cls-1{fill:var(--bs-body-bg);}</style></defs><title>rough-edges-bottom</title><path class="cls-1" d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)"/></svg>
@@ -9218,7 +9219,7 @@ Vvveb.Sections.add("how-it-works/how-it-works-1", {
 Vvveb.Sections.add("navigation/navigation-1", {
     name: "Navigation 1",
     image: Vvveb.themeBaseUrl + "/screenshots/sections/navigation/navigation-1-thumb.webp",
-    html: `<nav class="navigation-1 clearfix" data-v-save-global="blank.html,.navigation-1">
+    html: `<nav class="navigation-1 clearfix" data-v-save-global="index.html,.navigation-1">
   <div class="navbar navbar-expand-md">
 
     <div class="container">
@@ -9239,41 +9240,46 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
       <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
         <ul class="navbar-nav ms-auto" data-v-menu-items>
-          <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
+          <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-            <a class="nav-link dropdown-toggle" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
-              <span data-v-menu-item-name data-v-if-not="category.type = 'text' && category.name"></span>
-              <span data-v-menu-item-content data-v-if="category.content">
+            <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
+              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+              <span data-v-menu-item-name></span>
+              <span data-v-menu-item-content>
                 <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
               </span>
             </a>
 
             <div class="dropdown-menu" data-v-menu-item-recursive>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" data-v-class-if-active="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                  <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
-                  <span data-v-menu-item-content data-v-if="category.content">
-                    <div class="row">
-                      <div class="col-6 align-self-center">
-                        <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                  <div>
+                    <span data-v-menu-item-name></span>
+                    <span data-v-menu-item-content>
+                      <div class="row">
+                        <div class="col-6 align-self-center">
+                          <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                        </div>
+                        <div class="col-6">
+                          <h4>Features</h4>
+                          <p class="text-muted">Just a few mentions, but there is more</p>
+                          <ul class="list-unstyled">
+                            <li class="text-primary">Page builder</li>
+                            <li class="text-primary">Mega menu</li>
+                            <li class="text-primary">Multi language</li>
+                            <li class="text-primary">Advanced SEO</li>
+                            <li class="text-primary">Ecommerce</li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="col-6">
-                        <h4>Features</h4>
-                        <p class="text-muted">Just a few mentions, but there is more</p>
-                        <ul class="list-unstyled">
-                          <li class="text-primary">Page builder</li>
-                          <li class="text-primary">Mega menu</li>
-                          <li class="text-primary">Multi language</li>
-                          <li class="text-primary">Advanced SEO</li>
-                          <li class="text-primary">Ecommerce</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </span>
+                    </span>
+                  </div>
                 </a>
               </div>
+
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-show="category.active" data-v-menu-item-url>
                   <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
                   <span data-v-menu-item-content></span>
                 </a>
@@ -9281,7 +9287,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             </div>
           </li>
           <li class="nav-item dropdown" data-v-menu-item>
-            <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-v-menu-item-url>
+            <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
               <span data-v-menu-item-name>Blog</span>
             </a>
 
@@ -9313,7 +9319,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown nav-item">
+            <div class="dropdown">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <!-- <i class="la la-lg la-user"></i> -->
@@ -9527,7 +9533,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
           <li class="nav-toggle">
             <!-- Cart Area -->
-            <div class="dropdown nav-item mini-cart" data-v-component-cart="offcanvas">
+            <div class="dropdown mini-cart" data-v-component-cart="offcanvas">
 
               <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
                 <!-- <img src="demo/img/bag.svg" width="20" alt> -->
@@ -9538,7 +9544,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                   <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
-                <strong class="badge bg-primary" data-v-total_items data-v-if="cart.total_items > 0"></strong>
+                <strong class="badge bg-primary" data-v-cart-total_items data-v-if="cart.total_items > 0"></strong>
               </a>
 
 
@@ -9547,7 +9553,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
           </li>
 
           <li class="nav-toggle">
-            <div class="dropdown nav-item" data-v-component-language>
+            <div class="dropdown" data-v-component-language>
               <div data-v-component-currency>
                 <form method="post" enctype="multipart/form-data" id="form-language">
 
@@ -9559,8 +9565,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
                   <div class="dropdown-menu">
 
-                    <div data-v-language>
-                      <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+                    <div class="dropdown-item" data-v-language>
+                      <button class="btn" type="submit" value="eng" name="language" data-v-language-code>
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
                         <span data-v-language-name>English</span>
                       </button>
@@ -9570,8 +9576,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <hr class="dropdown-divider">
           </li>
 
-          <div data-v-currency>
-            <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+          <div class="dropdown-item" data-v-currency>
+            <button class="btn" type="submit" value="USD" name="currency" data-v-currency-code>
               <span class="small text-muted" data-v-currency-sign_start>$</span>
               <span class="small text-muted" data-v-currency-sign_end>$</span>
               <span data-v-currency-name>US Dollar</span>
@@ -9718,41 +9724,46 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
       <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
         <ul class="navbar-nav ms-auto" data-v-menu-items>
-          <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
+          <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-            <a class="nav-link dropdown-toggle" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
-              <span data-v-menu-item-name data-v-if-not="category.type = 'text' && category.name"></span>
-              <span data-v-menu-item-content data-v-if="category.content">
+            <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
+              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+              <span data-v-menu-item-name></span>
+              <span data-v-menu-item-content>
                 <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
               </span>
             </a>
 
             <div class="dropdown-menu" data-v-menu-item-recursive>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" data-v-class-if-active="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                  <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
-                  <span data-v-menu-item-content data-v-if="category.content">
-                    <div class="row">
-                      <div class="col-6 align-self-center">
-                        <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                  <div>
+                    <span data-v-menu-item-name></span>
+                    <span data-v-menu-item-content>
+                      <div class="row">
+                        <div class="col-6 align-self-center">
+                          <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                        </div>
+                        <div class="col-6">
+                          <h4>Features</h4>
+                          <p class="text-muted">Just a few mentions, but there is more</p>
+                          <ul class="list-unstyled">
+                            <li class="text-primary">Page builder</li>
+                            <li class="text-primary">Mega menu</li>
+                            <li class="text-primary">Multi language</li>
+                            <li class="text-primary">Advanced SEO</li>
+                            <li class="text-primary">Ecommerce</li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="col-6">
-                        <h4>Features</h4>
-                        <p class="text-muted">Just a few mentions, but there is more</p>
-                        <ul class="list-unstyled">
-                          <li class="text-primary">Page builder</li>
-                          <li class="text-primary">Mega menu</li>
-                          <li class="text-primary">Multi language</li>
-                          <li class="text-primary">Advanced SEO</li>
-                          <li class="text-primary">Ecommerce</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </span>
+                    </span>
+                  </div>
                 </a>
               </div>
+
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-show="category.active" data-v-menu-item-url>
                   <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
                   <span data-v-menu-item-content></span>
                 </a>
@@ -9760,7 +9771,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             </div>
           </li>
           <li class="nav-item dropdown" data-v-menu-item>
-            <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-v-menu-item-url>
+            <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
               <span data-v-menu-item-name>Blog</span>
             </a>
 
@@ -9792,7 +9803,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown nav-item">
+            <div class="dropdown">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <!-- <i class="la la-lg la-user"></i> -->
@@ -10006,7 +10017,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
           <li class="nav-toggle">
             <!-- Cart Area -->
-            <div class="dropdown nav-item mini-cart" data-v-component-cart="offcanvas">
+            <div class="dropdown mini-cart" data-v-component-cart="offcanvas">
 
               <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
                 <!-- <img src="demo/img/bag.svg" width="20" alt> -->
@@ -10017,7 +10028,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                   <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
-                <strong class="badge bg-primary" data-v-total_items data-v-if="cart.total_items > 0"></strong>
+                <strong class="badge bg-primary" data-v-cart-total_items data-v-if="cart.total_items > 0"></strong>
               </a>
 
 
@@ -10026,7 +10037,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
           </li>
 
           <li class="nav-toggle">
-            <div class="dropdown nav-item" data-v-component-language>
+            <div class="dropdown" data-v-component-language>
               <div data-v-component-currency>
                 <form method="post" enctype="multipart/form-data" id="form-language">
 
@@ -10038,8 +10049,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
                   <div class="dropdown-menu">
 
-                    <div data-v-language>
-                      <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+                    <div class="dropdown-item" data-v-language>
+                      <button class="btn" type="submit" value="eng" name="language" data-v-language-code>
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
                         <span data-v-language-name>English</span>
                       </button>
@@ -10049,8 +10060,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <hr class="dropdown-divider">
           </li>
 
-          <div data-v-currency>
-            <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+          <div class="dropdown-item" data-v-currency>
+            <button class="btn" type="submit" value="USD" name="currency" data-v-currency-code>
               <span class="small text-muted" data-v-currency-sign_start>$</span>
               <span class="small text-muted" data-v-currency-sign_end>$</span>
               <span data-v-currency-name>US Dollar</span>
@@ -10200,41 +10211,46 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
       <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
         <ul class="navbar-nav ms-auto" data-v-menu-items>
-          <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
+          <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-            <a class="nav-link dropdown-toggle" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
-              <span data-v-menu-item-name data-v-if-not="category.type = 'text' && category.name"></span>
-              <span data-v-menu-item-content data-v-if="category.content">
+            <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
+              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+              <span data-v-menu-item-name></span>
+              <span data-v-menu-item-content>
                 <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
               </span>
             </a>
 
             <div class="dropdown-menu" data-v-menu-item-recursive>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" data-v-class-if-active="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                  <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
-                  <span data-v-menu-item-content data-v-if="category.content">
-                    <div class="row">
-                      <div class="col-6 align-self-center">
-                        <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                  <div>
+                    <span data-v-menu-item-name></span>
+                    <span data-v-menu-item-content>
+                      <div class="row">
+                        <div class="col-6 align-self-center">
+                          <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                        </div>
+                        <div class="col-6">
+                          <h4>Features</h4>
+                          <p class="text-muted">Just a few mentions, but there is more</p>
+                          <ul class="list-unstyled">
+                            <li class="text-primary">Page builder</li>
+                            <li class="text-primary">Mega menu</li>
+                            <li class="text-primary">Multi language</li>
+                            <li class="text-primary">Advanced SEO</li>
+                            <li class="text-primary">Ecommerce</li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="col-6">
-                        <h4>Features</h4>
-                        <p class="text-muted">Just a few mentions, but there is more</p>
-                        <ul class="list-unstyled">
-                          <li class="text-primary">Page builder</li>
-                          <li class="text-primary">Mega menu</li>
-                          <li class="text-primary">Multi language</li>
-                          <li class="text-primary">Advanced SEO</li>
-                          <li class="text-primary">Ecommerce</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </span>
+                    </span>
+                  </div>
                 </a>
               </div>
+
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-show="category.active" data-v-menu-item-url>
                   <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
                   <span data-v-menu-item-content></span>
                 </a>
@@ -10242,7 +10258,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             </div>
           </li>
           <li class="nav-item dropdown" data-v-menu-item>
-            <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-v-menu-item-url>
+            <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
               <span data-v-menu-item-name>Blog</span>
             </a>
 
@@ -10274,7 +10290,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown nav-item">
+            <div class="dropdown">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <!-- <i class="la la-lg la-user"></i> -->
@@ -10488,7 +10504,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
           <li class="nav-toggle">
             <!-- Cart Area -->
-            <div class="dropdown nav-item mini-cart" data-v-component-cart="offcanvas">
+            <div class="dropdown mini-cart" data-v-component-cart="offcanvas">
 
               <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
                 <!-- <img src="demo/img/bag.svg" width="20" alt> -->
@@ -10499,7 +10515,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                   <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
-                <strong class="badge bg-primary" data-v-total_items data-v-if="cart.total_items > 0"></strong>
+                <strong class="badge bg-primary" data-v-cart-total_items data-v-if="cart.total_items > 0"></strong>
               </a>
 
 
@@ -10508,7 +10524,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
           </li>
 
           <li class="nav-toggle">
-            <div class="dropdown nav-item" data-v-component-language>
+            <div class="dropdown" data-v-component-language>
               <div data-v-component-currency>
                 <form method="post" enctype="multipart/form-data" id="form-language">
 
@@ -10520,8 +10536,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
                   <div class="dropdown-menu">
 
-                    <div data-v-language>
-                      <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+                    <div class="dropdown-item" data-v-language>
+                      <button class="btn" type="submit" value="eng" name="language" data-v-language-code>
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
                         <span data-v-language-name>English</span>
                       </button>
@@ -10531,8 +10547,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <hr class="dropdown-divider">
           </li>
 
-          <div data-v-currency>
-            <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+          <div class="dropdown-item" data-v-currency>
+            <button class="btn" type="submit" value="USD" name="currency" data-v-currency-code>
               <span class="small text-muted" data-v-currency-sign_start>$</span>
               <span class="small text-muted" data-v-currency-sign_end>$</span>
               <span data-v-currency-name>US Dollar</span>
@@ -10749,10 +10765,10 @@ Vvveb.Sections.add("navigation/navigation-1", {
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/" role="button">Demo</a>
+            <a class="nav-link dropdown-toggle" href="//demo.vvveb.com/admin/index.php?module=/editor/editor&template=index.html&url=/" role="button">Demo</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/">Page builder</a>
-              <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin">Admin dashboard</a>
+              <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/index.php?module=/editor/editor&template=index.html&url=/">Page builder</a>
+              <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/index.php">Admin dashboard</a>
               <a class="dropdown-item" target="_blank" href="//demo.vvveb.com">Frontend</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" target="_blank" href="https://vercel-vvveb-commerce.vercel.app/">Next.js Frontend GraphQL</a>
@@ -10762,7 +10778,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown nav-item">
+            <div class="dropdown">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <!-- <i class="la la-lg la-user"></i> -->
@@ -11044,7 +11060,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 });Vvveb.Sections.add("navigation/navigation-5", {
     name: "Navigation 5",
     image: Vvveb.themeBaseUrl + "/screenshots/sections/navigation/navigation-5-thumb.webp",
-    html: `<nav class="navigation-1 clearfix" data-v-save-global="blank.html,.navigation-1">
+    html: `<nav class="navigation-1 clearfix" data-v-save-global="index.html,.navigation-1">
 
   <div id="top" class="top-nav clearfix">
     <div class="container">
@@ -11194,41 +11210,46 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
       <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
         <ul class="navbar-nav ms-auto" data-v-menu-items>
-          <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
+          <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-            <a class="nav-link dropdown-toggle" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
-              <span data-v-menu-item-name data-v-if-not="category.type = 'text' && category.name"></span>
-              <span data-v-menu-item-content data-v-if="category.content">
+            <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
+              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+              <span data-v-menu-item-name></span>
+              <span data-v-menu-item-content>
                 <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
               </span>
             </a>
 
             <div class="dropdown-menu" data-v-menu-item-recursive>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" data-v-class-if-active="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                  <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
-                  <span data-v-menu-item-content data-v-if="category.content">
-                    <div class="row">
-                      <div class="col-6 align-self-center">
-                        <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                  <div>
+                    <span data-v-menu-item-name></span>
+                    <span data-v-menu-item-content>
+                      <div class="row">
+                        <div class="col-6 align-self-center">
+                          <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                        </div>
+                        <div class="col-6">
+                          <h4>Features</h4>
+                          <p class="text-muted">Just a few mentions, but there is more</p>
+                          <ul class="list-unstyled">
+                            <li class="text-primary">Page builder</li>
+                            <li class="text-primary">Mega menu</li>
+                            <li class="text-primary">Multi language</li>
+                            <li class="text-primary">Advanced SEO</li>
+                            <li class="text-primary">Ecommerce</li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="col-6">
-                        <h4>Features</h4>
-                        <p class="text-muted">Just a few mentions, but there is more</p>
-                        <ul class="list-unstyled">
-                          <li class="text-primary">Page builder</li>
-                          <li class="text-primary">Mega menu</li>
-                          <li class="text-primary">Multi language</li>
-                          <li class="text-primary">Advanced SEO</li>
-                          <li class="text-primary">Ecommerce</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </span>
+                    </span>
+                  </div>
                 </a>
               </div>
+
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-show="category.active" data-v-menu-item-url>
                   <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
                   <span data-v-menu-item-content></span>
                 </a>
@@ -11236,7 +11257,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             </div>
           </li>
           <li class="nav-item dropdown" data-v-menu-item>
-            <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-v-menu-item-url>
+            <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
               <span data-v-menu-item-name>Blog</span>
             </a>
 
@@ -11268,7 +11289,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown nav-item">
+            <div class="dropdown">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <!-- <i class="la la-lg la-user"></i> -->
@@ -11482,7 +11503,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
           <li class="nav-toggle">
             <!-- Cart Area -->
-            <div class="dropdown nav-item mini-cart" data-v-component-cart="offcanvas">
+            <div class="dropdown mini-cart" data-v-component-cart="offcanvas">
 
               <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
                 <!-- <img src="demo/img/bag.svg" width="20" alt> -->
@@ -11493,7 +11514,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                   <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
-                <strong class="badge bg-primary" data-v-total_items data-v-if="cart.total_items > 0"></strong>
+                <strong class="badge bg-primary" data-v-cart-total_items data-v-if="cart.total_items > 0"></strong>
               </a>
 
 
@@ -11502,7 +11523,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
           </li>
 
           <li class="nav-toggle">
-            <div class="dropdown nav-item" data-v-component-language>
+            <div class="dropdown" data-v-component-language>
               <div data-v-component-currency>
                 <form method="post" enctype="multipart/form-data" id="form-language">
 
@@ -11514,8 +11535,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
                   <div class="dropdown-menu">
 
-                    <div data-v-language>
-                      <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+                    <div class="dropdown-item" data-v-language>
+                      <button class="btn" type="submit" value="eng" name="language" data-v-language-code>
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
                         <span data-v-language-name>English</span>
                       </button>
@@ -11525,8 +11546,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <hr class="dropdown-divider">
           </li>
 
-          <div data-v-currency>
-            <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+          <div class="dropdown-item" data-v-currency>
+            <button class="btn" type="submit" value="USD" name="currency" data-v-currency-code>
               <span class="small text-muted" data-v-currency-sign_start>$</span>
               <span class="small text-muted" data-v-currency-sign_end>$</span>
               <span data-v-currency-name>US Dollar</span>
@@ -11803,41 +11824,46 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
       <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
         <ul class="navbar-nav ms-auto" data-v-menu-items>
-          <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
+          <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-            <a class="nav-link dropdown-toggle" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if-active="category.active" aria-expanded="false" data-v-menu-item-url>
-              <span data-v-menu-item-name data-v-if-not="category.type = 'text' && category.name"></span>
-              <span data-v-menu-item-content data-v-if="category.content">
+            <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
+              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+              <span data-v-menu-item-name></span>
+              <span data-v-menu-item-content>
                 <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
               </span>
             </a>
 
             <div class="dropdown-menu" data-v-menu-item-recursive>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" data-v-class-if-active="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                  <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
-                  <span data-v-menu-item-content data-v-if="category.content">
-                    <div class="row">
-                      <div class="col-6 align-self-center">
-                        <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                  <div>
+                    <span data-v-menu-item-name></span>
+                    <span data-v-menu-item-content>
+                      <div class="row">
+                        <div class="col-6 align-self-center">
+                          <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                        </div>
+                        <div class="col-6">
+                          <h4>Features</h4>
+                          <p class="text-muted">Just a few mentions, but there is more</p>
+                          <ul class="list-unstyled">
+                            <li class="text-primary">Page builder</li>
+                            <li class="text-primary">Mega menu</li>
+                            <li class="text-primary">Multi language</li>
+                            <li class="text-primary">Advanced SEO</li>
+                            <li class="text-primary">Ecommerce</li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="col-6">
-                        <h4>Features</h4>
-                        <p class="text-muted">Just a few mentions, but there is more</p>
-                        <ul class="list-unstyled">
-                          <li class="text-primary">Page builder</li>
-                          <li class="text-primary">Mega menu</li>
-                          <li class="text-primary">Multi language</li>
-                          <li class="text-primary">Advanced SEO</li>
-                          <li class="text-primary">Ecommerce</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </span>
+                    </span>
+                  </div>
                 </a>
               </div>
+
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-active="category.active" data-v-menu-item-url>
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-show="category.active" data-v-menu-item-url>
                   <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
                   <span data-v-menu-item-content></span>
                 </a>
@@ -11845,7 +11871,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
             </div>
           </li>
           <li class="nav-item dropdown" data-v-menu-item>
-            <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-v-menu-item-url>
+            <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
               <span data-v-menu-item-name>Blog</span>
             </a>
 
@@ -11877,7 +11903,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown nav-item">
+            <div class="dropdown">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <!-- <i class="la la-lg la-user"></i> -->
@@ -12091,7 +12117,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
           <li class="nav-toggle">
             <!-- Cart Area -->
-            <div class="dropdown nav-item mini-cart" data-v-component-cart="offcanvas">
+            <div class="dropdown mini-cart" data-v-component-cart="offcanvas">
 
               <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
                 <!-- <img src="demo/img/bag.svg" width="20" alt> -->
@@ -12102,7 +12128,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                   <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
-                <strong class="badge bg-primary" data-v-total_items data-v-if="cart.total_items > 0"></strong>
+                <strong class="badge bg-primary" data-v-cart-total_items data-v-if="cart.total_items > 0"></strong>
               </a>
 
 
@@ -12111,7 +12137,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
           </li>
 
           <li class="nav-toggle">
-            <div class="dropdown nav-item" data-v-component-language>
+            <div class="dropdown" data-v-component-language>
               <div data-v-component-currency>
                 <form method="post" enctype="multipart/form-data" id="form-language">
 
@@ -12123,8 +12149,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
                   <div class="dropdown-menu">
 
-                    <div data-v-language>
-                      <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+                    <div class="dropdown-item" data-v-language>
+                      <button class="btn" type="submit" value="eng" name="language" data-v-language-code>
                         <img src="" loading="lazy" class="me-1" data-v-language-img>
                         <span data-v-language-name>English</span>
                       </button>
@@ -12134,8 +12160,8 @@ Vvveb.Sections.add("navigation/navigation-1", {
             <hr class="dropdown-divider">
           </li>
 
-          <div data-v-currency>
-            <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+          <div class="dropdown-item" data-v-currency>
+            <button class="btn" type="submit" value="USD" name="currency" data-v-currency-code>
               <span class="small text-muted" data-v-currency-sign_start>$</span>
               <span class="small text-muted" data-v-currency-sign_end>$</span>
               <span data-v-currency-name>US Dollar</span>
@@ -15333,7 +15359,6 @@ Vvveb.Sections.add("products/products-1", {
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
-          <a href="product/product.html" data-v-product-url> </a>
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
@@ -15421,7 +15446,6 @@ Vvveb.Sections.add("products/products-1", {
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
-          <a href="product/product.html" data-v-product-url> </a>
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
@@ -15509,7 +15533,6 @@ Vvveb.Sections.add("products/products-1", {
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
-          <a href="product/product.html" data-v-product-url> </a>
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
@@ -15597,7 +15620,6 @@ Vvveb.Sections.add("products/products-1", {
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
-          <a href="product/product.html" data-v-product-url> </a>
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
@@ -15685,7 +15707,6 @@ Vvveb.Sections.add("products/products-1", {
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
-          <a href="product/product.html" data-v-product-url> </a>
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
@@ -15773,7 +15794,6 @@ Vvveb.Sections.add("products/products-1", {
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
-          <a href="product/product.html" data-v-product-url> </a>
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
@@ -15861,7 +15881,6 @@ Vvveb.Sections.add("products/products-1", {
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
-          <a href="product/product.html" data-v-product-url> </a>
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 
@@ -15949,7 +15968,6 @@ Vvveb.Sections.add("products/products-1", {
 
         <article class="single-product-wrapper">
           <!-- Product Image -->
-          <a href="product/product.html" data-v-product-url> </a>
           <div class="product-image">
             <a href="product/product.html" data-v-product-url>
 

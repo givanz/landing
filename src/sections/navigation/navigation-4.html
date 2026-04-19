@@ -46,10 +46,10 @@
 					<a class="nav-link" href="https://www.vvveb.com"  data-v-menu-item-url><span data-v-menu-item-name>About us</span></a>
 				  </li> 
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/" role="button">Demo</a>
+						<a class="nav-link dropdown-toggle" href="//demo.vvveb.com/admin/index.php?module=/editor/editor&template=index.html&url=/" role="button">Demo</a>
 						<div class="dropdown-menu">
-						  <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/?module=/editor/editor&template=index.html&url=/">Page builder</a>
-						  <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin">Admin dashboard</a>
+						  <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/index.php?module=/editor/editor&template=index.html&url=/">Page builder</a>
+						  <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/index.php">Admin dashboard</a>
 						  <a class="dropdown-item" target="_blank" href="//demo.vvveb.com">Frontend</a>
 						  <div class="dropdown-divider"></div>
 						  <a class="dropdown-item" target="_blank" href="https://vercel-vvveb-commerce.vercel.app/">Next.js Frontend GraphQL</a>
@@ -68,7 +68,29 @@
 						</div>
 					</button>				
 				  </li>
-							  
+				  <li class="nav-toggle">
+					<div class="dropdown" data-v-component-language>
+							<form method="post" enctype="multipart/form-data" id="form-language">
+
+								<a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button"  title="Language"  aria-expanded="false">
+									<!-- <img src="" data-v-language-info-img> -->
+									<span class="" data-v-language-info-slug>English</span>
+								</a>
+							
+								
+								<div class="dropdown-menu">
+									
+									<div class="dropdown-item" data-v-language>
+										<button class="btn" type="submit" value="eng" name="language" data-v-language-code>
+											<img src="" loading="lazy" class="me-1" data-v-language-img>
+											<span data-v-language-name>English</span>
+										</button>
+									</div>
+									
+								</div>
+							</form>
+					</div>					
+				  </li>							  
 				  <li class="nav-item">
 						<a id="color-theme-switch" class="nav-link" role="button" title="Switch sidebar color theme">
 							<i class="la la-sun"></i>
