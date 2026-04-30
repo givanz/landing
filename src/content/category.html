@@ -24,6 +24,8 @@
   <!-- Page Content -->
   <div class="container">
 
+	<div data-v-if="this.category.content" class="p-3" data-v-category-content>Category</div>
+
 	@@include('../_includes/fields.html', {"type": "taxonomy_item", "subtype":"categories"})
 
     <div class="row">

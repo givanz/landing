@@ -46,7 +46,7 @@
 </div>
   <div class="card-body mb-3">
 	
-	<div class="card-text post-content" data-v-post-content>
+	<div class="card-text post-content @@post-class" data-v-post-content>
 			<p>
 				Begin each day by telling yourself:
 			</p> 
@@ -114,9 +114,10 @@
  
   <div class="card-footer">
 
-	<div data-v-component-content-categories="blog-post" data-v-type="tags" data-v-post_id="url">
-		<div>
-			<ul data-v-cats class="tags">
+	<div data-v-component-content-categories="post-categories" data-v-type="categories" data-v-post_id="url">
+		<div data-v-if="categories > 0" class="share mb-3">
+			<i class="la la-archive"></i>
+			<ul data-v-cats class="tags d-inline-block">
 			  <li data-v-cat>
 				<a  data-v-cat-url><span data-v-cat-name>tag 1</span></a>
 			  </li>
@@ -132,6 +133,51 @@
 			</ul>
 	  </div>
 	</div>	
+	
+	<div data-v-component-content-categories="post-tags" data-v-type="tags" data-v-post_id="url">
+		<div data-v-if="tags > 0" class="share mb-3">
+			<i class="la la-tag"></i>
+			<ul data-v-cats class="tags d-inline-block">
+			  <li data-v-cat>
+				<a  data-v-cat-url><span data-v-cat-name>tag 1</span></a>
+			  </li>
+			  <li data-v-cat>
+				<a  data-v-cat-url><span data-v-cat-name>tag 2</span></a>
+			  </li>
+			  <li data-v-cat>
+				<a  data-v-cat-url><span data-v-cat-name>tag 3</span></a>
+			  </li>
+			  <li data-v-cat>
+				<a  data-v-cat-url><span data-v-cat-name>tag 4</span></a>
+			  </li>
+			</ul>
+	  </div>
+	</div>	
+	
+	  <div>
+		  <ul class="list-unstyled list-inline share">
+			<li>
+				<a target="_blank" rel="noopener" class="rounded-circle bg-light" href="http://www.facebook.com/sharer.php?u={$post.full-url}">
+					<i class="lab la-facebook rounded-circle bg-light border lh-1 p-2"></i>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url={$post.full-url}">
+					<i class="lab la-linkedin rounded-circle bg-light border lh-1 p-2"></i>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" rel="noopener" href="http://twitter.com/intent/tweet?url={$post.full-url}">
+					<i class="lab la-twitter rounded-circle bg-light border lh-1 p-2"></i>
+				</a>
+			</li>
+			<li>
+				<a target="_blank" rel="noopener" href="mailto:?subject={$post.name}&body={$post.excerpt} {$post.full-url}">
+					<i class="la la-envelope rounded-circle bg-light border lh-1 p-2"></i>
+				</a>
+			</li>
+		</ul>
+	  </div>			
 	
 	
 	@@include('../_includes/author-box.html')

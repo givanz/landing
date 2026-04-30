@@ -5,17 +5,17 @@
 <body class="post">
 
 
-<section class="hero" data-v-component-post="post" data-bs-theme="dark">
+<section class="hero" data-v-component-post="post">
 
 	 <div class="site-header post">
 
 		@@include('../_includes/header.html')
 
-		<div class="title-container">
+		<div class="title-container"  data-bs-theme="dark">
 			<div class="container">
-				<h1 class="display-5 text-center text-white" data-aos="fade-up" data-aos-duration="500" data-v-post-name>Begin each day by telling yourself</h1>	
+				<h1 class="display-4 fw-bold text-center text-white mt-5" data-aos="fade-up" data-aos-duration="500" data-v-post-name>Begin each day by telling yourself</h1>	
 				
-				<h5 class="text-center my-4 mb-5 w-50 mx-auto text-white" data-aos="fade-up" data-aos-duration="500" data-v-post-excerpt>Today I shall be meeting with interference, ingratitude, insolence, disloyalty, ill-will, and selfishness all of them due to the offenders` ignorance of what is good or evil.</h5>	
+				<div class="text-center my-4 mb-5 w-50 mx-auto text-white" data-aos="fade-up" data-aos-duration="500" data-v-post-excerpt>Today I shall be meeting with interference, ingratitude, insolence, disloyalty, ill-will, and selfishness all of them due to the offenders` ignorance of what is good or evil.</div>	
 			
 				<ul class="post-meta" data-aos="fade-up" data-aos-duration="200">
 
@@ -71,7 +71,7 @@
 	  <!-- Blog Entries Column col-md-8 col-lg-9 -->
 	  <div>
 
-		@@include('../_includes/blog-post-single.html', {"class": " post-archive-item post"})
+		@@include('../_includes/blog-post-single.html', {"class": " post-archive-item post", "post-class": "narrow"})
 
 	  </div>
 

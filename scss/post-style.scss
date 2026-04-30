@@ -67,8 +67,10 @@ a.post-title  {
 	}
 	*/
 	
-	> p, > h1, > h2, > h3,  > h4, > h5, > h6, > blockquote, > span, > ul, pre, > ol, > details  {
-		@include max-width();
+	&.narrow {
+		> p, > h1, > h2, > h3,  > h4, > h5, > h6, > blockquote, > span, > ul, pre, > ol, > details  {
+			@include max-width();
+		}
 	}
 	
 	h1, h2  {
@@ -143,6 +145,7 @@ a.post-title  {
 
 	table {
 		//@extend .table;
+		font-size: 1rem;
 	}
 }
 
@@ -173,6 +176,6 @@ figure.align-center{
 	display:table;
 }
 
-.tags, .comments-form, .post-comments {
+.comments-form, .post-comments, .share {
 	@include max-width();
 }

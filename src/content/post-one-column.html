@@ -58,7 +58,7 @@
 -->
 
 
-<main id="site-content" role="main" data-v-component-post="post">
+<main id="site-content" role="main" data-v-component-post="post" data-v-image_size="xlarge">
 	
 	<!-- Page Content -->
 	<div class="container">
@@ -66,7 +66,7 @@
 	
 		<div class="title-container post">
 			<div class="container">
-				<h1 class="text-center" data-v-post-name>Post title</h1>	
+				<h1 class="text-center display-4 fw-bold" data-v-post-name>Post title</h1>	
 			
 				<ul class="post-meta">
 
@@ -107,7 +107,7 @@
 		</div>
 	</div>
 	
-	<img class="img-fluid narrow w-100 align-center" src="demo/img/hero-3.webp" alt="Card image cap" data-aos="zoom-in-up" data-aos-duration="500" loading="lazy" data-v-post-image data-v-if="post.image">
+	<img class="img-fluid w-100 align-center" src="demo/img/hero-3.webp" alt="Card image cap" data-aos="zoom-in-up" data-aos-duration="500" loading="lazy" data-v-post-image data-v-if="post.image">
 
 
 	<div class="row">
@@ -115,7 +115,7 @@
 	  <!-- Blog Entries Column col-md-8 col-lg-9 -->
 	  <div >
 
-		@@include('../_includes/blog-post-single.html', {"class": " post-archive-item post"})
+		@@include('../_includes/blog-post-single.html', {"class": " post-archive-item post", "post-class": "narrow"})
 
 	  </div>	  
 	  

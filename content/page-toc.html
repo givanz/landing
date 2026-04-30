@@ -7,7 +7,7 @@
 
   <base href="../">
 
-  <title>Vvveb - Address edit</title>
+  <title>Vvveb Themes - Page</title>
 
   <meta name="description" content="" />
   <meta name="keywords" content="">
@@ -21,6 +21,10 @@
 
 
 
+
+  <style>
+
+  </style>
 
 
 
@@ -39,7 +43,7 @@
 </head>
 
 
-<body>
+<body class="page">
 
   <nav class="navigation-1 clearfix" data-v-save-global="index.html,.navigation-1">
     <div class="navbar navbar-expand-md">
@@ -525,253 +529,114 @@
 
 
 
-  <main id="site-content" role="main">
 
+  <main id="site-content" data-v-component-post>
 
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-md-3">
+    <div>
+      <div class="title-container">
+        <div class="container">
+          <nav aria-label="breadcrumb" class="text-muted small" data-v-component-breadcrumb>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item" data-v-breadcrumb-item>
+                <a data-v-breadcrumb-item-url data-v-if="breadcrumb.url">
+                  <span data-v-breadcrumb-item-text>Home</span>
+                </a>
+                <span data-v-breadcrumb-item-text data-v-if-not="breadcrumb.url">Home</span>
+              </li>
+              <li class="breadcrumb-item" data-v-breadcrumb-item>
+                <a data-v-breadcrumb-item-url data-v-if="breadcrumb.url">
+                  <span data-v-breadcrumb-item-text>Library</span>
+                </a>
+                <span data-v-breadcrumb-item-text data-v-if-not="breadcrumb.url">Library</span>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page" data-v-breadcrumb-item>
+                <span>Data</span>
+              </li>
+            </ol>
+          </nav>
 
-          <ul class="nav flex-column nav-pills me-4 user-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="user" data-url data-selector="#user-container" data-v-url="user/index">
-                <i class="la la-tachometer-alt la-lg me-1"></i>
-                <span>Dashboard</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="user/orders" data-url data-selector="#user-container" data-v-url="user/orders/index">
-                <i class="la la-shopping-bag la-lg me-1"></i>
-                <span>Your Orders</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="user/profile" data-url data-selector="#user-container" data-v-url="user/profile/index">
-                <i class="la la-cogs la-lg me-1"></i>
-                <span>Settings</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="user/address" data-url data-selector="#user-container" data-v-url="user/address/index">
-                <i class="la la-map-pin la-lg me-1"></i>
-                <span>Address</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="user/downloads" data-url data-selector="#user-container" data-v-url="user/downloads/index">
-                <i class="la la-download la-lg me-1"></i>
-                <span>Downloads</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="user/comments" data-url data-selector="#user-container" data-v-url="user/comments/index">
-                <i class="la la-comment la-lg me-1"></i>
-                <span>Comments</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="user/wishlist" data-url data-selector="#user-container" data-v-url="user/wishlist/index">
-                <i class="la la-hand-holding-heart la-lg me-1"></i>
-                <span>Wishlist</span>
-              </a>
-            </li>
-            <!--	
-  <li class="nav-item">
-	<a class="nav-link" href="user/notifications" data-v-url="user/notifications/index"><i class="la la-bell la-lg me-1"></i><span>Notification</span></a>
-  </li>
-  -->
-            <li class="nav-item hr">
-              <hr>
-            </li>
-            <li class="nav-item">
-
-              <form action method="post" enctype="multipart/form-data" data-v-url="user/login/index" data-selector="body">
-
-                <input type="hidden" name="logout">
-
-                <button type="submit" value="logout" class="btn nav-link">
-
-                  <span class="loading d-none">
-                    <span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
-                    </span>
-                    <span>Loading ...</span>...
-                  </span>
-
-                  <span class="button-text">
-                    <i class="la la-sign-out-alt la-lg me-1"></i>
-                    <span>Log out</span>
-                    </a>
-                  </span>
-
-                </button>
-              </form>
-
-            </li>
-          </ul>
-
-
-        </div>
-
-        <div class="col-md-9 justify-content-center border-start px-4">
-          <div class="notifications" data-v-notifications>
-
-            <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error>
-
-              <div class="icon align-middle me-2">
-                <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
-              </div>
-
-              <div class="flex-grow-1 align-self-center small">
-                <div>
-                  <div data-v-notification-text>
-                    This is a placeholder for a notification message.
-                  </div>
-                </div>
-              </div>
-
-
-              <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">
-                  <!-- <i class="la la-times"></i> -->
-                </span>
-              </button>
-            </div>
-
-            <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success>
-
-              <div class="icon align-middle me-2">
-                <i class="align-middle la la-2x lh-1 la-check-circle"></i>
-              </div>
-
-              <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
-                This is a placeholder for a success message.
-              </div>
-
-              <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">
-                  <!-- <i class="la la-times"></i> -->
-                </span>
-              </button>
-            </div>
-
-            <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info>
-
-              <div class="icon align-middle me-2">
-                <i class="align-middle la la-2x lh-1  la-info-circle"></i>
-              </div>
-
-              <div class="flex-grow-1 align-self-center" data-v-notification-text>
-                This is a placeholder for a info message.
-              </div>
-
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">
-                  <!-- <i class="la la-times"></i> -->
-                </span>
-              </button>
-            </div>
-
-          </div>
-
-          <h2>Address</h2>
-
-          <form id="profile-form" action="" method="post" class="address" data-v-user_address>
-            <input type="hidden" name="action" id="action" value="edit">
-
-
-            <div class="mb-3 row">
-              <label for="input-first_name" class="col-sm-2 col-form-label">First name</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="input-first_name" placeholder="First name" name="user_address[first_name]" data-v-user_address-first_name required>
-              </div>
-            </div>
-
-            <div class="mb-3 row">
-              <label for="input-last_name" class="col-sm-2 col-form-label">Last name</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="input-last_name" placeholder="Last name" name="user_address[last_name]" data-v-user_address-last_name required>
-              </div>
-            </div>
-
-            <div class="mb-3 row">
-              <label for="input-company" class="col-sm-2 col-form-label">Company</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="input-company" placeholder="Company" name="user_address[company]" data-v-user_address-company>
-              </div>
-            </div>
-
-            <div class="mb-3 row">
-              <label for="input-address_1" class="col-sm-2 col-form-label">Address 1</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="input-address_1" placeholder="Address 1" name="user_address[address_1]" data-v-user_address-address_1>
-              </div>
-            </div>
-
-            <div class="mb-3 row">
-              <label for="input-address_2" class="col-sm-2 col-form-label">Address 2</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="input-address_2" placeholder="Address 2" name="user_address[address_2]" data-v-user_address-address_2>
-              </div>
-            </div>
-
-            <div class="mb-3 row">
-              <label for="input-city" class="col-sm-2 col-form-label">City</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="input-city" placeholder="City" name="user_address[city]" data-v-user_address-city>
-              </div>
-            </div>
-
-            <div class="mb-3 row">
-              <label for="input-post_code" class="col-sm-2 col-form-label">Post code</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="input-post_code" placeholder="Post code" name="user_address[post_code]" data-v-user_address-post_code>
-              </div>
-            </div>
-
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label" for="country">Country <span class="text-danger small">*</span>
-              </label>
-              <div class="col-sm-10">
-                <select class="form-select" id="country_id" name="user_address[country_id]" data-v-countries required readonly>
-                  <option value="1" data-v-option>
-                    Country 1
-                  </option>
-                  <option value="2" data-v-option>
-                    Country 2
-                  </option>
-                </select>
-              </div>
-            </div>
-
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label" for="country">Region <span class="text-danger small">*</span>
-              </label>
-              <div class="col-sm-10">
-                <select class="form-select" id="region_id" name="user_address[region_id]" data-v-regions required readonly>
-                  <option value="1" data-v-option></option>
-                  <option value="2" data-v-option></option>
-                  <option value="3" data-v-option></option>
-                </select>
-              </div>
-            </div>
-
-            <div class="mb-3  float-end">
-
-              <a href="user/address" data-v-url="user/address/index" class="btn btn-outline-secondary">
-                <i class="la la-arrow-left"></i>
-                <span>Address list</span>
-              </a>
-
-              <button type="submit" href="" class="btn btn-primary btn-icon ms-1">
-                <i class="la la-save me-2"></i>
-                <span>Save address</span>
-              </button>
-            </div>
-
-          </form>
-
+          <h1 class="display-4 fw-bold" data-v-post-name>Vvveb CMS</h1>
         </div>
       </div>
+      <img data-v-if="post.img" data-v-post-img src="demo/img/bg-img/bg-7.webp" alt="">
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-xxl-9">
+          <div>
+            <!--
+						<h1 class="text-center" data-v-if-not="post.img" data-v-post-name>Page title</h1>
+						-->
+            <img class="img-fluid align-center my-2" src="https://placeholdit.com/1500x500" alt="Card image cap" data-aos="zoom-in-up" data-aos-duration="500" loading="lazy" data-v-post-image data-v-if="post.image" />
+
+            <div class="py-4 post-content" data-v-post-content>
+              <h2>The next generation website builder</h2>
+              <p>Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
+              <p>The html for sections blocks and components and this template are built using Bootstrap 5.</p>
+            </div>
+
+
+          </div>
+        </div>
+
+        <aside class="col-md-3 col-xxl-3 d-none d-md-block" data-v-post-toc>
+          <div class="sticky-top p-3" style="top:100px;" id="toc-sidebar">
+            <div class="nav flex-column toc" data-v-toc-list>
+              <ol>
+                <li class="nav-item" data-v-toc-item>
+                  <a class="nav-link" href="#heading-1" data-v-toc-item-url data-v-toc-item-name>heading 1</a>
+                </li>
+                <li class="nav-item" data-v-toc-item>
+                  <a class="nav-link" href="#heading-2" data-v-toc-item-url data-v-toc-item-name>heading 2</a>
+                </li>
+                <li class="nav-item" data-v-toc-item>
+                  <a class="nav-link" href="#heading-3" data-v-toc-item-url data-v-toc-item-name>heading 3</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </aside>
+
+
+      </div>
+
+
+      <div data-v-component-fields data-v-type="post" data-v-subtype="page">
+
+        <div class="list-unstyled" data-v-fields>
+
+          <div data-v-field>
+
+            <div data-v-type-google_map>
+
+              <iframe data-v-if="field.value" frameborder="0" src="https://maps.google.com/maps?q={$field.value.address}&amp;z={$field.value.zoom}&center={$field.value.lat},{$field.value.long}&amp;t=q&amp;key=&amp;output=embed" width="100%" height="100%" style="width:100%;height:100%;left:0px"></iframe>
+              <iframe data-v-if="field.lat && field.long && !field.value" frameborder="0" src="https://maps.google.com/maps?center={$field.value.lat},{$field.value.long}&amp;z={$field.value.zoom}&amp;t=q&amp;key=&amp;output=embed" width="100%" height="100%" style="width:100%;height:100%;left:0px"></iframe>
+
+            </div>
+
+
+            <div data-v-type-default>
+              <span class="fw-bold" data-v-field-name></span>
+
+              <span data-v-if-not="is_array" data-v-field-value></span>
+
+              <div data-v-subfields>
+
+                <li data-v-subfields-field>
+                  <span class="fw-bold" data-v-subfields-field-name></span>
+                  <span data-v-subfields-field-value></span>
+                </li>
+              </div><!-- /subfields -->
+            </div><!-- /default -->
+
+          </div><!-- /field -->
+
+        </div><!-- /fields -->
+
+      </div><!-- /component -->
+
+
     </div>
   </main>
 
@@ -1150,11 +1015,6 @@
 </script>
 
 
-  <script>
-let regionsUrl = '{ $this->regionsUrl }';
-</script>
-
-  <script src="/js/app/checkout.js"></script>
 
 </body>
 

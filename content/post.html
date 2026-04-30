@@ -164,7 +164,7 @@
                           <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                         </div>
 
-                        <div class="flex-grow-1 align-self-center text-small">
+                        <div class="flex-grow-1 align-self-center small">
                           <div>
                             <div data-v-notification-text>
                               This is a placeholder for a notification message.
@@ -588,7 +588,7 @@
         <div class="col-md-7 col-lg-8 col-xl-9">
 
           <div class="my-4">
-            <nav aria-label="breadcrumb" class="text-muted text-small" data-v-component-breadcrumb>
+            <nav aria-label="breadcrumb" class="text-muted small" data-v-component-breadcrumb>
               <ol class="breadcrumb">
                 <li class="breadcrumb-item" data-v-breadcrumb-item>
                   <a data-v-breadcrumb-item-url data-v-if="breadcrumb.url">
@@ -611,7 +611,7 @@
 
           <div class="title-container post">
             <div class="container">
-              <h1 class="text-center" data-v-post-name>Post title</h1>
+              <h1 class="text-center display-4 fw-bold" data-v-post-name>Post title</h1>
 
               <ul class="post-meta">
 
@@ -706,7 +706,7 @@
             </div>
             <div class="card-body mb-3">
 
-              <div class="card-text post-content" data-v-post-content>
+              <div class="card-text post-content @@post-class" data-v-post-content>
                 <p>
                   Begin each day by telling yourself:
                 </p>
@@ -817,7 +817,7 @@
                             <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                           </div>
 
-                          <div class="flex-grow-1 align-self-center text-small">
+                          <div class="flex-grow-1 align-self-center small">
                             <div>
                               <div data-v-notification-text>
                                 This is a placeholder for a notification message.
@@ -902,9 +902,10 @@
 
             <div class="card-footer">
 
-              <div data-v-component-content-categories="blog-post" data-v-type="tags" data-v-post_id="url">
-                <div>
-                  <ul data-v-cats class="tags">
+              <div data-v-component-content-categories="post-categories" data-v-type="categories" data-v-post_id="url">
+                <div data-v-if="categories > 0" class="share mb-3">
+                  <i class="la la-archive"></i>
+                  <ul data-v-cats class="tags d-inline-block">
                     <li data-v-cat>
                       <a data-v-cat-url>
                         <span data-v-cat-name>tag 1</span>
@@ -927,6 +928,59 @@
                     </li>
                   </ul>
                 </div>
+              </div>
+
+              <div data-v-component-content-categories="post-tags" data-v-type="tags" data-v-post_id="url">
+                <div data-v-if="tags > 0" class="share mb-3">
+                  <i class="la la-tag"></i>
+                  <ul data-v-cats class="tags d-inline-block">
+                    <li data-v-cat>
+                      <a data-v-cat-url>
+                        <span data-v-cat-name>tag 1</span>
+                      </a>
+                    </li>
+                    <li data-v-cat>
+                      <a data-v-cat-url>
+                        <span data-v-cat-name>tag 2</span>
+                      </a>
+                    </li>
+                    <li data-v-cat>
+                      <a data-v-cat-url>
+                        <span data-v-cat-name>tag 3</span>
+                      </a>
+                    </li>
+                    <li data-v-cat>
+                      <a data-v-cat-url>
+                        <span data-v-cat-name>tag 4</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <ul class="list-unstyled list-inline share">
+                  <li>
+                    <a target="_blank" rel="noopener" class="rounded-circle bg-light" href="http://www.facebook.com/sharer.php?u={$post.full-url}">
+                      <i class="lab la-facebook rounded-circle bg-light border lh-1 p-2"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url={$post.full-url}">
+                      <i class="lab la-linkedin rounded-circle bg-light border lh-1 p-2"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener" href="http://twitter.com/intent/tweet?url={$post.full-url}">
+                      <i class="lab la-twitter rounded-circle bg-light border lh-1 p-2"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener" href="mailto:?subject={$post.name}&body={$post.excerpt} {$post.full-url}">
+                      <i class="la la-envelope rounded-circle bg-light border lh-1 p-2"></i>
+                    </a>
+                  </li>
+                </ul>
               </div>
 
 
@@ -957,8 +1011,8 @@
                     <div class="comment-wrap d-flex ">
 
                       <figure class="author-avatar me-2">
-                        <img src="demo/img/sections/team/1.webp" alt="user" width="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
-                        <div class="empty" data-v-if-not="comment.avatar_url"></div>
+                        <img src="demo/img/sections/team/1.webp" alt="user" width="70" class="img-fluid d-block rounded-circle border p-1 avatar" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
+                        <div class="empty rounded-circle border" data-v-if-not="comment.avatar_url"></div>
                       </figure>
 
                       <div class="comment-author">
@@ -970,7 +1024,7 @@
                           <span data-v-comment-author data-v-if-not="comment.url">Maria Williams</span>
                         </div>
 
-                        <div class="comment-meta text-small text-muted">
+                        <div class="comment-meta small text-muted">
                           <span data-v-comment-created_at data-filter-friendly_date>Jan 29, 2018</span>
                         </div>
 
@@ -979,7 +1033,7 @@
                     </div>
 
 
-                    <div data-v-comment-content>
+                    <div class="my-2" data-v-comment-content>
                       <p>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
                     </div>
 
@@ -999,8 +1053,8 @@
                     <div class="comment-wrap d-flex ">
 
                       <figure class="author-avatar me-2">
-                        <img src="demo/img/sections/team/1.webp" alt="user" width="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
-                        <div class="empty" data-v-if-not="comment.avatar_url"></div>
+                        <img src="demo/img/sections/team/1.webp" alt="user" width="70" class="img-fluid d-block rounded-circle border p-1 avatar" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
+                        <div class="empty rounded-circle border" data-v-if-not="comment.avatar_url"></div>
                       </figure>
 
                       <div class="comment-author">
@@ -1009,7 +1063,7 @@
                           <span data-v-comment-author data-v-if-not="comment.url">John doe</span>
                         </div>
 
-                        <div class="comment-meta text-small text-muted">
+                        <div class="comment-meta small text-muted">
                           <span data-v-comment-created_at data-filter-friendly_date>Jan 29, 2018</span>
                         </div>
 
@@ -1038,8 +1092,8 @@
                     <div class="comment-wrap d-flex ">
 
                       <figure class="author-avatar me-2">
-                        <img src="demo/img/sections/team/1.webp" alt="user" width="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
-                        <div class="empty" data-v-if-not="comment.avatar_url"></div>
+                        <img src="demo/img/sections/team/1.webp" alt="user" width="70" class="img-fluid d-block rounded-circle border p-1 avatar" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
+                        <div class="empty rounded-circle border" data-v-if-not="comment.avatar_url"></div>
                       </figure>
 
                       <div class="comment-author">
@@ -1051,7 +1105,7 @@
                           <span data-v-comment-author data-v-if-not="comment.url">Maria Williams</span>
                         </div>
 
-                        <div class="comment-meta text-small text-muted">
+                        <div class="comment-meta small text-muted">
                           <span data-v-comment-created_at data-filter-friendly_date>Jan 29, 2018</span>
                         </div>
 
@@ -1086,7 +1140,7 @@
                         <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                       </div>
 
-                      <div class="flex-grow-1 align-self-center text-small">
+                      <div class="flex-grow-1 align-self-center small">
                         <div>
                           <div data-v-notification-text>
                             This is a placeholder for a notification message.
@@ -1188,7 +1242,7 @@
                       <i class="align-middle la la-lg lh-1 la-user"></i>
                     </div>
 
-                    <div class="flex-grow-1 align-self-center text-small">
+                    <div class="flex-grow-1 align-self-center small">
                       <div>
                         <div data-v-notification-text>
                           <span>
@@ -1254,7 +1308,7 @@
                     <i class="align-middle la la-lg lh-1 la-comments"></i>
                   </div>
 
-                  <div class="flex-grow-1 align-self-center text-small">
+                  <div class="flex-grow-1 align-self-center small">
                     <div>
                       <div data-v-notification-text>
                         <span>Comments are closed</span>
@@ -1271,6 +1325,7 @@
           </article>
 
 
+
         </div><!-- /.col -->
 
         <!-- Sidebar Widgets Column -->
@@ -1285,7 +1340,7 @@
                   <!-- <input type="hidden" name="type" value="posts"> -->
                   <div class="input-group">
                     <input type="text" name="search" class="form-control" placeholder="Search for...">
-                    <button class="btn btn-secondary btn-sm" type="submit">
+                    <button class="btn btn-outline-secondary btn-sm" type="submit">
                       <!-- 
 					<div class="la-flip-horizontal">
 						<i class="la la-search  la-flip-horizontal"></i>
@@ -1315,13 +1370,11 @@
                 <h6 class="card-header">Recent posts</h6>
                 <div class="card-body">
                   <div data-v-post>
-                    <i class="la la-comment"></i>
                     <a href="content/post.html" data-v-post-url>
                       <span data-v-post-name>January 2021</span>
                     </a>
                   </div>
                   <div data-v-post>
-                    <i class="la la-comment"></i>
                     <a href="content/post.html" data-v-post-url>
                       <span data-v-post-name>January 2021</span>
                     </a>
@@ -1336,6 +1389,7 @@
                 <h6 class="card-header">Recent comments</h6>
                 <div class="card-body">
                   <div data-v-comment>
+                    <i class="la la-comment text-secondary"></i>
                     <span data-v-comment-author>John Doe</span>
                     <span>on</span>
                     <a href="content/post.html#comments" data-v-comment-url>
@@ -1343,6 +1397,7 @@
                     </a>
                   </div>
                   <div data-v-comment>
+                    <i class="la la-comment text-secondary"></i>
                     <span data-v-comment-author>John Doe</span> on
                     <a href="content/post.html#comments" data-v-comment-url>
                       <span data-v-comment-name>Post name</span>
@@ -1567,7 +1622,7 @@
       </div>
       <!--
 		<div class="row justify-content-end">
-			<div class="col-md-3 text-muted text-small mt-5">
+			<div class="col-md-3 text-muted small mt-5">
 				&copy; <span data-v-global-current_year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
 			</div>
 		</div>

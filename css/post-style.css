@@ -27,7 +27,7 @@ a.post-title {
 		margin-bottom:1rem;
 	}
 	*/ }
-  .post-content > p, .post-content > h1, .post-content > h2, .post-content > h3, .post-content > h4, .post-content > h5, .post-content > h6, .post-content > blockquote, .post-content > span, .post-content > ul, .post-content pre, .post-content > ol, .post-content > details {
+  .post-content.narrow > p, .post-content.narrow > h1, .post-content.narrow > h2, .post-content.narrow > h3, .post-content.narrow > h4, .post-content.narrow > h5, .post-content.narrow > h6, .post-content.narrow > blockquote, .post-content.narrow > span, .post-content.narrow > ul, .post-content.narrow pre, .post-content.narrow > ol, .post-content.narrow > details {
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto; }
@@ -84,6 +84,8 @@ a.post-title {
     background: var(--bs-secondary-bg); }
     .post-content pre code {
       background: transparent; }
+  .post-content table {
+    font-size: 1rem; }
 
 .align-left {
   float: left;
@@ -107,7 +109,7 @@ img.align-center {
 figure.align-center {
   display: table; }
 
-.tags, .comments-form, .post-comments {
+.comments-form, .post-comments, .share {
   max-width: 40rem;
   margin-left: auto;
   margin-right: auto; }

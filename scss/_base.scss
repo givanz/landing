@@ -62,6 +62,7 @@ b, strong {
 .sidebar-sticky {
 	position: -webkit-sticky;
 	position: sticky;
+	padding: 0.5rem;
 	top:2rem;
 }
 
@@ -174,22 +175,7 @@ label {
 	.navbar-collapse.collapse.show {
 		height: 100%;
 	}
-	h1 {
-		margin: 0px;
-		font-size: 35px;
-		line-height: 49px;
-	}
-	h2 {
-		font-size: 21px;
-		line-height: 42px;
-		max-width: auto;
-	}
-	.hero {
-		.btn {
-			min-width: 300px;
-			width: 100%;
-		}
-	}
+	
 	.dropdown {
 		min-width: 300px;
 		width: 100%;
@@ -842,6 +828,62 @@ input.label-over:focus+label.form-label, input.label-over:not(:placeholder-shown
 	margin-top: -2.1rem;
 }
 
+$space: 1rem;
+
+.toc {
+   border-left: 1px solid var(--bs-border-color);	
+	
+  .nav-link {
+    //@include transition;
+    position: relative;
+    width: 100%;
+    //color: $gray-600;
+    //font-size: $font-size-sm;
+    color:var(--bs-secondary); 	
+    border-left: 2px solid transparent;
+    padding: .5rem $space;
+    font-size:14px;
+
+    &:hover {
+      color: var(--bs-link-color);
+      border-color: var(--bs-link-color);
+    }
+
+    &.active {
+      color: var(--bs-body-color); 
+      border-color: var(--bs-link-color);
+
+      + ul {
+        display: block;
+      }
+    }
+  }
+
+  > ol {
+	padding-left:0 !important;
+  }
+  
+  ol {
+    //border-left: 2px solid var(--bs-link-color);
+    //display: none;
+    padding-left: $space;
+    list-style:none;
+
+    .nav-link {
+      //font-size: $font-size-sm;
+      //font-size:12px;
+      border-color: var(--bs-border-color);
+      border-left:1px solid transparent;
+      
+      &.active, &:hover {
+		border-left:1px solid var(--bs-link-color);
+	  }
+    }
+  }
+
+}
+
+
 .c-compare {
   --h: 9;
   --m: 1rem 0;
@@ -925,6 +967,7 @@ input.label-over:focus+label.form-label, input.label-over:not(:placeholder-shown
   -webkit-appearance: none;
   appearance: none;
 }
+
 
 
 

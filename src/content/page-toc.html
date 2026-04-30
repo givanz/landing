@@ -10,36 +10,24 @@
 	
 	@@include('../_includes/header.html')
 	
-	<section class="inner-page-hero" data-v-component-post>
-		 <div>
+
+	
+    <main id="site-content" data-v-component-post>
+
+        <div>
 			<div class="title-container">
 				<div class="container">
 					@@include('../_includes/breadcrumb.html')
 
-					<h1 data-v-post-name>Vvveb CMS</h1>
+					<h1 class="display-4 fw-bold" data-v-post-name>Vvveb CMS</h1>
 				</div>
 			</div>
-		   
-			
-			<!-- img data-v-post-image src="demo/img/bg-img/bg-7.webp" alt="" -->
-		</div>
-	</section>
-	
-    <main id="site-content" data-v-component-post>
-
-        <!-- Single Blog Post Thumb -->
-		<!-- 
-        <div class="inner-page-hero" data-v-if="post.img">
-			<div class="title-container">
-				<h1 data-v-post-name>Post title</h1>
-			</div>
-            <img data-v-post-img src="demo/img/bg-img/bg-7.webp" alt="">
+            <img data-v-if="post.img" data-v-post-img src="demo/img/bg-img/bg-7.webp" alt="">
         </div>
-		-->
 
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-12">
+                <div class="col-lg-9 col-xxl-9">
                     <div>
 						<!--
 						<h1 class="text-center" data-v-if-not="post.img" data-v-post-name>Page title</h1>
@@ -55,6 +43,26 @@
 						
                     </div>
                 </div>
+
+              <aside class="col-md-3 col-xxl-3 d-none d-md-block" data-v-post-toc>
+                <div class="sticky-top p-3" style="top:100px;" id="toc-sidebar">
+                  <div class="nav flex-column toc" data-v-toc-list>
+                    <ol>
+                      <li class="nav-item" data-v-toc-item>
+                        <a class="nav-link" href="#heading-1" data-v-toc-item-url data-v-toc-item-name>heading 1</a>
+                      </li>
+                      <li class="nav-item" data-v-toc-item>
+                        <a class="nav-link" href="#heading-2" data-v-toc-item-url data-v-toc-item-name>heading 2</a>
+                      </li>
+                      <li class="nav-item" data-v-toc-item>
+                        <a class="nav-link" href="#heading-3" data-v-toc-item-url data-v-toc-item-name>heading 3</a>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </aside>
+
+
             </div>
 
 

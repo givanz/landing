@@ -42,7 +42,7 @@
 <body class="post">
 
 
-  <section class="hero" data-v-component-post="post" data-bs-theme="dark">
+  <section class="hero" data-v-component-post="post">
 
     <div class="site-header vh-100 post">
 
@@ -169,7 +169,7 @@
                               <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                             </div>
 
-                            <div class="flex-grow-1 align-self-center text-small">
+                            <div class="flex-grow-1 align-self-center small">
                               <div>
                                 <div data-v-notification-text>
                                   This is a placeholder for a notification message.
@@ -529,11 +529,11 @@
 
 
 
-    <div class="title-container">
+    <div class="title-container" data-bs-theme="dark">
       <div class="container">
-        <h1 class="display-5 text-center text-white" data-aos="fade-up" data-aos-duration="500" data-v-post-name>Begin each day by telling yourself</h1>
+        <h1 class="display-4 fw-bold text-center text-white" data-aos="fade-up" data-aos-duration="500" data-v-post-name>Begin each day by telling yourself</h1>
 
-        <h5 class="text-center my-4 mb-5 w-50 mx-auto text-white" data-aos="fade-up" data-aos-duration="500" data-v-post-excerpt>Today I shall be meeting with interference, ingratitude, insolence, disloyalty, ill-will, and selfishness all of them due to the offenders` ignorance of what is good or evil.</h5>
+        <div class="text-center my-4 mb-5 w-50 mx-auto text-white" data-aos="fade-up" data-aos-duration="500" data-v-post-excerpt>Today I shall be meeting with interference, ingratitude, insolence, disloyalty, ill-will, and selfishness all of them due to the offenders` ignorance of what is good or evil.</div>
         <ul class="post-meta" data-aos="fade-up" data-aos-duration="200">
 
           <li class="post-author meta-wrapper">
@@ -640,7 +640,7 @@
         </div>
         <div class="card-body mb-3">
 
-          <div class="card-text post-content" data-v-post-content>
+          <div class="card-text post-content narrow" data-v-post-content>
             <p>
               Begin each day by telling yourself:
             </p>
@@ -751,7 +751,7 @@
                         <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                       </div>
 
-                      <div class="flex-grow-1 align-self-center text-small">
+                      <div class="flex-grow-1 align-self-center small">
                         <div>
                           <div data-v-notification-text>
                             This is a placeholder for a notification message.
@@ -836,9 +836,10 @@
 
         <div class="card-footer">
 
-          <div data-v-component-content-categories="blog-post" data-v-type="tags" data-v-post_id="url">
-            <div>
-              <ul data-v-cats class="tags">
+          <div data-v-component-content-categories="post-categories" data-v-type="categories" data-v-post_id="url">
+            <div data-v-if="categories > 0" class="share mb-3">
+              <i class="la la-archive"></i>
+              <ul data-v-cats class="tags d-inline-block">
                 <li data-v-cat>
                   <a data-v-cat-url>
                     <span data-v-cat-name>tag 1</span>
@@ -861,6 +862,59 @@
                 </li>
               </ul>
             </div>
+          </div>
+
+          <div data-v-component-content-categories="post-tags" data-v-type="tags" data-v-post_id="url">
+            <div data-v-if="tags > 0" class="share mb-3">
+              <i class="la la-tag"></i>
+              <ul data-v-cats class="tags d-inline-block">
+                <li data-v-cat>
+                  <a data-v-cat-url>
+                    <span data-v-cat-name>tag 1</span>
+                  </a>
+                </li>
+                <li data-v-cat>
+                  <a data-v-cat-url>
+                    <span data-v-cat-name>tag 2</span>
+                  </a>
+                </li>
+                <li data-v-cat>
+                  <a data-v-cat-url>
+                    <span data-v-cat-name>tag 3</span>
+                  </a>
+                </li>
+                <li data-v-cat>
+                  <a data-v-cat-url>
+                    <span data-v-cat-name>tag 4</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <ul class="list-unstyled list-inline share">
+              <li>
+                <a target="_blank" rel="noopener" class="rounded-circle bg-light" href="http://www.facebook.com/sharer.php?u={$post.full-url}">
+                  <i class="lab la-facebook rounded-circle bg-light border lh-1 p-2"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url={$post.full-url}">
+                  <i class="lab la-linkedin rounded-circle bg-light border lh-1 p-2"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="http://twitter.com/intent/tweet?url={$post.full-url}">
+                  <i class="lab la-twitter rounded-circle bg-light border lh-1 p-2"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener" href="mailto:?subject={$post.name}&body={$post.excerpt} {$post.full-url}">
+                  <i class="la la-envelope rounded-circle bg-light border lh-1 p-2"></i>
+                </a>
+              </li>
+            </ul>
           </div>
 
 
@@ -891,8 +945,8 @@
                 <div class="comment-wrap d-flex ">
 
                   <figure class="author-avatar me-2">
-                    <img src="demo/img/sections/team/1.webp" alt="user" width="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
-                    <div class="empty" data-v-if-not="comment.avatar_url"></div>
+                    <img src="demo/img/sections/team/1.webp" alt="user" width="70" class="img-fluid d-block rounded-circle border p-1 avatar" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
+                    <div class="empty rounded-circle border" data-v-if-not="comment.avatar_url"></div>
                   </figure>
 
                   <div class="comment-author">
@@ -904,7 +958,7 @@
                       <span data-v-comment-author data-v-if-not="comment.url">Maria Williams</span>
                     </div>
 
-                    <div class="comment-meta text-small text-muted">
+                    <div class="comment-meta small text-muted">
                       <span data-v-comment-created_at data-filter-friendly_date>Jan 29, 2018</span>
                     </div>
 
@@ -913,7 +967,7 @@
                 </div>
 
 
-                <div data-v-comment-content>
+                <div class="my-2" data-v-comment-content>
                   <p>Consectetur adipiscing elit. Praesent vel tortor facilisis, volutpat nulla placerat, tincidunt mi. Nullam vel orci dui. Su spendisse sit amet laoreet neque. Fusce sagittis suscipit sem a consequat. Proin nec interdum sem. Quisque in porttitor magna, a imperdiet est. Donec accumsan justo nulla, sit amet varius urna laoreet vitae. Maecenas feugiat fringilla metus. </p>
                 </div>
 
@@ -933,8 +987,8 @@
                 <div class="comment-wrap d-flex ">
 
                   <figure class="author-avatar me-2">
-                    <img src="demo/img/sections/team/1.webp" alt="user" width="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
-                    <div class="empty" data-v-if-not="comment.avatar_url"></div>
+                    <img src="demo/img/sections/team/1.webp" alt="user" width="70" class="img-fluid d-block rounded-circle border p-1 avatar" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
+                    <div class="empty rounded-circle border" data-v-if-not="comment.avatar_url"></div>
                   </figure>
 
                   <div class="comment-author">
@@ -943,7 +997,7 @@
                       <span data-v-comment-author data-v-if-not="comment.url">John doe</span>
                     </div>
 
-                    <div class="comment-meta text-small text-muted">
+                    <div class="comment-meta small text-muted">
                       <span data-v-comment-created_at data-filter-friendly_date>Jan 29, 2018</span>
                     </div>
 
@@ -972,8 +1026,8 @@
                 <div class="comment-wrap d-flex ">
 
                   <figure class="author-avatar me-2">
-                    <img src="demo/img/sections/team/1.webp" alt="user" width="60" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
-                    <div class="empty" data-v-if-not="comment.avatar_url"></div>
+                    <img src="demo/img/sections/team/1.webp" alt="user" width="70" class="img-fluid d-block rounded-circle border p-1 avatar" data-v-comment-avatar_url loading="lazy" data-v-if="comment.avatar_url">
+                    <div class="empty rounded-circle border" data-v-if-not="comment.avatar_url"></div>
                   </figure>
 
                   <div class="comment-author">
@@ -985,7 +1039,7 @@
                       <span data-v-comment-author data-v-if-not="comment.url">Maria Williams</span>
                     </div>
 
-                    <div class="comment-meta text-small text-muted">
+                    <div class="comment-meta small text-muted">
                       <span data-v-comment-created_at data-filter-friendly_date>Jan 29, 2018</span>
                     </div>
 
@@ -1020,7 +1074,7 @@
                     <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                   </div>
 
-                  <div class="flex-grow-1 align-self-center text-small">
+                  <div class="flex-grow-1 align-self-center small">
                     <div>
                       <div data-v-notification-text>
                         This is a placeholder for a notification message.
@@ -1122,7 +1176,7 @@
                   <i class="align-middle la la-lg lh-1 la-user"></i>
                 </div>
 
-                <div class="flex-grow-1 align-self-center text-small">
+                <div class="flex-grow-1 align-self-center small">
                   <div>
                     <div data-v-notification-text>
                       <span>
@@ -1188,7 +1242,7 @@
                 <i class="align-middle la la-lg lh-1 la-comments"></i>
               </div>
 
-              <div class="flex-grow-1 align-self-center text-small">
+              <div class="flex-grow-1 align-self-center small">
                 <div>
                   <div data-v-notification-text>
                     <span>Comments are closed</span>
@@ -1308,7 +1362,7 @@
       </div>
       <!--
 		<div class="row justify-content-end">
-			<div class="col-md-3 text-muted text-small mt-5">
+			<div class="col-md-3 text-muted small mt-5">
 				&copy; <span data-v-global-current_year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
 			</div>
 		</div>

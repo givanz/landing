@@ -1,0 +1,97 @@
+@@include('../_includes/html-head.html', {"title": "Landing - Category",  "path":"../"})
+
+<body class="category">
+
+@@include('../_includes/header.html')
+
+<section class="inner-page-hero">
+	 <div>
+		<div class="title-container">
+			<div class="container">
+				@@include('../_includes/breadcrumb.html')
+				
+				<h1 data-v-category-name>Category</h1>
+			</div>
+		</div>
+	   
+		
+		<!-- img data-v-post-image src="demo/img/bg-img/bg-7.webp" alt="" -->
+	</div>
+</section>
+
+  <main id="site-content" role="main">
+
+  <!-- Page Content -->
+  <div class="container">
+
+	<div data-v-if="this.category.content" data-v-category-content>Category</div>
+
+    <div class="row">
+	
+		<aside class="col-md-5 col-lg-4 col-xl-3 sidebar" role="sidebar">
+
+			  <div class="sidebar-sticky bg-body">
+				
+				<div class="card" data-v-component-content-categories="sidebar" data-v-type="categories"  data-v-limit="1000" data-v-post_type="page">
+				  
+				 <div class="card-body menutree" >
+				
+				  <!--	
+				  <h6 class="card-title text-muted">Categories</h6>
+				  -->
+				  
+				  <div class="card-body p-0 menu-content collapse show">
+					<ul class="list-unstyled" data-v-cats>
+						<li data-v-cat class="expand">
+						  <input type="checkbox" id="m3" data-v-if="category.children > 0" />
+						  <label for="m3" data-v-if="category.children > 0">
+							<!-- <a data-v-cat-url data-url data-v-cat-name data-selector=".content-body" data-scroll="start">Bodysuits</a> -->
+							<a data-v-cat-url data-v-cat-name>Bodysuits</a>
+						  </label>
+						  
+						  <!-- <a href="#" data-v-if="category.children = 0" data-v-cat-url data-v-cat-name data-selector=".content-body" data-scroll="start">Bodysuits</a> -->
+						  <a href="#" data-v-if="category.children = 0" data-v-cat-url data-v-cat-name>Bodysuits</a>
+					  </li>
+					  <li data-v-cat>
+						<a  data-v-cat-url><span data-v-cat-name>HTML</span></a>
+					  </li>
+					  <li data-v-cat>
+						<a  data-v-cat-url><span data-v-cat-name>Freebies</span></a>
+					  </li>
+					</ul>
+				  </div>
+				  
+			  </div>
+			</div>
+			</div>
+		 </aside>
+
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-7 col-lg-8 col-xl-9" data-v-component-posts="category" data-v-page="url" data-v-type="url" data-v-limit="4" data-v-taxonomy_item_slug="url.slug" data-v-image_size="large" data-v-404="true">
+		
+		<div class="row">
+			
+			@@include('../_includes/blog-post-excerpt.html', {"class": " post-archive-item post col-md-6", "nometa" : "true"})
+			
+		</div>
+				
+		@@include('../_includes/pagination.html', {"component": "posts", "component-index":0})
+
+	  </div>
+
+
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  </main>	
+
+@@include('../_includes/footer.html')
+
+@@include('../_includes/footer-scripts.html')
+
+</body>
+
+</html>
