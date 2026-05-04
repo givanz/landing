@@ -61,7 +61,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
-          <ul class="navbar-nav ms-auto" data-v-menu-items>
+          <ul class="navbar-nav mx-auto" data-v-menu-items>
             <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
               <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
@@ -138,6 +138,8 @@
                 <span data-v-menu-item-name>About us</span>
               </a>
             </li>
+          </ul>
+          <ul class="navbar-nav">
 
             <li class="nav-toggle">
               <!-- User Login Info -->
@@ -145,7 +147,7 @@
                 <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                   <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                   <!-- <i class="la la-lg la-user"></i> -->
-                  <svg width="20px" viewBox="0 0 24 24" fill="none">
+                  <svg width="18px" viewBox="0 0 24 24" fill="none">
                     <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
 
@@ -362,7 +364,7 @@
                   <!--
 		<i class="la la-lg la-shopping-bag"></i><span class="visually-hidden">Cart</span>
 		-->
-                  <svg width="20px" viewBox="0 0 24 24" fill="none">
+                  <svg width="18px" viewBox="0 0 24 24" fill="none">
                     <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
 
@@ -381,7 +383,7 @@
 
                     <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
                       <!-- <img src="" data-v-language-info-img> -->
-                      <span class="" data-v-language-info-slug>English</span>
+                      <span class="small" data-v-language-info-slug>English</span>
                     </a>
 
 
@@ -1250,7 +1252,7 @@
                     <!-- <img src="demo/img/bag.svg" width="20" alt> -->
                     <i class="la la-2x la-shopping-bag"></i>
                   </div>
-                  <div class="p-2">
+                  <div class="d-flex  p-2 border bg-body-tertiary rounded p-4">
                     <strong>Empty cart</strong>
                     <br>
                     <span class="text-muted">No products added yet!</span>

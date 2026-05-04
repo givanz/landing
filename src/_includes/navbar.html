@@ -1,4 +1,4 @@
-	<ul class="navbar-nav ms-auto" data-v-menu-items>
+	<ul class="navbar-nav mx-auto" data-v-menu-items>
 	  <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 		
 		<a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0"  data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active"  aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
@@ -67,6 +67,8 @@
 	  <li class="nav-item" data-v-menu-item>
 		<a class="nav-link" href="https://www.vvveb.com"  data-v-menu-item-url><span data-v-menu-item-name>About us</span></a>
 	  </li>
+	  </ul>
+	  <ul class="navbar-nav">
 	  @@if (typeof nouser == "undefined" || !nouser)  {
 	  <li class="nav-toggle">
 		@@include('user-dropdown.html')
@@ -84,7 +86,7 @@
 
 				<a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button"  title="Language"  aria-expanded="false">
 					<!-- <img src="" data-v-language-info-img> -->
-					<span class="" data-v-language-info-slug>English</span>
+					<span class="small" data-v-language-info-slug>English</span>
 				</a>
 			
 				

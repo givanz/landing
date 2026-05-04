@@ -12,7 +12,7 @@
     align-items: center;
     //min-height: 60rem;
     position: relative;
-    padding: 5rem 2rem 2rem;
+    padding: 5rem 0rem 0rem;
 /*
 	&::before {
 		background: url(../img/background.svg);
@@ -33,11 +33,11 @@
 	}
 */
 	h1 {
-		//line-height: 1.2;
-		//font-size: 4.2rem;
-    
+		line-height: 1;
+		margin-bottom: 2rem;
+		max-width: 900px;
 		color: var(--bs-body-color);
-		font-weight:700;
+		font-weight:600;
 		z-index: 2;
 		text-shadow: 1px 1px 2px var(--bs-body-bg);
 		letter-spacing:-0.04em;
@@ -78,17 +78,25 @@
 		}	
 	}	
 	*/
+
 	h2 {
-		//font-size: 1.5rem;
-		//line-height: 1.5;
-		font-weight:300;
-		line-height: 1.5;
-		margin: 1.4rem auto 0rem;
+		margin: 0 auto;
 		z-index: 2;
 		position: relative;
 		text-shadow: 1px 1px 2px var(--bs-body-bg);
 		//letter-spacing: 0.03em;
-		max-width: 900px;
+		max-width: 600px;
+		color: var(--bs-body-color);
+	}
+	
+	h3 {
+		font-weight:600;
+		margin: 0 auto 1.5rem;
+		z-index: 2;
+		position: relative;
+		text-shadow: 1px 1px 2px var(--bs-body-bg);
+		//letter-spacing: 0.03em;
+		max-width: 600px;
 		color: var(--bs-body-color);
 	}
 	
@@ -102,12 +110,10 @@
 		max-width: var(--width-xl);
 		width: 100%;
 		z-index: 3;
-    
-		padding: 2rem 0 0rem;
 	}
 	
 	.btns {
-		margin-top:4rem;
+		margin-top:3rem;
 	}
 	
 	.btn {
@@ -227,8 +233,7 @@
 	
 	@media screen and (max-width: 767px) {
 	.btn {
-			min-width: 300px;
-			width: 100%;
+			min-width: 200px;
 		}
 	}
 	

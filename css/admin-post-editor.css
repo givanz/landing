@@ -142,8 +142,8 @@ $font-family-sans-serif:      'Inter', system-ui, -apple-system, "Segoe UI", Rob
   color-scheme: dark;
   --bs-body-color: #dee2e6;
   --bs-body-color-rgb: 222, 226, 230;
-  --bs-body-bg: #212529;
-  --bs-body-bg-rgb: 33, 37, 41;
+  --bs-body-bg: #171a1f;
+  --bs-body-bg-rgb: 23, 26, 31;
   --bs-emphasis-color: #fff;
   --bs-emphasis-color-rgb: 255, 255, 255;
   --bs-secondary-color: rgba(222, 226, 230, 0.75);
@@ -9627,7 +9627,8 @@ h2, .h2 {
 .frame, .video {
   background: #f5f9ff;
   background: var(--bs-tertiary-bg);
-  box-shadow: 0 0 1px 0 rgba(var(--bs-body-color-rgb), 0.2), 0 3px 4px 0 rgba(87, 87, 87, 0.1), 0 10px 15px 0 rgba(5, 4, 10, 0.06);
+  box-shadow: 0 0 1px 0 rgba(var(--bs-body-color-rgb), 0.15), 0 5px 7px 0 rgba(87, 87, 87, 0.1), 0 20px 35px 0 rgba(5, 4, 10, 0.03);
+  border: 1px solid var(--bs-border-color);
   border-radius: 10px;
   width: 100%;
   position: relative;
@@ -9643,7 +9644,7 @@ h2, .h2 {
 
 .frame {
   background: #f5f9ff;
-  background: var(--bs-gray-700);
+  background: var(--bs-gray-900);
   box-shadow: 0 0 1px 0 rgba(var(--bs-body-color-rgb), 0.2), 0 3px 4px 0 rgba(87, 87, 87, 0.1), 0 10px 15px 0 rgba(5, 4, 10, 0.06), rgba(var(--bs-body-color-rgb), 0.2) 0px 4px 14px 0px;
   border-radius: 10px;
   padding: 2.1rem 0 0;
@@ -15165,7 +15166,6 @@ i.la {
       min-width: 320px;
       padding: 1.5rem; }
   .nav-item.dropdown {
-    position: static;
     /*
 		> .nav-link.dropdown-toggle {
 			display:none;
@@ -15472,7 +15472,7 @@ blockquote {
       width: 100%;
       z-index: 1;
       margin: 0;
-      font-weight: 700; }
+      font-weight: 600; }
     .inner-page-hero .title-container nav {
       --bs-link-color-rgb:var(--bs-body-color);
       display: inline-block; }
