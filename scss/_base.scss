@@ -241,7 +241,7 @@ label {
     //overflow: hidden;
     position: relative;
     margin:3rem 0 3rem;
-    max-width:1280px;
+    max-width:calc(max(1280px, 70%));
     padding:2.1rem 0 0;
 	z-index:2;
 }
@@ -707,8 +707,8 @@ audio, video {
 }
 
 .modal-backdrop.show {
-	background:linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
-	backdrop-filter:blur(2px);
+	background:linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+	//backdrop-filter:blur(2px);
 }
 
 img.avatar {
@@ -827,6 +827,13 @@ input.label-over:focus+label.col-form-label, input.label-over:not(:placeholder-s
 
 input.label-over:focus+label.form-label, input.label-over:not(:placeholder-shown)+label.form-label {
 	margin-top: -2.1rem;
+}
+
+
+.required:after {
+  content:" *";
+  color:red;
+  color:var(--bs-danger);
 }
 
 $space: 1rem;

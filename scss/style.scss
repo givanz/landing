@@ -114,9 +114,10 @@ h1, h2, h3, h4 {
 	 --bs-accordion-active-color: var(--bs-body-color);
 	 --bs-accordion-btn-icon: url('data:image/svg+xml,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" /></svg>');
 	 --bs-accordion-btn-active-icon: url('data:image/svg+xml,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>minus</title><path d="M19,13H5V11H19V13Z" /></svg>');
-	--bs-accordion-border-width: 0;
-	--bs-accordion-btn-focus-border-color: transparent;
+	//--bs-accordion-border-width: 0;
+	//--bs-accordion-btn-focus-border-color: transparent;
 	--bs-accordion-btn-focus-box-shadow: none;
+	--bs-accordion-active-bg: var(--bs-tertiary-bg);
 }
 
 .border-dashed {

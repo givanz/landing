@@ -6,6 +6,10 @@
 		
 		<div class="form-group image" data-v-option>
 			<label class="form-label small text-muted" data-v-option-name>Color</label>
+			<span data-v-if="option.instructions">
+			
+			</span>
+
 
 				<div data-v-if="option.type = 'radio'">
 					<div class="radio" data-v-value>
@@ -87,7 +91,11 @@
 				
 				<div data-v-if="option.type = 'select'">
 					<select class="form-select" data-v-option-input>
-						<option value="" data-v-value>Option 1</option>
+						<option value="" data-v-value><span data-v-value-name>Blue</span>
+							  <span data-v-if="value.price > 0">
+								(<span data-v-value-price_formatted>+$50</span>)
+							  </span>
+						</option>
 						<option value="" data-v-value>Option 2</option>
 						<option value="" data-v-value>Option 3</option>
 					</select>

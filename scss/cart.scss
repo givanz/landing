@@ -45,6 +45,8 @@
 
 .btn-remove {
 	color:var(--bs-secondary-color);
+	--bs-border-color:transparent;
+	
 	i {
 		color:var(--bs-danger-border-subtle);
 	}
@@ -52,6 +54,7 @@
 	&:before {display:none}
 	&:hover {
 		color:var(--bs-danger);
+		--bs-border-color:var(--bs-danger-border-subtle);
 		i {
 			visibility:visible;
 			color:var(--bs-danger);

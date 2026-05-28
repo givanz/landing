@@ -69,17 +69,17 @@
             <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
               <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
-                <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
                 <span data-v-menu-item-name></span>
                 <span data-v-menu-item-content>
-                  <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
+                  Mega menu
                 </span>
               </a>
 
               <div class="dropdown-menu" data-v-menu-item-recursive>
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                   <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                    <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                    <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
                     <div>
                       <span data-v-menu-item-name></span>
                       <span data-v-menu-item-content>
@@ -147,7 +147,7 @@
 
             <li class="nav-toggle">
               <!-- User Login Info -->
-              <div class="dropdown">
+              <div class="nav-item dropdown">
                 <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                   <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                   <!-- <i class="la la-lg la-user"></i> -->
@@ -272,7 +272,7 @@
 			  <i class="lab la-facebook la-lg"></i>
 			</span>
 		</a> -->
-                        <hr class="text-secondary">
+                        <hr class="text-secondary my-3">
                         <span>Don’t have an account?</span>
                         <br>
                         <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
@@ -856,8 +856,8 @@
                 </div>
               </td>
               <td class="text-end">
-                <a class="btn btn-remove btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
-                  <i class="la la-times-circle la-lg"></i>
+                <a class="btn btn-remove btn-sm" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                  <i class="la la-times"></i>
                 </a>
               </td>
             </tr>
@@ -886,14 +886,13 @@
             </tr>
             <tr data-v-if-not="cart.total_items">
               <td colspan="100">
-                <div class="d-flex  p-2">
-                  <div class="text-center p-2 opacity-75">
+                <div class="bg-body-tertiary p-4 mt-2 d-flex">
+                  <div class="text-center opacity-75 pe-4">
                     <!-- <img src="demo/img/bag.svg" width="20" alt> -->
-                    <i class="la la-2x la-shopping-bag"></i>
+                    <i class="la la-2x la-shopping-bag text-secondary"></i>
                   </div>
-                  <div class="d-flex  p-2 border bg-body-tertiary rounded p-4">
-                    <strong>Empty cart</strong>
-                    <br>
+                  <div class="">
+                    <h6 class="my-2 p-0">Empty cart</h6>
                     <span class="text-muted">No products added yet!</span>
                   </div>
                 </div>

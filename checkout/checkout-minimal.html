@@ -1041,8 +1041,8 @@
                 </div>
               </td>
               <td class="text-end">
-                <a class="btn btn-remove btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
-                  <i class="la la-times-circle la-lg"></i>
+                <a class="btn btn-remove btn-sm" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                  <i class="la la-times"></i>
                 </a>
               </td>
             </tr>
@@ -1071,14 +1071,13 @@
             </tr>
             <tr data-v-if-not="cart.total_items">
               <td colspan="100">
-                <div class="d-flex  p-2">
-                  <div class="text-center p-2 opacity-75">
+                <div class="bg-body-tertiary p-4 mt-2 d-flex">
+                  <div class="text-center opacity-75 pe-4">
                     <!-- <img src="demo/img/bag.svg" width="20" alt> -->
-                    <i class="la la-2x la-shopping-bag"></i>
+                    <i class="la la-2x la-shopping-bag text-secondary"></i>
                   </div>
-                  <div class="d-flex  p-2 border bg-body-tertiary rounded p-4">
-                    <strong>Empty cart</strong>
-                    <br>
+                  <div class="">
+                    <h6 class="my-2 p-0">Empty cart</h6>
                     <span class="text-muted">No products added yet!</span>
                   </div>
                 </div>

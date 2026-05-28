@@ -75,17 +75,17 @@
             <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
               <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
-                <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
                 <span data-v-menu-item-name></span>
                 <span data-v-menu-item-content>
-                  <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
+                  Mega menu
                 </span>
               </a>
 
               <div class="dropdown-menu" data-v-menu-item-recursive>
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                   <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                    <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                    <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
                     <div>
                       <span data-v-menu-item-name></span>
                       <span data-v-menu-item-content>
@@ -153,7 +153,7 @@
 
             <li class="nav-toggle">
               <!-- User Login Info -->
-              <div class="dropdown">
+              <div class="nav-item dropdown">
                 <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                   <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                   <!-- <i class="la la-lg la-user"></i> -->
@@ -278,7 +278,7 @@
 			  <i class="lab la-facebook la-lg"></i>
 			</span>
 		</a> -->
-                        <hr class="text-secondary">
+                        <hr class="text-secondary my-3">
                         <span>Don’t have an account?</span>
                         <br>
                         <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
@@ -667,8 +667,8 @@
                 </div>
               </td>
               <td class="text-end">
-                <a class="btn btn-remove btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
-                  <i class="la la-times-circle la-lg"></i>
+                <a class="btn btn-remove btn-sm" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                  <i class="la la-times"></i>
                 </a>
               </td>
             </tr>
@@ -697,14 +697,13 @@
             </tr>
             <tr data-v-if-not="cart.total_items">
               <td colspan="100">
-                <div class="d-flex  p-2">
-                  <div class="text-center p-2 opacity-75">
+                <div class="bg-body-tertiary p-4 mt-2 d-flex">
+                  <div class="text-center opacity-75 pe-4">
                     <!-- <img src="demo/img/bag.svg" width="20" alt> -->
-                    <i class="la la-2x la-shopping-bag"></i>
+                    <i class="la la-2x la-shopping-bag text-secondary"></i>
                   </div>
-                  <div class="d-flex  p-2 border bg-body-tertiary rounded p-4">
-                    <strong>Empty cart</strong>
-                    <br>
+                  <div class="">
+                    <h6 class="my-2 p-0">Empty cart</h6>
                     <span class="text-muted">No products added yet!</span>
                   </div>
                 </div>
@@ -1053,11 +1052,11 @@ initSwiper();
             <!--
                     <span class="badge  bg-success rounded-pill px-3">new</span>
                     -->
-            <h2 class="display-5 fw-bold">Real time code editor</h2>
+            <h2 class="display-5 fw-semibold">Real time code editor</h2>
             <div class="mt-4">
-              <p class="lead">Code editor with syntax highglighting that updates in real time.</p>
-              <p class="lead">Use any of the hundreds fonts from google fonts for your design.</p>
-              <p class="lead">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
+              <p>Code editor with syntax highglighting that updates in real time.</p>
+              <p>Use any of the hundreds fonts from google fonts for your design.</p>
+              <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
             </div>
             <a tile="Code editor features" href="/page/about" role="button">
               <span>Learn More</span>
@@ -1076,10 +1075,10 @@ initSwiper();
         <div class="col-md-6 align-self-center">
           <div class="max-box ms-auto" data-aos="fade-left">
             <!-- <span class="badge  bg-success rounded-pill px-3">on sale</span> -->
-            <h2 class="display-5 fw-bold">Drag and drop page builder</h2>
+            <h2 class="display-5 fw-semibold">Drag and drop page builder</h2>
             <div class="mt-4">
-              <p class="lead">Intuitive building with simple drag and drop for sections, components and blocks.</p>
-              <p class="lead">The html for sections blocks and components and this template are built using Bootstrap.</p>
+              <p>Intuitive building with simple drag and drop for sections, components and blocks.</p>
+              <p>The html for sections blocks and components and this template are built using Bootstrap.</p>
             </div>
             <a title="Drag and drop" href="/page/about" role="button">
               <span>Learn More</span>
@@ -1096,9 +1095,9 @@ initSwiper();
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="section-heading text-center">
+          <div class="section-heading text-center mb-5">
             <h2 class="text-center display-6 mb-1 fw-bold">Latest Products</h2>
-            <p class="lead text-center text-muted mb-4">Best quality at the lowest price.</p>
+            <p class="lead text-center text-muted">Best quality at the lowest price.</p>
           </div>
         </div>
       </div>
@@ -1816,7 +1815,7 @@ initSwiper();
       <div class="row justify-content-center mb-4">
         <div class="col-md-7 text-center">
           <h2 class="text-center display-6 mb-1 fw-bold">Some of our users</h2>
-          <p class="lead text-center text-muted mb-4">Hear what our users have to say</p>
+          <p class="lead text-center text-muted">Hear what our users have to say</p>
         </div>
       </div>
 
@@ -1906,15 +1905,15 @@ initSwiper();
 
   <section class="pricing-table-3 my-3" aria-label="pricing-table-3">
     <div class="container">
-      <div class="row justify-content-center pb-2">
+      <div class="row justify-content-center my-5">
         <div class="col-md-7 heading-section text-center">
           <h2 class="text-center display-6 mb-1 fw-bold">Choose your plan</h2>
-          <p class="lead text-center text-muted mb-4">14-day free trial no credit card required.</p>
+          <p class="lead text-center text-muted">14-day free trial no credit card required.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <div class="price my-5-col shadow-sm border rounded-3" data-aos="fade-up">
+          <div class="price my-5-col shadow-sm border rounded-3 mx-3" data-aos="fade-up">
             <!--
                     <div class="img"><img src="demo/img/illustrations.co/104-dumbbell.svg" alt="104-dumbbell" loading="lazy" class="img-fluid" /></div>
                     -->
@@ -1947,7 +1946,7 @@ initSwiper();
           </div>
         </div>
         <div class="col-md-4">
-          <div class="price my-5-col shadow-sm border rounded-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="price my-5-col shadow-sm border rounded-3 mx-3" data-aos="fade-up" data-aos-delay="200">
             <!--
                     <div class="img"><img src="demo/img/illustrations.co/107-healthy.svg" alt="107-healthy" loading="lazy" class="img-fluid" /></div>
                     -->
@@ -1980,7 +1979,7 @@ initSwiper();
           </div>
         </div>
         <div class="col-md-4">
-          <div class="price my-5-col shadow-sm border rounded-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="price my-5-col shadow-sm border rounded-3 mx-3" data-aos="fade-up" data-aos-delay="400">
             <!--
                     <div class="img"><img src="demo/img/illustrations.co/126-namaste-no-hand-shake.svg" alt="126-namaste-no-hand-shake" loading="lazy" class="img-fluid" /></div>
                     -->
@@ -2021,9 +2020,9 @@ initSwiper();
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="section-heading text-center">
+          <div class="section-heading text-center mb-5">
             <h2 class="text-center display-6 mb-1 fw-bold">Latest Posts</h2>
-            <p class="lead text-center text-muted mb-4">Fresh updates from the industry.</p>
+            <p class="lead text-center text-muted">Fresh updates from the industry.</p>
           </div>
         </div>
       </div>

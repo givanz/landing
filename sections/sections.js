@@ -5,17 +5,19 @@ Vvveb.Sections.add("hero/hero-1", {
 
   <div class="container">
     <div class="heading">
+      <h3 class="fs-5 text-muted fw-normal">Website builder for the new web.</h3>
+
       <h1 class="display-1">Open Source CMS Reinvented</h1>
 
-      <h2 class="fs-2 text-muted">Powerful and easy to use drag and drop website builder for blogs, websites or ecommerce stores.</h2>
+      <h2 class="fs-5 text-muted">Powerful and easy to use drag and drop website builder for blogs, websites or ecommerce stores.</h2>
 
       <div class="btns">
-        <a class="btn btn-primary btn-lg btn-shadow" href="/page/download" role="button">
+        <a class="btn btn-primary btn-shadow" href="/page/download" role="button">
           <span>Create website</span>
-          <i class="la la-caret-right"></i>
+          <i class="la la-arrow-right"></i>
         </a>
 
-        <a class="btn btn-outline-secondary btn-lg btn-shadow" href="/download.php" role="button">
+        <a class="btn btn-outline-secondary btn-shadow" href="/download.php" role="button">
           <span>Free Download</span>
           <i class="la la-arrow-down"></i>
         </a>
@@ -35,7 +37,7 @@ Vvveb.Sections.add("hero/hero-1", {
 
     </div>
 
-    <div class="frame mx-auto">
+    <div class="frame mx-auto mb-0">
       <!--
         <video loading="lazy" src="video/intro.mp4" width="1280" muted="true" playsinline="true" loop="true" controls="true" poster="https://www.vvveb.com/img/dark-theme.webp"></video> -->
       <img src="https://www.vvveb.com/img/dark-theme.webp" class="img-fluid">
@@ -160,17 +162,19 @@ Vvveb.Sections.add("hero/hero-1", {
   <div class="container">
     <div>
       <div class="row align-items-center justify-content-center text-center">
-        <div class="col-lg-12">
-          <h1 class="heading mb-4 display-1" data-aos="fade-up" data-aos-delay="100">Next generation website builder</h1>
-          <div class="col-lg-10 mx-auto">
-            <h2 class="display-6" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h2>
+        <div class="">
+          <div class="col-lg-8 mx-auto">
+            <h1 class="heading mb-4 display-1" data-aos="fade-up" data-aos-delay="100">Next generation website builder</h1>
+          </div>
+          <div class="col-lg-6 mx-auto">
+            <h2 class="fs-5" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h2>
           </div>
 
           <div class="buttons" data-aos="fade-up" data-aos-delay="300">
             <a href="https://www.vvveb.com" class="btn btn-primary px-5 ">
               <span>Free Download</span>
             </a>
-            <a href="https://demo.vvveb.com" class="btn btn-light px-5 ">Live Demo</a>
+            <a href="https://demo.vvveb.com" class="btn btn-dark px-5 ">Live Demo</a>
           </div>
 
 
@@ -604,14 +608,14 @@ Vvveb.Sections.add("hero/hero-1", {
     </div>
   </div>
   <div class="container">
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="text-center col-md-8">
         <div>
           <h1 class="display-2 fw-bold">Next generation website builder</h1>
         </div>
       </div>
     </div>
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="text-center col-xxl-6 col-md-8">
         <div>
           <p class="lead">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</p>
@@ -1004,11 +1008,11 @@ Vvveb.Sections.add("features/features-1", {
           <!--
                     <span class="badge  bg-success rounded-pill px-3">new</span>
                     -->
-          <h2 class="display-5 fw-bold">Real time code editor</h2>
+          <h2 class="display-5 fw-semibold">Real time code editor</h2>
           <div class="mt-4">
-            <p class="lead">Code editor with syntax highglighting that updates in real time.</p>
-            <p class="lead">Use any of the hundreds fonts from google fonts for your design.</p>
-            <p class="lead">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
+            <p>Code editor with syntax highglighting that updates in real time.</p>
+            <p>Use any of the hundreds fonts from google fonts for your design.</p>
+            <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
           </div>
           <a tile="Code editor features" href="/page/about" role="button">
             <span>Learn More</span>
@@ -1027,10 +1031,10 @@ Vvveb.Sections.add("features/features-1", {
       <div class="col-md-6 align-self-center">
         <div class="max-box ms-auto" data-aos="fade-left">
           <!-- <span class="badge  bg-success rounded-pill px-3">on sale</span> -->
-          <h2 class="display-5 fw-bold">Drag and drop page builder</h2>
+          <h2 class="display-5 fw-semibold">Drag and drop page builder</h2>
           <div class="mt-4">
-            <p class="lead">Intuitive building with simple drag and drop for sections, components and blocks.</p>
-            <p class="lead">The html for sections blocks and components and this template are built using Bootstrap.</p>
+            <p>Intuitive building with simple drag and drop for sections, components and blocks.</p>
+            <p>The html for sections blocks and components and this template are built using Bootstrap.</p>
           </div>
           <a title="Drag and drop" href="/page/about" role="button">
             <span>Learn More</span>
@@ -1675,9 +1679,9 @@ Vvveb.Sections.add("features/features-1", {
                     -->
           <h2 class="display-6 fw-semibold">Real time code editor</h2>
           <div class="mt-4">
-            <p class="lead">Code editor with syntax highglighting that updates in real time.</p>
-            <p class="lead">Use any of the hundreds fonts from google fonts for your design.</p>
-            <p class="lead">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
+            <p>Code editor with syntax highglighting that updates in real time.</p>
+            <p>Use any of the hundreds fonts from google fonts for your design.</p>
+            <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
           </div>
           <a tile="Code editor features" href="/page/about" role="button">
             <span>Learn More</span>
@@ -1698,8 +1702,8 @@ Vvveb.Sections.add("features/features-1", {
           <!-- <span class="badge  bg-success rounded-pill px-3">on sale</span> -->
           <h2 class="display-6 fw-semibold">Drag and drop page builder</h2>
           <div class="mt-4">
-            <p class="lead">Intuitive building with simple drag and drop for sections, components and blocks.</p>
-            <p class="lead">The html for sections blocks and components and this template are built using Bootstrap.</p>
+            <p>Intuitive building with simple drag and drop for sections, components and blocks.</p>
+            <p>The html for sections blocks and components and this template are built using Bootstrap.</p>
           </div>
           <a title="Drag and drop" href="/page/about" role="button">
             <span>Learn More</span>
@@ -1723,9 +1727,9 @@ Vvveb.Sections.add("features/features-1", {
                     -->
           <h2 class="display-6 fw-semibold">Real time code editor</h2>
           <div class="mt-4">
-            <p class="lead">Code editor with syntax highglighting that updates in real time.</p>
-            <p class="lead">Use any of the hundreds fonts from google fonts for your design.</p>
-            <p class="lead">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
+            <p>Code editor with syntax highglighting that updates in real time.</p>
+            <p>Use any of the hundreds fonts from google fonts for your design.</p>
+            <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
           </div>
           <a tile="Code editor features" href="/page/about" role="button">
             <span>Learn More</span>
@@ -1753,8 +1757,8 @@ Vvveb.Sections.add("features/features-1", {
           <!-- <span class="badge  bg-success rounded-pill px-3">on sale</span> -->
           <h2 class="display-6 fw-semibold">Drag and drop page builder</h2>
           <div class="mt-4">
-            <p class="lead">Intuitive building with simple drag and drop for sections, components and blocks.</p>
-            <p class="lead">The html for sections blocks and components and this template are built using Bootstrap.</p>
+            <p>Intuitive building with simple drag and drop for sections, components and blocks.</p>
+            <p>The html for sections blocks and components and this template are built using Bootstrap.</p>
           </div>
           <a title="Drag and drop" href="/page/about" role="button">
             <span>Learn More</span>
@@ -1914,14 +1918,14 @@ Vvveb.Sections.add("features/features-1", {
          </div>
        </div>
      </div>
-     <div class="row justify-content-center">
+     <div price my-5-col shadow-sm border rounded-3 mx-3>
        <div class="col-md-8 col-lg-4 mb-4">
          <div class="card border-0 shadow">
            <div class="card-body py-4">
              <div class="d-flex">
                <img style="width:48px;height:48px" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" alt="Photo by Nicolas Horn" class="rounded-2 shadow" srcset="https://images.unsplash.com/photo-1527980965255-d3b416303d12?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1527980965255-d3b416303d12??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1527980965255-d3b416303d12??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1527980965255-d3b416303d12??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1527980965255-d3b416303d12??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
                <div class="ps-2">
-                 <h4 editable="inline" class="rfs-7 ms-2">Mathew Glock</h4>
+                 <h4 class="ms-2">Mathew Glock</h4>
                </div>
              </div>
              <div class="mt-4 text-muted">
@@ -1958,7 +1962,7 @@ Vvveb.Sections.add("features/features-1", {
              <div class="d-flex">
                <img style="width:48px;height:48px" src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" alt="Photo by Leio McLaren" class="rounded-2 shadow" srcset="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1628157588553-5eeea00af15c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1628157588553-5eeea00af15c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1628157588553-5eeea00af15c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1628157588553-5eeea00af15c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
                <div class="ps-2">
-                 <h4 editable="inline" class="rfs-7 ms-2">Tahmid William&nbsp;<p></p>
+                 <h4 class="ms-2">Tahmid William&nbsp;<p></p>
                    <p></p>
                  </h4>
                </div>
@@ -1997,7 +2001,7 @@ Vvveb.Sections.add("features/features-1", {
              <div class="d-flex">
                <img style="width:48px;height:48px" src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" alt="Photo by Amir Seilsepour" class="rounded-2 shadow" srcset="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
                <div class="ps-2">
-                 <h4 editable="inline" class="rfs-7 ms-2">Jarvis Ridley&nbsp;<p></p>
+                 <h4 class="ms-2">Jarvis Ridley&nbsp;<p></p>
                    <p></p>
                  </h4>
                </div>
@@ -2030,14 +2034,14 @@ Vvveb.Sections.add("features/features-1", {
          </div>
        </div>
      </div>
-     <div class="row justify-content-center">
+     <div price my-5-col shadow-sm border rounded-3 mx-3>
        <div class="col-md-8 col-lg-4 mb-4">
          <div class="card border-0 shadow">
            <div class="card-body py-4">
              <div class="d-flex">
                <img style="width:48px;height:48px" src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" alt="Photo by Imansyah Muhamad Putera" class="rounded-2 shadow" srcset="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1542909168-82c3e7fdca5c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1542909168-82c3e7fdca5c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1542909168-82c3e7fdca5c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1542909168-82c3e7fdca5c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
                <div class="ps-2">
-                 <h4 editable="inline" class="rfs-7 ms-2">Bronwen Baxter&nbsp;<p></p>
+                 <h4 class="ms-2">Bronwen Baxter&nbsp;<p></p>
                    <p></p>
                  </h4>
                </div>
@@ -2076,7 +2080,7 @@ Vvveb.Sections.add("features/features-1", {
              <div class="d-flex">
                <img style="width:48px;height:48px" src="https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" alt="Photo by Conor OBrien" class="rounded-2 shadow" srcset="https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
                <div class="ps-2">
-                 <h4 editable="inline" class="rfs-7 ms-2">
+                 <h4 class="ms-2">
                    Nadir Chandler
 
                  </h4>
@@ -2116,7 +2120,7 @@ Vvveb.Sections.add("features/features-1", {
              <div class="d-flex">
                <img style="width:48px;height:48px" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" alt="Photo by Daniil Lobachev" class="rounded-2 shadow" srcset="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1584308972272-9e4e7685e80f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1584308972272-9e4e7685e80f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1584308972272-9e4e7685e80f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1584308972272-9e4e7685e80f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
                <div class="ps-2">
-                 <h4 editable="inline" class="rfs-7 ms-2">
+                 <h4 class="ms-2">
                    Samira Goldsmith
 
                  </h4>
@@ -2280,7 +2284,7 @@ Vvveb.Sections.add("features/features-1", {
         </div>
         <div class="text-center">
           <div editable="rich">
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <br>Suspendisse a lacus est.&nbsp;
             </p>
           </div>
@@ -2447,7 +2451,7 @@ Vvveb.Sections.add("features/features-1", {
 
         <div>
           <div>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam velit temporibus impedit maxime repellendus esse tempore odio voluptatum iusto consectetur voluptates.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam velit temporibus impedit maxime repellendus esse tempore odio voluptatum iusto consectetur voluptates.</p>
           </div>
         </div>
 
@@ -3349,7 +3353,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
                   <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                 </div>
 
-                <div class="flex-grow-1 align-self-center text-small">
+                <div class="flex-grow-1 align-self-center small">
                   <div>
                     <div data-v-notification-text>
                       This is a placeholder for a notification message.
@@ -3470,7 +3474,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
               <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
             </div>
 
-            <div class="flex-grow-1 align-self-center text-small">
+            <div class="flex-grow-1 align-self-center small">
               <div>
                 <div data-v-notification-text>
                   This is a placeholder for a notification message.
@@ -3590,7 +3594,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
     </div>
     <div class="row-50">
     </div>
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="col-12 col-md-8 col-lg-7" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-home">
 
         <div class="notifications" data-v-notifications>
@@ -3601,7 +3605,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
               <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
             </div>
 
-            <div class="flex-grow-1 align-self-center text-small">
+            <div class="flex-grow-1 align-self-center small">
               <div>
                 <div data-v-notification-text>
                   This is a placeholder for a notification message.
@@ -3726,7 +3730,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
               <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
             </div>
 
-            <div class="flex-grow-1 align-self-center text-small">
+            <div class="flex-grow-1 align-self-center small">
               <div>
                 <div data-v-notification-text>
                   This is a placeholder for a notification message.
@@ -3835,7 +3839,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
     name: "Contact form 5",
     image: Vvveb.themeBaseUrl + "/screenshots/sections/contact-form/contact-form-5-thumb.webp",
     html: `<section class="contact-form-2 container-fluid px-5 my-5" aria-label="contact-form-2">
-  <div class="row justify-content-center">
+  <div price my-5-col shadow-sm border rounded-3 mx-3>
     <div class="col-xl-10">
       <div class="card border-0 rounded-3 shadow-lg ">
         <div class="card-body p-0">
@@ -3855,7 +3859,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
                     <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                   </div>
 
-                  <div class="flex-grow-1 align-self-center text-small">
+                  <div class="flex-grow-1 align-self-center small">
                     <div>
                       <div data-v-notification-text>
                         This is a placeholder for a notification message.
@@ -4015,7 +4019,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
               <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
             </div>
 
-            <div class="flex-grow-1 align-self-center text-small">
+            <div class="flex-grow-1 align-self-center small">
               <div>
                 <div data-v-notification-text>
                   This is a placeholder for a notification message.
@@ -4156,7 +4160,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
               <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
             </div>
 
-            <div class="flex-grow-1 align-self-center text-small">
+            <div class="flex-grow-1 align-self-center small">
               <div>
                 <div data-v-notification-text>
                   This is a placeholder for a notification message.
@@ -4275,7 +4279,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
               <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
             </div>
 
-            <div class="flex-grow-1 align-self-center text-small">
+            <div class="flex-grow-1 align-self-center small">
               <div>
                 <div data-v-notification-text>
                   This is a placeholder for a notification message.
@@ -4440,7 +4444,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
                   <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                 </div>
 
-                <div class="flex-grow-1 align-self-center text-small">
+                <div class="flex-grow-1 align-self-center small">
                   <div>
                     <div data-v-notification-text>
                       This is a placeholder for a notification message.
@@ -4593,18 +4597,18 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
     <div class="row my-5">
       <div class="col-12 col-md-6 col-lg-5">
         <h2 class="display-6 mb-1 fw-bold mb-4">Contact Us</h2>
-        <p class="lead">
+        <p>
           Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.
         </p>
 
-        <p class="lead">
+        <p>
           The html for sections blocks and components and this template are built using Bootstrap 5.
         </p>
 
         <div data-v-component-site>
           <p class="mt-5">
             <b>
-              <i class="la la-lg la-envelope opacity-50"></i> Email:
+              <i class="la la-envelope opacity-50"></i> Email:
             </b>
             <span data-v-if="site.contact-email">
               <a href="mailto:contact@mysite.com" data-v-site-contact-email>
@@ -4614,7 +4618,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
           </p>
           <p class="">
             <b>
-              <i class="la la-lg la-phone opacity-50"></i> Phone:
+              <i class="la la-phone opacity-50"></i> Phone:
             </b>
             <a href="tel:5511112377" data-v-site-description-phone-number>
               <span data-v-site-description-phone-number>+55 (111) 123 777</span>
@@ -4633,7 +4637,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
               <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
             </div>
 
-            <div class="flex-grow-1 align-self-center text-small">
+            <div class="flex-grow-1 align-self-center small">
               <div>
                 <div data-v-notification-text>
                   This is a placeholder for a notification message.
@@ -4685,7 +4689,7 @@ Vvveb.Sections.add("contact-form/contact-form-1", {
 
         </div>
 
-        <div class="border rounded-3 p-4 border-opacity-25 border-light-subtle">
+        <div class="">
           <form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
             <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">
             <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>
@@ -4880,7 +4884,7 @@ Vvveb.Sections.add("cta/cta-1", {
 
   <div class="container">
 
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="col text-center">
         <h2 class="display-3 fw-bold text-body mb-3">Ready to take the next step?</h2>
         <p class="text-body h4 fw-normal">Our specialists are ready to work on your next awesome project</p>
@@ -4962,7 +4966,7 @@ Vvveb.Sections.add("cta/cta-1", {
 Vvveb.Sections.add("faq/faq-1", {
     name: "Faq 1",
     image: Vvveb.themeBaseUrl + "/screenshots/sections/faq/faq-1-thumb.webp",
-    html: `<section class="py-5" aria-label="faq-1">
+    html: `<section class="py-5 border-top" aria-label="faq-1">
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-8 col-xl-7">
@@ -5220,7 +5224,7 @@ Vvveb.Sections.add("faq/faq-1", {
         <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit Consequatur quidem eius cum voluptatum quasi delectus.</p>
       </div>
     </div>
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="col-md-10">
         <div class="row g-3 g-md-4">
           <div class="col-lg-6">
@@ -5612,7 +5616,7 @@ Vvveb.Sections.add("faq/faq-1", {
         <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit Consequatur quidem eius cum voluptatum quasi delectus.</p>
       </div>
     </div>
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="col-md-10">
         <div class="row g-3 g-md-4">
           <div class="col-lg-6">
@@ -5722,7 +5726,7 @@ Vvveb.Sections.add("faq/faq-1", {
         <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit Consequatur quidem eius cum voluptatum quasi delectus.</p>
       </div>
     </div>
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="col-md-10">
         <div class="row g-4 g-md-5">
           <div class="col-lg-6">
@@ -5909,7 +5913,7 @@ Vvveb.Sections.add("footer/footer-1", {
     </div>
     <!--
 		<div class="row justify-content-end">
-			<div class="col-md-3 text-muted text-small mt-5">
+			<div class="col-md-3 text-muted small mt-5">
 				&copy; <span data-v-global-current_year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
 			</div>
 		</div>
@@ -6127,7 +6131,7 @@ Vvveb.Sections.add("footer/footer-1", {
     </div>
     <!--
 		<div class="row justify-content-end">
-			<div class="col-md-3 text-muted text-small mt-5">
+			<div class="col-md-3 text-muted small mt-5">
 				&copy; <span data-v-global-current_year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
 			</div>
 		</div>
@@ -9117,7 +9121,7 @@ Vvveb.Sections.add("how-it-works/how-it-works-1", {
     </div>
     <div class="row justify-content-center pt-5">
       <div class="col-lg-9">
-        <div class="row justify-content-center">
+        <div price my-5-col shadow-sm border rounded-3 mx-3>
           <div class="col-md-6">
             <div class="card rounded-0 text-center p-3 px-5 mb-5">
               <div class="d-flex rounded-circle mx-auto align-items-center justify-content-center text-white fs-3 fw-bold bg-primary border border-white border-4" style="width: 4rem; height:4rem; margin-top:-3.5rem;">
@@ -9239,21 +9243,21 @@ Vvveb.Sections.add("navigation/navigation-1", {
       </button>
 
       <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
-        <ul class="navbar-nav ms-auto" data-v-menu-items>
+        <ul class="navbar-nav mx-auto" data-v-menu-items>
           <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
             <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
-              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
               <span data-v-menu-item-name></span>
               <span data-v-menu-item-content>
-                <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
+                Mega menu
               </span>
             </a>
 
             <div class="dropdown-menu" data-v-menu-item-recursive>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                 <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
                   <div>
                     <span data-v-menu-item-name></span>
                     <span data-v-menu-item-content>
@@ -9316,14 +9320,16 @@ Vvveb.Sections.add("navigation/navigation-1", {
               <span data-v-menu-item-name>About us</span>
             </a>
           </li>
+        </ul>
+        <ul class="navbar-nav">
 
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown">
+            <div class="nav-item dropdown">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <!-- <i class="la la-lg la-user"></i> -->
-                <svg width="20px" viewBox="0 0 24 24" fill="none">
+                <svg width="18px" viewBox="0 0 24 24" fill="none">
                   <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
@@ -9342,7 +9348,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                       </div>
 
-                      <div class="flex-grow-1 align-self-center text-small">
+                      <div class="flex-grow-1 align-self-center small">
                         <div>
                           <div data-v-notification-text>
                             This is a placeholder for a notification message.
@@ -9444,7 +9450,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 			  <i class="lab la-facebook la-lg"></i>
 			</span>
 		</a> -->
-                      <hr class="text-secondary">
+                      <hr class="text-secondary my-3">
                       <span>Don’t have an account?</span>
                       <br>
                       <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
@@ -9540,7 +9546,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                 <!--
 		<i class="la la-lg la-shopping-bag"></i><span class="visually-hidden">Cart</span>
 		-->
-                <svg width="20px" viewBox="0 0 24 24" fill="none">
+                <svg width="18px" viewBox="0 0 24 24" fill="none">
                   <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
@@ -9559,7 +9565,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
                   <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
                     <!-- <img src="" data-v-language-info-img> -->
-                    <span class="" data-v-language-info-slug>English</span>
+                    <span class="small" data-v-language-info-slug>English</span>
                   </a>
 
 
@@ -9723,21 +9729,21 @@ Vvveb.Sections.add("navigation/navigation-1", {
       </button>
 
       <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
-        <ul class="navbar-nav ms-auto" data-v-menu-items>
+        <ul class="navbar-nav mx-auto" data-v-menu-items>
           <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
             <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
-              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
               <span data-v-menu-item-name></span>
               <span data-v-menu-item-content>
-                <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
+                Mega menu
               </span>
             </a>
 
             <div class="dropdown-menu" data-v-menu-item-recursive>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                 <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
                   <div>
                     <span data-v-menu-item-name></span>
                     <span data-v-menu-item-content>
@@ -9800,14 +9806,16 @@ Vvveb.Sections.add("navigation/navigation-1", {
               <span data-v-menu-item-name>About us</span>
             </a>
           </li>
+        </ul>
+        <ul class="navbar-nav">
 
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown">
+            <div class="nav-item dropdown">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <!-- <i class="la la-lg la-user"></i> -->
-                <svg width="20px" viewBox="0 0 24 24" fill="none">
+                <svg width="18px" viewBox="0 0 24 24" fill="none">
                   <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
@@ -9826,7 +9834,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                       </div>
 
-                      <div class="flex-grow-1 align-self-center text-small">
+                      <div class="flex-grow-1 align-self-center small">
                         <div>
                           <div data-v-notification-text>
                             This is a placeholder for a notification message.
@@ -9928,7 +9936,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 			  <i class="lab la-facebook la-lg"></i>
 			</span>
 		</a> -->
-                      <hr class="text-secondary">
+                      <hr class="text-secondary my-3">
                       <span>Don’t have an account?</span>
                       <br>
                       <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
@@ -10024,7 +10032,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                 <!--
 		<i class="la la-lg la-shopping-bag"></i><span class="visually-hidden">Cart</span>
 		-->
-                <svg width="20px" viewBox="0 0 24 24" fill="none">
+                <svg width="18px" viewBox="0 0 24 24" fill="none">
                   <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
@@ -10043,7 +10051,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
                   <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
                     <!-- <img src="" data-v-language-info-img> -->
-                    <span class="" data-v-language-info-slug>English</span>
+                    <span class="small" data-v-language-info-slug>English</span>
                   </a>
 
 
@@ -10210,21 +10218,21 @@ Vvveb.Sections.add("navigation/navigation-1", {
       </button>
 
       <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
-        <ul class="navbar-nav ms-auto" data-v-menu-items>
+        <ul class="navbar-nav mx-auto" data-v-menu-items>
           <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
             <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
-              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
               <span data-v-menu-item-name></span>
               <span data-v-menu-item-content>
-                <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
+                Mega menu
               </span>
             </a>
 
             <div class="dropdown-menu" data-v-menu-item-recursive>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                 <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
                   <div>
                     <span data-v-menu-item-name></span>
                     <span data-v-menu-item-content>
@@ -10287,14 +10295,16 @@ Vvveb.Sections.add("navigation/navigation-1", {
               <span data-v-menu-item-name>About us</span>
             </a>
           </li>
+        </ul>
+        <ul class="navbar-nav">
 
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown">
+            <div class="nav-item dropdown">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <!-- <i class="la la-lg la-user"></i> -->
-                <svg width="20px" viewBox="0 0 24 24" fill="none">
+                <svg width="18px" viewBox="0 0 24 24" fill="none">
                   <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
@@ -10313,7 +10323,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                       </div>
 
-                      <div class="flex-grow-1 align-self-center text-small">
+                      <div class="flex-grow-1 align-self-center small">
                         <div>
                           <div data-v-notification-text>
                             This is a placeholder for a notification message.
@@ -10415,7 +10425,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 			  <i class="lab la-facebook la-lg"></i>
 			</span>
 		</a> -->
-                      <hr class="text-secondary">
+                      <hr class="text-secondary my-3">
                       <span>Don’t have an account?</span>
                       <br>
                       <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
@@ -10511,7 +10521,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                 <!--
 		<i class="la la-lg la-shopping-bag"></i><span class="visually-hidden">Cart</span>
 		-->
-                <svg width="20px" viewBox="0 0 24 24" fill="none">
+                <svg width="18px" viewBox="0 0 24 24" fill="none">
                   <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
@@ -10530,7 +10540,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
                   <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
                     <!-- <img src="" data-v-language-info-img> -->
-                    <span class="" data-v-language-info-slug>English</span>
+                    <span class="small" data-v-language-info-slug>English</span>
                   </a>
 
 
@@ -10727,32 +10737,73 @@ Vvveb.Sections.add("navigation/navigation-1", {
         <span class="navbar-toggler-icon"></span>
       </button>
 
-
       <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
-        <ul class="navbar-nav ms-auto" data-v-menu-items>
-          <li class="nav-item dropdown" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0">
+        <ul class="navbar-nav mx-auto" data-v-menu-items>
+          <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
-            <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
-              <span data-v-menu-item-name>Resources</span>
+            <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
+              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
+              <span data-v-menu-item-name></span>
+              <span data-v-menu-item-content>
+                Mega menu
+              </span>
             </a>
 
             <div class="dropdown-menu" data-v-menu-item-recursive>
-              <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                  <span data-v-menu-item-name>User Documentation</span>
+              <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
+                  <div>
+                    <span data-v-menu-item-name></span>
+                    <span data-v-menu-item-content>
+                      <div class="row">
+                        <div class="col-6 align-self-center">
+                          <img src="demo/img/video-1.webp" alt="Post" width="250" loading="lazy" class="rounded img-fluid">
+                        </div>
+                        <div class="col-6">
+                          <h4>Features</h4>
+                          <p class="text-muted">Just a few mentions, but there is more</p>
+                          <ul class="list-unstyled">
+                            <li class="text-primary">Page builder</li>
+                            <li class="text-primary">Mega menu</li>
+                            <li class="text-primary">Multi language</li>
+                            <li class="text-primary">Advanced SEO</li>
+                            <li class="text-primary">Ecommerce</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
                 </a>
               </div>
-              <div data-v-menu-item class="nav-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
-                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                  <span data-v-menu-item-name>Developer Documentation</span>
+
+              <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-class-if-show="category.active" data-v-menu-item-url>
+                  <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
+                  <span data-v-menu-item-content></span>
                 </a>
               </div>
             </div>
           </li>
-          <li class="nav-item" data-v-menu-item>
-            <a class="nav-link" href="https://blog.vvveb.com" data-v-menu-item-url>
+          <li class="nav-item dropdown" data-v-menu-item>
+            <a class="nav-link dropdown-toggle" href="https://blog.vvveb.com" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
               <span data-v-menu-item-name>Blog</span>
             </a>
+
+            <div class="dropdown-menu" data-v-menu-item-recursive>
+              <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <span data-v-menu-item-name data-v-if-not="category.type = 'text'">User Documentation</span>
+                  <span data-v-menu-item-content></span>
+                </a>
+              </div>
+              <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                  <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
+                  <span data-v-menu-item-content></span>
+                </a>
+              </div>
+            </div>
           </li>
           <li class="nav-item" data-v-menu-item>
             <a class="nav-link" href="https://www.vvveb.com/page/contact" data-v-menu-item-url>
@@ -10764,25 +10815,16 @@ Vvveb.Sections.add("navigation/navigation-1", {
               <span data-v-menu-item-name>About us</span>
             </a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="//demo.vvveb.com/admin/index.php?module=/editor/editor&template=index.html&url=/" role="button">Demo</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/index.php?module=/editor/editor&template=index.html&url=/">Page builder</a>
-              <a class="dropdown-item" target="_blank" href="//demo.vvveb.com/admin/index.php">Admin dashboard</a>
-              <a class="dropdown-item" target="_blank" href="//demo.vvveb.com">Frontend</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" target="_blank" href="https://vercel-vvveb-commerce.vercel.app/">Next.js Frontend GraphQL</a>
-            </div>
-          </li>
-
+        </ul>
+        <ul class="navbar-nav">
 
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown">
+            <div class="nav-item dropdown">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <!-- <i class="la la-lg la-user"></i> -->
-                <svg width="20px" viewBox="0 0 24 24" fill="none">
+                <svg width="18px" viewBox="0 0 24 24" fill="none">
                   <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
@@ -10801,7 +10843,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                       </div>
 
-                      <div class="flex-grow-1 align-self-center text-small">
+                      <div class="flex-grow-1 align-self-center small">
                         <div>
                           <div data-v-notification-text>
                             This is a placeholder for a notification message.
@@ -10903,7 +10945,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 			  <i class="lab la-facebook la-lg"></i>
 			</span>
 		</a> -->
-                      <hr class="text-secondary">
+                      <hr class="text-secondary my-3">
                       <span>Don’t have an account?</span>
                       <br>
                       <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
@@ -10989,73 +11031,174 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
           </li>
 
+
           <li class="nav-toggle">
-            <button class="btn btn-outline-secondary btn-sm border-0" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
-              <div class="la-flip-horizontal">
-                <i class="la la-search la-lg" aria-hidden="true"></i>
-              </div>
+            <!-- Cart Area -->
+            <div class="dropdown mini-cart" data-v-component-cart="offcanvas">
+
+              <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
+                <!-- <img src="demo/img/bag.svg" width="20" alt> -->
+                <!--
+		<i class="la la-lg la-shopping-bag"></i><span class="visually-hidden">Cart</span>
+		-->
+                <svg width="18px" viewBox="0 0 24 24" fill="none">
+                  <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <strong class="badge bg-primary" data-v-cart-total_items data-v-if="cart.total_items > 0"></strong>
+              </a>
+
+
+            </div>
+
+          </li>
+
+          <li class="nav-toggle">
+            <div class="dropdown" data-v-component-language>
+              <div data-v-component-currency>
+                <form method="post" enctype="multipart/form-data" id="form-language">
+
+                  <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
+                    <!-- <img src="" data-v-language-info-img> -->
+                    <span class="small" data-v-language-info-slug>English</span>
+                  </a>
+
+
+                  <div class="dropdown-menu">
+
+                    <div class="dropdown-item" data-v-language>
+                      <button class="btn" type="submit" value="eng" name="language" data-v-language-code>
+                        <img src="" loading="lazy" class="me-1" data-v-language-img>
+                        <span data-v-language-name>English</span>
+                      </button>
+                    </div>
+
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <div class="dropdown-item" data-v-currency>
+            <button class="btn" type="submit" value="USD" name="currency" data-v-currency-code>
+              <span class="small text-muted" data-v-currency-sign_start>$</span>
+              <span class="small text-muted" data-v-currency-sign_end>$</span>
+              <span data-v-currency-name>US Dollar</span>
             </button>
-          </li>
+          </div>
 
-          <li class="nav-item">
-            <a id="color-theme-switch" class="nav-link" role="button" title="Switch sidebar color theme">
-              <i class="la la-sun"></i>
-            </a>
-          </li>
-        </ul>
+
       </div>
-
-      <!--				
-				<div class="search-area toggle-hover">
-					<form action="/search" method="get" data-v-action="/search">
-						<input type="hidden" name="route" value="search">
-						<div class="input-group">
-							<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
-							<button class="btn border-0" type="submit" title="Search">
-								<div class="la-flip-horizontal">
-									<i class="la la-search la-lg" aria-hidden="true"></i>
-								</div>
-							</button>
-						</div>			  
-					</form>
-				</div>
--->
-      <!--	  </div> -->
-      <!--
-		  <div class="collapse navbar-collapse" id="navbar">
-			<ul class="navbar-nav ms-auto">
-			  <li class="nav-item">
-				<a class="nav-link" href="#features">Features <span class="sr-only">(current)</span></a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="https://themes.vvveb.com">Themes</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="https://plugins.vvveb.com">Plugins</a>
-			  </li>
-			  <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
-				<div class="dropdown-menu" aria-labelledby="dropdown01">
-				  <a class="dropdown-item" target="_blank"  href="https://github.com/givanz/VvvebJs/wiki">User Documentation</a>
-				  <a class="dropdown-item" target="_blank"  href="https://github.com/givanz/VvvebJs/wiki">Developer Documentation</a>
-				</div>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" target="_blank" href="https://github.com/givanz/VvvebJs">Github</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="contact.html">Contact</a>
-			  </li>
-			  <li class="nav-item active">
-				<a class="nav-link" href="https://vvveb.com/download.php">Download for free</a>
-			  </li>			  
-			</ul>
-		  </div>
-		  -->
+      </form>
     </div>
+  </div>
+  </li>
+  <li class="nav-item">
+    <a id="color-theme-switch" class="nav-link px-1" role="button" title="Switch sidebar color theme">
+      <i class="la la-sun"></i>
+    </a>
+  </li>
+  <!--
+	<li class="nav-toggle">
+	<div class="dropdown nav-item" data-v-component-language>
+			<form method="post" enctype="multipart/form-data" id="form-language">
 
+				<a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button"  title="Language"  aria-expanded="false">
+					<img src="" data-v-language-info-img>
+					<span class="" data-v-language-info-slug>English</span>
+				</a>
+			
+				
+				<div class="dropdown-menu">
+					
+					<div data-v-language>
+						<button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+							<img src="" loading="lazy" class="me-1" data-v-language-img>
+							<span data-v-language-name>English</span>
+						</button>
+					</div>
+					
+					<div data-v-language>
+						<button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
+							<img src="" loading="lazy" class="me-1" data-v-language-img>
+							<span data-v-language-name>Romanian</span>
+						</button>
+					</div>
+					
+				</div>
+			</form>
+		</div>					
+	</li>	
+	<li class="nav-toggle">
+	<div class="dropdown nav-item" data-v-component-currency>
+		<form method="post" enctype="multipart/form-data" id="form-currency">
+
+			<a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button" title="Currency" aria-expanded="false">
+				<span class="" data-v-currency-info-sign_start>$</span>
+				<span class="" data-v-currency-info-sign_end>$</span>
+			</a>
+		
+			
+			<div class="dropdown-menu">
+				
+				<div data-v-currency>
+				  <button class="dropdown-item" type="submit" value="EUR" name="currency" data-v-currency-code>
+					<span data-v-currency-sign_start>€</span>
+					<span data-v-currency-sign_end>€</span>
+					<span class="ms-1" data-v-currency-name>Euro</span>
+				  </button>
+				</div>
+
+				<div data-v-currency>
+				  <button class="dropdown-item" type="submit" value="GBP" name="currency" data-v-currency-code>
+					<span data-v-currency-sign_start>£</span>
+					<span data-v-currency-sign_end>£</span>
+					<span class="ms-1" data-v-currency-name>Pound Sterling</span>
+				  </button>
+				</div>
+
+				<div data-v-currency>
+				  <button class="dropdown-item" type="submit" value="USD" name="currency" data-v-currency-code>
+					<span data-v-currency-sign_start>$</span>
+					<span data-v-currency-sign_end>$</span>
+					<span class="ms-1" data-v-currency-name>US Dollar</span>
+				  </button>
+				</div>
+				
+			</div>
+		</form>
+	</div>		                    
+	</li>		  
+	-->
+  </ul>
+
+
+
+  <button class="btn btn-outline-secondary btn-sm border-0 shadow-none" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
+    <div class="la-flip-horizontal">
+      <i class="la la-search la-lg" aria-hidden="true"></i>
+    </div>
+  </button>
+
+
+  <!--
+	<div class="search-area toggle-hover">
+		<form action="/search" method="get" data-v-action="/search">
+			<input type="hidden" name="route" value="search">
+			<div class="input-group">
+				<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
+				<button class="btn border-0" type="submit" title="Search">
+					<div class="la-flip-horizontal">
+						<i class="la la-search la-lg" aria-hidden="true"></i>
+					</div>
+				</button>
+			</div>			  
+		</form>
+	</div>
+-->
   </div>
 
+
+  </div>
+  </div>
 </nav>`
 });Vvveb.Sections.add("navigation/navigation-5", {
     name: "Navigation 5",
@@ -11209,21 +11352,21 @@ Vvveb.Sections.add("navigation/navigation-1", {
       </button>
 
       <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
-        <ul class="navbar-nav ms-auto" data-v-menu-items>
+        <ul class="navbar-nav mx-auto" data-v-menu-items>
           <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
             <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
-              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
               <span data-v-menu-item-name></span>
               <span data-v-menu-item-content>
-                <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
+                Mega menu
               </span>
             </a>
 
             <div class="dropdown-menu" data-v-menu-item-recursive>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                 <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
                   <div>
                     <span data-v-menu-item-name></span>
                     <span data-v-menu-item-content>
@@ -11286,14 +11429,16 @@ Vvveb.Sections.add("navigation/navigation-1", {
               <span data-v-menu-item-name>About us</span>
             </a>
           </li>
+        </ul>
+        <ul class="navbar-nav">
 
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown">
+            <div class="nav-item dropdown">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <!-- <i class="la la-lg la-user"></i> -->
-                <svg width="20px" viewBox="0 0 24 24" fill="none">
+                <svg width="18px" viewBox="0 0 24 24" fill="none">
                   <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
@@ -11312,7 +11457,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                       </div>
 
-                      <div class="flex-grow-1 align-self-center text-small">
+                      <div class="flex-grow-1 align-self-center small">
                         <div>
                           <div data-v-notification-text>
                             This is a placeholder for a notification message.
@@ -11414,7 +11559,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 			  <i class="lab la-facebook la-lg"></i>
 			</span>
 		</a> -->
-                      <hr class="text-secondary">
+                      <hr class="text-secondary my-3">
                       <span>Don’t have an account?</span>
                       <br>
                       <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
@@ -11510,7 +11655,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                 <!--
 		<i class="la la-lg la-shopping-bag"></i><span class="visually-hidden">Cart</span>
 		-->
-                <svg width="20px" viewBox="0 0 24 24" fill="none">
+                <svg width="18px" viewBox="0 0 24 24" fill="none">
                   <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
@@ -11529,7 +11674,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
                   <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
                     <!-- <img src="" data-v-language-info-img> -->
-                    <span class="" data-v-language-info-slug>English</span>
+                    <span class="small" data-v-language-info-slug>English</span>
                   </a>
 
 
@@ -11823,21 +11968,21 @@ Vvveb.Sections.add("navigation/navigation-1", {
       </button>
 
       <div class="collapse navbar-collapse" id="navbar" data-v-component-menu="header" data-v-slug="main-menu">
-        <ul class="navbar-nav ms-auto" data-v-menu-items>
+        <ul class="navbar-nav mx-auto" data-v-menu-items>
           <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
             <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
-              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+              <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
               <span data-v-menu-item-name></span>
               <span data-v-menu-item-content>
-                <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
+                Mega menu
               </span>
             </a>
 
             <div class="dropdown-menu" data-v-menu-item-recursive>
               <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                 <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                  <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
                   <div>
                     <span data-v-menu-item-name></span>
                     <span data-v-menu-item-content>
@@ -11900,14 +12045,16 @@ Vvveb.Sections.add("navigation/navigation-1", {
               <span data-v-menu-item-name>About us</span>
             </a>
           </li>
+        </ul>
+        <ul class="navbar-nav">
 
           <li class="nav-toggle">
             <!-- User Login Info -->
-            <div class="dropdown">
+            <div class="nav-item dropdown">
               <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                 <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                 <!-- <i class="la la-lg la-user"></i> -->
-                <svg width="20px" viewBox="0 0 24 24" fill="none">
+                <svg width="18px" viewBox="0 0 24 24" fill="none">
                   <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
@@ -11926,7 +12073,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                         <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
                       </div>
 
-                      <div class="flex-grow-1 align-self-center text-small">
+                      <div class="flex-grow-1 align-self-center small">
                         <div>
                           <div data-v-notification-text>
                             This is a placeholder for a notification message.
@@ -12028,7 +12175,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 			  <i class="lab la-facebook la-lg"></i>
 			</span>
 		</a> -->
-                      <hr class="text-secondary">
+                      <hr class="text-secondary my-3">
                       <span>Don’t have an account?</span>
                       <br>
                       <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
@@ -12124,7 +12271,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
                 <!--
 		<i class="la la-lg la-shopping-bag"></i><span class="visually-hidden">Cart</span>
 		-->
-                <svg width="20px" viewBox="0 0 24 24" fill="none">
+                <svg width="18px" viewBox="0 0 24 24" fill="none">
                   <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
@@ -12143,7 +12290,7 @@ Vvveb.Sections.add("navigation/navigation-1", {
 
                   <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
                     <!-- <img src="" data-v-language-info-img> -->
-                    <span class="" data-v-language-info-slug>English</span>
+                    <span class="small" data-v-language-info-slug>English</span>
                   </a>
 
 
@@ -12322,10 +12469,10 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
     name: "Portfolio 1",
     image: Vvveb.themeBaseUrl + "/screenshots/sections/portfolio/portfolio-1-thumb.webp",
     html: `<section class="portfolio-1 my-5" aria-label="portfolio-1">
-  <div class="row justify-content-center pb-2">
+  <div class="row justify-content-center my-5">
     <div class="col-md-7 heading-section text-center">
       <h2 class="text-center display-6 mb-1 fw-bold">Portfolio</h2>
-      <p class="lead text-center text-muted mb-4">Some of our work</p>
+      <p class="lead text-center text-muted">Some of our work</p>
     </div>
   </div>
   <div class="gallery masonry hover-effect" data-component-gallery="portfolio-1" id="gallery-RANDOM_ID">
@@ -12400,10 +12547,10 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
     image: Vvveb.themeBaseUrl + "/screenshots/sections/portfolio/portfolio-2-thumb.webp",
     html: `<section class="portfolio-2 my-5" aria-label="portfolio-2">
   <div class="container">
-    <div class="row justify-content-center pb-2">
+    <div class="row justify-content-center my-5">
       <div class="col-md-7 text-center">
         <h2 class="text-center display-6 mb-1 fw-bold">Portfolio</h2>
-        <p class="lead text-center text-muted mb-4">Some of our work</p>
+        <p class="lead text-center text-muted">Some of our work</p>
       </div>
     </div>
     <div class="gallery masonry has-shadow hover-effect" data-component-gallery="portfolio-1" id="gallery-RANDOM_ID">
@@ -12463,10 +12610,10 @@ Vvveb.Sections.add("portfolio/portfolio-1", {
     image: Vvveb.themeBaseUrl + "/screenshots/sections/portfolio/portfolio-3-thumb.webp",
     html: `<section class="portfolio-2 my-5" aria-label="portfolio-3">
   <div class="container">
-    <div class="row justify-content-center pb-2">
+    <div class="row justify-content-center my-5">
       <div class="col-md-7 text-center">
         <h2 class="text-center display-6 mb-1 fw-bold">Portfolio</h2>
-        <p class="lead text-center text-muted mb-4">Some of our work</p>
+        <p class="lead text-center text-muted">Some of our work</p>
       </div>
     </div>
     <div class="gallery masonry has-shadow hover-effect" data-component-gallery="portfolio-3" style="column-count: 2;" id="gallery-RANDOM_ID">
@@ -12514,9 +12661,9 @@ Vvveb.Sections.add("posts/posts-1", {
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="section-heading text-center">
+        <div class="section-heading text-center mb-5">
           <h2 class="text-center display-6 mb-1 fw-bold">Latest Posts</h2>
-          <p class="lead text-center text-muted mb-4">Fresh updates from the industry.</p>
+          <p class="lead text-center text-muted">Fresh updates from the industry.</p>
         </div>
       </div>
     </div>
@@ -12901,11 +13048,11 @@ Vvveb.Sections.add("posts/posts-1", {
     html: `<section class="posts-3 py-5" aria-label="posts-3">
   <div class="container">
 
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
 
       <div class="col-md-8 text-center">
         <h2 class="text-center display-6 mb-1 fw-bold">From Our Blog</h2>
-        <p class="lead text-center text-muted mb-4">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada.</p>
+        <p class="lead text-center text-muted">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada.</p>
       </div>
 
     </div>
@@ -13379,15 +13526,15 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
     image: Vvveb.themeBaseUrl + "/screenshots/sections/pricing-table/pricing-table-3-thumb.webp",
     html: `<section class="pricing-table-3 my-3" aria-label="pricing-table-3">
   <div class="container">
-    <div class="row justify-content-center pb-2">
+    <div class="row justify-content-center my-5">
       <div class="col-md-7 heading-section text-center">
         <h2 class="text-center display-6 mb-1 fw-bold">Choose your plan</h2>
-        <p class="lead text-center text-muted mb-4">14-day free trial no credit card required.</p>
+        <p class="lead text-center text-muted">14-day free trial no credit card required.</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-4">
-        <div class="price my-5-col shadow-sm border rounded-3" data-aos="fade-up">
+        <div class="price my-5-col shadow-sm border rounded-3 mx-3" data-aos="fade-up">
           <!--
                     <div class="img"><img src="demo/img/illustrations.co/104-dumbbell.svg" alt="104-dumbbell" loading="lazy" class="img-fluid" /></div>
                     -->
@@ -13420,7 +13567,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
         </div>
       </div>
       <div class="col-md-4">
-        <div class="price my-5-col shadow-sm border rounded-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="price my-5-col shadow-sm border rounded-3 mx-3" data-aos="fade-up" data-aos-delay="200">
           <!--
                     <div class="img"><img src="demo/img/illustrations.co/107-healthy.svg" alt="107-healthy" loading="lazy" class="img-fluid" /></div>
                     -->
@@ -13453,7 +13600,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
         </div>
       </div>
       <div class="col-md-4">
-        <div class="price my-5-col shadow-sm border rounded-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="price my-5-col shadow-sm border rounded-3 mx-3" data-aos="fade-up" data-aos-delay="400">
           <!--
                     <div class="img"><img src="demo/img/illustrations.co/126-namaste-no-hand-shake.svg" alt="126-namaste-no-hand-shake" loading="lazy" class="img-fluid" /></div>
                     -->
@@ -13528,9 +13675,9 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
                 </div>
               </div>
               <div class=" mb-4 bg-body-tertiary  text-dark rounded py-3 ">
-                <h3 editable="inline" class="fw-bolder d-inline small">$</h3>
-                <h3 editable="inline" class="fw-bolder d-inline rfs-30 ls-n2">19</h3>
-                <span class="opacity-50" editable="inline">/ Year</span>
+                <h3 class="fw-bolder d-inline small">$</h3>
+                <h3 class="fw-bolder d-inline rfs-30 ls-n2">19</h3>
+                <span class="opacity-50">/ Year</span>
               </div>
               <div class=" mb-2">
                 <div class="d-inline-flex w-100 gap-2 ">
@@ -13628,9 +13775,9 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
                 </div>
               </div>
               <div class=" mb-4 bg-body-tertiary  text-dark rounded py-3 ">
-                <h3 editable="inline" class="fw-bolder d-inline small">$</h3>
-                <h3 editable="inline" class="fw-bolder d-inline rfs-30 ls-n2">149</h3>
-                <span class="opacity-50" editable="inline">/ Year</span>
+                <h3 class="fw-bolder d-inline small">$</h3>
+                <h3 class="fw-bolder d-inline rfs-30 ls-n2">149</h3>
+                <span class="opacity-50">/ Year</span>
               </div>
               <div class=" mb-2">
                 <div class="d-inline-flex w-100 gap-2 ">
@@ -13768,8 +13915,8 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
                 </div>
               </div>
               <div class=" mb-4">
-                <h3 editable="inline" class="fw-bolder d-inline rfs-30 ls-n2">$29</h3>
-                <span class="opacity-50" editable="inline">/ month</span>
+                <h3 class="fw-bolder d-inline rfs-30 ls-n2">$29</h3>
+                <span class="opacity-50">/ month</span>
               </div>
               <div class=" mb-2">
                 <div>
@@ -13815,8 +13962,8 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
                 </div>
               </div>
               <div class=" mb-4">
-                <h3 editable="inline" class="fw-bolder d-inline rfs-30 ls-n2">$59</h3>
-                <span class="opacity-50" editable="inline">/ month</span>
+                <h3 class="fw-bolder d-inline rfs-30 ls-n2">$59</h3>
+                <span class="opacity-50">/ month</span>
               </div>
               <div class=" mb-2">
                 <div>
@@ -13867,8 +14014,8 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
                 </div>
               </div>
               <div class=" mb-4">
-                <h3 editable="inline" class="fw-bolder d-inline rfs-30 ls-n2">$199</h3>
-                <span class="opacity-50" editable="inline">/ month</span>
+                <h3 class="fw-bolder d-inline rfs-30 ls-n2">$199</h3>
+                <span class="opacity-50">/ month</span>
               </div>
               <div class=" mb-2">
                 <div>
@@ -14838,7 +14985,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
           <h2 class="display-2 mb-0">
             <b>Pricing</b>
           </h2>
-          <p editable="inline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id
             <br> ligula malesuada placerat sit amet quis enim.
           </p>
         </div>
@@ -14848,11 +14995,11 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col-lg-3 col-md-6 text-dark my-2">
         <div class="card">
           <div class="card-header">
-            <h4 class="my-0 " editable="inline">Free</h4>
+            <h4 class="my-0 ">Free</h4>
           </div>
           <div class="card-body">
             <h5 class="card-title">
-              <span class="display-4" editable="inline">
+              <span class="display-4">
                 <b>$0</b>
               </span>
               <span class="lead">/mo</span>
@@ -14862,10 +15009,10 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
               <div editable="rich">
                 <ul class="list-unstyled">
 
-                  <li editable="inline">10 users included</li>
-                  <li editable="inline">2 GB of storage</li>
-                  <li editable="inline">Email support</li>
-                  <li editable="inline">Help center access</li>
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
                 </ul>
 
               </div>
@@ -14879,11 +15026,11 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col-lg-3 col-md-6 text-dark my-2">
         <div class="card">
           <div class="card-header">
-            <h4 class="my-0" editable="inline">Pro</h4>
+            <h4 class="my-0">Pro</h4>
           </div>
           <div class="card-body">
             <h5 class="card-title">
-              <span class="display-4" editable="inline">
+              <span class="display-4">
                 <b>$15</b>
               </span>
               <span class="lead">/mo</span>
@@ -14910,11 +15057,11 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col-lg-3 col-md-6 text-dark my-2">
         <div class="card">
           <div class="card-header">
-            <h4 class="my-0" editable="inline">Enterprise</h4>
+            <h4 class="my-0">Enterprise</h4>
           </div>
           <div class="card-body">
             <h5 class="card-title">
-              <span class="display-4" editable="inline">
+              <span class="display-4">
                 <b>$29</b>
               </span>
               <span class="lead">/mo</span>
@@ -14941,11 +15088,11 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col-lg-3 col-md-6 text-dark my-2">
         <div class="card">
           <div class="card-header">
-            <h4 class="my-0" editable="inline">Exclusive</h4>
+            <h4 class="my-0">Exclusive</h4>
           </div>
           <div class="card-body">
             <h5 class="card-title">
-              <span class="display-4" editable="inline">
+              <span class="display-4">
                 <b>$49</b>
               </span>
               <span class="lead">/mo</span>
@@ -14958,7 +15105,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
                   <li class="">50 users included</li>
                   <li class="">45 GB of storage</li>
                   <li class="">Phone and email support</li>
-                  <li editable="inline">Help center access</li>
+                  <li>Help center access</li>
                 </ul>
 
               </div>
@@ -14984,7 +15131,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
           <h2 class="display-2 mb-0">
             <b>Pricing</b>
           </h2>
-          <p editable="inline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id
             <br> ligula malesuada placerat sit amet quis enim.
           </p>
         </div>
@@ -15024,7 +15171,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       </div>
       <div class="text-center col-md-4 offset-md-1 pb-4 pt-2 shadow-lg">
         <div class=" text-end pb-2  ">
-          <span class="badge bg-dark" editable="inline">Popular</span>
+          <span class="badge bg-dark">Popular</span>
         </div>
 
 
@@ -15100,11 +15247,11 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
     <div class="row">
       <div class="col-md-12 text-center">
         <div class="mb-4">
-          <span editable="inline" class="small mt-4 d-block">LOREM IPSUM</span>
-          <h2 editable="inline" class="display-2 mb-0">
+          <span class="small mt-4 d-block">LOREM IPSUM</span>
+          <h2 class="display-2 mb-0">
             <b>Pricing</b>
           </h2>
-          <p editable="inline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id
             <br> ligula malesuada placerat sit amet quis enim.
           </p>
         </div>
@@ -15114,24 +15261,24 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col-lg-4 col-md-6 text-dark my-2">
         <div class="card">
           <div class="card-header">
-            <h4 class="my-0 " editable="inline">Free</h4>
+            <h4 class="my-0 ">Free</h4>
           </div>
           <div class="card-body">
             <h5 class="card-title">
-              <span class="display-4" editable="inline">
+              <span class="display-4">
                 <b>$0</b>
               </span>
-              <span editable="inline" class="lead">/mo</span>
+              <span class="lead">/mo</span>
             </h5>
 
             <div class="card-text my-4 ">
               <div editable="rich">
                 <ul class="list-unstyled">
 
-                  <li editable="inline">10 users included</li>
-                  <li editable="inline">2 GB of storage</li>
-                  <li editable="inline">Email support</li>
-                  <li editable="inline">Help center access</li>
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
                 </ul>
 
               </div>
@@ -15147,24 +15294,24 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col-lg-4 col-md-6 text-dark my-2">
         <div class="card">
           <div class="card-header">
-            <h4 class="my-0" editable="inline">Pro</h4>
+            <h4 class="my-0">Pro</h4>
           </div>
           <div class="card-body">
             <h5 class="card-title">
-              <span class="display-4" editable="inline">
+              <span class="display-4">
                 <b>$15</b>
               </span>
-              <span editable="inline" class="lead">/mo</span>
+              <span class="lead">/mo</span>
             </h5>
 
             <div class="card-text my-4 ">
               <div editable="rich">
                 <ul class="list-unstyled">
 
-                  <li editable="inline" class="">20 users included</li>
-                  <li editable="inline" class="">10 GB of storage</li>
-                  <li editable="inline" class="">Priority email support</li>
-                  <li editable="inline" class="">Help center access</li>
+                  <li class="">20 users included</li>
+                  <li class="">10 GB of storage</li>
+                  <li class="">Priority email support</li>
+                  <li class="">Help center access</li>
                 </ul>
 
               </div>
@@ -15178,24 +15325,24 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
       <div class="col-lg-4 col-md-6 text-dark my-2">
         <div class="card">
           <div class="card-header">
-            <h4 class="my-0" editable="inline">Enterprise</h4>
+            <h4 class="my-0">Enterprise</h4>
           </div>
           <div class="card-body">
             <h5 class="card-title">
-              <span class="display-4" editable="inline">
+              <span class="display-4">
                 <b>$29</b>
               </span>
-              <span editable="inline" class="lead">/mo</span>
+              <span class="lead">/mo</span>
             </h5>
 
             <div class="card-text my-4 ">
               <div editable="rich">
                 <ul class="list-unstyled">
 
-                  <li editable="inline" class="">30 users included</li>
-                  <li editable="inline" class="">15 GB of storage</li>
-                  <li editable="inline" class="">Phone and email support</li>
-                  <li editable="inline" class="">Help center access</li>
+                  <li class="">30 users included</li>
+                  <li class="">15 GB of storage</li>
+                  <li class="">Phone and email support</li>
+                  <li class="">Help center access</li>
                 </ul>
 
               </div>
@@ -15217,11 +15364,11 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
     <div class="row">
       <div class="col-md-12 text-center">
         <div class="mb-4">
-          <span editable="inline" class="mt-4 d-block lead">OUR PRICING PLANS</span>
-          <h2 editable="inline" class="display-2 mb-3">
+          <span class="mt-4 d-block lead">OUR PRICING PLANS</span>
+          <h2 class="display-2 mb-3">
             <b>Find the Right Tier.</b>
           </h2>
-          <p editable="inline" class="text-secondary">Flexible pricing options for freelancers and design teams. No Credit Card required!
+          <p class="text-secondary">Flexible pricing options for freelancers and design teams. No Credit Card required!
             <br>
           </p>
         </div>
@@ -15236,7 +15383,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
               <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z"></path>
             </svg>
 
-            <span editable="inline" class="ml-2 fw-light">Individual</span>
+            <span class="ml-2 fw-light">Individual</span>
           </div>
           <div class="mb-5 px-4">
             <div editable="rich">
@@ -15270,7 +15417,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
               <path d="M19 17V19H7V17S7 13 13 13 19 17 19 17M16 8A3 3 0 1 0 13 11A3 3 0 0 0 16 8M19.2 13.06A5.6 5.6 0 0 1 21 17V19H24V17S24 13.55 19.2 13.06M18 5A2.91 2.91 0 0 0 17.11 5.14A5 5 0 0 1 17.11 10.86A2.91 2.91 0 0 0 18 11A3 3 0 0 0 18 5M7.34 8.92L8.5 10.33L3.75 15.08L1 12.08L2.16 10.92L3.75 12.5L7.34 8.92"></path>
             </svg>
 
-            <span editable="inline" class="ml-2 fw-light">Small Team</span>
+            <span class="ml-2 fw-light">Small Team</span>
           </div>
           <div class="mb-5 px-4">
             <div editable="rich">
@@ -15303,7 +15450,7 @@ Vvveb.Sections.add("pricing-table/pricing-table-3", {
               <path d="M5,3V21H11V17.5H13V21H19V3H5M7,5H9V7H7V5M11,5H13V7H11V5M15,5H17V7H15V5M7,9H9V11H7V9M11,9H13V11H11V9M15,9H17V11H15V9M7,13H9V15H7V13M11,13H13V15H11V13M15,13H17V15H15V13M7,17H9V19H7V17M15,17H17V19H15V17Z"></path>
             </svg>
 
-            <span editable="inline" class="ml-2 fw-light">Large Team</span>
+            <span class="ml-2 fw-light">Large Team</span>
           </div>
           <div class="mb-5 px-4">
             <div editable="rich">
@@ -15341,9 +15488,9 @@ Vvveb.Sections.add("products/products-1", {
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="section-heading text-center">
+        <div class="section-heading text-center mb-5">
           <h2 class="text-center display-6 mb-1 fw-bold">Latest Products</h2>
-          <p class="lead text-center text-muted mb-4">Best quality at the lowest price.</p>
+          <p class="lead text-center text-muted">Best quality at the lowest price.</p>
         </div>
       </div>
     </div>
@@ -16234,7 +16381,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
     image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-5-thumb.webp",
     html: `<section class="showcase-5" aria-label="showcase-5">
   <div class="container">
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
         <div class="feature">
           <div class="font-container text-center">
@@ -16319,7 +16466,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
   <div class="background-container"></div>
 
   <div class="container">
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
         <div class="feature">
           <div class="font-container">
@@ -16393,7 +16540,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
     image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-7-thumb.webp",
     html: `<section class="showcase-7" aria-label="showcase-7">
   <div class="container">
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
         <div class="feature">
           <div class="font-container">
@@ -16453,7 +16600,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
     image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-8-thumb.webp",
     html: `<section class="showcase-8" aria-label="showcase-8">
   <div class="container">
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="col-lg-7 mx-auto" data-aos="fade-up" data-aos-delay="0">
         <div class="feature">
           <div class="font-container">
@@ -16478,7 +16625,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
     image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-9-thumb.webp",
     html: `<section class="showcase-8" aria-label="showcase-9">
   <div class="container">
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="col-lg-7 mx-auto" data-aos="fade-up" data-aos-delay="0">
         <div class="feature">
           <div class="font-container">
@@ -16503,7 +16650,7 @@ Vvveb.Sections.add("showcase/showcase-1", {
     image: Vvveb.themeBaseUrl + "/screenshots/sections/showcase/showcase-10-thumb.webp",
     html: `<section class="showcase-10" aria-label="showcase-10">
   <div class="container">
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="col-lg-7 mx-auto" data-aos="fade-up" data-aos-delay="0">
         <div class="feature">
           <div class="font-container">
@@ -16636,7 +16783,7 @@ Vvveb.Sections.add("subscribe/subscribe-1", {
                 <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
               </div>
 
-              <div class="flex-grow-1 align-self-center text-small">
+              <div class="flex-grow-1 align-self-center small">
                 <div>
                   <div data-v-notification-text>
                     This is a placeholder for a notification message.
@@ -16746,7 +16893,7 @@ Vvveb.Sections.add("subscribe/subscribe-1", {
 
         <div class="col-md-6">
           <h5 class="mb-3">Stay Informed with Early Updates!</h5>
-          <p class="text-muted">Subscribe to our newsletter and receive the latest updates and important news directly to your inbox.</p>
+          <p class="text-muted col-md-10">Subscribe to our newsletter and receive the latest updates and important news directly to your inbox.</p>
         </div>
 
         <div class="col-md-6">
@@ -16759,7 +16906,7 @@ Vvveb.Sections.add("subscribe/subscribe-1", {
                 <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
               </div>
 
-              <div class="flex-grow-1 align-self-center text-small">
+              <div class="flex-grow-1 align-self-center small">
                 <div>
                   <div data-v-notification-text>
                     This is a placeholder for a notification message.
@@ -16881,7 +17028,7 @@ Vvveb.Sections.add("subscribe/subscribe-1", {
                 <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
               </div>
 
-              <div class="flex-grow-1 align-self-center text-small">
+              <div class="flex-grow-1 align-self-center small">
                 <div>
                   <div data-v-notification-text>
                     This is a placeholder for a notification message.
@@ -17001,7 +17148,7 @@ Vvveb.Sections.add("subscribe/subscribe-1", {
                 <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
               </div>
 
-              <div class="flex-grow-1 align-self-center text-small">
+              <div class="flex-grow-1 align-self-center small">
                 <div>
                   <div data-v-notification-text>
                     This is a placeholder for a notification message.
@@ -17122,7 +17269,7 @@ Vvveb.Sections.add("subscribe/subscribe-1", {
                 <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
               </div>
 
-              <div class="flex-grow-1 align-self-center text-small">
+              <div class="flex-grow-1 align-self-center small">
                 <div>
                   <div data-v-notification-text>
                     This is a placeholder for a notification message.
@@ -17230,7 +17377,7 @@ Vvveb.Sections.add("team/team-1", {
     <div class="row justify-content-center mb-4">
       <div class="col-md-7 text-center">
         <h2 class="text-center display-6 mb-1 fw-bold">Meet Our Team</h2>
-        <p class="lead text-center text-muted mb-4">We are a group of professionals dedicated to their work</p>
+        <p class="lead text-center text-muted">We are a group of professionals dedicated to their work</p>
 
       </div>
     </div>
@@ -18407,11 +18554,11 @@ Vvveb.Sections.add("team/team-1", {
 
       <div class="col-md-12 text-center">
         <div class="lc-block mb-4">
-          <span editable="inline" class="small mt-4 d-block">LOREM IPSUM</span>
-          <h2 editable="inline" class="display-2 mb-0">
+          <span class="small mt-4 d-block">LOREM IPSUM</span>
+          <h2 class="display-2 mb-0">
             <b>Team</b>
           </h2>
-          <p editable="inline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id
             <br> ligula malesuada placerat sit amet quis enim.
           </p>
         </div>
@@ -18428,7 +18575,7 @@ Vvveb.Sections.add("team/team-1", {
             </h5>
           </div>
 
-          <small editable="inline" class="text-secondary" style="letter-spacing:1px">SOME LIPSUM</small>
+          <small class="text-secondary" style="letter-spacing:1px">SOME LIPSUM</small>
 
           <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo nulla, suscipit non dapibus vitae, dignissim id quam. Donec eget nulla tellus.&nbsp;</p>
@@ -18468,7 +18615,7 @@ Vvveb.Sections.add("team/team-1", {
             </h5>
           </div>
 
-          <small editable="inline" class="text-secondary" style="letter-spacing:1px">SOME LIPSUM</small>
+          <small class="text-secondary" style="letter-spacing:1px">SOME LIPSUM</small>
 
           <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo nulla, suscipit non dapibus vitae, dignissim id quam. Donec eget nulla tellus.&nbsp;</p>
@@ -18510,7 +18657,7 @@ Vvveb.Sections.add("team/team-1", {
             </h5>
           </div>
 
-          <small editable="inline" class="text-secondary" style="letter-spacing:1px">SOME LIPSUM</small>
+          <small class="text-secondary" style="letter-spacing:1px">SOME LIPSUM</small>
 
           <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo nulla, suscipit non dapibus vitae, dignissim id quam. Donec eget nulla tellus.&nbsp;</p>
@@ -18550,7 +18697,7 @@ Vvveb.Sections.add("team/team-1", {
             </h5>
           </div>
 
-          <small editable="inline" class="text-secondary" style="letter-spacing:1px">SOME LIPSUM</small>
+          <small class="text-secondary" style="letter-spacing:1px">SOME LIPSUM</small>
 
           <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo nulla, suscipit non dapibus vitae, dignissim id quam. Donec eget nulla tellus.&nbsp;</p>
@@ -19334,7 +19481,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
     <div class="row justify-content-center mb-4">
       <div class="col-md-7 text-center">
         <h2 class="text-center display-6 mb-1 fw-bold">Some of our users</h2>
-        <p class="lead text-center text-muted mb-4">Hear what our users have to say</p>
+        <p class="lead text-center text-muted">Hear what our users have to say</p>
       </div>
     </div>
 
@@ -19644,7 +19791,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
     image: Vvveb.themeBaseUrl + "/screenshots/sections/testimonials/testimonials-4-thumb.webp",
     html: `<section class="py-5 team-2" aria-label="testimonials-4">
   <div class="container">
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="col-lg-10">
         <div class="row align-items-center">
           <div class="col-md-4 mb-4 mb-md-0 order-md-2">
@@ -19674,7 +19821,7 @@ Vvveb.Sections.add("testimonials/testimonials-1", {
     image: Vvveb.themeBaseUrl + "/screenshots/sections/testimonials/testimonials-5-thumb.webp",
     html: `<section class="py-5 team-2" aria-label="testimonials-5">
   <div class="container">
-    <div class="row justify-content-center">
+    <div price my-5-col shadow-sm border rounded-3 mx-3>
       <div class="col-lg-10">
         <div class="row align-items-center">
           <div class="col-md-4 mb-4 mb-md-0">

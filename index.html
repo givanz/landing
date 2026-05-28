@@ -70,17 +70,17 @@
             <li class="nav-item position-static" data-v-menu-item data-v-class-if-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
 
               <a class="nav-link" data-v-class-if-dropdown-toggle="category.children > 0" data-v-class-if="category.children > 0,dropdown-toggle" data-v-class-if-show="category.active" aria-expanded="false" data-bs-toggle="dropdown" data-v-attr-if-data-bs-toggle="category.children > 0" data-v-menu-item-url>
-                <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
                 <span data-v-menu-item-name></span>
                 <span data-v-menu-item-content>
-                  <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
+                  Mega menu
                 </span>
               </a>
 
               <div class="dropdown-menu" data-v-menu-item-recursive>
                 <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                   <a class="dropdown-item" data-v-class-if-show="category.active && category.type != 'text'" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                    <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" class="me-2" data-v-if="category.img">
+                    <img data-v-menu-item-img src="/media/vvveb.svg" height="24" alt="" loading="lazy" class="me-2" data-v-if="category.img">
                     <div>
                       <span data-v-menu-item-name></span>
                       <span data-v-menu-item-content>
@@ -148,7 +148,7 @@
 
             <li class="nav-toggle">
               <!-- User Login Info -->
-              <div class="dropdown">
+              <div class="nav-item dropdown">
                 <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
                   <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
                   <!-- <i class="la la-lg la-user"></i> -->
@@ -273,7 +273,7 @@
 			  <i class="lab la-facebook la-lg"></i>
 			</span>
 		</a> -->
-                        <hr class="text-secondary">
+                        <hr class="text-secondary my-3">
                         <span>Don’t have an account?</span>
                         <br>
                         <a href="/user/signup" data-v-url="user/signup/index">Register Account</a>
@@ -536,17 +536,19 @@
     <div class="container">
       <div>
         <div class="row align-items-center justify-content-center text-center">
-          <div class="col-lg-12">
-            <h1 class="heading mb-4 display-1" data-aos="fade-up" data-aos-delay="100">Next generation website builder</h1>
-            <div class="col-lg-10 mx-auto">
-              <h2 class="display-6" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h2>
+          <div class="">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="heading mb-4 display-1" data-aos="fade-up" data-aos-delay="100">Next generation website builder</h1>
+            </div>
+            <div class="col-lg-6 mx-auto">
+              <h2 class="fs-5" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h2>
             </div>
 
             <div class="buttons" data-aos="fade-up" data-aos-delay="300">
               <a href="https://www.vvveb.com" class="btn btn-primary px-5 ">
                 <span>Free Download</span>
               </a>
-              <a href="https://demo.vvveb.com" class="btn btn-light px-5 ">Live Demo</a>
+              <a href="https://demo.vvveb.com" class="btn btn-dark px-5 ">Live Demo</a>
             </div>
 
 
@@ -590,11 +592,11 @@
             <!--
                     <span class="badge  bg-success rounded-pill px-3">new</span>
                     -->
-            <h2 class="display-5 fw-bold">Real time code editor</h2>
+            <h2 class="display-5 fw-semibold">Real time code editor</h2>
             <div class="mt-4">
-              <p class="lead">Code editor with syntax highglighting that updates in real time.</p>
-              <p class="lead">Use any of the hundreds fonts from google fonts for your design.</p>
-              <p class="lead">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
+              <p>Code editor with syntax highglighting that updates in real time.</p>
+              <p>Use any of the hundreds fonts from google fonts for your design.</p>
+              <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
             </div>
             <a tile="Code editor features" href="/page/about" role="button">
               <span>Learn More</span>
@@ -613,10 +615,10 @@
         <div class="col-md-6 align-self-center">
           <div class="max-box ms-auto" data-aos="fade-left">
             <!-- <span class="badge  bg-success rounded-pill px-3">on sale</span> -->
-            <h2 class="display-5 fw-bold">Drag and drop page builder</h2>
+            <h2 class="display-5 fw-semibold">Drag and drop page builder</h2>
             <div class="mt-4">
-              <p class="lead">Intuitive building with simple drag and drop for sections, components and blocks.</p>
-              <p class="lead">The html for sections blocks and components and this template are built using Bootstrap.</p>
+              <p>Intuitive building with simple drag and drop for sections, components and blocks.</p>
+              <p>The html for sections blocks and components and this template are built using Bootstrap.</p>
             </div>
             <a title="Drag and drop" href="/page/about" role="button">
               <span>Learn More</span>
@@ -633,9 +635,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="section-heading text-center">
+          <div class="section-heading text-center mb-5">
             <h2 class="text-center display-6 mb-1 fw-bold">Latest Products</h2>
-            <p class="lead text-center text-muted mb-4">Best quality at the lowest price.</p>
+            <p class="lead text-center text-muted">Best quality at the lowest price.</p>
           </div>
         </div>
       </div>
@@ -1424,9 +1426,9 @@
                     -->
             <h2 class="display-6 fw-semibold">Real time code editor</h2>
             <div class="mt-4">
-              <p class="lead">Code editor with syntax highglighting that updates in real time.</p>
-              <p class="lead">Use any of the hundreds fonts from google fonts for your design.</p>
-              <p class="lead">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
+              <p>Code editor with syntax highglighting that updates in real time.</p>
+              <p>Use any of the hundreds fonts from google fonts for your design.</p>
+              <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
             </div>
             <a tile="Code editor features" href="/page/about" role="button">
               <span>Learn More</span>
@@ -1447,8 +1449,8 @@
             <!-- <span class="badge  bg-success rounded-pill px-3">on sale</span> -->
             <h2 class="display-6 fw-semibold">Drag and drop page builder</h2>
             <div class="mt-4">
-              <p class="lead">Intuitive building with simple drag and drop for sections, components and blocks.</p>
-              <p class="lead">The html for sections blocks and components and this template are built using Bootstrap.</p>
+              <p>Intuitive building with simple drag and drop for sections, components and blocks.</p>
+              <p>The html for sections blocks and components and this template are built using Bootstrap.</p>
             </div>
             <a title="Drag and drop" href="/page/about" role="button">
               <span>Learn More</span>
@@ -1463,15 +1465,15 @@
 
   <section class="pricing-table-3 my-3" aria-label="pricing-table-3">
     <div class="container">
-      <div class="row justify-content-center pb-2">
+      <div class="row justify-content-center my-5">
         <div class="col-md-7 heading-section text-center">
           <h2 class="text-center display-6 mb-1 fw-bold">Choose your plan</h2>
-          <p class="lead text-center text-muted mb-4">14-day free trial no credit card required.</p>
+          <p class="lead text-center text-muted">14-day free trial no credit card required.</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <div class="price my-5-col shadow-sm border rounded-3" data-aos="fade-up">
+          <div class="price my-5-col shadow-sm border rounded-3 mx-3" data-aos="fade-up">
             <!--
                     <div class="img"><img src="demo/img/illustrations.co/104-dumbbell.svg" alt="104-dumbbell" loading="lazy" class="img-fluid" /></div>
                     -->
@@ -1504,7 +1506,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="price my-5-col shadow-sm border rounded-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="price my-5-col shadow-sm border rounded-3 mx-3" data-aos="fade-up" data-aos-delay="200">
             <!--
                     <div class="img"><img src="demo/img/illustrations.co/107-healthy.svg" alt="107-healthy" loading="lazy" class="img-fluid" /></div>
                     -->
@@ -1537,7 +1539,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="price my-5-col shadow-sm border rounded-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="price my-5-col shadow-sm border rounded-3 mx-3" data-aos="fade-up" data-aos-delay="400">
             <!--
                     <div class="img"><img src="demo/img/illustrations.co/126-namaste-no-hand-shake.svg" alt="126-namaste-no-hand-shake" loading="lazy" class="img-fluid" /></div>
                     -->
@@ -1576,10 +1578,10 @@
 
   <section class="portfolio-2 my-5" aria-label="portfolio-2">
     <div class="container">
-      <div class="row justify-content-center pb-2">
+      <div class="row justify-content-center my-5">
         <div class="col-md-7 text-center">
           <h2 class="text-center display-6 mb-1 fw-bold">Portfolio</h2>
-          <p class="lead text-center text-muted mb-4">Some of our work</p>
+          <p class="lead text-center text-muted">Some of our work</p>
         </div>
       </div>
       <div class="gallery masonry has-shadow hover-effect" data-component-gallery="portfolio-1" id="gallery-RANDOM_ID">
@@ -1640,7 +1642,7 @@
 
     <div class="container">
 
-      <div class="row justify-content-center">
+      <div price my-5-col shadow-sm border rounded-3 mx-3>
         <div class="col text-center">
           <h2 class="display-3 fw-bold text-body mb-3">Ready to take the next step?</h2>
           <p class="text-body h4 fw-normal">Our specialists are ready to work on your next awesome project</p>
@@ -1669,9 +1671,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="section-heading text-center">
+          <div class="section-heading text-center mb-5">
             <h2 class="text-center display-6 mb-1 fw-bold">Latest Posts</h2>
-            <p class="lead text-center text-muted mb-4">Fresh updates from the industry.</p>
+            <p class="lead text-center text-muted">Fresh updates from the industry.</p>
           </div>
         </div>
       </div>
@@ -1898,85 +1900,23 @@
   </section>
 
 
-  <section class="py-5" aria-label="faq-1">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-8 col-xl-7">
-          <span class="text-muted">F.A.Q</span>
-          <h2 class="display-5 fw-bold">Frequently Asked Questions</h2>
-          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit Consequatur quidem eius cum voluptatum quasi delectus.</p>
-        </div>
-      </div>
-      <div class="row mt-4 justify-content-center">
-        <div class="col-md-8">
-          <div class="accordion faq accordion-flush" id="faqAccordion1">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button aria-controls="collapseOne" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">
-                  <div class="text-muted me-3">
-
-                  </div>Lorem ipsum dolor sit amet adipisicing ?
-                </button>
-              </h2>
-              <div aria-labelledby="headingOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1" id="collapseOne">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores porro quidem qui recusandae animi eaque id atque, dolorum expedita magnam modi dolores corrupti. Laudantium cumque suscipit voluptas asperiores, et recusandae.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">
-                  <div class="text-muted me-3">
-
-                  </div>Lorem ipsum dolor sit amet adipisicing ?
-                </button>
-              </h2>
-              <div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1" id="collapseTwo">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores porro quidem qui recusandae animi eaque id atque, dolorum expedita magnam modi dolores corrupti. Laudantium cumque suscipit voluptas asperiores, et recusandae.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">
-                  <div class="text-muted me-3">
-
-                  </div>Lorem ipsum dolor sit amet adipisicing ?
-                </button>
-              </h2>
-              <div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1" id="collapseThree">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores porro quidem qui recusandae animi eaque id atque, dolorum expedita magnam modi dolores corrupti. Laudantium cumque suscipit voluptas asperiores, et recusandae.
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
   <section title="contact-form-10" class="contact-form-10 border-top">
     <div class="container">
       <div class="row my-5">
         <div class="col-12 col-md-6 col-lg-5">
           <h2 class="display-6 mb-1 fw-bold mb-4">Contact Us</h2>
-          <p class="lead">
+          <p>
             Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.
           </p>
 
-          <p class="lead">
+          <p>
             The html for sections blocks and components and this template are built using Bootstrap 5.
           </p>
 
           <div data-v-component-site>
             <p class="mt-5">
               <b>
-                <i class="la la-lg la-envelope opacity-50"></i> Email:
+                <i class="la la-envelope opacity-50"></i> Email:
               </b>
               <span data-v-if="site.contact-email">
                 <a href="mailto:contact@mysite.com" data-v-site-contact-email>
@@ -1986,7 +1926,7 @@
             </p>
             <p class="">
               <b>
-                <i class="la la-lg la-phone opacity-50"></i> Phone:
+                <i class="la la-phone opacity-50"></i> Phone:
               </b>
               <a href="tel:5511112377" data-v-site-description-phone-number>
                 <span data-v-site-description-phone-number>+55 (111) 123 777</span>
@@ -2057,7 +1997,7 @@
 
           </div>
 
-          <div class="border rounded-3 p-4 border-opacity-25 border-light-subtle">
+          <div class="">
             <form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
               <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">
               <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>
@@ -2123,6 +2063,68 @@
   </section>
 
 
+  <section class="py-5 border-top" aria-label="faq-1">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8 col-xl-7">
+          <span class="text-muted">F.A.Q</span>
+          <h2 class="display-5 fw-bold">Frequently Asked Questions</h2>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit Consequatur quidem eius cum voluptatum quasi delectus.</p>
+        </div>
+      </div>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-8">
+          <div class="accordion faq accordion-flush" id="faqAccordion1">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button aria-controls="collapseOne" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">
+                  <div class="text-muted me-3">
+
+                  </div>Lorem ipsum dolor sit amet adipisicing ?
+                </button>
+              </h2>
+              <div aria-labelledby="headingOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1" id="collapseOne">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores porro quidem qui recusandae animi eaque id atque, dolorum expedita magnam modi dolores corrupti. Laudantium cumque suscipit voluptas asperiores, et recusandae.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">
+                  <div class="text-muted me-3">
+
+                  </div>Lorem ipsum dolor sit amet adipisicing ?
+                </button>
+              </h2>
+              <div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1" id="collapseTwo">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores porro quidem qui recusandae animi eaque id atque, dolorum expedita magnam modi dolores corrupti. Laudantium cumque suscipit voluptas asperiores, et recusandae.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">
+                  <div class="text-muted me-3">
+
+                  </div>Lorem ipsum dolor sit amet adipisicing ?
+                </button>
+              </h2>
+              <div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1" id="collapseThree">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores porro quidem qui recusandae animi eaque id atque, dolorum expedita magnam modi dolores corrupti. Laudantium cumque suscipit voluptas asperiores, et recusandae.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <section class="subscribe-2" aria-label="subscribe-2">
 
     <div class="container">
@@ -2132,7 +2134,7 @@
 
           <div class="col-md-6">
             <h5 class="mb-3">Stay Informed with Early Updates!</h5>
-            <p class="text-muted">Subscribe to our newsletter and receive the latest updates and important news directly to your inbox.</p>
+            <p class="text-muted col-md-10">Subscribe to our newsletter and receive the latest updates and important news directly to your inbox.</p>
           </div>
 
           <div class="col-md-6">
@@ -2468,8 +2470,8 @@
                 </div>
               </td>
               <td class="text-end">
-                <a class="btn btn-remove btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
-                  <i class="la la-times-circle la-lg"></i>
+                <a class="btn btn-remove btn-sm" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
+                  <i class="la la-times"></i>
                 </a>
               </td>
             </tr>
@@ -2498,14 +2500,13 @@
             </tr>
             <tr data-v-if-not="cart.total_items">
               <td colspan="100">
-                <div class="d-flex  p-2">
-                  <div class="text-center p-2 opacity-75">
+                <div class="bg-body-tertiary p-4 mt-2 d-flex">
+                  <div class="text-center opacity-75 pe-4">
                     <!-- <img src="demo/img/bag.svg" width="20" alt> -->
-                    <i class="la la-2x la-shopping-bag"></i>
+                    <i class="la la-2x la-shopping-bag text-secondary"></i>
                   </div>
-                  <div class="d-flex  p-2 border bg-body-tertiary rounded p-4">
-                    <strong>Empty cart</strong>
-                    <br>
+                  <div class="">
+                    <h6 class="my-2 p-0">Empty cart</h6>
                     <span class="text-muted">No products added yet!</span>
                   </div>
                 </div>
