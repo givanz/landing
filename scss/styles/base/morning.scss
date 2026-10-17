@@ -1,0 +1,133 @@
+// ==========================================================================
+//  Bootstrap 5.3 Sass build with theme variable overrides
+//  Primary: #0d6efd (Blue)
+// ==========================================================================
+
+@import "../../bootstrap/functions";
+
+// ---------------------------------------------------------------------------
+// Theme colors
+// ---------------------------------------------------------------------------
+$primary:       #0d6efd;
+$success:       #198754;
+$info:          #0dcaf0;
+$warning:       #ffc107;
+$danger:        #dc3545;
+
+$component-active-color: #fff;
+
+// ---------------------------------------------------------------------------
+// Light mode body / layout (overrides Bootstrap defaults)
+// ---------------------------------------------------------------------------
+$body-bg:                         #fff;
+$body-color:                      #212529;
+$body-secondary-color:            rgba(#212529, 0.75);
+$body-secondary-bg:               #e9ecef;
+$body-tertiary-color:             rgba(#212529, 0.50);
+$body-tertiary-bg:                #f8f9fa;
+$border-color:                    #dee2e6;
+$border-color-translucent:        rgba(0, 0, 0, 0.175);
+$link-color:                      #0d6efd;
+$link-hover-color:                #0a58ca;
+$code-color:                      #d63384;
+
+// ---------------------------------------------------------------------------
+// Dark mode body / layout
+// ---------------------------------------------------------------------------
+$body-bg-dark:                    #212529;
+$body-color-dark:                 #dee2e6;
+$body-secondary-color-dark:       rgba(#dee2e6, 0.75);
+$body-secondary-bg-dark:          #343a40;
+$body-tertiary-color-dark:        rgba(#dee2e6, 0.50);
+$body-tertiary-bg-dark:           #2b3035;
+$body-emphasis-color-dark:        #fff;
+$border-color-dark:               #495057;
+$border-color-translucent-dark:   rgba(255, 255, 255, 0.15);
+$link-color-dark:                 #6ea8fe;
+$link-hover-color-dark:           #8bb9fe;
+$code-color-dark:                 #e685b5;
+
+// Dark mode primary derivatives (hand-tuned)
+$primary-text-emphasis-dark:      #6ea8fe;
+$primary-bg-subtle-dark:          #031633;
+$primary-border-subtle-dark:      #084298;
+
+// ---------------------------------------------------------------------------
+// Bootstrap core imports
+// ---------------------------------------------------------------------------
+@import "../../bootstrap/variables";
+@import "../../bootstrap/variables-dark";
+@import "../../bootstrap/maps";
+@import "../../bootstrap/mixins";
+@import "../../bootstrap/utilities";
+//@import "bootstrap-imports";
+
+// ---------------------------------------------------------------------------
+// Dark mode — button overrides only (all else handled by Sass vars)
+// ---------------------------------------------------------------------------
+@include color-mode(dark) {
+  .btn-primary {
+    --bs-btn-bg: #0d6efd;
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-color: #fff;
+    --bs-btn-hover-bg: #0b5ed7;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-color: #fff;
+  }
+
+  .btn-outline-primary {
+    --bs-btn-color: #0d6efd;
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-hover-bg: #0d6efd;
+    --bs-btn-hover-border-color: #0d6efd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-bg: #0d6efd;
+    --bs-btn-active-border-color: #0d6efd;
+    --bs-btn-active-color: #fff;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Light mode — primary override (#0d6efd in light)
+// ---------------------------------------------------------------------------
+@include color-mode(light) {
+  // Primary — Blue in light mode
+  --bs-primary:                #0d6efd;
+  --bs-primary-rgb:            13, 110, 253;
+  --bs-primary-text-emphasis:  #052c65;
+  --bs-primary-bg-subtle:      #cfe2ff;
+  --bs-primary-border-subtle:  #9ec5fe;
+
+  --bs-code-color:             #d63384;
+
+  .btn-primary {
+    --bs-btn-bg: #0d6efd;
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-color: #fff;
+    --bs-btn-hover-bg: #0b5ed7;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-color: #fff;
+  }
+
+  .btn-outline-primary {
+    --bs-btn-color: #0d6efd;
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-hover-bg: #0d6efd;
+    --bs-btn-hover-border-color: #0d6efd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-bg: #0d6efd;
+    --bs-btn-active-border-color: #0d6efd;
+    --bs-btn-active-color: #fff;
+  }
+
+  .dropdown-menu {
+    --bs-dropdown-link-active-bg: #0d6efd;
+    --bs-dropdown-link-active-color: #fff;
+  }
+}

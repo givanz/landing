@@ -1,0 +1,52 @@
+// ==========================================================================
+// Gambit — warm black with oxblood for calculated play
+// Clubroom palette for chess clubs, debate societies and law reviews.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#1c1917;
+    --bs-primary-rgb:28, 25, 23;
+    --bs-secondary:#8a2b2b;
+    --bs-secondary-rgb:138, 43, 43;
+    --bs-link-color:#1c1917;
+    --bs-link-hover-color:#57534e;
+    --bs-font-sans-serif:"Inter";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#e7e5e4;
+    --bs-primary-rgb:231, 229, 228;
+    --bs-secondary:#d9a05b;
+    --bs-secondary-rgb:217, 160, 91;
+    --bs-link-color:#e7e5e4;
+    --bs-link-hover-color:#f5f5f4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Libre Caslon Text";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #1c1917;
+    --bs-btn-hover-color: #1c1917;
+    --bs-btn-active-color: #1c1917;
+    --bs-btn-disabled-color: #1c1917;
+    color:#1c1917;
+}

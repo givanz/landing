@@ -1,0 +1,53 @@
+// ==========================================================================
+// Scarlet — vivid signal red with smoke gray
+// Bold palette for news, sports and clearance campaigns.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Archivo:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#dc2626;
+    --bs-primary-rgb:220, 38, 38;
+    --bs-secondary:#4b5563;
+    --bs-secondary-rgb:75, 85, 99;
+    --bs-link-color:#dc2626;
+    --bs-link-hover-color:#b91c1c;
+    --bs-font-sans-serif:"Archivo";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#f87171;
+    --bs-primary-rgb:248, 113, 113;
+    --bs-secondary:#9ca3af;
+    --bs-secondary-rgb:156, 163, 175;
+    --bs-link-color:#f87171;
+    --bs-link-hover-color:#fca5a5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Oswald";
+    text-transform:uppercase;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #b91c1c;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #450a0a;
+    --bs-btn-hover-color: #450a0a;
+    --bs-btn-active-color: #450a0a;
+    --bs-btn-disabled-color: #450a0a;
+    color:#450a0a;
+}

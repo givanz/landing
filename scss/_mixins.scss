@@ -1,0 +1,59 @@
+// ==========================================================================
+// Shared mixins used by the standalone page stylesheets (blog, post-style)
+// and nested imports. Mixins emit no CSS on their own.
+// ==========================================================================
+
+// Decorative quote marks around blockquote content.
+@mixin quotes {
+	&:before, &:after {
+		font-style: normal;
+	}
+
+	&:before {
+		content: "\201C";
+	}
+
+	&:after {
+		content: "\201D";
+	}
+}
+
+// Centered reading-width column; relies on the $max-width variable
+// defined (!default) by each entry that uses it.
+@mixin max-width {
+	max-width: $max-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// ==========================================================================
+// Post article tokens + shared blockquote style.
+// Single source of truth for `blog.scss` (listing) and `post-style.scss`
+// (single post). Change the design here, not in both files.
+// ==========================================================================
+$post-blockquote-border-width: 4px !default;
+$post-blockquote-radius: 0 0.5rem 0.5rem 0 !default;
+$post-blockquote-padding: 1.25rem 1.25rem 1rem !default;
+$post-media-radius: 8px !default;
+
+// Canonical pull-quote: tinted background, accent border, decorative quotes.
+// Listing context (`blog.scss`) overrides the margin to `0` after including.
+@mixin post-blockquote {
+	font-style: italic;
+	letter-spacing: 0.01rem;
+	border-left: $post-blockquote-border-width solid var(--bs-primary);
+	border-radius: $post-blockquote-radius;
+	background: var(--bs-secondary-bg);
+	padding: $post-blockquote-padding;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+
+	> p {
+		@include quotes();
+	}
+
+	i {
+		font-size: 2rem;
+		color: var(--bs-gray);
+	}
+}

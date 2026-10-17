@@ -1,0 +1,52 @@
+// ==========================================================================
+// Grand-slam — championship purple with courtside green
+// Prestige palette for tournaments, clubs and luxury sport.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600;700&family=Karla:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#4b2c83;
+    --bs-primary-rgb:75, 44, 131;
+    --bs-secondary:#007a33;
+    --bs-secondary-rgb:0, 122, 51;
+    --bs-link-color:#4b2c83;
+    --bs-link-hover-color:#3a2068;
+    --bs-font-sans-serif:"Karla";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#b39ddb;
+    --bs-primary-rgb:179, 157, 219;
+    --bs-secondary:#81c784;
+    --bs-secondary-rgb:129, 199, 132;
+    --bs-link-color:#b39ddb;
+    --bs-link-hover-color:#c9b6e4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Crimson Pro";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #3a2068;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #2a1a5e;
+    --bs-btn-hover-color: #2a1a5e;
+    --bs-btn-active-color: #2a1a5e;
+    --bs-btn-disabled-color: #2a1a5e;
+    color:#2a1a5e;
+}

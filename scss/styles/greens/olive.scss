@@ -1,0 +1,52 @@
+// ==========================================================================
+// Olive — mediterranean yellow-green with khaki light
+// Sun-baked palette for groves, delis and outdoor brands.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500;600;700&family=Public+Sans:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#65740b;
+    --bs-primary-rgb:101, 116, 11;
+    --bs-secondary:#d9c27a;
+    --bs-secondary-rgb:217, 194, 122;
+    --bs-link-color:#65740b;
+    --bs-link-hover-color:#4e5b08;
+    --bs-font-sans-serif:"Public Sans";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#ccd96a;
+    --bs-primary-rgb:204, 217, 106;
+    --bs-secondary:#e3dd9f;
+    --bs-secondary-rgb:227, 221, 159;
+    --bs-link-color:#ccd96a;
+    --bs-link-hover-color:#dcea8d;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Alegreya";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #4e5b08;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #1a2e05;
+    --bs-btn-hover-color: #1a2e05;
+    --bs-btn-active-color: #1a2e05;
+    --bs-btn-disabled-color: #1a2e05;
+    color:#1a2e05;
+}

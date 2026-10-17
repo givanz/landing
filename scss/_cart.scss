@@ -2,7 +2,7 @@
 	.cart-right-column {
 		> .card  {
 			position:sticky;
-			top:100px;
+			top:6.25rem;
 		}
 	}
 }
@@ -10,7 +10,6 @@
 .cart-table {
 	
 	th {
-		/*color:$gray-600;*/
 		font-size:85%;
 		font-weight:500;
 		padding:0.5rem 1.5rem;
@@ -33,12 +32,12 @@
 	.option, .subscription {
 		margin-top:0.5rem;
 		font-size:80%;
-		color:var(--bs-secondary);
+		color:var(--bs-secondary-color);
 	}
 
 
 	.mini-cart & {
-		font-size:14px;
+		font-size:0.875rem;
 	}
 
 }
@@ -63,14 +62,12 @@
 }
 
 .quantity {
-	//width:140px;
 	font-size:85%;
 	display:inline-block;
 	
 	.input-group {
-		border:1px solid var(--bs-border-color);
 		border:1px solid var(--bs-light-border-subtle);
-		border-radius:4px;
+		border-radius:0.25rem;
 		
 		
 		input.form-control[type=number] {
@@ -98,11 +95,11 @@
 		
 		.btn {
 			border:none;
-			background:var(--bs-body-bg-color);
+			background:var(--bs-body-bg);
 			font-weight:bold;
 			
 			&:hover {
-				background:var(--bs-light);
+				background:rgba(var(--bs-body-color-rgb), 0.05);
 				color:var(--bs-link-color);
 			}
 
@@ -132,7 +129,7 @@
 .cart-box > div,
 .checkout-page [data-v-component-cart] {
 	> .table-responsive {
-		max-height:250px;
+		max-height:15.625rem;
 		overflow-y: auto;
 	}
 }
@@ -140,6 +137,6 @@
 .mini-cart .dropdown-toggle .badge {
     padding: 0.2rem 0.3rem;
     position: absolute;
-    right: 18px;
-    margin-top: -5px;
+    right: 1.125rem;
+    margin-top: -0.3125rem;
 }

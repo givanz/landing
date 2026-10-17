@@ -1,0 +1,52 @@
+// ==========================================================================
+// Flamingo — vivid fuchsia with cotton-candy light
+// Playful palette for parties, toys and pop brands.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#c026d3;
+    --bs-primary-rgb:192, 38, 211;
+    --bs-secondary:#f0abfc;
+    --bs-secondary-rgb:240, 171, 252;
+    --bs-link-color:#c026d3;
+    --bs-link-hover-color:#a21caf;
+    --bs-font-sans-serif:"Nunito";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#f0abfc;
+    --bs-primary-rgb:240, 171, 252;
+    --bs-secondary:#f5d0fe;
+    --bs-secondary-rgb:245, 208, 254;
+    --bs-link-color:#f0abfc;
+    --bs-link-hover-color:#f5d0fe;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Fredoka";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #a21caf;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #4a044e;
+    --bs-btn-hover-color: #4a044e;
+    --bs-btn-active-color: #4a044e;
+    --bs-btn-disabled-color: #4a044e;
+    color:#4a044e;
+}

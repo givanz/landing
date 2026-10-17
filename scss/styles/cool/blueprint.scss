@@ -1,0 +1,63 @@
+// ==========================================================================
+// Blueprint — drafting grid paper with classic blueprint blue
+// Technical palette for architects, engineers and planners.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#1e40af;
+    --bs-primary-rgb:30, 64, 175;
+    --bs-secondary:#3b82f6;
+    --bs-secondary-rgb:59, 130, 246;
+    --bs-link-color:#1e40af;
+    --bs-link-hover-color:#1e3a8a;
+    --bs-font-sans-serif:"IBM Plex Sans";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#93c5fd;
+    --bs-primary-rgb:147, 197, 253;
+    --bs-secondary:#bfdbfe;
+    --bs-secondary-rgb:191, 219, 254;
+    --bs-link-color:#93c5fd;
+    --bs-link-hover-color:#bfdbfe;
+}
+
+body {
+    background-color:#fbfdff;
+    background-image:linear-gradient(rgba(30, 64, 175, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(30, 64, 175, 0.06) 1px, transparent 1px);
+    background-size:22px 22px;
+}
+
+[data-bs-theme=dark] body {
+    background-color:#0b1530;
+    background-image:linear-gradient(rgba(147, 197, 253, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(147, 197, 253, 0.08) 1px, transparent 1px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Space Mono";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #1e3a8a;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #172554;
+    --bs-btn-hover-color: #172554;
+    --bs-btn-active-color: #172554;
+    --bs-btn-disabled-color: #172554;
+    color:#172554;
+}

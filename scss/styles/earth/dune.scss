@@ -1,0 +1,52 @@
+// ==========================================================================
+// Dune — desert sand and saddle brown
+// Warm earthy palette for travel, crafts and organic brands.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Karla:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#7c4a21;
+    --bs-primary-rgb:124, 74, 33;
+    --bs-secondary:#c8a24b;
+    --bs-secondary-rgb:200, 162, 75;
+    --bs-link-color:#7c4a21;
+    --bs-link-hover-color:#5f3818;
+    --bs-font-sans-serif:"Karla";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#d9a066;
+    --bs-primary-rgb:217, 160, 102;
+    --bs-secondary:#e3c98a;
+    --bs-secondary-rgb:227, 201, 138;
+    --bs-link-color:#d9a066;
+    --bs-link-hover-color:#e8b981;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Zilla Slab";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #5f3818;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #3b2410;
+    --bs-btn-hover-color: #3b2410;
+    --bs-btn-active-color: #3b2410;
+    --bs-btn-disabled-color: #3b2410;
+    color:#3b2410;
+}

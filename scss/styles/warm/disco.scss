@@ -1,0 +1,53 @@
+// ==========================================================================
+// Disco — seventies avocado with burnt orange
+// Groovy retro palette for vinyl shops, diners and festivals.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=DM+Sans:wght@400;500;700&display=swap');
+
+:root{
+    --bs-primary:#5f6f14;
+    --bs-primary-rgb:95, 111, 20;
+    --bs-secondary:#c2410c;
+    --bs-secondary-rgb:194, 65, 12;
+    --bs-link-color:#5f6f14;
+    --bs-link-hover-color:#49530f;
+    --bs-font-sans-serif:"DM Sans";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#d9f99d;
+    --bs-primary-rgb:217, 249, 157;
+    --bs-secondary:#fdba74;
+    --bs-secondary-rgb:253, 186, 116;
+    --bs-link-color:#d9f99d;
+    --bs-link-hover-color:#ecfccb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Shrikhand";
+    font-weight:400;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #49530f;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #1a2e05;
+    --bs-btn-hover-color: #1a2e05;
+    --bs-btn-active-color: #1a2e05;
+    --bs-btn-disabled-color: #1a2e05;
+    color:#1a2e05;
+}

@@ -1,0 +1,53 @@
+// ==========================================================================
+// Gloaming — violet charcoal with amber last-light
+// Twilight-hour palette for lounges, theaters and night brands.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Outfit:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#37304a;
+    --bs-primary-rgb:55, 48, 74;
+    --bs-secondary:#c9a227;
+    --bs-secondary-rgb:201, 162, 39;
+    --bs-link-color:#4c3b8c;
+    --bs-link-hover-color:#3a2d6e;
+    --bs-font-sans-serif:"Outfit";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#cfc3ec;
+    --bs-primary-rgb:207, 195, 236;
+    --bs-secondary:#fbbf24;
+    --bs-secondary-rgb:251, 191, 36;
+    --bs-link-color:#cfc3ec;
+    --bs-link-hover-color:#ddd2f3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Yeseva One";
+    font-weight:400;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #241f38;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #241f38;
+    --bs-btn-hover-color: #241f38;
+    --bs-btn-active-color: #241f38;
+    --bs-btn-disabled-color: #241f38;
+    color:#241f38;
+}

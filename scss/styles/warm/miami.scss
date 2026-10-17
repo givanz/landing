@@ -1,0 +1,53 @@
+// ==========================================================================
+// Miami — neon deco pink with chrome silver
+// After-dark glamour for clubs, salons and cocktail bars.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;600;700&display=swap');
+
+:root{
+    --bs-primary:#c20078;
+    --bs-primary-rgb:194, 0, 120;
+    --bs-secondary:#94a3b8;
+    --bs-secondary-rgb:148, 163, 184;
+    --bs-link-color:#c20078;
+    --bs-link-hover-color:#9d0063;
+    --bs-font-sans-serif:"Quicksand";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#eda6d3;
+    --bs-primary-rgb:237, 166, 211;
+    --bs-secondary:#e2e8f0;
+    --bs-secondary-rgb:226, 232, 240;
+    --bs-link-color:#eda6d3;
+    --bs-link-hover-color:#f5c6e0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Monoton";
+    font-weight:400;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #9d0063;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #500f28;
+    --bs-btn-hover-color: #500f28;
+    --bs-btn-active-color: #500f28;
+    --bs-btn-disabled-color: #500f28;
+    color:#500f28;
+}

@@ -1,0 +1,53 @@
+// ==========================================================================
+// Harbor — steel blue harbor mist
+// Cool maritime palette for logistics, finance and institutions.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#3d5a80;
+    --bs-primary-rgb:61, 90, 128;
+    --bs-secondary:#7a93ad;
+    --bs-secondary-rgb:122, 147, 173;
+    --bs-link-color:#3d5a80;
+    --bs-link-hover-color:#2f4666;
+    --bs-font-sans-serif:"Inter";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#9db4d0;
+    --bs-primary-rgb:157, 180, 208;
+    --bs-secondary:#b8cbdd;
+    --bs-secondary-rgb:184, 203, 221;
+    --bs-link-color:#9db4d0;
+    --bs-link-hover-color:#bccfe2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Libre Franklin";
+    letter-spacing:-0.01em;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #2f4666;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #1c2b3a;
+    --bs-btn-hover-color: #1c2b3a;
+    --bs-btn-active-color: #1c2b3a;
+    --bs-btn-disabled-color: #1c2b3a;
+    color:#1c2b3a;
+}

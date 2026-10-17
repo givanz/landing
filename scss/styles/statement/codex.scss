@@ -1,0 +1,65 @@
+// ==========================================================================
+// Codex — iron-gall ink with rubric red and drop caps
+// Manuscript palette for publishers, poets and archives.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+
+:root{
+    --bs-primary:#232a3d;
+    --bs-primary-rgb:35, 42, 61;
+    --bs-secondary:#b91c1c;
+    --bs-secondary-rgb:185, 28, 28;
+    --bs-link-color:#232a3d;
+    --bs-link-hover-color:#10141f;
+    --bs-font-sans-serif:"EB Garamond";
+    --bs-body-font-size:1.0625rem;
+    --bs-body-line-height:1.7;
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#d6d3d1;
+    --bs-primary-rgb:214, 211, 209;
+    --bs-secondary:#f87171;
+    --bs-secondary-rgb:248, 113, 113;
+    --bs-link-color:#d6d3d1;
+    --bs-link-hover-color:#e7e5e4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"EB Garamond";
+    font-weight:600;
+}
+
+.post-content > p:first-of-type::first-letter {
+    font-family:"EB Garamond";
+    font-weight:700;
+    font-size:3.4em;
+    float:left;
+    line-height:0.8;
+    padding-right:0.12em;
+    color:var(--bs-secondary);
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #10141f;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #232a3d;
+    --bs-btn-hover-color: #232a3d;
+    --bs-btn-active-color: #232a3d;
+    --bs-btn-disabled-color: #232a3d;
+    color:#232a3d;
+}

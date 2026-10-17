@@ -1,0 +1,53 @@
+// ==========================================================================
+// Slate — neutral blue-gray professionalism
+// Understated palette for corporate, legal and SaaS brands.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#475569;
+    --bs-primary-rgb:71, 85, 105;
+    --bs-secondary:#94a3b8;
+    --bs-secondary-rgb:148, 163, 184;
+    --bs-link-color:#475569;
+    --bs-link-hover-color:#334155;
+    --bs-font-sans-serif:"Inter";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#cbd5e1;
+    --bs-primary-rgb:203, 213, 225;
+    --bs-secondary:#e2e8f0;
+    --bs-secondary-rgb:226, 232, 240;
+    --bs-link-color:#cbd5e1;
+    --bs-link-hover-color:#e2e8f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Figtree";
+    letter-spacing:-0.01em;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #334155;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #0f172a;
+    --bs-btn-hover-color: #0f172a;
+    --bs-btn-active-color: #0f172a;
+    --bs-btn-disabled-color: #0f172a;
+    color:#0f172a;
+}

@@ -1,0 +1,458 @@
+// Post article body styles (imported top-level via `style.scss`).
+//
+// Author utilities (opt-in, editor-safe):
+//   `.narrow`            - constrain direct children to reading width ($max-width)
+//   `.lead`              - larger opening paragraph, e.g. `<p class="lead">`
+//   `.align-left/right`  - float media 50% (stacks on mobile, see below)
+//   `.align-center`      - center block media
+//   `.table-responsive`  - wrap wide `<table>` for horizontal scroll
+//   `figure/figcaption`  - captioned media; caption falls back to `alt` text
+//                          when the editor omits `<figcaption>` (see theme JS)
+//   `.share-sticky`      - sticky share rail, e.g. `<div class="share share-sticky">`
+//   `.reading-progress`  - fixed top progress bar (see `content/post*.html`)
+$max-width: 40rem !default;
+
+@import "mixins";
+
+// Long words/URLs in headings should wrap, not overflow the column.
+.post-content,
+.post-title {
+	h1, h2, h3, h4, h5, h6 {
+		overflow-wrap: anywhere;
+		text-wrap: balance;
+	}
+}
+
+.post-title,
+.post-title a {
+	text-decoration: none;
+	color: var(--bs-body-color);
+	line-height: 1.25;
+
+	h1, h2, h3 {
+		font-weight: 600;
+		line-height: inherit;
+		margin: 0;
+	}
+
+	&:hover {
+		color: var(--bs-primary);
+		text-decoration: underline;
+		text-underline-offset: 3px;
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--bs-primary);
+		outline-offset: 2px;
+	}
+}
+
+a.post-title {
+	display: block;
+}
+
+.post-content {
+	font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.2rem);
+	line-height: 1.75;
+	overflow-wrap: anywhere;
+	font-family: var(--bs-font-sans-serif);
+
+	// Contain floated `.align-left`/`.align-right` media.
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	&.narrow {
+		> p,
+		> h1,
+		> h2,
+		> h3,
+		> h4,
+		> h5,
+		> h6,
+		> blockquote,
+		> span,
+		> ul,
+		> ol,
+		> pre,
+		> figure,
+		> details,
+		> hr,
+		> .lead {
+			@include max-width();
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 600;
+		line-height: 1.25;
+		margin: 2.5rem auto 1rem;
+	}
+
+	h1 { font-size: 2rem; }
+	h2 { font-size: 1.75rem; }
+	h3 { font-size: 1.5rem; }
+	h4 { font-size: 1.25rem; }
+	h5, h6 { font-size: 1.1rem; }
+
+	p, ul, ol, figure, pre, details, hr {
+		margin-bottom: 1.5rem;
+	}
+
+	// Opt-in opening paragraph: larger, tighter, muted.
+	.lead {
+		font-size: 1.25em;
+		line-height: 1.6;
+		font-weight: 400;
+		color: var(--bs-body-color);
+		margin-bottom: 1.75rem;
+	}
+
+	// Links: visible underline inside article body, clear keyboard focus.
+	a:not(.btn) {
+		text-decoration: underline;
+		text-underline-offset: 3px;
+
+		&:hover {
+			color: var(--bs-link-hover-color);
+		}
+
+		&:focus-visible {
+			outline: 2px solid var(--bs-primary);
+			outline-offset: 2px;
+		}
+	}
+
+	ul, ol {
+		padding-left: 1.5rem;
+
+		li + li {
+			margin-top: 0.5rem;
+		}
+
+		li::marker {
+			color: var(--bs-primary);
+		}
+
+		ul, ol {
+			margin-top: 0.5rem;
+			margin-bottom: 0;
+		}
+	}
+
+	// Shared design with listing quotes (`blog.scss`); cite extras below
+	// are single-post only.
+	blockquote {
+		@include post-blockquote;
+
+		> p:last-child,
+		> cite:last-child {
+			margin-bottom: 0;
+		}
+
+		cite {
+			display: block;
+			margin-top: 0.75rem;
+			font-size: 0.875rem;
+			font-style: normal;
+		}
+	}
+
+	q {
+		@include quotes();
+	}
+
+	img, svg, video {
+		vertical-align: middle;
+		max-width: 100%;
+		height: auto;
+	}
+
+	// Centering applies to content media; rounded corners only to
+	// photographic content (not inline `svg` icons).
+	img, video {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	p img,
+	figure img,
+	div > img,
+	p video,
+	figure video {
+		border-radius: $post-media-radius;
+	}
+
+	figure {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+
+		img, video {
+			margin-bottom: 0.5rem;
+		}
+
+		figcaption {
+			font-size: 0.875rem;
+			color: var(--bs-secondary-color);
+		}
+	}
+
+	iframe {
+		vertical-align: middle;
+		max-width: 100%;
+		margin: 0 auto;
+		display: block;
+		border: 0;
+		border-radius: $post-media-radius;
+	}
+
+	// Responsive 16:9 embeds (YouTube/Vimeo). Fixed-size iframes keep aspect.
+	iframe[src*="youtube"],
+	iframe[src*="youtu.be"],
+	iframe[src*="vimeo"] {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16 / 9;
+	}
+
+	div.iframe {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		width: 100%;
+	}
+
+	.align-left {
+		margin-right: 1rem;
+	}
+
+	.align-right {
+		margin-left: 1rem;
+	}
+
+	pre {
+		padding: 1rem;
+		background: var(--bs-secondary-bg);
+		border: 1px solid var(--bs-border-color);
+		border-radius: 0.5rem;
+		overflow-x: auto;
+		font-size: 0.875rem;
+		line-height: 1.6;
+
+		code {
+			background: transparent;
+			padding: 0;
+			border: 0;
+		}
+	}
+
+	// Inline code pill (code blocks handled above).
+	:not(pre) > code {
+		background: var(--bs-secondary-bg);
+		border: 1px solid var(--bs-border-color);
+		padding: 0.15em 0.4em;
+		border-radius: 0.3rem;
+		font-size: 0.85em;
+		overflow-wrap: anywhere;
+	}
+
+	table {
+		width: 100%;
+		max-width: 100%;
+		font-size: 0.95rem;
+		border-collapse: collapse;
+		margin-bottom: 1.5rem;
+
+		th, td {
+			padding: 0.6rem 0.8rem;
+			border: 1px solid var(--bs-border-color);
+			overflow-wrap: anywhere;
+		}
+
+		thead th {
+			background: var(--bs-secondary-bg);
+			font-weight: 600;
+			text-align: left;
+		}
+
+		tbody tr:nth-child(even) {
+			background: rgba(var(--bs-body-color-rgb), 0.02);
+		}
+	}
+
+	// Opt-in scroll container for wide tables: wrap the table in
+	// `<div class="table-responsive">` in the editor.
+	.table-responsive {
+		overflow-x: auto;
+		margin-bottom: 1.5rem;
+
+		table {
+			margin-bottom: 0;
+		}
+	}
+
+	hr {
+		margin: 3rem auto;
+		opacity: 0.5;
+		max-width: $max-width;
+	}
+
+	details {
+		border: 1px solid var(--bs-border-color);
+		border-radius: 0.5rem;
+		padding: 1rem 1.25rem;
+		background: var(--bs-body-bg);
+
+		summary {
+			font-weight: 600;
+			cursor: pointer;
+		}
+	}
+
+	mark {
+		padding: 0.1em 0.3em;
+		border-radius: 0.25rem;
+	}
+
+	kbd, samp {
+		font-size: 0.85em;
+		padding: 0.15em 0.4em;
+		border-radius: 0.3rem;
+		border: 1px solid var(--bs-border-color);
+		background: var(--bs-secondary-bg);
+	}
+}
+
+.align-left {
+	float: left;
+	max-width: 50%;
+	margin: 0.5em 1em 0.5em 0;
+}
+
+.align-right {
+	float: right;
+	max-width: 50%;
+	margin: 0.5em 0 0.5em 1em;
+}
+
+.align-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.align-center {
+	display: block;
+}
+
+figure.align-center {
+	display: table;
+}
+
+// Sticky share rail (opt-in): `<div class="share share-sticky">`.
+// Parent column must not clip overflow for `sticky` to engage.
+.share-sticky {
+	position: sticky;
+	top: 5rem;
+	z-index: 5;
+}
+
+// Fixed reading-progress bar (see `content/post*.html`).
+// Width is set inline by a rAF-throttled scroll listener; element is
+// `aria-hidden` so it never enters the a11y tree.
+.reading-progress {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	z-index: 1080;
+	pointer-events: none;
+	background: transparent;
+
+	> span {
+		display: block;
+		height: 100%;
+		width: 0;
+		background: var(--bs-primary);
+	}
+}
+
+// Stack floated media on narrow screens instead of squeezing text
+// into a thin column beside a 50%-wide image.
+@media (max-width: 576px) {
+	.post-content .align-left,
+	.post-content .align-right,
+	.align-left,
+	.align-right {
+		float: none;
+		display: block;
+		max-width: 100%;
+		margin: 1rem auto;
+	}
+
+	.post-content {
+		table {
+			font-size: 0.875rem;
+
+			th, td {
+				padding: 0.5rem;
+			}
+		}
+	}
+}
+
+.comments-form,
+.post-comments,
+.share {
+	@include max-width();
+}
+
+.comments-form,
+.post-comments {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.share {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.post-content,
+	.post-title {
+		scroll-behavior: auto;
+	}
+
+	.reading-progress > span {
+		transition: none;
+	}
+}
+
+@media print {
+	.post-content {
+		font-size: 11pt;
+		line-height: 1.5;
+	}
+
+	.reading-progress,
+	.share,
+	.share-sticky,
+	.post-comments,
+	.comments-form {
+		display: none;
+	}
+
+	.post-content a:not(.btn) {
+		text-decoration: none;
+	}
+
+	.post-content pre,
+	.post-content blockquote {
+		break-inside: avoid;
+	}
+}

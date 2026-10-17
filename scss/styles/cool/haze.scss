@@ -1,0 +1,52 @@
+// ==========================================================================
+// Haze — foggy mauve gray with mist light
+// Soft-focus palette for photography, poetry and quiet tech.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500;600;700&family=Karla:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#4c4459;
+    --bs-primary-rgb:76, 68, 89;
+    --bs-secondary:#b3a7bd;
+    --bs-secondary-rgb:179, 167, 189;
+    --bs-link-color:#4c4459;
+    --bs-link-hover-color:#393347;
+    --bs-font-sans-serif:"Karla";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#b3a7bd;
+    --bs-primary-rgb:179, 167, 189;
+    --bs-secondary:#ddd5e6;
+    --bs-secondary-rgb:221, 213, 230;
+    --bs-link-color:#b3a7bd;
+    --bs-link-hover-color:#cfc4dc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Eczar";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #393347;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #282330;
+    --bs-btn-hover-color: #282330;
+    --bs-btn-active-color: #282330;
+    --bs-btn-disabled-color: #282330;
+    color:#282330;
+}

@@ -1,5 +1,5 @@
 input.form-control[type=number] {
-    width: 80px;
+    width: 5rem;
 }
 
 .carousel-control-next-icon {
@@ -17,11 +17,10 @@ input.form-control[type=number] {
 {
    margin-bottom: 0.5rem;
    margin-top: 0.5rem;
-   /*padding-bottom:10px;*/
    
 	.nav-tabs .nav-link {
 		border:none;
-		color:var(--bs-secondary);
+		color:var(--bs-secondary-color);
 		//padding:0.5rem 1rem;
 	}
 
@@ -32,66 +31,57 @@ input.form-control[type=number] {
 	}
 
 
-	.tab-content {
-		//padding:2rem 1rem;
-	}
+
 
 }
 
 .product_sale 
 {
-  background:var(--bs-body-color);
-  background-color: rgba(var(--bs-body-color-rgb), 0.8);
-  color: #FFFFFF;
-
-	background: transparent;
+  background: transparent;
 	color:var(--bs-body-color);
 	border:1px solid var(--bs-body-color);
 
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-weight: 400;
-  margin-left: 25px;
-  margin-top: 30px;
-  padding: 0px 5px;
+  margin-left: 1.5625rem;
+  margin-top: 1.875rem;
+  padding: 0 0.3125rem;
   position: absolute;
   line-height:17px;
   text-transform: uppercase;
   z-index:1;
-  left:0px;
+  left:0;
 }
 
 .product_sale:nth-child(2)
 {
-	right:15px;
+	right:0.9375rem;
 	left:auto;
 }
 
 .product_sale:nth-child(3)
 {
-	top:45px;
+	top:2.8125rem;
 }
 
 
 .product_sale.popular
 {
-	background: #0fabf3;
-	background:rgba(15, 171, 243, 0.6);
 	background: transparent;
 	color:#0fabf3;
 	border:1px solid #0fabf3;
-	font-size: 8px;
+	font-size: 0.5rem;
     letter-spacing:1px;
 	font-weight: 700;
-	padding: 0px 5px 0px;
+	padding: 0 0.3125rem;
 } 
 
 .product_sale.new
 {
-  background:#5bb300;
   background: transparent;
   color:#5bb300;
   border:1px solid #5bb300;
-  font-size: 8px;
+  font-size: 0.5rem;
   letter-spacing:1px;
   font-weight: 700;
 } 
@@ -102,46 +92,40 @@ input.form-control[type=number] {
   color:#fff;
   font-weight: 400;
   margin-left: 0;
-  margin-right: -75px;
-  margin-top: 40px;
-  max-width: 250px;
-  font-size:11px;
-  padding-bottom: 2px;
-  padding-left: 10px;
-  padding-right: 20px;
+  margin-right: -4.6875rem;
+  margin-top: 2.5rem;
+  max-width: 15.625rem;
+  font-size:0.6875rem;
+  padding-bottom: 0.125rem;
+  padding-left: 0.625rem;
+  padding-right: 1.25rem;
   right: 0;
   text-align: center;
   top: 0;
-  -webkit-transform: rotate(60deg);
-  -moz-transform: rotate(60deg);
   transform: rotate(60deg);
-  width: 200px;
+  width: 12.5rem;
   left:auto;
 }
 
-/*.product:hover
-{
-   border:1px solid rgba(42, 127, 211, 0.2);
-   box-shadow:0 0 15px -8px var(--bs-body-color);
-}*/
+
 .product .name
 {
     text-align:center;
-    max-height: 20px;
+    max-height: 1.25rem;
     overflow: hidden;    
-    margin-top:5px;
+    margin-top:0.3125rem;
 }
 .product .name a 
 {
 	font-weight:normal;
 	color:var(--bs-body-color);
 	font-family:Lato,'Open Sans', Arial,Lato;
-	font-size:12px;
+	font-size:0.75rem;
 	text-transform:uppercase;
 }
 .product .name a:hover
 {
-    color:#336699;
+    color:var(--bs-link-hover-color);
 	text-decoration:none;
 }
 
@@ -167,32 +151,32 @@ input.form-control[type=number] {
 .product .rating
 {
     display:none;
-    color:#aaa;
+    color:var(--bs-secondary-color);
 }
 
 #product .rating, #product .rating a
 {
-    color:#999;
+    color:var(--bs-secondary-color);
 }
 
 #product .rating p .review_link
 {
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 
 #product .rating .la-stack {
   color:rgba(var(--bs-body-color-rgb), 0.25);
   display: inline-block;
-  height: 15px;
-  line-height: 15px;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
   position: relative;
   vertical-align: middle;
-  width: 15px;
+  width: 0.9375rem;
 }
 
 #product .form-group
 {
-	margin-bottom:0px;
+	margin-bottom:0;
 }
 
 
@@ -208,17 +192,16 @@ input.form-control[type=number] {
 #product .product-options .radio label > div,
 #product .product-options .radio label > span
 {
-/*    border: 2px solid var(--bs-border-color);*/
-	box-shadow:0 0 0px 1px rgba(var(--bs-body-color-rgb), 0.05) inset;
-	//border:1px solid rgba(var(--bs-body-color-rgb), 0.07);
+	box-shadow:0 0 0 1px rgba(var(--bs-body-color-rgb), 0.05) inset;
+
 	border:1px solid var(--bs-border-color);
     display: block;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 500;
     padding: 0.3rem 0.7rem;
     text-align:center;
 	border-radius:15px;
-	min-width:25px;
+	min-width:1.5625rem;
 	cursor:pointer;
 
 	vertical-align:middle;
@@ -229,9 +212,9 @@ input.form-control[type=number] {
 #product .product-options .image .radio label > div,
 #product .product-options .image .radio label > span
 {
-	font-size:13px;
+	font-size:0.8125rem;
 	font-weight:500;
-	margin:0px 0px 0px 0px;
+	margin:0;
     padding: 0.3rem 0.7rem;
 	border-color:var(--bs-border-color);
 	background:var(--bs-body-bg);
@@ -242,7 +225,7 @@ input.form-control[type=number] {
 #product .product-options .radio label input:checked + div,
 #product .product-options .radio label input:checked + span
 {
-  //background: rgba(var(--bs-primary-rgb), 0.15);
+
 	background-color: var(--bs-highlight-color);
 	border-color: var(--bs-highlight-color);
 	color: var(--bs-highlight-bg);
@@ -252,9 +235,7 @@ input.form-control[type=number] {
 	border-color: var(--bs-primary);
 	color: var(--bs-light);
 	box-shadow:0 0 1px 1px var(--bs-primary) inset;
-/*  border-color: rgba(51, 122, 183, 0.7);
-  border-color: transparent;
-  box-shadow: 0px 0px 1px 1px rgba(51, 122, 183, 0.7) inset;*/
+
 }
 
 #product .product-options .image .radio label input:checked + img
@@ -275,22 +256,22 @@ input.form-control[type=number] {
     position: absolute;
 	z-index:-1;
 	width:auto;
-    margin-top: 3px;
-    margin-right: 2px;
+    margin-top: 0.1875rem;
+    margin-right: 0.125rem;
 }
 
 #product .product-options .radio img
 {
-	max-height:20px;
-	margin:0px auto;
-	//border-radius:50%;
+	max-height:1.875rem;
+	margin:0 auto;
+
 	border-radius:3px;
 	cursor:pointer;
 }
 
 .product .actions 
 {
-    min-height:50px;
+    min-height:3.125rem;
 }
 
 .product > div.image
@@ -307,8 +288,8 @@ input.form-control[type=number] {
 
 .product .actions button.btn
 {
-	margin:5px auto;
-	padding:5px 15px;
+	margin:0.3125rem auto;
+	padding:0.3125rem 0.9375rem;
 }
 
 
@@ -318,10 +299,9 @@ input.form-control[type=number] {
     width:100%;
     height:100%;
     position:absolute;
-    top:0px;
-    left:0px;
+    top:0;
+    left:0;
     background:rgba(var(--bs-body-bg-rgb), 0.5);
-    -webkit-transition: opacity 1s; /* For Safari 3.1 to 6.0 */
 	transition: opacity 1s;
 	opacity:0;
 	text-align: center;
@@ -349,45 +329,41 @@ input.form-control[type=number] {
 .product > div > div.hover > div > a > span
 {
 	display: inline-block;
-	background:#000;
 	background:rgba(var(--bs-body-bg-rgb),0.9);
 	color:var(--bs-body-color);
-	padding:3px 8px;
-	font-size:12px;
+	padding:0.1875rem 0.5rem;
+	font-size:0.75rem;
 	cursor: pointer;
 	line-height: 20px;
 }
 
 .product > div > div.hover > div > a > span:first-child {
-  margin-right: 5px;
+  margin-right: 0.3125rem;
 }
 
 
 .product-list .product .actions 
 {
-    min-height:0px;
+    min-height:0;
 }
 
 .product .product-name {
 	font-weight:600;
 }
 
-.product .product-price {
-}
+
 
 .product .price 
 {
    text-align:center;
-   margin:0px;
+   margin:0;
    font-size:1.3rem;
    font-weight:600;
-   //font-size:12px;
-   //color:#777;
-   //line-height: 24px;
+
 }
 
 .product .price p {
-  margin: 0px;
+  margin: 0;
 }
 
 .product .price.old-price
@@ -395,22 +371,22 @@ input.form-control[type=number] {
     font-weight:normal;
     text-decoration:line-through;
     font-size:1rem;
-    color:var(--bs-secondary);
-    margin:0px 5px;
+    color:var(--bs-secondary-color);
+    margin:0 0.3125rem;
 }  
 
 .product .price .price-new
 {
     font-weight:normal;
-    font-size:12px;
-    color:#555;
+    font-size:0.75rem;
+    color:var(--bs-secondary-color);
 }  
 
 .product .addcart a:hover
 {
     text-decoration:none;
 	color:#fff;
-	background:#aaa;
+	background:var(--bs-secondary-bg);
 }
 
 .button-cart, .buynow {
@@ -447,7 +423,7 @@ div.zoom img {
 .carousel-thumbs button[data-bs-target] {
 	padding:0;
 	border:none;
-	width: 80px;
+	width: 5rem;
 	box-sizing: content-box;
         flex: 0 1 auto;
 	margin-right:0.5rem;
@@ -459,7 +435,7 @@ div.zoom img {
 	--bs-nav-link-padding-x:1rem;
 	
 	@media (min-width: 768px) {  
-		top:120px;
+		top:7.5rem;
 	}
 	
 	&.nav-tabs {

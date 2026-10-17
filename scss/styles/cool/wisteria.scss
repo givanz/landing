@@ -1,0 +1,52 @@
+// ==========================================================================
+// Wisteria — soft cascading purple with mist light
+// Gentle palette for spas, weddings and stationery.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@500;600;700&family=Nunito:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#7c6aa8;
+    --bs-primary-rgb:124, 106, 168;
+    --bs-secondary:#c9bde0;
+    --bs-secondary-rgb:201, 189, 224;
+    --bs-link-color:#7c6aa8;
+    --bs-link-hover-color:#635184;
+    --bs-font-sans-serif:"Nunito";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#c9bde0;
+    --bs-primary-rgb:201, 189, 224;
+    --bs-secondary:#e6def5;
+    --bs-secondary-rgb:230, 222, 245;
+    --bs-link-color:#c9bde0;
+    --bs-link-hover-color:#ded4f2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Vollkorn";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #635184;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #2d2440;
+    --bs-btn-hover-color: #2d2440;
+    --bs-btn-active-color: #2d2440;
+    --bs-btn-disabled-color: #2d2440;
+    color:#2d2440;
+}

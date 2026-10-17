@@ -2,17 +2,17 @@
 
 :root{
     --bs-primary:#F9D548;
-    --bs-primary-rgb:rgb(249 213 72);
+    --bs-primary-rgb:249, 213, 72;
     --bs-secondary:#ECB92E;
-    --bs-secondary-rgb:rgb(236 185 46);
+    --bs-secondary-rgb:236, 185, 46;
     --bs-font-sans-serif:"Karla";
 }
 
 [data-bs-theme=dark] {
     --bs-primary:#F9D548;
-    --bs-primary-rgb:rgb(249 213 72);
+    --bs-primary-rgb:249, 213, 72;
     --bs-secondary:#ECB92E;
-    --bs-secondary-rgb:rgb(236 185 46);
+    --bs-secondary-rgb:236, 185, 46;
 }
 
 h1, h2, h3, h4, h5, h6 {

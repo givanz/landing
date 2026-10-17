@@ -1,0 +1,54 @@
+// ==========================================================================
+// Typewriter — ink ribbon red on warm paper
+// Analog palette for authors, journalists and archives.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:wght@400;700&display=swap');
+
+:root{
+    --bs-primary:#1f2937;
+    --bs-primary-rgb:31, 41, 55;
+    --bs-secondary:#b91c1c;
+    --bs-secondary-rgb:185, 28, 28;
+    --bs-link-color:#b91c1c;
+    --bs-link-hover-color:#991b1b;
+    --bs-font-sans-serif:"Courier Prime";
+    --bs-body-bg:#fbf8f1;
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#e5e7eb;
+    --bs-primary-rgb:229, 231, 235;
+    --bs-secondary:#f87171;
+    --bs-secondary-rgb:248, 113, 113;
+    --bs-link-color:#f87171;
+    --bs-link-hover-color:#fca5a5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Special Elite";
+    font-weight:400;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #111827;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #111827;
+    --bs-btn-hover-color: #111827;
+    --bs-btn-active-color: #111827;
+    --bs-btn-disabled-color: #111827;
+    color:#111827;
+}

@@ -1,0 +1,48 @@
+// ==========================================================================
+// Editorial — typography preset (grotesque headlines + serif body)
+// Larger measure, tighter display tracking, brick accent kept in both modes.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap');
+
+:root{
+    --bs-primary:#9a3b26;
+    --bs-primary-rgb:154, 59, 38;
+    --bs-secondary:#6b6259;
+    --bs-secondary-rgb:107, 98, 89;
+    --bs-link-color:#9a3b26;
+    --bs-link-hover-color:#7c2f1f;
+    --bs-font-sans-serif:"Source Serif 4";
+    --bs-body-font-size:1.0625rem;
+    --bs-body-line-height:1.7;
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#d08a73;
+    --bs-primary-rgb:208, 138, 115;
+    --bs-secondary:#a89e91;
+    --bs-secondary-rgb:168, 158, 145;
+    --bs-link-color:#d08a73;
+    --bs-link-hover-color:#e0a892;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Archivo";
+    letter-spacing:-0.015em;
+    line-height:1.12;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #7c2f1f;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}

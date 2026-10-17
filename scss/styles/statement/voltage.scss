@@ -1,0 +1,54 @@
+// ==========================================================================
+// Voltage — electric lime on deep teal
+// High-energy dark-mode-first look for gaming, events and launches.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Jost:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#4d7c0f;
+    --bs-primary-rgb:77, 124, 15;
+    --bs-secondary:#0e7490;
+    --bs-secondary-rgb:14, 116, 144;
+    --bs-link-color:#4d7c0f;
+    --bs-link-hover-color:#3f6212;
+    --bs-font-sans-serif:"Jost";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#d4f843;
+    --bs-primary-rgb:212, 248, 67;
+    --bs-secondary:#67e8f9;
+    --bs-secondary-rgb:103, 232, 249;
+    --bs-link-color:#d4f843;
+    --bs-link-hover-color:#e2ff6d;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Chakra Petch";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #3f6212;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #1a2e05;
+    --bs-btn-hover-color: #1a2e05;
+    --bs-btn-active-color: #1a2e05;
+    --bs-btn-disabled-color: #1a2e05;
+    color:#1a2e05;
+}

@@ -1,0 +1,52 @@
+// ==========================================================================
+// Patina — oxidized copper teal with aged bronze
+// Classical palette for museums, galleries and heritage sites.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=Hind:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#1f7a6e;
+    --bs-primary-rgb:31, 122, 110;
+    --bs-secondary:#a0784a;
+    --bs-secondary-rgb:160, 120, 74;
+    --bs-link-color:#1f7a6e;
+    --bs-link-hover-color:#175e55;
+    --bs-font-sans-serif:"Hind";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#6fd3c0;
+    --bs-primary-rgb:111, 211, 192;
+    --bs-secondary:#d9b98a;
+    --bs-secondary-rgb:217, 185, 138;
+    --bs-link-color:#6fd3c0;
+    --bs-link-hover-color:#99e5d6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Spectral";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #175e55;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #0b2e29;
+    --bs-btn-hover-color: #0b2e29;
+    --bs-btn-active-color: #0b2e29;
+    --bs-btn-disabled-color: #0b2e29;
+    color:#0b2e29;
+}

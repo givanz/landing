@@ -1,0 +1,52 @@
+// ==========================================================================
+// Copper — forged metallic brown with pale copper light
+// Craftsmanship palette for workshops, distilleries and hardware.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&family=Figtree:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#8c4a1f;
+    --bs-primary-rgb:140, 74, 31;
+    --bs-secondary:#d29a6a;
+    --bs-secondary-rgb:210, 154, 106;
+    --bs-link-color:#8c4a1f;
+    --bs-link-hover-color:#6e3815;
+    --bs-font-sans-serif:"Figtree";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#e0a370;
+    --bs-primary-rgb:224, 163, 112;
+    --bs-secondary:#f0c9a0;
+    --bs-secondary-rgb:240, 201, 160;
+    --bs-link-color:#e0a370;
+    --bs-link-hover-color:#eebd8b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Roboto Slab";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #6e3815;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #3a1f0c;
+    --bs-btn-hover-color: #3a1f0c;
+    --bs-btn-active-color: #3a1f0c;
+    --bs-btn-disabled-color: #3a1f0c;
+    color:#3a1f0c;
+}

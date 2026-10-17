@@ -1,0 +1,66 @@
+// ==========================================================================
+// Marshmallow — soft rounded teal with blush
+// Pillowy shapes for pediatric care, bakeries and cozy apps.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#0f766e;
+    --bs-primary-rgb:15, 118, 110;
+    --bs-secondary:#f9a8d4;
+    --bs-secondary-rgb:249, 168, 212;
+    --bs-link-color:#0f766e;
+    --bs-link-hover-color:#115e59;
+    --bs-font-sans-serif:"Nunito";
+    --bs-border-radius:1.25rem;
+    --bs-border-radius-sm:1rem;
+    --bs-border-radius-lg:2rem;
+    --bs-border-radius-xl:2.5rem;
+    --bs-border-radius-xxl:3rem;
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#5eead4;
+    --bs-primary-rgb:94, 234, 212;
+    --bs-secondary:#f9a8d4;
+    --bs-secondary-rgb:249, 168, 212;
+    --bs-link-color:#5eead4;
+    --bs-link-hover-color:#99f6e4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Baloo 2";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #115e59;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-padding-x:1.5rem;
+    --bs-btn-padding-y:0.8rem;
+    --bs-btn-border-radius:var(--bs-border-radius-pill);
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #134e4a;
+    --bs-btn-hover-color: #134e4a;
+    --bs-btn-active-color: #134e4a;
+    --bs-btn-disabled-color: #134e4a;
+    color:#134e4a;
+}
+
+.card {
+    --bs-card-spacer-x:1.5rem;
+    --bs-card-spacer-y:1.5rem;
+    --bs-card-border-radius:var(--bs-border-radius-lg);
+}

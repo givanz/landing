@@ -1,0 +1,52 @@
+// ==========================================================================
+// Peony — bright raspberry pink with soft blush
+// Friendly palette for childcare, florists and playful startups.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#e11d48;
+    --bs-primary-rgb:225, 29, 72;
+    --bs-secondary:#f9a8d4;
+    --bs-secondary-rgb:249, 168, 212;
+    --bs-link-color:#e11d48;
+    --bs-link-hover-color:#9f1239;
+    --bs-font-sans-serif:"Nunito";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#f9a8d4;
+    --bs-primary-rgb:249, 168, 212;
+    --bs-secondary:#fecdd3;
+    --bs-secondary-rgb:254, 205, 211;
+    --bs-link-color:#f9a8d4;
+    --bs-link-hover-color:#fbcfe8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Quicksand";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #9f1239;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #500f28;
+    --bs-btn-hover-color: #500f28;
+    --bs-btn-active-color: #500f28;
+    --bs-btn-disabled-color: #500f28;
+    color:#500f28;
+}

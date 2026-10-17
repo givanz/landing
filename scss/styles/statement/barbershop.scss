@@ -1,0 +1,60 @@
+// ==========================================================================
+// Barbershop — navy ink under a red white and blue stripe bar
+// Classic Americana palette for barbers, diners and main streets.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#172554;
+    --bs-primary-rgb:23, 37, 84;
+    --bs-secondary:#e30613;
+    --bs-secondary-rgb:227, 6, 19;
+    --bs-link-color:#172554;
+    --bs-link-hover-color:#1e3a8a;
+    --bs-font-sans-serif:"Inter";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#c7d2fe;
+    --bs-primary-rgb:199, 210, 254;
+    --bs-secondary:#f87171;
+    --bs-secondary-rgb:248, 113, 113;
+    --bs-link-color:#c7d2fe;
+    --bs-link-hover-color:#e0e7ff;
+}
+
+body::before {
+    content:"";
+    display:block;
+    height:10px;
+    background:repeating-linear-gradient(-45deg, #e30613 0 12px, #fff 12px 24px, #1e40af 24px 36px, #fff 36px 48px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Alfa Slab One";
+    font-weight:400;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #1e3a8a;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #172554;
+    --bs-btn-hover-color: #172554;
+    --bs-btn-active-color: #172554;
+    --bs-btn-disabled-color: #172554;
+    color:#172554;
+}

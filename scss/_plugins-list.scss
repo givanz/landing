@@ -159,7 +159,7 @@
 
 .plugins .list-card .author, 
 .plugins .list-card .author a{
-	font-size:12px;
+	font-size:0.75rem;
 	color:var(--bs-body-color);
 }
 
@@ -278,10 +278,10 @@
 
 .star-half::after {
 	content: "\2605";
-	width: 7px;
+	width: 0.4375rem;
 	position: absolute;
-	left: 0px;
-	top: 0px;
+	left: 0;
+	top: 0;
 	background: #fff;
 	overflow:hidden;
 }

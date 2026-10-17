@@ -1,0 +1,52 @@
+// ==========================================================================
+// Clay — earthen reddish brown with terracotta light
+// Handmade palette for pottery, interiors and garden brands.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Public+Sans:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#744f39;
+    --bs-primary-rgb:116, 79, 57;
+    --bs-secondary:#d9a08a;
+    --bs-secondary-rgb:217, 160, 138;
+    --bs-link-color:#744f39;
+    --bs-link-hover-color:#593c2b;
+    --bs-font-sans-serif:"Public Sans";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#d9a08a;
+    --bs-primary-rgb:217, 160, 138;
+    --bs-secondary:#ecc9b5;
+    --bs-secondary-rgb:236, 201, 181;
+    --bs-link-color:#d9a08a;
+    --bs-link-hover-color:#e5b79e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Bitter";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #593c2b;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #3a2418;
+    --bs-btn-hover-color: #3a2418;
+    --bs-btn-active-color: #3a2418;
+    --bs-btn-disabled-color: #3a2418;
+    color:#3a2418;
+}

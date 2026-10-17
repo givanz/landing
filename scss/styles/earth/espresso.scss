@@ -1,0 +1,52 @@
+// ==========================================================================
+// Espresso — dark roast brown with caramel crema
+// Bold coffee palette for roasters, bakeries and barbershops.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Karla:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#4b2e1f;
+    --bs-primary-rgb:75, 46, 31;
+    --bs-secondary:#c89b6d;
+    --bs-secondary-rgb:200, 155, 109;
+    --bs-link-color:#4b2e1f;
+    --bs-link-hover-color:#38220f;
+    --bs-font-sans-serif:"Karla";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#d6a87c;
+    --bs-primary-rgb:214, 168, 124;
+    --bs-secondary:#e8cfae;
+    --bs-secondary-rgb:232, 207, 174;
+    --bs-link-color:#d6a87c;
+    --bs-link-hover-color:#e4bc92;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Arvo";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #38220f;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #2b1a10;
+    --bs-btn-hover-color: #2b1a10;
+    --bs-btn-active-color: #2b1a10;
+    --bs-btn-disabled-color: #2b1a10;
+    color:#2b1a10;
+}

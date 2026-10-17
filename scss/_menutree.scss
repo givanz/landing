@@ -1,10 +1,4 @@
 .menutree {
-/*
-	padding: 5px;
-	margin: 0;
-	padding: 0;
-	margin-right: -1px;
-*/	
 	width: 100%;
 	
 	ul {
@@ -19,7 +13,6 @@
 	
 	li {
 		
-		//padding: 20px 10px;
 		&:last-child {
 			border: 0;
 		}
@@ -28,14 +21,9 @@
 		&.active > a{
 			background:var(--bs-primary-bg-subtle);
 			background:rgba(var(--bs-primary-rgb), 0.05);
-			//outline:1px solid var(--bs-primary-bg-subtle);
-			//border-right:1px solid var(--bs-primary);
-			//color :$primary;
 		}
 		
-		&.active > label > a {
-			//border-right:1px solid var(--bs-primary);
-		}
+
 		
 		&.expand {
 			ul {
@@ -58,11 +46,7 @@
 							line-height:3;
 						}
 						
-						a {
-							//border-bottom:2px solid var(--bs-border-color);
-							//background:var(--bs-border-color);
-							//color :$primary;
-						}
+
 					}
 				}
 			}
@@ -93,15 +77,8 @@
 			top: 0;
 			right: 1rem;
 			height:100%;
-			//line-height:1.2;
 			transition: all 0.5s;
             transform: rotate(-90deg);
-			/* Icon font enhancement */
-			line-height:3;
-			content: "\f107";
-            font-family:"Line Awesome Free";
-            font-weight:900;
-            font-size:80%;
 			opacity:0.5;
 		}
 	}

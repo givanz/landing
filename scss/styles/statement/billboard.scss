@@ -1,0 +1,69 @@
+// ==========================================================================
+// Billboard — poster black with taxi yellow at billboard scale
+// Oversized display type for announcements, releases and takeovers.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#111111;
+    --bs-primary-rgb:17, 17, 17;
+    --bs-secondary:#facc15;
+    --bs-secondary-rgb:250, 204, 21;
+    --bs-link-color:#111111;
+    --bs-link-hover-color:#000;
+    --bs-font-sans-serif:"Barlow";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#f5f5f5;
+    --bs-primary-rgb:245, 245, 245;
+    --bs-secondary:#facc15;
+    --bs-secondary-rgb:250, 204, 21;
+    --bs-link-color:#facc15;
+    --bs-link-hover-color:#fde047;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Bebas Neue";
+    font-weight:400;
+    text-transform:uppercase;
+    letter-spacing:0.02em;
+    line-height:0.95;
+}
+
+.post-content h1,
+h1.display-1, h1.display-2, h1.display-3, h1.display-4 {
+    font-size:clamp(3rem, 8vw, 6rem);
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #111111;
+    --bs-btn-hover-color: #111111;
+    --bs-btn-active-color: #111111;
+    --bs-btn-disabled-color: #111111;
+    --bs-btn-bg:#facc15;
+    --bs-btn-border-color:#facc15;
+    --bs-btn-hover-bg:#fde047;
+    --bs-btn-hover-border-color:#fde047;
+    --bs-btn-active-bg:#facc15;
+    --bs-btn-active-border-color:#facc15;
+    color:#111111;
+}

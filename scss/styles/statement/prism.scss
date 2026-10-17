@@ -1,0 +1,57 @@
+// ==========================================================================
+// Prism — violet to blue gradient buttons on solid violet base
+// Refractive palette for AI products, fintech and developer tools.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap');
+
+:root{
+    --bs-primary:#7c3aed;
+    --bs-primary-rgb:124, 58, 237;
+    --bs-secondary:#2563eb;
+    --bs-secondary-rgb:37, 99, 235;
+    --bs-link-color:#7c3aed;
+    --bs-link-hover-color:#6d28d9;
+    --bs-font-sans-serif:"Hanken Grotesk";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#a78bfa;
+    --bs-primary-rgb:167, 139, 250;
+    --bs-secondary:#60a5fa;
+    --bs-secondary-rgb:96, 165, 250;
+    --bs-link-color:#a78bfa;
+    --bs-link-hover-color:#c4b5fd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Hanken Grotesk";
+    font-weight:800;
+    letter-spacing:-0.02em;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: linear-gradient(135deg, #7c3aed, #2563eb);
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: linear-gradient(135deg, #6d28d9, #1d4ed8);
+    --bs-btn-hover-border-color: transparent;
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: linear-gradient(135deg, #6d28d9, #1d4ed8);
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #2e1065;
+    --bs-btn-hover-color: #2e1065;
+    --bs-btn-active-color: #2e1065;
+    --bs-btn-disabled-color: #2e1065;
+    --bs-btn-bg: linear-gradient(135deg, #a78bfa, #60a5fa);
+    --bs-btn-hover-bg: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    --bs-btn-active-bg: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    color:#2e1065;
+}

@@ -1,0 +1,60 @@
+// ==========================================================================
+// Tartan — highland navy under a woven plaid ribbon
+// Heritage palette for distilleries, woolens and clan gatherings.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Public+Sans:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#1c2a4a;
+    --bs-primary-rgb:28, 42, 74;
+    --bs-secondary:#a41f1f;
+    --bs-secondary-rgb:164, 31, 31;
+    --bs-link-color:#1c2a4a;
+    --bs-link-hover-color:#141f38;
+    --bs-font-sans-serif:"Public Sans";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#dbe2ef;
+    --bs-primary-rgb:219, 226, 239;
+    --bs-secondary:#d9a05b;
+    --bs-secondary-rgb:217, 160, 91;
+    --bs-link-color:#dbe2ef;
+    --bs-link-hover-color:#f2f5fa;
+}
+
+body::before {
+    content:"";
+    display:block;
+    height:18px;
+    background-color:#f7f3ea;
+    background-image:repeating-linear-gradient(90deg, rgba(164, 31, 31, 0.55) 0 14px, transparent 14px 28px, rgba(28, 42, 74, 0.55) 28px 42px, transparent 42px 56px), repeating-linear-gradient(0deg, rgba(164, 31, 31, 0.45) 0 14px, transparent 14px 28px, rgba(28, 42, 74, 0.45) 28px 42px, transparent 42px 56px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Fraunces";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #141f38;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #1c2a4a;
+    --bs-btn-hover-color: #1c2a4a;
+    --bs-btn-active-color: #1c2a4a;
+    --bs-btn-disabled-color: #1c2a4a;
+    color:#1c2a4a;
+}

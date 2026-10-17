@@ -1,0 +1,62 @@
+// ==========================================================================
+// Sterling — bright silver with tailored navy pinstripes
+// Sharp suiting palette for consultancies, tailors and private banks.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#64748b;
+    --bs-primary-rgb:100, 116, 139;
+    --bs-secondary:#1e3a8a;
+    --bs-secondary-rgb:30, 58, 138;
+    --bs-link-color:#1e3a8a;
+    --bs-link-hover-color:#172c6b;
+    --bs-font-sans-serif:"Inter";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#b6c2cf;
+    --bs-primary-rgb:182, 194, 207;
+    --bs-secondary:#93c5fd;
+    --bs-secondary-rgb:147, 197, 253;
+    --bs-link-color:#93c5fd;
+    --bs-link-hover-color:#bfdbfe;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Archivo";
+    font-weight:800;
+    letter-spacing:-0.02em;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #475569;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+.card {
+    background-image:repeating-linear-gradient(90deg, transparent 0 10px, rgba(100, 116, 139, 0.06) 10px 11px);
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #1f2937;
+    --bs-btn-hover-color: #1f2937;
+    --bs-btn-active-color: #1f2937;
+    --bs-btn-disabled-color: #1f2937;
+    color:#1f2937;
+}
+
+[data-bs-theme=dark] .card {
+    background-image:repeating-linear-gradient(90deg, transparent 0 10px, rgba(182, 194, 207, 0.08) 10px 11px);
+}

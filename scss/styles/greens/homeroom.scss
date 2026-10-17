@@ -1,0 +1,58 @@
+// ==========================================================================
+// Homeroom — chalkboard green with wavy chalk underlines
+// Classroom palette for schools, tutors and kids clubs.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#2f4f4f;
+    --bs-primary-rgb:47, 79, 79;
+    --bs-secondary:#d8a7b1;
+    --bs-secondary-rgb:216, 167, 177;
+    --bs-link-color:#2f4f4f;
+    --bs-link-hover-color:#243b3b;
+    --bs-font-sans-serif:"Cabin";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#b8d4cc;
+    --bs-primary-rgb:184, 212, 204;
+    --bs-secondary:#ecc9b5;
+    --bs-secondary-rgb:236, 201, 181;
+    --bs-link-color:#b8d4cc;
+    --bs-link-hover-color:#cfe4da;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Cabin Sketch";
+    font-weight:700;
+}
+
+h1, h2 {
+    text-decoration:underline wavy var(--bs-secondary) 2px;
+    text-underline-offset:6px;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #243b3b;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #1d2b26;
+    --bs-btn-hover-color: #1d2b26;
+    --bs-btn-active-color: #1d2b26;
+    --bs-btn-disabled-color: #1d2b26;
+    color:#1d2b26;
+}

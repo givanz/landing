@@ -1,0 +1,58 @@
+// ==========================================================================
+// Hadal — surface calm descending to trench dark
+// Depth-gradient palette for ocean institutes and dive centers.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#1e3a8a;
+    --bs-primary-rgb:30, 58, 138;
+    --bs-secondary:#14b8a6;
+    --bs-secondary-rgb:20, 184, 166;
+    --bs-link-color:#1e3a8a;
+    --bs-link-hover-color:#172c6b;
+    --bs-font-sans-serif:"Inter";
+    --bs-body-bg:#f0f9ff;
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#bfdbfe;
+    --bs-primary-rgb:191, 219, 254;
+    --bs-secondary:#5eead4;
+    --bs-secondary-rgb:94, 234, 212;
+    --bs-link-color:#bfdbfe;
+    --bs-link-hover-color:#dbeafe;
+}
+
+[data-bs-theme=dark] body {
+    background-color:#020617;
+    background-image:linear-gradient(180deg, #020617 0%, #0c2340 60%, #0c4a6e 130%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Sora";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #172c6b;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #172554;
+    --bs-btn-hover-color: #172554;
+    --bs-btn-active-color: #172554;
+    --bs-btn-disabled-color: #172554;
+    color:#172554;
+}

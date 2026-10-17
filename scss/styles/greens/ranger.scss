@@ -1,0 +1,56 @@
+// ==========================================================================
+// Ranger — army drab with stencil type and khaki light
+// Utility palette for surplus stores, scouts and field services.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#4b5320;
+    --bs-primary-rgb:75, 83, 32;
+    --bs-secondary:#c9b458;
+    --bs-secondary-rgb:201, 180, 88;
+    --bs-link-color:#4b5320;
+    --bs-link-hover-color:#3a421a;
+    --bs-font-sans-serif:"Inter";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#b5c267;
+    --bs-primary-rgb:181, 194, 103;
+    --bs-secondary:#e0d6a3;
+    --bs-secondary-rgb:224, 214, 163;
+    --bs-link-color:#b5c267;
+    --bs-link-hover-color:#c9d488;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Stardos Stencil";
+    text-transform:uppercase;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #3a421a;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-border-radius:var(--bs-border-radius-sm);
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #232b0b;
+    --bs-btn-hover-color: #232b0b;
+    --bs-btn-active-color: #232b0b;
+    --bs-btn-disabled-color: #232b0b;
+    color:#232b0b;
+}

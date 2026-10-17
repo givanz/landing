@@ -1,0 +1,52 @@
+// ==========================================================================
+// Quay — deep green-black harbor wall with terracotta rust
+// Weathered maritime palette for ports, shipyards and coastal industry.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=Hind:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#0d1b1e;
+    --bs-primary-rgb:13, 27, 30;
+    --bs-secondary:#854836;
+    --bs-secondary-rgb:133, 72, 54;
+    --bs-link-color:#0d1b1e;
+    --bs-link-hover-color:#24383d;
+    --bs-font-sans-serif:"Hind";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#d7e3e3;
+    --bs-primary-rgb:215, 227, 227;
+    --bs-secondary:#d08a63;
+    --bs-secondary-rgb:208, 138, 99;
+    --bs-link-color:#d7e3e3;
+    --bs-link-hover-color:#eef5f5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Spectral";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #0d1b1e;
+    --bs-btn-hover-color: #0d1b1e;
+    --bs-btn-active-color: #0d1b1e;
+    --bs-btn-disabled-color: #0d1b1e;
+    color:#0d1b1e;
+}

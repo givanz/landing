@@ -1,0 +1,56 @@
+// ==========================================================================
+// Forest — color palette preset (deep fern green + harvest gold)
+// Lightweight :root override; dark mode uses lighter tints of the same hues.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#2d6a4f;
+    --bs-primary-rgb:45, 106, 79;
+    --bs-secondary:#d9a441;
+    --bs-secondary-rgb:217, 164, 65;
+    --bs-link-color:#2d6a4f;
+    --bs-link-hover-color:#1e4a37;
+    --bs-font-sans-serif:"Inter";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#74c69d;
+    --bs-primary-rgb:116, 198, 157;
+    --bs-secondary:#e9c46a;
+    --bs-secondary-rgb:233, 196, 106;
+    --bs-link-color:#74c69d;
+    --bs-link-hover-color:#95d5b2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Fraunces";
+}
+
+::selection {
+    background:rgba(var(--bs-primary-rgb), 0.25);
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #1e4a37;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #132a21;
+    --bs-btn-hover-color: #132a21;
+    --bs-btn-active-color: #132a21;
+    --bs-btn-disabled-color: #132a21;
+    color:#132a21;
+}

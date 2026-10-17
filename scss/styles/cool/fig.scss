@@ -1,0 +1,52 @@
+// ==========================================================================
+// Fig — deep plum with olive gold
+// Moody orchard palette for restaurants, wine and boutique hotels.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Jost:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#5b2a86;
+    --bs-primary-rgb:91, 42, 134;
+    --bs-secondary:#8a8f3c;
+    --bs-secondary-rgb:138, 143, 60;
+    --bs-link-color:#5b2a86;
+    --bs-link-hover-color:#471f6b;
+    --bs-font-sans-serif:"Jost";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#b07cc6;
+    --bs-primary-rgb:176, 124, 198;
+    --bs-secondary:#b5ba7a;
+    --bs-secondary-rgb:181, 186, 122;
+    --bs-link-color:#b07cc6;
+    --bs-link-hover-color:#c49ad4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Libre Baskerville";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #471f6b;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #2f1245;
+    --bs-btn-hover-color: #2f1245;
+    --bs-btn-active-color: #2f1245;
+    --bs-btn-disabled-color: #2f1245;
+    color:#2f1245;
+}

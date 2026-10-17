@@ -1,0 +1,63 @@
+// ==========================================================================
+// Confetti — celebration dots on warm paper with deep indigo ink
+// Festive palette for birthdays, launches and community events.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Nunito:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#312e81;
+    --bs-primary-rgb:49, 46, 129;
+    --bs-secondary:#ec4899;
+    --bs-secondary-rgb:236, 72, 153;
+    --bs-link-color:#312e81;
+    --bs-link-hover-color:#251f66;
+    --bs-font-sans-serif:"Nunito";
+    --bs-body-bg:#fffdf7;
+}
+
+body {
+    background-image:radial-gradient(circle at 6px 6px, rgba(236, 72, 153, 0.14) 2px, transparent 2.5px), radial-gradient(circle at 18px 18px, rgba(37, 99, 235, 0.12) 2px, transparent 2.5px), radial-gradient(circle at 12px 24px, rgba(245, 158, 11, 0.14) 2px, transparent 2.5px);
+    background-size:28px 28px;
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#c7d2fe;
+    --bs-primary-rgb:199, 210, 254;
+    --bs-secondary:#f9a8d4;
+    --bs-secondary-rgb:249, 168, 212;
+    --bs-link-color:#c7d2fe;
+    --bs-link-hover-color:#e0e7ff;
+}
+
+[data-bs-theme=dark] body {
+    background-color:#141126;
+    background-image:radial-gradient(circle at 6px 6px, rgba(249, 168, 212, 0.12) 2px, transparent 2.5px), radial-gradient(circle at 18px 18px, rgba(147, 197, 253, 0.12) 2px, transparent 2.5px), radial-gradient(circle at 12px 24px, rgba(251, 191, 36, 0.12) 2px, transparent 2.5px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Comfortaa";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #251f66;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #1e1b4b;
+    --bs-btn-hover-color: #1e1b4b;
+    --bs-btn-active-color: #1e1b4b;
+    --bs-btn-disabled-color: #1e1b4b;
+    color:#1e1b4b;
+}

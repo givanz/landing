@@ -1,0 +1,52 @@
+// ==========================================================================
+// Driftwood — weathered gray-brown with pale sanded light
+// Coastal-neutral palette for cabins, retreats and outdoor furniture.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500;600;700&family=Figtree:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#6b5f4e;
+    --bs-primary-rgb:107, 95, 78;
+    --bs-secondary:#d8cfc0;
+    --bs-secondary-rgb:216, 207, 192;
+    --bs-link-color:#6b5f4e;
+    --bs-link-hover-color:#544a3c;
+    --bs-font-sans-serif:"Figtree";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#d8cfc0;
+    --bs-primary-rgb:216, 207, 192;
+    --bs-secondary:#e9e2d4;
+    --bs-secondary-rgb:233, 226, 212;
+    --bs-link-color:#d8cfc0;
+    --bs-link-hover-color:#e9e2d4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Josefin Slab";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #544a3c;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #29241c;
+    --bs-btn-hover-color: #29241c;
+    --bs-btn-active-color: #29241c;
+    --bs-btn-disabled-color: #29241c;
+    color:#29241c;
+}

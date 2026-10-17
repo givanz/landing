@@ -1,41 +1,12 @@
-$bg-body-secondary-gray: #f1f3f7 !default;
 $max-width: 40rem !default;
 
-@mixin quotes {
-		&:before,  &:after {
-			font-family: 'Line Awesome Free';
-			font-weight: 900;
-			font-style:normal;
-		}
-		
-		&:before {
-			content:"\f10d ";
-		}
-				
-		&:after {
-			content:" \f10e";
-		}
-}
+@import "mixins";
 
+// Listing excerpt quotes share the single-post design via the mixin;
+// margin stays `0` so cards don't gain article spacing.
 blockquote {
-
-	font-style: italic;
-	padding-bottom: 3px;
-	padding-right: 20px;
-	padding-left: 20px;
-	letter-spacing: .01rem;
-	border-left: 4px solid $bg-body-secondary-gray;
-	margin:0rem;
-	//border-left: 4px solid var(--bs-light-gray);
-	
-	p {
-		@include quotes();
-	}
-	
-	i {
-		font-size:2rem;
-		color:var(--bs-gray);;
-	}
+	@include post-blockquote;
+	margin: 0;
 }	
 
 .post { 
@@ -46,14 +17,16 @@ blockquote {
 	--bs-card-border-color: transparent;
 	}
 
-	@import "post-style";
+	// Single-post body styles live top-level via `style.scss`
+	// (`@import "post-style"`). Previously imported here too, which
+	// compiled every rule twice (`.post .post-content...` + `.post-content...`).
 	
 	[data-v-post-image].narrow {
 		max-width: $max-width;
 	}
 
 	.card-header {
-		margin-bottom:0rem;
+		margin-bottom:0;
 		background:transparent;
 		border:none;
 	}
@@ -72,7 +45,7 @@ blockquote {
 		text-align:center;
 		padding: 0;
 		margin-bottom:2rem;
-		font-size:14px;
+		font-size:0.875rem;
 
 		li {
 			margin-right: 1rem;
@@ -99,8 +72,8 @@ blockquote {
 .inner-page-hero
 {
        position:relative;
-       max-height: 150px;
-       height: 180px;
+       max-height: 9.375rem;
+       height: 11.25rem;
        overflow: hidden;
 	   //background:var(--bs-border-color);
 	   //background-color:var(--bs-light-bg-subtle);
@@ -123,8 +96,8 @@ blockquote {
                        height: 100%;
                        content: " ";
                        //background: rgba(var(--bs-body-bg-rgb),0.5);
-                       top: 0px;
-                       left: 0px;
+                       top: 0;
+                       left: 0;
                        position: absolute;
                        z-index: -1;
                }
@@ -169,7 +142,7 @@ blockquote {
 	}
 	
 	.card-header {
-		margin-bottom:0rem;
+		margin-bottom:0;
 		background:transparent;
 		border:none;
 		//font-size:1.2rem;
@@ -235,7 +208,7 @@ ul.tags {
 	a {
 		border:1px solid rgba(var(--bs-body-color-rgb), 0.035);
 		background-color:rgba(var(--bs-body-color-rgb), 0.025);
-		padding:0rem 0.5rem;
+		padding:0 0.5rem;
 		margin:0.1rem;
 		display:inline-block;
 		border-radius:2px;
@@ -259,17 +232,17 @@ ul.tags {
 
 .author-avatar {
 	position:absolute;
-	left:-90px;
-    min-width: 80px;
-    min-height: 80px;
+	left:-5.625rem;
+    min-width: 5rem;
+    min-height: 5rem;
     
 	display: flex;
     justify-content: center;
     align-items: center;
 
 	&:empty, .empty {
-		width: 80px;
-		height: 80px;
+		width: 5rem;
+		height: 5rem;
 		//background: var(--bs-secondary-bg);
 		background: rgba(var(--bs-secondary-bg-rgb), 0.5);
 	}
@@ -298,7 +271,7 @@ ul.tags {
 .review-list {
 	.user-image {
 		display:inline-block;
-		max-width:80px;
+		max-width:5rem;
 		margin-right:0.3rem;
 		margin-bottom:0.3rem;
 	}

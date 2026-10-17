@@ -1,0 +1,61 @@
+// ==========================================================================
+// Cabana — poolside teal under a striped awning bar
+// Resort palette for beach clubs, ice cream parlors and rentals.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#0e7490;
+    --bs-primary-rgb:14, 116, 144;
+    --bs-secondary:#ff7f6b;
+    --bs-secondary-rgb:255, 127, 107;
+    --bs-link-color:#0e7490;
+    --bs-link-hover-color:#0b5a70;
+    --bs-font-sans-serif:"Nunito";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#a5f3fc;
+    --bs-primary-rgb:165, 243, 252;
+    --bs-secondary:#fda4af;
+    --bs-secondary-rgb:253, 164, 175;
+    --bs-link-color:#a5f3fc;
+    --bs-link-hover-color:#cffafe;
+}
+
+body::before {
+    content:"";
+    display:block;
+    height:14px;
+    background:repeating-linear-gradient(90deg, #0e7490 0 24px, #fff 24px 48px, #ff7f6b 48px 72px, #fff 72px 96px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Lilita One";
+    font-weight:400;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #0b5a70;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-border-radius:var(--bs-border-radius-pill);
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #083344;
+    --bs-btn-hover-color: #083344;
+    --bs-btn-active-color: #083344;
+    --bs-btn-disabled-color: #083344;
+    color:#083344;
+}

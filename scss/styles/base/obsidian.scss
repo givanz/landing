@@ -1,0 +1,55 @@
+// ==========================================================================
+// Noir — monochrome luxury preset (ink + bone, letterspaced caps buttons)
+// One accent only: near-black light, bone dark.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#1a1a1a;
+    --bs-primary-rgb:26, 26, 26;
+    --bs-secondary:#8a8a8a;
+    --bs-secondary-rgb:138, 138, 138;
+    --bs-link-color:#1a1a1a;
+    --bs-link-hover-color:#000;
+    --bs-font-sans-serif:"Jost";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#ece9e2;
+    --bs-primary-rgb:236, 233, 226;
+    --bs-secondary:#a3a099;
+    --bs-secondary-rgb:163, 160, 153;
+    --bs-link-color:#ece9e2;
+    --bs-link-hover-color:#fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Cormorant Garamond";
+    font-weight:600;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #161616;
+    --bs-btn-hover-color: #161616;
+    --bs-btn-active-color: #161616;
+    --bs-btn-disabled-color: #161616;
+    color:#161616;
+}

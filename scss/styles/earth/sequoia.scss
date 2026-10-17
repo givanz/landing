@@ -1,0 +1,52 @@
+// ==========================================================================
+// Sequoia — deep redwood with warm tan light
+// Towering palette for parks, timber and heritage brands.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Karla:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#6f2d22;
+    --bs-primary-rgb:111, 45, 34;
+    --bs-secondary:#d9a05b;
+    --bs-secondary-rgb:217, 160, 91;
+    --bs-link-color:#6f2d22;
+    --bs-link-hover-color:#572115;
+    --bs-font-sans-serif:"Karla";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#e8a87c;
+    --bs-primary-rgb:232, 168, 124;
+    --bs-secondary:#f0c9a0;
+    --bs-secondary-rgb:240, 201, 160;
+    --bs-link-color:#e8a87c;
+    --bs-link-hover-color:#f0bc95;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Fraunces";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #572115;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #3a1a12;
+    --bs-btn-hover-color: #3a1a12;
+    --bs-btn-active-color: #3a1a12;
+    --bs-btn-disabled-color: #3a1a12;
+    color:#3a1a12;
+}

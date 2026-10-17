@@ -1,0 +1,71 @@
+// ==========================================================================
+// Departures — split-flap board with inverted flip cards
+// Transit palette for airports, stations and schedule apps.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#111111;
+    --bs-primary-rgb:17, 17, 17;
+    --bs-secondary:#f59e0b;
+    --bs-secondary-rgb:245, 158, 11;
+    --bs-link-color:#111111;
+    --bs-link-hover-color:#000;
+    --bs-font-sans-serif:"Inter";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#f5f5f5;
+    --bs-primary-rgb:245, 245, 245;
+    --bs-secondary:#fbbf24;
+    --bs-secondary-rgb:251, 191, 36;
+    --bs-link-color:#fbbf24;
+    --bs-link-hover-color:#fde047;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"IBM Plex Mono";
+    letter-spacing:-0.01em;
+}
+
+.card {
+    background-color:#111;
+    color:#f5f5f5;
+    --bs-card-border-color:#111;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #111111;
+    --bs-btn-hover-color: #111111;
+    --bs-btn-active-color: #111111;
+    --bs-btn-disabled-color: #111111;
+    --bs-btn-bg:#f59e0b;
+    --bs-btn-border-color:#f59e0b;
+    --bs-btn-hover-bg:#fbbf24;
+    --bs-btn-hover-border-color:#fbbf24;
+    --bs-btn-active-bg:#f59e0b;
+    --bs-btn-active-border-color:#f59e0b;
+    color:#111111;
+}
+
+[data-bs-theme=dark] .card {
+    background-color:#f5f5f5;
+    color:#111;
+    --bs-card-border-color:#f5f5f5;
+}

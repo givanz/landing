@@ -1,0 +1,64 @@
+// ==========================================================================
+// Risograph — cobalt ink misregistered over fluorescent pink
+// Print-shop palette for zines, posters and indie presses.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+    --bs-primary:#0047ab;
+    --bs-primary-rgb:0, 71, 171;
+    --bs-secondary:#ff48b0;
+    --bs-secondary-rgb:255, 72, 176;
+    --bs-link-color:#0047ab;
+    --bs-link-hover-color:#003380;
+    --bs-font-sans-serif:"Space Mono";
+    --bs-body-bg:#faf8f2;
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#7aa5ff;
+    --bs-primary-rgb:122, 165, 255;
+    --bs-secondary:#ff7cc4;
+    --bs-secondary-rgb:255, 124, 196;
+    --bs-link-color:#7aa5ff;
+    --bs-link-hover-color:#a8c3ff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Archivo Black";
+    font-weight:400;
+    text-shadow:0.05em 0.05em 0 rgba(255, 72, 176, 0.45);
+}
+
+[data-bs-theme=dark] h1,
+[data-bs-theme=dark] h2,
+[data-bs-theme=dark] h3,
+[data-bs-theme=dark] h4,
+[data-bs-theme=dark] h5,
+[data-bs-theme=dark] h6 {
+    text-shadow:0.05em 0.05em 0 rgba(255, 124, 196, 0.4);
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #003380;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #061a3a;
+    --bs-btn-hover-color: #061a3a;
+    --bs-btn-active-color: #061a3a;
+    --bs-btn-disabled-color: #061a3a;
+    color:#061a3a;
+}

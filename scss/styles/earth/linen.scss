@@ -1,0 +1,52 @@
+// ==========================================================================
+// Linen — warm tan minimalism with newsprint serif
+// Quiet natural palette for stationery, ceramics and slow living.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Work+Sans:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#a16207;
+    --bs-primary-rgb:161, 98, 7;
+    --bs-secondary:#78716c;
+    --bs-secondary-rgb:120, 113, 108;
+    --bs-link-color:#a16207;
+    --bs-link-hover-color:#854d0e;
+    --bs-font-sans-serif:"Work Sans";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#fcd34d;
+    --bs-primary-rgb:252, 211, 77;
+    --bs-secondary:#d6d3d1;
+    --bs-secondary-rgb:214, 211, 209;
+    --bs-link-color:#fcd34d;
+    --bs-link-hover-color:#fde68a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Newsreader";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #854d0e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #451a03;
+    --bs-btn-hover-color: #451a03;
+    --bs-btn-active-color: #451a03;
+    --bs-btn-disabled-color: #451a03;
+    color:#451a03;
+}

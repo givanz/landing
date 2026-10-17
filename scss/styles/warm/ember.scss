@@ -1,0 +1,52 @@
+// ==========================================================================
+// Ember — deep fire-orange glow with golden sparks
+// Smoldering palette for barbecues, forges and autumn festivals.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Archivo:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#9a3412;
+    --bs-primary-rgb:154, 52, 18;
+    --bs-secondary:#f59e0b;
+    --bs-secondary-rgb:245, 158, 11;
+    --bs-link-color:#9a3412;
+    --bs-link-hover-color:#7c2d12;
+    --bs-font-sans-serif:"Archivo";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#fdba74;
+    --bs-primary-rgb:253, 186, 116;
+    --bs-secondary:#fbbf24;
+    --bs-secondary-rgb:251, 191, 36;
+    --bs-link-color:#fdba74;
+    --bs-link-hover-color:#fed7aa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Bricolage Grotesque";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #7c2d12;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #431407;
+    --bs-btn-hover-color: #431407;
+    --bs-btn-active-color: #431407;
+    --bs-btn-disabled-color: #431407;
+    color:#431407;
+}

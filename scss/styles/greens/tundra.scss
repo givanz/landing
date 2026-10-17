@@ -1,0 +1,52 @@
+// ==========================================================================
+// Tundra — windswept gray-teal with mist light
+// Restrained palette for outdoors gear, field research and utilities.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#4b6b6b;
+    --bs-primary-rgb:75, 107, 107;
+    --bs-secondary:#a8c0c0;
+    --bs-secondary-rgb:168, 192, 192;
+    --bs-link-color:#4b6b6b;
+    --bs-link-hover-color:#3a5555;
+    --bs-font-sans-serif:"Inter";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#a8c0c0;
+    --bs-primary-rgb:168, 192, 192;
+    --bs-secondary:#d4e2e2;
+    --bs-secondary-rgb:212, 226, 226;
+    --bs-link-color:#a8c0c0;
+    --bs-link-hover-color:#c4d8d8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Space Grotesk";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #3a5555;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #1f2e2e;
+    --bs-btn-hover-color: #1f2e2e;
+    --bs-btn-active-color: #1f2e2e;
+    --bs-btn-disabled-color: #1f2e2e;
+    color:#1f2e2e;
+}

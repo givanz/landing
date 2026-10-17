@@ -1,0 +1,54 @@
+// ==========================================================================
+// Eclipse — near-black night with antique gold corona
+// Dramatic palette for observatories, cinemas and launch events.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#0f172a;
+    --bs-primary-rgb:15, 23, 42;
+    --bs-secondary:#c9a227;
+    --bs-secondary-rgb:201, 162, 39;
+    --bs-link-color:#0f172a;
+    --bs-link-hover-color:#1e293b;
+    --bs-font-sans-serif:"Barlow";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#e2e8f0;
+    --bs-primary-rgb:226, 232, 240;
+    --bs-secondary:#fbbf24;
+    --bs-secondary-rgb:251, 191, 36;
+    --bs-link-color:#e2e8f0;
+    --bs-link-hover-color:#f8fafc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Rajdhani";
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #1e293b;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #0f172a;
+    --bs-btn-hover-color: #0f172a;
+    --bs-btn-active-color: #0f172a;
+    --bs-btn-disabled-color: #0f172a;
+    color:#0f172a;
+}

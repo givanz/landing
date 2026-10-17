@@ -1,0 +1,52 @@
+// ==========================================================================
+// Brass — antique goldenrod with warm black tie
+// Polished palette for orchestras, law firms and gentlemen's clubs.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#854d0e;
+    --bs-primary-rgb:133, 77, 14;
+    --bs-secondary:#1c1917;
+    --bs-secondary-rgb:28, 25, 23;
+    --bs-link-color:#854d0e;
+    --bs-link-hover-color:#6b3a0b;
+    --bs-font-sans-serif:"Montserrat";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#e7b958;
+    --bs-primary-rgb:231, 185, 88;
+    --bs-secondary:#e7e5e4;
+    --bs-secondary-rgb:231, 229, 228;
+    --bs-link-color:#e7b958;
+    --bs-link-hover-color:#eec97e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Cinzel";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #6b3a0b;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #3a2408;
+    --bs-btn-hover-color: #3a2408;
+    --bs-btn-active-color: #3a2408;
+    --bs-btn-disabled-color: #3a2408;
+    color:#3a2408;
+}

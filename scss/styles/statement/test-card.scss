@@ -1,0 +1,60 @@
+// ==========================================================================
+// Test-card — broadcast bars over slate transmission ink
+// Off-air palette for streamers, broadcasters and media archives.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#1e293b;
+    --bs-primary-rgb:30, 41, 59;
+    --bs-secondary:#64748b;
+    --bs-secondary-rgb:100, 116, 139;
+    --bs-link-color:#1e293b;
+    --bs-link-hover-color:#0f172a;
+    --bs-font-sans-serif:"Inter";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#e2e8f0;
+    --bs-primary-rgb:226, 232, 240;
+    --bs-secondary:#94a3b8;
+    --bs-secondary-rgb:148, 163, 184;
+    --bs-link-color:#e2e8f0;
+    --bs-link-hover-color:#f1f5f9;
+}
+
+body::before {
+    content:"";
+    display:block;
+    height:18px;
+    background:linear-gradient(90deg, #c0c0c0 0 14.28%, #c0c001 14.28% 28.57%, #00c0c0 28.57% 42.85%, #00c001 42.85% 57.14%, #c000c0 57.14% 71.42%, #c00001 71.42% 85.71%, #0000c0 85.71%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Michroma";
+    font-weight:400;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #0f172a;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #1e293b;
+    --bs-btn-hover-color: #1e293b;
+    --bs-btn-active-color: #1e293b;
+    --bs-btn-disabled-color: #1e293b;
+    color:#1e293b;
+}

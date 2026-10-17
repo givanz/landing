@@ -1,0 +1,65 @@
+// ==========================================================================
+// Brutal — zero radius electric blue on stark black accents
+// Raw neo-brutalist statement for portfolios, zines and streetwear.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+:root{
+    --bs-primary:#1d4ed8;
+    --bs-primary-rgb:29, 78, 216;
+    --bs-secondary:#111111;
+    --bs-secondary-rgb:17, 17, 17;
+    --bs-link-color:#1d4ed8;
+    --bs-link-hover-color:#1e40af;
+    --bs-font-sans-serif:"Space Grotesk";
+    --bs-border-radius:0;
+    --bs-border-radius-sm:0;
+    --bs-border-radius-lg:0;
+    --bs-border-radius-xl:0;
+    --bs-border-radius-xxl:0;
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#93c5fd;
+    --bs-primary-rgb:147, 197, 253;
+    --bs-secondary:#e5e7eb;
+    --bs-secondary-rgb:229, 231, 235;
+    --bs-link-color:#93c5fd;
+    --bs-link-hover-color:#bfdbfe;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Archivo Black";
+    font-weight:400;
+    text-transform:uppercase;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #1e40af;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-border-radius:0;
+    text-transform:uppercase;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #172554;
+    --bs-btn-hover-color: #172554;
+    --bs-btn-active-color: #172554;
+    --bs-btn-disabled-color: #172554;
+    color:#172554;
+}
+
+.card {
+    --bs-card-border-radius:0;
+}

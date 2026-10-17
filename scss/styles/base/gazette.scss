@@ -1,0 +1,59 @@
+// ==========================================================================
+// Gazette — blackletter masthead with hairline rules on newsprint ink
+// Broadsheet palette for newspapers, journals and publishers.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Old+Standard+TT:wght@400;700&display=swap');
+
+:root{
+    --bs-primary:#111827;
+    --bs-primary-rgb:17, 24, 39;
+    --bs-secondary:#991b1b;
+    --bs-secondary-rgb:153, 27, 27;
+    --bs-link-color:#991b1b;
+    --bs-link-hover-color:#7f1d1d;
+    --bs-font-sans-serif:"Old Standard TT";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#e5e7eb;
+    --bs-primary-rgb:229, 231, 235;
+    --bs-secondary:#f87171;
+    --bs-secondary-rgb:248, 113, 113;
+    --bs-link-color:#f87171;
+    --bs-link-hover-color:#fca5a5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Pirata One";
+    font-weight:400;
+}
+
+hr {
+    border-top:3px double currentColor;
+    opacity:0.6;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-border-radius:var(--bs-border-radius-sm);
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #111827;
+    --bs-btn-hover-color: #111827;
+    --bs-btn-active-color: #111827;
+    --bs-btn-disabled-color: #111827;
+    color:#111827;
+}

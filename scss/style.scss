@@ -1,18 +1,6 @@
 @charset "UTF-8";
 
-//$card-border-color:rgba(var(--bs-body-color-rgb), 0.1);
-//$card-box-shadow: null;
-/*
-//$headings-line-height: 1.4;
-//$line-height-base: 1.7;
-//$font-size-root: 18px;
-$border-radius: 0.25rem;
-$lead-font-weight:normal;
-//$dropdown-font-size: 14px;
-
-$font-family-sans-serif:      'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-//$font-family-monospace:       'Lora', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-*/
+// Theme variable overrides -- must come BEFORE the bootstrap import below.
 $custom-select-indicator: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='currentColor' d='M509.121,125.966c-3.838-3.838-10.055-3.838-13.893,0L256.005,365.194L16.771,125.966c-3.838-3.838-10.055-3.838-13.893,0	c-3.838,3.838-3.838,10.055,0,13.893l246.18,246.175c1.842,1.842,4.337,2.878,6.947,2.878c2.61,0,5.104-1.036,6.946-2.878 l246.17-246.175C512.959,136.021,512.959,129.804,509.121,125.966z'/%3E%3C/svg%3E");
 
 $btn-padding-y: 0.5rem;
@@ -56,9 +44,22 @@ $headings-margin-bottom: null;
 
 $enable-grid-classes: true;
 $enable-cssgrid: false;
+$enable-negative-margins: true;
+
+// container breakpoints (matches bootstrap defaults; declared here so the
+// intent survives bootstrap upgrades)
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1320px,
+);
 
 @import "bootstrap/bootstrap";
-@import "sections/sections";
+// common rules shared by every section; kept out of the sections/** glob
+// (underscore prefix) so the bundle compiles it exactly once, through here
+@import "sections/common";
 @import "base";
 @import "logo";
 @import "fonts";
@@ -87,7 +88,7 @@ $enable-cssgrid: false;
 .sidebar-sticky {
 	//background-color: rgba(var(--bs-body-color-rgb), 0.025);
 	border: 1px solid rgba(var(--bs-body-color-rgb), 0.1);
-	border-radius: 4px;
+	border-radius: 0.25rem;
 }
 
 .inner-page-hero {
@@ -121,7 +122,7 @@ h1, h2, h3, h4 {
 }
 
 .border-dashed {
-	border-bottom: dashed var(--bs-body-color)
+	border-bottom: 1px dashed var(--bs-body-color);
 }
 
 .user-card {
@@ -132,8 +133,7 @@ h1, h2, h3, h4 {
 
 .btn
 {
-	//text-transform:capitalize;
-	margin-bottom:0px;
+	margin-bottom:0;
 	position:relative;
 	//padding:0.5rem 2.1rem;
 	//padding:0.5rem 1rem;
@@ -151,8 +151,8 @@ h1, h2, h3, h4 {
 	}
 	*/
 	&.btn-outline-primary {
-		border-width:0px;
-		box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(var(--bs-primary-rgb), 0.15) 0px 1px 2px 0px, rgba(var(--bs-primary-rgb), 0.2) 0px 0px 0px 1px;
+		border-width:0;
+		box-shadow:rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0, rgba(var(--bs-primary-rgb), 0.15) 0 1px 2px 0, rgba(var(--bs-primary-rgb), 0.2) 0 0 0 1px;
 
 		&:hover
 		{
@@ -161,25 +161,17 @@ h1, h2, h3, h4 {
 		}
 		
 		i {
-			//border-right:1px solid rgba(0, 0, 0, 0.1);
 			background:transparent;
 		}
 	}
 	
 	&.btn-outline-secondary, &.btn-outline-success , &.btn-outline-danger {
-		//box-shadow:0px 0px 3px 1px rgba(0, 0, 0, 0.1), -1px 1px 2px 0px rgba(255, 255, 255, 0.15) inset;
-		box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 2px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-		//--bs-btn-bg:var(--bs-body-bg);
-		border: none;
-	}
-	
-	&.btn-gray {
-		i {
-		}
+		box-shadow:rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0) 0 0 0 0, rgba(0, 0, 0, 0.12) 0 1px 2px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+			border: none;
 	}
 	
 	&.btn-secondary {
-		box-shadow:1px 1px 2px 1px rgba(0, 0, 0,0.07),-1px 1px 2px 0px rgba(255, 255, 255,0.15) inset;
+		box-shadow:1px 1px 2px 1px rgba(0, 0, 0,0.07),-1px 1px 2px 0 rgba(255, 255, 255,0.15) inset;
 		//--bs-btn-bg:var(--bs-body-bg);
 		i {
 			background: transparent;
@@ -187,32 +179,18 @@ h1, h2, h3, h4 {
 	}
 
 	&.btn-primary {
-		//box-shadow:1px 1px 2px 1px rgba(0, 0, 0,0.07),1px 1px 2px 1px rgba(255, 255, 255,0.15) inset;
-		//box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.2) 0px 0.75px 0px 0px inset, rgba(var(--bs-primary-rgb), 0.4) 0px 1px 2px 0px, rgba(var(--bs-primary-rgb), 0.8) 0px 0px 0px 1px;
-		//padding:0.5rem 2.1rem;
-		//padding-left:2.1rem;
-		//padding-right:2.1rem;
 		--bs-btn-border-color: rgba(var(--bs-primary-rgb), 0.5);
-		//--bs-btn-bg: rgba(var(--bs-primary-rgb), 0.9);
 		box-shadow:0 4px 4px rgba(0, 0, 0,0.08), 0 6px 12px rgba(0, 0, 0,0.012), 0 6px 12px rgba(255, 255, 255,0.12) inset, 0 1px 1px rgba(255, 255, 255,0.2) inset;
-		
-
-		i {
-			/*background: rgba(255, 255, 255, 0.1);*/
-		}
 	}
-	
+
 	&.btn-sm {
 		box-shadow: none;
 		border: 1px solid var(--bs-border-color);
-		i {
-			/*padding: 0.5rem 0.5rem;*/
-		}
 	}
 	
 
 	&:before {
-		content: ".";
+		content:"";
 		background-image:linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 		position: absolute;
 		left: 0;
@@ -239,7 +217,7 @@ h1, h2, h3, h4 {
 }
 
 [data-v-component-language] .dropdown-item, [data-v-component-currency] .dropdown-item {
-    font-size: 14px;
+    font-size: 0.875rem;
     position:relative;
 }
 

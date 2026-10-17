@@ -1,0 +1,67 @@
+// ==========================================================================
+// Airy — spacing preset (soft radii, roomy controls and cards)
+// All density levers are runtime vars; no component selectors are forked.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap');
+
+:root{
+    --bs-primary:#4a6fa5;
+    --bs-primary-rgb:74, 111, 165;
+    --bs-secondary:#8aa8c8;
+    --bs-secondary-rgb:138, 168, 200;
+    --bs-link-color:#4a6fa5;
+    --bs-link-hover-color:#3a5a87;
+    --bs-font-sans-serif:"Public Sans";
+    --bs-border-radius:1rem;
+    --bs-border-radius-sm:0.75rem;
+    --bs-border-radius-lg:1.5rem;
+    --bs-border-radius-xl:2rem;
+    --bs-border-radius-xxl:2.5rem;
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#93b8e0;
+    --bs-primary-rgb:147, 184, 224;
+    --bs-secondary:#a9c4de;
+    --bs-secondary-rgb:169, 196, 222;
+    --bs-link-color:#93b8e0;
+    --bs-link-hover-color:#b3cde9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Public Sans";
+    letter-spacing:-0.01em;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #3a5a87;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-padding-x:1.5rem;
+    --bs-btn-padding-y:0.8rem;
+    --bs-btn-border-radius:var(--bs-border-radius-lg);
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #16283c;
+    --bs-btn-hover-color: #16283c;
+    --bs-btn-active-color: #16283c;
+    --bs-btn-disabled-color: #16283c;
+    color:#16283c;
+}
+
+.card {
+    --bs-card-spacer-x:1.5rem;
+    --bs-card-spacer-y:1.5rem;
+    --bs-card-border-radius:var(--bs-border-radius-lg);
+}

@@ -1,0 +1,85 @@
+// ==========================================================================
+// Snapshot — white instant frames with handwritten captions
+// Photo-journal palette for weddings, travelogs and family albums.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Karla:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#292524;
+    --bs-primary-rgb:41, 37, 36;
+    --bs-secondary:#e11d48;
+    --bs-secondary-rgb:225, 29, 72;
+    --bs-link-color:#292524;
+    --bs-link-hover-color:#44403c;
+    --bs-font-sans-serif:"Karla";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#e7e5e4;
+    --bs-primary-rgb:231, 229, 228;
+    --bs-secondary:#f9a8d4;
+    --bs-secondary-rgb:249, 168, 212;
+    --bs-link-color:#e7e5e4;
+    --bs-link-hover-color:#f5f5f4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Caveat";
+    font-weight:700;
+}
+
+.post-content figure,
+figure {
+    background:#fff;
+    padding:12px 12px 48px;
+    box-shadow:0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.post-content figure:nth-of-type(even),
+figure:nth-of-type(even) {
+    transform:rotate(0.6deg);
+}
+
+.post-content figure:nth-of-type(odd),
+figure:nth-of-type(odd) {
+    transform:rotate(-0.6deg);
+}
+
+.post-content figcaption,
+figcaption {
+    font-family:"Caveat";
+    font-size:1.25rem;
+    text-align:center;
+    color:var(--bs-body-color);
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #44403c;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #292524;
+    --bs-btn-hover-color: #292524;
+    --bs-btn-active-color: #292524;
+    --bs-btn-disabled-color: #292524;
+    color:#292524;
+}
+
+[data-bs-theme=dark] .post-content figure,
+[data-bs-theme=dark] figure {
+    background:#1c1917;
+    border:1px solid rgba(255, 255, 255, 0.15);
+    box-shadow:none;
+}

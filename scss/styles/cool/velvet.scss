@@ -1,0 +1,52 @@
+// ==========================================================================
+// Velvet — deep royal purple with amber gold
+// Luxurious palette for jewelry, perfume and premium events.
+// ==========================================================================
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap');
+
+:root{
+    --bs-primary:#4c1d95;
+    --bs-primary-rgb:76, 29, 149;
+    --bs-secondary:#d97706;
+    --bs-secondary-rgb:217, 119, 6;
+    --bs-link-color:#4c1d95;
+    --bs-link-hover-color:#3b1470;
+    --bs-font-sans-serif:"Montserrat";
+}
+
+[data-bs-theme=dark] {
+    --bs-primary:#a78bfa;
+    --bs-primary-rgb:167, 139, 250;
+    --bs-secondary:#fbbf24;
+    --bs-secondary-rgb:251, 191, 36;
+    --bs-link-color:#a78bfa;
+    --bs-link-hover-color:#c4b5fd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Cinzel";
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(var(--bs-primary-rgb), 0.8);
+    --bs-btn-hover-border-color: rgba(var(--bs-primary-rgb), 0.8);
+    //--bs-btn-focus-shadow-rgb: 38, 133, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: #3b1470;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    color:#fff;
+}
+
+[data-bs-theme=dark] .btn-primary {
+    --bs-btn-color: #2e1065;
+    --bs-btn-hover-color: #2e1065;
+    --bs-btn-active-color: #2e1065;
+    --bs-btn-disabled-color: #2e1065;
+    color:#2e1065;
+}
