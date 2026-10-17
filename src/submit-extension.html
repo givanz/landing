@@ -1,0 +1,176 @@
+@@include('./_includes/html-head.html', {"title": "Vvveb - Submit extension", "path":""})
+
+<body>
+	
+	@@include('./_includes/header.html')
+	
+	<section class="inner-page-hero" data-v-component-post>
+		 <div>
+			<div class="title-container">
+				<div class="container">
+					@@include('./_includes/breadcrumb.html')
+
+					<h1 data-v-post-name>Submit extension</h1>
+				</div>
+			</div>
+		   
+			
+			<!-- img data-v-post-image src="demo/img/bg-img/bg-7.webp" alt="" -->
+		</div>
+	</section>
+
+    <main id="site-content" data-v-component-post>
+
+		<section class="pt-0">
+		  <div class="container">
+			<div class="row mt-5">
+			  <div class="col-12 col-md-5">
+			  
+
+				<!--	
+				<h2 data-v-post-name>Contact us</h2>
+				-->
+				
+				<div class="" data-v-post-content>
+					<h3>Submit your extension</h3>
+					
+					Steps:
+					<ol>
+						<li>Submit all required assets and info</li>
+						<li>Extension is reviewed to ensure it meets quality criteria</li>
+						<li>If approved the extension will be listed in the directory</li>
+						<li>If rejected feedback will be provided</li>
+					</ol>
+
+					<h5>Theme requirements</h5>
+					<ul>
+						<li>Theme must have proper layout, spacing and styling</li>
+						<li>It must be aesthetically pleasing, outdated or lack of proper design is not accepted</li>
+						<li>It must include all essential templates (html files) to provide full functionality</li>
+						<li>Proper page builder support with sections/header/footer included in body tag, sections support with included screenshots</li>
+					</ul>
+
+					<h5>Plugin requirements</h5>
+					<ul>
+						<li>Plugin should not have telemetry or collect user data</li>
+						<li>Lite versions, upsells, adware, nagware or bloated extensions are not accepted</li>
+						<li>Plugin should use the same dashboard styling for configuration pages, no custom ui to confuse users</li>
+					</ul>
+
+					<p>
+					Extensions must be provided under an open source license.
+					<p>
+					<ul>
+						<li>For themes MIT or Apache 2.0 is recommended.</li>
+						<li>For plugins the recommendation is GPL.</li>
+					</ul>
+					
+				</div>
+
+				<!--
+				<p class="lead">
+				  <strong>Email:</strong><script>document.write(atob("PGEgaHJlZj0ibWFpbHRvOiYjMTA0OyYjMTA1OyYjMDY0OyYjMTE4OyYjMTE4OyYjMTE4OyYjMTAxOyYjMDk4OyYjMDQ2OyYjMDk5OyYjMTExOyYjMTA5OyI+JiMxMDQ7JiMxMDU7JiMwNjQ7JiMxMTg7JiMxMTg7JiMxMTg7JiMxMDE7JiMwOTg7JiMwNDY7JiMwOTk7JiMxMTE7JiMxMDk7PC9hPg=="));</script>
+				</p>
+				-->
+			  </div>
+
+			  <div class="col-12 col-md-7 ms-auto" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="extension">
+				
+				@@include('./_includes/notifications.html')
+				
+				<div class="border rounded-3 p-4 border-opacity-25 border-light-subtle">
+				<form method="post" action="" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
+				   <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
+				   <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>
+					
+				  <div class="row mb-3">
+					<label for="first_name" class="col-sm-4 col-form-label">First name</label>
+					<div class="col-8">
+					  <input type="text" class="form-control" placeholder="First name" name="first_name" id="first_name" required>
+					</div>
+					</div>
+					<div class="row mb-3">
+						<label for="last_name" class="col-sm-4 col-form-label">Last name</label>
+						<div class="col-8">
+						  <input type="text" class="form-control" placeholder="Last name" name="last_name" id="last_name" required>
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label for="email" class="col-sm-4 col-form-label">Email</label>
+						<div class="col-8">
+						  <input type="email" class="form-control" placeholder="Email" name="email" id="email" required>
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label for="name" class="col-sm-4 col-form-label">Theme/plugin name</label>
+						<div class="col-8">
+						  <input type="text" class="form-control" placeholder="Name" name="name" id="name" required>
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label for="zip" class="col-sm-4 col-form-label">Zip url</label>
+						<div class="col-8">
+						  <input type="text" class="form-control" placeholder="Zip" name="zip" id="zip" required>
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label for="screenshots" class="col-sm-4 col-form-label">Screenshots zip url</label>
+						<div class="col-8">
+						  <input type="text" class="form-control" placeholder="Screenshots zip" name="screenshots" id="screenshots" required>
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label for="github" class="col-sm-4 col-form-label">Github url (optional)</label>
+						<div class="col-8">
+						  <input type="text" class="form-control" placeholder="github" name="github" id="github">
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label for="description" class="col-sm-4 col-form-label">Theme/Plugin Description<br> (markdown supported)</label>
+						<div class="col-8">
+						  <textarea class="form-control" name="description" id="description" rows="5" placeholder="Description" required></textarea>
+						</div>
+					  </div>
+
+
+
+				 <!-- if these hidden inputs are filled then ignore, robots -->
+
+				 <input type="text" class="form-control d-none" placeholder="Subject" name="contact-form" >	
+				 
+				 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+				 
+				 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">	
+				 
+				
+				  <div class="row mt-4">
+					<div class="col">
+					  <button type="submit" class="btn btn-primary">
+						<span class="loading d-none">
+							<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
+							</span>
+							<span>Submitting</span> ...
+						</span>
+
+						<span class="button-text">
+							<span>Submit</span><svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-50 ms-2"  aria-hidden="true"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /> <path d="M3 7l9 6l9 -6" /></svg>
+						</span>
+					</button>
+				  </div>
+				</form>
+				</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</section>
+
+	</main>
+
+	@@include('./_includes/footer.html')
+
+	@@include('./_includes/footer-scripts.html')
+  	
+  	
+</body>
+</html>

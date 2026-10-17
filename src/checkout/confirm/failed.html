@@ -1,0 +1,59 @@
+@@include('../../_includes/html-head.html', {"title": "Order confirmation", "path":"../", "link": "<meta name=\"robots\" content=\"noindex, nofollow\">"})
+
+
+<body class="page">
+	
+	@@include('../../_includes/header.html')
+
+	<!--
+	<section class="inner-page-hero" data-v-component-post>
+		 <div>
+			<div class="title-container">
+				<div class="container">
+					<h1 data-v-post-name>Post title</h1>
+			
+					
+				</div>
+			</div>
+		   
+			
+		</div>
+	</section>
+	-->
+	
+    <main id="site-content">
+
+        <div class="container">
+			@@include('../../_includes/notifications.html')
+		
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div>
+						
+                        <div class="text-center p-4">
+							
+						  <h1 class="display-2 mb-4 text-danger">
+							<span style="border-radius:100px; width: 80px;height: 80px;display: inline-block;font-size: 100%;line-height:1.5"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /> <path d="M12 8v4" /> <path d="M12 16h.01" /></svg></span> Payment failed!
+						  </h1>
+						  <h3 class="leaad">Your order <span class="text-primary">#<span data-v-order-customer_order_id>108</span></span> is awaiting payment!</h3>
+						  <p class="text-muted">Check your payment details and payment provider or contact support.</p>
+
+						  <p class="mt-4">
+							<a href="/" class="btn btn-success">Continue shopping <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M5 12l14 0" /> <path d="M13 18l6 -6" /> <path d="M13 6l6 6" /></svg>
+							</a>
+						  </p>
+							
+						   
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+	@@include('../../_includes/footer.html')
+	 
+	@@include('../../_includes/footer-scripts.html')    
+  	
+</body>
+</html>

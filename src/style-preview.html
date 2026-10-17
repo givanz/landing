@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+
+
+  <link id="landing-css" href="../../css/style.bundle.css" rel="stylesheet" media="screen">
+  <link id="style-css" href="" rel="stylesheet" media="screen">
+
+<style>
+	/* Minimal style specimen: heading font, body font, palette.
+	   Single row so the thumb stays small and legible. */
+	.style-specimen {
+		display:inline-flex;
+		flex-direction:column;
+		align-items:flex-start;
+		gap:0.35rem;
+		padding:0.4rem 0.5rem;
+		line-height:1;
+		font-size:32px;
+		background:var(--bs-body-bg);
+		color:var(--bs-body-color);
+	}
+	.style-specimen .type {
+		display:flex;
+		align-items:baseline;
+		gap:0.35rem;
+	}
+	.style-specimen .swatches {
+		display:flex;
+		gap:0.3rem;
+	}
+	.style-specimen h1 {
+		font-size:1em;
+		margin:0;
+		line-height:1;
+	}
+	.style-specimen span {
+		font-size:1em;
+		line-height:1;
+	}
+	.style-specimen i {
+		width:0.55em;
+		height:0.55em;
+		border-radius:50%;
+	}
+	.style-specimen i.primary {
+		background:var(--bs-primary);
+	}
+	.style-specimen i.secondary {
+		background:var(--bs-secondary);
+	}
+</style>
+
+<body>
+	<div class="style-specimen">
+		<div class="type"><h1>Aa</h1><span>Aa</span></div>
+		<div class="swatches"><i class="primary"></i><i class="secondary"></i></div>
+	</div>
+</body>
+
+</html>
