@@ -18,18 +18,19 @@
 		  
           <div class="col-md-9 col-xl-9 content-body">
 
+			<h1 class="" data-v-category-name>Category name</h1>
+			
+			<div class="d-flex">
+				<div class="" style="flex:0 0 fit-content" data-v-if="this.category.image">
+					<img class="img-fluid rounded-2 mb-3 me-3" src="demo/img/hero-3.webp" loading="lazy" alt="Card image cap" data-aos="zoom-in-up" data-aos-duration="200" data-v-category-image_url>
+				</div>
+				<div class="text-muted">
+					<div data-v-category-content>Category description</div>
+				</div>
+			</div>
+
 			<div class="row g-3 g-md-5 align-items-end">
 			  <div class="col-md-6">
-				<h1 class="mb-2" data-v-category-name>Category name</h1>
-				
-				<div class="row">
-					<div class="col" data-v-if="this.category.image">
-						<img class="img-fluid rounded-2 mb-3" src="demo/img/hero-3.webp"  width="200" src="" loading="lazy" alt="Card image cap" data-aos="zoom-in-up" data-aos-duration="200" data-v-category-image_url>
-					</div>
-					<div class="col">
-						<div class="mb-3" data-v-category-content>Category description</div>
-					</div>
-				</div>
 				
 				@@include('../_includes/breadcrumb.html')
 								
@@ -41,21 +42,21 @@
 				  <li class="list-inline-item">
 					<div class="dropdown">
 					  <a class="btn btn-light btn-sm" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-						Price high to low <i class="la la-arrow-down"></i>
+						Price high to low <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M12 5l0 14" /> <path d="M18 13l-6 6" /> <path d="M6 13l6 6" /></svg>
 					  </a>
 
 					  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-						<li><a class="dropdown-item"><i class="la la-arrow-up"></i> <span>Price high to low</span></a></li>
-						<li><a class="dropdown-item"><i class="la la-arrow-down"></i> <span>Price low to high</span></a></li>
-						<li><a class="dropdown-item"><i class="la la-chart-line"></i> <span>Popularity</span></a></li>
-						<li><a class="dropdown-item"><i class="la la-tags"></i> <span>Sales</span></a></li>
+						<li><a class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M12 5l0 14" /> <path d="M18 11l-6 -6" /> <path d="M6 11l6 -6" /></svg> <span>Price high to low</span></a></li>
+						<li><a class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M12 5l0 14" /> <path d="M18 13l-6 6" /> <path d="M6 13l6 6" /></svg> <span>Price low to high</span></a></li>
+						<li><a class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M4 19l16 0" /> <path d="M4 15l4 -6l4 2l4 -5l4 4" /></svg> <span>Popularity</span></a></li>
+						<li><a class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M3 8v4.172a2 2 0 0 0 .586 1.414l5.71 5.71a2.41 2.41 0 0 0 3.408 0l3.592 -3.592a2.41 2.41 0 0 0 0 -3.408l-5.71 -5.71a2 2 0 0 0 -1.414 -.586h-4.172a2 2 0 0 0 -2 2" /> <path d="M18 19l1.592 -1.592a4.82 4.82 0 0 0 0 -6.816l-4.592 -4.592" /> <path d="M7 10h-.01" /></svg> <span>Sales</span></a></li>
 					  </ul>
 					</div>
 				  </li>
 				</ul>
 			  </div>
 			</div>
-			<div class="row" data-v-component-products="index" data-v-limit="6" data-v-order_by="url" data-v-direction="url" data-v-page="url" data-v-taxonomy_item_id="url" data-v-image_size="medium" data-v-filter="url">
+			<div class="row" data-v-component-products="index" data-v-variant_price="true" data-v-limit="6" data-v-order_by="url" data-v-direction="url" data-v-page="url" data-v-taxonomy_item_id="url" data-v-image_size="medium" data-v-filter="url">
               <div class="col-md-6 col-xl-4" data-v-product>
                 <div class="product">
 				

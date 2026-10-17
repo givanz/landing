@@ -1,0 +1,56 @@
+<section class="posts-8 py-5" aria-label="posts-8">
+	<div class="container" data-v-component-posts="magazine" data-v-limit="5" data-v-image_size="medium">
+		<div class="row justify-content-center mb-5">
+			<div class="col-md-7 text-center">
+				<h2 class="display-6 fw-bold">Magazine</h2>
+				<p class="lead text-muted">The featured story plus the most read this week.</p>
+			</div>
+		</div>
+		<div class="row g-5">
+			<div class="col-lg-7" data-v-post data-v-if="index == 0">
+				<article class="card border-0">
+					<a href="content/post.html" data-v-post-url><img loading="lazy" decoding="async" alt="Post cover image" class="img-fluid rounded shadow" src="demo/img/hero-3.webp" data-v-post-image></a>
+					<div class="pt-3">
+						<a class="text-primary fw-semibold text-decoration-none small" href="" data-v-categories-cat-url><span data-v-categories-cat-name>Category</span></a>
+						<a href="content/post.html" class="text-decoration-none text-body" data-v-post-url><h3 class="fw-bold mt-1" data-v-post-name>How to launch your online store in a weekend</h3></a>
+						<p class="text-muted" data-v-post-excerpt>Learn practical tips to grow traffic, engage readers and turn visits into sales.</p>
+						<p class="small text-muted mb-0"><span data-v-post-display_name>admin</span> &middot; <span data-v-post-created_at_formatted>December 31, 2020</span></p>
+					</div>
+				</article>
+			</div>
+			<div class="col-lg-5">
+				<h3 class="h6 text-uppercase text-muted fw-bold mb-3">Most read</h3>
+				<ol class="list-unstyled">
+					<li class="d-flex gap-3 pb-3 mb-3 border-bottom" data-v-post data-v-if="index > 0">
+						<strong class="display-6 fw-bold text-body-tertiary">1</strong>
+						<div>
+							<a href="content/post.html" class="text-decoration-none text-body fw-bold" data-v-post-url><span data-v-post-name>10 web design trends that convert visitors</span></a>
+							<p class="small text-muted mb-0"><span data-v-post-created_at_formatted>December 31, 2020</span> &middot; 6 min read</p>
+						</div>
+					</li>
+					<li class="d-flex gap-3 pb-3 mb-3 border-bottom" data-v-post data-v-if="index > 0">
+						<strong class="display-6 fw-bold text-body-tertiary">2</strong>
+						<div>
+							<a href="content/post.html" class="text-decoration-none text-body fw-bold" data-v-post-url><span data-v-post-name>The beginner guide to SEO in 2025</span></a>
+							<p class="small text-muted mb-0"><span data-v-post-created_at_formatted>December 31, 2020</span> &middot; 8 min read</p>
+						</div>
+					</li>
+					<li class="d-flex gap-3 pb-3 mb-3 border-bottom" data-v-post data-v-if="index > 0">
+						<strong class="display-6 fw-bold text-body-tertiary">3</strong>
+						<div>
+							<a href="content/post.html" class="text-decoration-none text-body fw-bold" data-v-post-url><span data-v-post-name>Why page speed matters more than ever</span></a>
+							<p class="small text-muted mb-0"><span data-v-post-created_at_formatted>December 31, 2020</span> &middot; 5 min read</p>
+						</div>
+					</li>
+					<li class="d-flex gap-3" data-v-post data-v-if="index > 0">
+						<strong class="display-6 fw-bold text-body-tertiary">4</strong>
+						<div>
+							<a href="content/post.html" class="text-decoration-none text-body fw-bold" data-v-post-url><span data-v-post-name>From sketch to site: our design process</span></a>
+							<p class="small text-muted mb-0"><span data-v-post-created_at_formatted>December 31, 2020</span> &middot; 7 min read</p>
+						</div>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>

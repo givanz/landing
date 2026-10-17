@@ -1,0 +1,29 @@
+<section class="products-4 py-5" aria-label="products-4">
+	<div class="container" data-v-component-products="spotlight" data-v-limit="1" data-v-variant_price="true" data-v-image_size="large">
+		<div class="row align-items-center g-5" data-v-product>
+			<div class="col-lg-6">
+				<a href="product/product.html" data-v-product-url>
+					<img src="demo/img/product.webp" loading="lazy" alt="Spotlight product" class="img-fluid rounded shadow" data-v-size="large" data-v-if="prod.image" data-v-product-image>
+					<img src="/media/placeholder.svg" class="img-fluid rounded bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image">
+				</a>
+			</div>
+			<div class="col-lg-6">
+				<span class="badge text-bg-secondary mb-2" data-v-if="prod.old_price > 0">Sale</span>
+				<a href="product/product.html" class="text-body text-decoration-none" data-v-product-url>
+					<h2 class="display-6 fw-bold" data-v-product-name>Product 8</h2>
+				</a>
+				<p class="lead text-muted" data-v-product-excerpt>Short product description goes here.</p>
+				<ul class="list-unstyled mb-4">
+					<li class="mb-2"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success me-2" aria-hidden="true"><path d="M5 12l5 5l10 -10" /></svg>Free shipping on orders over $50</li>
+					<li class="mb-2"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success me-2" aria-hidden="true"><path d="M5 12l5 5l10 -10" /></svg>30-day money back guarantee</li>
+					<li><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success me-2" aria-hidden="true"><path d="M5 12l5 5l10 -10" /></svg>2-year extended warranty included</li>
+				</ul>
+				<div class="d-flex align-items-center gap-3 flex-wrap">
+					<span class="product-price fw-bold fs-3" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>$100.00</span>
+					<span class="product-price old-price text-muted text-decoration-line-through" data-v-if="prod.old_price > 0" data-v-product-old_price_tax_formatted>$120.00</span>
+					<a href="product/product.html" class="btn btn-lg btn-primary" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">Add to cart</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

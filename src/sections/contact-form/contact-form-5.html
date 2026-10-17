@@ -1,15 +1,15 @@
-<section class="contact-form-2 container-fluid px-5 my-5" aria-label="contact-form-2">
-  <div price my-5-col shadow-sm border rounded-3 mx-3>
+<section class="contact-form-5 container-fluid px-5 my-5" aria-label="contact-form-5">
+  <div class="price my-5 shadow-sm border rounded-3 mx-3">
     <div class="col-xl-10">
       <div class="card border-0 rounded-3 shadow-lg ">
         <div class="card-body p-0">
           <div class="row g-0">
             <div class="col-sm-6 d-none d-sm-block bg-image">
 			
-				<img alt="image" src="demo/img/team-1.webp" alt="happy cat" loading="lazy" class="img-fluid">
+				<img src="demo/img/team-1.webp" alt="Team collaborating" loading="lazy" class="img-fluid">
 				
 			</div>
-            <div class="col-sm-6 p-4"data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-home">
+            <div class="col-sm-6 p-4" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-home">
 	  
 			@@include('../../_includes/notifications.html', {type:"contact-us-home"})
 			
@@ -26,19 +26,19 @@
 
                 
                 <div class=" mb-3">
-                  <input class="form-control" id="name" type="text" placeholder="Name" required />
+                  <input autocomplete="name" aria-label="Name" class="form-control" id="name" type="text" placeholder="Name" required />
                   <label for="name">Name</label>
                 </div>
 
                 
                 <div class=" mb-3">
-                  <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" required />
+                  <input autocomplete="email" aria-label="Email Address" class="form-control" id="emailAddress" type="email" placeholder="Email Address" required />
                   <label for="emailAddress">Email Address</label>
                 </div>
 
                 
                 <div class=" mb-3">
-                  <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" required ></textarea>
+                  <textarea aria-label="Message" class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" required ></textarea>
                   <label for="message">Message</label>
                 </div>
 

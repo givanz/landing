@@ -1,4 +1,4 @@
-@@include('../_includes/html-head.html', {"title": "Order confirmation", "path":"../"})
+@@include('../_includes/html-head.html', {"title": "Order confirmation", "path":"../", "link": "<meta name=\"robots\" content=\"noindex, nofollow\">"})
 
 
 <body class="page">
@@ -32,11 +32,12 @@
 						
                         <div class="text-center p-4">
 							
-							<h1 class="display-2 mb-4"><span class="la la-check bg-success text-white" style="border-radius:100px;  width: 80px;height: 80px;display: inline-block;font-size: 80%;line-height:1.5"></span> Thank you!</h1>
+							<h1 class="display-2 mb-4"><span class="bg-success text-white" style="border-radius:100px; width: 80px;height: 80px;display: inline-block;font-size: 80%;line-height:1.5"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5l10 -10" /></svg></span> Thank you!</h1>
 							<h3 class="leaad">Your order <span class="text-success">#<span data-v-order-customer_order_id>108</span></span> has been placed!</h3>
 							<p class="text-muted">We will keep you updated on your order status.</p>
+							<p class="text-muted" data-v-if="this.order.notes">Order note: <span data-v-order-notes></span></p>
 							
-							<p class="mt-4"><a href="/" class="btn btn-success">Continue shopping <i class="la la-arrow-right"></i></a></p>
+							<p class="mt-4"><a href="/" class="btn btn-success">Continue shopping <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M5 12l14 0" /> <path d="M13 18l6 -6" /> <path d="M13 6l6 6" /></svg></a></p>
 						   
 						</div>
                     </div>

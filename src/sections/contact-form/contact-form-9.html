@@ -1,10 +1,10 @@
-<section class="contact-form-3 py-5" aria-label="contact-form-3">
-  <div class="row no-gutters">
+<section class="contact-form-9 py-5" aria-label="contact-form-9">
+  <div class="row g-0">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <div class="card-shadow">
-            <img alt="image" src="demo/img/team-1.webp" alt="happy cat" loading="lazy" class="img-fluid">
+            <img src="demo/img/team-1.webp" alt="Team collaborating" loading="lazy" class="img-fluid">
           </div>
         </div>
         <div class="col-lg-6">
@@ -12,7 +12,7 @@
 			  
 			@@include('../../_includes/notifications.html', {type:"contact-us-home"})
 			  
-            <h1 class=" mt-2">Quick Contact</h1>
+            <h2 class=" mt-2">Quick Contact</h2>
             <form class="mt-4" action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
 			  <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
 			  <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>	
@@ -21,31 +21,31 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="form-group mt-2">
-                    <input class="form-control" type="text" placeholder="name">
+                    <input autocomplete="name" aria-label="name" class="form-control" type="text" placeholder="name">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group mt-2">
-                    <input class="form-control" type="email" placeholder="email address">
+                    <input autocomplete="email" aria-label="email address" class="form-control" type="email" placeholder="email address">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group mt-2">
-                    <input class="form-control" type="text" placeholder="phone">
+                    <input autocomplete="tel" aria-label="phone" class="form-control" type="text" placeholder="phone">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group mt-2">
-                    <textarea class="form-control" rows="3" placeholder="message"></textarea>
+                    <textarea aria-label="message" class="form-control" rows="3" placeholder="message"></textarea>
                   </div>
                 </div>
                 
                 
                  <!-- if these hidden inputs are filled then ignore, robots -->
 
-				 <input type="text" class="form-control d-none" placeholder="Contact form" name="contact-form" >	
+				 <input type="text" class="form-control d-none" placeholder="Contact form" name="contact-form">	
 				 
-				 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+				 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty">	
 				 
 				 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">	
 				 
@@ -62,10 +62,10 @@
               <div class="col-lg-4 col-md-4">
                 <div class="card-body d-flex align-items-center c-detail pl-0">
                   <div class="me-3 align-self-center">
-                    <i class="la la-map la-lg"></i>
+                    <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" /> <path d="M9 4v13" /> <path d="M15 7v13" /></svg>
                   </div>
                   <div>
-                    <h6>Address</h6>
+                    <h3 class="fs-6">Address</h3>
                     <p>708 Picadilly Ave.
                       <br> New York</p>
                   </div>
@@ -74,10 +74,10 @@
               <div class="col-lg-4 col-md-4">
                 <div class="card-body d-flex align-items-center c-detail">
                   <div class="me-3 align-self-center">
-                    <i class="la la-phone la-lg"></i>
+                    <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
                   </div>
                   <div>
-                    <h6>Phone</h6>
+                    <h3 class="fs-6">Phone</h3>
                     <p>555 111 333</p>
                   </div>
                 </div>
@@ -85,10 +85,10 @@
               <div class="col-lg-4 col-md-4">
                 <div class="card-body d-flex align-items-center c-detail">
                   <div class="me-3 align-self-center">
-                    <i class="la la-email la-lg"></i>
+                    <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /> <path d="M3 7l9 6l9 -6" /></svg>
                   </div>
                   <div>
-                    <h6>Email</h6>
+                    <h3 class="fs-6">Email</h3>
                     <p>
                       hello@vvveb.com
                     </p>

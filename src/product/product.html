@@ -95,12 +95,12 @@
 				
 				<div class="my-2">
 					<small class="text-secondary" data-v-if="product.rating"> 
-						<i class="la la-star" data-v-class-if-text-warning="product.rating >= 1"></i>
-						<i class="la la-star" data-v-class-if-text-warning="product.rating >= 2"></i>
-						<i class="la la-star" data-v-class-if-text-warning="product.rating >= 3"></i>
-						<i class="la la-star" data-v-class-if-text-warning="product.rating >= 4"></i>
-						<i class="la la-star" data-v-class-if-text-warning="product.rating >= 5"></i>
-						<!-- <i class="la la-star-half"></i> -->
+						<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  data-v-class-if-text-warning="product.rating >= 1" aria-hidden="true"><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245" /></svg>
+						<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  data-v-class-if-text-warning="product.rating >= 2" aria-hidden="true"><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245" /></svg>
+						<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  data-v-class-if-text-warning="product.rating >= 3" aria-hidden="true"><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245" /></svg>
+						<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  data-v-class-if-text-warning="product.rating >= 4" aria-hidden="true"><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245" /></svg>
+						<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  data-v-class-if-text-warning="product.rating >= 5" aria-hidden="true"><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245" /></svg>
+						<!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l.007 15.748" /></svg> -->
 					</small>
 					<a href="#reviews" data-v-if="product.reviews" class="ms-2" type="button" data-bs-target="#reviews">(<span data-v-product-reviews>no</span> reviews)</a>
 				</div>
@@ -163,9 +163,9 @@
 									-->
 										<div class="quantity mb-2">
 											<div class="input-group spinner">
-												<button class="btn btn-minus" type="button"><i class="la la-minus"></i></button>
+												<button class="btn btn-minus" type="button"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M5 12l14 0" /></svg></button>
 												<input type="number" name="quantity" value="1" size="1" min="{$product.minimum_quantity}" max="{$product.stock_quantity}" id="input-quantity" class="form-control">
-												<button class="btn btn-plus" type="button"><i class="la la-plus"></i></button>
+												<button class="btn btn-plus" type="button"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M12 5l0 14" /> <path d="M5 12l14 0" /></svg></button>
 											</div>
 										</div>
 
@@ -179,7 +179,7 @@
 											</span>
 
 											<span class="button-text" >
-												<i class="la la-shopping-bag la-lg me-2"></i> <span>Add to cart</span>
+												<svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2"  aria-hidden="true"><path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" /> <path d="M9 11v-5a3 3 0 0 1 6 0v5" /></svg> <span>Add to cart</span>
 											</span>
 											
 										</button> 
@@ -193,7 +193,7 @@
 											</span>
 
 											<span class="button-text" >
-												<span>Buy now</span> <i class="la la-arrow-right la-lg ms-2"></i> 
+												<span>Buy now</span> <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-2"  aria-hidden="true"><path d="M5 12l14 0" /> <path d="M13 18l6 -6" /> <path d="M13 6l6 6" /></svg> 
 											</span>
 											
 										</button>
@@ -201,10 +201,10 @@
 
 									<div class="product_wish_compare mt-4">
 										<a href="/wishlist/1" class="btn btn-sm btn-outline-secondary border-0" title="Add to wish list"  data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
-											<i class="la la-heart"></i> <span>Add to Wish List</span>
+											<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg> <span>Add to Wish List</span>
 										</a>
 										<a href="/compare/1" class="btn btn-sm btn-outline-secondary border-0" title="Compare product"  data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
-											<i class="la la-random"></i> <span>Compare product</span>
+											<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 4l3 3l-3 3" /> <path d="M18 20l3 -3l-3 -3" /> <path d="M3 7h3a5 5 0 0 1 5 5a5 5 0 0 0 5 5h5" /> <path d="M21 7h-5a4.978 4.978 0 0 0 -3 1m-4 8a4.984 4.984 0 0 1 -3 1h-3" /></svg> <span>Compare product</span>
 										</a>
 									</div>
 

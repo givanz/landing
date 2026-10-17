@@ -1,0 +1,27 @@
+<section class="subscribe-8 py-5 bg-body-tertiary" aria-label="subscribe-8">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-6">
+				<div class="card shadow border-0 overflow-hidden" data-v-component-plugin-newsletter-form data-v-storage="database" data-v-name="contact-us-home">
+					<div class="bg-primary p-4 text-center text-white">
+						<svg width="3em" height="3em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-2"  aria-hidden="true"><path d="M3 9a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1l0 -2" /> <path d="M12 8l0 13" /> <path d="M19 12v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-7" /> <path d="M7.5 8a2.5 2.5 0 0 1 0 -5a4.8 8 0 0 1 4.5 5a4.8 8 0 0 1 4.5 -5a2.5 2.5 0 0 1 0 5" /></svg>
+						<h2 class="h4 fw-bold mb-0">Get $10 Off Your First Order</h2>
+					</div>
+					<div class="card-body p-4">
+						<p class="text-muted small text-center">Plus early access to drops and subscriber-only sales.</p>
+						@@include('../../_includes/notifications.html')
+						<form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-newsletter-form]" data-v-vvveb-on="submit">
+							<input type="hidden" name="csrf" data-v-csrf>
+							<div class="mb-3">
+								<label class="form-label visually-hidden" for="subscribe-8-email">Email address</label>
+								<input type="email" id="subscribe-8-email" name="email" class="form-control form-control-lg text-center" placeholder="you@example.com" autocomplete="email" required>
+							</div>
+							<button type="submit" class="btn btn-primary btn-lg w-100">Claim my $10</button>
+						</form>
+						<p class="text-center small text-muted mt-3 mb-0">No spam, unsubscribe anytime.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

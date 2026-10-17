@@ -127,14 +127,14 @@
     <div class="modal-content shadow">
       <div class="modal-body p-0">
         
-        <form action="{$this.global.path}/search" method="get"> 
+        <form action="{$this.global.path}/search" method="get" toolautosubmit toolname="search_tool" tooldescription="Search the site">
 		  <input type="hidden" name="route" value="search"/>
 		  <div class="d-flex">
 			  <div class="input-group">
 				<input type="search" name="search" class="form-control border-0 p-3 px-4" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="input" data-url="{$this.global.path}/search"//>
 				<button class="btn btn-outline-primary border-0" type="submit" title="Search">
 				  <div class="la-flip-horizontal">
-					<i class="la la-search la-lg" aria-hidden="true"></i>
+					<svg width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /> <path d="M21 21l-6 -6" /></svg>
 				  </div>
 				</button>
 			  </div>

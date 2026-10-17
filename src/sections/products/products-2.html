@@ -1,0 +1,50 @@
+<section class="products-2 py-5" aria-label="products-2">
+	<div class="container">
+		<div class="row justify-content-center mb-5">
+			<div class="col-md-7 text-center">
+				<h2 class="display-6 fw-bold">Bestsellers</h2>
+				<p class="lead text-muted">Our most loved products this month.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container"
+		data-v-component-products="bestsellers"
+		data-v-limit="4"
+		data-v-variant_price="true"
+		data-v-image_size="medium"
+	>
+		<div class="row g-4">
+			@@for (var i = 0; i < 4; i++) {
+
+			<div class="col-12" data-aos="fade-up" data-v-product>
+				<div class="card shadow-sm">
+					<div class="row g-0 align-items-center">
+						<div class="col-md-3">
+							<a href="product/product.html" data-v-product-url>
+								<img src="demo/img/product.webp" loading="lazy" alt="Featured product" class="img-fluid rounded-start" data-v-size="thumb" data-v-if="prod.image" data-v-product-image>
+								<img src="/media/placeholder.svg" class="img-fluid rounded-start bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image">
+							</a>
+						</div>
+						<div class="col-md-6">
+							<div class="card-body">
+								<a href="product/product.html" class="text-body text-decoration-none" data-v-product-url>
+									<h3 class="h5 fw-bold" data-v-product-name>Product 8</h3>
+								</a>
+								<p class="text-muted small mb-0" data-v-product-excerpt>Short product description goes here.</p>
+							</div>
+						</div>
+						<div class="col-md-3 text-md-end">
+							<div class="card-body">
+								<p class="product-price fw-bold fs-5 mb-2" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>$100.00</p>
+								<a href="product/product.html" class="btn btn-primary" data-v-product-add_cart_url data-v-vvveb-action="addToCart" data-product_id="1">Add to cart</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			}
+		</div>
+	</div>
+</section>

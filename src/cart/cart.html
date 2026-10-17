@@ -34,7 +34,7 @@
 							<tr data-v-cart-product>
 								<td class="text-center cart-img">
 									<a href="#40" data-v-cart-product-url>
-										<img src="demo/img/product.webp" loading="lazy" alt="Product name" class="img-rounded" data-v-cart-product-image width=80 loading="lazy">
+										<img src="demo/img/product.webp" loading="lazy" alt="Product name" class="img-rounded" data-v-cart-product-image width=80>
 									</a>
 								</td>
 								<td class="text-start">
@@ -62,6 +62,12 @@
 										<span>Subscription plan</span>:
 										<span data-v-cart-product-subscription_name>Subscription plan</span>
 									</div>
+
+									<div class="total_weight option" data-v-if="product.total_weight > 0">
+										<span>Weight</span>:
+										<span data-v-cart-product-total_weight></span>
+										<span data-v-cart-weight_unit>kg</span> 
+									</div>
 								</td>
 								
 								<!-- <td class="text-start">product 11</td> -->
@@ -69,29 +75,29 @@
 									<div class="quantity">
 										<div class="input-group">
 											<a class="btn btn-minus btn-sm">
-												<i class="la la-minus"></i>
+												<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M5 12l14 0" /></svg>
 											</a>
 											<input name="quantity" value="1" size="1" min="1" class="form-control form-control-sm" type="number" data-v-cart-product-quantity>  
 											<a class="btn btn-plus btn-sm">
-												<i class="la la-plus"></i>
+												<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M12 5l0 14" /> <path d="M5 12l14 0" /></svg>
 											</a>
 										</div>
 									</div>
 									<a class="btn btn-sm btn-remove" data-v-cart-product-remove-url>
-										<i class="la la-times"></i>
+										<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg>
 										<!-- <span>Remove</span> -->
 									</a>
 									</a>
 								</td>
 								<!-- <td class="text-end price" data-v-cart-product-price>$123.20</td> -->
 								<td class="text-end total px-4">
-									<span  data-v-cart-product-total_tax_formatted>$246.40</span>
+									<span data-v-cart-product-total_tax_formatted>$246.40</span>
 								</td>
 							</tr>
 							<tr data-v-cart-product>
 								<td class="text-center cart-img">
 									<a href="#40" data-v-cart-product-url>
-										<img src="demo/img/product.webp" loading="lazy" alt="Product name" class="img-rounded" data-v-cart-product-image width=80 loading="lazy">
+										<img src="demo/img/product.webp" loading="lazy" alt="Product name" class="img-rounded" data-v-cart-product-image width=80>
 									</a>
 								</td>
 								<td class="text-start">
@@ -108,16 +114,16 @@
 									<div class="quantity">
 										<div class="input-group">
 											<a class="btn btn-minus btn-sm">
-												<i class="la la-minus"></i>
+												<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M5 12l14 0" /></svg>
 											</a>
 											<input name="quantity" value="1" size="1" min="1" class="form-control form-control-sm" type="number" data-v-cart-product-quantity>  
 											<a class="btn btn-plus btn-sm">
-												<i class="la la-plus"></i>
+												<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M12 5l0 14" /> <path d="M5 12l14 0" /></svg>
 											</a>
 										</div>
 									</div>
 									<a class="btn btn-remove" data-v-cart-product-remove-url>
-										<i class="la la-trash"></i>
+										<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M4 7l16 0" /> <path d="M10 11l0 6" /> <path d="M14 11l0 6" /> <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /> <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
 										<!-- <span>Remove</span> -->
 									</a>
 									</a>
@@ -136,14 +142,14 @@
 								</td>
 							</tr>
 						 </tbody>
-						 <tfooter>
+						 <tfoot>
 							<tr>
-							<td colspan="4" class="text-end border-top small text-muted">
+							<td colspan="4" class="text-end border-top small text-muted cart-weight">
 								<span data-v-cart-total_items>2</span> items 
 								<span data-v-cart-total_weight>2</span> <span data-v-cart-weight_unit>kg</span> 
 							</td>
 							</tr>
-						 </tfooter>
+						 </tfoot>
 				  </table>
 				  
 
@@ -212,7 +218,7 @@
 					@@include('_coupon.html')
 					
 					<div class="mx-2 mt-5 mb-2">
-						<a href="/checkout" class="btn btn-primary d-block" data-v-url="checkout/checkout/index">Checkout <i class="la la-arrow-right"></i></a>
+						<a href="/checkout" class="btn btn-primary d-block" data-v-url="checkout/checkout/index">Checkout <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M5 12l14 0" /> <path d="M13 18l6 -6" /> <path d="M13 6l6 6" /></svg></a>
 					</div>
 				</div>
 			</div>
@@ -223,20 +229,19 @@
 	  </div>
 
 		<div data-v-if-not="this.cart.total_items">
-				<div class="text-center py-5">
+				<div class="text-center bg-body-tertiary py-5 my-5 rounded">
 					
 					<div class="alert" role="alert">
 						<div>
-							<h1>Empty cart</h1>
+							<h2 class="mb-3"><svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-secondary"  aria-hidden="true"><path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" /> <path d="M9 11v-5a3 3 0 0 1 6 0v5" /></svg>  <span>Empty cart</span></h2>
 						</div>
 
 						
-						<div class="text-muted">
-							<i class="la la-lg la-shopping-cart"></i> 
+						<div class="text-muted lead">
 							No products to display in the cart!
 						</div>
 					</div>
-					<a href="/" class="btn btn-success">Continue shopping <i class="la la-arrow-right"></i></a>
+					<a href="/" class="btn btn-success">Continue shopping <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M5 12l14 0" /> <path d="M13 18l6 -6" /> <path d="M13 6l6 6" /></svg></a>
 				</div>
 		</div>
 					

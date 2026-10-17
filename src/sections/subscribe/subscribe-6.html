@@ -1,0 +1,45 @@
+<section class="subscribe-6 py-5" aria-label="subscribe-6">
+	<div class="container">
+		<div class="row align-items-center g-5">
+			<div class="col-lg-6">
+				<h2 class="display-6 fw-bold">One Email a Week, Zero Fluff</h2>
+				<p class="lead text-muted">Join 80,000 readers getting practical growth tactics.</p>
+				<ul class="list-unstyled mt-4">
+					<li class="d-flex mb-3">
+						<svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success me-3 flex-shrink-0"  aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /> <path d="M9 12l2 2l4 -4" /></svg>
+						<div><strong>Actionable, not inspirational</strong><div class="text-muted small">Every issue ends with one thing to implement today.</div></div>
+					</li>
+					<li class="d-flex mb-3">
+						<svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success me-3 flex-shrink-0"  aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /> <path d="M9 12l2 2l4 -4" /></svg>
+						<div><strong>Read in 4 minutes</strong><div class="text-muted small">Short enough for Monday coffee, useful all week.</div></div>
+					</li>
+					<li class="d-flex">
+						<svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-success me-3 flex-shrink-0"  aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /> <path d="M9 12l2 2l4 -4" /></svg>
+						<div><strong>Unsubscribe anytime</strong><div class="text-muted small">One click, no guilt trips, keep the past issues.</div></div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-6">
+				<div class="card shadow border-0" data-v-component-plugin-newsletter-form data-v-storage="database" data-v-name="contact-us-home">
+					<div class="card-body p-4 p-lg-5">
+						<h3 class="h4 fw-bold">Get the next issue Tuesday</h3>
+						<p class="text-muted small">Free forever, join 80,000+ subscribers.</p>
+						@@include('../../_includes/notifications.html')
+						<form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-newsletter-form]" data-v-vvveb-on="submit">
+							<input type="hidden" name="csrf" data-v-csrf>
+							<div class="mb-3">
+								<label class="form-label visually-hidden" for="subscribe-6-name">First name</label>
+								<input type="text" id="subscribe-6-name" name="first_name" class="form-control form-control-lg" placeholder="First name" autocomplete="given-name">
+							</div>
+							<div class="mb-3">
+								<label class="form-label visually-hidden" for="subscribe-6-email">Email address</label>
+								<input type="email" id="subscribe-6-email" name="email" class="form-control form-control-lg" placeholder="you@example.com" autocomplete="email" required>
+							</div>
+							<button type="submit" class="btn btn-primary btn-lg w-100">Subscribe free</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

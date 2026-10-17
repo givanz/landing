@@ -1,70 +1,70 @@
 <section title="contact-form-10" class="contact-form-10 border-top">
-  <div class="container">
+ <div class="container">
 	<div class="row my-5">
-	  <div class="col-12 col-md-6 col-lg-5">
+	 <div class="col-12 col-md-6 col-lg-5">
 		<h2 class="display-6 mb-1 fw-bold mb-4">Contact Us</h2>
 		<p>
-		  Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.
+		 Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.
 		</p>
 
 		<p>
-		  The html for sections blocks and components and this template are built using Bootstrap 5.
+		 The html for sections blocks and components and this template are built using Bootstrap 5.
 		</p>
 		
 		<div data-v-component-site>
 			<p class="mt-5">
-			  <b><i class="la la-envelope opacity-50"></i> Email:</b>
-			  <span data-v-if="site.contact-email">
+			 <b><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-50" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /> <path d="M3 7l9 6l9 -6" /></svg> Email:</b>
+			 <span data-v-if="site.contact-email">
 				<a href="mailto:contact@mysite.com" data-v-site-contact-email>
 					<span data-v-site-contact-email>contact@mysite.com</span>
 				</a>
-			  </span>
+			 </span>
 			</p>
-			<p class="">
-			  <b><i class="la la-phone opacity-50"></i> Phone:</b> 
-			  <a href="tel:5511112377" data-v-site-description-phone-number>
+			<p >
+			 <b><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-50" aria-hidden="true"><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg> Phone:</b> 
+			 <a href="tel:5511112377" data-v-site-description-phone-number>
 				<span data-v-site-description-phone-number>+55 (111) 123 777</span>
-			  </a>
+			 </a>
 			</p>
 		</div>
-	  </div>
+	 </div>
 
-	  <div class="col-12 col-md-6 ms-auto" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-home">
-	  
+	 <div class="col-12 col-md-6 ms-auto" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-home">
+	 
 		@@include('../../_includes/notifications.html', {type:"contact-us-home"})
 		
-		<div class="">
+		<div >
 		<form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
-  		  <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
-  		  <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>	
-  		  <input type="hidden" class="form-control" name="form-name" value="contact-us-home">
+ 		 <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
+ 		 <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>	
+ 		 <input type="hidden" class="form-control" name="form-name" value="contact-us-home">
 		
-		  <div class="row">
+		 <div class="row">
 			<div class="col">
-			  <input type="text" class="form-control" placeholder="First name" name="first_name" required>
+			 <input autocomplete="given-name" aria-label="First name" type="text" class="form-control" placeholder="First name" name="first_name" required>
 			</div>
 			<div class="col">
-			  <input type="text" class="form-control" placeholder="Last name" name="last_name" required>
+			 <input autocomplete="family-name" aria-label="Last name" type="text" class="form-control" placeholder="Last name" name="last_name" required>
 			</div>
-		  </div>
+		 </div>
 
-		  <div class="row mt-4">
+		 <div class="row mt-4">
 			<div class="col">
-			  <input type="email" class="form-control" placeholder="Email" name="email" required>
+			 <input autocomplete="email" aria-label="Email" type="email" class="form-control" placeholder="Email" name="email" required>
 			</div>
-		  </div>
+		 </div>
 
-		  <div class="row mt-4">
+		 <div class="row mt-4">
 			<div class="col">
-			  <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+			 <input aria-label="Subject" type="text" class="form-control" placeholder="Subject" name="subject" required>
 			</div>
-		  </div>
-		  <div class="row mt-4">
+		 </div>
+		 <div class="row mt-4">
 			<div class="col">
-			  <textarea class="form-control" name="message" rows="3" placeholder="How can we help?" required></textarea>
+			 <textarea aria-label="How can we help?" class="form-control" name="message" rows="3" placeholder="How can we help?" required></textarea>
 			</div>
-		  </div>
-	  
+		 </div>
+	 
 
 		 <!-- if these hidden inputs are filled then ignore, robots -->
 
@@ -74,10 +74,10 @@
 		 
 		 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">	
 		 
-	  
-		  <div class="row mt-4">
+	 
+		 <div class="row mt-4">
 			<div class="col">
-			  <button type="submit" class="btn btn-primary">
+			 <button type="submit" class="btn btn-primary">
 				<span class="loading d-none">
 					<span class="spinner-border spinner-border-sm align-middle" role="status" aria-hidden="true">
 					</span>
@@ -85,14 +85,14 @@
 				</span>
 
 				<span class="button-text">
-					<span>Submit</span><i class="la la-lg la-envelope opacity-50 ms-2"></i>
+					<span>Submit</span><svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-50 ms-2" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /> <path d="M3 7l9 6l9 -6" /></svg>
 				</span>
 				</button>
 			</div>
-		  </div>
+		 </div>
 		</form>
 		</div>
-	  </div>
+	 </div>
 	</div>
-  </div>
+ </div>
 </section>

@@ -3,22 +3,22 @@
     <div class="product-image">
         <a href="product/product.html" data-v-product-url>
 
-            <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image/>
+            <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb"  data-v-if="prod.image" data-v-product-image/>
 			<img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image"/>
 
             <!-- Hover Thumb -->
-            <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1/>
+            <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-product-image-1/>
         </a>
 
 
         <!-- Favourite -->
         <div class="product-favourite">
-			<a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url><span></span></a>
+			<a aria-label="Add to wishlist" href="product/product.html" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg><span></span></a>
 		</div>
 
         <!-- Compare -->
         <div class="product-compare">
-			<a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url><span></span></a>
+			<a aria-label="Add to compare" href="product/product.html" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 4l3 3l-3 3" /> <path d="M18 20l3 -3l-3 -3" /> <path d="M3 7h3a5 5 0 0 1 5 5a5 5 0 0 0 5 5h5" /> <path d="M21 7h-5a4.978 4.978 0 0 0 -3 1m-4 8a4.984 4.984 0 0 1 -3 1h-3" /></svg><span></span></a>
 		</div>
 		
 		<div class="badges">
@@ -63,7 +63,7 @@
                     </span>
 
                     <span class="button-text">
-						<i class="la la-lg la-shopping-bag"></i>
+						<svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" /> <path d="M9 11v-5a3 3 0 0 1 6 0v5" /></svg>
 						<span>Add to cart</span>
                     </span>
                     

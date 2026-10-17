@@ -1,0 +1,40 @@
+<section class="products-6 py-5 bg-body-tertiary overflow-hidden" aria-label="products-6">
+	<div class="container">
+		<div class="row align-items-end mb-4">
+			<div class="col-md-8">
+				<span class="badge text-bg-danger mb-2">Up to 50% off</span>
+				<h2 class="display-6 fw-bold mb-1">Clearance Finds</h2>
+				<p class="text-muted mb-0">Last pieces at final prices, when gone they are gone.</p>
+			</div>
+			<div class="col-md-4 text-md-end">
+				<a href="product/index.html" class="btn btn-outline-primary">Shop all deals</a>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="d-flex gap-3 overflow-auto pb-3 px-3" data-v-component-products="sale" data-v-limit="6" data-v-variant_price="true" data-v-image_size="medium">
+			@@for (var i = 0; i < 6; i++) {
+
+			<div class="card shadow-sm flex-shrink-0" style="width:240px;" data-v-product>
+				<div class="position-relative">
+					<a href="product/product.html" data-v-product-url>
+						<img src="demo/img/product.webp" loading="lazy" alt="Sale product" class="card-img-top" data-v-size="thumb" data-v-if="prod.image" data-v-product-image>
+						<img src="/media/placeholder.svg" class="card-img-top bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image">
+					</a>
+					<span class="badge text-bg-danger position-absolute top-0 start-0 m-2" data-v-if="prod.old_price > 0">-30%</span>
+				</div>
+				<div class="card-body p-3">
+					<a href="product/product.html" class="text-body text-decoration-none small fw-bold" data-v-product-url>
+						<span data-v-product-name>Product 8</span>
+					</a>
+					<p class="mb-0">
+						<span class="product-price text-danger fw-bold" data-v-if="prod.price > 0" data-v-product-price_tax_formatted>$100.00</span>
+						<s class="product-price old-price text-muted small" data-v-if="prod.old_price > 0" data-v-product-old_price_tax_formatted>$140.00</s>
+					</p>
+				</div>
+			</div>
+
+			}
+		</div>
+	</div>
+</section>
