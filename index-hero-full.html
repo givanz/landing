@@ -48,13 +48,12 @@
 
 
 <body class="home">
-  <nav class="navigation-3 clearfix fixed-top transparent" title="navigation-3" data-v-save-global="index.html,.navigation-3">
+  <nav aria-label="navigation-3" class="navigation-3 clearfix fixed-top transparent" title="navigation-3" data-v-save-global="index.html,.navigation-3">
     <div class="navbar navbar-expand-md navbar-dark">
 
       <div class="container">
 
         <div data-v-component-site>
-          <!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"*.*.*"}'><span class="visually-hidden">Logo</span> -->
           <a class="navbar-brand" href="/" data-v-site-url>
             <span class="visually-hidden">Logo</span>
             <img src="demo/img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
@@ -154,10 +153,9 @@
               <!-- User Login Info -->
               <div class="nav-item dropdown">
                 <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
-                  <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
-                  <!-- <i class="la la-lg la-user"></i> -->
-                  <svg width="18px" viewBox="0 0 24 24" fill="none">
-                    <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
                   </svg>
 
                   <span class="visually-hidden">User</span>
@@ -172,7 +170,11 @@
                       <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="login">
 
                         <div class="icon align-middle me-2">
-                          <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                          <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                            <path d="M12 9v4" />
+                            <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0" />
+                            <path d="M12 16h.01" />
+                          </svg>
                         </div>
 
                         <div class="flex-grow-1 align-self-center small">
@@ -186,15 +188,18 @@
 
                         <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
                           <span aria-hidden="true">
-                            <!-- <i class="la la-times"></i> -->
+                            <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                           </span>
                         </button>
                       </div>
 
-                      <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="login">
+                      <div class="alert alert-success d-flex alert-dismissable" role="alert" data-v-notification-success data-v-type="login">
 
                         <div class="icon align-middle me-2">
-                          <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                            <path d="M9 12l2 2l4 -4" />
+                          </svg>
                         </div>
 
                         <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
@@ -203,15 +208,19 @@
 
                         <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
                           <span aria-hidden="true">
-                            <!-- <i class="la la-times"></i> -->
+                            <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                           </span>
                         </button>
                       </div>
 
-                      <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="login">
+                      <div class="alert alert-primary d-flex alert-dismissable" role="alert" data-v-notification-info data-v-type="login">
 
                         <div class="icon align-middle me-2">
-                          <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+                          <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                            <path d="M12 9h.01" />
+                            <path d="M11 12h1v4h1" />
+                          </svg>
                         </div>
 
                         <div class="flex-grow-1 align-self-center" data-v-notification-text>
@@ -220,7 +229,7 @@
 
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                           <span aria-hidden="true">
-                            <!-- <i class="la la-times"></i> -->
+                            <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                           </span>
                         </button>
                       </div>
@@ -244,7 +253,11 @@
                             <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control label-over" placeholder=" " id="user-password" name="password" value="" aria-label="Password" required>
                             <label class="form-label" for="user-password">Password</label>
                             <button class="btn btn-sm px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'user-password')">
-                              <i class="la la-eye-slash"></i>
+                              <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M10.585 10.587a2 2 0 0 0 2.829 2.828" />
+                                <path d="M16.681 16.673a8.717 8.717 0 0 1 -4.681 1.327c-3.6 0 -6.6 -2 -9 -6c1.272 -2.12 2.712 -3.678 4.32 -4.674m2.86 -1.146a9.055 9.055 0 0 1 1.82 -.18c3.6 0 6.6 2 9 6c-.666 1.11 -1.379 2.067 -2.138 2.87" />
+                                <path d="M3 3l18 18" />
+                              </svg>
                             </button>
                           </div>
                         </div>
@@ -258,7 +271,11 @@
                           </span>
 
                           <span class="button-text">
-                            Login <i class="la la-arrow-right ms-2"></i>
+                            Login <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-2" aria-hidden="true">
+                              <path d="M5 12l14 0" />
+                              <path d="M13 18l6 -6" />
+                              <path d="M13 6l6 6" />
+                            </svg>
                           </span>
 
                         </button>
@@ -269,12 +286,12 @@
                         <!--
 		<a>
 			<span class="btn btn-secondary btn-sm">
-				  <i class="lab la-google la-lg"></i>
+				  <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M20.945 11a9 9 0 1 1 -3.284 -5.997l-2.655 2.392a5.5 5.5 0 1 0 2.119 6.605h-4.125v-3h7.945" /></svg>
 			</span>
 		</a>
 		<a>
 			<span class="btn btn-secondary btn-sm">
-			  <i class="lab la-facebook la-lg"></i>
+			  <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
 			</span>
 		</a> -->
                         <hr class="text-secondary my-3">
@@ -299,37 +316,59 @@
                         <ul class="m-3 list-unstyled">
                           <li>
                             <a href="user" data-v-url="user/index">
-                              <i class="la la-user la-lg text-muted m-1"></i>
+                              <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted m-1" aria-hidden="true">
+                                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                              </svg>
                               <span>My account</span>
                             </a>
                           </li>
                           <li>
                             <a href="user/comments" data-v-url="user/comments/index">
-                              <i class="la la-comment la-lg text-muted m-1"></i>
+                              <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted m-1" aria-hidden="true">
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12" />
+                              </svg>
                               <span>Comments</span>
                             </a>
                           </li>
                           <li>
                             <a href="user/orders" data-v-url="user/orders/index">
-                              <i class="la la-shopping-bag la-lg text-muted m-1"></i>
+                              <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted m-1" aria-hidden="true">
+                                <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" />
+                                <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                              </svg>
                               <span>Orders</span>
                             </a>
                           </li>
                           <li>
                             <a href="user/downloads" data-v-url="user/downloads/index">
-                              <i class="la la-hand-holding-heart la-lg text-muted m-1"></i>
+                              <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted m-1" aria-hidden="true">
+                                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                <path d="M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25" />
+                                <path d="M12.5 15.5l2 2" />
+                                <path d="M15 13l2 2" />
+                              </svg>
                               <span>Downloads</span>
                             </a>
                           </li>
                           <li>
                             <a href="user/wishlist" data-v-url="user/wishlist/index">
-                              <i class="la la-download la-lg text-muted m-1"></i>
+                              <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted m-1" aria-hidden="true">
+                                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                                <path d="M7 11l5 5l5 -5" />
+                                <path d="M12 4l0 12" />
+                              </svg>
                               <span>Wishlist</span>
                             </a>
                           </li>
                           <li>
                             <a href="user/profile" data-v-url="user/profile/index">
-                              <i class="la la-cogs la-lg text-muted m-1"></i>
+                              <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted m-1" aria-hidden="true">
+                                <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065" />
+                                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                              </svg>
                               <span>Profile</span>
                             </a>
                           </li>
@@ -347,7 +386,11 @@
                           </span>
 
                           <span class="button-text">
-                            <i class="la la-sign-out-alt la-lg m-1"></i>
+                            <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="m-1" aria-hidden="true">
+                              <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                              <path d="M9 12h12l-3 -3" />
+                              <path d="M18 15l3 -3" />
+                            </svg>
                             <span>Log out</span>
                             </a>
                           </span>
@@ -368,13 +411,14 @@
               <!-- Cart Area -->
               <div class="dropdown mini-cart" data-v-component-cart="offcanvas">
 
-                <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
+                <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" aria-controls="cart-offcanvas">
                   <!-- <img src="demo/img/bag.svg" width="20" alt> -->
                   <!--
-		<i class="la la-lg la-shopping-bag"></i><span class="visually-hidden">Cart</span>
+		<svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" /> <path d="M9 11v-5a3 3 0 0 1 6 0v5" /></svg><span class="visually-hidden">Cart</span>
 		-->
-                  <svg width="18px" viewBox="0 0 24 24" fill="none">
-                    <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" />
+                    <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
                   </svg>
 
                   <strong class="badge bg-primary" data-v-cart-total_items data-v-if="cart.total_items > 0"></strong>
@@ -400,7 +444,7 @@
 
                       <div class="dropdown-item" data-v-language>
                         <button class="btn" type="submit" value="eng" name="language" data-v-language-code>
-                          <img src="" loading="lazy" class="me-1" data-v-language-img>
+                          <img src="" loading="lazy" alt="" class="me-1" data-v-language-img>
                           <span data-v-language-name>English</span>
                         </button>
                       </div>
@@ -425,7 +469,10 @@
     </li>
     <li class="nav-item">
       <a id="color-theme-switch" class="nav-link px-1" role="button" title="Switch sidebar color theme">
-        <i class="la la-sun"></i>
+        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+          <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+        </svg>
       </a>
     </li>
     <!--
@@ -443,14 +490,14 @@
 					
 					<div data-v-language>
 						<button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
-							<img src="" loading="lazy" class="me-1" data-v-language-img>
+							<img src="" loading="lazy" alt="" class="me-1" data-v-language-img>
 							<span data-v-language-name>English</span>
 						</button>
 					</div>
 					
 					<div data-v-language>
 						<button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
-							<img src="" loading="lazy" class="me-1" data-v-language-img>
+							<img src="" loading="lazy" alt="" class="me-1" data-v-language-img>
 							<span data-v-language-name>Romanian</span>
 						</button>
 					</div>
@@ -505,8 +552,11 @@
 
 
     <button class="btn btn-outline-secondary btn-sm border-0 shadow-none" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
-      <div class="la-flip-horizontal">
-        <i class="la la-search la-lg" aria-hidden="true"></i>
+      <div>
+        <svg width="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+          <path d="M21 21l-6 -6" />
+        </svg>
       </div>
     </button>
 
@@ -519,7 +569,7 @@
 				<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
 				<button class="btn border-0" type="submit" title="Search">
 					<div class="la-flip-horizontal">
-						<i class="la la-search la-lg" aria-hidden="true"></i>
+						<svg width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /> <path d="M21 21l-6 -6" /></svg>
 					</div>
 				</button>
 			</div>			  
@@ -529,37 +579,6 @@
     </div>
 
 
-    <!--
-			  <div class="collapse navbar-collapse" id="navbar">
-				<ul class="navbar-nav ms-auto">
-				  <li class="nav-item">
-					<a class="nav-link" href="#features">Features <span class="sr-only">(current)</span></a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="https://themes.vvveb.com">Themes</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="https://plugins.vvveb.com">Plugins</a>
-				  </li>
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
-					<div class="dropdown-menu" aria-labelledby="dropdown01">
-					  <a class="dropdown-item" target="_blank"  href="https://github.com/givanz/VvvebJs/wiki">User Documentation</a>
-					  <a class="dropdown-item" target="_blank"  href="https://github.com/givanz/VvvebJs/wiki">Developer Documentation</a>
-					</div>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" target="_blank" href="https://github.com/givanz/VvvebJs">Github</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="contact.html">Contact</a>
-				  </li>
-				  <li class="nav-item active">
-					<a class="nav-link" href="https://vvveb.com/download.php">Download for free</a>
-				  </li>			  
-				</ul>
-			  </div>
-			  -->
     </div>
 
     </div>
@@ -567,13 +586,13 @@
   </nav>
 
 
-  <header class="hero-3" aria-label="hero-3">
+  <header class="hero-3 hero-3-full" aria-label="hero-3-full">
 
     <div class="container vh-100">
       <div>
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-lg-12">
-            <h1 class="heading mb-4 display-3" data-aos="fade-up" data-aos-delay="100">Next generation website builder</h1>
+            <h2 class="heading mb-4 display-3" data-aos="fade-up" data-aos-delay="100">Next generation website builder</h2>
             <div class="col-lg-8 mx-auto">
               <h2 class="h4 lh-base fw-normal" data-aos="fade-up" data-aos-delay="100">Powerful and easy to use drag and drop website builder for blogs, presentation or ecommerce stores.</h2>
             </div>
@@ -594,14 +613,14 @@
     <!--  
     <div class="separator bottom">
 		
-		<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" height="100" fill="var(--bs-body-bg)" preserveAspectRatio="none"><defs></defs><title>rough-edges-bottom</title><path d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)"/></svg>
+		<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" height="100" fill="var(--bs-body-bg)" preserveAspectRatio="none"><defs></defs><title>rough-edges-bottom</title><path d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)"/></svg>
 		
     </div>   
 -->
     <!--
    <div class="separator top">
 		
-		<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" height="200" preserveAspectRatio="none"><defs><style>.cls-1{fill:var(--bs-body-bg);}</style></defs><title>rough-edges-bottom</title><path class="cls-1" d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)"/></svg>
+		<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 41" width="100%" height="200" preserveAspectRatio="none"><defs><style>.cls-1{fill:var(--bs-body-bg);}</style></defs><title>rough-edges-bottom</title><path class="cls-1" d="M0,185l125-26,33,17,58-12s54,19,55,19,50-11,50-11l56,6,60-8,63,15v15H0Z" transform="translate(0 -159)"/></svg>
 		
     </div>
 -->
@@ -610,7 +629,7 @@
 
     <div class="background-container">
 
-      <img src="demo/img/hero-3.webp" alt="Hero background">
+      <img loading="lazy" decoding="async" src="demo/img/hero-3.webp" alt="Hero background">
 
     </div>
 
@@ -623,7 +642,7 @@
         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="feature" data-aos="fade-up" data-aos-delay="100">
             <div class="font-container text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64" color="#1064ea" fill="#1064ea">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64" color="#1064ea" fill="#1064ea">
                 <polyline points="336 176 225.2 304 176 255.8" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></polyline>
                 <path d="M463.1,112.37C373.68,96.33,336.71,84.45,256,48,175.29,84.45,138.32,96.33,48.9,112.37,32.7,369.13,240.58,457.79,256,464,271.42,457.79,479.3,369.13,463.1,112.37Z" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></path>
               </svg>
@@ -631,13 +650,13 @@
             <h3>
               Better Security
             </h3>
-            <p class="text-center">Vvveb is 100% safe against sql injections, a vulerability that affects most CMS.</p>
+            <p class="text-center">Vvveb is 100% safe against sql injections, a vulnerability that affects most CMS.</p>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="feature" data-aos="fade-up" data-aos-delay="200">
             <div class="font-container text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="64" height="64" color="#1064ea" fill="#1064ea">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="64" height="64" color="#1064ea" fill="#1064ea">
                 <path d="M419.1,337.45a3.94,3.94,0,0,0-6.1,0c-10.5,12.4-45,46.55-45,77.66,0,27,21.5,48.89,48,48.89h0c26.5,0,48-22,48-48.89C464,384,429.7,349.85,419.1,337.45Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px"></path>
                 <path d="M387,287.9,155.61,58.36a36,36,0,0,0-51,0l-5.15,5.15a36,36,0,0,0,0,51l52.89,52.89,57-57L56.33,263.2a28,28,0,0,0,.3,40l131.2,126a28.05,28.05,0,0,0,38.9-.1c37.8-36.6,118.3-114.5,126.7-122.9,5.8-5.8,18.2-7.1,28.7-7.1h.3A6.53,6.53,0,0,0,387,287.9Z" style="fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:32px"></path>
               </svg>
@@ -651,7 +670,7 @@
         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="feature" data-aos="fade-up" data-aos-delay="300">
             <div class="font-container text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icons" width="64" height="64" color="#1064ea" fill="#1064ea" stroke-width="28">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64" color="#1064ea" fill="#1064ea" stroke-width="28">
                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill-rule="evenodd" d="M80,176a16,16,0,0,0-16,16V408c0,30.24,25.76,56,56,56H392c30.24,0,56-24.51,56-54.75V192a16,16,0,0,0-16-16Z"></path>
                 <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" fill-rule="evenodd" d="M160,176V144a96,96,0,0,1,96-96h0a96,96,0,0,1,96,96v32"></path>
               </svg>
@@ -665,7 +684,7 @@
         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
           <div class="feature" data-aos="fade-up" data-aos-delay="400">
             <div class="font-container text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64" color="#1064ea" fill="#1064ea">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64" color="#1064ea" fill="#1064ea">
                 <path d="M80,464V68.14a8,8,0,0,1,4-6.9C91.81,56.66,112.92,48,160,48c64,0,145,48,192,48a199.53,199.53,0,0,0,77.23-15.77A2,2,0,0,1,432,82.08V301.44a4,4,0,0,1-2.39,3.65C421.37,308.7,392.33,320,352,320c-48,0-128-32-192-32s-80,16-80,16" style="fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"></path>
               </svg>
             </div>
@@ -685,9 +704,6 @@
       <div class="row wrap">
         <div class="col-md-6 align-self-center">
           <div class="max-box" data-aos="fade-right">
-            <!--
-                    <span class="badge  bg-success rounded-pill px-3">new</span>
-                    -->
             <h2 class="display-5 fw-semibold">Real time code editor</h2>
             <div class="mt-4">
               <p>Code editor with syntax highglighting that updates in real time.</p>
@@ -696,21 +712,24 @@
             </div>
             <a tile="Code editor features" href="/page/about" role="button">
               <span>Learn More</span>
-              <i class="la la-long-arrow-alt-right ms-1"></i>
+              <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1" aria-hidden="true">
+                <path d="M5 12l14 0" />
+                <path d="M15 16l4 -4" />
+                <path d="M15 8l4 4" />
+              </svg>
             </a>
           </div>
         </div>
         <div class="col-md-6">
-          <img src="demo/img/team-1.webp" alt="Macbook" loading="lazy" class="img-fluid shadow" data-aos="fade-left" />
+          <img src="demo/img/team-1.webp" alt="Team collaborating" loading="lazy" class="img-fluid shadow" data-aos="fade-left" />
         </div>
       </div>
       <div class="row g-5 wrap mt-2">
         <div class="col-md-6">
-          <img src="demo/img/team-2.webp" alt="App development" loading="lazy" class="img-fluid shadow" data-aos="fade-right" />
+          <img src="demo/img/team-2.webp" alt="Team at work" loading="lazy" class="img-fluid shadow" data-aos="fade-right" />
         </div>
         <div class="col-md-6 align-self-center">
           <div class="max-box ms-auto" data-aos="fade-left">
-            <!-- <span class="badge  bg-success rounded-pill px-3">on sale</span> -->
             <h2 class="display-5 fw-semibold">Drag and drop page builder</h2>
             <div class="mt-4">
               <p>Intuitive building with simple drag and drop for sections, components and blocks.</p>
@@ -718,7 +737,11 @@
             </div>
             <a title="Drag and drop" href="/page/about" role="button">
               <span>Learn More</span>
-              <i class="la la-long-arrow-alt-right ms-1"></i>
+              <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1" aria-hidden="true">
+                <path d="M5 12l14 0" />
+                <path d="M15 16l4 -4" />
+                <path d="M15 8l4 4" />
+              </svg>
             </a>
           </div>
         </div>
@@ -752,24 +775,33 @@
             <div class="product-image">
               <a href="product/product.html" data-v-product-url>
 
-                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-if="prod.image" data-v-product-image />
                 <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
-                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-product-image-1 />
               </a>
 
 
               <!-- Favourite -->
               <div class="product-favourite">
-                <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <a aria-label="Add to wishlist" href="product/product.html" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
 
               <!-- Compare -->
               <div class="product-compare">
-                <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <a aria-label="Add to compare" href="product/product.html" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 4l3 3l-3 3" />
+                    <path d="M18 20l3 -3l-3 -3" />
+                    <path d="M3 7h3a5 5 0 0 1 5 5a5 5 0 0 0 5 5h5" />
+                    <path d="M21 7h-5a4.978 4.978 0 0 0 -3 1m-4 8a4.984 4.984 0 0 1 -3 1h-3" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
@@ -816,7 +848,10 @@
                     </span>
 
                     <span class="button-text">
-                      <i class="la la-lg la-shopping-bag"></i>
+                      <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" />
+                        <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                      </svg>
                       <span>Add to cart</span>
                     </span>
 
@@ -839,24 +874,33 @@
             <div class="product-image">
               <a href="product/product.html" data-v-product-url>
 
-                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-if="prod.image" data-v-product-image />
                 <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
-                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-product-image-1 />
               </a>
 
 
               <!-- Favourite -->
               <div class="product-favourite">
-                <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <a aria-label="Add to wishlist" href="product/product.html" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
 
               <!-- Compare -->
               <div class="product-compare">
-                <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <a aria-label="Add to compare" href="product/product.html" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 4l3 3l-3 3" />
+                    <path d="M18 20l3 -3l-3 -3" />
+                    <path d="M3 7h3a5 5 0 0 1 5 5a5 5 0 0 0 5 5h5" />
+                    <path d="M21 7h-5a4.978 4.978 0 0 0 -3 1m-4 8a4.984 4.984 0 0 1 -3 1h-3" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
@@ -903,7 +947,10 @@
                     </span>
 
                     <span class="button-text">
-                      <i class="la la-lg la-shopping-bag"></i>
+                      <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" />
+                        <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                      </svg>
                       <span>Add to cart</span>
                     </span>
 
@@ -926,24 +973,33 @@
             <div class="product-image">
               <a href="product/product.html" data-v-product-url>
 
-                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-if="prod.image" data-v-product-image />
                 <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
-                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-product-image-1 />
               </a>
 
 
               <!-- Favourite -->
               <div class="product-favourite">
-                <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <a aria-label="Add to wishlist" href="product/product.html" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
 
               <!-- Compare -->
               <div class="product-compare">
-                <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <a aria-label="Add to compare" href="product/product.html" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 4l3 3l-3 3" />
+                    <path d="M18 20l3 -3l-3 -3" />
+                    <path d="M3 7h3a5 5 0 0 1 5 5a5 5 0 0 0 5 5h5" />
+                    <path d="M21 7h-5a4.978 4.978 0 0 0 -3 1m-4 8a4.984 4.984 0 0 1 -3 1h-3" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
@@ -990,7 +1046,10 @@
                     </span>
 
                     <span class="button-text">
-                      <i class="la la-lg la-shopping-bag"></i>
+                      <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" />
+                        <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                      </svg>
                       <span>Add to cart</span>
                     </span>
 
@@ -1013,24 +1072,33 @@
             <div class="product-image">
               <a href="product/product.html" data-v-product-url>
 
-                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-if="prod.image" data-v-product-image />
                 <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
-                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-product-image-1 />
               </a>
 
 
               <!-- Favourite -->
               <div class="product-favourite">
-                <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <a aria-label="Add to wishlist" href="product/product.html" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
 
               <!-- Compare -->
               <div class="product-compare">
-                <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <a aria-label="Add to compare" href="product/product.html" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 4l3 3l-3 3" />
+                    <path d="M18 20l3 -3l-3 -3" />
+                    <path d="M3 7h3a5 5 0 0 1 5 5a5 5 0 0 0 5 5h5" />
+                    <path d="M21 7h-5a4.978 4.978 0 0 0 -3 1m-4 8a4.984 4.984 0 0 1 -3 1h-3" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
@@ -1077,7 +1145,10 @@
                     </span>
 
                     <span class="button-text">
-                      <i class="la la-lg la-shopping-bag"></i>
+                      <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" />
+                        <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                      </svg>
                       <span>Add to cart</span>
                     </span>
 
@@ -1100,24 +1171,33 @@
             <div class="product-image">
               <a href="product/product.html" data-v-product-url>
 
-                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-if="prod.image" data-v-product-image />
                 <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
-                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-product-image-1 />
               </a>
 
 
               <!-- Favourite -->
               <div class="product-favourite">
-                <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <a aria-label="Add to wishlist" href="product/product.html" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
 
               <!-- Compare -->
               <div class="product-compare">
-                <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <a aria-label="Add to compare" href="product/product.html" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 4l3 3l-3 3" />
+                    <path d="M18 20l3 -3l-3 -3" />
+                    <path d="M3 7h3a5 5 0 0 1 5 5a5 5 0 0 0 5 5h5" />
+                    <path d="M21 7h-5a4.978 4.978 0 0 0 -3 1m-4 8a4.984 4.984 0 0 1 -3 1h-3" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
@@ -1164,7 +1244,10 @@
                     </span>
 
                     <span class="button-text">
-                      <i class="la la-lg la-shopping-bag"></i>
+                      <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" />
+                        <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                      </svg>
                       <span>Add to cart</span>
                     </span>
 
@@ -1187,24 +1270,33 @@
             <div class="product-image">
               <a href="product/product.html" data-v-product-url>
 
-                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-if="prod.image" data-v-product-image />
                 <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
-                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-product-image-1 />
               </a>
 
 
               <!-- Favourite -->
               <div class="product-favourite">
-                <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <a aria-label="Add to wishlist" href="product/product.html" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
 
               <!-- Compare -->
               <div class="product-compare">
-                <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <a aria-label="Add to compare" href="product/product.html" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 4l3 3l-3 3" />
+                    <path d="M18 20l3 -3l-3 -3" />
+                    <path d="M3 7h3a5 5 0 0 1 5 5a5 5 0 0 0 5 5h5" />
+                    <path d="M21 7h-5a4.978 4.978 0 0 0 -3 1m-4 8a4.984 4.984 0 0 1 -3 1h-3" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
@@ -1251,7 +1343,10 @@
                     </span>
 
                     <span class="button-text">
-                      <i class="la la-lg la-shopping-bag"></i>
+                      <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" />
+                        <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                      </svg>
                       <span>Add to cart</span>
                     </span>
 
@@ -1274,24 +1369,33 @@
             <div class="product-image">
               <a href="product/product.html" data-v-product-url>
 
-                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-if="prod.image" data-v-product-image />
                 <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
-                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-product-image-1 />
               </a>
 
 
               <!-- Favourite -->
               <div class="product-favourite">
-                <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <a aria-label="Add to wishlist" href="product/product.html" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
 
               <!-- Compare -->
               <div class="product-compare">
-                <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <a aria-label="Add to compare" href="product/product.html" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 4l3 3l-3 3" />
+                    <path d="M18 20l3 -3l-3 -3" />
+                    <path d="M3 7h3a5 5 0 0 1 5 5a5 5 0 0 0 5 5h5" />
+                    <path d="M21 7h-5a4.978 4.978 0 0 0 -3 1m-4 8a4.984 4.984 0 0 1 -3 1h-3" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
@@ -1338,7 +1442,10 @@
                     </span>
 
                     <span class="button-text">
-                      <i class="la la-lg la-shopping-bag"></i>
+                      <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" />
+                        <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                      </svg>
                       <span>Add to cart</span>
                     </span>
 
@@ -1361,24 +1468,33 @@
             <div class="product-image">
               <a href="product/product.html" data-v-product-url>
 
-                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" loading="lazy" data-v-if="prod.image" data-v-product-image />
+                <img src="demo/img/product.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-if="prod.image" data-v-product-image />
                 <img src="/media/placeholder.svg" class="bg-body-tertiary" loading="lazy" alt="" data-v-if-not="prod.image" />
 
                 <!-- Hover Thumb -->
-                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" loading="lazy" data-v-size="thumb" data-v-product-image-1 />
+                <img class="hover-img" src="demo/img/product-2.webp" loading="lazy" data-v-product-alt alt="" data-v-size="thumb" data-v-product-image-1 />
               </a>
 
 
               <!-- Favourite -->
               <div class="product-favourite">
-                <a href="product/product.html" class="la la-heart" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                <a aria-label="Add to wishlist" href="product/product.html" data-v-vvveb-action="addToWishlist" data-v-product-add_wishlist_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
 
               <!-- Compare -->
               <div class="product-compare">
-                <a href="product/product.html" class="la la-random" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                <a aria-label="Add to compare" href="product/product.html" data-v-vvveb-action="addToCompare" data-v-product-add_compare_url>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 4l3 3l-3 3" />
+                    <path d="M18 20l3 -3l-3 -3" />
+                    <path d="M3 7h3a5 5 0 0 1 5 5a5 5 0 0 0 5 5h5" />
+                    <path d="M21 7h-5a4.978 4.978 0 0 0 -3 1m-4 8a4.984 4.984 0 0 1 -3 1h-3" />
+                  </svg>
                   <span></span>
                 </a>
               </div>
@@ -1425,7 +1541,10 @@
                     </span>
 
                     <span class="button-text">
-                      <i class="la la-lg la-shopping-bag"></i>
+                      <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" />
+                        <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                      </svg>
                       <span>Add to cart</span>
                     </span>
 
@@ -1446,45 +1565,72 @@
   </section>
 
 
-  <section class="features-1 bg-alternate" aria-label="features-12">
+  <section class="features-12 bg-alternate" aria-label="features-12">
     <div class="container-fluid g-0">
       <div class="row g-0 wrap">
         <div class="col-md-6 align-self-center">
-          <div class="max-box" data-aos="fade-right">
-            <!--
-                    <span class="badge  bg-success rounded-pill px-3">new</span>
-                    -->
-            <h2 class="display-6 fw-semibold">Real time code editor</h2>
-            <div class="mt-4">
-              <p>Code editor with syntax highglighting that updates in real time.</p>
-              <p>Use any of the hundreds fonts from google fonts for your design.</p>
-              <p>Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
-            </div>
-            <a tile="Code editor features" href="/page/about" role="button">
-              <span>Learn More</span>
-              <i class="la la-long-arrow-alt-right ms-1"></i>
+          <div class="max-box ms-4 p-4 p-lg-5" data-aos="fade-right">
+            <span class="badge rounded-pill text-bg-primary-subtle text-primary mb-3">Code</span>
+            <h2 class="display-6 fw-bold">Real time code editor</h2>
+            <p class="lead text-muted mt-3">Code editor with syntax highlighting that updates in real time.</p>
+            <ul class="list-unstyled mt-4">
+              <li class="d-flex gap-2 mb-2">
+                <svg width="1.25em" height="1.25em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-success flex-shrink-0 mt-1" aria-hidden="true">
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                <span>Autocomplete for html, css and javascript.</span>
+              </li>
+              <li class="d-flex gap-2 mb-2">
+                <svg width="1.25em" height="1.25em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-success flex-shrink-0 mt-1" aria-hidden="true">
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                <span>Any of hundreds of Google Fonts for your design.</span>
+              </li>
+            </ul>
+            <a title="Code editor features" href="/page/about" role="button" class="btn btn-outline-primary mt-3">
+              <span>Learn more</span>
+              <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1" aria-hidden="true">
+                <path d="M5 12l14 0" />
+                <path d="M15 16l4 -4" />
+                <path d="M15 8l4 4" />
+              </svg>
             </a>
           </div>
         </div>
         <div class="col-md-6">
-          <img src="demo/img/team-1.webp" alt="Macbook" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
+          <img src="demo/img/team-1.webp" alt="Developer editing highlighted code in the live editor" loading="lazy" class="img-fluid w-100 h-100" style="object-fit:cover;min-height:22rem;" data-aos="fade-right">
         </div>
       </div>
       <div class="row g-0 wrap">
         <div class="col-md-6">
-          <img src="demo/img/team-2.webp" alt="App development" loading="lazy" class="img-fluid w-100" data-aos="fade-right" />
+          <img src="demo/img/team-2.webp" alt="Marketer dragging content blocks onto a page" loading="lazy" class="img-fluid w-100 h-100" style="object-fit:cover;min-height:22rem;" data-aos="fade-right">
         </div>
         <div class="col-md-6 align-self-center">
-          <div class="max-box ms-auto" data-aos="fade-left">
-            <!-- <span class="badge  bg-success rounded-pill px-3">on sale</span> -->
-            <h2 class="display-6 fw-semibold">Drag and drop page builder</h2>
-            <div class="mt-4">
-              <p>Intuitive building with simple drag and drop for sections, components and blocks.</p>
-              <p>The html for sections blocks and components and this template are built using Bootstrap.</p>
-            </div>
-            <a title="Drag and drop" href="/page/about" role="button">
-              <span>Learn More</span>
-              <i class="la la-long-arrow-alt-right ms-1"></i>
+          <div class="max-box ms-4 p-4 p-lg-5" data-aos="fade-left">
+            <span class="badge rounded-pill text-bg-primary-subtle text-primary mb-3">Build</span>
+            <h2 class="display-6 fw-bold">Drag and drop page builder</h2>
+            <p class="lead text-muted mt-3">Powerful and easy to use drag and drop builder for blogs, websites or ecommerce stores.</p>
+            <ul class="list-unstyled mt-4">
+              <li class="d-flex gap-2 mb-2">
+                <svg width="1.25em" height="1.25em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-success flex-shrink-0 mt-1" aria-hidden="true">
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                <span>Intuitive building with sections, components and blocks.</span>
+              </li>
+              <li class="d-flex gap-2 mb-2">
+                <svg width="1.25em" height="1.25em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-success flex-shrink-0 mt-1" aria-hidden="true">
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                <span>Built with Bootstrap 5, responsive from the first pixel.</span>
+              </li>
+            </ul>
+            <a title="Drag and drop" href="/page/about" role="button" class="btn btn-outline-primary mt-3">
+              <span>Learn more</span>
+              <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1" aria-hidden="true">
+                <path d="M5 12l14 0" />
+                <path d="M15 16l4 -4" />
+                <path d="M15 8l4 4" />
+              </svg>
             </a>
           </div>
         </div>
@@ -1508,18 +1654,18 @@
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="rounded border testimonial" data-aos="fade-up">
 
-            <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg aria-hidden="true" enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g>
                 <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
               </g>
             </svg>
 
-            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
+            <p class="mt-3">Vvveb cut our development time in half, we ship landing pages in hours now.</p>
 
-            <img src="demo/img/sections/team/1.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 shadow border rounded-3" loading="lazy">
+            <img src="demo/img/sections/team/1.webp" alt="Sarah Miller" width="100" height="100" class="img-fluid rounded-circle mb-3 shadow border rounded-3" loading="lazy">
 
-            <h3>John Doe</h3>
-            <span class="small text-uppercase text-muted">Company Inc.</span>
+            <h3>Sarah Miller</h3>
+            <span class="small text-uppercase text-muted">Bright Ideas Co.</span>
           </div>
         </div>
 
@@ -1527,18 +1673,18 @@
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="rounded border testimonial" data-aos="fade-up" data-aos-delay="100">
 
-            <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg aria-hidden="true" enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g>
                 <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
               </g>
             </svg>
 
 
-            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
-            <img src="demo/img/sections/team/2.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 shadow border rounded-3" loading="lazy">
+            <p class="mt-3">Our clients love the designs and we love how fast we can build them.</p>
+            <img src="demo/img/sections/team/2.webp" alt="David Chen" width="100" height="100" class="img-fluid rounded-circle mb-3 shadow border rounded-3" loading="lazy">
 
-            <h3>Jane Doe</h3>
-            <span class="small text-uppercase text-muted">Company Inc.</span>
+            <h3>David Chen</h3>
+            <span class="small text-uppercase text-muted">Northwind Traders</span>
           </div>
         </div>
 
@@ -1546,19 +1692,19 @@
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="rounded border testimonial" data-aos="fade-up" data-aos-delay="200">
 
-            <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg aria-hidden="true" enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g>
                 <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
               </g>
             </svg>
 
 
-            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
+            <p class="mt-3">Support is outstanding, every question answered the same day.</p>
 
-            <img src="demo/img/sections/team/3.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 shadow border rounded-3" loading="lazy">
+            <img src="demo/img/sections/team/3.webp" alt="Emma Wilson" width="100" height="100" class="img-fluid rounded-circle mb-3 shadow border rounded-3" loading="lazy">
 
-            <h3>John Doe</h3>
-            <span class="small text-uppercase text-muted">Company Inc.</span>
+            <h3>Emma Wilson</h3>
+            <span class="small text-uppercase text-muted">Acme Studio</span>
           </div>
         </div>
 
@@ -1566,19 +1712,19 @@
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="rounded border testimonial" data-aos="fade-up" data-aos-delay="300">
 
-            <svg enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg aria-hidden="true" enable-background="new 0 0 33 25" version="1.1" viewBox="0 0 33 25" width="42" height="42" fill="#0d6efd" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g>
                 <path d="M18.006,6.538c0-1.973,0.662-3.554,1.988-4.743c1.326-1.19,2.977-1.785,4.947-1.785   c2.517,0,4.488,0.799,5.916,2.397C32.285,4.004,33,6.13,33,8.782c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.061,4.743c-1.188,1.258-2.43,2.244-3.723,2.958c-1.291,0.714-2.413,1.239-3.365,1.581l-3.265-5.508   c1.36-0.545,2.517-1.412,3.468-2.602c0.953-1.19,1.496-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.724-1.786   C18.566,10.09,18.006,8.509,18.006,6.538z M0.359,6.538c0-1.973,0.663-3.554,1.989-4.743C3.674,0.604,5.324,0.01,7.295,0.01   c2.518,0,4.488,0.799,5.916,2.397c1.429,1.597,2.143,3.723,2.143,6.375c0,2.719-0.424,5.032-1.275,6.936   c-0.85,1.903-1.869,3.483-3.06,4.743c-1.188,1.258-2.431,2.244-3.724,2.958C6.004,24.133,4.883,24.658,3.93,25l-3.264-5.508   c1.36-0.545,2.516-1.412,3.467-2.602c0.953-1.19,1.497-2.465,1.633-3.824c-1.359,0-2.602-0.597-3.723-1.786   C0.92,10.09,0.359,8.509,0.359,6.538z"></path>
               </g>
             </svg>
 
 
-            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.</p>
+            <p class="mt-3">The cleanest page builder we have used, powerful yet simple to learn.</p>
 
-            <img src="demo/img/sections/team/4.webp" alt="team" width="100" class="img-fluid rounded-circle mb-3 shadow border rounded-3" loading="lazy">
+            <img src="demo/img/sections/team/4.webp" alt="Michael Brown" width="100" height="100" class="img-fluid rounded-circle mb-3 shadow border rounded-3" loading="lazy">
 
-            <h3>Jane Doe</h3>
-            <span class="small text-uppercase text-muted">Company Inc.</span>
+            <h3>Michael Brown</h3>
+            <span class="small text-uppercase text-muted">Blue Sky Ltd</span>
           </div>
         </div>
       </div>
@@ -1596,10 +1742,7 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <div class="price my-5-col shadow-sm border rounded-3 mx-3" data-aos="fade-up">
-            <!--
-                    <div class="img"><img src="demo/img/illustrations.co/104-dumbbell.svg" alt="104-dumbbell" loading="lazy" class="img-fluid" /></div>
-                    -->
+          <div class="price my-5 shadow-sm border rounded-3 mx-3" data-aos="fade-up">
             <div class="text-center p-5">
               <span class="excerpt d-block">Personal</span>
               <span class="price my-5">
@@ -1609,30 +1752,47 @@
               </span>
               <ul class="pricing-text mb-5">
                 <li>
-                  <span class="la la-check me-2"></span>5 Dog Walk
+                  <span class="me-2">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12l5 5l10 -10" />
+                    </svg>
+                  </span>5 Dog Walk
                 </li>
                 <li>
-                  <span class="la la-check me-2"></span>3 Vet Visit
+                  <span class="me-2">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12l5 5l10 -10" />
+                    </svg>
+                  </span>3 Vet Visit
                 </li>
                 <li>
-                  <span class="la la-check me-2"></span>3 Pet Spa
+                  <span class="me-2">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12l5 5l10 -10" />
+                    </svg>
+                  </span>3 Pet Spa
                 </li>
                 <li>
-                  <span class="la la-check me-2"></span>Free Support
+                  <span class="me-2">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12l5 5l10 -10" />
+                    </svg>
+                  </span>Free Support
                 </li>
               </ul>
               <a href="/page/pricing" class="btn btn-primary">
                 <span>Get Started</span>
-                <i class="la la-long-arrow-alt-right ms-1"></i>
+                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1" aria-hidden="true">
+                  <path d="M5 12l14 0" />
+                  <path d="M15 16l4 -4" />
+                  <path d="M15 8l4 4" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="price my-5-col shadow-sm border rounded-3 mx-3" data-aos="fade-up" data-aos-delay="200">
-            <!--
-                    <div class="img"><img src="demo/img/illustrations.co/107-healthy.svg" alt="107-healthy" loading="lazy" class="img-fluid" /></div>
-                    -->
+          <div class="price my-5 shadow-sm border rounded-3 mx-3" data-aos="fade-up" data-aos-delay="200">
             <div class="text-center p-5">
               <span class="excerpt d-block">Business</span>
               <span class="price my-5">
@@ -1642,30 +1802,47 @@
               </span>
               <ul class="pricing-text mb-5">
                 <li>
-                  <span class="la la-check me-2"></span>5 Dog Walk
+                  <span class="me-2">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12l5 5l10 -10" />
+                    </svg>
+                  </span>5 Dog Walk
                 </li>
                 <li>
-                  <span class="la la-check me-2"></span>3 Vet Visit
+                  <span class="me-2">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12l5 5l10 -10" />
+                    </svg>
+                  </span>3 Vet Visit
                 </li>
                 <li>
-                  <span class="la la-check me-2"></span>3 Pet Spa
+                  <span class="me-2">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12l5 5l10 -10" />
+                    </svg>
+                  </span>3 Pet Spa
                 </li>
                 <li>
-                  <span class="la la-check me-2"></span>Free Support
+                  <span class="me-2">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12l5 5l10 -10" />
+                    </svg>
+                  </span>Free Support
                 </li>
               </ul>
               <a href="/page/pricing" class="btn btn-primary">
                 <span>Get Started</span>
-                <i class="la la-long-arrow-alt-right ms-1"></i>
+                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1" aria-hidden="true">
+                  <path d="M5 12l14 0" />
+                  <path d="M15 16l4 -4" />
+                  <path d="M15 8l4 4" />
+                </svg>
               </a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="price my-5-col shadow-sm border rounded-3 mx-3" data-aos="fade-up" data-aos-delay="400">
-            <!--
-                    <div class="img"><img src="demo/img/illustrations.co/126-namaste-no-hand-shake.svg" alt="126-namaste-no-hand-shake" loading="lazy" class="img-fluid" /></div>
-                    -->
+          <div class="price my-5 shadow-sm border rounded-3 mx-3" data-aos="fade-up" data-aos-delay="400">
             <div class="text-center p-5">
               <span class="excerpt d-block">Ultimate</span>
               <span class="price my-5">
@@ -1675,21 +1852,41 @@
               </span>
               <ul class="pricing-text mb-5">
                 <li>
-                  <span class="la la-check me-2"></span>5 Dog Walk
+                  <span class="me-2">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12l5 5l10 -10" />
+                    </svg>
+                  </span>5 Dog Walk
                 </li>
                 <li>
-                  <span class="la la-check me-2"></span>3 Vet Visit
+                  <span class="me-2">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12l5 5l10 -10" />
+                    </svg>
+                  </span>3 Vet Visit
                 </li>
                 <li>
-                  <span class="la la-check me-2"></span>3 Pet Spa
+                  <span class="me-2">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12l5 5l10 -10" />
+                    </svg>
+                  </span>3 Pet Spa
                 </li>
                 <li>
-                  <span class="la la-check me-2"></span>Free Support
+                  <span class="me-2">
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12l5 5l10 -10" />
+                    </svg>
+                  </span>Free Support
                 </li>
               </ul>
               <a href="/page/pricing" class="btn btn-primary">
                 <span>Get Started</span>
-                <i class="la la-long-arrow-alt-right ms-1"></i>
+                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1" aria-hidden="true">
+                  <path d="M5 12l14 0" />
+                  <path d="M15 16l4 -4" />
+                  <path d="M15 8l4 4" />
+                </svg>
               </a>
             </div>
           </div>
@@ -1710,7 +1907,7 @@
       <div class="gallery masonry has-shadow hover-effect" data-component-gallery="portfolio-1" id="gallery-RANDOM_ID">
         <div class="item">
           <figure>
-            <img class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up">
+            <img loading="lazy" decoding="async" alt="Portfolio work 1" class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up">
             <figcaption></figcaption>
             <h3 class="title d-none"></h3>
             <div class="description d-none"></div>
@@ -1718,7 +1915,7 @@
         </div>
         <div class="item">
           <figure>
-            <img class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="100">
+            <img loading="lazy" decoding="async" alt="Portfolio work 2" class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="100">
             <figcaption></figcaption>
             <h3 class="title d-none"></h3>
             <div class="description d-none"></div>
@@ -1726,7 +1923,7 @@
         </div>
         <div class="item">
           <figure>
-            <img class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up" data-aos-delay="200">
+            <img loading="lazy" decoding="async" alt="Portfolio work 3" class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up" data-aos-delay="200">
             <figcaption></figcaption>
             <h3 class="title d-none"></h3>
             <div class="description d-none"></div>
@@ -1734,7 +1931,7 @@
         </div>
         <div class="item">
           <figure>
-            <img class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="300">
+            <img loading="lazy" decoding="async" alt="Portfolio work 4" class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="300">
             <figcaption></figcaption>
             <h3 class="title d-none"></h3>
             <div class="description d-none"></div>
@@ -1742,7 +1939,7 @@
         </div>
         <div class="item">
           <figure>
-            <img class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up" data-aos-delay="400">
+            <img loading="lazy" decoding="async" alt="Portfolio work 5" class="img-fluid" src="demo/img/team-1.webp" data-aos="fade-up" data-aos-delay="400">
             <figcaption></figcaption>
             <h3 class="title d-none"></h3>
             <div class="description d-none"></div>
@@ -1750,7 +1947,7 @@
         </div>
         <div class="item">
           <figure>
-            <img class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="500">
+            <img loading="lazy" decoding="async" alt="Portfolio work 6" class="img-fluid" src="demo/img/team-2.webp" data-aos="fade-up" data-aos-delay="500">
             <figcaption></figcaption>
             <h3 class="title d-none"></h3>
             <div class="description d-none"></div>
@@ -1765,7 +1962,7 @@
 
     <div class="container">
 
-      <div price my-5-col shadow-sm border rounded-3 mx-3>
+      <div class="price my-5 shadow-sm rounded-3 mx-3">
         <div class="col text-center">
           <h2 class="display-3 fw-bold text-body mb-3">Ready to take the next step?</h2>
           <p class="text-body h4 fw-normal">Our specialists are ready to work on your next awesome project</p>
@@ -1783,7 +1980,7 @@
 
     <div class="background-container parallax">
 
-      <img src="demo/img/hero-3.webp" alt="Hero background">
+      <img loading="lazy" decoding="async" src="demo/img/hero-3.webp" alt="Hero background">
 
     </div>
 
@@ -1814,14 +2011,14 @@
 
             <article class="card post h-100 shadow-sm border">
               <div class="card-img-top" data-v-if="post.image">
-                <img src="demo/img/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+                <img src="demo/img/video-1.webp" alt="Post cover image" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
               </div>
               <!-- Post Title -->
               <a data-v-post-url>
                 <div class="card-body p-4">
                   <div class="post-title card-title">
                     <h3 class="h4" data-v-post-name>
-                      Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada
+                      How to launch your online store in a weekend
                     </h3>
                   </div>
 
@@ -1831,7 +2028,10 @@
                     <li class="post-author meta-wrapper">
                       <span class="meta-icon">
                         <span class="screen-reader-text">Post author</span>
-                        <i class="la la-user"></i>
+                        <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                          <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        </svg>
                       </span>
                       <span class="meta-text">
                         By <a href="content/post.html" data-v-post-author-url>
@@ -1844,7 +2044,14 @@
                       <span class="meta-icon">
                         <span class="screen-reader-text">Post date</span>
 
-                        <i class="la la-calendar"></i>
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12" />
+                          <path d="M16 3v4" />
+                          <path d="M8 3v4" />
+                          <path d="M4 11h16" />
+                          <path d="M11 15h1" />
+                          <path d="M12 15v3" />
+                        </svg>
                       </span>
                       <span class="meta-text">
                         <a href="content/post.html" data-v-post-url>
@@ -1856,7 +2063,7 @@
                     <!--
 						<li class="post-comment-link meta-wrapper">
 							<span class="meta-icon">
-								<i class="la la-comment"></i>
+								<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M8 9h8" /> <path d="M8 13h6" /> <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12" /></svg>
 							</span>
 							<span class="meta-text">
 								<a href="#comments" data-v-post-comments-url><span data-v-post-comment_text>0 Comments</span></a>
@@ -1865,10 +2072,12 @@
 						-->
                   </ul>
 
-                  <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
+                  <p class="card-text text-muted" data-v-post-excerpt>Learn practical tips to grow traffic, engage readers and turn visits into sales.</p>
                   <button title="{$post.name}" role="button" class="btn btn-link px-0">
                     <span>Read more</span>
-                    <i class="la la-angle-right"></i>
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M9 6l6 6l-6 6" />
+                    </svg>
                   </button>
                 </div>
               </a>
@@ -1883,14 +2092,14 @@
 
             <article class="card post h-100 shadow-sm border">
               <div class="card-img-top" data-v-if="post.image">
-                <img src="demo/img/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+                <img src="demo/img/video-1.webp" alt="Post cover image" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
               </div>
               <!-- Post Title -->
               <a data-v-post-url>
                 <div class="card-body p-4">
                   <div class="post-title card-title">
                     <h3 class="h4" data-v-post-name>
-                      Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada
+                      How to launch your online store in a weekend
                     </h3>
                   </div>
 
@@ -1900,7 +2109,10 @@
                     <li class="post-author meta-wrapper">
                       <span class="meta-icon">
                         <span class="screen-reader-text">Post author</span>
-                        <i class="la la-user"></i>
+                        <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                          <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        </svg>
                       </span>
                       <span class="meta-text">
                         By <a href="content/post.html" data-v-post-author-url>
@@ -1913,7 +2125,14 @@
                       <span class="meta-icon">
                         <span class="screen-reader-text">Post date</span>
 
-                        <i class="la la-calendar"></i>
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12" />
+                          <path d="M16 3v4" />
+                          <path d="M8 3v4" />
+                          <path d="M4 11h16" />
+                          <path d="M11 15h1" />
+                          <path d="M12 15v3" />
+                        </svg>
                       </span>
                       <span class="meta-text">
                         <a href="content/post.html" data-v-post-url>
@@ -1925,7 +2144,7 @@
                     <!--
 						<li class="post-comment-link meta-wrapper">
 							<span class="meta-icon">
-								<i class="la la-comment"></i>
+								<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M8 9h8" /> <path d="M8 13h6" /> <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12" /></svg>
 							</span>
 							<span class="meta-text">
 								<a href="#comments" data-v-post-comments-url><span data-v-post-comment_text>0 Comments</span></a>
@@ -1934,10 +2153,12 @@
 						-->
                   </ul>
 
-                  <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
+                  <p class="card-text text-muted" data-v-post-excerpt>Learn practical tips to grow traffic, engage readers and turn visits into sales.</p>
                   <button title="{$post.name}" role="button" class="btn btn-link px-0">
                     <span>Read more</span>
-                    <i class="la la-angle-right"></i>
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M9 6l6 6l-6 6" />
+                    </svg>
                   </button>
                 </div>
               </a>
@@ -1952,14 +2173,14 @@
 
             <article class="card post h-100 shadow-sm border">
               <div class="card-img-top" data-v-if="post.image">
-                <img src="demo/img/video-1.webp" alt="" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
+                <img src="demo/img/video-1.webp" alt="Post cover image" class="w-100" loading="lazy" data-v-size="thumb" data-v-post-image>
               </div>
               <!-- Post Title -->
               <a data-v-post-url>
                 <div class="card-body p-4">
                   <div class="post-title card-title">
                     <h3 class="h4" data-v-post-name>
-                      Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada
+                      How to launch your online store in a weekend
                     </h3>
                   </div>
 
@@ -1969,7 +2190,10 @@
                     <li class="post-author meta-wrapper">
                       <span class="meta-icon">
                         <span class="screen-reader-text">Post author</span>
-                        <i class="la la-user"></i>
+                        <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                          <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        </svg>
                       </span>
                       <span class="meta-text">
                         By <a href="content/post.html" data-v-post-author-url>
@@ -1982,7 +2206,14 @@
                       <span class="meta-icon">
                         <span class="screen-reader-text">Post date</span>
 
-                        <i class="la la-calendar"></i>
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12" />
+                          <path d="M16 3v4" />
+                          <path d="M8 3v4" />
+                          <path d="M4 11h16" />
+                          <path d="M11 15h1" />
+                          <path d="M12 15v3" />
+                        </svg>
                       </span>
                       <span class="meta-text">
                         <a href="content/post.html" data-v-post-url>
@@ -1994,7 +2225,7 @@
                     <!--
 						<li class="post-comment-link meta-wrapper">
 							<span class="meta-icon">
-								<i class="la la-comment"></i>
+								<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M8 9h8" /> <path d="M8 13h6" /> <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12" /></svg>
 							</span>
 							<span class="meta-text">
 								<a href="#comments" data-v-post-comments-url><span data-v-post-comment_text>0 Comments</span></a>
@@ -2003,10 +2234,12 @@
 						-->
                   </ul>
 
-                  <p class="card-text text-muted" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
+                  <p class="card-text text-muted" data-v-post-excerpt>Learn practical tips to grow traffic, engage readers and turn visits into sales.</p>
                   <button title="{$post.name}" role="button" class="btn btn-link px-0">
                     <span>Read more</span>
-                    <i class="la la-angle-right"></i>
+                    <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M9 6l6 6l-6 6" />
+                    </svg>
                   </button>
                 </div>
               </a>
@@ -2039,7 +2272,10 @@
           <div data-v-component-site>
             <p class="mt-5">
               <b>
-                <i class="la la-envelope opacity-50"></i> Email:
+                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-50" aria-hidden="true">
+                  <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                  <path d="M3 7l9 6l9 -6" />
+                </svg> Email:
               </b>
               <span data-v-if="site.contact-email">
                 <a href="mailto:contact@mysite.com" data-v-site-contact-email>
@@ -2047,9 +2283,11 @@
                 </a>
               </span>
             </p>
-            <p class="">
+            <p>
               <b>
-                <i class="la la-phone opacity-50"></i> Phone:
+                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-50" aria-hidden="true">
+                  <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                </svg> Phone:
               </b>
               <a href="tel:5511112377" data-v-site-description-phone-number>
                 <span data-v-site-description-phone-number>+55 (111) 123 777</span>
@@ -2065,7 +2303,11 @@
             <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="contact-us-home">
 
               <div class="icon align-middle me-2">
-                <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                  <path d="M12 9v4" />
+                  <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0" />
+                  <path d="M12 16h.01" />
+                </svg>
               </div>
 
               <div class="flex-grow-1 align-self-center small">
@@ -2079,15 +2321,18 @@
 
               <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">
-                  <!-- <i class="la la-times"></i> -->
+                  <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                 </span>
               </button>
             </div>
 
-            <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="contact-us-home">
+            <div class="alert alert-success d-flex alert-dismissable" role="alert" data-v-notification-success data-v-type="contact-us-home">
 
               <div class="icon align-middle me-2">
-                <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M9 12l2 2l4 -4" />
+                </svg>
               </div>
 
               <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
@@ -2096,15 +2341,19 @@
 
               <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">
-                  <!-- <i class="la la-times"></i> -->
+                  <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                 </span>
               </button>
             </div>
 
-            <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="contact-us-home">
+            <div class="alert alert-primary d-flex alert-dismissable" role="alert" data-v-notification-info data-v-type="contact-us-home">
 
               <div class="icon align-middle me-2">
-                <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+                <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                  <path d="M12 9h.01" />
+                  <path d="M11 12h1v4h1" />
+                </svg>
               </div>
 
               <div class="flex-grow-1 align-self-center" data-v-notification-text>
@@ -2113,14 +2362,14 @@
 
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">
-                  <!-- <i class="la la-times"></i> -->
+                  <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                 </span>
               </button>
             </div>
 
           </div>
 
-          <div class="">
+          <div>
             <form action="" method="post" data-v-vvveb-action="submit" data-selector="[data-v-component-plugin-contact-form-form]" data-v-vvveb-on="submit">
               <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">
               <input type="hidden" class="form-control" placeholder="Email" name="csrf" data-v-csrf>
@@ -2128,27 +2377,27 @@
 
               <div class="row">
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="First name" name="first_name" required>
+                  <input autocomplete="given-name" aria-label="First name" type="text" class="form-control" placeholder="First name" name="first_name" required>
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Last name" name="last_name" required>
-                </div>
-              </div>
-
-              <div class="row mt-4">
-                <div class="col">
-                  <input type="email" class="form-control" placeholder="Email" name="email" required>
+                  <input autocomplete="family-name" aria-label="Last name" type="text" class="form-control" placeholder="Last name" name="last_name" required>
                 </div>
               </div>
 
               <div class="row mt-4">
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+                  <input autocomplete="email" aria-label="Email" type="email" class="form-control" placeholder="Email" name="email" required>
+                </div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="col">
+                  <input aria-label="Subject" type="text" class="form-control" placeholder="Subject" name="subject" required>
                 </div>
               </div>
               <div class="row mt-4">
                 <div class="col">
-                  <textarea class="form-control" name="message" rows="3" placeholder="How can we help?" required></textarea>
+                  <textarea aria-label="How can we help?" class="form-control" name="message" rows="3" placeholder="How can we help?" required></textarea>
                 </div>
               </div>
 
@@ -2173,7 +2422,10 @@
 
                     <span class="button-text">
                       <span>Submit</span>
-                      <i class="la la-lg la-envelope opacity-50 ms-2"></i>
+                      <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-50 ms-2" aria-hidden="true">
+                        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                        <path d="M3 7l9 6l9 -6" />
+                      </svg>
                     </span>
                   </button>
                 </div>
@@ -2258,10 +2510,10 @@
           <div class="h6" data-v-menu-item-name>Contact</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
-              <a href="" href="contact.html">Contact us</a>
-              <a href="" href="portfolio.html">Portfolio</a>
-              <a href="" href="about.html">About us</a>
-              <a href="" href="user/return-form.html">Return form</a>
+              <a href="contact.html" data-v-menu-item-url>Contact us</a>
+              <a href="portfolio.html" data-v-menu-item-url>Portfolio</a>
+              <a href="about.html" data-v-menu-item-url>About us</a>
+              <a href="user/return-form.html" data-v-menu-item-url>Return form</a>
             </div>
           </nav>
         </div>
@@ -2270,10 +2522,10 @@
           <div class="h6" data-v-menu-item-name>My account</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
-              <a href="" href="user/order-tracking.html">Order tracking</a>
-              <a href="" href="user/wishlist.html">Wishlist</a>
-              <a href="" href="user/orders.html">Orders</a>
-              <a href="" href="cart/compare.html">Compare</a>
+              <a href="user/order-tracking.html" data-v-menu-item-url>Order tracking</a>
+              <a href="user/wishlist.html" data-v-menu-item-url>Wishlist</a>
+              <a href="user/orders.html" data-v-menu-item-url>Orders</a>
+              <a href="cart/compare.html" data-v-menu-item-url>Compare</a>
             </div>
           </nav>
         </div>
@@ -2284,7 +2536,7 @@
       <!--
 		<div class="row justify-content-end">
 			<div class="col-md-3 text-muted small mt-5">
-				&copy; <span data-v-global-current_year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
+				&copy; <span data-v-global-current_year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" rel="noopener" target="_blank">Vvveb</a>	
 			</div>
 		</div>
 		-->
@@ -2301,7 +2553,7 @@
           <div class="text-muted">
             &copy; <span data-v-global-current_year>2025</span>
             <span data-v-global-site.description.title>Vvveb</span>. <span>Powered by</span>
-            <a href="https://vvveb.com" class="btn-link text-muted" target="_blank">Vvveb</a>
+            <a href="https://vvveb.com" class="btn-link text-muted" rel="noopener" target="_blank">Vvveb</a>
           </div>
         </div>
       </div>
@@ -2337,9 +2589,10 @@
               <div class="input-group">
                 <input type="search" name="search" class="form-control border-0 p-3 px-4" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="input" data-url="{$this.global.path}/search" />
                 <button class="btn btn-outline-primary border-0" type="submit" title="Search">
-                  <div class="la-flip-horizontal">
-                    <i class="la la-search la-lg" aria-hidden="true"></i>
-                  </div>
+                  <svg width="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -2386,7 +2639,10 @@
                 </a>
 
                 <span data-v-cart-product-quantity>1</span>
-                <i class="la la-times text-muted"></i>
+                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted" aria-hidden="true">
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                </svg>
                 <span data-v-cart-product-price_tax_formatted>$123.20</span>
 
                 <div class="option" data-v-if="product.option">
@@ -2411,7 +2667,10 @@
               </td>
               <td class="text-end">
                 <a class="btn btn-remove btn-sm" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
-                  <i class="la la-times"></i>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                  </svg>
                 </a>
               </td>
             </tr>
@@ -2427,14 +2686,20 @@
                 </a>
 
                 <span data-v-cart-product-quantity>1</span>
-                <i class="la la-times text-muted"></i>
+                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted" aria-hidden="true">
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                </svg>
                 <span data-v-cart-product-price_tax_formatted>$123.20</span>
 
 
               </td>
               <td class="text-end">
                 <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
-                  <i class="la la-times"></i>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                  </svg>
                 </a>
               </td>
             </tr>
@@ -2443,7 +2708,10 @@
                 <div class="bg-body-tertiary p-4 mt-2 d-flex">
                   <div class="text-center opacity-75 pe-4">
                     <!-- <img src="demo/img/bag.svg" width="20" alt> -->
-                    <i class="la la-2x la-shopping-bag text-secondary"></i>
+                    <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-secondary" aria-hidden="true">
+                      <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" />
+                      <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                    </svg>
                   </div>
                   <div class="">
                     <h6 class="my-2 p-0">Empty cart</h6>
@@ -2502,14 +2770,23 @@
       <div class="row mt-2 g-2 px-3 pb-2" data-v-if="cart.total_items">
         <div class="col-6">
           <a href="" class="btn btn-light btn-sm border w-100" data-v-url="cart/cart/index" data-url>
-            <i class="la la-shopping-cart la-lg"></i>
+            <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M17 17h-11v-14h-2" />
+              <path d="M6 5l14 1l-1 7h-13" />
+            </svg>
             <span>View cart</span>
           </a>
         </div>
         <div class="col-6">
           <a href="" class="btn btn-primary btn-sm w-100" data-v-url="checkout/checkout/index">
             <span>Checkout</span>
-            <i class="la la-arrow-right la-lg"></i>
+            <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12l14 0" />
+              <path d="M13 18l6 -6" />
+              <path d="M13 6l6 6" />
+            </svg>
           </a>
         </div>
       </div>
@@ -2544,7 +2821,9 @@
 
   <script src="js/aos.js"></script>
   <script>
-	AOS.init();
+	AOS.init({
+		once: true // animate sections a single time instead of on every scroll pass
+	});
 </script>
 
   <script id="cart-js" src="/js/app/cart.js"></script>

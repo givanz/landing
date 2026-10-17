@@ -52,12 +52,11 @@
 
 <body class="download">
 
-  <nav class="navigation-1 clearfix" data-v-save-global="index.html,.navigation-1">
+  <nav aria-label="navigation-1" class="navigation-1 clearfix" data-v-save-global="index.html,.navigation-1">
     <div class="navbar navbar-expand-md">
 
       <div class="container">
         <div data-v-component-site>
-          <!-- <a class="navbar-brand" href="/" data-url data-v-url-params='{"host":"*.*.*"}'><span class="visually-hidden">Logo</span> -->
           <a class="navbar-brand" href="/" data-v-site-url>
             <span class="visually-hidden">Logo</span>
             <img src="demo/img/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
@@ -156,10 +155,9 @@
               <!-- User Login Info -->
               <div class="nav-item dropdown">
                 <a class="dropdown-toggle nav-link " href role="button" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false" data-v-url="user/index">
-                  <!-- <img src="demo/img/user.svg" loading="lazy" width="20" alt> -->
-                  <!-- <i class="la la-lg la-user"></i> -->
-                  <svg width="18px" viewBox="0 0 24 24" fill="none">
-                    <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
                   </svg>
 
                   <span class="visually-hidden">User</span>
@@ -174,7 +172,11 @@
                       <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="login">
 
                         <div class="icon align-middle me-2">
-                          <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                          <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                            <path d="M12 9v4" />
+                            <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0" />
+                            <path d="M12 16h.01" />
+                          </svg>
                         </div>
 
                         <div class="flex-grow-1 align-self-center small">
@@ -188,15 +190,18 @@
 
                         <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
                           <span aria-hidden="true">
-                            <!-- <i class="la la-times"></i> -->
+                            <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                           </span>
                         </button>
                       </div>
 
-                      <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="login">
+                      <div class="alert alert-success d-flex alert-dismissable" role="alert" data-v-notification-success data-v-type="login">
 
                         <div class="icon align-middle me-2">
-                          <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                            <path d="M9 12l2 2l4 -4" />
+                          </svg>
                         </div>
 
                         <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
@@ -205,15 +210,19 @@
 
                         <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
                           <span aria-hidden="true">
-                            <!-- <i class="la la-times"></i> -->
+                            <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                           </span>
                         </button>
                       </div>
 
-                      <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="login">
+                      <div class="alert alert-primary d-flex alert-dismissable" role="alert" data-v-notification-info data-v-type="login">
 
                         <div class="icon align-middle me-2">
-                          <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+                          <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                            <path d="M12 9h.01" />
+                            <path d="M11 12h1v4h1" />
+                          </svg>
                         </div>
 
                         <div class="flex-grow-1 align-self-center" data-v-notification-text>
@@ -222,7 +231,7 @@
 
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                           <span aria-hidden="true">
-                            <!-- <i class="la la-times"></i> -->
+                            <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                           </span>
                         </button>
                       </div>
@@ -246,7 +255,11 @@
                             <input type="password" minlength="4" autocorrect="off" autocomplete="current-password" class="form-control label-over" placeholder=" " id="user-password" name="password" value="" aria-label="Password" required>
                             <label class="form-label" for="user-password">Password</label>
                             <button class="btn btn-sm px-3 border border-start-0" type="button" onclick="togglePasswordInput(this, 'user-password')">
-                              <i class="la la-eye-slash"></i>
+                              <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M10.585 10.587a2 2 0 0 0 2.829 2.828" />
+                                <path d="M16.681 16.673a8.717 8.717 0 0 1 -4.681 1.327c-3.6 0 -6.6 -2 -9 -6c1.272 -2.12 2.712 -3.678 4.32 -4.674m2.86 -1.146a9.055 9.055 0 0 1 1.82 -.18c3.6 0 6.6 2 9 6c-.666 1.11 -1.379 2.067 -2.138 2.87" />
+                                <path d="M3 3l18 18" />
+                              </svg>
                             </button>
                           </div>
                         </div>
@@ -260,7 +273,11 @@
                           </span>
 
                           <span class="button-text">
-                            Login <i class="la la-arrow-right ms-2"></i>
+                            Login <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-2" aria-hidden="true">
+                              <path d="M5 12l14 0" />
+                              <path d="M13 18l6 -6" />
+                              <path d="M13 6l6 6" />
+                            </svg>
                           </span>
 
                         </button>
@@ -271,12 +288,12 @@
                         <!--
 		<a>
 			<span class="btn btn-secondary btn-sm">
-				  <i class="lab la-google la-lg"></i>
+				  <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M20.945 11a9 9 0 1 1 -3.284 -5.997l-2.655 2.392a5.5 5.5 0 1 0 2.119 6.605h-4.125v-3h7.945" /></svg>
 			</span>
 		</a>
 		<a>
 			<span class="btn btn-secondary btn-sm">
-			  <i class="lab la-facebook la-lg"></i>
+			  <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
 			</span>
 		</a> -->
                         <hr class="text-secondary my-3">
@@ -301,37 +318,59 @@
                         <ul class="m-3 list-unstyled">
                           <li>
                             <a href="user" data-v-url="user/index">
-                              <i class="la la-user la-lg text-muted m-1"></i>
+                              <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted m-1" aria-hidden="true">
+                                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                              </svg>
                               <span>My account</span>
                             </a>
                           </li>
                           <li>
                             <a href="user/comments" data-v-url="user/comments/index">
-                              <i class="la la-comment la-lg text-muted m-1"></i>
+                              <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted m-1" aria-hidden="true">
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12" />
+                              </svg>
                               <span>Comments</span>
                             </a>
                           </li>
                           <li>
                             <a href="user/orders" data-v-url="user/orders/index">
-                              <i class="la la-shopping-bag la-lg text-muted m-1"></i>
+                              <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted m-1" aria-hidden="true">
+                                <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" />
+                                <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                              </svg>
                               <span>Orders</span>
                             </a>
                           </li>
                           <li>
                             <a href="user/downloads" data-v-url="user/downloads/index">
-                              <i class="la la-hand-holding-heart la-lg text-muted m-1"></i>
+                              <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted m-1" aria-hidden="true">
+                                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                <path d="M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25" />
+                                <path d="M12.5 15.5l2 2" />
+                                <path d="M15 13l2 2" />
+                              </svg>
                               <span>Downloads</span>
                             </a>
                           </li>
                           <li>
                             <a href="user/wishlist" data-v-url="user/wishlist/index">
-                              <i class="la la-download la-lg text-muted m-1"></i>
+                              <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted m-1" aria-hidden="true">
+                                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                                <path d="M7 11l5 5l5 -5" />
+                                <path d="M12 4l0 12" />
+                              </svg>
                               <span>Wishlist</span>
                             </a>
                           </li>
                           <li>
                             <a href="user/profile" data-v-url="user/profile/index">
-                              <i class="la la-cogs la-lg text-muted m-1"></i>
+                              <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted m-1" aria-hidden="true">
+                                <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065" />
+                                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                              </svg>
                               <span>Profile</span>
                             </a>
                           </li>
@@ -349,7 +388,11 @@
                           </span>
 
                           <span class="button-text">
-                            <i class="la la-sign-out-alt la-lg m-1"></i>
+                            <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="m-1" aria-hidden="true">
+                              <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                              <path d="M9 12h12l-3 -3" />
+                              <path d="M18 15l3 -3" />
+                            </svg>
                             <span>Log out</span>
                             </a>
                           </span>
@@ -370,13 +413,14 @@
               <!-- Cart Area -->
               <div class="dropdown mini-cart" data-v-component-cart="offcanvas">
 
-                <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" role="button" aria-controls="cart-offcanvas">
+                <a class="dropdown-toggle cart-info nav-link" role="button" id="cart-dropdown" data-bs-toggle="offcanvas" href="#cart-offcanvas" aria-controls="cart-offcanvas">
                   <!-- <img src="demo/img/bag.svg" width="20" alt> -->
                   <!--
-		<i class="la la-lg la-shopping-bag"></i><span class="visually-hidden">Cart</span>
+		<svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" /> <path d="M9 11v-5a3 3 0 0 1 6 0v5" /></svg><span class="visually-hidden">Cart</span>
 		-->
-                  <svg width="18px" viewBox="0 0 24 24" fill="none">
-                    <path d="M15.9996 8C15.9996 9.06087 15.5782 10.0783 14.828 10.8284C14.0779 11.5786 13.0605 12 11.9996 12C10.9387 12 9.92131 11.5786 9.17116 10.8284C8.42102 10.0783 7.99959 9.06087 7.99959 8M3.63281 7.40138L2.93281 15.8014C2.78243 17.6059 2.70724 18.5082 3.01227 19.2042C3.28027 19.8157 3.74462 20.3204 4.33177 20.6382C5.00006 21 5.90545 21 7.71623 21H16.283C18.0937 21 18.9991 21 19.6674 20.6382C20.2546 20.3204 20.7189 19.8157 20.9869 19.2042C21.2919 18.5082 21.2167 17.6059 21.0664 15.8014L20.3664 7.40138C20.237 5.84875 20.1723 5.07243 19.8285 4.48486C19.5257 3.96744 19.0748 3.5526 18.5341 3.29385C17.92 3 17.141 3 15.583 3L8.41623 3C6.85821 3 6.07921 3 5.4651 3.29384C4.92433 3.5526 4.47349 3.96744 4.17071 4.48486C3.82689 5.07243 3.76219 5.84875 3.63281 7.40138Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" />
+                    <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
                   </svg>
 
                   <strong class="badge bg-primary" data-v-cart-total_items data-v-if="cart.total_items > 0"></strong>
@@ -402,7 +446,7 @@
 
                       <div class="dropdown-item" data-v-language>
                         <button class="btn" type="submit" value="eng" name="language" data-v-language-code>
-                          <img src="" loading="lazy" class="me-1" data-v-language-img>
+                          <img src="" loading="lazy" alt="" class="me-1" data-v-language-img>
                           <span data-v-language-name>English</span>
                         </button>
                       </div>
@@ -427,7 +471,10 @@
     </li>
     <li class="nav-item">
       <a id="color-theme-switch" class="nav-link px-1" role="button" title="Switch sidebar color theme">
-        <i class="la la-sun"></i>
+        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+          <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+        </svg>
       </a>
     </li>
     <!--
@@ -445,14 +492,14 @@
 					
 					<div data-v-language>
 						<button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
-							<img src="" loading="lazy" class="me-1" data-v-language-img>
+							<img src="" loading="lazy" alt="" class="me-1" data-v-language-img>
 							<span data-v-language-name>English</span>
 						</button>
 					</div>
 					
 					<div data-v-language>
 						<button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
-							<img src="" loading="lazy" class="me-1" data-v-language-img>
+							<img src="" loading="lazy" alt="" class="me-1" data-v-language-img>
 							<span data-v-language-name>Romanian</span>
 						</button>
 					</div>
@@ -507,8 +554,11 @@
 
 
     <button class="btn btn-outline-secondary btn-sm border-0 shadow-none" type="submit" title="Search" data-bs-toggle="modal" data-bs-target="#searchModal">
-      <div class="la-flip-horizontal">
-        <i class="la la-search la-lg" aria-hidden="true"></i>
+      <div>
+        <svg width="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+          <path d="M21 21l-6 -6" />
+        </svg>
       </div>
     </button>
 
@@ -521,7 +571,7 @@
 				<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
 				<button class="btn border-0" type="submit" title="Search">
 					<div class="la-flip-horizontal">
-						<i class="la la-search la-lg" aria-hidden="true"></i>
+						<svg width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /> <path d="M21 21l-6 -6" /></svg>
 					</div>
 				</button>
 			</div>			  
@@ -676,7 +726,11 @@
                 <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="pro">
 
                   <div class="icon align-middle me-2">
-                    <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                    <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                      <path d="M12 9v4" />
+                      <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0" />
+                      <path d="M12 16h.01" />
+                    </svg>
                   </div>
 
                   <div class="flex-grow-1 align-self-center small">
@@ -690,15 +744,18 @@
 
                   <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">
-                      <!-- <i class="la la-times"></i> -->
+                      <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                     </span>
                   </button>
                 </div>
 
-                <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="pro">
+                <div class="alert alert-success d-flex alert-dismissable" role="alert" data-v-notification-success data-v-type="pro">
 
                   <div class="icon align-middle me-2">
-                    <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                      <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                      <path d="M9 12l2 2l4 -4" />
+                    </svg>
                   </div>
 
                   <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
@@ -707,15 +764,19 @@
 
                   <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">
-                      <!-- <i class="la la-times"></i> -->
+                      <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                     </span>
                   </button>
                 </div>
 
-                <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="pro">
+                <div class="alert alert-primary d-flex alert-dismissable" role="alert" data-v-notification-info data-v-type="pro">
 
                   <div class="icon align-middle me-2">
-                    <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+                    <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                      <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                      <path d="M12 9h.01" />
+                      <path d="M11 12h1v4h1" />
+                    </svg>
                   </div>
 
                   <div class="flex-grow-1 align-self-center" data-v-notification-text>
@@ -724,7 +785,7 @@
 
                   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">
-                      <!-- <i class="la la-times"></i> -->
+                      <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                     </span>
                   </button>
                 </div>
@@ -747,7 +808,7 @@
                     </span>
 
                     <span class="button-text">
-                      <span>Notify me</span><!-- <i class="la la-lg la-envelope opacity-50 ms-2"></i> -->
+                      <span>Notify me</span><!-- <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-50 ms-2"  aria-hidden="true"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /> <path d="M3 7l9 6l9 -6" /></svg> -->
                     </span>
 
                   </button>
@@ -831,7 +892,11 @@
                 <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error data-v-type="enterprise">
 
                   <div class="icon align-middle me-2">
-                    <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+                    <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                      <path d="M12 9v4" />
+                      <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0" />
+                      <path d="M12 16h.01" />
+                    </svg>
                   </div>
 
                   <div class="flex-grow-1 align-self-center small">
@@ -845,15 +910,18 @@
 
                   <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">
-                      <!-- <i class="la la-times"></i> -->
+                      <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                     </span>
                   </button>
                 </div>
 
-                <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success data-v-type="enterprise">
+                <div class="alert alert-success d-flex alert-dismissable" role="alert" data-v-notification-success data-v-type="enterprise">
 
                   <div class="icon align-middle me-2">
-                    <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                      <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                      <path d="M9 12l2 2l4 -4" />
+                    </svg>
                   </div>
 
                   <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
@@ -862,15 +930,19 @@
 
                   <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">
-                      <!-- <i class="la la-times"></i> -->
+                      <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                     </span>
                   </button>
                 </div>
 
-                <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info data-v-type="enterprise">
+                <div class="alert alert-primary d-flex alert-dismissable" role="alert" data-v-notification-info data-v-type="enterprise">
 
                   <div class="icon align-middle me-2">
-                    <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+                    <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="align-middle lh-1" aria-hidden="true">
+                      <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                      <path d="M12 9h.01" />
+                      <path d="M11 12h1v4h1" />
+                    </svg>
                   </div>
 
                   <div class="flex-grow-1 align-self-center" data-v-notification-text>
@@ -879,7 +951,7 @@
 
                   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">
-                      <!-- <i class="la la-times"></i> -->
+                      <!-- <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M18 6l-12 12" /> <path d="M6 6l12 12" /></svg> -->
                     </span>
                   </button>
                 </div>
@@ -902,7 +974,7 @@
                     </span>
 
                     <span class="button-text">
-                      <span>Notify me</span><!-- <i class="la la-lg la-envelope opacity-50 ms-2"></i> -->
+                      <span>Notify me</span><!-- <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-50 ms-2"  aria-hidden="true"><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /> <path d="M3 7l9 6l9 -6" /></svg> -->
                     </span>
 
                   </button>
@@ -1029,10 +1101,10 @@
           <div class="h6" data-v-menu-item-name>Contact</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
-              <a href="" href="contact.html">Contact us</a>
-              <a href="" href="portfolio.html">Portfolio</a>
-              <a href="" href="about.html">About us</a>
-              <a href="" href="user/return-form.html">Return form</a>
+              <a href="contact.html" data-v-menu-item-url>Contact us</a>
+              <a href="portfolio.html" data-v-menu-item-url>Portfolio</a>
+              <a href="about.html" data-v-menu-item-url>About us</a>
+              <a href="user/return-form.html" data-v-menu-item-url>Return form</a>
             </div>
           </nav>
         </div>
@@ -1041,10 +1113,10 @@
           <div class="h6" data-v-menu-item-name>My account</div>
           <nav data-v-menu-item-recursive>
             <div data-v-menu-item data-v-if="category.children == 0">
-              <a href="" href="user/order-tracking.html">Order tracking</a>
-              <a href="" href="user/wishlist.html">Wishlist</a>
-              <a href="" href="user/orders.html">Orders</a>
-              <a href="" href="cart/compare.html">Compare</a>
+              <a href="user/order-tracking.html" data-v-menu-item-url>Order tracking</a>
+              <a href="user/wishlist.html" data-v-menu-item-url>Wishlist</a>
+              <a href="user/orders.html" data-v-menu-item-url>Orders</a>
+              <a href="cart/compare.html" data-v-menu-item-url>Compare</a>
             </div>
           </nav>
         </div>
@@ -1055,7 +1127,7 @@
       <!--
 		<div class="row justify-content-end">
 			<div class="col-md-3 text-muted small mt-5">
-				&copy; <span data-v-global-current_year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" target="_blank">Vvveb</a>	
+				&copy; <span data-v-global-current_year>2025</span> <span data-v-sitename>Vvveb</span>. Powered by <a href="https://vvveb.com" rel="noopener" target="_blank">Vvveb</a>	
 			</div>
 		</div>
 		-->
@@ -1072,7 +1144,7 @@
           <div class="text-muted">
             &copy; <span data-v-global-current_year>2025</span>
             <span data-v-global-site.description.title>Vvveb</span>. <span>Powered by</span>
-            <a href="https://vvveb.com" class="btn-link text-muted" target="_blank">Vvveb</a>
+            <a href="https://vvveb.com" class="btn-link text-muted" rel="noopener" target="_blank">Vvveb</a>
           </div>
         </div>
       </div>
@@ -1108,9 +1180,10 @@
               <div class="input-group">
                 <input type="search" name="search" class="form-control border-0 p-3 px-4" id="headerSearch" placeholder="Start typing to search" data-v-vvveb-action="search" data-selector=".search-results" data-v-vvveb-on="input" data-url="{$this.global.path}/search" />
                 <button class="btn btn-outline-primary border-0" type="submit" title="Search">
-                  <div class="la-flip-horizontal">
-                    <i class="la la-search la-lg" aria-hidden="true"></i>
-                  </div>
+                  <svg width="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -1157,7 +1230,10 @@
                 </a>
 
                 <span data-v-cart-product-quantity>1</span>
-                <i class="la la-times text-muted"></i>
+                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted" aria-hidden="true">
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                </svg>
                 <span data-v-cart-product-price_tax_formatted>$123.20</span>
 
                 <div class="option" data-v-if="product.option">
@@ -1182,7 +1258,10 @@
               </td>
               <td class="text-end">
                 <a class="btn btn-remove btn-sm" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
-                  <i class="la la-times"></i>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                  </svg>
                 </a>
               </td>
             </tr>
@@ -1198,14 +1277,20 @@
                 </a>
 
                 <span data-v-cart-product-quantity>1</span>
-                <i class="la la-times text-muted"></i>
+                <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted" aria-hidden="true">
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                </svg>
                 <span data-v-cart-product-price_tax_formatted>$123.20</span>
 
 
               </td>
               <td class="text-end">
                 <a class="btn btn-outline-secondary btn-sm border-0" data-v-vvveb-action="removeFromCart" data-v-cart-product-remove-url>
-                  <i class="la la-times"></i>
+                  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                  </svg>
                 </a>
               </td>
             </tr>
@@ -1214,7 +1299,10 @@
                 <div class="bg-body-tertiary p-4 mt-2 d-flex">
                   <div class="text-center opacity-75 pe-4">
                     <!-- <img src="demo/img/bag.svg" width="20" alt> -->
-                    <i class="la la-2x la-shopping-bag text-secondary"></i>
+                    <svg width="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-secondary" aria-hidden="true">
+                      <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304" />
+                      <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+                    </svg>
                   </div>
                   <div class="">
                     <h6 class="my-2 p-0">Empty cart</h6>
@@ -1273,14 +1361,23 @@
       <div class="row mt-2 g-2 px-3 pb-2" data-v-if="cart.total_items">
         <div class="col-6">
           <a href="" class="btn btn-light btn-sm border w-100" data-v-url="cart/cart/index" data-url>
-            <i class="la la-shopping-cart la-lg"></i>
+            <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M17 17h-11v-14h-2" />
+              <path d="M6 5l14 1l-1 7h-13" />
+            </svg>
             <span>View cart</span>
           </a>
         </div>
         <div class="col-6">
           <a href="" class="btn btn-primary btn-sm w-100" data-v-url="checkout/checkout/index">
             <span>Checkout</span>
-            <i class="la la-arrow-right la-lg"></i>
+            <svg width="1.33em" height="1.33em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12l14 0" />
+              <path d="M13 18l6 -6" />
+              <path d="M13 6l6 6" />
+            </svg>
           </a>
         </div>
       </div>
@@ -1315,7 +1412,9 @@
 
   <script src="js/aos.js"></script>
   <script>
-	AOS.init();
+	AOS.init({
+		once: true // animate sections a single time instead of on every scroll pass
+	});
 </script>
 
   <script id="cart-js" src="/js/app/cart.js"></script>
