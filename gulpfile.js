@@ -2,66 +2,50 @@
 npm run gulp watch
 
 //generate sections
-npm run gulp sections 
+npm run gulp sections
 
 //generate blocks
 npm run gulp blocks
 
 //take screenshots for all sections
-npm run gulp screenshots 
+npm run gulp screenshots
 
 //take screenshots for all blocks
 npm run gulp screenshots-blocks
 
-//take screenshots for specified section groups
-npm run gulp screenshots -hero -features 
-*/ 
+//take screenshots for all styles
+npm run gulp screenshots-styles
+
+//take screenshots for specified section groups only
+npx gulp screenshots -hero -features
+*/
+"use strict";
 
 const gulp = require('gulp');
 const fileinclude = require('gulp-file-include');
-//const sass = require('gulp-sass')(require('sass'));
-const sass = require('gulp-sass')(require('node-sass'));
+const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
-const { formatHTML } = require('gulp-format-html');
-//const gutil = require('gulp-util');
-const rename = require("gulp-rename");
-const imageResize = require('gulp-image-resize');
-const through2 = require( 'through2' );    
-const connect = require('gulp-connect');
-const puppeteer = require('puppeteer');
-const fs = require('fs')
+const formatHTML = require('gulp-format-html');
+const fs = require('fs');
 const path = require('path');
-let baseHref = '';
-let blockPrefix = "landing";
-let themeName = "landing";
+const { screenshots, sections, styles, connect, disconnect } = require('./vvveb.js');
 
-//get command line parameters after some specified parameter
+// single-dash cli tokens select section/block/style groups, e.g. `npx gulp screenshots -hero`
+// (via npm: `npm run gulp -- screenshots -map`). `--group X` works too.
 function parameters() {
-	return process.argv.slice(3);
+	const argv = process.argv.slice(2);
+	const groups = [];
+	for (let i = 0; i < argv.length; i++) {
+		if (argv[i] === '--group' && argv[i + 1]) {
+			groups.push(argv[++i].replace(/^-+/, ''));
+		} else if (/^-[^-][a-z0-9-]*$/i.test(argv[i])) {
+			groups.push(argv[i].replace(/^-+/, ''));
+		}
+	}
+	return groups;
 }
 
-const touch = () => through2.obj( function( file, enc, cb ) {
-    if ( file.stat ) {
-        file.stat.atime = file.stat.mtime = file.stat.ctime = new Date();
-    }
-    cb( null, file );
-});
-
-
-console.log( process.env.npm_config_path);
-let dir = process.env.npm_config_path;
-if (dir) {
-	console.log('Starting directory: ' + process.cwd());
-	try {
-	  process.chdir(dir);
-	  console.log('New directory: ' + process.cwd());
-	}
-	catch (err) {
-	  console.log('chdir: ' + err);
-	}
-}
-
-themeName = path.basename(process.cwd());
+const sassSources = ['./scss/*.scss', './scss/**/*.scss', '!**/_*/**'];
 
 gulp.task('fileinclude', function() {
   return gulp.src(['./src/*.html', './src/**/*.html', '!**/-*/**', '!**/_*/**'])
@@ -70,291 +54,71 @@ gulp.task('fileinclude', function() {
       basepath: '@file'
     }))
     .pipe(formatHTML())
-    .pipe( touch() )
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('sass', function() {
-  return gulp.src(['./scss/*.scss', './scss/**/*.scss', '!**/_*/**'])
+function compileSass(options) {
+  return gulp.src(sassSources)
     .pipe(sassGlob())
-    .pipe(sass())
+    .pipe(sass(options).on('error', sass.logError))
     .pipe(gulp.dest('./css'));
+}
+
+gulp.task('sass', function() {
+  return compileSass();
+});
+
+// minified production build (overwrites ./css, run before release)
+gulp.task('sass-prod', function() {
+  return compileSass({ outputStyle: 'compressed' });
 });
 
 
 gulp.task('watch', function () {
     gulp.watch(['./src/*.html', './src/**/*.html'], gulp.series('fileinclude'));
-    gulp.watch(['./scss/*.scss', './scss/**/*.scss', './scss/**/**/*.scss'], gulp.series('sass'));
+    gulp.watch(['./scss/*.scss', './scss/**/*.scss'], gulp.series('sass'));
 });
 
-var current_section = "posts";
-async function screenshots(type = "sections", dirs = []) {
-	let sectionsDir = path.resolve("./" + type);
-	let screenshotDir = path.resolve("./screenshots/" + type + "/");
-	let styleCss = path.resolve("./css/style.bundle.css");
-	let selector = "body > section";
-	let sections = [];
-	let baseDir = path.resolve(".");
-
-	if (!dirs.length) {
-		dirs = fs.readdirSync(sectionsDir).map(fileName => {
-		  let filePath = `${sectionsDir}/${fileName}`;
-		  let stat = fs.statSync(filePath)
-
-			if (stat.isDirectory()) {
-				let files = fs.readdirSync(filePath).map(sectionFile => {
-					//if (filePath.indexOf(current_section) > 0) 
-					{
-						sections.push(`${filePath}/${sectionFile}`);
-					}
-					
-				});
+// remove screenshot working files (*-screenshot.html); full-size shots are
+// removed by the screenshots task itself once their thumbnail exists
+gulp.task('clean', function (done) {
+	function walk(dir) {
+		for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+			const full = path.join(dir, entry.name);
+			if (entry.isDirectory()) {
+				walk(full);
+			} else if (entry.name.endsWith('-screenshot.html')) {
+				fs.unlinkSync(full);
 			}
-				
-		});	 	
+		}
 	}
-
-	const browser = await puppeteer.launch({
-		args: [
-		  '--start-maximized'
-		],
-		headless: true,
-		//slowMo: 250,
-		//devtools: true, 
-	});
-	const page = await browser.newPage();
-	//await page.setRequestInterception(true);
-	await page.setViewport({
-		width: 1500,
-		height: 800,
-		//deviceScaleFactor: 2
-	});
-
-	page.on('console', (msg) => console.log('PAGE LOG:', msg.text));
-
-	await page.evaluate(() => console.log(`url is ${location.href}`));
-	/*
-	page.on('request', (request) => {
-	if (request.resourceType() === 'image') request.abort();
-	else request.continue();
-	});
-	*/ 
-
-	let tempFiles = [];
-	
-	for (i in sections) {
-		section = sections[i];
-		screenshot = section.replace(sectionsDir, screenshotDir).replace('.html', '.webp');
-		tempFiles.push(screenshot);
-		sectionScreenshot = section.replace('.html', '-screenshot.html');;
-		tempFiles.push(sectionScreenshot);
-		
-		//gutil.log(`Start screenshot for '${gutil.colors.cyan(section)}' to '${gutil.colors.magenta(screenshot)}'`);
-		console.log(`Start screenshot for '${section}' to '${screenshot}'`);
-		
-		folderName = path.dirname(screenshot);
-		if (!fs.existsSync(folderName)) {
-			fs.mkdirSync(folderName)
-		}			
-
-		let content = fs.readFileSync(section,'utf8');
-		let html = `<html data-vvvebjs-editor><head><base href="../../"><link href="/css/style.bundle.css" rel="stylesheet"><link href="/css/screenshots.css" rel="stylesheet"><style>[data-reveal], [data-section] > * {
-    opacity: 1;
-    transform: translate(0);
-}</style></head><body>${content}</body></html>`;
-		fs.writeFileSync(sectionScreenshot, html);
-		
-		//await page.setContent(html, {"waitUntil":"networkidle0"});
-
-		url = "http://127.0.0.1:8008" + sectionScreenshot.replace(baseDir, '');
-		/*	
-		await Promise.all([ page.goto(url, { waitUntil: "load", timeout: 10000 }).catch(e => {
-		  if (e.message.includes('net::ERR_ABORTED')) { console.log('PAGE LOG:', e.message) }
-		}), page.waitForNavigation() ]);
-		*/ 
-		
-		await page.goto(url, { waitUntil: "load", timeout: 10000 }).catch(e => {
-		  console.log('PAGE LOG:', e.message);
-		  //if (e.message.includes('net::ERR_ABORTED')) { console.log('PAGE LOG:', e.message) }
-		});
-		//await page.goto("file://" + section);
-		/*
-		await page.addStyleTag({url: `file://${styleCss}`})
-		const result = await page.evaluate((baseHref) => {
-			let head = document.querySelector('head');
-			let base = document.createElement("base");
-			base.href= `file://${baseHref}/`;
-			head.append(base);
-		}, baseHref);
-		*/
-		//await page.waitForNavigation();
-		
-		const element = await page.$$("body > div, body > section, body > header, body > footer, body > *");
-		//await page.screenshot({ path: screenshot, fullPage: false, type: 'png' });
-		//console.log(element[0]);
-		await element[0].screenshot({ path: screenshot, type: 'webp' });
-		
-		gulp.src(screenshot)
-		.pipe(imageResize({
-		  width : 480,
-		  format: "webp",
-		  quality:0,
-		}))
-		.pipe(rename(function (path) { path.basename += "-thumb"; }))
-		.pipe(gulp.dest(folderName)).on('end', () => {
-			//remove original screenshot and keep only thumb
-			 
-		});
-		
-		
+	for (const base of ['sections', 'blocks']) {
+		if (fs.existsSync(base)) walk(base);
 	}
-
-	await browser.close();
-
-	tempFiles.map(screenshot => {
-		
-		fs.stat(screenshot, function (err, stats) {
-
-			   if (err) {
-				   return console.error(err);
-			   }
-
-			   fs.unlink(screenshot,function(err){
-					if(err) {
-						return console.log(err);
-					}
-					//console.log('file deleted successfully');
-			   });  
-			})
-	});
-	
-	return true;
-}
-
-let templates = {
-'section':{
-	'group':`
-	Vvveb.SectionsGroup["{{group}}"] = [{{groupList}}];
-`,
-	'section':
-`Vvveb.Sections.add("{{id}}", {
-    name: "{{name}}",
-    image: Vvveb.themeBaseUrl + "/{{image}}",
-    html: \`{{html}}\`
-});`
-},
-'block': {
-	'group':`
-	Vvveb.BlocksGroup['{{group}}'] = [{{groupList}}];
-`,
-	'section':
-`Vvveb.Blocks.add("{{id}}", {
-    name: "{{name}}",
-    image: Vvveb.themeBaseUrl + "/{{image}}",
-    html: \`{{html}}\`
-});`
-}};
-
-function template(template, data) {
-	return template.replace(/{{(.+?)}}/gm, function(match,  p1) {
-		return data[p1];
-	})
-}
-
-function prettify(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1).replace(/[-_]/g,' ');
-}
-
-let sectionsSortOrder = [ "hero", "features",  "banner", "services"];
-
-//generate sections for VvvebJs
-function sections(type = "section", dirs = []) {
-	let sectionsDir = path.resolve(`./${type}s/`);
-	let styleCss = path.resolve("./css/style.bundle.css");
-	let baseDir = path.resolve(".");
-	let dir = [];
-	let sectionsJs = '';
-
-	if (!dirs.length) {
-		dirs = fs.readdirSync(sectionsDir).map(fileName => {
-			let stat = fs.statSync(`${sectionsDir}/${fileName}`);
-
-			if (stat.isDirectory()) {
-				dir.push(fileName);
-			}
-		});
-	}
-	//console.dir(dir);
-	sectionsSortOrder.reverse();
-	//sort sections
-	dir.sort((a, b) => sectionsSortOrder.indexOf(b) - sectionsSortOrder.indexOf(a));
-	
-	//set theme sections first if available
-	const index = dir.indexOf(themeName);
-	if (index > -1) {
-	  dir.splice(index, 1);
-	  dir.unshift(themeName);
-	  
-	}	
-
-	for (i in dir) {
-	  let fileName =  dir[i];		
-	  let filePath = `${sectionsDir}/${fileName}`;
-
-
-		let group = fileName;
-		let name;
-		let id;
-		let html;
-		let sectionsHtml = `<html data-vvvebjs-editor><head><base src="../"><link href="../css/style.bundle.css" rel="stylesheet"><link href="../css/screenshots.css" rel="stylesheet"><style>[data-reveal], [data-section] > * {
-    opacity: 1;
-    transform: translate(0);
-}</style><link href="../css/screenshots.css" rel="stylesheet"></head><body>`;
-		let image = '';
-		
-		let sections = [];
-		let files = fs.readdirSync(filePath).
-		sort((a, b) => parseInt(a.replace( /^\D+/g, '')) - parseInt(b.replace( /^\D+/g, ''))).
-		map(sectionFile => {
-			
-			name = sectionFile.replace(".html","");
-			id = `${group}/${name}`;
-			name = prettify(name);
-			image = `screenshots/${type}s/${group}/` + sectionFile.replace(".html", "-thumb.webp");
-			html = fs.readFileSync(`${filePath}/${sectionFile}`,'utf8');
-			sections.push(id);
-			
-			sectionsJs += template(templates[type]['section'], {id, name, image, html});
-			sectionsHtml += html.replace('<section', '<section title="' + name + '"');
-		});
-		
-		fs.writeFileSync(filePath + ".html", sectionsHtml + "</body></html>");
-		
-		let groupList = '"' + sections.join('","') + '"';
-		group = prettify(group);
-		sectionsJs += template(templates[type]['group'], {group, groupList});
-	}
-	
-	return fs.writeFileSync(/*path.resolve(".") + *//*`${sectionsDir}/${type}s.js`*/path.resolve(".") + `/${type}s/${type}s.js`, sectionsJs);
-}
-
-gulp.task('connect', async function (done) {
-    await connect.server({
-        port: 8008,
-		root: './',
-    });
+	done();
 });
 
-gulp.task('disconnect', async function (done) {
-    await connect.serverClose();
+
+gulp.task('gconnect', async function (done) {
+    await connect();
+    done();
 });
 
-gulp.task('take-screenshots',  async function (done) {
-	 return await screenshots('sections');
+gulp.task('gdisconnect', async function (done) {
+    await disconnect();
+    done();
 });
 
-gulp.task('take-screenshots-blocks',  async function (done) {
-	 return await screenshots("blocks");
+gulp.task('take-screenshots', async function () {
+	 return await screenshots('sections', parameters());
+});
+
+gulp.task('take-screenshots-blocks', async function () {
+	 return await screenshots("blocks", parameters());
+});
+
+gulp.task('take-screenshots-styles', async function () {
+	 return await screenshots("styles", parameters());
 });
 
 gulp.task('sections', async function () {
@@ -365,10 +129,14 @@ gulp.task('blocks', async function () {
 	 return sections("block", parameters());
 });
 
+gulp.task('styles', async function () {
+	 return styles(parameters());
+});
+
 
 // Default Task
 gulp.task('default', gulp.series('fileinclude', 'sass'));
-gulp.task('screenshots', gulp.series('connect', 'take-screenshots', 'disconnect'));
-gulp.task('screenshots-blocks', gulp.series('connect', 'take-screenshots-blocks', 'disconnect'));
-gulp.task('sections', gulp.series('sections'));
-gulp.task('blocks', gulp.series('blocks'));
+gulp.task('build', gulp.series('fileinclude', 'sass-prod'));
+gulp.task('screenshots', gulp.series('gconnect', 'take-screenshots', 'gdisconnect'));
+gulp.task('screenshots-blocks', gulp.series('gconnect', 'take-screenshots-blocks', 'gdisconnect'));
+gulp.task('screenshots-styles', gulp.series('gconnect', 'take-screenshots-styles', 'gdisconnect'));
